@@ -1,0 +1,1205 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+    <bib:Report rdf:about="http://www.osti.gov/servlets/purl/912521-cs9TGq/">
+        <z:itemType>report</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Daniel A. Mosher</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Xia Tang</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Ronald J. Brown</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Sarah Arsenault</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Salvatore Saitta</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Bruce L. Laube</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Robert H. Dold</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Donald L. Anton</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_1"/>
+        <dc:title>High Density Hydrogen Storage System Demonstration Using NaAlH4 Based Complex Compound Hydrides</dc:title>
+        <dc:date>2007-07-27</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.osti.gov/servlets/purl/912521-cs9TGq/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:03</dcterms:dateSubmitted>
+        <dc:description>DOI: 10.2172/912521</dc:description>
+        <bib:pages>DOE/AL/67610, 912521</bib:pages>
+        <prism:number>DOE/AL/67610, 912521</prism:number>
+    </bib:Report>
+    <z:Attachment rdf:about="#item_1">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/1/Daniel A. Mosher et al. - 2007 - High Density Hydrogen Storage System Demonstration Using NaAlH4 Based Complex Compound Hydrides.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S0360319908014778">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:03603199"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Askri</foaf:surname>
+                        <foaf:givenName>F</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bensalah</foaf:surname>
+                        <foaf:givenName>M</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jemni</foaf:surname>
+                        <foaf:givenName>A</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bennasrallah</foaf:surname>
+                        <foaf:givenName>S</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2"/>
+        <dc:title>Optimization of hydrogen storage in metal-hydride tanks</dc:title>
+        <dcterms:abstract>The storage time of hydrogen in metal-hydride tanks (MHTs for short) is strongly inﬂuenced by the rate at which heat can be removed from the reaction bed. In the present work a two-dimensional mathematical model is developed and validated against experimental results. This model is used, ﬁrst, to evaluate the impact of the tank wall thermal mass on the hydriding process. Walls in steel and in brass are tested and the obtained results show that there is no signiﬁcant effect on hydrogen storage time. Then, the established model is used to study the dynamic behaviour inside various designs of MHTs: i) a cylindrical tank, ii) a cylindrical tank with external ﬁns, iii) a cylindrical tank with a concentric tube ﬁlled with ﬂowing cooling ﬂuid and iv) a cylindrical tank with a concentric tube equipped with ﬁns. Optimization results indicate that almost 80% improvement of the storage time can be achieved over the case where the tank is not optimized.</dcterms:abstract>
+        <dc:date>01/2009</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S0360319908014778</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:04</dcterms:dateSubmitted>
+        <dc:rights>https://www.elsevier.com/tdm/userlicense/1.0/</dc:rights>
+        <bib:pages>897-905</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:03603199">
+        <prism:volume>34</prism:volume>
+        <dc:title>International Journal of Hydrogen Energy</dc:title>
+        <dc:identifier>DOI 10.1016/j.ijhydene.2008.11.021</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>International Journal of Hydrogen Energy</dcterms:alternative>
+        <dc:identifier>ISSN 03603199</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_2">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/2/Askri et al. - 2009 - Optimization of hydrogen storage in metal-hydride tanks.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S0360319915014974">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>40</prism:volume>
+                <dc:title>International Journal of Hydrogen Energy</dc:title>
+                <dc:identifier>DOI 10.1016/j.ijhydene.2015.06.015</dc:identifier>
+                <prism:number>31</prism:number>
+                <dcterms:alternative>International Journal of Hydrogen Energy</dcterms:alternative>
+                <dc:identifier>ISSN 03603199</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Singh</foaf:surname>
+                        <foaf:givenName>Anurag</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Maiya</foaf:surname>
+                        <foaf:givenName>M.P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Murthy</foaf:surname>
+                        <foaf:givenName>S. Srinivasa</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_3"/>
+        <dc:title>Effects of heat exchanger design on the performance of a solid state hydrogen storage device</dc:title>
+        <dcterms:abstract>Heat exchanger design plays a signiﬁcant role in the performance of solid state hydrogen storage device. In the present study, a cylindrical hydrogen storage device with an embedded annular heat exchanger tube with radial circular copper ﬁns, is considered. A 3D mathematical model of the storage device is developed to investigate the sorption performance of metal hydride (MH). A prototype of the device is fabricated for 1 kg of MH alloy, LaNi5, and tested at constant supply pressure of hydrogen, validating the simulation results. Absorption characteristics of storage device have been examined by varying different operating parameters such as hydrogen supply pressure and cooling ﬂuid temperature and velocity. Absorption process is completed in 18 min when these parameters are 15 bar, 298 K and 1 m/s respectively. A study of geometric parameters of copper ﬁns (such as perforation, number and thickness of ﬁn) has been carried out to investigate their effects on absorption process.</dcterms:abstract>
+        <dc:date>08/2015</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S0360319915014974</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:06</dcterms:dateSubmitted>
+        <bib:pages>9733-9746</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_3">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/3/Singh et al. - 2015 - Effects of heat exchanger design on the performance of a solid state hydrogen storage device.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S1359431116331544">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:13594311"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mellouli</foaf:surname>
+                        <foaf:givenName>S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Askri</foaf:surname>
+                        <foaf:givenName>F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Abhilash</foaf:surname>
+                        <foaf:givenName>E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ben Nasrallah</foaf:surname>
+                        <foaf:givenName>S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_4"/>
+        <dc:title>Impact of using a heat transfer fluid pipe in a metal hydride-phase change material tank</dc:title>
+        <dcterms:abstract>This study evaluates numerically the feasibility of employing a Heat Transfer Fluid (HTF) pipe in a Metal Hydride (MH) tank that integrates a Phase Change Material (PCM) heat exchanger. A 3D mathematical model is developed for this system and is used for simulating various conﬁgurations (Case 1: MH tank with PCM heat exchanger, Case 2: MH tank with PCM heat exchanger and open HTF pipe and Case 3: MH tank with PCM heat exchanger and closed HTF pipe). For each case, advantages and limitations are evaluated with respect to their heat transfer performance and ﬁlling time of hydrogen vis-a-vis heat storage capacity. In addition, the effects of the HTF type and its mass ﬂow rate on the performance of the MH tank are studied. Besides showing a thermal coupling between MH bed, HTF pipe and PCM medium, the computational results indicate that the use of HTF pipe in MH-PCM tank is a tradeoff between reducing the hydrogen ﬁlling time and compromising the heat storage capacity. The results indicate that compared to the Case 1 (without HTF pipe) the ﬁlling time can be reduced by 94% for the Case 2 where the HTF pipe extracts 70% of the heat of reaction and delivers it to environment as waste heat. However, the ﬁlling time is reduced by only 72% for the Case 3 where all the heat of reaction is stored in PCM.</dcterms:abstract>
+        <dc:date>02/2017</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S1359431116331544</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:10</dcterms:dateSubmitted>
+        <bib:pages>554-565</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:13594311">
+        <prism:volume>113</prism:volume>
+        <dc:title>Applied Thermal Engineering</dc:title>
+        <dc:identifier>DOI 10.1016/j.applthermaleng.2016.11.065</dc:identifier>
+        <dcterms:alternative>Applied Thermal Engineering</dcterms:alternative>
+        <dc:identifier>ISSN 13594311</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_4">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/4/Mellouli et al. - 2017 - Impact of using a heat transfer fluid pipe in a metal hydride-phase change material tank.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S0360319919321081">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>44</prism:volume>
+                <dc:title>International Journal of Hydrogen Energy</dc:title>
+                <dc:identifier>DOI 10.1016/j.ijhydene.2019.05.193</dc:identifier>
+                <prism:number>36</prism:number>
+                <dcterms:alternative>International Journal of Hydrogen Energy</dcterms:alternative>
+                <dc:identifier>ISSN 03603199</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Raju</foaf:surname>
+                        <foaf:givenName>Nithin N.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Muthukumar</foaf:surname>
+                        <foaf:givenName>P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Selvan</foaf:surname>
+                        <foaf:givenName>P. Vivek</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Malleswararao</foaf:surname>
+                        <foaf:givenName>K.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_5"/>
+        <dc:title>Design methodology and thermal modelling of industrial scale reactor for solid state hydrogen storage</dc:title>
+        <dcterms:abstract>In this study, a novel set of comprehensive arithmetic correlations has been proposed to design an industrial scale cylindrical reactor with embedded cooling tubes (ECT) for metal hydride (MH) based hydrogen storage and thermal management applications. Based on ASME standards, different nominal pipe sizes were imparted into a cylindrical reactor design with ECT to accommodate 50 kg of LaNi4.7Al0.3 alloy. A three dimensional numerical model has been developed using COMSOL Multiphysics 4.3a to predict the hydriding performance of designed reactors, which was further experimentally validated as well. At an absorption condition of 30 bar supply pressure and 298 K absorption temperature with 60 lpm volumetric HTF ﬂow rate, 6 inch reactor with 99 ECT portrayed better heat transfer characteristics. From the parametric investigation, it is observed that the variation of supply pressure has predominant effect followed by the variation of the HTF ﬂow rate on hydriding (absorption) kinetics of the device. However, the variation of absorption temperature has minuscule inﬂuence on the hydriding performance. At a supply condition of 30 bar and 298 K with water ﬂow rate of 30 lpm, a hydrogen storage capacity (HSC) of 1.29 wt% was achieved within 2060 s.</dcterms:abstract>
+        <dc:date>07/2019</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S0360319919321081</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:12</dcterms:dateSubmitted>
+        <bib:pages>20278-20292</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_5">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/5/Raju et al. - 2019 - Design methodology and thermal modelling of industrial scale reactor for solid state hydrogen storag.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S0360319916305559">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>42</prism:volume>
+                <dc:title>International Journal of Hydrogen Energy</dc:title>
+                <dc:identifier>DOI 10.1016/j.ijhydene.2016.03.178</dc:identifier>
+                <prism:number>11</prism:number>
+                <dcterms:alternative>International Journal of Hydrogen Energy</dcterms:alternative>
+                <dc:identifier>ISSN 03603199</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Barthelemy</foaf:surname>
+                        <foaf:givenName>H.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Weber</foaf:surname>
+                        <foaf:givenName>M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Barbier</foaf:surname>
+                        <foaf:givenName>F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_6"/>
+        <dc:title>Hydrogen storage: Recent improvements and industrial perspectives</dc:title>
+        <dcterms:abstract>UP TO 300 WORDS) Efficient storage of hydrogen is crucial for the success of hydrogen energy markets. Hydrogen can be stored either as a compressed gas, a refrigerated liquefied gas, a cryo-compressed gas or in hydrides. This paper gives an overview of compressed hydrogen storage technologies focusing on high pressure storage tanks in metal and in composite materials. It details specific issues and constraints related to the materials and structure behavior in hydrogen and conditions representative of hydrogen energy uses. This paper is an update of the 2019 version that was presented in Australia. It especially covers recent progress made regarding regulations, codes and standards for the design, manufacturing, periodic inspection and plastic materials’ evaluation of compressed hydrogen storage.</dcterms:abstract>
+        <dc:date>03/2017</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Hydrogen storage</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S0360319916305559</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:14</dcterms:dateSubmitted>
+        <bib:pages>7254-7262</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_6">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/6/Barthelemy et al. - 2017 - Hydrogen storage Recent improvements and industrial perspectives.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S0925838819347942">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:09258388"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hirscher</foaf:surname>
+                        <foaf:givenName>Michael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yartys</foaf:surname>
+                        <foaf:givenName>Volodymyr A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Baricco</foaf:surname>
+                        <foaf:givenName>Marcello</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bellosta Von Colbe</foaf:surname>
+                        <foaf:givenName>Jose</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Blanchard</foaf:surname>
+                        <foaf:givenName>Didier</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bowman</foaf:surname>
+                        <foaf:givenName>Robert C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Broom</foaf:surname>
+                        <foaf:givenName>Darren P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Buckley</foaf:surname>
+                        <foaf:givenName>Craig E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chang</foaf:surname>
+                        <foaf:givenName>Fei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Ping</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cho</foaf:surname>
+                        <foaf:givenName>Young Whan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Crivello</foaf:surname>
+                        <foaf:givenName>Jean-Claude</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cuevas</foaf:surname>
+                        <foaf:givenName>Fermin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>David</foaf:surname>
+                        <foaf:givenName>William I.F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>De Jongh</foaf:surname>
+                        <foaf:givenName>Petra E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Denys</foaf:surname>
+                        <foaf:givenName>Roman V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dornheim</foaf:surname>
+                        <foaf:givenName>Martin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Felderhoff</foaf:surname>
+                        <foaf:givenName>Michael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Filinchuk</foaf:surname>
+                        <foaf:givenName>Yaroslav</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Froudakis</foaf:surname>
+                        <foaf:givenName>George E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Grant</foaf:surname>
+                        <foaf:givenName>David M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gray</foaf:surname>
+                        <foaf:givenName>Evan MacA.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hauback</foaf:surname>
+                        <foaf:givenName>Bjørn C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>He</foaf:surname>
+                        <foaf:givenName>Teng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Humphries</foaf:surname>
+                        <foaf:givenName>Terry D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jensen</foaf:surname>
+                        <foaf:givenName>Torben R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kim</foaf:surname>
+                        <foaf:givenName>Sangryun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kojima</foaf:surname>
+                        <foaf:givenName>Yoshitsugu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Latroche</foaf:surname>
+                        <foaf:givenName>Michel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Hai-Wen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lototskyy</foaf:surname>
+                        <foaf:givenName>Mykhaylo V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Makepeace</foaf:surname>
+                        <foaf:givenName>Joshua W.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Møller</foaf:surname>
+                        <foaf:givenName>Kasper T.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Naheed</foaf:surname>
+                        <foaf:givenName>Lubna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ngene</foaf:surname>
+                        <foaf:givenName>Peter</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Noréus</foaf:surname>
+                        <foaf:givenName>Dag</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nygård</foaf:surname>
+                        <foaf:givenName>Magnus Moe</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Orimo</foaf:surname>
+                        <foaf:givenName>Shin-ichi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Paskevicius</foaf:surname>
+                        <foaf:givenName>Mark</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pasquini</foaf:surname>
+                        <foaf:givenName>Luca</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ravnsbæk</foaf:surname>
+                        <foaf:givenName>Dorthe B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Veronica Sofianos</foaf:surname>
+                        <foaf:givenName>M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Udovic</foaf:surname>
+                        <foaf:givenName>Terrence J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vegge</foaf:surname>
+                        <foaf:givenName>Tejs</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Walker</foaf:surname>
+                        <foaf:givenName>Gavin S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Webb</foaf:surname>
+                        <foaf:givenName>Colin J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Weidenthaler</foaf:surname>
+                        <foaf:givenName>Claudia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zlotea</foaf:surname>
+                        <foaf:givenName>Claudia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_7"/>
+        <dc:title>Materials for hydrogen-based energy storage – past, recent progress and future outlook</dc:title>
+        <dcterms:abstract>Globally, the accelerating use of renewable energy sources, enabled by increased efﬁciencies and reduced costs, and driven by the need to mitigate the effects of climate change, has signiﬁcantly increased research in the areas of renewable energy production, storage, distribution and end-use. Central to this discussion is the use of hydrogen, as a clean, efﬁcient energy vector for energy storage. This review, by experts of Task 32, “Hydrogen-based Energy Storage” of the International Energy Agency, Hydrogen TCP, reports on the development over the last 6 years of hydrogen storage materials, methods and techniques, including electrochemical and thermal storage systems. An overview is given on the background to the various methods, the current state of development and the future prospects. The following areas are covered; porous materials, liquid hydrogen carriers, complex hydrides, intermetallic hydrides, electrochemical storage of energy, thermal energy storage, hydrogen energy systems and an outlook is presented for future prospects and research on hydrogen-based energy storage.</dcterms:abstract>
+        <dc:date>06/2020</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S0925838819347942</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:16</dcterms:dateSubmitted>
+        <bib:pages>153548</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:09258388">
+        <prism:volume>827</prism:volume>
+        <dc:title>Journal of Alloys and Compounds</dc:title>
+        <dc:identifier>DOI 10.1016/j.jallcom.2019.153548</dc:identifier>
+        <dcterms:alternative>Journal of Alloys and Compounds</dcterms:alternative>
+        <dc:identifier>ISSN 09258388</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_7">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/7/Hirscher et al. - 2020 - Materials for hydrogen-based energy storage – past, recent progress and future outlook.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S0360319923046992">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>50</prism:volume>
+                <dc:title>International Journal of Hydrogen Energy</dc:title>
+                <dc:identifier>DOI 10.1016/j.ijhydene.2023.09.128</dc:identifier>
+                <dcterms:alternative>International Journal of Hydrogen Energy</dcterms:alternative>
+                <dc:identifier>ISSN 03603199</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chandra</foaf:surname>
+                        <foaf:givenName>Satyaki</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sharma</foaf:surname>
+                        <foaf:givenName>Pratibha</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Muthukumar</foaf:surname>
+                        <foaf:givenName>P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tatiparti</foaf:surname>
+                        <foaf:givenName>Sankara Sarma V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_8"/>
+        <dc:title>Design and modular scale-up of shell and tube metal hydride hydrogen storage reactor utilizing multi-pass water flow</dc:title>
+        <dc:date>01/2024</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S0360319923046992</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:18</dcterms:dateSubmitted>
+        <bib:pages>1234-1252</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_8">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/8/Chandra et al. - 2024 - Design and modular scale-up of shell and tube metal hydride hydrogen storage reactor utilizing multi.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S100503022400392X">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:10050302"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhu</foaf:surname>
+                        <foaf:givenName>Jianhui</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lin</foaf:surname>
+                        <foaf:givenName>Xi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lv</foaf:surname>
+                        <foaf:givenName>Lijun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Mingda</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Luo</foaf:surname>
+                        <foaf:givenName>Qun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kudiiarov</foaf:surname>
+                        <foaf:givenName>V.N.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Liu</foaf:surname>
+                        <foaf:givenName>Wei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leng</foaf:surname>
+                        <foaf:givenName>Haiyan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Han</foaf:surname>
+                        <foaf:givenName>Xingbo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ma</foaf:surname>
+                        <foaf:givenName>Zhaowei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_9"/>
+        <dc:title>The relationship between thermal management methods and hydrogen storage performance of the metal hydride tank</dc:title>
+        <dcterms:abstract>Solid-state hydrogen storage tanks are key equipment for fuel cell vehicles and hydrogen storage. However, the low heat transfer properties of hydrogen storage tanks result in the inability to meet the hydrogen supply requirements of fuel cells. In this study, different thermal management approaches were explored through the design of LaNi5-based solid-state hydrogen storage tanks. We experimentally studied the effects of different internal heat transfer methods, that is, expanded natural graphite (ENG), copper foam, and copper ﬁns on the hydrogen absorption and desorption performance. We also studied the effects of external cooling methods with natural convection, air cooling, and water cooling, respectively. Under the same external cooling method of natural convection, a solid hydrogen storage tank ﬁlled with 5 wt.% ENG has similar performance to a tank ﬁlled with copper foam. Compared to natural convection, air and water cooling can signiﬁcantly improve the heating performance of metal hydride (MH) beds by increasing the external heat transfer coeﬃcient. The effect of water cooling is better than that of air cooling, and in these two enhanced performance conditions, the tank ﬁlled with copper foam performs better than with ENG. In the case of water cooling, by adding copper ﬁns to a hydrogen storage tank ﬁlled with 5 wt.% ENG, the tank was saturated with hydrogen absorption in only 29.4 min, which is 55.6 % shorter than the hydrogen uptake time in a hydrogen storage reactor without copper ﬁns. And its stable hydrogen desorption (1 NL/min) has reached 98.1 % of the total hydrogen released. The results show that the effective thermal conductivity and heat transfer area of metal hydride bed play key roles in improving heat transfer and reaction rate. In addition, heat transfer is more important than mass transfer to improve the performance of the hydrogen storage tank.</dcterms:abstract>
+        <dc:date>12/2024</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S100503022400392X</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:20</dcterms:dateSubmitted>
+        <bib:pages>66-77</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:10050302">
+        <prism:volume>203</prism:volume>
+        <dc:title>Journal of Materials Science &amp; Technology</dc:title>
+        <dc:identifier>DOI 10.1016/j.jmst.2024.03.018</dc:identifier>
+        <dcterms:alternative>Journal of Materials Science &amp; Technology</dcterms:alternative>
+        <dc:identifier>ISSN 10050302</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_9">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/9/Zhu et al. - 2024 - The relationship between thermal management methods and hydrogen storage performance of the metal hy.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S0360319925040571">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>169</prism:volume>
+                <dc:title>International Journal of Hydrogen Energy</dc:title>
+                <dc:identifier>DOI 10.1016/j.ijhydene.2025.151057</dc:identifier>
+                <dcterms:alternative>International Journal of Hydrogen Energy</dcterms:alternative>
+                <dc:identifier>ISSN 03603199</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Laalam</foaf:surname>
+                        <foaf:givenName>Aimen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bazazi</foaf:surname>
+                        <foaf:givenName>Parisa</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_10"/>
+        <dc:title>Holding the invisible: Advanced materials for hydrogen storage</dc:title>
+        <dcterms:abstract>Hydrogen storage remains the main barrier to the broader use of hydrogen as an energy carrier, despite hydrogen’s high energy density and clean combustion. This study presents a comparative evaluation of conventional and emerging storage methods, integrating thermodynamic, kinetic, economic, and environmental metrics to assess capacity, efficiency, cost, and reversibility. Physisorption analysis reveals that metal organic frameworks can achieve storage capacities up to 14.0 mmol/g. Chemical storage systems are evaluated, including nanostructured MgH2 (7.6 wt%), catalyzed reversible complex hydrides, liquid organic hydrogen carriers, and clathrate hydrates. Techno-economic analysis shows storage costs from $500–700/kg H2 to $30–50/kg H2, with energy efficiencies of 50%–90%. Life cycle assessment identifies manufacturing as the primary source of emissions, with carbon footprints varying from 150 to 2057 kg CO2-eq/kg H2. Cryo-compressed is the most practical transportation option while metal hydrides suit stationary use. This study provides a quantitative foundation to guide material selection and system design for next-generation hydrogen storage technologies.</dcterms:abstract>
+        <dc:date>09/2025</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Holding the invisible</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S0360319925040571</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:23</dcterms:dateSubmitted>
+        <bib:pages>151057</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_10">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/10/Laalam y Bazazi - 2025 - Holding the invisible Advanced materials for hydrogen storage.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S2352152X22000871">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2352152X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dong</foaf:surname>
+                        <foaf:givenName>Zezheng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wang</foaf:surname>
+                        <foaf:givenName>Yong</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wu</foaf:surname>
+                        <foaf:givenName>Haoran</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Xinan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sun</foaf:surname>
+                        <foaf:givenName>Yue</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Yifan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chang</foaf:surname>
+                        <foaf:givenName>Jingcai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>He</foaf:surname>
+                        <foaf:givenName>Zuoli</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hong</foaf:surname>
+                        <foaf:givenName>Jinglan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_11"/>
+        <dc:title>A design methodology of large-scale metal hydride reactor based on schematization for hydrogen storage</dc:title>
+        <dcterms:abstract>Hydrogen storage is now the “bottleneck” to realise the application of hydrogen as renewable energy. This is because most metals can reversibly absorb hydrogen. Undoubtedly, a metal hydride reactor (MHR) is the core device used in achieving the desired stable and comprehensive performance of a hydrogen storage system. This study made significant efforts to outline a design methodology and acquired an optimised large-scale MHR (&gt; 50 kg-MHs) for various applications. It mapped and analysed the MHR research progress in the past 20 years with the aid of CiteSpace, and formed a brief scientometric review from the start. Second, the priority in various applications was concluded in a few keywords to provide assistance to priorities adopted. By means of pre-set MH categories, sketch configurations, and the input/output path of the reaction heat and filling mode, the initial outline of the MHR was sketched reasonably by comparing and referring to wide outstanding findings. The following optimisation procedure would give designers/investigators a deep understanding of complex and multidisciplinary MHR wherein absorption and desorption, and the resultant heat and mass transport, pulverisation, self-densification, and stress characteristics were tightly coupled. Subsequently, anticipative results were obtained by designing and simulating the capacity, system gravimetric capacity, system volumetric capacity, and other core dynamic indices. This paper provides a unified design policy based on excellent reported results which could serve as a roadmap for the design of practical large-scale MHRs and is expected to be satisfied with different application scenarios.</dcterms:abstract>
+        <dc:date>05/2022</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S2352152X22000871</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:25</dcterms:dateSubmitted>
+        <bib:pages>104047</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2352152X">
+        <prism:volume>49</prism:volume>
+        <dc:title>Journal of Energy Storage</dc:title>
+        <dc:identifier>DOI 10.1016/j.est.2022.104047</dc:identifier>
+        <dcterms:alternative>Journal of Energy Storage</dcterms:alternative>
+        <dc:identifier>ISSN 2352152X</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_11">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/11/Dong et al. - 2022 - A design methodology of large-scale metal hydride reactor based on schematization for hydrogen stora.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S1364032122006311">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:13640321"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Usman</foaf:surname>
+                        <foaf:givenName>Muhammad R.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_12"/>
+        <dc:title>Hydrogen storage methods: Review and current status</dc:title>
+        <dcterms:abstract>Fossil fuels comprising coal, crude oil, and natural gas are non-renewable and greatly harmful to the environment. Hydrogen, on the other hand, is both sustainable and environmentally friendly. However, due to its light weight and gaseous nature, it presents challenging problems of its storage, and the practical hydrogen storage is perhaps the biggest hurdle in the success of the hydrogen economy on a large scale. Hydrogen can be stored in a variety of physical and chemical methods. Each storage technique has its own advantages and disadvantages. It is the subject of this study to review the hydrogen storage strategies and to survey the recent developments in the field.</dcterms:abstract>
+        <dc:date>10/2022</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Hydrogen storage methods</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S1364032122006311</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:27</dcterms:dateSubmitted>
+        <bib:pages>112743</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:13640321">
+        <prism:volume>167</prism:volume>
+        <dc:title>Renewable and Sustainable Energy Reviews</dc:title>
+        <dc:identifier>DOI 10.1016/j.rser.2022.112743</dc:identifier>
+        <dcterms:alternative>Renewable and Sustainable Energy Reviews</dcterms:alternative>
+        <dc:identifier>ISSN 13640321</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_12">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/12/Usman - 2022 - Hydrogen storage methods Review and current status.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.mdpi.com/1996-1073/18/5/1291">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1996-1073"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Larpruenrudee</foaf:surname>
+                        <foaf:givenName>Puchanee</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bennett</foaf:surname>
+                        <foaf:givenName>Nick S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Luo</foaf:surname>
+                        <foaf:givenName>Zhen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hossain</foaf:surname>
+                        <foaf:givenName>M. J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Haque</foaf:surname>
+                        <foaf:givenName>Nawshad</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sauret</foaf:surname>
+                        <foaf:givenName>Emilie</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fitch</foaf:surname>
+                        <foaf:givenName>Robert</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Islam</foaf:surname>
+                        <foaf:givenName>Mohammad S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_13"/>
+        <dc:title>A Review on the Overall Performance of Metal Hydride-Based Hydrogen Storage Systems</dc:title>
+        <dcterms:abstract>Metal hydride-based hydrogen storage (MHHS) has been used for several purposes, including mobile and stationary applications. In general, the overall MHHS performance for both applications depends on three main factors, which are the appropriate selection of metal hydride material uses, design configurations of the MHHS based on the heat exchanger, and overall operating conditions. However, there are different specific requirements for the two applications. The weight of the overall MHHS is the key requirement for mobile applications, while hydrogen storage capacity is the key requirement for stationary applications. Based on these requirements, several techniques have been recently used to enhance MHHS performance by mostly considering the faster hydrogen absorption/desorption reaction. Considering metal hydride (MH) materials, their low thermal conductivity significantly impacts the hydrogen absorption/desorption reaction. For this purpose, a comprehensive understanding of these three main factors and the hydrogen absorption/desorption reaction is critical and it should be up to date to obtain the suitable MHHS performance for all related applications. Therefore, this article reviews the key techniques, which have recently been applied for the enhancement of MHHS performance. In the review, it is demonstrated that the design and layout of the heat exchanger greatly affect the performance of the internal heat exchanger. The initial temperature of the heat transfer fluid and hydrogen supply pressure are the main parameters to increase the hydrogen sorption rate and specific heating power. The higher supply pressure results in the improvement in specific heating power. For the metal hydride material selection under the consideration of mobile applications and stationary applications, it is important to strike trade-offs between hydrogen storage capacity, weight, material cost, and effective thermal conductivity.</dcterms:abstract>
+        <dc:date>2025-03-06</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.mdpi.com/1996-1073/18/5/1291</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:03:28</dcterms:dateSubmitted>
+        <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <bib:pages>1291</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1996-1073">
+        <prism:volume>18</prism:volume>
+        <dc:title>Energies</dc:title>
+        <dc:identifier>DOI 10.3390/en18051291</dc:identifier>
+        <prism:number>5</prism:number>
+        <dcterms:alternative>Energies</dcterms:alternative>
+        <dc:identifier>ISSN 1996-1073</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_13">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/13/Larpruenrudee et al. - 2025 - A Review on the Overall Performance of Metal Hydride-Based Hydrogen Storage Systems.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_28">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>49</prism:volume>
+                <dc:title>Journal of Energy Storage</dc:title>
+                <dc:identifier>DOI 10.1016/j.est.2022.104047</dc:identifier>
+                <dcterms:alternative>Journal of Energy Storage</dcterms:alternative>
+                <dc:identifier>ISSN 2352152X</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dong</foaf:surname>
+                        <foaf:givenName>Zezheng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wang</foaf:surname>
+                        <foaf:givenName>Yong</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wu</foaf:surname>
+                        <foaf:givenName>Haoran</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Xinan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sun</foaf:surname>
+                        <foaf:givenName>Yue</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Yifan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chang</foaf:surname>
+                        <foaf:givenName>Jingcai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>He</foaf:surname>
+                        <foaf:givenName>Zuoli</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hong</foaf:surname>
+                        <foaf:givenName>Jinglan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_27"/>
+        <dc:title>A design methodology of large-scale metal hydride reactor based on schematization for hydrogen storage</dc:title>
+        <dcterms:abstract>Hydrogen storage is now the “bottleneck” to realise the application of hydrogen as renewable energy. This is because most metals can reversibly absorb hydrogen. Undoubtedly, a metal hydride reactor (MHR) is the core device used in achieving the desired stable and comprehensive performance of a hydrogen storage system. This study made significant efforts to outline a design methodology and acquired an optimised large-scale MHR (&gt; 50 kg-MHs) for various applications. It mapped and analysed the MHR research progress in the past 20 years with the aid of CiteSpace, and formed a brief scientometric review from the start. Second, the priority in various applications was concluded in a few keywords to provide assistance to priorities adopted. By means of pre-set MH categories, sketch configurations, and the input/output path of the reaction heat and filling mode, the initial outline of the MHR was sketched reasonably by comparing and referring to wide outstanding findings. The following optimisation procedure would give designers/investigators a deep understanding of complex and multidisciplinary MHR wherein absorption and desorption, and the resultant heat and mass transport, pulverisation, self-densification, and stress characteristics were tightly coupled. Subsequently, anticipative results were obtained by designing and simulating the capacity, system gravimetric capacity, system volumetric capacity, and other core dynamic indices. This paper provides a unified design policy based on excellent reported results which could serve as a roadmap for the design of practical large-scale MHRs and is expected to be satisfied with different application scenarios.</dcterms:abstract>
+        <dc:date>05/2022</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S2352152X22000871</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-09-25 17:08:36</dcterms:dateSubmitted>
+        <bib:pages>104047</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_27">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/27/Dong et al. - 2022 - A design methodology of large-scale metal hydride reactor based on schematization for hydrogen stora.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Collection rdf:about="#collection_1">
+        <dc:title>H2 storage</dc:title>
+        <dcterms:hasPart rdf:resource="http://www.osti.gov/servlets/purl/912521-cs9TGq/"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S0360319908014778"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S0360319915014974"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S1359431116331544"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S0360319919321081"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S0360319916305559"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S0925838819347942"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S0360319923046992"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S100503022400392X"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S0360319925040571"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S2352152X22000871"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/S1364032122006311"/>
+        <dcterms:hasPart rdf:resource="https://www.mdpi.com/1996-1073/18/5/1291"/>
+        <dcterms:hasPart rdf:resource="#item_28"/>
+    </z:Collection>
+</rdf:RDF>
