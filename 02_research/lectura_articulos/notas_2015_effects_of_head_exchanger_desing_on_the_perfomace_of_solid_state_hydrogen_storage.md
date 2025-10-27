@@ -1,6 +1,6 @@
 # Notas de Lectura: Effects of heat exchanger design on the performance of a solid state hydrogen storage device
 
-**Autores:** [LAnurag Singh, M.P. Maiya y S. Srinivasa Murthy]
+**Autor:** [Lanurag Singh, M.P. Maiya y S. Srinivasa Murthy]
 **Referencia BibTeX:** `[IJHE_2015]`
 **Fecha de Publicación:** [2015]
 
@@ -10,9 +10,13 @@
 
 Este estudio se centra en el diseño de un intercambiador de calor para un dispositivo de almacenamiento de hidrógeno de estado sólido. Se desarrolló un modelo matemático tridimensional (3-D) para investigar el rendimiento de sorción de un hidruro metálico (MH) de LaNi₅. Se fabricó y probó un prototipo del dispositivo, validando los resultados de la simulación. El estudio examinó los efectos de varios parámetros operativos, como la presión de suministro de hidrógeno y la temperatura y velocidad del fluido de enfriamiento, así como parámetros geométricos del intercambiador de calor, como el número y grosor de las aletas de cobre. Se concluyó que un diseño de intercambiador de calor efectivo puede reducir significativamente los tiempos de carga y descarga.
 
+## 2. Imagen de Referencia
+
+![el conjunto del intercambiador de calor y (b) la aleta de cobre](img/notas_2015_effects_of_head_exchanger_desing_on_the_perfomace_of_solid_state_hydrogen_storage/holes.png)
+
 ---
 
-## 2. Puntos Clave y Datos
+## 3. Puntos Clave y Datos
 
 ### Aspectos Principales
 
@@ -24,7 +28,25 @@ Este estudio se centra en el diseño de un intercambiador de calor para un dispo
 
 **Validación del modelo:** El modelo matemático 3-D desarrollado se validó con datos experimentales obtenidos de un prototipo fabricado, mostrando una buena coincidencia entre los resultados simulados y los experimentales
 
-## Modelo Matemático
+## 4. Caracterizacion Basica
+
+**Configuracion geometrica** : Cilíndrica
+
+**Dimensiones**
+  Longitud: 140 mm
+  Diámetro: 72 mm  
+  Espesor de aletas: 0.5 mm
+  espaciado: 9.5 mm
+
+**Condiciones de Operacion** :
+  Temperatura max :298 k
+  Presión: 5 bar y 15 bar
+  Flujo: 1 m/s
+  Otras condiciones relevantes:
+
+## 5. Tranferencia de Calor
+
+### Modelo Matemático
 
 El modelo matemático 3-D se desarrolló utilizando el software COMSOL Multiphysics y se simplificó mediante varias suposiciones clave:
 
@@ -60,7 +82,21 @@ La tasa de absorción de hidrógeno por unidad de volumen (
 Ecuación de van't Hoff:
 La presión de equilibrio se determina mediante la relación de van't Hoff, que la relaciona con la temperatura.
 
-### Tabla de Datos Clave
+## 6. MH Hidruro Metalico
+
+  Tipo de hidruro: LaNi5, 1 kg
+  cantidad: 1 kg
+  Propiedades
+  
+## 7. Conclusiones y Observaciones
+
+## 8. Referencias Adicionales
+
+[Referencias relacionadas o citadas que sean relevantes para futura investigación]
+
+---
+
+### Notas Adicionales
 
 | Figura | Descripción | Puntos clave |
 |---|---|---|

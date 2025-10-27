@@ -1,6 +1,6 @@
 # Notas de Lectura: Optimization of hydrogen storage in metal-hydride tanks
 
-**Autores:** F. Askri, M. Ben Salah, A. Jemni, S. Ben Nasrallah
+**Autor:** [F. Askri, M. Ben Salah, A. Jemni, S. Ben Nasrallah]
 **Referencia BibTeX:** `[cijhydene_2008]`
 **Fecha de Publicación:** [2008]
 
@@ -10,11 +10,18 @@
 
 Este artículo se enfoca en la optimización del tiempo de almacenamiento de hidrógeno en tanques de hidruro metálico (MHT). Para esto, se desarrolló un modelo matemático bidimensional validado con resultados experimentales. El estudio evalúa el impacto de la masa térmica de la pared del tanque y compara distintos diseños para mejorar la transferencia de calor, ya que esta es la principal limitación del proceso de absorción de hidrógeno. Se concluye que las aletas externas y los tubos internos son los diseños más efectivos para mejorar el almacenamiento.
 
----
+## 2. Imagen de Referencia
 
-## 2. Puntos Clave y Datos
+![Esquema del Reactor MHT](img/notas_2008_optimization_of_hydrogen_storage_mht/Esquema_MHT_utilizados.png)
+
+## 3. Puntos Clave y Datos
 
 ### Aspectos Principales
+
+i) un tanque cilíndrico,
+ii) un tanque cilíndrico con aletas externas,
+iii) un tanque cilíndrico con un tubo concéntrico lleno de hidruros metálicos con fluido refrigerante fluyendo
+iv) un tanque cilíndrico con un tubo concéntrico equipado con aletas
 
 **Problema principal**: El factor limitante para la absorción de hidrógeno en tanques de hidruro metálico es la tasa de remoción de calor de la reacción.
 
@@ -24,7 +31,45 @@ Este artículo se enfoca en la optimización del tiempo de almacenamiento de hid
 
 **Mejoras en el diseño:** Los resultados muestran que los diseños con aletas y tubos internos mejoran significativamente la transferencia de calor, lo que reduce el tiempo de almacenamiento.
 
-### Tabla de Datos Clave
+## 4. Caracterizacion Basica
+
+**Configuracion geometrica** : Cilíndrica
+
+**Dimensiones** :
+  Longitud: 8 cm
+  Diámetro: 8 cm (interior 6 cm)
+  Volumen:
+  Otras medidas relevantes: Espesor del Lecho 6 cm
+
+**Condiciones de Operacion** :
+  Temperatura: 350 K
+  Presión: 8 bar
+  Flujo:
+  Otras condiciones relevantes: paredes acero y laton
+
+## 5. Tranferencia de Calor
+
+  Diametro de las aletas : 1/4 0,02 y 0,025
+  Materiales y propiedades térmicas
+  Eficiencia térmica
+  
+## 6. MH Hidruro Metalico
+
+  Tipo de hidruro: LaNi5
+  Densida: 8200 kg/m3
+  Propiedades
+  Comportamiento
+  Características especiales
+
+## 7. Conclusiones y Observaciones
+
+  Muestra los cuatro diseños del tanque: (a) cilíndrico simple, (b) con aletas externas, (c) con tubos concéntricos para refrigerante, y (d) con tubos en U para refrigerante.
+
+## 8. Referencias Adicionales
+
+---
+
+### Notas Adicionales
 
 | Figura | Descripción | Detalles clave |
 |---|---|---|

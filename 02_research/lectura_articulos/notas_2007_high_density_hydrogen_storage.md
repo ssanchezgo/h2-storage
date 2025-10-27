@@ -1,10 +1,10 @@
 # Notas de Lectura: High Density Hydrogen Storage System Demonstration Using NaAlH4 Based Complex Compound Hydrides
 
-**Autores:** Daniel A. Mosher, Xia Tang, Ronald J. Brown, Sarah Arsenault, Salvatore Saitta, Bruce L. Laube, Robert H. Dold, y Donald L. Anton.
+**Autor:**  [Daniel A. Mosher, Xia Tang, Ronald J. Brown, Sarah Arsenault, Salvatore Saitta, Bruce L. Laube, Robert H. Dold, y Donald L. Anton]
 
-**Referencia BibTeX:** `United Technologies-2007`
+**Referencia BibTeX:** `[United Technologies-2007]`
 
-**Fecha de publicación:** 2007
+**Fecha de publicación:** [2007]
 
 ---
 
@@ -12,22 +12,56 @@
 
 United Technologies Research Center (UTRC)  diseñar, fabricar y probar prototipos de sistemas de almacenamiento de hidrógeno de alta densidad. El material principal utilizado fue el hidruro complejo NaAlH4, seleccionado por su capacidad gravimétrica y reversibilidad. El objetivo fue identificar y abordar las tecnologías clave del sistema que difieren de los hidruros metálicos convencionales, como el uso de recipientes compuestos, el intercambio de calor, y el manejo del polvo reactivo. Se construyeron dos prototipos para demostrar la viabilidad de estos sistemas
 
+## 2. Imagen de Referencia
+
+![Segundo Prototipo](img/notas_2007_high_density_hydrogen_storage/prototipo2.png)
+
 ## 2. Puntos Clave y Datos
 
 ### Aspectos Principales
 
-- [Selección del material:]
-  NaAlH4 fue elegido por ser el material con mayor capacidad gravimétrica y presiones y temperaturas de recarga aceptables
+  **Recipientes a alta presión:**
+  Se diseñaron recipientes de fibra de carbono compuesta para soportar las altas presiones del NaAlH4, que son mayores que las de los hidruros metálicos convencionales.
+
+## 4. Caracterizacion Basica
+
+**Configuracion geometrica** Cilindrica
+
+**Dimensiones**
+  Longitud:1,52 m (5')
+  Diámetro:
+  Volumen:  
+
+**Condiciones de Operacion**
+  Temperatura: 200 ªC
+  Presión: 4320 psi
+  Ciclos: 19000 ciclos
 
   Figura 22, Diagrama de diseño squemático que relaciona los objetivos de rendimiento con los elementos de diseño.
 
-- [Gestión del calor:]
+## 5. Tranferencia de Calor
+
   La baja conductividad térmica del polvo de hidruro hace que la transferencia de calor sea un desafío. Se utilizó un aceite inerte de alto rendimiento (ParaTherm MR) en lugar de agua para evitar reacciones químicas con el NaAlH4.
 
 - [Recipientes a alta presión:]
   Se diseñaron recipientes de fibra de carbono compuesta para soportar las altas presiones del NaAlH4, que son mayores que las de los hidruros metálicos convencionales.
 
-### Tabla de Datos Clave
+## 6. MH Hidruro Metalico
+
+NaAlH4 fue elegido por ser el material con mayor capacidad gravimétrica y presiones y temperaturas de recarga aceptables
+
+  Tipo de hidruro : NaAlH4
+  Propiedades
+  Comportamiento
+  Características especiales
+
+## 7. Conclusiones y Observaciones
+
+## 8. Referencias Adicionales
+
+---
+
+### Notas Adicionales
 
 | Figura | Tema | Objetivo |
 |---|---|---|

@@ -1,0 +1,86 @@
+# Notas de Lectura: Experimental study of a metal hydride vessel based on a finned spiral heat exchanger
+
+**Autor:** [Dhaou, H. and Souahlia, A. and Mellouli, S. and Askri, F. and Jemni, A. and Ben Nasrallah, S.]
+
+**Referencia BibTeX:** `[Dhaou2010]`
+
+**Fecha de Publicación:** [2010]
+
+---
+
+## 1. Resumen y Propósito del Artículo
+
+El artículo presenta un estudio experimental sobre el desempeño de un recipiente de hidruro metálico (MHV) equipado con un intercambiador de calor en espiral con aletas.
+El objetivo principal es analizar cómo la geometría del intercambiador y las condiciones de operación (flujo y temperatura del fluido de enfriamiento, presión aplicada y volumen del tanque de hidrógeno) afectan los tiempos de carga (absorción) y descarga (desorción) del hidruro metálico.
+
+## 2. Imagen de Referencia
+
+![MHV reactor](img/notas_2010_Experimental_study_metal_hydride_vessel_based_on_finned_spiral_heat_exchanger/MHV.png)
+
+## 3. Puntos Clave y Datos
+
+### Aspectos Principales
+
+El desempeño del MHV depende principalmente de la transferencia de calor entre el lecho de hidruro y el fluido de intercambio.
+
+Se compararon dos configuraciones:
+
+C1: Intercambiador externo coaxial.
+
+C2: Intercambiador en espiral con aletas inmerso en el lecho de hidruro.
+
+La configuración C2 redujo el tiempo para almacenar 4 g de H₂ de 3700 s a 1000 s.
+
+La absorción y desorción mejoran al aumentar la presión de suministro y al disminuir la temperatura del fluido refrigerante.
+
+## 4. Caracterizacion Basica
+
+**Configuracion geometrica** : Cilíndrica
+
+**Dimensiones** :
+  Diámetro interno: 80 mm
+  Diámetro externo: 110 mm
+  Altura interna: 110 mm
+  Espesor del fondo: 15 mm
+  Espesor de tapa: 10 mm
+  Espiral: tubo de Ø 6 mm exterior, Ø 5 mm interior, 11 vueltas, paso 7 mm, diámetro de hélice = 50 mm.
+  cero inoxidable 316-L, tubo helicoidal con aletas de cobre inmerso en el lecho de hidruro.
+
+**Condiciones de Operacion** : [Detallar las condiciones de operación]
+  Temperatura: 100 C
+  Presión: 10 bar
+  Flujo: 13 g/s
+  Otras condiciones relevantes:
+
+## 5. Tranferencia de Calor
+
+Método: Convección forzada mediante fluido térmico circulante dentro del tubo helicoidal con aletas.
+
+Materiales: Tubo de acero inoxidable y aletas de cobre para mejorar la conductividad.
+
+Eficiencia térmica: Mejorada significativamente; el diseño con aletas permite mantener una temperatura del lecho menor, favoreciendo la absorción.
+
+Problemas y soluciones: La limitada conductividad del polvo de hidruro se compensa mediante el uso de elementos metálicos (aletas, espiral interna).
+
+## 6. MH Hidruro Metalico
+
+  Tipo de hidruro 1 kg de polvo de LaNi₅.
+  Capacidad de almacenamiento: ~1.4 wt % de H₂.
+
+## 7. Conclusiones y Observaciones
+
+El diseño de intercambiador en espiral con aletas (C2) mejora notablemente la cinética de absorción y desorción.
+
+La transferencia de calor es el factor más crítico para el rendimiento del MHV.
+
+La optimización de parámetros operativos (flujo, temperatura y presión) puede reducir los tiempos de carga/descarga hasta en un 70 %.
+
+Los resultados confirman que el enfriamiento interno y las aletas de cobre son estrategias efectivas para mejorar la eficiencia térmica del sistema.
+
+## 8. Referencias Adicionales
+
+---
+
+### Notas Adicionales
+
+Este trabajo sirve como referencia clave para el diseño térmico de reactores de hidruros metálicos, especialmente en sistemas de almacenamiento de hidrógeno de alta eficiencia. Proporciona datos experimentales útiles para validación de modelos de transferencia de calor y masa en materiales como LaNi₅.

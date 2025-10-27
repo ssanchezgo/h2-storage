@@ -1,6 +1,6 @@
 # Notas de Lectura: Impact of using a heat transfer fluid pipe in a metal hydride-phase change material tank
 
-**Autores:** [S. Mellouli, F. Askri, E. Abhilash y S. Ben Nasrallah.]
+**Autor:** [S. Mellouli, F. Askri, E. Abhilash y S. Ben Nasrallah.]
 **Referencia BibTeX:** `[IJHE_2017]`
 **Fecha de Publicación:** [2017]
 
@@ -10,9 +10,13 @@
 
 Este estudio evalúa numéricamente la viabilidad de usar un tubo de fluido de transferencia de calor (HTF) en un tanque de hidruro metálico (MH) que integra un intercambiador de calor de material de cambio de fase (PCM). El objetivo es comparar tres configuraciones diferentes para mejorar la transferencia de calor y el rendimiento del almacenamiento de hidrógeno y calor. Se desarrolla un modelo matemático 3D y los resultados computacionales indican que el uso de un tubo HTF en un tanque MH-PCM es un compromiso entre reducir el tiempo de llenado de hidrógeno y comprometer la capacidad de almacenamiento de calor. Se utiliza la aleación de hidruro de magnesio y níquel
 
+## 2. Imagen de Referencia
+
+![Configuraciones analizadas](img/notas_2017_impact_of_using_heat_transfer_fliud_pipe_tanks/geometria_var.png)
+
 ---
 
-## 2. Puntos Clave y Datos
+## 3. Puntos Clave y Datos
 
 ### Aspectos Principales
 
@@ -30,7 +34,38 @@ Caso 3 (con tubo HTF cerrado): Se utilizan tubos en U que circulan a través del
 
 Resultados principales: El Caso 2 reduce el tiempo de llenado en un 94% en comparación con el Caso 1, pero disipa el calor como residuo. El Caso 3 reduce el tiempo de llenado en un 72% y almacena todo el calor de reacción en el PCM. El uso de un tubo HTF es un compromiso entre la velocidad de llenado y la capacidad de almacenamiento de calor
 
-### Tabla de Datos Clave
+## 4. Caracterizacion Basica
+
+**Configuracion geometrica** : Cilindrica
+
+**Dimensiones** :
+  Longitud: 164.3 mm
+  Diámetro: 180 mm
+  Volumen:
+  Radio interior material PCM: 40 mm
+  Radio de tubos: 6 mm
+
+**Condiciones de Operacion** :
+  Temperatura: 580 K
+  Presión:
+  Flujo: 7600 W/m2
+  Otras condiciones relevantes:
+
+## 5. Tranferencia de Calor
+
+Material de cambio de Fase
+
+## 6. MH Hidruro Metalico
+
+  Tipo de hidruro : MH-PCM
+
+## 7. Conclusiones y Observaciones
+
+## 8. Referencias Adicionales
+
+---
+
+### Notas Adicionales
 
 figura 1
 
