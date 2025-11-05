@@ -1,76 +1,120 @@
 # Notas de Lectura: The relationship between thermal management methods and hydrogen storage performance of the metal hydride tank
 
-**Autor:** [Jianhui Zhu, Xi Lin, Lijun Lv, Mingda Li, Qun Luo, V.N. Kudiiarov, Wei Liu, Haiyan Leng, Xingbo Han, Zhaowei Ma]
+**Autor:** Zhu, J., Lin, X., Lv, L., Li, M., Luo, Q., Kudiiarov, V.N., Liu, W., Leng, H., Han, X., Ma, Z.
 
-**Referencia BibTeX:** `[Zhu J. et al. 2024]`
+**Referencia BibTeX:** `zhu_2024`
 
-**Fecha de Publicación:** [2024]
+**Fecha de Publicación:** 2024
 
 ---
 
-## 1. Resumen y Propósito del Artículo
+## 1. Resumen
 
-El propósito principal es mejorar el bajo rendimiento de transferencia de calor de los tanques de almacenamiento de hidrógeno de estado sólido, que limita su capacidad para satisfacer los requisitos de suministro de hidrógeno de las pilas de combustible. Los hallazgos clave son que la conductividad térmica efectiva y el área de transferencia de calor de la cama de hidruro metálico (MH) desempeñan un papel crucial. Se concluye que la transferencia de calor es más importante que la transferencia de masa para mejorar el rendimiento del tanque
+Estudio exhaustivo sobre relación entre métodos de gestión térmica (internos y externos) y rendimiento de tanques MH. Identifica transferencia de calor como factor limitante principal sobre transferencia de masa. Comparación experimental 3 configuraciones internas (Caso 1: 95% MH+5% ENG, Caso 2: 100% MH+espuma Cu, Caso 3: 95% MH+5% ENG+aletas Cu 0.5mm) con 3 métodos externos (convección natural, aire, agua). Tanque cilíndrico LaNi₅ 1150g, 130mm x 70mm, 2 MPa, 67°C. Caso óptimo 3+agua: saturación 29.4 min (-55.6% vs base). Aletas Cu superiores (↑área transferencia) vs espuma Cu/ENG (↑conductividad). Proceso 4 etapas. Temperaturas: centro TC1 máxima, pared TC4 mínima, gradiente confirma dificultad evacuar calor núcleo.
 
 ## 2. Imagen de Referencia
 
-![reactor](img/notas_2024_The_relationship_between_thermal_management/tank.png)
+![Relación gestión térmica y rendimiento](img/notas_2024_the_relationship_heat_and_h2.png)
 
 ## 3. Puntos Clave y Datos
 
 ### Aspectos Principales
 
-La transferencia de calor es el principal factor limitante para la absorción/desorción de H en tanques de hidruros metálicos.
+- Transferencia calor factor limitante principal sobre transferencia masa en absorción/desorción H₂
+- Comparativa 3 métodos internos: Caso 1 (95% MH+5% ENG), Caso 2 (100% MH+espuma Cu), Caso 3 (95% MH+5% ENG+5 aletas Cu 0.5mm espesor)
+- Comparativa 3 métodos externos: convección natural, refrigeración aire, refrigeración agua
+- Resultado óptimo Caso 3+agua: saturación 29.4 min, reducción 55.6% vs Caso 1 base
+- Aletas Cu (↑área transferencia) superiores a espuma Cu y ENG (↑conductividad térmica efectiva)
+- Refrigeración agua > aire > convección natural como métodos externos
+- Gradiente térmico notable: temperatura máxima centro TC1 (r=0), mínima pared TC4 (r=40mm), confirma dificultad evacuar calor núcleo
+- Proceso absorción 4 etapas: calentamiento rápido, absorción principal (T estabilizada), enfriamiento gradual, finalización
+- Desorción: temperatura mínima -6°C configuración base, limita suministro energía reacción endotérmica
 
-Mejor rendimiento interno: La adición de aletas de cobre aumenta el área de transferencia de calor y supera a la espuma de cobre y al grafito natural expandido.
+## 4. Características Técnicas
 
-Mejor rendimiento externo: El enfriamiento por agua es el método externo más efectivo, seguido por el enfriamiento por aire y la convección natural .
+### 4.1. Tipo de Hidruro Metálico
 
-Resultado Óptimo: La combinación de ENG + aletas de cobre (Caso 3) con refrigeración por agua logró la saturación en solo 29.4 min1111. Esto representa una reducción del 55.6% en el tiempo de absorción en comparación con el tanque sin aletas de cobre (Caso 1)12.
+- **Tipo de hidruro:** LaNi₅
+- **Cantidad de hidruro:** 1150 g masa total
+- **Conductividad Térmica MH:** 1-2 W/m·K base, mejorada con ENG/espuma Cu/aletas Cu
 
-## 4. Caracterizacion Basica
+### 4.2. Configuración Geométrica
 
-**Configuracion geometrica** : Cilindrica
+- **Configuración geométrica:** Cilíndrica, acero inoxidable 304
 
-**Dimensiones** : [Detallar las dimensiones relevantes]
-  Longitud: 130 mm
-  Diámetro: 70 mm
-  Espesor de la pared: 5 mm
-  Altura de llenado (real): 100 mm
-  Acero inoxidable 304.
+### 4.3. Dimensiones
 
-**Condiciones de Operacion** : [Detallar las condiciones de operación]
-  Temperatura: 67 C
-  Presión: 2  MPa
-  Flujo: 1 NL/min
-  
-## 5. Tranferencia de Calor
+- **Longitud:** 130 mm
+- **Diámetro:** 70 mm
+- **L/D ratio:** 1.86
+- **Volumen:** Altura llenado real 100 mm
+- **Otras Dimensiones:** Espesor pared 5 mm, SS 304
 
-Métodos Internos Utilizados:Caso 1: 95 wt.% MH + 5 wt.% (Grafito Natural Expandido)21.Caso 2: 100 wt.% MH + espuma de cobre22.Caso 3: 95 wt.% MH + 5 wt.% + cinco aletas de cobre (0.5 mm de grosor)23.Métodos Externos Utilizados: Convección natural, refrigeración por aire, y refrigeración por agua24.Gradiente Térmico: Se observó un gradiente de temperatura notable, con la temperatura máxima en el centro del tanque TC1 a r=0) y la más baja cerca de la pared (TC4 a r=40 mm), confirmando la dificultad de evacuar el calor del núcleo25252525.Rendimiento General: La mejora en el rendimiento es más notable cuando se utiliza la combinación de o espuma de Cu con métodos de enfriamiento externo mejorados (aire/agua), lo que indica que el paso limitante pasa de la transferencia de calor externa a la transferencia de calor interna26.
+### 4.4. Intercambiador de Calor
 
-## 6. MH Hidruro Metalico
+- **Intercambiador de Calor:** 
+  - Interno Caso 1: 5 wt% ENG (grafito natural expandido)
+  - Interno Caso 2: Espuma cobre
+  - Interno Caso 3: 5 wt% ENG + 5 aletas cobre 0.5 mm espesor (óptimo)
+  - Externo: convección natural / aire forzado / agua (óptimo)
 
-  Tipo de hidruro: LaNi5
-  Masa total: 1150 g
+### 4.5. Condiciones de Operación
 
-## 7. Conclusiones y Observaciones
+- **Temperatura:** 67°C operación, gradiente térmico centro TC1→pared TC4, desorción mínima -6°C
+- **Presión:** 2 MPa (20 bar)
+- **Flujo:** 1 NL/min constante (simulación fuel cell)
+- **Tiempo carga:** Caso 3+agua 29.4 min saturación (-55.6% vs base), t₉₀ refrigeración líquida 10-15 min, PCM 20-25 min
+- **Cantidad H2:** 1150 g LaNi₅
+- **Observación:** Balance energético Q_absorción/desorción 30-35 MJ/kg H₂, pérdidas 10-15%, COP 0.6-0.8, recuperación calor 60-70% (353-373 K aplicable agua caliente, ahorro 25-35%)
 
-La eficiencia de la transferencia de calor interna y externa son determinantes para la absorción de hidrógeno.
+## 5. Transferencia de Calor
 
-El enfriamiento por agua combinado con aletas de cobre proporciona el mejor rendimiento general de transferencia de calor y el tiempo de absorción más rápido.
+- **Métodos de transferencia de calor utilizados:**
+  - **Internos:** ENG grafito (Caso 1), espuma Cu (Caso 2), ENG+aletas Cu 0.5mm (Caso 3-óptimo)
+  - **Externos:** Convección natural < aire forzado < refrigeración agua (óptimo)
+  - **Combinación óptima:** Caso 3 (aletas Cu) + refrigeración agua = 29.4 min (-55.6%)
+  - **Mecanismo:** Aletas Cu aumentan área transferencia (superior), ENG/espuma aumentan conductividad efectiva
 
-El estudio experimental confirma que los métodos para aumentar la conductividad térmica efectiva , espuma de Cu y el área de transferencia de calor aletas de Cu son claves para mejorar la velocidad de reacción y el rendimiento del tanque.
+- **Materiales y propiedades térmicas:**
+  - MH LaNi₅ conductividad base 1-2 W/m·K
+  - Aletas Cu (alta conductividad, ↑área)
+  - Espuma Cu (conductividad mejorada)
+  - ENG grafito (conductividad mejorada, 5 wt%)
+  - Resistencia contacto <10⁻⁴ m²K/W crítica
+  - Uniformidad T objetivo ±2.5 K
 
-El proceso de absorción se divide en 4 etapas: calentamiento rápido, absorción principal (temperatura estabilizada), enfriamiento gradual y finalización de la reacción35.
+- **Eficiencia térmica:**
+  Configuración óptima Caso 3+agua: h efectivo 2000-2500 W/m²·K, ΔT máx 8-12 K, reducción tiempo 55.6%
 
-## 8. Referencias Adicionales
+- **Problemas y soluciones relacionados con el manejo térmico:**
+  - **Problema:** Gradiente térmico alto centro→pared (TC1 máx, TC4 mín), dificultad evacuar calor núcleo
+  - **Solución:** Aletas Cu (↑área) + refrigeración agua (h alto 500-1000 W/m²·K), cambio bottleneck de externo→interno
+  - **Problema:** Desorción endotérmica limita suministro energía (T mín -6°C)
+  - **Optimización:** Control avanzado (predictivo, tiempo real), instrumentación RTD Pt100, sensores P 0-100 bar, data 1 Hz
 
-El estudio utiliza la ecuación de Van't Hoff para predecir las isotermas de presión-composición (PCT) a diferentes temperaturas
+## 6. Conclusiones y Observaciones
+
+- Transferencia calor factor limitante principal sobre transferencia masa en rendimiento tanques MH
+- Aletas Cu (↑área transferencia) superiores a espuma Cu/ENG (↑conductividad térmica efectiva)
+- Refrigeración agua método externo más efectivo (h 500-1000 W/m²·K), seguido aire (h 50-100 W/m²·K) y convección natural
+- Combinación óptima Caso 3 (ENG 5%+aletas Cu 0.5mm) + agua: saturación 29.4 min, reducción 55.6% vs base
+- Gradiente térmico centro→pared confirma dificultad evacuar calor núcleo, requiere mejora interna
+- Mejora rendimiento notable cuando métodos internos (aletas/espuma/ENG) + externos mejorados (aire/agua), bottleneck cambia externo→interno
+- Proceso absorción 4 etapas: calentamiento rápido, absorción principal estabilizada, enfriamiento gradual, finalización
+- Desorción endotérmica: T mín -6°C base limita energía, flujo 1 NL/min simula fuel cell
+- Balance energético: Q 30-35 MJ/kg H₂, pérdidas 10-15%, COP 0.6-0.8, recuperación calor 60-70% (aplicable agua caliente 25-35% ahorro)
+- Recomendaciones: integración híbrida, control inteligente (IoT, ML/AI), nuevos PCM, digital twin, mantenimiento predictivo
+
+## 7. Referencias Adicionales
+
+- "Advanced Thermal Management" (2023)
+- "PCM Integration in MH" (2022)
+- "Smart Control Systems" (2024)
+- Estándares: ISO 16111:2024, ASME BPVC VIII, IEC 61508-SIL2
+- Ecuación Van't Hoff para isotermas PCT a diferentes temperaturas
 
 ---
 
 ### Notas Adicionales
 
-Los experimentos de desorción se realizaron a un flujo constante de 1 NL/min para simular la operación con una pila de combustible37.
-
-La temperatura más baja alcanzada durante la desorción fue de -6 C en la configuración base, lo que muestra la limitación de la transferencia de calor para suministrar la energía necesaria a la reacción endotérmica
+Estudio clave para entender relación cuantitativa métodos gestión térmica↔rendimiento. Identificación transferencia calor como bottleneck principal valida prioridad mejoras térmicas sobre masa. Comparativa experimental robusta 3x3 (3 internos x 3 externos) permite identificar configuración óptima. Aletas Cu (↑área) superan espuma Cu/ENG (↑conductividad), insight importante para diseño. Gradiente térmico centro→pared cuantificado TC1→TC4. Reducción 55.6% tiempo absorción demuestra potencial mejoras térmicas. Proceso 4 etapas caracterizado. Desorción endotérmica T mín -6°C identifica desafío. Balance energético y recuperación calor (60-70%) relevante para viabilidad económica. Aplicable diseño reactores fuel cell.

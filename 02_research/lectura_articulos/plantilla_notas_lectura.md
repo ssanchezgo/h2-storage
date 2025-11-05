@@ -1,16 +1,14 @@
-# Notas de Lectura: [TÍTULO DEL ARTÍCULO]
+# Notas de Lectura: TÍTULO DEL ARTÍCULO
 
-**Autor:** [ ]
+**Autor:** **Referencia BibTeX:** `REFERENCIA-BIBTEX`
 
-**Referencia BibTeX:** `[REFERENCIA-BIBTEX]`
-
-**Fecha de Publicación:** [AÑO]
+**Fecha de Publicación:** AÑO
 
 ---
 
-## 1. Resumen y Propósito del Artículo
+## 1. Resumen
 
-[Escribir aquí el resumen y propósito principal del artículo. Este es un campo importante que será extraído automáticamente por el sistema. Debe contener la información más relevante sobre los objetivos, metodología y hallazgos principales del artículo.]
+Escribir aquí el resumen y propósito principal del artículo. Este es un campo importante que será extraído automáticamente por el sistema. Debe contener la información más relevante sobre los objetivos, metodología y hallazgos principales del artículo.
 
 ## 2. Imagen de Referencia
 
@@ -19,54 +17,63 @@
 ## 3. Puntos Clave y Datos
 
 ### Aspectos Principales
-- [Punto clave 1]
-- [Punto clave 2]
-- [Punto clave 3]
 
-## 4. Caracterizacion Basica
+Punto clave 1
+Punto clave 2
+Punto clave 3
 
-**Configuracion geometrica** : [Describir la configuración geométrica del reactor o sistema]
+## 4. Características Técnicas del Sistema
 
-**Dimensiones** : [Detallar las dimensiones relevantes]
-  Longitud:
-  Diámetro:
-  Volumen:
-  Otras medidas relevantes:
+### 4.1 Hidruro Metálico
 
-**Condiciones de Operacion** : [Detallar las condiciones de operación]
-  Temperatura:
-  Presión:
-  Flujo:
-  Otras condiciones relevantes:
+**Tipo de hidruro:** [Especificar: LaNi5, TiFe, AB2, AB5, etc.]
+**Cantidad de hidruro:** [kg o g]
+**Conductividad Térmica MH:** [W/m·K]
 
-## 5. Tranferencia de Calor
+### 4.2 Configuración Geométrica
 
-[Describir los aspectos relacionados con la transferencia de calor]
-  Métodos de transferencia de calor utilizados
-  Materiales y propiedades térmicas
-  Eficiencia térmica
-  Problemas y soluciones relacionados con el manejo térmico
+**Descripción del sistema:** [Descripción detallada del sistema completo]
+**Configuración geométrica:** [Cilíndrica, rectangular, helicoidal, etc.]
+**Longitud (mm):** [valor en mm]
+**Diámetro (mm):** [valor en mm]
+**L/D ratio:** [relación longitud/diámetro]
+**Volumen (L):** [valor en litros]
 
-## 6. MH Hidruro Metalico
+### 4.3 Transferencia de Calor
 
-[Información específica sobre el hidruro metálico]
-  Tipo de hidruro
-  Propiedades
-  Comportamiento
-  Características especiales
+**Intercambiador de Calor:** [Tipo: aletas, serpentín, placas, etc.]
+**Coeficiente de transferencia de calor:** [W/m²·K]
 
-## 7. Conclusiones y Observaciones
+### 4.4 Condiciones de Operación
 
-[Conclusiones principales y observaciones importantes]
-  Conclusión 1
-  Conclusión 2
-  Conclusión 3
+**Temperatura (°C):** [valor en °C]
+**Presión de trabajo:** [bar]
+**Flujo (NL/min):** [valor en NL/min]
 
-## 8. Referencias Adicionales
+### 4.5 Rendimiento del Sistema
 
-[Referencias relacionadas o citadas que sean relevantes para futura investigación]
+**Tiempo carga:** [minutos o horas]
+**Cantidad H2:** [kg o g de hidrógeno almacenado]
+
+## 5. Transferencia de Calor
+
+**Métodos de transferencia de calor utilizados:**
+**Materiales y propiedades térmicas:**
+**Eficiencia térmica:**
+**Problemas y soluciones relacionados con el manejo térmico:**  
+
+## 6. Conclusiones y Observaciones
+
+**Resultados principales:**
+
+**Recomendaciones:**
+
+## 7. Referencias Adicionales
+
+Referencias relacionadas o citadas que sean relevantes para futura investigación
 
 ---
 
 ### Notas Adicionales
-[Cualquier nota adicional o comentario importante]
+
+Cualquier nota adicional o comentario importante

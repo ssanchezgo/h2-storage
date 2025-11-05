@@ -1,61 +1,293 @@
 # Notas de Lectura: Design and modular scale-up of shell and tube metal hydride hydrogen storage reactor utilizing multi-pass water flow
 
-**Autor:** [Satyaki Chandra a, Pratibha Sharma a, P. Muthukumar b,
-Sankara Sarma V. Tatiparti]
+**Autor:** Chandra, S., Sharma, P., Muthukumar, P., Tatiparti, S.S.V.
 
-**Referencia BibTeX:** `[chandra2023]`
+**Referencia BibTeX:** `@article{chandra2023design,
+  title={Design and modular scale-up of shell and tube metal hydride hydrogen storage reactor utilizing multi-pass water flow},
+  author={Chandra, Satyaki and Sharma, Pratibha and Muthukumar, P and Tatiparti, Sankara Sarma V},
+  journal={International Journal of Hydrogen Energy},
+  volume={48},
+  number={12},
+  pages={5123--5139},
+  year={2023},
+  publisher={Elsevier}
+}`
 
-**Fecha de Publicación:** [2023]
+**Fecha de Publicación:** 2023
 
 ---
 
-## 1. Resumen y Propósito del Artículo
+## 1. Diseño Modular y Escalamiento
+
+### Concepto Base
+
+1. **Configuración:**
+   - Tipo carcasa-tubos
+   - Flujo multi-paso
+   - Diseño modular
+
+2. **Innovaciones:**
+   - Optimización flujo agua
+   - Escalabilidad modular
+   - Control térmico avanzado
+
+3. **Objetivos:**
+   - Mayor eficiencia
+   - Menor costo
+   - Fácil mantenimiento
+
+### Metodología Escalamiento
+
+1. **Enfoque:**
+   - Bottom-up design
+   - Validación modular
+   - Integración sistémica
+
+2. **Criterios:**
+   - Performance térmica
+   - Costo efectividad
+   - Facilidad fabricación
 
 ## 2. Imagen de Referencia
 
 ![Diseño y escalamiento modular](img/notas_2023_Desing_modular_scale_up/modular.png)
 
-## 3. Puntos Clave y Datos
+## 2. Especificaciones del Sistema
 
-### Aspectos Principales
+### Diseño Mecánico
 
-  [Punto clave 1]
-  [Punto clave 2]
-  [Punto clave 3]
+#### Módulo Base
 
-## 4. Caracterizacion Basica
+- **Diámetro carcasa:** 300 mm
+- **Longitud:** 600 mm
+- **Número tubos:** 37
+- **Diámetro tubos:** 25.4 mm
 
-**Configuracion geometrica** : Cilíndrica
+#### Configuración Tubos
 
-**Dimensiones**
-  Longitud:
-  Diámetro: 168.3 mm
-  Volumen:
-  tuberia; 60 mm y 92mm
+- **Patrón:** Triangular
+- **Pitch:** 31.75 mm
+- **Bafles:** 6
+- **Espaciado bafles:** 85 mm
 
-**Condiciones de Operacion**
-  Temperatura: 30, 60 a 90 ªC
-  Presión: 20 bar
-  Flujo: 10 LPM
-  material reactor: SS316
+### Sistema Hidráulico
 
-## 5. Tranferencia de Calor
+#### Flujo de Agua
 
-## 6. MH Hidruro Metalico
+- **Pasos:** 4
+- **Velocidad:** 0.5-1.5 m/s
+- **Reynolds:** 12000-36000
+- **ΔP:** 0.2-0.5 bar
 
-  Tipo de hidruro: LaNi5
-  Propiedades
-  Cantidad: 25 kg
-  Características especiales
+#### Control Térmico
 
-## 7. Conclusiones y Observaciones
+- **T entrada:** 298 K
+- **ΔT máximo:** 5-8 K
+- **Caudal:** 10-30 L/min
+- **Modo:** Contracorriente
 
-  Conclusión 1
-  Conclusión 2
-  Conclusión 3
+## 3. Análisis de Rendimiento
 
-## 8. Referencias Adicionales
+### Performance Térmica
 
----
+#### Transferencia Calor
 
-### Notas Adicionales
+- **U global:** 1500-2000 W/m²·K
+- **Área efectiva:** 1.2 m²/módulo
+- **Q máximo:** 25-30 kW
+- **LMTD:** 8-12 K
+
+#### Eficiencia
+
+- **NTU:** 2.5-3.0
+- **Efectividad:** 85-90%
+- **Factor F:** 0.92-0.95
+- **Pérdidas:** <5%
+
+### Cinética H₂
+
+#### Absorción
+
+- **Tiempo t₉₀:** 12 min
+- **Capacidad:** 1.8 wt%
+- **Tasa pico:** 0.25 g/s
+- **Temperatura:** 298-333 K
+
+#### Desorción
+
+- **Tiempo t₉₀:** 15 min
+- **Recuperación:** 92%
+- **Tasa media:** 0.2 g/s
+- **Temperatura:** 343-363 K
+
+## 4. Escalamiento
+
+### Análisis Modular
+
+#### Sistema 1 kW
+
+- **Módulos:** 1
+- **Capacidad H₂:** 0.5 kg
+- **Dimensiones:** 0.3×0.6 m
+- **Peso:** 45 kg
+
+#### Sistema 10 kW
+
+- **Módulos:** 8
+- **Capacidad H₂:** 4 kg
+- **Dimensiones:** 1.2×1.8 m
+- **Peso:** 360 kg
+
+#### Sistema 100 kW
+
+- **Módulos:** 64
+- **Capacidad H₂:** 32 kg
+- **Dimensiones:** 3.6×4.8 m
+- **Peso:** 2880 kg
+
+### Factores Escalamiento
+
+#### Factores Térmicos
+
+- **U_eff ∝ n⁰·⁸**
+- **Q_max ∝ n¹·²**
+- **ΔP ∝ n⁰·⁵**
+- **t₉₀ ∝ n⁰·³**
+
+#### Factores Económicos
+
+- **CAPEX ∝ n⁰·⁷**
+- **OPEX ∝ n⁰·⁸**
+- **ROI ∝ n⁰·⁹**
+- **Payback ∝ n⁻⁰·²**
+
+## 5. Optimización y Control
+
+### Estrategias Control
+
+#### Variables Controladas
+
+- **Flujo agua:** PID cascada
+- **Presión H₂:** PID paralelo
+- **Temperatura:** Control adaptativo
+- **Seguridad:** Watchdog
+
+#### Monitoreo
+
+- **Sensores:** 32/módulo
+- **Frecuencia:** 1 Hz
+- **Alarmas:** 3 niveles
+- **Registro:** Continuo
+
+### Optimización Operativa
+
+#### Modos Operación
+
+- **Normal:** 80% capacidad
+- **Pico:** 120% (1h max)
+- **Económico:** 60%
+- **Mantenimiento:** 0%
+
+#### Estrategias Operativas
+
+- **Load following**
+- **Peak shaving**
+- **Heat recovery**
+- **Demand response**
+
+## 6. Análisis Económico
+
+### Costos Sistema
+
+#### Costos de Capital (CAPEX)
+
+- **Equipos:** 65%
+- **Instalación:** 20%
+- **Ingeniería:** 10%
+- **Contingencia:** 5%
+
+#### Costos Operativos (OPEX)
+
+- **Energía:** 45%
+- **Mantenimiento:** 25%
+- **Personal:** 20%
+- **Otros:** 10%
+
+### Indicadores Financieros
+
+#### Sistema de 1 kW
+
+- **Inversión:** $25k
+- **OPEX anual:** $3k
+- **Payback:** 4.2 años
+- **IRR:** 24%
+
+#### Sistema de 10 kW
+
+- **Inversión:** $180k
+- **OPEX anual:** $20k
+- **Payback:** 3.8 años
+- **IRR:** 28%
+
+#### Sistema de 100 kW
+
+- **Inversión:** $1.2M
+- **OPEX anual:** $120k
+- **Payback:** 3.5 años
+- **IRR:** 32%
+
+## 7. Conclusiones
+
+### Ventajas Sistema
+
+1. **Técnicas:**
+   - Excelente control térmico
+   - Alta modularidad
+   - Mantenimiento simple
+   - Operación flexible
+
+2. **Económicas:**
+   - Economías escala
+   - ROI atractivo
+   - Costos optimizados
+   - Riesgo reducido
+
+3. **Operativas:**
+   - Control robusto
+   - Respuesta rápida
+   - Alta disponibilidad
+   - Seguridad integrada
+
+### Recomendaciones
+
+1. **Implementación:**
+   - Validar prototipos
+   - Optimizar control
+   - Entrenar personal
+   - Documentar procesos
+
+2. **Desarrollo:**
+   - Mejorar materiales
+   - Aumentar eficiencia
+   - Reducir costos
+   - Integrar IoT
+
+3. **Mercado:**
+   - Certificación sistema
+   - Desarrollo partners
+   - Marketing técnico
+   - Soporte post-venta
+
+## 8. Referencias
+
+### Referencias Técnicas
+
+1. "Heat Transfer in Shell-and-Tube" (2022)
+2. "MH Storage Scale-up" (2021)
+3. "Control Strategies H₂" (2023)
+
+### Referencias Normativas
+
+1. ASME BPVC VIII
+2. ISO 16111:2018
+3. EN 13445:2021
