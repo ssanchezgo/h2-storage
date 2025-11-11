@@ -63,23 +63,27 @@ Este estudio presenta un análisis experimental y numérico detallado de un reac
 ## 5. Transferencia de Calor
 
 **Métodos de transferencia de calor utilizados:**
+
 - Conducción en matriz compuesta MgH₂/grafito
 - Convección en tubos de intercambio vertical
 - Conducción radial mejorada por grafito expandido
 
 **Materiales y propiedades térmicas:**
+
 - Matriz MgH₂/grafito: k = 4-8 W/m·K
 - Tubos: Acero inoxidable (k = 16 W/m·K)
 - Grafito expandido: k = 150-300 W/m·K
 - Densidad compactada: 1200-1400 kg/m³
 
 **Eficiencia térmica:**
+
 - Conductividad efectiva mejorada 5-10x respecto a MgH₂ puro
 - Resistencia térmica: 0.2-0.3 K/W
 - ΔT máximo: 20-30°C
 - Distribución térmica uniforme
 
 **Problemas y soluciones relacionados con el manejo térmico:**
+
 - Problema: Baja conductividad térmica del MgH₂ puro
 - Solución: Compactación con 5-10% grafito expandido
 - Problema: Altas temperaturas de operación (300-400°C)
@@ -90,6 +94,7 @@ Este estudio presenta un análisis experimental y numérico detallado de un reac
 ## 6. Conclusiones y Observaciones
 
 **Resultados principales:**
+
 - Sistema de transferencia de calor con matriz compuesta efectiva
 - Conductividad mejorada significativamente (5-10x)
 - Distribución térmica uniforme en el reactor
@@ -99,6 +104,7 @@ Este estudio presenta un análisis experimental y numérico detallado de un reac
 - Buena correlación térmica y simulación precisa de cinética
 
 **Recomendaciones:**
+
 - Optimizar compactación para maximizar conductividad
 - Mejorar distribución de tubos para uniformidad térmica
 - Considerar efectos de escala en diseño de tanques mayores
