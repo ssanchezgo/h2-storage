@@ -12,7 +12,7 @@
 
 ---
 
-## **2. Resumen de la Invención**
+## **2. Resumen**
 
 El sistema de GRZ es una solución comercial para el almacenamiento de hidrógeno a baja presión, diseñada para ser segura, compacta y de larga vida útil. La tecnología se centra en el uso de hidruros metálicos de tipo AB₂ (aleaciones base Ti-Zr-Mn) y un diseño de tanque que prioriza la **gestión térmica pasiva**, eliminando la necesidad de sistemas de enfriamiento/calentamiento activos complejos.
 

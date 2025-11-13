@@ -46,8 +46,8 @@ La revisión bibliográfica realizada en este proyecto, documentada en la carpet
 
 Para abordar el desafío fundamental de la baja conductividad térmica en los lechos de hidruros metálicos, la literatura técnica converge en dos enfoques principales que, a su vez, pueden combinarse para obtener soluciones híbridas de alto rendimiento. Estos enfoques se distinguen por dónde actúa la mejora: directamente sobre las propiedades del material o sobre la arquitectura del reactor.
 
-1.  **Modificación del Lecho de Hidruro (Enfoque Pasivo):** Consiste en mejorar las propiedades térmicas intrínsecas del lecho mediante la adición de materiales de alta conductividad. Actúa a escala microscópica, mejorando la transferencia de calor entre las partículas de hidruro.
-2.  **Gestión Térmica Activa (Enfoque Activo):** Se centra en el diseño de la arquitectura del reactor para crear caminos eficientes de extracción o suministro de calor mediante un fluido externo (HTF). Actúa a escala macroscópica, transportando el calor desde el lecho hacia el exterior del sistema.
+1. **Modificación del Lecho de Hidruro (Enfoque Pasivo):** Consiste en mejorar las propiedades térmicas intrínsecas del lecho mediante la adición de materiales de alta conductividad. Actúa a escala microscópica, mejorando la transferencia de calor entre las partículas de hidruro.
+2. **Gestión Térmica Activa (Enfoque Activo):** Se centra en el diseño de la arquitectura del reactor para crear caminos eficientes de extracción o suministro de calor mediante un fluido externo (HTF). Actúa a escala macroscópica, transportando el calor desde el lecho hacia el exterior del sistema.
 
 A continuación, se analizan en detalle las tecnologías más representativas de cada enfoque.
 
@@ -60,12 +60,12 @@ Estas técnicas buscan mejorar la conductividad térmica efectiva del lecho de h
 El grafito expandido es el aditivo más estudiado y costo-efectivo. Al mezclarse y compactarse con el polvo de hidruro, sus partículas laminares forman una red percolante que actúa como una "autopista" para la conducción de calor a través del lecho.
 
 - **Rendimiento:** Adiciones del 5-10% en peso pueden incrementar la conductividad térmica del lecho de **3 a 10 veces** (de ~1 W/m·K a 3-10 W/m·K). Estudios con LaNi₅ reportan mejoras de conductividad desde 0.5 W/m·K (hidruro puro) hasta 5.5 W/m·K con 10% ENG (Kumar et al., 2023). Esto se traduce en reducciones del tiempo de absorción del **40-55%** a presiones de 20 bar.
-- **Ventajas:** 
+- **Ventajas:**
   - **Bajo costo relativo:** El ENG (~$5-15/kg) es significativamente más económico que el hidruro (~$50-200/kg), haciendo la mejora económicamente viable.
   - **Alta efectividad térmica:** Logra mejoras sustanciales con una mínima adición másica.
   - **Compatibilidad química:** Probada en más de 1000 ciclos sin degradación significativa del hidruro.
   - **Fácil integración:** No requiere cambios drásticos en los procesos de fabricación existentes.
-- **Desventajas:** 
+- **Desventajas:**
   - **Penalización gravimétrica y volumétrica:** Reduce la densidad de almacenamiento de hidrógeno en un 0.3-0.5% (gravimétrica) y 8-12% (volumétrica) por cada 10% de ENG añadido.
   - **Requiere compactación uniforme:** Una mezcla no homogénea puede crear "puntos calientes" que limitan el rendimiento global.
 - **Referencia Clave:** *Revisión de técnicas de gestión térmica (Kumar et al., 2023)*.
@@ -79,7 +79,7 @@ Esta técnica utiliza una matriz porosa y tridimensional de cobre o aluminio com
   - **Excelente conductividad térmica efectiva:** (keff = 15-40 W/m·K para porosidad 90-95%).
   - **Soporte estructural:** Mitiga la pulverización del hidruro durante el ciclado, extendiendo la vida útil de 200 a >1000 ciclos.
   - **Mejora de la permeabilidad:** La estructura porosa (permeabilidad 10⁻¹¹ - 10⁻¹⁰ m²) facilita la difusión del gas H₂ hacia el núcleo del reactor.
-- **Desventajas:** 
+- **Desventajas:**
   - **Alto costo y peso:** Las espumas metálicas (Cu: ~$80-150/kg; Al: ~$40-80/kg) añaden una penalización gravimétrica significativa (15-25% de masa adicional).
   - **Complejidad de fabricación:** El proceso de llenado y compactación del hidruro dentro de la espuma es complejo y debe realizarse en atmósfera inerte.
   - **Mantenimiento:** Es prácticamente imposible remover o reemplazar el hidruro una vez integrado en la espuma.
@@ -114,11 +114,11 @@ Para superar las limitaciones de las chaquetas externas, esta técnica integra l
 
 - **Diseños:** Incluyen tubos rectos, serpentines helicoidales y configuraciones de haz de tubos (shell-and-tube), que es el estándar industrial.
 - **Rendimiento:** Los **serpentines helicoidales** han demostrado ser superiores en configuraciones cilíndricas, logrando reducciones del tiempo de carga del **35.3%** en comparación con tubos rectos (Zhu et al., 2024). En reactores tipo haz de tubos, Muthukumar et al. (2011) reportan el almacenamiento de 369 g de H₂ (1.39% en peso) en solo 1372 segundos a 20 bar, con una eficiencia energética del 58-64%.
-- **Ventajas:** 
+- **Ventajas:**
   - **Alta efectividad:** Se logran coeficientes U de 100-300 W/m²·K, dependiendo del espaciado de los tubos.
   - **Control preciso de la temperatura:** Permite mantener una uniformidad de ±5 K en todo el lecho con un caudal de HTF adecuado.
   - **Escalabilidad probada:** Es la tecnología preferida para escalar desde reactores de laboratorio (1 kg) hasta sistemas industriales (100+ kg).
-- **Desventajas:** 
+- **Desventajas:**
   - **Complejidad y costo:** Incrementa el costo de fabricación en un 60-120% en comparación con diseños simples.
   - **Reducción de volumen:** Reduce el volumen disponible para el hidruro en un 10-20%, afectando la densidad de almacenamiento.
   - **Balance of Plant (BOP):** Requiere sistemas de bombeo externos que consumen energía adicional.
@@ -133,11 +133,11 @@ Para mejorar aún más la transferencia de calor hacia los tubos internos o las 
 **Figura 2.** Configuración de un reactor cilíndrico con aletas radiales internas. Las aletas, fabricadas en un material de alta conductividad como el aluminio, actúan como puentes térmicos, conduciendo el calor desde las zonas más remotas del lecho de hidruro hacia el tubo central por el que circula el HTF. El número, espesor y altura de las aletas son parámetros críticos que se optimizan para maximizar la transferencia de calor sin comprometer excesivamente el volumen de hidruro.
 
 - **Rendimiento:** Pueden reducir el tiempo de carga hasta en un **80%** en comparación con un reactor sin mejoras (Singh et al., 2015). Existe un número óptimo de aletas (típicamente 40-60) y un espesor (0.25-2 mm). Reactores con 50 aletas de aluminio logran coeficientes globales U de 180-250 W/m²·K.
-- **Ventajas:** 
+- **Ventajas:**
   - **Mejora significativa del rendimiento:** Reducción del 55-80% en el tiempo de absorción.
   - **Complejidad moderada:** Su fabricación es factible con técnicas de soldadura estándar.
   - **Costo razonable:** Incremento del 30-50% respecto a un reactor de tubos sin aletas.
-- **Desventajas:** 
+- **Desventajas:**
   - **Aumento de peso:** Añaden un 8-15% de peso adicional con aletas de aluminio, o 15-25% con cobre.
   - **Reducción de espacio:** Reducen el volumen para el hidruro en un 5-12%.
   - **Requieren análisis estructural:** Deben diseñarse para resistir la fatiga térmica causada por los ciclos de expansión y contracción.
@@ -152,12 +152,12 @@ Esta es la configuración más agresiva en términos de gestión térmica. Consi
 **Figura 3.** Arquitectura de un reactor de placas paralelas (Plate-Frame). Se alternan capas delgadas de hidruro metálico (2-5 mm de espesor) con placas metálicas corrugadas por las que circula el HTF. Este diseño minimiza la distancia de conducción de calor a solo unos pocos milímetros, maximizando el área específica de transferencia de calor (hasta 450 m²/m³) y permitiendo las cinéticas de reacción más rápidas.
 
 - **Rendimiento:** Es la configuración de mayor rendimiento, ofreciendo la máxima área específica de transferencia de calor (300-450 m²/m³ vs. 50-150 m²/m³ en diseños tubulares). Reduce el tiempo de absorción en un **68%** en comparación con un reactor tubular equivalente (Wang et al., 2020). Permite tasas de carga de 1-3% de capacidad por minuto.
-- **Ventajas:** 
+- **Ventajas:**
   - **Cinética extremadamente rápida:** Tiempos de carga completa < 5 minutos son factibles.
   - **Excelente uniformidad de temperatura:** Gradientes <10 K en todo el lecho.
   - **Máxima densidad de potencia:** 1500-3000 W/kg de hidruro durante la absorción.
   - **Compacidad superior:** Ideal para aplicaciones con restricciones de volumen.
-- **Desventajas:** 
+- **Desventajas:**
   - **Alta complejidad y costo:** Su fabricación requiere tecnologías avanzadas (brazing, difusión) y su costo es 3-5 veces mayor que el de reactores tubulares.
   - **Sellado crítico:** El riesgo de fugas de HTF hacia el hidruro es alto y catastrófico.
   - **Escalabilidad limitada:** La fabricación es compleja para unidades de más de 10 kg de hidruro.
@@ -182,11 +182,11 @@ La tendencia actual en diseños de alto rendimiento es combinar múltiples técn
 Los PCM son materiales que absorben o liberan una gran cantidad de calor latente a una temperatura casi constante durante su cambio de fase (sólido-líquido). Actúan como un buffer térmico pasivo.
 
 - **Rendimiento:** Útiles para suavizar los picos de temperatura. Mellouli et al. (2017) reportan que un PCM (parafina) reduce la temperatura máxima en 25 K durante la absorción y aumenta la temperatura mínima en 18 K durante la desorción, resultando en un incremento del 12.1% en la capacidad de descarga. Su efectividad mejora drásticamente cuando se combina con aditivos conductores: un PCM con 15% de grafito logra una keff de 2.8 W/m·K (vs. 0.2 W/m·K para el PCM puro).
-- **Ventajas:** 
+- **Ventajas:**
   - **Almacenamiento de energía térmica pasivo:** No requiere consumo eléctrico.
   - **Estabilización de temperatura:** Ideal para aplicaciones con ciclos de carga/descarga muy variables.
   - **Mejora de la eficiencia energética global:** Puede alcanzar hasta un 87.5% en modo de cogeneración (CHP).
-- **Desventajas:** 
+- **Desventajas:**
   - **Baja conductividad del PCM puro:** (0.2-0.6 W/m·K), lo que limita las tasas de transferencia de calor.
   - **Incremento de peso y volumen:** Añaden un 20-40% de peso y un 25-50% de volumen al sistema.
   - **Histéresis y degradación:** Presentan una diferencia de 3-8 K entre las temperaturas de fusión y solidificación, y pueden degradarse tras 200-500 ciclos.
@@ -231,31 +231,31 @@ El análisis de la literatura y la sistematización de las tecnologías de gesti
 
 ### 4.1. Conclusiones Principales
 
-1.  **La Gestión Térmica es el Factor Determinante:** El rendimiento dinámico de un reactor de hidruros metálicos está gobernado por su capacidad para transferir calor, no por la cinética intrínseca del material. Un hidruro excelente en un reactor mal diseñado tendrá un rendimiento pobre.
+1. **La Gestión Térmica es el Factor Determinante:** El rendimiento dinámico de un reactor de hidruros metálicos está gobernado por su capacidad para transferir calor, no por la cinética intrínseca del material. Un hidruro excelente en un reactor mal diseñado tendrá un rendimiento pobre.
 
-2.  **No Existe una Solución Universal:** La estrategia óptima es un compromiso entre rendimiento, costo, peso y complejidad, dictado por los requisitos de la aplicación.
+2. **No Existe una Solución Universal:** La estrategia óptima es un compromiso entre rendimiento, costo, peso y complejidad, dictado por los requisitos de la aplicación.
 
-3.  **Los Sistemas Híbridos son el Estado del Arte:** La combinación de mejoras pasivas (ENG) y activas (aletas, tubos) ofrece el mayor rendimiento, logrando reducciones de tiempo de carga superiores al 85%.
+3. **Los Sistemas Híbridos son el Estado del Arte:** La combinación de mejoras pasivas (ENG) y activas (aletas, tubos) ofrece el mayor rendimiento, logrando reducciones de tiempo de carga superiores al 85%.
 
-4.  **La Escalabilidad es Clave:** Los reactores multitubulares (shell-and-tube) con aletas han demostrado ser la arquitectura más robusta y escalable para aplicaciones industriales, mientras que los reactores de placas, aunque superiores en rendimiento volumétrico, enfrentan desafíos de manufacturabilidad.
+4. **La Escalabilidad es Clave:** Los reactores multitubulares (shell-and-tube) con aletas han demostrado ser la arquitectura más robusta y escalable para aplicaciones industriales, mientras que los reactores de placas, aunque superiores en rendimiento volumétrico, enfrentan desafíos de manufacturabilidad.
 
 ### 4.2. Implicaciones y Recomendación para el Proyecto ANH951
 
 El objetivo del proyecto ANH951 es estudiar y caracterizar experimentalmente la gestión térmica. Por lo tanto, no es necesario construir un reactor de capacidad industrial. Un reactor a escala de laboratorio-piloto, bien instrumentado y modular, es la herramienta adecuada para validar modelos, comparar estrategias y generar datos de alta calidad.
 
-**Recomendación: Cantidad Mínima de Hidruro Metálico**
+#### Recomendación: Cantidad Mínima de Hidruro Metálico
 
 Basándose en el análisis de la literatura, se recomienda diseñar el reactor experimental con una **cantidad de hidruro metálico de 5 kg**.
 
 #### Justificación Técnica:
 
-1.  **Relevancia de los Fenómenos Térmicos:** Con menos de 1 kg, la masa térmica del propio reactor (paredes, bridas) domina el comportamiento térmico, enmascarando los gradientes dentro del lecho. Una masa de 5 kg es suficiente para que la baja conductividad del hidruro se manifieste claramente y la gestión térmica se convierta en el factor limitante, permitiendo un estudio representativo.
+1. **Relevancia de los Fenómenos Térmicos:** Con menos de 1 kg, la masa térmica del propio reactor (paredes, bridas) domina el comportamiento térmico, enmascarando los gradientes dentro del lecho. Una masa de 5 kg es suficiente para que la baja conductividad del hidruro se manifieste claramente y la gestión térmica se convierta en el factor limitante, permitiendo un estudio representativo.
 
-2.  **Comparabilidad con la Literatura:** La mayoría de los estudios de validación experimental se realizan en el rango de 1-5 kg (Muthukumar et al., 2011: 1.2 kg; Sharma et al., 2019: 4.8 kg; Dhaou et al., 2010: 3.5 kg). Usar 5 kg posicionará nuestros resultados en el contexto del estado del arte y permitirá una validación directa.
+2. **Comparabilidad con la Literatura:** La mayoría de los estudios de validación experimental se realizan en el rango de 1-5 kg (Muthukumar et al., 2011: 1.2 kg; Sharma et al., 2019: 4.8 kg; Dhaou et al., 2010: 3.5 kg). Usar 5 kg posicionará nuestros resultados en el contexto del estado del arte y permitirá una validación directa.
 
-3.  **Manejabilidad y Costo:** Esta cantidad representa un equilibrio óptimo entre representatividad experimental, seguridad en el manejo de laboratorio y costo de adquisición del hidruro y los sistemas auxiliares.
+3. **Manejabilidad y Costo:** Esta cantidad representa un equilibrio óptimo entre representatividad experimental, seguridad en el manejo de laboratorio y costo de adquisición del hidruro y los sistemas auxiliares.
 
-4.  **Versatilidad Experimental:** Un reactor de 5 kg permite operar con carga parcial (2-3 kg) para estudios preliminares y a capacidad total para caracterización completa, además de facilitar la comparación de diferentes configuraciones modulares.
+4. **Versatilidad Experimental:** Un reactor de 5 kg permite operar con carga parcial (2-3 kg) para estudios preliminares y a capacidad total para caracterización completa, además de facilitar la comparación de diferentes configuraciones modulares.
 
 ### 4.3. Recomendaciones de Diseño
 
@@ -265,17 +265,17 @@ Basándose en el análisis de la literatura, se recomienda diseñar el reactor e
 
 Para maximizar el valor científico del reactor experimental de 5 kg, se recomienda:
 
-1.  **Diseño modular:** Que permita intercambiar cartuchos con diferentes configuraciones (solo hidruro, hidruro+ENG, etc.).
-2.  **Instrumentación densa:** Una red de al menos 15-20 termopares para mapear completamente los campos de temperatura.
-3.  **Flexibilidad operativa:** Capacidad de operar con y sin circulación de HTF, con control preciso de temperatura y caudal.
-4.  **Geometría escalable:** Preferiblemente una configuración cilíndrica o shell-and-tube que facilite el escalado futuro.
+1. **Diseño modular:** Que permita intercambiar cartuchos con diferentes configuraciones (solo hidruro, hidruro+ENG, etc.).
+2. **Instrumentación densa:** Una red de al menos 15-20 termopares para mapear completamente los campos de temperatura.
+3. **Flexibilidad operativa:** Capacidad de operar con y sin circulación de HTF, con control preciso de temperatura y caudal.
+4. **Geometría escalable:** Preferiblemente una configuración cilíndrica o shell-and-tube que facilite el escalado futuro.
 
 ---
 
 ### 4.4. Próximos Pasos
 
-1.  **Fase de Diseño Detallado** (Mes 2-3): Especificación completa del reactor, selección de materiales, dimensionamiento.
-2.  **Simulación y Optimización** (Mes 3-4): Modelado CFD y térmico para optimizar la geometría.
-3.  **Adquisición de Materiales** (Mes 4-5): Compra de hidruro, componentes e instrumentación.
-4.  **Construcción y Comisionamiento** (Mes 5-7): Fabricación, ensamblaje y pruebas de seguridad.
-5.  **Experimentación** (Mes 8-12): Caracterización térmica, comparación de estrategias y validación de modelos.
+1. **Fase de Diseño Detallado** (Mes 2-3): Especificación completa del reactor, selección de materiales, dimensionamiento.
+2. **Simulación y Optimización** (Mes 3-4): Modelado CFD y térmico para optimizar la geometría.
+3. **Adquisición de Materiales** (Mes 4-5): Compra de hidruro, componentes e instrumentación.
+4. **Construcción y Comisionamiento** (Mes 5-7): Fabricación, ensamblaje y pruebas de seguridad.
+5. **Experimentación** (Mes 8-12): Caracterización térmica, comparación de estrategias y validación de modelos.

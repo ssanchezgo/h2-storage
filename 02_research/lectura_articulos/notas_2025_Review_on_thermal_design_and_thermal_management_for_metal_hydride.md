@@ -1,18 +1,18 @@
-# Notas de Lectura: TÍTULO DEL ARTÍCULO
+# Notas de Lectura: Review on thermal design and thermal management for metal hydride reactors: Current status and future development
 
-**Autor:** **Referencia BibTeX:** `REFERENCIA-BIBTEX`
+**Autor:** **Referencia BibTeX:** `Ju-wen-2025`
 
-**Fecha de Publicación:** AÑO
+**Fecha de Publicación:** 2025
 
 ---
 
 ## 1. Resumen
 
-Escribir aquí el resumen y propósito principal del artículo. Este es un campo importante que será extraído automáticamente por el sistema. Debe contener la información más relevante sobre los objetivos, metodología y hallazgos principales del artículo.
+esta revisión, se resumen los estudios de investigación actuales sobre reactores MH, con énfasis en el diseño térmico y la gestión térmica, y se analizan y comparan en detalle las ventajas y desventajas de las diferentes estructuras de transferencia de calor. Específicamente, se considera el efecto del diseño térmico de los reactores MH en la densidad de almacenamiento de hidrógeno gravimétrica y volumétrica, y se discuten extensamente los indicadores de rendimiento del almacenamiento de hidrógeno para reactores MH.
 
 ## 2. Imagen de Referencia
 
-![Imagen de referencia](ruta/a/la/imagen.png)
+![Linea del Tiempo](img/notas_2025_Review_on_thermal_design_and_thermal_management_for_metal_hydride/line.png)
 
 ## 3. Puntos Clave y Datos
 
