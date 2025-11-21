@@ -1,0 +1,1751 @@
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+Contents lists available at ScienceDirect
+
+Thermal Science and Engineering Progress
+journal homepage: www.sciencedirect.com/journal/thermal-science-and-engineering-progress
+
+Design optimization and numerical investigation of multi tube metal
+hydride reactor for large capacity hydrogen storage application
+Shubham Parashar a, P. Muthukumar b, *, Atul Kumar Soti a
+a
+b
+
+Department of Mechanical Engineering, Indian Institute of Technology Guwahati, Assam 781039, India
+Department of Mechanical Engineering, Indian Institute of Technology Tirupati, Andhra Pradesh 517619, India
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Large capacity hydrogen storage
+Novel reactor design
+Metal hydride
+LaNi5
+
+The efficient operation of a metal hydride based hydrogen storage system primarily depends on the configuration
+of the storage reactor. Both the total weight and effective performance are crucial for large capacity hydrogen
+storage systems. Therefore, the present work is centered around the development of a lightweight, compact, and
+efficient MH reactor capable of accommodating a large hydrogen inventory. In this perspective, a disc finned
+multi tube reactor (DFMTR) design is proposed, and its behaviour is numerically analyzed. Five reactor con­
+figurations are studied using 3D COMSOL modeling to visualize the impact of various fin structures during the
+absorption and desorption half cycles. The DFMTR model shows remarkably higher performance by saving 38%
+and 31% time to store and release hydrogen compared to the baseline reactor. Further, the design methodology is
+discussed, and the geometrical and operational parameters are optimized to achieve the excellent performance of
+the proposed reactor. Furthermore, the portable design approach for scaling up the capacity of the storage system
+is discussed and recommended. Moreover, the proposed reactor design is compared with recent studies of the
+literature, and found that this reactor saved 22.1%, 50%, 52.1%, and 8.7% of time to store 90% hydrogen
+compared with tapered finned multi tube reactor, tube bundle reactor, radial finned reactor, and pin fin reactor,
+respectively. The authors believe that the proposed large capacity reactor has the potential to deliver outstanding
+performance, and this research will be instrumental in the construction of compact, effective metal hydride
+reactors with significant hydrogen storage capacities.
+
+Introduction
+It is imperative to expand the utilization of renewable resources on a
+larger scale by considering future energy requirements and the
+increasing carbon emissions in the world [1]. To accomplish the ob­
+jectives of Paris Agreement, world emissions must be reduced by 30% by
+2030, as reported by the Bloomberg Energy Outlook 2021 [2]. In this
+regard, finding an energy carrier that solves the intermittent issue of
+renewables and satisfies future energy needs without any negative ef­
+fects on the environment is crucial [3]. Hydrogen is gaining popularity
+as a source in wide applications because it is a cleaner, abundant, flex­
+ible, and efficient energy carrier. The hydrogen energy economy in­
+cludes hydrogen generation, storage, transportation, and its end use.
+Further, hydrogen offers an appealing choice since, whether it’s burned
+for heat generation or combined with air in fuel cells to generate elec­
+tricity, the only resulting by product is water. Nowadays, hydrogen can
+be generated using commercial electrolyzers, which can provide
+
+hydrogen up to a pressure of 30 bar [4]. However, the development of
+safer, more efficient, and more affordable hydrogen storage technology
+is crucial. The traditional methods of storing green hydrogen, such as
+cryogenic liquid and compressed gas in high pressure vessels, consume
+up to 30% of the stored hydrogen energy content [5]. In recent years,
+sorption hydrogen storage using metal hydrides has gained attention
+due to its higher energy density (~140 MJ.kg− 1) [6]. In general, the MH
+systems are thermally driven, in which exothermic and endothermic
+chemical reactions occur during the absorption and desorption half cy­
+cles. The rate of heat transfer should be high enough to permit faster and
+continuous hydrogen gas storage and discharge. The metal hydrides
+(MHs) have poor thermal conductivity (~1 W.m− 1K− 1), they require an
+effective heat transfer system [7–9]. Hence, for the efficient perfor­
+mance of a metal hydride system, the heat transfer rate is a crucial
+factor. Metal hydride hydrogen storage systems (MHHSS) can be inte­
+grated with electrolyzers to store the produced hydrogen under atmo­
+spheric conditions. Moreover, this thermally driven system requires only
+waste heat (in the range of 40–100 ◦ C) for hydrogen retrieval.
+
+* Corresponding author.
+E-mail address: pmkumar@iitg.ac.in (P. Muthukumar).
+https://doi.org/10.1016/j.tsep.2024.102468
+Received 23 October 2023; Received in revised form 4 February 2024; Accepted 16 February 2024
+Available online 18 February 2024
+2451-9049/© 2024 Elsevier Ltd. All rights reserved.
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+Nomenclature
+CR
+Cp
+Ae
+
+h
+k
+M
+Ru
+T
+wt.%
+r, θ, z
+ΔH
+ΔS
+x
+→
+u r, →
+uz
+
+Greek letters
+hysteresis factor
+γH
+εP
+porosity
+αs , αe
+slope constant
+Nu
+average nusselt number
+ρ
+density (kg.m− 3)
+
+rate constant (s− 1)
+specific heat (J.kg− 1K− 1)
+activation energy (J.mol− 1)
+
+heat transfer coefficient (W.m− 2K− 1)
+thermal conductivity (W.m− 1K− 1)
+molecular weight (kg.mol− 1)
+universal gas constant (J.kg− 1K− 1)
+temperature (K)
+hydrogen storage capacity
+axis coordinates
+reaction enthalpy (J.mol− 1)
+reaction entropy (J.mol− 1K− 1)
+concentration factor
+gas velocities (m.s− 1)
+
+Subscript
+s
+solid
+f
+gas
+i
+initial
+Acronyms
+MH
+Metal hydride
+HTF
+Heat transfer fluid
+OCT
+Outer cooling jacket
+lpm
+litres per minute
+
+Over the years, various techniques, including innovative reactor
+geometries and the incorporation of heat enhancive fillers, have been
+reported in the literature to boost heat transfer within MH reactors.
+These techniques include the incorporation of different heat transfer
+tubes and coils [10–21], diverse extended surfaces [22–29], expanded
+natural graphite (ENG) compacts [30–32], and metallic fillers [33–35]
+within the MH reactor. Gkanas et al. [21] conducted a numerical study
+on the optimization of the rectangular type reactor for hydrogen storage
+applications. They studied the impact of varied bed thickness and tube
+positions and found the optimized thickness between two cooling or
+heating surfaces as 10.4 mm under a heat transfer coefficient of 2000 W.
+m− 2K− 1. Raju et al. [12] carried out the experimental study on 4 kg of
+LaNi4.7Al0.3 powder inside a 55 cooling tube reactor. They found that
+46.2 g of hydrogen was absorbed by the alloy in 5 min at inlet pressure
+and heat transfer fluid (HTF) temperature of 20 bar and 293 K, respec­
+tively. Anbarasu et al. [36] carried out an experimental study on
+embedded cooling tube (ECT) reactors containing 2.75 kg of
+LmNi4.91Sn0.15 alloy. They compared two reactors (36 ECT reactor and
+60 ECT reactor) and found that increasing the cooling tubes from 36 to
+60 reduced the time taken by the alloy to reach 1.04 wt.% from 480 to
+360 s under 25 bar supply pressure. Chung et al. [37] conducted an
+experimental study on reactors with or without heat pipes. They found
+the absorption time was dropped from 2100 s to 900 s by using a heat
+pipe as compared to not using a heat pipe under a gas pressure of 10 bar
+and HTF temperature of 293 K. Mellouli et al. [38] investigated the
+single helical tube reactor that contained 1 kg of LaNi5 powder and
+found that the reactor took 25 min to reach 90% of its hydrogen capacity
+at 10 bar supply pressure. Also, the two helical tubes took 8.33 min, and
+one helical tube with fins also took the same time (8.33 min) to reach
+90% saturation under similar operating conditions. Muthukumar et al.
+[15] formulated a two dimensional model filled with MmNi4.6Al0.4 and
+found that increasing the cooling tubes from 12 to 20 reduces the time to
+reach 90% saturation from 296 s to 155 s, respectively, under a gas
+pressure of 20 bar and an HTF temperature of 30 ◦ C.
+Numerous studies in the literature have suggested that a combina­
+tion of tubes and fins can significantly enhance the effectiveness of the
+MH reactor. Parida and Muthukumar [23] numerically investigated the
+impact of dissimilar fin types, namely longitudinal, transverse, and
+spiral, on reactor performance. They concluded that longitudinal and
+transverse fins indicated slightly better performance during absorption
+and desorption processes, respectively. Further, the designed reactor
+was able to deliver hydrogen at 2.27 lpm till 2000 s at a discharge
+pressure of 10 bar. Askri et al. [24] investigated the different heat
+transfer systems. The reactor without any thermal management, took
+2700 s to reach 90% of its maximum capacity under the 8 bar gas
+
+pressure and HTF temperature of 293 K. Also, the absorption time was
+reduced to 2080 s, 980 s, and 460 s by adding the exterior fins, cooling
+tube, and cooling tube with internal fins, respectively. Singh et al. [25]
+conducted an experimental study on the MH reactor containing a U
+tubes with radial fins. They found that the reactor took 490 s to reach
+1.2 wt.% saturation at 15 bar supply pressure and 15 ◦ C HTF tempera­
+ture. Dhaou et al. [26] carried out an experimental study on reactors
+containing 1 kg of LaNi5 alloy. Two reactor designs, namely a simple
+reactor with an external jacket and a reactor with a spiral finned tube,
+were compared. It was observed that the absorption time dropped by
+72.9% by using the spiral finned tube within the reactor. Ma et al. [28]
+conducted an optimization study on a multi tube finned reactor. The
+impact of variations in fin numbers, thickness, and radius was studied,
+and it was concluded that the optimized reactor design took 1720 s for
+complete absorption at 1 MPa gas pressure. Chandra et al. [29]
+numerically investigated a multi tube reactor attached to conical fins.
+They compared the effects of varying the tube and fins on reactor per­
+formance and concluded that the multi tube reactor having 6 tubes
+attached to 19 fins absorbed 80% and 90% of hydrogen in 290 s and 375
+s at a gas pressure of 15 bar and a HTF temperature of 20 ◦ C. Recently, a
+few studies reported advanced heat exchange structures. Wang et al.
+[39] conducted an optimization study on a novel disc mini channel
+reactor containing 1.56 kg of LaNi5 powder. Five reactor designs were
+studied and it was found that this novel reactor saved 89% and 93% of
+the time during the absorption and desorption processes compared to a
+straight tube reactor. Bei et al. [40] numerically investigated a novel
+reactor attached to tree shaped fins. The results revealed that this
+reactor design saves 20.7% of absorption time compared to a radial
+finned reactor.
+In the realm of large-capacity hydrogen storage, the shell and tube
+geometry have been extensively employed by numerous researchers.
+Raju et al. [41] developed the design methodology to optimize the
+cooling tubes for 50 kg capacity ECT reactors. Jana et al. [42] investi­
+gated a tube bundle reactor (TBR) with a 25 kg alloy capacity. They
+compared the performance of the TBR with the ECTR and found both
+reactors took 10 min to reach 1.24 wt.% capacity. Also, the weight ratio
+of the TBR was 1.17 times higher. The details of recently reported large
+capacity reactors for hydrogen storage are listed in Table 1.
+According to the literature, a hydrogen storage system’s reactor
+design is crucial to its effective operation. There have been numerous
+studies reported related to the design of the heat exchanger for hydrogen
+storage systems. However, it’s worth noting that the majority of these
+studies were conducted on a laboratory scale. For large capacity sta­
+tionary hydrogen storage, both the overall reactor mass and perfor­
+mance are of prime importance. The reported studies on large capacity
+2
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+mass ratio (ratio of alloy mass to reactor mass). The possible way of
+improving the reactor’s hydrogen storage performance with the mini­
+mum reactor mass is through the utilization of extended surfaces inside
+the reactor. Using the extended surfaces inside the reactor increases the
+surface area of heat transfer, which helps in faster removal of the
+exothermic heat via. HTF and improves the reactor’s hydrogen storage
+performance. However, a detailed comparison between the different fin
+structures is required to maximize the reactor’s performance. Therefore,
+the present study is focused on the detailed study of different fin
+structures within the reactor. Five reactor structures are analyzed during
+the absorption and desorption half cycles in Section 3.1. Also, the
+reactor design methodology, considering both overall weight and per­
+formance, has been discussed. The strategy for fin distribution to ach­
+ieve the optimum thickness and fin numbers is described in Section 3.2.
+Furthermore, the performance of optimized reactor designs under
+various operating conditions is analyzed in Section 3.3. Besides this,
+Section 3.4 deals with the scale-up methodology and the outcomes of the
+DFMTR model compared with the recent studies reported in the
+literature.
+
+Table 1
+Recent studies on large-capacity hydrogen storage reactors reported in the
+literature.
+Author, Year
+[Ref.]
+
+Alloy
+capacity
+
+Reactor type
+
+Conclusions
+
+Kumar et al.
+2019
+[43]
+
+40 kg of
+LaNi4.7Al0.3
+
+ECT reactor
+
+Karmakar et al.
+2021 [44]
+
+10 kg of LaNi5
+
+ECT reactor
+
+• 99 tubes embedded
+inside the reactor.
+424.8 g of hydrogen
+was absorbed by the
+reactor in 1253 s at 10
+bar supply pressure.
+394.7 g of hydrogen
+was desorbed by the
+reactor in 3150 s at
+70 ◦ C HTF temperature.
+• Four tubes with an
+external jacket were
+fixed inside the reactor.
+Under the supply
+pressure of 25 bar the
+MH bed absorbed
+118.3 g of hydrogen in
+the 1620 s.
+115 g of hydrogen
+was desorbed in 2700 s
+at 70 ◦ C HTF
+temperature.
+• Eight tubes are attached
+with longitudinal fins.
+The reactor reached
+1.21 wt.% capacity in
+700 s at 20 bar supply
+pressure and 20 ◦ C HTF
+temperature.
+• The reactor reached the
+saturation capacity of
+0.9 in 90 min at 25 bar
+supply pressure and
+25 ◦ C HTF temperature.
+The reactor desorbed
+90% of hydrogen in
+166.67 min at a HTF
+temperature of 50 ◦ C.
+• The reactor consists of a
+single central tube
+embedded with 91
+radial fins with an
+external jacket.
+The reactor was able
+to store 90% of
+hydrogen capacity (104
+g) in 640 s at 20 bar
+supply pressure.
+104 g of hydrogen
+was released in 1372 s
+under 60 ◦ C HTF
+temperature.
+• The reactor absorbed
+282.94 g of hydrogen in
+912 s at 30 bar supply
+pressure.
+282.8 g of hydrogen
+was released from the
+reactor in 4860 s under
+40 ◦ C HTF temperature.
+
+Mallik and
+Sharma 2021
+[45]
+
+50 kg of LaNi5
+
+ECT reactor
+
+Afzal et al. 2021
+[46]
+
+47.5 kg of
+La0.9Ce0.1Ni5
+
+Hexagonal
+honeycomb
+reactor
+
+Prasad and
+Muthukumar
+2021 [47]
+
+9 kg of
+LaNi5
+
+Annular
+reactor
+
+Jana et al. 2022
+[48]
+
+21.5 kg of
+La0.9Ce0.1Ni5
+
+ECT reactor
+
+Reactor design and numerical implementation
+Design description
+The prime objective of this study is to design a large capacity MH
+reactor targeting stationary hydrogen storage applications. The inspi­
+ration behind this work is to develop a design approach that effectively
+optimizes the reactor’s heat transfer performance by considering crucial
+factors including size, weight, strength, and cost. The present study
+proposes the shell and tube type cylindrical geometry, which consists of
+multi tubes attached with disc fins surrounded by metallic powder inside
+a shell with an external jacket, as shown in Fig. 1b. The shell diameter of
+88.9 mm with a thickness of 3.2 mm is chosen to endure a maximum
+pressure of 95 bar, and the reactor length of 1 m is adopted to accom­
+modate ~20 kg of the alloy. The geometrical details of the reactor are
+represented in Fig. 1c. The HTF tube diameter of 12.7 mm with a
+thickness of 1.65 mm is optimally chosen by considering the heat
+transfer area in mind. To ensure the compactness and light weight of the
+MH reactor, a total of six HTF tubes is selected by considering the
+minimum mass ratio of 1.5, given in Table 2.
+The reactor mass encompasses the shell, HTF tubes, filter, hydrogen
+tube, external jacket, end plates, and extended surfaces. The front and
+back end plates having a thickness of 10 mm are employed to seal the
+reactor. A 6 mm thickness is provided between the shell and external
+jacket to facilitate the HTF flow. A porous filter having an outer diameter
+of 9.5 mm is fitted at the center of the reactor for hydrogen exchange.
+The optimized design consists of 94-disc type extended surfaces, each
+with a thickness of 0.5 mm and a pitch of 10.5 mm, have been affixed
+along the axis to improve heat transfer within the reactor. Since, heat
+transfer is the crucial factor in MH systems [8], different MH reactor
+designs (similar to the proposed reactor, the only difference is the type of
+extended surface used within the reactor) are analyzed to determine the
+most efficient reactor design, as shown in Fig. 1a.
+Material selection
+In this study, LaNi5 is chosen as the metal hydride alloy to facilitate a
+more straightforward comparison with existing literature. Additionally,
+this alloy demonstrates lower hysteresis in comparison to other AB5
+alloys. Table 3 presents the thermochemical properties of the alloy and
+hydrogen gas used for simulation. Freely accessible water having mod­
+erate thermal conductivity and exceptional stability is selected as HTF.
+For medium pressure applications, readily accessible ASTM (A-321)
+standard seamless tubes composed of SS-316 material are used to design
+the reactor. Copper is used as the material for fins because of its higher
+thermal conductivity and outstanding corrosion resistant property.
+
+reactors are limited and typically use the shell and tube geometry
+[43–45]. In general, large-capacity reactors are extended versions of labscale reactors that can accommodate a large hydrogen inventory.
+However, these structures involve bulkiness, longer hydrogen storage or
+discharge times, and manufacturing challenges. Hence, there is a crucial
+need for a compact, lightweight, cost effective, and efficient MH reactor
+design to accommodate large hydrogen inventories in a very fast way.
+The present study proposes a lightweight multi tube disc finned
+reactor that offers excellent performance, particularly with a higher
+3
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+Fig. 1. (a) Schematic of various heat exchange systems, (b) Isomeric view, and (c) cross-sectional view of multi-tube reactor with disc fins (DFMTR model).
+
+Problem formulation
+
+energy conservation equations. Moreover, there is no specific trend for
+the porosity variations with hydrogen concentration, and the perme­
+ability has no significant effect in the MH systems. Therefore, the au­
+thors assumed these parameters to be constant. Further, the interface
+connecting the porous bed and HTF tubes is associated with the heat flux
+condition instead of direct flow to reduce the computational workload.
+
+This study solves a 3D numerical model using COMSOL 5.3a for the
+absorption or desorption half cycles. These half cycles include the
+combined heat and mass transfer aspects.
+Therefore, the porous domain adheres to the mass, momentum, and
+4
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+following assumptions are considered [23,29,49,50]:
+
+Table 2
+Criteria for selection of the number of HTF tubes.
+S. No
+
+Nt
+
+MMH
+
+MR
+
+V/As,t
+
+MMH/MR
+
+1
+2
+3
+4
+5
+
+3
+4
+5
+6
+7
+
+21.01
+20.48
+19.95
+19.42
+18.89
+
+11.38
+11.87
+12.38
+12.85
+13.34
+
+14.16
+10.62
+8.50
+7.08
+6.07
+
+1.84
+1.72
+1.61
+1.51
+1.41
+
+• Hydrogen acts like an ideal gas.
+• The hydrogen exchange takes place only through the porous filter.
+• The thermo-physical properties of alloy and hydrogen are assumed to
+constant by temperature variations.
+• The porosity and permeability of the bed are considered to be
+constant.
+• The MH bed is assumed to be free of radiation effects.
+
+Table 3
+Thermochemical properties of alloy and hydrogen gas used for simulation
+[18,29,49].
+Parameter
+
+MH alloy
+
+H2 gas
+
+Molecular mass, M (g.mol− 1)
+Thermal conductivity, k (W.m− 1K− 1)
+Rate constant, CR (s− 1)
+
+432
+1.31
+59.187
+(absorption)
+9.57 (desorption)
+419
+− 30100
+111.74
+21,170
+(absorption)
+16,473
+(desorption)
+8300
+1.37
+0.5
+0.038, 0
+0.137
+
+2.016
+0.13
+–
+
+Specific heat of alloy, Cp (J.kg− 1K− 1)
+Reaction enthalpy, ΔH (J.mol− 1)
+Reaction entropy, ΔS (J.mol− 1K− 1)
+Activation hydriding/dehydriding energy, Ae (J.
+mol− 1)
+Powder density, ρM,o (kg.m− 3)
+Maximum storage percent (wt.%)
+Porosity,εP
+Slope constant, αs , αe
+Hysteresis constant,γH
+
+Governing equations
+Based on the above mentioned assumptions, the numerical model is
+governed by the mass, momentum, and energy conservation equations,
+represented by Eqs. (1)− (14).
+Mass conservation. The mass balance equations of hydrogen gas and
+solid MH bed are expressed as,
+)
+(
+∂ρf
+u f = − (1 − εP )Ṡm,a/d
+(1)
++ ∇. ρf →
+H2 gas : εP
+∂t
+
+14,283
+–
+–
+–
+
+MH bed : (1 − εP )
+
+∂ρM
+= (1 − εP )Ṡm,a/d
+∂t
+
+(2)
+
+where ρf , ρM designates the gas and solid phase densities, εP denotes the
+
+–
+–
+–
+–
+–
+
+porosity and →
+u f is the gas velocity.
+The density of gas varies with hydrogen exchange inside the bed and
+follows the ideal gas relation. The mass source term Ṡm is evaluated
+during absorption or desorption are expressed as,
+(
+) ( )
+)
+− Ae,a
+Pf (
+(3)
+Ṡm,a = CR,a exp
+ρM,ss − ρs
+ln
+Ru T
+Peq
+
+When selecting a model domain for numerical modelling, it’s important
+to maintain model symmetry with the minimum computational effort.
+Hence, for the SMTR, TFMTR, LFMTR, and DFMTR models, one-fourth
+of the section is considered, as these models maintain symmetry and
+the computational effort is also lower. But, in the SFMTR model, due to
+the spiral nature of the fins, one-sixth of the section is considered, as it
+offers minimal computational efforts while maintaining the symmetry.
+The considered computational domain for the different models is rep­
+resented in Fig. 2. Furthermore, to simplify the model analysis, the
+
+(
+)
+)(
+)
+− Ae,d
+Pf − Peq (
+Ṡm,d = CR,d exp
+ρs − ρM,o
+Ru T
+Peq
+
+(4)
+
+where CR,a /CR,d denotes the reaction rate constant, Ae,a /Ae,d represents
+the activation energies, Pf /Peq is the inlet gas pressure and equilibrium
+pressure, and ρM,ss /ρM,o denotes the saturated and unsaturated MH
+
+Fig. 2. The schematic of the computational domain (a) SMTR, (b) SFMTR, (c) TFMTR, (d) LFMTR, and (e) DFMTR models.
+5
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+densities.
+x=
+
+Momentum conservation. The velocity of gas within the porous domain is
+evaluated using the Darcy’s law,
+− kp
+→
+uf =
+∇P
+
+where kp shows the permeability of the porous domain and μf denotes
+the dynamic viscosity of hydrogen gas which is considered to be inde­
+pendent of temperature variations.
+
+Convective heat flux.. To reduce the computational time and efforts the
+present study uses the empirical correlations. The coefficient of heat
+transfer is evaluated by empirical correlations for the required flow rate,
+given in Eq. (13) [52].
+
+Energy conservation. The energy conservation equation assumes thermal
+equilibrium between the gas and the porous domain at each location and
+is used to evaluate the temperature within the MH bed, represented in
+Eq. (6).
+(
+)
+(
+) ∂T (
+)
+u f .∇T = ke ∇2 T − QS
+ρCp e + ρCp f →
+(6)
+∂t
+
+)1
+(
+d 3
+Nu = 1.86 Red Pr
+(Red < 2300)
+l
+Nu = 0.86
+
+QS = (1 − εP )Ṡm,a/d
+
+( )
+ΔH
+Mf
+
+(13)
+Nu = 0.023Red 0.8 Prn (Red > 10000); n = 0.3 and 0.4 for cooling and
+heating.
+Nu =
+
+hdh
+k
+
+where Nu, Red , Pr represents the Nusselt, Reynolds and Prandtl numbers,
+d, do and l is the inner diameter, outer diameter and length of the reactor,
+dh is the characteristic length.
+Model initial and boundary conditions
+The bed temperature and gas variations are computed by considering
+the given initial and boundary conditions, represented in Table 4. A step
+function is employed to facilitate the easy transition of gas from the
+initial value of bed pressure (equilibrium) to the inlet or outlet pressure,
+given by Eq. (14).
+)
+(
+(14)
+Ps,d = Peqi(a/d) + F(t)* (Pa/d − Peqi(a/d)
+
+(8)
+(9)
+
+where Mf and ΔH represents the molecular mass and reaction enthalpy.
+The energy balance between the extended surfaces (fins) and the
+reactor walls is expressed by Eq. (10).
+(
+
+(
+( )0.16
+( )23 )(
+) 1
+d
+dh
+2
+Red 3 − 125 Pr3 (2300 < Red
+× 0.116 1 +
+do
+L
+
+< 10000)
+
+The mass source term (Ṡm ) value is positive and negative during the
+absorption and desorption processes, respectively. Also, reaction
+enthalpy term (ΔH) is considered negative for both the cases, as
+mentioned in Table 3. Therefore, the heat source term (QS ) in Eq. (6) is
+provided with a ‘− ’ sign to make the heat source value positive in the
+case of the absorption process and negative in the case of the desorption
+(
+)
+process. ρCp e and ke are the effective heat capacity and thermal con­
+ductivity inside the bed, represented by Eq. (7) and Eq. (8). Also, the
+heat source term (QS ) is evaluated using Eq. (9).
+(
+)
+)
+(
+)
+(
+ρCp e = (1 − εP ) ρCp M + εP ρCp f
+(7)
+ke = (1 − εP )kM + εP kf
+
+(12)
+
+where ρs denotes the MH density at time any ‘t’, MM is the molecular
+mass of alloy, NM represents the number of hydrogen atoms, and ρM,o is
+the unsaturated MH density.
+
+(5)
+
+μf
+
+)
+(
+2 ρs − ρM,o MM
+ρM,o NM Mf
+
+) ∂T
+(10)
+= krf ∇2 T
+∂t
+(
+)
+where ρCp rf and krf represents the heat capacity and thermal con­
+
+Table 4
+Initial and Boundary conditions.
+
+ρCp rf
+
+Initial Conditions
+
+ductivity of extended surfaces.
+
+Equilibrium pressure. When the hydrogen interacts with the metal alloy
+at a certain pressure and temperature, the hydrogen molecules disso­
+ciate into hydrogen atoms and penetrate the surface of the alloy. Then,
+there exists a two phase region in which metal hydride formation occurs.
+The van’t Hoff equation derived by Nishizaki et al., [51] mathematically
+defines the pressure–temperature relationship within the two phase re­
+gion and the equilibrium pressure is evaluated using Eq. (11). However,
+the stresses developed within the metal hydride exhibit a hysteresis ef­
+fect during hydrogen exchange processes. Further, the presence of in­
+homogeneity introduces sloping effects that must be taken into
+consideration. Therefore, by considering the hysteresis and sloping ef­
+fects the equilibrium pressure is evaluated by Eq. (11).
+( )
+( (
+))
+Peq
+ΔS ΔH
+x
+γ
+ln
+=
+−
+− 0.5
+± H
++ (αs ± αe )tan π
+(11)
+Ru Ru T
+xmax
+Pa
+2
+
+Absorption
+
+Desorption
+
+Parameter
+
+Value
+
+Value
+
+T(r, θ, z)
+P(r, θ, z)
+ρs (r, θ, z)
+x(r, θ, z)
+
+Tini,a
+Peqi,a
+
+Tini,d
+Peqi,d
+
+ρMi,a
+
+ρMi,d
+
+xi,a = 0.05 xmax
+
+Boundary Conditions
+Type
+Outer walls are considered adiabatic
+Non-permeability and no slip on the
+walls of HTF tubes
+Hydrogen entry and flow restrict
+condition
+Convective heat flux condition
+
+where ‘ + ’ and ‘− ’ are considered for absorption and desorption half
+cycles, respectively. ΔH/ΔS denotes the reaction enthalpy and entropy,
+αs /αe are the slope factors, γH is the hysteresis factor, and xmax is the
+maximum concentration capacity of hydrogen storage. The term ‘x’
+denotes the concentration factor, and can be expressed by Eq. (12).
+
+xi,d = 0.95 xmax
+
+Condition
+∂T
+=0
+∂n
+→
+ur = →
+uz = 0
+At inlet of reactor, P = Pf,d and on walls of
+MH reactor,
+∂p
+u =0
+= 0 and →
+n . ρ→
+∂n
+At the interface of tube/shell and the
+reactor:
+])
+])
+(
+[ ∂T
+(
+[ ∂T
+− k
+= − k
+∂n Alloy
+∂n tube/shell
+At the surface of HTF tube/shell: heat flux
+condition
+])
+(
+[ ∂T
+− →
+n. − k
+= h(THTF − T)
+∂n tube/shell
+
+6
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+the outcomes for all mesh sizes are nearly identical and overlapping.
+Hence, for all simulations, fine mesh is taken into consideration. Fig. 3b
+shows that the outcomes of average bed temperature and concentration
+factor for different time steps are nearly identical, indicating that the
+simulations are independent of the time step. Therefore, the adaptive
+time stepping scheme is adopted for all simulations, as it drastically
+reduces the simulation time without affecting the accuracy of outcomes.
+To solve the time step, the backward differentiation formula (BDF)
+method is used with an initial step of 0.001 s. Further, the relative
+tolerance value is set to 10-5 for all simulations. The highly nonlinear
+heat and mass transfer problem is solved using a time-dependent solver,
+PARADISO [53].
+
+where function F(t) varies with time at a step of t = 0.05 s.
+Mesh and time step independence
+The accuracy of the results obtained from the numerical model
+significantly depends on the selected grid size and time step value used
+for simulation. Hence, it is vital to carefully choose the appropriate mesh
+elements and time step values for accurate results. The mesh indepen­
+dence test (MIT) was performed on the DFMTR model to evaluate the
+impact of varying the mesh elements during the absorption process.
+Three different mesh sizes, namely normal (1,225,137 elements),
+fine (1,983,338 elements), and finer (2,615,873 elements), were
+considered for the test. Fig. 3a shows the average bed temperature and
+concentration factor with different mesh sizes. The results indicate that
+
+Fig. 3. Impact of (a) Mesh size and (b) time step size on the average bed temperature and concentration factor.
+7
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+Model validation
+
+adiabatic conditions on the walls (no losses to the atmosphere), whereas
+in actual cases, such losses are inevitable.
+
+The originality of the simulated model can be evaluated by
+comparing the numerical outcomes with actual experimental results
+available in the literature. The findings of this numerical study under
+similar operating conditions are compared with the experimental work
+of Muthukumar et al. [54] and Singh et al. [18]. Fig. 4 demonstrates the
+comparison results for the quantity of hydrogen absorbed and the tem­
+perature of the MH bed. It was observed that the numerical model
+precisely agreed with the outcomes of the experimental data. However,
+the maximum error values between experimental and numerical out­
+comes in calculating the relative quantity of hydrogen absorbed and bed
+temperature were estimated as ± 0.7% and ± 1.9 K, respectively. The
+possible reason for this could be that the numerical model assumes
+
+Results and discussion
+This section presents a detailed analysis of the proposed reactor
+design for large capacity hydrogen storage. In Section 3.1, five reactor
+designs are analysed during the absorption and desorption half cycles.
+The outcomes of these reactor designs are compared to determine the
+most efficient reactor design. Further, Section 3.2 deals with the design
+optimization of the proposed reactor to understand the effect of the fin
+distribution on the reactor’s performance. Furthermore, a detailed
+analysis of the effect of the operating parameters on the performance of
+the proposed reactor is discussed in Section 3.3. Moreover, Section 3.4
+
+Fig. 4. Validation of simulation outcomes with experimental data (a) Muthukumar et al., (2005) and (b) Singh et al., (2015).
+8
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+deals with the scale-up methodology and the comparative study of the
+proposed reactor design with various studies reported in the literature.
+
+are important concerns to achieve the most favorable reactor conditions.
+Therefore, it is crucial to carry out a comparative study on various fin
+structures to achieve the excellent reactor performance. Hence, the
+performance of five reactor models attaining the same fin volume,
+namely, straight multi tube reactor (SMTR), transverse finned multi tube
+reactor (TFMTR), spiral finned multi tube reactor (SFMTR), longitudinal
+finned multi tube reactor (LFMTR), and disc finned multi tube reactor
+(DFMTR) is investigated and compared during the absorption and
+desorption half cycles. The SMTR is regarded as the baseline model, and
+the performance of other models is assessed in comparison to it. More­
+over, the mass ratio (ratio of alloy mass to the reactor mass) is somewhat
+lower by 5.7% when expanded surfaces are taken into account compared
+to the baseline reactor. For absorption and desorption half cycles, the
+
+Reactors comparison study
+The traditional and widely adopted reactor structure for hydrogen
+storage is the shell and tube type. It is obvious that adding more tubes
+within the reactor increases the internal surface area and, thus, its
+hydrogen storage performance. However, for a given reactor capacity,
+this also results in greater bulkiness, complexity, and a decrease in
+gravimetric storage density. The use of extended surfaces is a substitute
+strategy that improves performance without significantly increasing
+reactor mass. However, the type and distribution of extended surfaces
+
+Fig. 5. Comparison between reactor models during (a) absorption half cycle, (b) desorption half cycle and (c) percentage reduction in time of different models to
+absorb or desorb 90% of hydrogen compared to model 1.
+9
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+Fig. 5. (continued).
+
+value of the heat transfer coefficient is estimated corresponding to the
+flow rate of 3 lpm, and its value is taken as the same for all models due to
+similar internal geometry. The estimated values of heat transfer co­
+efficients for the tube and external jacket are 457 W.m− 2K− 1 and 372 W.
+m− 2K− 1, as per Eq. (13).
+During the absorption half cycle, the inlet hydrogen gas pressure and
+cooling fluid temperature are set at 15 bar and 25 ◦ C, respectively, for all
+the simulated models. Initially, there is a significant pressure difference,
+which is the difference between the gas pressure and the equilibrium
+pressure of the reactor, which results in rapid hydrogen absorption by
+the metallic alloy. However, the heat is produced inside the reactor as a
+result of hydrogen being absorbed by the metallic alloy. This heat causes
+an immediate rise in the reactor’s temperature, which exponentially
+increases the reactor’s equilibrium pressure, as per Eq. (11). As a result,
+the pressure difference starts dropping, which slows down the rate of
+absorption. Finally, the pressure difference becomes zero, and the
+hydrogen absorption half cycle is completed. The average reactor tem­
+perature and hydrogen absorbed (wt.%) for all models are represented
+in Fig. 5a. It is observed that all models show similar performance
+initially and absorb a weight percentage (wt.%) of 0.32 in the first 10 s.
+Later, it is observed that the DFMTR model absorbs hydrogen at a faster
+rate than other models. The DFMTR model absorbs the maximum stor­
+age capacity, i.e.,1.37 wt.% of hydrogen in 795 s, which is 46%, 30%,
+28%, and 27% faster than the SMTR, SFMTR, TFMTR, and LFMTR
+models. Also, the maximum temperature of 72 ◦ C is reached by all the
+models in just 32 s after absorption starts, as shown in Fig. 5a. It is seen
+that the drop in the bed temperature of the DFMTR model is very fast
+due to improved heat transfer, and the bed took 995 s to return to the
+initial temperature of the HTF, whereas the LFMTR model, TFMTR
+model, SFMTR model, and SMTR model take 1404 s, 1438 s, 1452 s, and
+1928 s, respectively. However, the heat transfer rate at the end of the
+absorption or desorption reactions was extremely slow; therefore, the
+absorption process time was considered to be the time required to reach
+the initial temperature within a temperature tolerance of 0.2 ◦ C, i.e.
+25.2 ◦ C. The time required to reach the cooling fluid temperature by
+DFMTR is reduced by 1.93 times as compared to SMTR.
+The desorption half cycle encompasses the hydrogen discharge
+process. In the present study, the hydrogen is discharged to the atmo­
+sphere (1 bar pressure) at a heating fluid temperature of 50 ◦ C. When the
+process initiates, the discharge rate is very high due to the higher
+pressure difference between the reactor’s equilibrium and atmosphere
+pressures. Also, there is a sudden drop in reactor temperature due to the
+endothermic nature of the process, which reduces the pressure differ­
+ence; therefore, a reduction in the discharge rate is observed. Later, the
+reactor temperature starts increasing by taking heat from the heating
+fluid and finally reaches the initial conditions. Fig. 5b shows the time
+
+behavior of average reactor temperature and hydrogen desorbed (wt.%)
+for all models. Initially, all models behaved similarly and discharged
+0.15 wt.% of hydrogen in the first 10 s.
+However, in a later stage, the DFMTR model was found to be superior
+and discharges all the stored hydrogen in 1060 s, whereas the SMTR,
+SFMTR, TFMTR, and LFMTR models take 2245 s, 1622 s, 1494 s, and
+1439 s, respectively. The lowest temperature attained by all models is
+16.5 ◦ C in the initial 60 s. The DFMTR model takes 1317 s to reach the
+heating fluid temperature, which is 48%, 33%, 27%, and 24% less than
+the SMTR, SFMTR, TFMTR, and LFMTR models. Similar to the absorp­
+tion process, the desorption process time was considered to be the time
+required to reach the initial temperature within a temperature tolerance
+of 0.2 ◦ C, i.e. 49.8 ◦ C. The percentage reduction in time of the absorption
+and desorption half cycles to absorb or desorb 90% of hydrogen for all
+models compared to the baseline model is represented in Fig. 5c. It is
+concluded from the above discussion that the large capacity DFMTR
+model is efficient and saves 38% and 31% of the time for absorbing and
+desorbing 90% of hydrogen compared to the baseline model. However,
+the geometrical parameters inside the reactor should be in an optimized
+position to achieve excellent performance. Therefore, it would be
+worthwhile to do more research to observe the distribution of extended
+surfaces inside the reactor.
+The different cross-sectional cuts along the axial direction represent
+the temperature distribution within the reactors, as shown in Fig. 6. The
+cooler regions (blue regions) and hotter regions (red regions) signify the
+low and high temperature regions inside the MH reactors. The pressure
+difference is higher at lower bed temperatures during hydrogen storage
+and higher at high temperatures during hydrogen release. Therefore, the
+cooler regions (blue regions) and hotter regions (red regions) in Fig. 6
+show excellent performance during the absorption and desorption pro­
+cesses, respectively. From Fig. 6, it can be observed that the deviations
+occur only in the radial direction for each reactor, while there is a
+uniform temperature distribution along the axial direction. During the
+absorption process, it is observed that in the case of SMTR, hotter re­
+gions are more visible, whereas in the case of DFMTR, cooler regions are
+more visible compared to the other reactors due to the excellent heat
+transfer provided by the disc fins. Therefore, DFMTR demonstrates su­
+perior performance among all the reactors during the absorption pro­
+cess. Similarly, during the desorption process, cooler regions are more
+visible in SMTR, while regions closer to hotter regions are observed in
+DFMTR, as shown in Fig. 6b. Therefore, the predicted performance of
+DFMTR is found to be superior during the desorption process as well.
+Design optimization study
+In this section, the design optimization methodology of the proposed
+10
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+Fig. 6. Temperature distributions of various reactors at 500 s during: (a) absorption process and (b) desorption process.
+
+DFMTR model has been discussed in detail. Further, the impact of fin
+distribution, thickness of fin, and external jacket on performance is
+investigated. The present work adopts a design approach that efficiently
+optimizes the heat transfer performance of the reactor, taking into ac­
+count essential factors such as size, weight, strength, and cost. The flow
+chart for the design strategy of the present study reactor is represented in
+Fig. 7. Firstly, the objective of reactor design based on the particular
+application is fixed. After this, the selection of type and quantity of alloy
+required based on their storage capacity (wt.%) is fixed. Thereafter, the
+diameter and number of tubes are judicially selected based on the
+established tube selection criteria. Based on the quantity of alloy and
+required strength, the reactor dimensions (diameter and length of
+
+reactor) are finalized. To further enhance the performance of the
+reactor, the appropriate fin type is selected. Thereafter, to achieve the
+best performance, the optimization of fin distribution based on pitch and
+thickness is done. At last, the optimum operating condition based on
+appropriate gas pressure and fluid temperature is selected, and the
+design is finalized. It is to be noted that the present design methodology
+is independent of the type of fluid, the type of alloy, and its hydrogen
+storage capacity.
+Effect of axial pitch (ap)
+The axial pitch represents the uniform distribution of the number of
+fins along the length of the reactor. Heat transfer within the reactor
+
+Fig. 7. Flowchart showing design methodology for present study reactor.
+11
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+primarily relies on the number of fins and tubes. Notably, augmenting
+the number of fins serves to diminish thermal resistance by increasing
+the heat transfer area, thereby enhancing the reactor’s thermal perfor­
+mance. However, it’s important to note that an excessive increase in the
+fin numbers not only diminishes the gravimetric capacity but also in­
+troduces greater complexity and bulkiness into the system. Hence, it is
+crucial to carefully choose the number of fins to enhance performance
+without significantly compromising storage capacity. The effects of
+varying the axial pitch on the reactor performance under the same
+operating condition are represented in Fig. 8.
+The axial pitch varied from 9 mm to 15 mm in the step of 1.5 mm,
+while the thickness of the fin is fixed at 0.5 mm. It is observed that
+reducing the axial pitch from 15 to 9 mm reduced the time needed to
+attain 90% of the storage and release capacities by 15% and 11%,
+
+respectively. Additionally, during the absorption and desorption half
+cycles, there is a 10% and 12% reduction in the amount of time needed
+to achieve bed temperature at its initial conditions. Beyond 10.5 mm
+axial pitch, it is seen that the curves are almost overlapping. As a result,
+10.5 mm is the optimum axial pitch value, which comprises 94 disc fins
+that are evenly spaced apart.
+Effect of fin thickness (tf)
+The effect of fin thickness on reactor performance during the ab­
+sorption and desorption half cycles is presented in Fig. 9. The relatively
+small distance between the curves on the absorption and desorption
+plots indicates that the performance of the reactor is not greatly
+enhanced by increasing the fin thickness.
+When the thickness is raised from 0.25 to 1.25 mm, the time saved
+
+Fig. 8. Impact of axial pitch on reactor performance during: (a) absorption and (b) desorption half cycle.
+12
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+Fig. 9. Impact of fin thickness on reactor performance during: (a) absorption and (b) desorption half cycle.
+
+for storing and releasing 90% of hydrogen is 7% and 6%, respectively,
+during the absorption and desorption half cycles, shown in Fig. 9a.
+Further, during the absorption and desorption half cycles, there is a 2%
+and 3% reduction in the amount of time needed to achieve bed tem­
+perature at its initial conditions, as illustrated in Fig. 9b. However, the
+mass of fins is also increased five times, which is not justified compared
+to the enhancement achieved. Therefore, considering the standard
+availability and performance, the optimum fin thickness value is
+considered to be 0.5 mm.
+
+enhancing heat transfer area but also effectively cools or heats the
+reactor, which improves the reactor’s performance drastically. Fig. 10
+depicts the curves for the bed temperature and hydrogen absorbed or
+desorbed through the absorption and desorption half cycles. The time
+required to store and release 90% hydrogen with an external jacket is
+380 s and 610 s, which was significantly reduced by 30% and 28%
+compared to the case without an external jacket during the absorption
+and desorption half cycles, respectively. However, the time savings to
+reach bed temperature at its initial conditions are 38% and 44% with the
+external jacket case during the absorption and desorption half cycles.
+Therefore, it is recommended to use an external jacket to achieve
+excellent reactor performance.
+
+Effect of an external jacket
+The performance of DFMTR is analyzed throughout the absorption
+and desorption half cycles to visualize the impact of the external jacket
+on the reactor’s performance. The use of an exterior jacket not only
+reduces reaction blind spots around the reactor’s end corners by
+13
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+Fig. 10. Impact of an external jacket on DFMTR model performance during: (a) absorption and (b) desorption half cycle.
+
+Operating parametric assessment
+
+influence of inlet gas pressure on the average bed temperature and the
+amount of hydrogen absorbed. The observation revealed that an in­
+crease in gas pressure increases the pressure difference, which results in
+a faster absorption rate. However, this higher pressure also leads to
+increased heat generation within the system, consequently causing a rise
+in reactor temperature. The absorption time to reach 90% of absorption
+capacity decreased by 53% when the gas pressure was increased from
+10 bar to 25 bar. However, the reduction becomes only 9%, which was
+considered insignificant, when the gas pressure exceeds 20 bar. Further,
+a 24% reduction was observed in time to reach the initial cooling tem­
+perature when pressure increased from 10 to 20 bar. Therefore, the
+optimized gas pressure value during the absorption process is chosen to
+be 20 bar.
+Further, the impact of cooling fluid temperatures on the hydrogen
+
+The reactor’s performance is significantly influenced by two key
+parameters: the inlet or outlet pressure and the temperature of the
+cooling or heating fluid. Therefore, this section presents the effect of
+these parameters on the performance of the proposed optimized reactor
+(DFMTR model) during the absorption or desorption half cycles in
+detail.
+The inlet gas pressure greatly affects the pressure difference (the
+difference between the inlet supply gas pressure and the reactor’s
+equilibrium pressure); therefore, its effect on the absorption perfor­
+mance of the DFMTR model is studied. This study varied the inlet gas
+pressure from 10 bar to 25 bar while maintaining the cooling fluid
+temperature and flow rate at 25 ◦ C and 3 lpm. Fig. 11a shows the
+14
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+Fig. 11. (a) Impact of the inlet gas pressure on absorption process, (b) Impact of the cooling fluid temperature on absorption process and (c) Impact of the heating
+fluid temperature on desorption process.
+
+15
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+storage performance of the reactor is investigated at an optimized gas
+pressure of 20 bar. As per van’t Hoff equation (Eq. (11), decreasing the
+temperature decreases the equilibrium pressure within the MH bed;
+therefore, the pressure difference (the difference between the inlet
+supply gas pressure and the reactor’s equilibrium pressure) rises, which
+increases the reaction rate of the process. Therefore, the outcomes
+shown in Fig. 11b reveal that at a low cooling fluid temperature, the
+reaction rate enhances and the hydrogen is absorbed by the reactor in a
+faster way. Also, the bed temperature of the MH bed reaches the initial
+conditions quickly at lower temperatures.
+The result shows a saving of 16% in absorption time for reaching
+90% capacity when the temperature is reduced from 35 ◦ C to 25 ◦ C.
+Further, there is a 6 % saving in time to reach 90% capacity when
+operated below 25 ◦ C. However, the reactor generally operates at
+ambient temperature (i.e., 25 ± 1 ◦ C) which is considered to be the
+optimum value because the improvement is insignificant in comparison
+to the cost involved in cooling and maintaining temperatures below the
+atmospheric level.
+Furthermore, the influence of heating fluid temperature on the re­
+actor’s release performance is analyzed. Desorption at higher tempera­
+tures leads to an increase in the equilibrium pressure within the bed, as
+per van’t Hoff Eq. (11). Due to this, the pressure difference (the differ­
+ence between the equilibrium pressure of the bed and the discharge
+(ambient) pressure) increases, resulting in a faster reaction rate at higher
+temperatures. The impact of heating fluid temperature on the bed
+temperature and amount of hydrogen desorbed is represented in
+Fig. 11c. It is observed that the reactor released 90% hydrogen in 478 s
+when the fluid temperature is 50 ◦ C. However, the time for the same is
+dropped by 22%, 36%, and 48% when the desorption is done at fluid
+temperatures of 60 ◦ C, 70 ◦ C, and 80 ◦ C, respectively. Further, the
+reactor took 1317 s, 1160 s, 1113 s, and 1056 s to reach the bed tem­
+perature at their initial conditions of 50 ◦ C, 60 ◦ C, 70 ◦ C, and 80 ◦ C,
+respectively. When fluid temperature is raised from 70 ◦ C to 80 ◦ C, it is
+seen that the curves get closer and time is saved by only 5%, which is not
+enough when compared to the expense involved in heating the reactor.
+Therefore, the optimum heating fluid temperature for the proposed
+reactor is considered to be 70 ◦ C.
+
+approach provides the ability to utilize a portion of the whole storage
+system according to demand and an easier way to repair or replace the
+reactor in case of any leakage, which enables operational and mainte­
+nance flexibility. Additionally, this strategy aids in lowering the dangers
+associated with inadvertent leaking and offers an effective way to
+operate the system at a lower capacity whenever needed. Therefore, the
+suggested portable design strategy offers an efficient way of storing
+hydrogen without affecting the system’s performance. Further, a com­
+parison is made between the predicted performance of the proposed
+DFMTR model and the recently reported reactors in the literature. The
+performance of the reactor during the absorption and desorption pro­
+cesses mainly depends on the design of the reactor. The straightforward
+and effective method of assessing the hydrogen storage reactor perfor­
+mance is to compare the 90% hydrogen storage time. Therefore, the
+present section compares the predicted performance of the DFMTR
+reactor with the reactors used in the literature during the absorption
+process. The time required to store 90% of hydrogen is compared with
+various reactors that contained different quantities of LaNi5 alloy. The
+Table 5
+Recent reported reactor designs considered for the comparison.
+Author,
+Year
+[Ref.]
+
+Reactor design
+type
+
+LaNi5
+alloy
+quantity
+
+Absorption
+condition
+(inlet pressure,
+HTF temperature
+and flow rate)
+
+Time to
+store 90 %
+hydrogen
+
+Present
+work
+Chandra
+et al.
+2020
+[29]
+Jana et al.
+2021
+[42]
+
+Disc finned multi
+tube reactor
+Multi tube
+tapered finned
+reactor consist of
+6 cooling tubes
+Tube bundle
+reactor (19
+tubes):
+Single tube
+having the outer
+diameter,
+thickness and
+length of 25.4
+mm, 1.2 mm and
+1000 mm is
+considered for
+simulation
+Reactor consists
+of two U-shaped
+cooling tubes
+attached to 13
+radial fins
+Pin fin type
+reactor consist of
+16 cooling tubes
+
+19.4 kg
+
+15 bar, 25 ◦ C, and
+3 lpm
+15 bar, 20 ◦ C, and
+5 lpm
+
+292 s
+
+1.4 kg
+
+Simulated under
+the same
+operating
+conditions as the
+present study.
+
+585 s
+
+1.2 kg
+
+15 bar, 25 ◦ C, and
+2 lpm
+
+610 s
+
+1.56 kg
+
+15 bar, 25 ◦ C, and
+6.75 lpm
+
+320 s
+
+Scale-up methodology and comparative study with literature
+The scale-up methodology primarily relies on the desired hydrogen
+storage capacity. Rather than utilizing a single large reactor, the present
+study suggests a portable design approach in which multiple small re­
+actors can serve a various purpose in a variety of applications. The
+hydrogen economy encompasses the generation, storage, and utilization
+of hydrogen, as illustrated in Fig. 12.
+Numerous proposed disc finned multi tube reactors can couple in
+parallel to accommodate a substantial hydrogen inventory generated by
+the electrolyzers that can be utilized in various applications, depending
+on the required capacity of the storage system. This portable design
+
+Singh
+et al.
+2017
+[55]
+Keshari
+and
+Maiya
+2018
+[56]
+
+Fig. 12. Schematic of hydrogen economy.
+16
+
+5 kg
+
+375 s
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+
+specifics of the studies chosen for comparison, including their alloy
+quantity and operating conditions, are presented in Table 5.
+The predicted performance of the proposed reactor (DFMTR model)
+is found to be superior to other reactors reported in the literature. The
+proportion of absorption time saved by the present study reactor
+compared to other designs is presented in Fig. 13. Due to the large
+surface area provided by the disc fins in the proposed reactor, a signif­
+icant amount of reaction time was seen to be saved. The significant
+improvement can be attributed to the judicious optimization of the
+design and the utilization of extended surfaces, which greatly enhance
+internal heat transfer. The comparative analysis makes it evident that
+utilizing extended surfaces in the MH bed is a preferable choice over
+employing numerous tubes. Additionally, the inclusion of extended
+surfaces results in a lighter reactor and reduces complexity in compar­
+ison to the multiple tubes. Moreover, the author believes that the pro­
+posed reactor is efficient serve a variety of applications with a large
+hydrogen inventory.
+Conclusions
+
+Fig. 13. Comparison in time to store 90% hydrogen of recently re­
+ported studies.
+
+In the present work, a novel disc finned multi-tube reactor (DFMTR)
+is proposed to enhance the reactor performance by considering the
+higher mass ratio (ratio of alloy mass to reactor mass). Firstly, the nu­
+merical study by utilizing different fin structures within the reactor is
+conducted. From the analysis, the efficient reactor configuration is
+determined, and further design optimization studies based on the
+structural and operational parameters are discussed. Moreover, the
+scale-up methodology is extensively discussed, and the performance of
+the proposed reactor design is compared with the recent studies avail­
+able in the literature. Based on the analysis of the present study, the
+following primary outcomes are stated below:
+
+editing.
+Declaration of competing interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Data availability
+Data will be made available on request.
+
+• Five reactor configurations are numerically analyzed and their out­
+comes are compared. The DFMTR model shows remarkably higher
+performance by saving the time required to store and release
+hydrogen. This reactor saved 38% and 31% time to store and release
+90% of hydrogen compared to the baseline reactor.
+• The DFMTR absorbs maximum storage capacity i.e., 1.37 wt.% of
+hydrogen in 795 s, which is 46 %, 30 %, 28 %, and 27 % faster than
+the SMTR, SFMTR, TFMTR, and LFMTR models.
+• The DFMTR discharges all stored hydrogen in 1060 s, whereas the
+SMTR, SFMTR, TFMTR, and LFMTR take 2245 s, 1622 s, 1494 s, and
+1439 s, respectively.
+• The effect of fin numbers (axial pitch) and its thickness are numer­
+ically analyzed and optimized, and the optimal values are found to be
+94 fins and 0.5 mm thick, respectively.
+• The effect of external jacket also analyzed and found the use of
+external jacket saved 30% and 28% time to store and release 90 %
+hydrogen.
+• The impact of inlet H2 pressure, cooling and heating fluid tempera­
+ture on the performance of DFMTR is analyzed and the optimal
+values found to be 20 bar, 25 ◦ C and 70 ◦ C, respectively.
+• The DFMTR is compared with recent studies of literature and found
+DFMTR reactor saved 22.1%, 50%, 52.1%, and 8.7% of time to store
+90% hydrogen compared with tapered finned multi tube reactor,
+tube bundle reactor, radial finned reactor, and pin fin reactor,
+respectively. Therefore, the author recommends the disc fins inside
+the reactor to make the reactor compact, lightweight with enhanced
+performance.
+
+Acknowledgments
+The authors would like to acknowledge the financial support
+extended by the IIT Guwahati Technology Innovation and Development
+Foundation (Project No.: TIH/TD/0310).
+References
+[1] W. Zappa, M. Junginger, M. van den Broek, Is a 100% renewable European power
+system feasible by 2050? Appl. Energy. 233–234 (2019) 1027–1050, https://doi.
+org/10.1016/j.apenergy.2018.08.109.
+[2] Bloomberg New Energy Outlook, Roads to carbon neutrality: COP26 nordic
+pavilion. https://about.bnef.com/new-energy-outlook/, 2021 (accessed 11
+September 2023).
+[3] M.A. Rosen, S. Koohi-Fayegh, The prospects for hydrogen as an energy carrier: an
+overview of hydrogen energy and hydrogen energy systems, Energ. Ecol. Environ.
+1 (2016) 10–29, https://doi.org/10.1007/s40974-016-0005-z.
+[4] R. Hancke, T. Holm, Ø. Ulleberg, The case for high-pressure PEM water electrolysis,
+Energy Convers. Manag. 261 (2022) 115642, https://doi.org/10.1016/j.
+enconman.2022.115642.
+[5] P. Muthukumar, A. Kumar, N.N. Raju, K. Malleswararao, M.M. Rahman, A critical
+review on design aspects and developmental status of metal hydride based thermal
+machines, Int. J. Hydrogen Energy. 43 (37) (2018) 17753–17779, https://doi.org/
+10.1016/j.ijhydene.2018.07.157.
+[6] P. Prachi, W. Mahesh, G. Aneesh, A review on solid state hydrogen storage
+material, Adv. Energy Power. 4 (2) (2016) 11–22, https://doi.org/10.13189/
+aep.2016.040202.
+[7] M. Nagel, Y. Komazaki, S. Suda, Effective thermal conductivity of a metal hydride
+bed augmented with a copper wire matrix, J. Less Common Met. 120 (1) (1986)
+35–43, https://doi.org/10.1016/0022-5088(86)90625-9.
+[8] M. Afzal, R. Mane, P. Sharma, Heat transfer techniques in metal hydride hydrogen
+storage: a review, Int. J. Hydrogen Energy. 42 (52) (2017) 30661–30682, https://
+doi.org/10.1016/j.ijhydene.2017.10.166.
+[9] S. Shafiee, M.H. McCay, Different reactor and heat exchanger configurations for
+metal hydride hydrogen storage systems: a review, Int. J. Hydrogen Energy. 41
+(22) (2016) 9462–9470, https://doi.org/10.1016/j.ijhydene.2016.03.133.
+[10] G. Mohan, M. P. Maiya, S. S. Murthy, Performance simulation of metal hydride
+hydrogen storage device with embedded filters and heat exchanger tubes, Int. J.
+Hydrogen Energy. 32 (18) (2007) 4978–4987, https://doi.org/10.1016/j.
+ijhydene.2007.08.007.
+
+CRediT authorship contribution statement
+Shubham Parashar: Conceptualization, Methodology, Investiga­
+tion, Data curation, Writing – original draft. P. Muthukumar: Re­
+sources, Supervision, Funding acquisition, Writing – review & editing.
+Atul Kumar Soti: Supervision, Funding acquisition, Writing – review &
+17
+
+S. Parashar et al.
+
+Thermal Science and Engineering Progress 49 (2024) 102468
+[34] F. Laurencelle, J. Goyette, Simulation of heat transfer in a metal hydride reactor
+with aluminium foam, Int. J. Hydrogen Energy. 32 (14) (2007) 2957–2964,
+https://doi.org/10.1016/j.ijhydene.2006.12.007.
+[35] S. Ferekh, G. Gwak, S. Kyoung, H.G. Kang, M.H. Chang, S.H. Yun, Y.H. Oh, W. Kim,
+D. Kim, T. Hong, H. Ju, Numerical comparison of heat-fin-and metal-foam-based
+hydrogen storage beds during hydrogen charging process, Int. J. Hydrogen Energy.
+40 (42) (2015) 14540–14550, https://doi.org/10.1016/j.ijhydene.2015.07.149.
+[36] S. Anbarasu, P. Muthukumar, S.C. Mishra, Tests on LmNi4.91Sn0.15 based solid
+state hydrogen storage device with embedded cooling tubes – part A: Absorption
+process, Int. J. Hydrogen Energy. 39 (7) (2014) 3342–3351, https://doi.org/
+10.1016/j.ijhydene.2013.12.090.
+[37] C.A. Chung, S.W. Yang, C.Y. Yang, C.W. Hsu, P.Y. Chiu, Experimental study on the
+hydrogen charge and discharge rates of metal hydride tanks using heat pipes to
+enhance heat transfer, Appl. Energy. 103 (2013) 581–587, https://doi.org/
+10.1016/j.apenergy.2012.10.024.
+[38] S. Mellouli, F. Askri, H. Dhaou, A. Jemni, S. Ben Nasrallah, Numerical simulation of
+heat and mass transfer in metal hydride hydrogen storage tanks for fuel cell
+vehicles, Int. J. Hydrogen Energy. 35 (4) (2010) 1693–1705, https://doi.org/
+10.1016/j.ijhydene.2009.12.052.
+[39] D. Wang, Y. Wang, F. Wang, S. Zheng, S. Guan, L. Zheng, L. Wu, X. Yang, M. Lv,
+Z. Zhang, Optimal design of disc mini-channel metal hydride reactor with high
+hydrogen storage efficiency, Appl. Energy. 308 (2022) 118389, https://doi.org/
+10.1016/j.apenergy.2021.118389.
+[40] X.S. Bai, W.W. Yang, X.Y. Tang, F.S. Yang, Y.H. Jiao, Y. Yang, Optimization of treeshaped fin structures towards enhanced absorption performance of metal hydride
+hydrogen storage device: a numerical study, Energy 220 (2021) 119738, https://
+doi.org/10.1016/j.energy.2020.119738.
+[41] N.N. Raju, P. Muthukumar, P.V. Selvan, K. Malleswararao, Design methodology
+and thermal modelling of industrial scale reactor for solid state hydrogen storage,
+Int. J. Hydrogen Energy. 44 (36) (2019) 20278–20292, https://doi.org/10.1016/j.
+ijhydene.2019.05.193.
+[42] S. Jana, P. Muthukumar, Design and performance prediction of a compact
+MmNi4.6Al0.4 based hydrogen storage system, J. Energy Storage. 39 (2021)
+102612, https://doi.org/10.1016/j.est.2021.102612.
+[43] A. Kumar, N.N. Raju, P. Muthukumar, P.V. Selvan, Experimental studies on
+industrial scale metal hydride based hydrogen storage system with embedded
+cooling tubes, Int. J. Hydrogen Energy. 44 (26) (2019) 13549–13560, https://doi.
+org/10.1016/j.ijhydene.2019.03.180.
+[44] A. Karmakar, A. Mallik, N. Gupta, P. Sharma, Studies on 10 kg alloy mass metal
+hydride based reactor for hydrogen storage, Int. J. Hydrogen Energy. 46 (7) (2021)
+5495–5506, https://doi.org/10.1016/j.ijhydene.2020.11.091.
+[45] A. Mallik, P. Sharma, Modeling and numerical simulation of an industrial scale
+metal hydride reactor based on CFD–Taguchi combined method, Energy Storage. 3
+(3) (2021) 227, https://doi.org/10.1002/est2.227.
+[46] M. Afzal, N. Gupta, A. Mallik, K.S. Vishnulal, P. Sharma, Experimental analysis of a
+metal hydride hydrogen storage system with hexagonal honeycomb-based heat
+transfer enhancements, part B, Int. J. Hydrogen Energy. 46 (24) (2021)
+13131–13141, https://doi.org/10.1016/j.ijhydene.2020.11.275.
+[47] J. Sunku prasad, P. Muthukumar, Experimental investigation on annular metal
+hydride reactor for medium to large-scale hydrogen storage applications, J. Energy
+Storage. 44 (2021) 103473, https://doi.org/10.1016/j.est.2021.103473.
+[48] S. Jana, P. Muthukumar, N.N. Raju, Hydrogen charging and discharging studies on
+embedded cooling tube metal hydride reactor designed for fuel cell applications,
+Int. J. Hydrogen Energy. 48 (96) (2022) 37847–37859, https://doi.org/10.1016/j.
+ijhydene.2022.07.118.
+[49] D. Wang, Y. Wang, F. Wang, S. Zheng, S. Guan, L. Zheng, L. Wu, T. Fang, X. Yang,
+M. Lv, Hydrogen storage in branch mini-channel metal hydride reactor:
+optimization design, sensitivity analysis and quadratic regression, Int. J. Hydrogen
+Energy. 46 (49) (2021) 25189–25207, https://doi.org/10.1016/j.
+ijhydene.2021.05.051.
+[50] J. Sunku Prasad, P. Muthukumar, Design of metal hydride reactor for medium
+temperature thermochemical energy storage applications, Therm. Sci. Eng. Prog.
+37 (2023) 101570, https://doi.org/10.1016/j.tsep.2022.101570.
+[51] T. Nishizaki, K. Miyamoto, K. Yoshida, Coefficients of performance of hydride heat
+pumps, J. Less Common Met. 89 (2) (1983) 559–566, https://doi.org/10.1016/
+0022-5088(83)90372-7.
+[52] F.P. Incropera, D.P. DeWitt, Fundamentals of Heat and Mass Transfer, fourth ed.,
+John Wiley & Sons, New York, 1996.
+[53] B. Stute, V. Krupp, E. Von Lieres, Performance of iterative equation solvers for mass
+transfer problems in three dimensional sphere packings in COMSOL, Simul. Model.
+Pract. Theory. 33 (2013) 115–131, https://doi.org/10.1016/j.simpat.2012.10.004.
+[54] P. Muthukumar, M.P. Maiya, S.S. Murthy, Experiments on a metal hydride based
+hydrogen storage device, Int. J. Hydrogen Energy. 30 (15) (2005) 1569–1581,
+https://doi.org/10.1016/j.ijhydene.2004.12.007.
+[55] A. Singh, M. P. Maiya, S. S. Murthy, Performance of a solid state hydrogen storage
+device with finned tube heat exchanger, Int. J. Hydrogen Energy. 42 (43) (2017)
+26855–26871, https://doi.org/10.1016/j.ijhydene.2017.06.071.
+[56] V. Keshari, M.P. Maiya, Design and investigation of hydriding alloy based
+hydrogen storage reactor integrated with a pin fin tube heat exchanger, Int. J.
+Hydrogen Energy. 43 (14) (2018) 7081–7095, https://doi.org/10.1016/j.
+ijhydene.2018.02.100.
+
+[11] C.A. Krokos, D. Nikolic, E.S. Kikkinides, M.C. Georgiadis, A.K. Stubos, Modeling
+and optimization of multi-tubular metal hydride beds for efficient hydrogen
+storage, Int. J. Hydrogen Energy. 34 (22) (2009) 9128–9140, https://doi.org/
+10.1016/j.ijhydene.2009.09.021.
+[12] N.N. Raju, A. Kumar, K. Malleswararao, P. Muthukumar, Parametric studies on
+LaNi4.7Al0.3 based hydrogen storage reactor with embedded cooling tubes,
+Energy Procedia 158 (2019) 2384–2390, https://doi.org/10.1016/j.
+egypro.2019.01.288.
+[13] M.W. Davids, M. Lototskyy, M. Malinowski, D. van Schalkwyk, A. Parsons,
+S. Pasupathi, D. Swanepoel, T. van Niekerk, Metal hydride hydrogen storage tank
+for light fuel cell vehicle, Int. J. Hydrogen Energy. 44 (55) (2019) 29263–29272,
+https://doi.org/10.1016/j.ijhydene.2019.01.227.
+[14] M. Bhouri, J. Goyette, B.J. Hardy, D.L. Anton, Numerical modeling and
+performance evaluation of multi-tubular sodium alanate hydride finned reactor,
+Int. J. Hydrogen Energy. 37 (2) (2012) 1551–1567, https://doi.org/10.1016/j.
+ijhydene.2011.10.044.
+[15] P. Muthukumar, A. Singhal, G.K. Bansal, Thermal modeling and performance
+analysis of industrial-scale metal hydride based hydrogen storage container, Int. J.
+Hydrogen Energy. 37 (19) (2012) 14351–14364, https://doi.org/10.1016/j.
+ijhydene.2012.07.010.
+[16] Z. Bao, Z. Wu, S.N. Nyamsi, F. Yang, Z. Zhang, Three-dimensional modeling and
+sensitivity analysis of multi-tubular metal hydride reactors, Appl. Therm. Eng. 52
+(1) (2013) 97–108, https://doi.org/10.1016/j.applthermaleng.2012.11.023.
+[17] S. Anbarasu, P. Muthukumar, S.C. Mishra, Thermal modeling of LmNi4.91Sn0.15
+based solid state hydrogen storage device with embedded cooling tubes, Int. J.
+Hydrogen Energy. 39 (28) (2014) 15549–15562, https://doi.org/10.1016/j.
+ijhydene.2014.07.088.
+[18] A. Singh, M.P. Maiya, S.S. Murthy, Effects of heat exchanger design on the
+performance of a solid state hydrogen storage device, Int. J. Hydrogen Energy. 40
+(31) (2015) 9733–9746, https://doi.org/10.1016/j.ijhydene.2015.06.015.
+[19] E.I. Gkanas, D.M. Grant, M. Khzouz, A.D. Stuart, K. Manickam, G.S. Walker,
+Efficient hydrogen storage in up-scale metal hydride tanks as possible metal
+hydride compression agents equipped with aluminium extended surfaces, Int. J.
+Hydrogen Energy. 41 (25) (2016) 10795–10810, https://doi.org/10.1016/j.
+ijhydene.2016.04.035.
+[20] S.S. Bhogilla, Design of a AB2-metal hydride cylindrical tank for renewable energy
+storage, J. Energy Storage. 14 (2017) 203–210, https://doi.org/10.1016/j.
+est.2017.10.012.
+[21] E.I. Gkanas, M. Khzouz, G. Panagakos, T. Statheros, G. Mihalakakou, G.I. Siasos,
+G. Skodras, S.S. Makridis, Hydrogenation behavior in rectangular metal hydride
+tanks under effective heat management processes for green building applications,
+Energy 142 (2018) 518–530, https://doi.org/10.1016/j.energy.2017.10.040.
+[22] Y. Kaplan, Effect of design parameters on enhancement of hydrogen charging in
+metal hydride reactors, Int. J. Hydrogen Energy. 34 (5) (2009) 2288–2294,
+https://doi.org/10.1016/j.ijhydene.2008.12.096.
+[23] A. Parida, P. Muthukumar, Reactor design and numerical study on metal hydride
+based finned reactor configurations for hydrogen compression application, Int. J.
+Hydrogen Energy. 48 (96) (2023) 37930–37943, https://doi.org/10.1016/j.
+ijhydene.2022.10.183.
+[24] F. Askri, M. Ben Salah, A. Jemni, S. Ben Nasrallah, Optimization of hydrogen
+storage in metal hydride tanks, Int. J. Hydrogen Energy. 34 (2) (2009) 897–905,
+https://doi.org/10.1016/j.ijhydene.2008.11.021.
+[25] A. Singh, M.P. Maiya, S. Murthy, Experiments on solid state hydrogen storage
+device with a finned tube heat exchanger, Int. J. Hydrogen Energy. 42 (22) (2017)
+15226–15235, https://doi.org/10.1016/j.ijhydene.2017.05.002.
+[26] H. Dhaou, A. Souahlia, S. Mellouli, F. Askri, A. Jemni, S. Ben Nasrallah,
+Experimental study of a metal hydride vessel based on a finned spiral heat
+exchanger, Int. J. Hydrogen Energy. 35 (4) (2010) 1674–1680, https://doi.org/
+10.1016/j.ijhydene.2009.11.094.
+[27] M. Melnichuk, N. Silin, H.A. Peretti, Optimized heat transfer fin design for a metalhydride hydrogen storage container, Int. J. Hydrogen Energy. 34 (8) (2009)
+3417–3424, https://doi.org/10.1016/j.ijhydene.2009.02.040.
+[28] J. Ma, Y. Wang, S. Shi, F. Yang, Z. Bao, Z. Zhang, Optimization of heat transfer
+device and analysis of heat & mass transfer on the finned multi-tubular metal
+hydride tank, Int. J. Hydrogen Energy. 39 (25) (2014) 13583–13595, https://doi.
+org/10.1016/j.ijhydene.2014.03.016.
+[29] S. Chandra, P. Sharma, P. Muthukumar, S.S.V. Tatiparti, Modeling and numerical
+simulation of a 5 kg LaNi5 based hydrogen storage reactor with internal conical
+fins, Int. J. Hydrogen Energy. 45 (15) (2020) 8794–8809, https://doi.org/
+10.1016/j.ijhydene.2020.01.115.
+[30] M. Dieterich, C. Pohlmann, I. Bürger, M. Linder, L. Röntzsch, Long term cycle
+stability of metal hydride-graphite composites, Int. J. Hydrogen Energy. 40 (46)
+(2015) 16375–16382, https://doi.org/10.1016/j.ijhydene.2015.09.013.
+[31] A.R. Sánchez, H.P. Klein, M. Groll, Expanded graphite as heat transfer matrix in
+metal hydride beds, Int. J. Hydrogen Energy. 28 (5) (2003) 515–527, https://doi.
+org/10.1016/S0360-3199(02)00057-5.
+[32] C. Pohlmann, L. Röntzsch, T. Weißgärber, B. Kieback, Heat and gas transport
+properties in pelletized hydride graphite composites for hydrogen storage
+applications, Int. J. Hydrogen Energy. 38 (3) (2013) 1685–1691, https://doi.org/
+10.1016/j.ijhydene.2012.09.159.
+[33] H. Wang, A.K. Prasad, S.G. Advani, Hydrogen storage system based on hydride
+materials incorporating a helical coil heat exchanger, Int. J. Hydrogen Energy. 37
+(19) (2012) 14292–14299, https://doi.org/10.1016/j.ijhydene.2012.07.016.
+
+18
+
+

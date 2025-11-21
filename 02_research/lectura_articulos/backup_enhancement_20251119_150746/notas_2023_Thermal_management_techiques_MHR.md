@@ -1,0 +1,170 @@
+# Notas de Lectura: Thermal Management Techniques in Metal Hydrides for Hydrogen Storage Applications: A Review
+
+
+**Autor:** Kumar, A., Muthukumar, P., Sharma, P., Varma, G.
+
+**Revista:** Energy
+
+
+**Referencia BibTeX:** `kumar_2023`
+
+**Fecha de Publicación:** 2023
+
+---
+
+## 1. Resumen
+
+
+Revisión exhaustiva estado-del-arte de técnicas de gestión térmica en reactores de hidruros metálicos para almacenamiento H2. Análisis sistemático de métodos pasivos (aletas, espumas metálicas, ENG, PCM), activos (refrigeración líquida/gas, heat pipes), e híbridos. Comparación cuantitativa efectividad, costos, complejidad implementación. Identificación tendencias: materiales compuestos alta conductividad, PCM integrados, control inteligente. Desafíos: balance rendimiento-costo, escalabilidad industrial, integración sistemas renovables. Recomendaciones diseño basadas en aplicación (estacionaria, móvil, alta potencia). Framework para selección técnica óptima según requerimientos específicos.
+
+## 2. Imagen de Referencia
+
+
+![Técnicas gestión térmica MH](img/notas_2023_Thermal_management_techiques_MHR/reactor.png)
+
+## 3. Puntos Clave y Datos
+
+
+### Aspectos Principales
+
+
+- Revisión sistemática 200+ estudios técnicas gestión térmica reactores MH (2000-2023)
+
+- Clasificación: métodos pasivos (aletas, espumas, ENG, PCM), activos (refrigeración líquida/gas, heat pipes), híbridos
+
+- Comparación cuantitativa: efectividad térmica, costos, complejidad, escalabilidad
+
+- Aletas radiales: mejora 200-300% conductividad efectiva, costo bajo, amplia adopción
+
+- ENG (grafito expandido): mejora 300-500% conductividad, 5-10 wt% óptimo, costo medio
+
+- PCM integrados: almacenamiento calor latente 200-250 kJ/kg, buffer térmico, costo medio-alto
+
+- Refrigeración agua: h 500-1000 W/m2*K, control preciso, requiere auxiliares
+
+- Tendencias 2023: materiales compuestos, control inteligente IoT, optimización multi-objetivo
+
+## 4. Características Técnicas
+
+
+### 4.1. Tipo de Hidruro Metálico
+
+
+- **Tipo de hidruro:** Revisión multi-material (LaNi5, TiFe, MgH2, AB2, AB5, complejos)
+
+- **Cantidad de hidruro:** Rango 0.1-1000 kg según aplicación
+
+- **Conductividad Térmica MH:** Base 0.5-2 W/m*K, mejorada 5-15 W/m*K con aditivos
+
+### 4.2. Configuración Geométrica
+
+
+- **Configuración geométrica:** Revisión múltiples geometrías (cilíndrica, anular, modular, plate-type, shell-tube)
+
+### 4.3. Dimensiones
+
+
+- **Longitud:** Variable según escala (laboratorio 50-300mm, industrial 500-2000mm)
+
+- **Diámetro:** Rango 20-500mm según aplicación
+
+- **L/D ratio:** Óptimo 1.5-3.0 mayoría aplicaciones
+
+- **Volumen:** 0.1L laboratorio → 1000L industrial
+
+- **Otras Dimensiones:** Geometrías optimizadas computacionalmente (CFD, FEA)
+
+### 4.4. Intercambiador de Calor
+
+
+- **Intercambiador de Calor:** Revisión exhaustiva: aletas (rectas/cónicas/radiales), tubos (rectos/U/helicoidal), placas, espumas, heat pipes, PCM
+
+### 4.5. Condiciones de Operación
+
+
+- **Temperatura:** -40 a +200degC según MH y aplicación
+
+- **Presión:** 1-100 bar típico, hasta 700 bar alta presión
+
+- **Flujo:** 0.01-10 L/min refrigerante según escala
+
+- **Tiempo carga:** 5 min (alta potencia) a 4h (estacionario)
+
+- **Cantidad H2:** 0.5-6 wt% según material MH
+
+- **Observación:** Trade-offs fundamentales: velocidad vs capacidad, costo vs rendimiento, simplicidad vs control
+
+## 5. Transferencia de Calor
+
+
+- **Métodos de transferencia de calor utilizados:**
+ - **Pasivos:** Aletas (mejora 200-300%), ENG (mejora 300-500%), espumas metálicas (mejora 400-600%), PCM (buffer térmico)
+ - **Activos:** Refrigeración líquida (h 500-1000 W/m2*K), gas forzado (h 50-100 W/m2*K), heat pipes (h 1000-5000 W/m2*K)
+ - **Híbridos:** Aletas+PCM, ENG+refrigeración, espuma+tubos agua
+
+- **Materiales y propiedades térmicas:**
+ - Aletas: Cu (385 W/m*K), Al (205 W/m*K), optimización geométrica CFD
+ - ENG: conductividad 10-20 W/m*K, densidad 50-200 kg/m3, 5-10 wt% óptimo
+ - Espumas: Cu/Al/Ni, porosidad 85-95%, k_eff 10-50 W/m*K
+ - PCM: parafinas (200-250 kJ/kg), sales (300-400 kJ/kg), punto fusión ajustable
+ - Heat pipes: k_eff 5000-20000 W/m*K, orientación crítica
+
+- **Eficiencia térmica:**
+ Comparación métodos: aletas 75-85%, ENG 80-88%, PCM 70-80%, refrigeración activa 85-95%, híbridos 88-95%
+
+- **Problemas y soluciones relacionados con el manejo térmico:**
+ - **Problema:** Baja conductividad MH base (0.5-2 W/m*K)
+ - **Soluciones:** ENG (mejora 300-500%), espumas (mejora 400-600%), matrices compuestas
+ - **Problema:** Gradientes térmicos altos (dT 20-50degC)
+ - **Soluciones:** Distribución uniforme aletas/tubos, optimización CFD, control adaptativo
+ - **Problema:** Trade-off velocidad-capacidad
+ - **Soluciones:** PCM buffer, control multi-etapa, diseños híbridos
+ - **Problema:** Costos altos métodos activos
+ - **Soluciones:** Híbridos pasivo-activo, optimización multi-objetivo
+
+## 6. Conclusiones y Observaciones
+
+
+- Gestión térmica factor crítico limitante en reactores MH (más que cinética intrínseca)
+
+- Métodos pasivos (aletas, ENG) ofrecen mejor balance costo-rendimiento-simplicidad para mayoría aplicaciones
+
+- ENG emerge como aditivo preferido: mejora 300-500% conductividad, 5-10 wt% óptimo, bajo costo, fácil integración
+
+- PCM prometedores para aplicaciones con ciclos intermitentes, buffer térmico reduce picos temperatura
+
+- Refrigeración activa necesaria solo para alta potencia (>1 kW) o ciclos rápidos (<10 min)
+
+- Tendencia clara hacia sistemas híbridos: combinación pasivo+activo optimiza rendimiento global
+
+- Control inteligente (IoT, ML) emergente 2020-2023: optimización tiempo real, predictivo
+
+- Materiales compuestos avanzados: MH+ENG+espuma, conductividad >10 W/m*K, desarrollo activo
+
+- Escalabilidad crítica: soluciones laboratorio no siempre trasladan a industrial
+
+- Recomendaciones diseño: análisis multi-objetivo (costo, rendimiento, complejidad, mantenimiento)
+
+- Gap investigación: degradación long-term (>5000 ciclos), comportamiento extremos (-40degC, +100degC)
+
+- Futuro: materiales nano-estructurados, control AI, integración digital twins
+
+## 7. Referencias Adicionales
+
+
+- Base datos 200+ artículos técnicas gestión térmica MH (2000-2023)
+
+- Reviews previos: Muthukumar et al. (2010), Dhaou et al. (2015), Bai et al. (2019)
+
+- Estándares: ISO 16111, ASME BPVC, EN 13445
+
+- Software: COMSOL, ANSYS Fluent, OpenFOAM CFD
+
+- Materiales: catálogos ENG (GrafTech, SGL Carbon), PCM (Rubitherm, PCM Products)
+
+---
+
+### Notas Adicionales
+
+
+Revisión exhaustiva esencial para estado-del-arte. Categorización clara pasivo/activo/híbrido facilita selección. Comparación cuantitativa valiosa para decisiones diseño. ENG emerge como solución preferida balance costo-rendimiento. PCM nicho importante aplicaciones intermitentes. Control inteligente tendencia clara 2020-2023. Gaps identificados orientan investigación futura. Framework selección aplicable diseño industrial. Útil como referencia técnica completa. Actualización necesaria cada 2-3 años dado ritmo avances.

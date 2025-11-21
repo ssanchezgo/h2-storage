@@ -1,0 +1,790 @@
+Case Studies in Thermal Engineering 43 (2023) 102812
+
+Contents lists available at ScienceDirect
+
+Case Studies in Thermal Engineering
+journal homepage: www.elsevier.com/locate/csite
+
+Thermal management of metal hydride hydrogen storage tank
+coupled with proton exchange membrane fuel cells
+Liang Tong a, b, Chengqing Yuan a, b, Tianqi Yang c, **, Yupeng Yuan a, b, *,
+Richard Chahine d, Jinsheng Xiao a, c, d
+a
+
+Reliability Engineering and New Energy Institute, School of Transportation and Logistics Engineering, Wuhan University of Technology, Hubei,
+430063, China
+b
+National Engineering Research Center for Water Transport Safety, Wuhan University of Technology, Hubei, 430063, China
+c
+Hubei Research Center for New Energy & Intelligent Connected Vehicle, Hubei Key Laboratory of Advanced Technology for Automotive
+Components, School of Automotive Engineering, Wuhan University of Technology, Hubei, 430070, China
+d
+Hydrogen Research Institute, Université du Québec à Trois-Rivières, QC, G8Z 4M3, Canada
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Handling Editor: Huihe Qiu
+
+Metal hydride (MH), considered a promising hydrogen storage material, has received wide
+attention. As an efficient device for hydrogen energy utilization, a proton exchange membrane
+fuel cell (PEMFC) generates power and releases waste heat. MH tank can supply hydrogen for
+PEMFC, and the waste heat produced by PEMFC can be applied to heat the MH bed for dehy­
+driding reaction. Thermal management between MH tank and PEMFC has been studied in this
+work. A lumped parameter model for the PEMFC-MH system has been developed and validated.
+The performance of the PEMFC-MH system has been predicted, the results show that it is feasible
+to use waste heat produced by PEMFC for heating the MH bed. The effect of the valve’s opening
+degree on system performance has been investigated. The performance of the PEMFC-MH system
+with various output powers has been studied. The hydrogen supply rate from the MH bed to
+PEMFC can be adjusted based on different power requirements. The valve’s opening degree can
+be considered an effective control measure in thermal management to improve the energy effi­
+ciency of the PEMFC-MH system.
+
+Keywords:
+Hydrogen
+Metal hydride
+Fuel cell
+Heat transfer
+Thermal management
+Energy efficiency
+
+1. Introduction
+The shipping industry plays an important role in the national economy. However, traditional diesel-powered ships consume a lot of
+fossil energy with a large amount of CO2 emitted. Various governments and enterprises actively seek solutions to reduce CO2 emissions
+from shipping in the face of global climate change [1]. The hydrogen-powered ships have received wide attention [2,3]. Considering
+the small power requirement and short route for inland vessels, the inland river may be one of the main application scenarios of
+hydrogen-powered ships [4]. Of course, effective hydrogen storage methods for the shipping industry are underway, which is essential
+to wide applications of hydrogen energy.
+As a kind of effective hydrogen storage material, metal hydride (MH) has been successfully applied to the submarine [5] and shows
+
+* Corresponding author. School of Transportation and Logistics Engineering, Wuhan University of Technology, Hubei, 430063, China.
+** Corresponding author. School of Automotive Engineering, Wuhan University of Technology, Hubei, 430070, China.
+E-mail addresses: tongliang2@whut.edu.cn (L. Tong), ycq@whut.edu.cn (C. Yuan), tqyang@whut.edu.cn (T. Yang), ypyuan@whut.edu.cn (Y. Yuan), Richard.
+Chahine@uqtr.ca (R. Chahine), Jinsheng.Xiao@uqtr.ca (J. Xiao).
+
+https://doi.org/10.1016/j.csite.2023.102812
+Received 15 December 2022; Received in revised form 8 February 2023; Accepted 11 February 2023
+Available online 13 February 2023
+2214-157X/© 2023 The Authors.
+Published by Elsevier Ltd.
+This is an open access article under the CC BY-NC-ND license
+(http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+Case Studies in Thermal Engineering 43 (2023) 102812
+
+L. Tong et al.
+
+the possibility of its application in the light vehicle [6] and the waterway transportation field [2]. Considering the relatively low
+operating pressure of hydrogen storage systems based on MHs, it may cause the refueling cost and the hydrogen price to decrease [7],
+which is good for promoting hydrogen applications. As a kind of common MH, LaNi5 hydrides have some advantages, such as low
+operating temperature and platform pressure, and have received extensive research [8–12]. Compared with some high-temperature
+MHs, such as Mg-based hydride [13], its gravimetric hydrogen density is relatively small. However, compared with the gravimetric
+energy density of the Li-ion battery systems in the ships (about 111 Wh/kg [14]), MHs present better energy storage performance when
+the stored hydrogen is converted into electric energy by PEMFC.
+In general, the hydriding/dehydriding reaction is accompanied by obvious exothermic/endothermic phenomenon, which leads to
+significant thermal effect problems and affects system performance. Various heat exchangers, such as metal foams [8,9] and cooling
+tubes [11], have been applied in MH reactors to mitigate the thermal effects of the chemical reaction processes. Metal foam with
+relatively large thermal conductivity can improve the heat transfer performance of MH beds by increasing its effective thermal
+conductivity [8]. Phase change material (PCM) jacket can be used as a passive heat exchanger, which absorbs heat during hydriding
+and releases it during dehydriding in the MH system [15–17]. Considering the relatively low thermal conductivity of PCM, it can work
+with metal foam [15] or expanded graphite [16] and form composited PCM with higher thermal conductivity, which is proven to be
+feasible to improve the hydriding rate of MH systems. MH reactor with PCM has been applied to supply hydrogen for fuel cell ap­
+plications [16,17]. A cooling tube or heat exchanger can also be used as the bridge to enhance heat transfer between the MH bed and
+the PCM jacket, which is good for improving the reaction rate and reusing the heat stored in PCM [18].
+Thermal management between MH and other equipment has received wide attention. The feasibility of cooling the battery pack
+with the MH during dehydriding has been investigated by experiments for a hybrid electric vehicle [19]. In recent years, many re­
+searchers have been trying to reuse waste heat as the by-product of PEMFC, which makes it possible to supply heat for MH beds
+[20–22]. Proton exchange membrane fuel cells can be considered an efficient device utilization of hydrogen energy, where there are
+complicated electrochemical and thermal processes [23,24]. Based on the experimental data in Ref. [25], the thermal management of
+the PEMFC stack for a vehicle has been investigated [26]. The heat produced by the PEMFC stack can be directly transferred to MH
+tank by using electric fan [22], which can be considered a simple and feasible way. However, the hot air from the fan is used to heat the
+outer wall of the MH tank. Normally, directly heating the MH bed rather than the wall of the tank will show better results.
+Some special devices based on heat exchanger material have been designed and developed as the bridge for strengthening the heat
+transfer between the PEMFC and the MH bed. As an efficient heat exchanger, the heat pipe can be used as the thermal bridge between
+them, which can effectively improve the hydrogen supply rate of the hydrogen storage tank [27]. Better performance can be obtained
+when the heat pipe is covered by fins [28]. As for the PEMFC with relatively large output power, the liquid cooling mode is more
+popular than the air cooling mode. It will consume electric energy generated by the PEMFC stack when the cooling system works. Some
+waste heat released by PEMFC is transferred to the MH bed, then the energy consumption of the auxiliary cooling sub-system of PEMFC
+decreases, which leads to an increase in the system generation efficiency. As for a hydrogen-powered vehicle where the waste heat
+released by PEMFC is transferred to a MH tank through a fan and radiator, research results show that this integration equipment can
+save 10% fuel [29]. In the thermal management module of the PEMFC-MH system, the hydrogen storage tank and the heat exchanger
+can be connected in serial [30] or parallel [21,29] in the circulating water system. Generally, it is good for controlling the dehydriding
+rate by adjusting the valve opening for the parallel mode. The PEMFC-MH system was applied to the first Italian hydrogen propulsion
+ship [2], and its corresponding control method for satisfying various load demands plays an important role in the practical application
+process [31].
+In our previous work [32], the dehydriding performance of MH tank has been studied based on the validated distributed numerical
+model, and the hydrogen fuel supply rate of this MH reactor for applications can be fitted as an equation about the pressure at the outlet
+and the temperature of heating water. Meanwhile, some lumped parameter models of MH reactors have been validated [8,9] and
+applied for hydrogen storage and purification [33]. This work has developed a lumped parameter model for the MH hydrogen storage
+tank coupled with PEMFC. The feasibilities of directly supplying hydrogen from the MH tank to PEMFC and using waste heat produced
+by PEMFC for heating MH bed during dehydriding have been evaluated, and the thermal management of this PEMFC-MH system has
+been studied under different output power conditions.
+2. Mathematical model
+The basic governing equations for the lumped parameter model of the PEMFC-MH system have been introduced in this section. This
+lumped parameter model mainly consists of the PEMFC stack, the MH hydrogen storage tank and the circulating water sub-system used
+for the thermal management between the PEMFC stack and the MH tank. The MH tank can be considered a hydrogen source to supply
+high-purity fuel for the PEMFC system. The PEMFC stack generates electricity by producing much heat by consuming the charged
+hydrogen. The thermal management sub-system is designed to transfer adequate waste heat from the PEMFC to the MH tank during
+dehydriding and transfer the rest of heat to the environment by the heat exchanger to maintain that the PEMFC system works at the
+proper temperature. This method is not only good for MH tank to supply enough heat in the dehydriding process but also good for
+PEMFC system to decrease the energy consumption of the cooling device and improve the system efficiency.
+2.1. PEMFC
+The output voltage of a single fuel cell Vcell [V] is relative to the Nernst open circuit voltage Enernst [V] and three voltage losses,
+including the activation voltage loss Vact [V], the ohmic voltage loss Vohm [V] and the concentration voltage loss Vcom [V], which can be
+shown as,
+2
+
+Case Studies in Thermal Engineering 43 (2023) 102812
+
+L. Tong et al.
+
+(1)
+
+Vcell = Enernst − Vact − Vohm − Vcom
+The Nernst open circuit voltage Enernst can be written as [26],
+)
+(
+Enernst = 1.229 − 8.5 × 10− 4 (TFC − 298.15) + 4.308 × 10− 5 TFC ln pH2 p0.5
+O2
+
+(2)
+
+where TFC [K] means the temperature of PEMFC, pH2 [bar] and pO2 [bar] are the partial pressure of hydrogen in the anode and the
+partial pressure of oxygen in the cathode, respectively. The partial pressure of hydrogen pH2 is relative to the anode pressure pan [bar],
+the current density iFC [A/cm2], TFC and the saturation pressure of water vapor psat
+H2 O [bar], as presented in Ref. [23],
+⎤
+⎡
+⎢
+pH2 = 0.5 × ⎢
+⎣
+
+⎥
+p
+⎥
+( an ) − psat
+H2 O ⎦
+1.653iFC
+exp TFC 1.334
+
+(3)
+
+The partial pressure of oxygen can be written as [23],
+p O2 =
+
+p
+( ca ) − psat
+H2 O
+FC
+exp 4.192i
+TFC 1.334
+
+(4)
+
+The saturation pressure of water vapor psat
+H2 O is relative to the temperature of the fuel cell TFC , which is shown in Eq. (5) [23]. The
+inlet gas pressure of the anode and the cathode is set as 1 bar [25,26].
+(
+)
+2
+3
+− 2
+− 5
+− 7
+log10 psat
+(5)
+H2 O = − 2.18 + 2.95 × 10 (TFC − 273.15) − 9.19 × 10 (TFC − 273.15) + 1.44 × 10 (TFC − 273.15)
+The activation voltage loss Vact can be presented as [23],
+)
+(
+Vact = − − 0.948 + 0.00304TFC + 7.6 × 10− 5 TFC ln CO2 − 1.93 × 10− 4 TFC ln Icell
+
+(6)
+p
+
+where Icell [A] means current and the oxygen concentration CO2 [mol/cm3] is equal to O2 5.08×106 FC [23].
+The ohmic voltage loss Vohm is relative to the current density iFC , the membrane resistance rm [Ωcm] and the thickness of PEM τm
+[cm] when the contact resistance is not taken into consideration [26], which can be expressed as,
+exp(498/T )
+
+(7)
+
+Vohm = iFC rm τm
+The membrane resistance rm is presented as [24,25],
+[
+( FC )2 2.5 ]
+181.6 1 + 0.03iFC + 0.062 T303
+iFC
+)]
+[
+(
+rm =
+TFC − 303
+(λ − 0.634 − 3iFC )exp 4.18 TFC
+
+(8)
+
+where the membrane humidity λ is set as 7.25 in this work.
+The concentration voltage loss Vcom is relative to the current density iFC . The maximum current density is set as 1.6 A/cm2, and the
+empirical parameter B [V] in Eq. (9) is set as − 0.016 [23,26].
+(
+)
+iFC
+Vcon = − B ln 1 −
+(9)
+1.6
+The hydrogen released from the MH tank flows into the PEMFC stack. The hydrogen stoichiometry φ is defined as the ratio between
+the amount of hydrogen that flowed into the fuel cell and the amount of hydrogen that reacted in the fuel cell, which is set to 1 in this
+work. The relationship between the mass flow rate of hydrogen ṁH2 and the current of a single PEM fuel cell IFC can be presented as
+follows,
+ṁH2 =
+
+IFC φMH2 NFC
+2F
+
+(10)
+
+where the Faraday constant F = 96485 C/mol and NFC is the number of single fuel cell.
+The PEMFC is a device that generates power from hydrogen by releasing a large amount of waste heat. It is disadvantageous for the
+PEMFC to work at a relatively high temperature. In general, the heat produced by PEMFC must be removed by the heat exchanger or
+the cooling device to the environment.
+The heat generation of PEMFC QFC [W] can be written as [26],
+(11)
+
+QFC = Ncell (Enernst − Vcell )IFC
+2.2. Metal hydride hydrogen storage tank
+
+The MH tank is used to supply hydrogen fuel for the PEMFC system. In general, the MH bed needs to be heated to obtain an
+3
+
+Case Studies in Thermal Engineering 43 (2023) 102812
+
+L. Tong et al.
+
+acceptable dehydriding rate. Considering this work focuses on studying the hydrogen supply performance of the MH tank for the
+PEMFC, the governing equations during dehydriding are introduced. The mathematical model during hydriding can be found in our
+previous works [12,33].
+The mass conservation equations of the MH bed and the gaseous hydrogen in the tank can be expressed as Eq. (12) and Eq. (13) [9,
+33],
+(
+)
+dmMH
+− Ed /RT pH2 − peq
+(12)
+= mMH Cd e
+dt
+peq
+dmH2
+= ṠH2 − ṁH2
+dt
+
+(13)
+
+The amount of gaseous hydrogen in the MH tank is related to the mass source term for hydrogen ṠH2 [g/s] and the mass flow rate
+
+ṁH2 [g/s] from the hydrogen storage tank into the PEMFC stack. The hydrogen mass source term ṠH2 is related to the dehydriding rate
+
+of the MH bed and can be expressed as dmdtMH
+
+MH2 SC
+. The molecular weight of metal hydride MMH is equal to 438 g/mol. The stoichiometric
+MMH
+
+coefficient of hydrogen in the hydriding/dehydriding reaction SC is 3 in this work.
+The pressure of hydrogen pH2 [bar] can be calculated by the state equation for ideal gases, which is relative to the mass and the
+temperature of gaseous hydrogen. The equation of state for ideas gases can be written as pV = nRT in a general form. As for special
+gases, such as gaseous hydrogen, it also can be presented as p = ρRH2 T. The relationship between the gas constant of hydrogen RH2 and
+the universal gas constant R can be expressed as RH2 = R/MH2 . The molecular mass of hydrogen MH2 is equal to 2 g/mol.
+The gaseous hydrogen mass in the tank can be calculated from the dehydriding rate of MH bed and the mass flow rate of hydrogen
+supplied for PEMFC. The temperature of gaseous hydrogen is assumed to be the same as that of MH bed TMH [K].
+The equilibrium pressure peq [bar] is shown as [15],
+( )
+peq
+ΔH
+ΔS
+(14)
+ln
++
+=−
+RTMH
+R
+p0
+where the reference pressure p0 is equal to 1 bar, the entropy of reaction ΔS is equal to 108 J/mol/K, and the enthalpy of reaction ΔH is
+equal to 30800 J/mol. The equilibrium pressure is reduced from the Van’t Hoff equation, where the symbol R means the universal gas
+constant rather than the gas constant of hydrogen. The universal gas constant R is equal to 8.314 J/mol/K.
+The energy conservation for the hydrogen storage tank can be expressed as [9,33],
+(
+
+mH2 cpH2 + ms cps
+
+) dTMH
+dmMH SC
+= AW MH U(TW MH in − TMH ) + ΔH
+dt
+dt MMH
+
+(15)
+
+where the term AW MH U(TW MH in − TMH ) can be defined as the heat Q1 [W] transferred from the heat exchanger into the MH tank. The
+symbol AW MH [m2] means the heat exchange area between the circulating water and the MH bed, and the wall of circulating water is
+ignored.
+The heat transfer coefficient between the MH bed and the circulating water U [W/m2/K] can be calculated as follows,
+
+Fig. 1. Schematic design of metal hydride hydrogen storage tank coupled with proton exchange membrane fuel cells.
+
+4
+
+Case Studies in Thermal Engineering 43 (2023) 102812
+
+L. Tong et al.
+
+U = 1.86Ref 1/3 Prf 1/3
+
+( )1/3 ( )0.14
+d3
+μf
+λd3
+L
+μW
+
+(16)
+
+where Ref means the Reynolds number of fluid, Prf is the Prandtl number of fluid, and more details have been given in Ref. [34].
+In addition, the hydrogen storage capacity of the MH bed wt [%] is defined as mH /ms × 100 in this work, mH [g] means the mass of
+hydrogen stored in the MH bed and ms [g] is the mass of the MH bed. This parameter wt can be considered a reference to measure the
+amount of residual hydrogen stored in the reactor in the fuel supply process.
+2.3. Thermal management between PEMFC and metal hydride tank
+The thermal management sub-system plays an important role in maintaining the normal operation of the PEMFC-MH system. As for
+the PEMFC-MH system in the present work, a portion of the heat produced by the PEMFC stack can be used to heat the MH bed for
+quick hydrogen release. It provides a feasible way for the waste heat utilization of PEMFC. The heat exchanger transfers the rest waste
+heat from the circulating water to the environment.
+The diagram of the PEMFC-MH system is shown in Fig. 1. The circulating water in the tube is used as the heat exchange medium
+among the PEMFC stack, the MH bed and the heat exchanger. The circulating water with a relatively high temperature flows out from
+the PEMFC stack, and flows to the MH tank and the heat exchanger through a three-way valve. Then, the circulating water with a
+relatively low temperature from these two devices flows into the PEMFC stack through another three-way valve. The mass flow rate of
+circulating water flowing through the PEMFC stack ṁW FC [kg/s] can be controlled by the pump.
+The energy balance equation of the circulating water between the inlet and the outlet of the PEMFC stack section can be expressed
+as,
+(17)
+
+ṁW FC cpW TW FC out = QFC + ṁW FC cpW TW FC in
+
+where ṁW FC means the mass flow rate of circulating water and is set to be constant in this work, TW FC out [K] and TW FC in [K] are the
+temperature of circulating water at the outlet and the inlet of the PEMFC stack, respectively. For simplification, TW FC out is set to be
+equal to the operation temperature of PEMFC TFC . The specific heat capacity of circulating water cpW is equal to 4185 J/kg/K. The heat
+generation of PEMFC QFC is relative to the hydrogen consumption rate, which can be considered the mass flow rate of hydrogen ṁH2
+supplied from the MH tank to the PEMFC stack.
+The energy balance equation of the circulating water between the inlet and the outlet of the MH bed section can be written as,
+(18)
+
+ṁW MH cpW TW MH in = QMH + ṁW MH cpW TW MH out
+
+where QMH means the heat transferred from the circulating water to the MH bed. The mass flow rate of circulating water flowing
+through the MH bed ṁW MH can be controlled by the opening percentage of the three-way valve a, which is equal to aṁW FC . The
+temperature of circulating water at the inlet of the MH bed TW MH in is simplified as TFC .
+As for the heat exchanger section, its energy balance equation can be shown as,
+(19)
+
+ṁW HE cpW TW HE in = QHE + ṁW HE cpW TW HE out
+
+where TW HE in = TFC and ṁW HE = (1 − a)ṁW FC . The symbol QHE [W] means the heat transferred from the circulating water to the
+environment through the heat exchanger.
+The circulating water from the PEMFC flows partially to heat the MH bed and residually to be cooled by the heat exchanger, and
+then both water currents flow into another three-way valve and merge to the cooling tube in the PEMFC stack. The energy balance
+equation can be presented as,
+ṁW FC cpW TW FC in = aṁW FC cpW TW MH out + (1 − a)ṁW FC cpW TW HE out
+
+(20)
+
+The temperature of circulating water at the inlet of the PEMFC stack TW FC in can be presented as aTW MH out + (1 − a)TW HE out .
+3. Model parameters and validation
+3.1. Model parameters
+A lumped parameter model of the PEMFC stack is applied to the PEMFC-MH system. As a power generation device, the PEMFC
+produces electricity and releases waste heat as a by-product by consuming hydrogen. In order to meet the temperature limitation of
+proton exchange membranes, the operation temperature of the PEMFC stack is almost below 90 ◦ C, which is dependent on the thermal
+management strategy of the PEMFC system. In this work, the operation temperature is set to be constant. The PEMFC stack consists of
+45 single fuel cells. The active area of the single fuel cell is 50 cm2 and its thickness of the membrane is 0.00508 cm, more information
+about the single cell can be found in Refs. [25,26].
+As shown in Fig. 1, the hydrogen storage tank is equipped with a straight tube heat exchanger for heating the MH bed during
+dehydriding. The outer diameter of the tank d1 is 0.13 m and its inner diameter d2 is 0.11 m. The total length of the MH tank is 0.6 m,
+and the length of the cooling tube in the MH bed L is 0.58 m. The outer diameter of the cooling tube d3 is 0.012 m, and the effect of the
+steel wall of the cooling tube on system performance is ignored in this lumped parameter model. The heat transfer area AW_MH between
+the MH bed and the circulating water has been calculated and set as about 0.02187 m2. The metal hydride LaNi5H6 is a kind of common
+5
+
+Case Studies in Thermal Engineering 43 (2023) 102812
+
+L. Tong et al.
+
+hydrogen storage material which can release hydrogen at room temperature. It also shows good performance of hydriding/dehy­
+driding reaction kinetics. Of course, some other MHs with a relatively low operation temperature, such as TiFe hydrides, can be applied
+to the PEMFC-MH system in the future. The hydrogen storage tank is filled with this material, and the volume of the MH bed is about
+70% of the total volume of this tank [21]. The change in the volume of the MH bed during dehydriding is neglected, and the porosity of
+the MH bed is assumed to be constant (0.5 [-]). The solid material is in the saturated state at the initial stage, and its density is equal to
+7259 kg/m3 [10,15]. There is about 12.95 kg of MH in the tank, which can be used to store about 177.4 g of H2. The initial temperature
+and the initial pressure are set as 323 K and 4.576 bar, respectively. More information on the parameters used in the simulation of the
+PEMFC-MH system is presented in Table 1.
+3.2. Model validation
+Based on the mathematical equations and the parameters above, the lumped parameter model of PEMFC can be developed on the
+software platform Matlab/Simulink. The flowchart of calculation for the PEMFC-MH system has been presented in Fig. 2. Based on the
+power requirement of load, the hydrogen supply rate from the MH tank to PEMFC is determined. Then, PEMFC can generate power for
+a load with much heat released. By setting the opening degree of the valve in the thermal management of the PEMFC-MH system, the
+waste heat can be reused for a dehydriding reaction. Its simulation results are compared with the data from other published works [25,
+26], including the voltage and the thermal power of a single fuel cell at different operation temperatures (323 K and 353 K), as shown
+in Fig. 3. In general, the voltage decreases and the thermal power increases with the increment of the current density. The difference
+between the present work and others is acceptable, so this PEMFC model can be considered validated.
+In addition, various lumped parameter models of hydrogen storage tanks filled with MH have been validated in our previous work
+[33]. The MH tank is used to supply hydrogen fuel for PEMFC in order to satisfy the requirement of loads. Some waste heat as the
+by-product of PEMFC is applied to heat the MH tank and improve the dehydriding rate through the circulating water system. Basic
+energy balance equations are used to describe the thermal management between the MH tank and the PEMFC system, whose cor­
+rectness is self-evident. In general, the PEMFC-MH system can be considered validated based on the effectiveness of these sub-system
+models. This lumped parameter model can be used as a basic reference to estimate the feasibility of the PEMFC-MH system and find
+reasonable operating conditions.
+4. Case studies
+4.1. Performance prediction of PEMFC-MH system
+The performance of the PEMFC-MH system has been predicted in order to evaluate the feasibility of heating the MH bed with the
+waste heat of PEMFC.
+The hydrogen supply rate of the MH tank ṁH2 is set as 2.25 × 10− 2 g/s (about 15.17 L/min), which is assumed to be equal to the
+hydrogen consumption rate of PEMFC. The changes in hydrogen pressure between the MH bed and the PEMFC are not considered in
+this work. The hydrogen flowing into the PEMFC is assumed to be consumed completely. The operation temperature of PEMFC TFC and
+the opening degree of the three-way valve a are set as 323 K and 0.3, respectively. The temperatures of circulating water at the inlet of
+the MH bed and heat exchanger are assumed to be equal to TFC .
+The simulation results have been presented in Fig. 4, including the hydrogen pressure in the MH tank, the average temperature of
+the MH bed, the hydrogen storage capacity of the MH bed, the heat power of the PEMFC system, the MH bed and the heat exchanger,
+the temperatures of circulation water at the inlet and the outlet of MH bed and the temperatures of circulation water at the inlet and the
+outlet of heat exchanger. As shown in Fig. 4a, the maximum pressure of hydrogen in the MH tank is about 3.5 bar (0.35 MPa).
+Considering the relatively low operating pressure of MHs, the max pressure in the MH reactor is much lower than the normal working
+pressure of the compressed hydrogen storage tank (35 MPa/70 MPa). We can use the low-cost metal tank for the MHs.
+When the gaseous hydrogen flows into the PEMFC stack from the MH tank at a constant rate, the hydrogen storage capacity of the
+MH bed almost decreases linearly, and the hydrogen pressure in the tank decreases to below 1.1 bar after 2170 s. Under these con­
+ditions, it is necessary to equip a device to increase the pressure of hydrogen in order to meet the requirement for the inlet pressure at
+the anode.
+Table 1
+Parameters used in the simulation [9,10,15,25,26,33].
+Parameter
+
+Values
+
+Parameter
+
+Values
+
+Active area of single fuel cell A, [cm2]
+Number of fuel cells, Ncell [− ]
+Inlet gas pressure of the anode, pan [bar]
+Kinetics constant, Cd [1/s]
+Activation energy, Ed [J/mol]
+Molecular mass of hydrogen, MH2 [g/mol]
+Molecular mass of hydrogen, MMH [g/mol]
+Porosity of metal hydride bed, ε [1]
+Hydrogen stoichiometry in PEMFC, φ [1]
+Hydrogen stoichiometry in MH, SC [1]
+Mass flow rate of circulating water flowing through PEMFC, ṁW FC
+[kg/s]
+
+50
+45
+1
+9.6
+16420
+2
+438
+0.5
+1
+3
+0.02608
+
+Thickness of membrane, τm [cm]
+Faraday constant, F [C/mol]
+Inlet gas pressure of the cathode, pca [bar]
+Enthalpy of reaction, ΔH [J/mol]
+Entropy of reaction, ΔS [J/mol/K]
+Specific heat capacity of metal hydride, cps [J/g/K]
+Specific heat capacity of hydrogen, cpH2 [J/g/K]
+Reference pressure, p0 [bar]
+Universal gas constant, R [J/mol/K]
+Specific heat capacity of water, cpW [J/kg/K]
+Heat exchange area between MH bed and circulating water,
+AW MH [m2]
+
+0.00508
+96485
+1
+30800
+108
+0.355
+14.3
+1
+8.314
+4185
+0.02187
+
+6
+
+Case Studies in Thermal Engineering 43 (2023) 102812
+
+L. Tong et al.
+
+Fig. 2. Flowchart of calculation for PEMFC-MH system.
+
+Fig. 3. Model validation for single proton exchange membrane fuel cell, including the output voltage (a, c) and thermal power (b, d) at TFC = 323 K (a, b) and TFC =
+353 K (c, d).
+
+Given the constant hydrogen supply rate for the PEMFC, the heat power QFC can be considered a fixed value. The heat generated by
+PEMFC is divided into two parts, one is used to heat the MH bed through the circulation water, and the other is transferred to the
+environment through the heat exchanger. The ratio of the amount of heat produced by PEMFC to that delivered to the MH bed can be
+written as QMH /QFC . The simulation results show that the value of the expression QMH /QFC is no more than 21%, which means the heat
+produced by PEMFC is enough for heating MH bed under ideal conditions.
+7
+
+Case Studies in Thermal Engineering 43 (2023) 102812
+
+L. Tong et al.
+
+Fig. 4. Simulation results of PEMFC-MH model when the opening degree of the valve a = 0.3 and flow rate of hydrogen from MH tank to PEMFC ṁH2 = 15.17 L/min,
+including (a) pressure of hydrogen in MH tank, (b) average temperature of MH bed, (c) hydrogen storage capacity of MH bed, (d) heat power, (e) temperatures at the
+inlet and the outlet of MH bed and (f) temperatures at the inlet and the outlet of heat exchanger.
+
+The power of this system consisting of 45 single fuel cells, the same as that researched in the last section, is about 1 kW, which is
+enough to drive a light PEMFC motorcycle. As for hydrogen energy applications with relatively large power, such as the hydrogenpowered forklift in the port and the PEMFC-powered vessels on the river, multiple MH tanks can be designed and integrated as a
+whole to satisfy its hydrogen supply demand.
+Considering the designed hydrogen supply rate of 15.17 L/min, the output power of this PEMFC can be calculated as about 926.5
+W, which is almost equal to its rated power. A part of heat as the by-product of PEMFC can be used for the dehydriding reaction. The
+results show that the amount of hydrogen stored in this MH tank can be used for the fuel cell system to work for about 2 h.
+4.2. Parametric study of PEMFC-MH system
+Effects of the valve’s opening degree and the flow rate of hydrogen from the MH tank to PEMFC on the performance of the PEMFCMH system, including the pressure of hydrogen in the MH tank, the average temperature and the hydrogen storage capacity of the MH
+bed, the temperatures of circulating water at the outlet of the MH bed and the heat exchanger, have been carried out in this section, as
+shown in Figs. 5 and 6.
+8
+
+Case Studies in Thermal Engineering 43 (2023) 102812
+
+L. Tong et al.
+
+There are five cases with different opening degrees of the valve in Fig. 5. Considering the hydrogen supply rate of 15.17 L/min is
+fixed in these cases, it means the heat produced by PEMFC is constant. More heat can be distributed to the MH bed with a relatively
+large opening degree of the valve, which leads to increases in the gaseous hydrogen in the tank, the average temperature of the MH bed
+and the temperature of circulating water at the outlet of the MH bed, as shown in Fig. 5a, b and d. The effect of the opening degree of
+the valve on the hydrogen storage capacity of the MH bed is insignificant, as shown in Fig. 5c. The waste heat released by PEMFC is
+distributed to the MH bed and the heat exchanger. The more the MH bed absorbs, the less the heat exchanger exhausts. It is why the
+temperature of circulating water at the outlet of the heat exchanger decreases with the increase of the opening degree of the valve, as
+shown in Fig. 5e.
+When the opening degree of the valve is set as 0.5, the pressure of gaseous hydrogen in the tank is above 1.1 bar before about 7500
+s, which means that the hydrogen released from the MH tank can be directly charged into the fuel cell without additional pressuri­
+zation device when the pressure loss of hydrogen in the tube is ignored. At this time, about 95% of the hydrogen stored in the MH bed
+
+Fig. 5. Simulation results of PEMFC-MH model when the opening degree of the valve a ranges from 0.3 to 0.5 and the flow rate of hydrogen from MH tank to PEMFC is
+15.17 L/min, including (a) pressure of hydrogen in MH tank, (b) average temperature of MH bed, (c) hydrogen storage capacity of MH bed, (d) temperatures at the
+outlet of MH bed, (e) temperatures at the outlet of heat exchanger and (f) temperatures at almost steady state (t = 4000 s).
+
+9
+
+Case Studies in Thermal Engineering 43 (2023) 102812
+
+L. Tong et al.
+
+Fig. 6. Simulation results of PEMFC-MH model when the output power of PEMFC ranges from 756 W to 926 W, including (a) pressure of hydrogen in MH tank, (b)
+average temperature of MH bed, (c) hydrogen storage capacity of MH bed, (d) temperatures at the outlet of MH bed, (e) temperatures at the outlet of the heat
+exchanger and (f) hydrogen mass flow rate and the opening degree of the valve.
+
+has been released.
+The performance of the PEMFC-MH system under various output powers has been predicted in order to satisfy different operating
+modes for hydrogen application. The output power of PEMFC is set to 926.5 W, 921.5 W, 888 W, 831.6 W and 756.3 W, where the flow
+rate of hydrogen from MH tank to PEMFC respectively correspond to 15.17 L/min, 13.65L/min, 12.13 L/min, 10.62 L/min and 9.101
+L/min, as shown in Table 2. The flow rate of hydrogen in Case 5 to Case 9 decreases by 10% of that in Case 5 (about 1.517 L/min) in
+turn. The output power of PEMFC can be calculated by the flow rate of hydrogen. When about 95% hydrogen has been released from
+the MH tank and the pressure in the tank is not below 1.1 bar, the opening degree of the valve is determined. System performance with
+different output powers is present in Fig. 6. In general, the output power of PEMFC declines with the decrease in the flow rate of
+hydrogen. This MH tank with a smaller opening degree of the valve can be satisfied the hydrogen requirement for PEMFC with
+relatively low output power.
+10
+
+Case Studies in Thermal Engineering 43 (2023) 102812
+
+L. Tong et al.
+Table 2
+Operation conditions for parametric study.
+Case
+
+Flow rate of hydrogen from MH tank to
+PEMFC [L/min]
+
+Current density iFC [A/
+cm2]
+
+Output power of PEMFC
+[W]
+
+Opening degree of valve
+a [− ]
+
+Dehydriding time
+[s]
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+15.17
+15.17
+15.17
+15.17
+15.17
+13.65
+12.13
+10.62
+9.101
+
+0.9648
+0.9648
+0.9648
+0.9648
+0.9648
+0.8684
+0.7719
+0.6754
+0.5789
+
+926
+926
+926
+926
+926
+921.5
+888
+831.6
+756.3
+
+0.3
+0.35
+0.4
+0.45
+0.5
+0.35
+0.25
+0.15
+0.1
+
+7500
+7500
+7500
+7500
+7500
+8333
+9375
+10714
+12500
+
+5. Conclusions
+The lumped parameters model for the PEMFC-MH system composed of the PEMFC stack, the MH tank and the thermal management
+sub-system has been developed on the Matlab/Simulink software platform based on basic governing equations. Detailed information
+on the governing equations of these sub-systems has been presented in this work. The effectiveness of the model for the PEMFC stack
+has been validated by the data from literature. The validation of the model of a hydrogen storage tank filled with metal hydrides was
+done in our previous work. The model of the PEMFC-MH system with the rated output power of about 1 kW can be considered effective
+for studying the system performance under various conditions. A parametric study is applied to the system coupling the MH hydrogen
+storage tank and proton exchange membrane fuel cells to improve its energy efficiency. The opening degree of the valve and the flow
+rate of hydrogen have been considered in the parametric study. As for the given PEMFC-MH system, when the hydrogen supply rate is
+15.17 L/min and the opening degree of the valve is set as 0.5, the MH tank can directly be used to supply the fuel to the fuel cell with
+the power of about 1 kW about 2 h. The hydrogen storage system can meet the hydrogen requirement of the fuel cell system when its
+output power ranges from 756.3 W to 926 W, where the matching opening degree of the valve has been given. Based on proper thermal
+management between the PEMFC stack and the MH tank, the PEMFC-MH system can present a certain degree of autonomy and stably
+generate electric energy without additional auxiliary heating equipment during dehydriding.
+More work can be done to optimize the relationship between the capacity of the hydrogen storage tank and the output power of
+PEMFC. Moreover, how to effectively control the dehydriding rate when the PEMFC is started at low temperatures should be
+considered in the future.
+CRediT authorship contribution statement
+Liang Tong: writing—original draft preparation, modeling and simulation;
+Chengqing Yuan: supervision, writing—review and editing;
+Tianqi Yang: visualization, software;
+Yupeng Yuan: writing—review and editing;
+Richard Chahine: supervision, conceptualization;
+Jinsheng Xiao: methodology, writing—review and editing.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to
+influence the work reported in this paper.
+Data availability
+Data will be made available on request.
+Acknowledgments
+This work is supported by the National Key R&D Program of China (No. 2021YFB2601603), the Key Research and Development
+Program of Hubei Province of China (No.2020BHB001), the Natural Science Foundation of Hubei Province of China (No.2021CFB071)
+and the Natural Science Foundation of Liaoning Province of China (No. 2020-CSLH-43). Thanks also should be given to Prof. Pierre
+Bénard for helpful discussions.
+References
+[1] International Energy Agency. An energy sector roadmap to carbon neutrality in China. https://www.iea.org/reports/an-energy-sector-roadmap-to-carbonneutrality-in-china.
+[2] M. Cavo, E. Gadducci, D. Rattazzi, M. Rivarolo, L. Magistri, Dynamic analysis of PEM fuel cells and metal hydrides on a zero-emission ship: a model-based
+approach, Int. J. Hydrogen Energy 46 (2021) 32630–32644.
+
+11
+
+Case Studies in Thermal Engineering 43 (2023) 102812
+
+L. Tong et al.
+
+[3] C. Dall’Armi, D. Micheli, R. Taccani, Comparison of different plant layouts and fuel storage solutions for fuel cells utilization on a small ferry, Int. J. Hydrogen
+Energy 46 (2021) 13878–13897.
+[4] L. Tong, Y.P. Yuan, X. Li, X.P. Yan, Innovative developmental of hydrogen-powered ships in China, Strategic Study of CAE 24 (2022) 127–139.
+[5] J.J. de-Troya, C. Alvarez, C. Fernandez-Garrido, L. Carral, Analysing the possibilities of using fuel cells in ships, Int. J. Hydrogen Energy 41 (2016) 2853–2866.
+[6] M.W. Davids, M. Lototskyy, M. Malinowski, D van Schalkwyk, A. Parsons, S. Pasupathi, D. Swanepoel, T. van Niekerk, Metal hydride hydrogen storage tank for
+light fuel cell vehicle, Int. J. Hydrogen Energy 44 (2019) 29263–29272.
+[7] D. Apostolou, Refuelling scenarios of a light urban fuel cell vehicle with metal hydride hydrogen storage. Comparison with compressed hydrogen storage
+counterpart, Int. J. Hydrogen Energy 46 (2021) 39509–39522.
+[8] F. Laurencelle, J. Goyette, Simulation of heat transfer in a metal hydride reactor with aluminium foam, Int. J. Hydrogen Energy 32 (2007) 2957–2964.
+[9] B.A. Talaganis, G.O. Meyer, P.A. Aguirre, Modeling and simulation of absorption-desorption cyclic processes for hydrogen storage-compression using metal
+hydrides, Int. J. Hydrogen Energy 36 (2011) 13621–13631.
+[10] C.A. Chung, C.J. Ho, Thermal-fluid behavior of the hydriding and dehydriding processes in a metal hydride hydrogen storage canister, Int. J. Hydrogen Energy
+34 (10) (2009) 4351–4364.
+[11] Y. Liu, I. Ayub, M.R. Khan, F.S. Yang, Z. Wu, Z.X. Zhang, Numerical investigation of metal hydride heat storage reactor with two types multiple heat transfer
+tubes structures, Energy 253 (2022), 124142.
+[12] J.S. Xiao, L. Tong, P. Bénard, R. Chahine, Thermodynamic analysis for hydriding-dehydriding cycle of metal hydride system, Energy 191 (2020), 116535.
+[13] S.N. Nyamsi, Z. Wu, Z.X. Zhang, A. Kolesnikov, M.V. Lototskyy, S. Pasupathi, Dehydrogenation performance of metal hydride container utilising MgH2-based
+composite, Appl. Therm. Eng. 209 (2022), 118314.
+[14] LE Klebanoff, S.A.M. Caughlan, R.T. Madsen, C.J. Conard, T.S. Leach, B.T. Appelgate Jr., Comparative study of a hybrid research vessel utilizing batteries or
+hydrogen fuel cells, Int. J. Hydrogen Energy 46 (2021) 38051–38072.
+[15] L. Tong, J.S. Xiao, P. Bénard, R. Chahine, Thermal management of metal hydride hydrogen storage reservoir using phase change materials, Int. J. Hydrogen
+Energy 44 (2019) 21055–21066.
+[16] J. Yao, P.F. Zhu, L.L. Guo, L. Duan, Z.X. Zhang, S. Kurko, Z. Wu, A continuous hydrogen absorption/desorption model for metal hydride reactor coupled with
+PCM as heat management and its application in the fuel cell power system, Int. J. Hydrogen Energy 45 (2020) 28087–28099.
+[17] J. Yao, P.F. Zhu, C.H. Qian, U. Hamidullah, S. Kurko, F.S. Yang, Z.X. Zhang, Z. Wu, Study of an autothermal-equilibrium metal hydride reactor by reaction heat
+recovery as hydrogen source for the application of fuel cell power system, Energy Convers. Manag. 213 (2020), 112864.
+[18] S. Mellouli, F. Askri, E. Abhilash, S Ben Nasrallah, Impact of using a heat transfer fluid pipe in a metal hydride-phase change material tank, Appl. Therm. Eng.
+113 (2017) 554–565.
+[19] P. Di Giorgio, G. Di Ilio, E. Jannelli, F.V. Conte, Innovative battery thermal management system based on hydrogen storage in metal hydrides for fuel cell hybrid
+electric vehicles, Appl. Energy 315 (2022), 118935.
+[20] D. Chabane, F. Harel, A. Djerdir, D. Candusso, O. Elkedim, N. Fenineche, Energetic modeling, simulation and experimental of hydrogen desorption in a hydride
+tank, Int. J. Hydrogen Energy 44 (2019) 1034–1046.
+[21] D. Chabane, M. Iqbal, F. Harel, A. Djerdir, D. Candusso, O. Elkedim, N.E. Fenineche, Coupling a metal hydride tank with a PEMFC for vehicular applications: a
+simulations framework, Int. J. Energy Res. 45 (2021) 16511–16523.
+[22] R. Omrani, H.Q. Nguyen, B. Shabani, Thermal coupling of an open-cathode proton exchange membrane fuel cell with metal hydride canisters: an experimental
+study, Int. J. Energy Res. 45 (2020) 28940–28950.
+[23] U.K. Chakraborty, T.E. Abbott, S.K. Das, PEM fuel cell modeling using differential evolution, Energy 40 (2012) 387–399.
+[24] M. Khan, M. Iqbal, Modelling and analysis of electrochemical, thermal, and reactant flow dynamics for a PEM fuel cell system, Fuel Cell 5 (2005) 463–475.
+[25] S. Chugh, C. Chaudhari, K. Sonkar, A. Sharma, G. Kapur, S. Ramakumar, Experimental and modeling studies of low temperature PEMFC performance, Int. J.
+Hydrogen Energy 45 (2020) 8866–8874.
+[26] L. Xing, H.W. Chang, R.Q. Zhu, T. Wang, Q.F. Zou, W.T. Xiang, Z.K. Tu, Thermal analysis and management of proton exchange membrane fuel cell stacks for
+automotive vehicle, Int. J. Hydrogen Energy 46 (2021) 32665–32675.
+[27] A.P. Tetuko, B. Shabani, J. Andrews, Thermal coupling of PEM fuel cell and metal hydride hydrogen storage using heat pipes, Int. J. Hydrogen Energy 41 (2016)
+4264–4277.
+[28] F. Mahmoodi, R. Rahimi, Experimental and numerical investigating a new configured thermal coupling between metal hydride tank and PEM fuel cell using heat
+pipes, Appl. Therm. Eng. 178 (2020), 115490.
+[29] D. Zhu, Y. Ait-Amirat, A. N’Diaye, A. Djerdir, Active thermal management between proton exchange membrane fuel cell and metal hydride hydrogen storage
+tank considering long-term operation, Energy Convers. Manag. 202 (2019), 112187.
+[30] D. Chabane, M. Ibrahim, F. Harel, A. Djerdir, D. Candusso, O. Elkedim, Energy management of a thermally coupled fuel cell system and metal hydride tank, Int.
+J. Hydrogen Energy 44 (2019) 27553–27563.
+[31] M Cavo, M. Rivarolo, L Gini, L Magistri. An advanced control method for fuel cells - Metal hydrides thermal management on the first Italian hydrogen propulsion
+ship, Int. J. Hydrogen Energy, https://doi.org/10.1016/j.ijhydene.2022.07.223.
+[32] L. Tong, C.Q. Yuan, T.Q. Yang, P. Bénard, Y.P. Yuan, J.S. Xiao, Performance estimation of dehydriding process in metal hydride hydrogen storage tank with
+coiled-tube heat exchanger, Case Stud. Therm. Eng. 28 (2021), 101633.
+[33] J.S. Xiao, L. Tong, T.Q. Yang, P. Bénard, R. Chahine, Lumped parameter simulation of hydrogen storage and purification systems using metal hydrides, Int. J.
+Hydrogen Energy 42 (2017) 3698–3707.
+[34] G.J. Zhu, Transport Principle, Metallurgical Industry Press, Beijing, 2009.
+
+12
+
+

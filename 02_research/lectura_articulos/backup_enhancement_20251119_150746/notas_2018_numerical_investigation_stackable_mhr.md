@@ -1,0 +1,181 @@
+# Notas de Lectura: Numerical Investigation of Stackable Metal Hydride Reactors
+
+
+**Autor:** A verificar en PDF
+
+**Revista:** international journal of hydrogen energy
+
+
+**Referencia BibTeX:** `chippar2018`
+
+**Fecha de Publicación:** 2018
+
+---
+
+## 1. Resumen
+
+
+Investigación numérica del comportamiento y rendimiento de reactores de hidruro metálico apilables, con énfasis en la optimización del diseño y la eficiencia del sistema integrado modular. Se analiza la transferencia de calor entre módulos, conducción interna y gestión térmica del sistema completo.
+
+## 2. Imagen de Referencia
+
+
+![Diseño de reactor apilable](img/notas_2018_numerical_investigation_stackable_mhr.png)
+
+## 3. Puntos Clave y Datos
+
+
+### Aspectos Principales
+
+
+- Modelado numérico de sistema apilable con múltiples módulos MH
+
+- Análisis de configuraciones de apilamiento para optimización espacial
+
+- Optimización parámetros térmicos y geométricos del sistema
+
+- Validación del modelo con datos experimentales
+
+- Conducción entre módulos como factor crítico
+
+- Gestión térmica integrada del sistema apilable
+
+## 4. Características Técnicas del Sistema
+
+
+### 4.1 Hidruro Metálico
+
+
+- **Tipo de hidruro:** Variable según módulo (análisis paramétrico)
+
+- **Cantidad de hidruro:** Escalable según número de módulos apilados
+
+- **Conductividad Térmica MH:** Variable, analizada en estudio paramétrico
+
+### 4.2 Configuración Geométrica
+
+
+- **Descripción del sistema:** Módulos MH apilables con interfaces térmicas optimizadas, diseño modular escalable
+
+- **Configuración geométrica:** Apilable modular con unidades cilíndricas o prismáticas
+
+- **Longitud (mm):** Por módulo unitario (variable)
+
+- **Diámetro (mm):** Dimensión módulo (variable)
+
+- **L/D ratio:** Optimizado según configuración
+
+- **Volumen (L):** Capacidad escalable del sistema
+
+### 4.3 Transferencia de Calor
+
+
+- **Intercambiador de Calor:** Intercambio interno por módulo más conducción entre módulos
+
+- **Coeficiente de transferencia de calor:** Resistencias de contacto entre módulos críticas
+
+### 4.4 Condiciones de Operación
+
+
+- **Temperatura (degC):** Rangos de trabajo según aplicación
+
+- **Presión de trabajo:** Condiciones operativas del sistema
+
+- **Flujo (NL/min):** Tasas de transferencia H2 del sistema
+
+### 4.5 Rendimiento del Sistema
+
+
+- **Tiempo carga:** Dependiente de número de módulos y configuración
+
+- **Cantidad H2:** Escalable según módulos apilados
+
+## 5. Transferencia de Calor
+
+
+**Métodos de transferencia de calor utilizados:**
+
+- Conducción entre módulos apilados (factor crítico)
+
+- Intercambio térmico interno en cada módulo
+
+- Gestión térmica coordinada del sistema integrado
+
+- Optimización de interfaces térmicas
+
+**Materiales y propiedades térmicas:**
+
+- Conductividades de materiales estructurales
+
+- Capacidades térmicas de módulos
+
+- Resistencias de contacto entre unidades apiladas
+
+- Materiales de interfaz térmica
+
+**Eficiencia térmica:**
+
+- Resultados numéricos de simulación térmica
+
+- Optimización de gradientes térmicos
+
+- Uniformidad térmica entre módulos
+
+**Problemas y soluciones relacionados con el manejo térmico:**
+
+- Problema: Resistencias térmicas de contacto entre módulos
+
+- Solución: Optimización de interfaces y materiales conductores
+
+- Problema: Gradientes térmicos en sistema apilado
+
+- Solución: Gestión térmica coordinada y distribución optimizada
+
+## 6. Conclusiones y Observaciones
+
+
+**Resultados principales:**
+
+- Modelado numérico validado para reactores apilables
+
+- Configuración modular permite escalabilidad efectiva
+
+- Resistencias de contacto entre módulos son factor crítico
+
+- Optimización de interfaces mejora rendimiento térmico
+
+- Sistema apilable viable para aplicaciones industriales
+
+- Flexibilidad de configuración según requerimientos
+
+**Recomendaciones:**
+
+- Optimizar interfaces térmicas entre módulos
+
+- Considerar efectos de escala en apilamiento
+
+- Gestión térmica coordinada esencial
+
+- Validación experimental de predicciones numéricas
+
+- Evaluar materiales de interfaz térmica
+
+- Diseño modular para mantenimiento facilitado
+
+## 7. Referencias Adicionales
+
+
+- Estudios de modelado numérico en sistemas MH
+
+- Análisis de transferencia de calor en configuraciones apilables
+
+- Optimización térmica de reactores modulares
+
+- Validación experimental de modelos numéricos
+
+---
+
+### Notas Adicionales
+
+
+Modelo numérico considera conducción, convección y resistencias de contacto. Configuración apilable ofrece ventajas de escalabilidad y modularidad. Interfaces térmicas críticas para rendimiento global. Validación experimental necesaria para confirmar predicciones.

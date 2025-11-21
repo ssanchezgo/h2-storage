@@ -1,0 +1,1747 @@
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+Available online at www.sciencedirect.com
+
+ScienceDirect
+journal homepage: www.elsevier.com/locate/he
+
+Metal hydride reactor for output temperature
+control
+€lbig b, S. Go
+€ltz a, J. Heidingsfeld a, A. Rentz a,
+D. Gehring a, M. Ko
+O. Sawodny a, M. Linder b, I. Bürger b,*
+a
+
+Institute for System Dynamics, University of Stuttgart, Waldburgstr. 17/19, 70563, Stuttgart, Germany
+German Aerospace Center (DLR), Institute of Engineering Thermodynamics, Thermal Process Technology,
+Pfaffenwaldring 38-40, 70569, Stuttgart, Germany
+
+b
+
+highlights
+ Precise temperature control required for extended lifetime of fuel cells.
+ Metal hydride module suggested as active thermal energy buffer for T-control.
+ 0D model identified and validated with experimental data of metal hydride reactor.
+ Designed controller successfully demonstrates T-stabilization at 70  C.
+ Response time of fluid outlet temperature of MH reactor is < 5 s.
+
+article info
+
+abstract
+
+Article history:
+
+Precise temperature control of fuel cell stacks is crucial to avoid degradation mechanisms
+
+Received 11 April 2023
+
+and thus to extend lifetime. The present study demonstrates that metal hydride based
+
+Received in revised form
+
+modules can assist in controlling this temperature by serving as active thermal energy
+
+1 September 2023
+
+storage. The reversible reaction of metals with hydrogen is characterized by a temperature
+
+Accepted 4 October 2023
+
+pressure correlation. Therefore, the temperature as well as the thermal power at which the
+
+Available online 28 October 2023
+
+thermal energy is released can be defined by the gas pressure. This enables the design of
+temperature controllers using the pressure as actuating variable on the metal hydride
+
+Keywords:
+
+device. In this study, an existing metal hydride reactor based on LaNi4.85Al0.15 is integrated
+
+Metal hydride
+
+into a hydrogen and cooling fluid testing infrastructure. Based on experiments indicating
+
+Thermochemical storages
+
+the step response behaviour, the parameters for a 0D model have been identified. A PI
+
+Model identification
+
+controller was designed based on simulations and implemented on the test rig hardware.
+
+Active temperature control
+
+First experimental results show that it is possible to stabilize the temperature of the
+cooling fluid circuit to 70 C ± 1.5 K while a thermal power of þ755 W/kgMH and 140 W/kgMH
+is provided for absorption and desorption, respectively.
+© 2023 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+* Corresponding author.
+E-mail address: inga.buerger@dlr.de (I. Bürger).
+https://doi.org/10.1016/j.ijhydene.2023.10.045
+0360-3199/© 2023 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+1.
+
+Introduction
+
+The commercialization of fuel cells has already started in the
+last decade, while there are still challenges for research like
+long-term durability of fuel cells in automotive applications
+[1]. Reducing degradation of fuel cells leads to a longer life
+time and thus to lower costs and higher sustainability of the
+fuel cell technology [2]. Fuel cells degrade in their performance
+over time due to mechanical, chemical and thermal mechanisms [3]. Thereby, mechanical failures have the highest
+occurrence potential and are considered as the main cause of
+early fuel cell failures [4,5]. In automotive applications the fuel
+cell is exposed to varying operation condition, leading to
+changes of the electrode potential, stoichiometric ratio of the
+supplied gases, internal temperature and humidity conditions
+[1]. Most of the mechanical degradation mechanisms as
+shrinking-swelling, fatigue, side chain scission processes and
+wrinkles are triggered by humidity fluctuations due to dynamic load changes or start ups and shutdowns [1,6]. For
+example low humidity and high temperatures lead among
+other aspects to an approximately ten time lesser lifetime of
+fuel cells in mobile application in comparison to operating as a
+fixed power source [7]. Furthermore, it could be shown that
+reducing the amplitude and frequency of humidity cycling
+leads to an increase of the membrane durability [8]. Therefore,
+in order to extend lifetime and reduce cost, the humidity and
+thus the temperature control of proton-exchange membrane
+fuel cell (PEM) is crucial and therefore extensively studied [9].
+Deviations of the optimal temperature occur mainly during
+two characteristic events: frost/cold start during the start-up
+phase and load variations during operation [1]. To reduce
+the numbers of frost start/cold start, various techniques are
+studied [10], e.g., electrical heaters, increase of oxygen partial
+pressure, or metal hydride (MH) based preheaters [11]. The
+concept in this paper focus on the stabilization of the operation temperature during load variation.
+There exist various cooling techniques for stabilization of
+the temperature during operation using air or liquid cooled
+systems, e.g., phase change or passive thermal elements [12]. A
+common layout for a liquid cooled temperature control is
+based on a bypass system with an air cooler in the cooling fluid
+circuit [13]. The thermal power of such a cooling system
+directly depends on the outside temperature as well as the
+surface of the cooler, which is an important factor for the
+packaging, e.g., in a vehicle application. In case of a temperature peak reduction in the cooling circuit, this cooler size could
+be reduced. So, the question arises, if there exists a system
+which could act as small thermal energy buffer providing a
+reduction of temperature peaks. Obviously, such kind of
+thermal energy buffer needs to fulfill requirements in size,
+weight and especially response time such that it could actually
+improve the existing simple cooling systems. In the present
+manuscript it will be shown that open MH systems are an option for such thermal buffers, as they show fast reaction kinetics and high thermal energy storage capacities.
+Furthermore, it is possible to integrate the system into the
+existing hydrogen infrastructure and using the gas pressure for
+active control, while no hydrogen is actually consumed [14].
+The goal of this manuscript is to introduce the concept of such
+
+1503
+
+an active MH temperature controller and demonstrate it's
+performance in an experimental setup. The results provide
+first insights into the power output that can be achieved, the
+response time of the controller and pave the way for future
+work.
+The operation principle underlying the suggested active
+thermal buffer is based on the reversible gas solid reaction of a
+MH with hydrogen (H) according to:
+1
+MHx þ yH2 %MHxþy þ DHR :
+2
+
+(1)
+
+The absorption reaction of hydrogen is exothermal and the
+desorption reaction endothermal, expressed by the reaction
+enthalpy DHR. The variable x and y stands for an arbitrary
+integer.
+There exist plenty of studies in which MH tanks are
+coupled to fuel cells and the required energy balances are
+discussed ([15e18]) or the active control of the thermal management is considered ([19,20]). However, the majority of
+these studies refer to MHs as gas storage devices. Thus, the
+hydrogen discharging rates are rather slow in comparison to
+their capacity (e.g. complete discharging in 1  2 h).
+The present MH device for active temperature control of
+the heat transfer fluid circuit is not considered as gas storage,
+but as a device that can provide high thermal powers for
+hydrogen based energy systems. In this case, the hydrogen
+gas is rather a requirement to release or provide heat and not
+to be stored itself.
+Fig. 1 shows the intended integration of such an active
+thermal buffer as a so called open MH system [14]. As it can be
+seen, the module is integrated into the hydrogen supply line of
+the fuel cell, thus it can be assumed that at any time hydrogen
+can be supplied at a pressure of 8 bar to the system. Furthermore, if required, it can be released to a fuel cell at a few mbar
+above ambient pressure. This open metal hydride concept has
+already been presented for air-conditioning applications [21]
+and it relies on the fact that the energy effort for hydrogen
+compression is outside of the considered energy balance. As a
+result, the energy available in the compressed hydrogen is
+granted for free and in this system no hydrogen is consumed.
+The operation principle of the intended temperature control by such a system integrated into an existing hydrogen
+infrastructure is also shown schematically in Fig. 1. Whenever
+the fuel cell is providing a varying electrical power demand,
+the thermal power released as well as the outlet temperature
+of the fuel cell vary accordingly (I). In order to compensate this
+temperature variation before it re-enters into the fuel cell, the
+metal hydride module is integrated into the heat transfer
+circuit. The pressure in the metal hydride module (II) can then
+be used to trigger the desired reaction and control the temperature in the MH (III): When the fluid temperature is below
+the set temperature, the pressure in the metal hydride reactor
+needs to be increased. Then, the exothermal reaction will take
+place and the temperature of the metal hydride increases. In
+case the fuel cell outlet temperature is above the set temperature, the hydrogen pressure will be decreased, resulting in
+the endothermal desorption and thus in a lower temperature.
+As a result, the outlet temperature of the MH reactor, which
+refers to the inlet temperature of the fuel cell, can be kept
+constant (IV).
+
+1504
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+Fig. 1 e The figure shows the intended integration of an active thermal buffer (green) as a so called open MH system. The H2
+components are colored in bright blue, the fuel cell components in darker blue and the cooling circuit is colored in light
+orange. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this
+article).
+
+So overall, the envisioned concept is based on the following
+two characteristic features of the reaction. First, due to the
+reversible exo-/endothermal reaction when hydrogen is provided or removed, it is possible to provide or remove thermal
+energy from the system. Thus, at the outlet of the active
+thermal buffer element a constant fluid temperature can be
+achieved even though the inlet temperature is fluctuating.
+Second, the pressure-temperature relationship combined with
+the available gas pressure levels enables not only to control the
+temperature level at which heat and cold are produced, precisely. Rather, there is the option to release the heat at a much
+higher temperature than the cold is provided. Thus, the dynamics of this active thermal buffer for smoothing of fluctuating inlet temperatures can be adjusted as required.
+In order to control the set pressure for an active metal
+hydride module, a corresponding active MH temperature
+controller can be described by a cascaded control structure
+
+shown in Fig. 2. The outer control variable of the cascaded
+temperature controller is the outlet temperature Tcf of the
+cooling fluid (CF) at the end of the MH-reactor. This temperature is disturbed by a change in the inlet temperature Tcf,in,
+e.g., by the load change of the fuel cell. To compensate the
+disturbance and maintain a desired temperature, the outer
+control loop calculates a desired pressure pset from the error
+eT. A pressure controller in the inner control loop controls the
+measured hydrogen pressure pg far from the inlet of the MH
+reactor by adapting the pressure pR at the inlet of the reactor.
+The error ep stands for the difference between the pressure pg
+_ cf of the cooling fluid is assumed to
+and pset. The mass flow m
+be constant in this article. Using the gas pressure as actuating
+variable, the temperature of the MH is set imposing two effects on the apparent thermal power. First, the absolute value
+of the temperature in the MH affects the reaction rate and
+thus the amount of heat that is released or absorbed. Second,
+
+Fig. 2 e Scheme for describing a cascaded active MH temperature controller.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+the emerging temperature gradient between the MH and the
+heat transfer fluid determines the driving force for the heat
+transfer. The research questions are: which temperature
+gradients can be compensated, at which specific thermal
+power and what is the response time of the temperature
+signal following the gas pressure?
+In order to demonstrate the proof of concept, a reactor
+designed for high thermal powers is required. In the present
+study, an existing reactor reported in Ref. [22] for preheating of
+fuel cells has been used. The reactor is filled with 960 g of the
+MH LaNi4.85Al0.15, which corresponds to an estimated thermal
+energy of 192 kJ for a full absorption reaction and 209 kJ for a full
+desorption reaction. The material is suitable for the study, as
+its equilibrium pressure at 70  C and 50% hydrogen loading is
+5.7 bar. Assuming that in a fuel cell infrastructure hydrogen is
+available at 8 bar while it is required in the fuel cell at few mbar
+above ambient pressure, the MH can achieve temperatures
+between 20  C and 75  C with a hydrogen loading of 90%. Details
+on the material properties especially the conversion dependence of the equilibrium conditions can be found in Ref. [23].
+
+2.
+Experimental testbench and model
+description
+2.1.
+
+Experimental set-up
+
+To demonstrate the performance of the temperature
+controller, an existing test bench with a MH reactor was
+
+1505
+
+adapted for identification and control of the reactor from
+Ref. [24]. The setup of the test bench can be found in Fig. 3.
+It consists of the cooling fluid circuit in black and the
+hydrogen gas part in blue. The cooling fluid flows from the
+thermostatic bath through the pump, the needle valve NV1
+and through the reactor back to the bath. Thus, in this setup,
+the thermostatic bath represents the fuel cell in a later
+application, which can provide varying outlet temperatures at
+various electrical loads. The two thermocouples (index small
+c,Tc) measure the cooling fluid temperature at the inlet Tcf,in
+and the outlet Tcf of the reactor. NV1 regulates the cooling fluid
+mass flow. The regulated mass flow of the cooling fluid is
+_ H2O .
+measured by a Coriolis mass flow meter M
+The MH reactor connects the cooling fluid circuit with the
+hydrogen circuit. The reactor is based on a shell-and-tube
+heat exchanger and was designed and build in Ref. [24]. It
+has one inlet and one outlet for the cooling fluid (black) and
+two ports on the hydrogen side (blue). At one hydrogen port,
+the pressure sensor P4 with the measured pressure pr is
+attached. The other port serves as in- and outlet for the
+hydrogen to the reactor. Therefore, the port is connected with
+the blue hydrogen circuit.
+The hydrogen for the experiments is provided from a
+hydrogen reservoir and is buffered in the Sieverts volume for
+precise balancing. To allow the balancing, the pressure sensor
+P1 measures the pressure psiev and the thermocouple Tc,siev the
+temperature Tsiev in the Sieverts volume. The Sieverts volume
+is connected to the inlet and outlet of the reactor by the
+pressure regulator PR1. Further the inlet and outlet of the
+
+Fig. 3 e Illustration of the test bench setup with the cooling fluid circuit in black and the hydrogen part in blue. (For
+interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article).
+
+1506
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+reactor is connected with the pressure regulator and flow
+meter PR2. PR2 controls the pressure for an outflow of
+hydrogen from the reactor to the surrounding. The outflowing
+_ H2 . The
+mass flow is measured by the mass flow meter M
+maximum measurable flow of the sensor is limited to 5 Nl/
+min. Therefore, a bypass valve PVout for higher not measured
+outflows is included. The pressure sensor P3 measures the
+pressure in the pipes pp. Table A.3 of the appendix gives an
+overview on the measurement equipment.
+Using the measured values for temperature, pressure and
+mass flows the heat flow from the MH to the cooling fluid, the
+mean temperature and the hydrogen charging are calculated.
+The hydrogen charging u is calculated differently for the two
+types of reactions. This is due to the different measurement
+methods during absorption and desorption.
+During absorption, u is calculated by integrating the
+changes in the amount of hydrogen in the Sieverts volume
+between time steps. During desorption the hydrogen flow can
+be measured with PR2 for hydrogen flow rates below 5 Nl/min
+and recalculated with the ideal gas law to a hydrogen
+charging. For higher volume flows, the hydrogen charging is
+estimated through the pressure. Therefore, the hydrogen
+charging value at the beginning and the end of the reaction is
+determined and a relation between pressure and the
+hydrogen charging is adopted. The exact calculation of the
+hydrogen charging during absorption and desorption can be
+comprehended in the Chapter Appendix B.
+Finally, the heat flow between the MH and the cooling fluid
+from measurement (meas) data can be calculated as
+_ cf ðTcf  Tcf;in Þ  Q_ loss ;
+Q_ cf;meas ¼ cp;cf m
+
+(2)
+
+with the heat loss to ambience Q_ loss , the specific heat capacity
+of the cooling fluid cp,cf and the mass flow of the cooling fluid
+_ cf;meas . The heat loss refers to a constant value for the
+m
+considered temperature range Tcf;in ¼ ½60; 70; 80  C. It is
+determined during steady state at Tcf,in ¼ 70  C with an inactive
+reactor ðQ_ cf;meas ¼ 0Þ. The heat loss has to be considered in the
+experimental data, as the model of the reactor will be discussed without the influence of the ambient.
+
+2.2.
+
+Model description
+
+For the mathematical modeling approach, the reactor
+described in the previous section is simplified as a lumped 0Dmodel with only one tube. Further, the reactor is divided into
+three different balance areas: hydrogen gas (light blue), cooling fluid (dark blue) and the hollow cylinder of the MH (purple). The lumped 0D-model is considered without influence of
+the ambient. The balance areas and the physical quantities for
+setting up the model equations are shown in Fig. 4.
+The balance for the cooling fluid area is derived from the
+energy balance described with the density of the cooling fluid
+rcf, the volume of the cooling fluid inside the reactor Vcf and
+the time derivative of the temperature Tcf as
+rcf cp;cf Vcf
+
+vTcf
+¼ Q_ in  Q_ out  Q_ MH;cf :
+vt
+
+(3)
+
+The inlet heat flow Q_ in with the inlet temperature Tcf,in
+_ cf Tcf;in
+Q_ in ¼ cp;cf m
+
+(4)
+
+and the outlet heat flow Q_ out with the outlet temperature Tcf
+_ cf Tcf
+Q_ out ¼ cp;cf m
+
+(5)
+
+_ cf and the constant
+are calculated with the mass flow rate m
+heat capacity of the cooling fluid cp,cf. Further, the heat flow
+Q_ MH;cf from the metal hydride to the cooling fluid is calculated
+by
+Q_ MH;cf ¼ kADTMH;cf ;
+
+(6)
+
+with the heat transfer coefficient k, the heat transfer surface A
+and the driving temperature difference DTMH,cf.The driving
+temperature difference is calculated using the assumption of
+a logarithmic temperature difference, as the representative
+fluid temperature is changing during the reaction [25].
+DTMH;cf ¼
+
+TMH  Tcf  ðTMH  Tcf;in Þ
+
+
+;
+ MH T 
+cf 
+ln TTMH
+Tcf;in 
+
+with the temperature of the MH TMH.
+
+Fig. 4 e Illustration of the reactor with the defined balance areas. Based on [24].
+
+(7)
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+1507
+
+flow Q_ MH;cf and the reaction enthalpy flow n_ g DHR are consid-
+
+With the derived Eq. (9) for the dynamic of the hydrogen
+charging u, the molar flow rate n_ g can be described by
+
+ered (see Fig. 4). The reaction enthalpy flow consists of the
+consumed amount of hydrogen n_ g and the reaction enthalpy
+
+n_ g ¼
+
+DHR. With those heat flows the equation for the respective
+balance area can be described by the time derivative of the
+temperature in the MH TMH, the mass of the MH mMH and the
+specific heat capacity cv,MH
+
+For describing the pressure of the hydrogen gas pg in Eq. (9),
+a mass balance considering the mass flow rate into the reactor
+_ p and the reaction hydrogen molar flow rate n_ g (replaced by
+m
+
+For setting up the MH balance as energy balance, the heat
+
+mMH cv;MH
+
+vTMH
+¼ Q_ MH;cf þ n_ g DHR :
+vt
+
+(8)
+
+To describe the dynamic of the MH reaction by a pressure
+or temperature change, a kinetic equation has to be introduced. A simple approach for gas-solid-reactions as in
+Ref. [23] is
+!
+Ea
+pg  peq
+vu
+RTMH
+¼ K0 e
+f ðuÞ
+vt |ﬄﬄﬄ {zﬄﬄﬄ }
+peq
+f ðTÞ |ﬄﬄﬄﬄﬄﬄﬄﬄ{zﬄﬄﬄﬄﬄﬄﬄﬄ}
+
+(9)
+
+f ðpÞ
+
+where vu/vt describes the hydrogen charging rate through a
+temperature, pressure and charging dependent part. The
+temperature dependent part f(T) is based on an Arrhenius
+approach with the activation energy Ea, the ideal gas constant R, the temperature of the MH bed TMH and the preexponential factor K0. In this case, the pre-exponential
+factor represents the Arrhenius factor KAr of the material
+kinetics and as well unmodeled influences, namely heat
+and mass transfer effects in the lumped system. The
+pressure dependent part f(p) describes the normalized
+driving force by the pressure difference in the MH bed pg
+and the equilibrium pressure peq. This difference is
+normalized with the equilibrium pressure according to
+Ref. [26]. The reaction mechanism f(u) to describe the influence of the hydrogen charging, distinguishes between
+absorption and desorption as
+
+f ðuÞ ¼
+
+umax  u
+u
+
+absorption
+desorption:
+
+(10)
+
+In the following section a description for the parameters n_ g ,
+pg and peq is derived.
+
+vu mMH
+:
+vt 100MH2
+
+(11)
+
+(11)) is set up. With the assumptions of ideal gas behaviour,
+constant volume of the radial gas gap Vg and constant
+ambient temperature Tamb of the hydrogen gas, the pressure
+in the balance area can be described as
+
+
+vpg
+R Tamb
+vu mMH
+_p
+¼
+:
+m
+vt 100MH2
+vt
+MMH2 Vg
+
+(12)
+
+_ p into the reactor and the void volume
+The mass flow rate m
+of the tubes is approximated with a polytropic and reversible
+adiabatic outflow equation of an ideal gas at Tamb, as it is
+assumed that this temperature is representative for the
+incoming gas. The derivation can be found in Appendix C.
+For MH (based) reactions, temperature, pressure and
+charging state are closely correlated, thus a mathematical
+description of this relationship is required as baseline for the
+mathematical model. Using enthalpy and entropy data from
+Ref. [24], for the present material, the following description
+has been deduced
+8
+> DHabs ðuÞ DSabs ðuÞ
+þ lnðIadd ðuÞÞ
+þ
+>
+  >
+< RT
+R
+peq
+MH
+¼
+ln
+>
+p0
+DHdes ðuÞ DSdes ðuÞ
+>
+>
+:
+þ
+RTMH
+R
+
+Absorption
+Desorption
+(13)
+
+which distinguishes between absorption (abs) and desorption
+(des) with an additional proportion Iadd(u) for the steep increases of the MH plateaus. In the equation, TMH represents
+the temperature of the MH, p0 the standardized pressure of
+1 bar, R the ideal gas constant, DHR and DSR the reaction
+enthalpy and entropy. Eq. (13) is valid for 0 < u < umax and
+p0 > 0. For more details refer to Appendix D.
+Table 1 lists all parameters of the balance equations.
+
+Table 1 e Overview of the symbols, values and references for the model parameters and constants. When there is no
+reference given, the value is measured or a general known constant.
+Parameter
+Parameters MH
+MH mass
+Specific heat capacity MH
+Parameters cooling fluid water
+Specific heat capacity water
+Density water
+Parameters reactor
+Cross sectional area of hydrogen inlet
+Volume hydrogen reactor
+Volume cooling Fluid in reactor
+Constants
+Ideal gas constant
+Molare mass hydrogen
+
+Symbol
+
+Value
+
+Reference
+
+mMH
+cV,MH
+
+0.96 kg
+419 J kg1 K1
+
+[24]
+[27]
+
+cp,cf
+rcf
+
+4189, 6 J kg1 K1 at 70  C
+977, 76 kg/m3 at 70  C
+
+[28]
+[28]
+
+Ag
+Vg
+Vcf
+
+25 mm2
+191 cm3
+1.4523  104m3
+
+[24]
+
+R
+MH2
+
+8, 314 Jmol1K1
+2, 016 gmol1
+
+1508
+
+3.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+Results and discussion
+
+In the following subsection, the parameters of the model Eqs.
+(3), (8) and (9) are identified and the model is validated with
+experimental data. The main focus in the identification is on
+the dynamic between the hydrogen pressure and the MH
+hydrogen loading values. In the subsequent section, the
+model with the identified parameters will be used for the
+design of the controller.
+
+3.1.
+
+Problem set-up of the parameter identification
+
+In the first part of this section, the parameter vector Q
+Q ¼ ½Q1
+
+Q2
+
+Q3
+
+Q4
+
+Q5 
+
+¼ ½kA Ea
+
+K0
+
+kpeq
+
+umax ;
+
+(14)
+
+which is to be identified will be explained using the model
+equations.
+The first parameter for identification corresponds to the
+heat flow from the cooling fluid to the MH. In Eq. (6) the
+temperature gradient, the surface A and the heat transfer
+coefficient k describe this one dimensional simplified heat
+flow from the cooling fluid to the MH. For the present reactor
+design an analytical estimation of A and k would be imprecise
+due to missing parameters such as contact resistance or local
+power density. That is why the product of k , A is identified as
+lumped parameter from experimental data.
+Regarding the reaction rate in Eq. (9), the activation Energy
+Ea and the lumped parameter K0 are identified as well.
+Thereby, Ea represents the physical property of the energy
+barrier, which is necessary to start the reaction. K0 presents
+the conventional Arrhenius factor and includes unmodeled
+effects of the 0D model in mass and heat transfer.
+The next two parameters for the identification are model
+correction parameters as the 0D model of the present reactor
+is simplified. The model depends on material properties,
+which are functions of pressure and temperature of the MH. In
+this work, it is assumed that the inlet temperature Tcf,in corresponds to an overall average of the MH temperature in the
+reactor. This assumption leads to errors in the corresponding
+calculated material properties, as the actual temperature of
+the MH will be actually lower than the assumed temperature.
+As a result also the actual equilibrium pressure will be lower
+than the calculated one. This effect could be seen in simplified
+pressure concentration isotherm (PCI) measurements during
+absorption. In order to correct this effect in the model, the
+fitting parameter kpeq is introduced during absorption
+reactions.
+In the evaluation of the measurement data, it can be
+observed that the maximum hydrogen charging state umax is
+smaller than expected from literature data of [24]. To incorporate the observed lower maximum values, the parameter
+umax is identified.
+Next to the model parameters, the excitation signals have
+to be chosen for the parameter identification. The reaction of
+MHs with hydrogen generally represents a stable system with
+an equilibrium between gas pressure, temperature and
+hydrogen charging. This equilibrium of MH can be changed by
+
+forcing a temperature or pressure change from outside, which
+will lead to a (partial) reaction and thus to a defined fraction of
+the absorption or desorption reaction enthalpy. Since in the
+present system gas transport is much faster than heat transfer, the pressure pg is chosen as excitation signal.
+In the next step, the type of excitation signal needs to be
+determined. To keep the identification simple, pressure step
+functions with different starting and final values, which are
+based on fixed hydrogen loading values, are used in the present study. Further, for a temperature control it is important
+to know how much cold or heat can still be released by the
+MH, why the hydrogen loading state and not the heat flow is
+used for identification.
+As a consequence, for the experimental design of the
+measurements the following procedure has been defined. The
+baseline experiments take place at 60  C and 80  C. Experiments at 70  C are used for validation. For each temperature
+four different pressure levels for absorption and desorption
+reaction are chosen. An overview over the resulting pressure
+profile is given in Fig. 5, where the absorption reaction with
+the pressure steps leading to changes in the hydrogen loading
+from 0% to 10%, 10%e50%, 50%e90%. The start and endpoint
+pressures of the step functions are determined from the
+measured data from Ref. [24]. The hydrogen loading value of
+0% was set at a pressure of 1 bar. The step from 0% to 100% is
+called “full step”. The expression “partial step” is used for all
+other changes in the hydrogen loading, e.g., 10%e50%.
+
+3.2.
+
+Parameter identification
+
+As mentioned before, the control objective for the current
+system is the stabilization of the reactor output temperature
+from the heat transfer fluid to a given set point. Therefore, a
+cost functional for the following parameter identification of
+the reactor model is defined. The cost functional takes two
+aspects into account: The hydrogen charging state u and the
+thermal energy transferred from/to the heat transfer fluid
+Q_ MH;cf . The transferred heat directly influences the outlet
+temperature of the reactor. The hydrogen charging state has a
+
+Fig. 5 e Exemplary representation of the pressure steps in
+a row for the temperature 80  C. The aimed hydrogen
+loading of a pressure jump is written at the end of each
+pressure step.
+
+1509
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+strong influence on the dynamics of the system and additionally determines the amount of hydrogen that can be
+absorbed or desorbed starting from the current state. Moreover, reaction entropy and the kinetics are also dependent on
+the actual hydrogen charging. For the optimization problem
+including all mentioned equations the following state vector
+x ¼ Tcf
+
+u
+
+TMH
+
+(15)
+
+and input vector is defined as
+h
+u ¼ pg
+
+i
+Tcf;in :
+
+(16)
+
+With those vectors the least square formulation of the cost
+functional is set up as the following optimization problem
+min
+Q
+
+tN
+X
+
+ðQ_ cf;sim ðtk Þ  Q_ cf;meas ðtk ÞÞ
+ðusim ðtk Þ  umeas ðtk ÞÞ2
+þ 0:6
+unorm
+Q_ norm
+
+for x_ 3 , (7) for DTMH,cf, (13) for peq, (10) for f(u) and the calculation
+of the heat stream from measurement data in Eq. (2). A
+distinction of cases is performed for the equilibrium pressure,
+the reaction enthalpy and the term f(x2). Further, the calculation of the equilibrium pressure of the MH in Eq. (13) is
+supplemented by the identification parameter Q4.
+The optimization problem with the given input and state
+vector is solved with the pattern search algorithm PATTERNSEARCH in MATLAB/SIMULINK, while the model is simulated with
+the solver ODE23S.
+The optimal result for the parameter vector Q is given by
+h
+Q* ¼ kA*
+
+E*a
+
+K*0
+
+*
+
+kpeq
+
+u*max
+
+i
+(18)
+
+¼ ½735:5 36000 12016 48448 1:175
+
+2
+
+0:4
+
+tk ¼0
+
+s:t:
+0  x2  Q5
+xð0Þ ¼ ½x1;0 ; x2;0 ; x3;0 
+1
+_ cf cp;cf ðu2  x1 Þ
+ Q1 DTMH;cf þ m
+rcf cp;cf ; Vcf
+!
+Q2
+u1  peq
+x_ 2 ¼ Q3 e Rx3
+f ðx2 Þ
+peq
+
+
+1
+mMH
+x_ 3 ¼
+Q1 DTMH;cf þ x_ 2 DHR
+mMH cV;MH
+100MH2
+x_ 1 ¼
+
+DTMH;cf ¼
+
+x3  x1  ðx3  u2 Þ
+
+
+x3  x1 
+
+ln 
+x u 
+3
+
+2
+
+absorption
+DHabs ðx2 Þ DSabs ðx2 Þ
+þ
+RT
+R
+
+peq ¼ p0 e
+
+þ Iadd  Q4
+
+DHR ¼ DHabs
+f ðx2 Þ ¼ ðQ5  x2 Þ
+desorption
+DHdes ðx2 Þ DSdes ðx2 Þ
+þ
+RT
+R
+
+peq ¼ p0 e
+
+DHR ¼ DHdes
+f ðx2 Þ ¼ x2
+in between
+f ðx2 Þ ¼ 0:
+(17)
+The cost functional in the optimization problem evaluates
+the difference between the measurement data (umeas, Q_ cf;meas )
+and the simulation data (usim, Q_ cf;sim ) at the discrete time
+points tk. To avoid weighting due to different magnitudes the
+heat flow and the hydrogen charging are normalized accordingly by unorm and Q_ norm . Both values represent the maximum
+value during the first step of the optimization. The error in the
+heat flow is weighted higher in the cost functional as the error
+in the hydrogen charging. The weighting is a result of
+parameter studies with selected different weights. The cost
+functional is restricted by the model Eq. (3) for x_ 1 , (9) for x_ 2 , (8)
+
+using the measurement data for 60  C and 80  C. This
+temperatures are chosen for identification due to the
+assumption that most of the fuel cells will run between this
+temperatures. Comparing the result to the literature, the
+optimal parameter values are in physically meaningful ranges
+e.g., umax can be estimated from Ref. [24] with approximately
+1.3 wt% or Ea with approximately 36 202 J/mol. The optimization achieves a coefficient of determination R2 of 0.88 for u
+_
+and 0.81 for Q.
+
+3.3.
+
+Model validation
+
+As the model parameters have been identified using the
+measurement data at 60  C and 80  C, for validation, the
+simulation results of the identified model parameters at 70  C
+are compared to the measurement data. In Fig. 6, a comparison of the reaction rates is presented. The model represents
+the same trends like an increase in reaction rate with a lower
+initial charging state as can be seen in the measurement
+values. Furthermore, the general shape of the curves can be
+compared between measurement and simulation. However,
+overall the simulations are delayed and have a damped
+amplitude compared to the measurements.
+This deviation in the modeling of the reaction rate
+consequently also causes deviations in the determined
+charging state. In Fig. 7, from the start up to minute 92,
+three partial step absorption reactions take place which
+can be observed from the measured as well as from the
+simulated data. During those reaction periods, a mean
+error between the measurement and simulation data of
+10.4% occurs. As mentioned before, this error is mainly due
+to the deviations in the reaction rate. Further, the
+measured pressure pr is used for the simulation. The
+pressure sensor P4, which measures this pressure pr, is
+positioned far from the hydrogen inlet in the reactor.
+That's why the measured pressure pr changes more slowly
+than the mean reactor pressure, resulting in a reaction
+delay in the beginning.
+Starting from 92 min, three desorption reactions are
+visible. In comparison to the absorption reactions, a similar
+error of 11.4% can be observed. The differences are mainly due
+to the necessary estimation (limited outflow of PR2) of the
+hydrogen conversion rate during desorption and a lack for PCI
+data in the examined temperature range.
+
+1510
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+validated model will be used to develop a PI controller that is
+validated by additional experiments.
+
+3.4.1.
+
+Fig. 6 e Comparison between simulation and experimental
+data of the reaction rate for different partial pressure steps.
+In comparison to the reaction rates, the heat flow determined for measurement and simulation fits quite well. The
+mean error during the partial step absorption in Fig. 7 is about
+3.9% and the mean error during the full step desorption 9.2%.
+The peaks in the error at the beginning of the reactions are
+again due to a slower start of the reaction in simulation. A
+delayed change of the hydrogen charging corresponds to a
+delayed start of the reaction (due to the pressure assumption)
+and thus to a delayed heat flux.
+In conclusion, the model captures the general underlying
+trends that are required for the development of the control
+strategy in the next section. However, there is still a difference
+between the maximum hydrogen state umax and the identified
+one. In order to further improve the model quality regarding
+hydrogen charging rate and charging state, improved data for
+PCI would be required as well as more representative measurements probes for lumped temperature and pressure
+values inside the reactor.
+
+3.4.
+
+Temperature control
+
+The main goal of the present publication is the demonstration
+of a control strategy for a metal hydride reactor in order to
+develop an active thermal buffer module. In this section, the
+
+Controller design
+
+The introduced cascaded control structure in Fig. 2 has the goal
+to stabilize the output temperature of the reactor due to temperature fluctuations of the cooling fluid and constant mass
+stream through the reactor. To achieve this goal, reaction
+enthalpy of the metal hydride must be released or removed
+from the fluid depending on the required heat source or heat
+sink to compensate the fluctuating inlet temperature signal,
+respectively. Obviously, the amount of enthalpy released or
+provided can be determined by comparison of the hydrogen
+charging state at the start and end of the corresponding fluctuating signal. To measure and define these changes of the
+hydrogen charging state during a reaction, volume flow sensors
+and pressure sensors combined with material data would be a
+simple solution. However, for application purpose the measurement of the volume flow of hydrogen is not practicable.
+Instead, more simple pressure sensors P2, P3 and P4 are used in
+the present test bench and the hydrogen charging is approximated over the pressure. The second inner control loop controls the pressure in the test bench. It consist of the chosen
+input variable pset and pg as control variable. The cascaded
+control structure has the advantages of achieving higher accuracy of the much faster varying pressure in the inner loop.
+That helps to reduce errors in the outlet temperature faster.
+As in the test bench two pressure regulators are installed,
+the typically cascaded control structure from Fig. 2 is
+extended to the structure in Fig. 8. The location of the pressure
+regulators PR1 and PR2 can be seen in Fig. 3. The regulator PR1
+is integrated between the Sieverts volume and the reactor, the
+second regulator PR2 is integrated between the reactor and the
+outlet to the surrounding. The parameters of the inlet regulator had to be identified, as they have not been provided by
+the device itself. As an approach a PI controller is used and the
+parameters of the controller are identified with pressure steps
+from 1 bar to 6 bar and 8 bar or 10 bar. The parameters of the
+outlet pressure regulator are determined from the programmable logic controller (PLC) software and the parameter sets
+for both pressure regulators are shown in Table 2. Depending
+on the difference between the given pressure pset and the
+pressure inside the reactor pg the PLC at the test bench
+switches between those two regulators.
+Now the controller for the outer control loop for inlet
+temperature stabilization is designed. Therefore, the pressure
+pg is added to the state vector (15) with the state Eq. (12) and
+the new input pressure pR is added in the input vector (16).
+Thus, the new state vector can be introduced.
+h
+x* ¼ Tcf
+
+u TMH
+
+pg
+
+i
+
+(19)
+
+and input vector
+u* ¼ pR
+
+Tcf ; in :
+
+(20)
+
+As controller a PI control structure is implemented in
+MATLAB/SIMULINK embedded in the simulation of the whole
+control structure in Fig. 8. With the simulation model, the
+parameters Kp and KI of the outer PI controller are tuned by the
+minimization of the cost functional
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+1511
+
+Fig. 7 e Validation of different small pressure steps in the simulation with measurement data at 70  C. (a) H2 charging for
+partial step response. (b) Heat flow for partial step response. (c) Relative error between the simulation and measurement
+data for the hydrogen charging. (d) Relative error between the simulation and measurement data for the heat flow.
+
+Fig. 8 e Extended control structure for describing an active MH temperature controller.
+
+minKP ;KI
+
+tN
+X
+tk ¼0
+
+0:4
+
+tN1
+X
+x_ 1 ðtk Þ
+ðx1 ðtk Þ  Tset;out ðtk ÞÞ2
+þ 0:6
+e
+equad;norm
+t ¼0 diff;norm
+k
+
+s:t:
+*
+
+x ð0Þ ¼ ½x*1;0 ; x*2;0 ; x*3;0 ; x*4;0 
+*
+x_ ¼ f ðx* ; u* ; KP ; KI Þ:
+
+(21)
+
+The cost functional is inspired by Ref. [29] and consists of
+two weighted terms. The first term corresponds to the
+quadratic error of the difference between the desired set
+temperature Tset,out and the temperature Tcf at the outlet of
+the reactor. The term is normalized with the difference of
+those two variables equad, norm at the initial solution of the
+optimization. The quadratic error term of the temperature
+
+1512
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+Table 2 e Parameters of the inlet and outlet pressure
+controller.
+Parameter
+
+PR1
+
+PR2
+
+Kp
+Ti
+Td
+T1
+Sampling time
+
+0.27
+0.3
+e
+e
+0.1
+
+10
+4
+1
+0.2
+0.1
+
+leads to less deflection and a fast transient response of the
+control variable Tcf. The second term in the cost functional
+includes the time derivative of the quadratic error Tcf, which
+leads to a more damped behaviour. The term is normalized
+with ediff, norm, representing the maximum value of x_ 1 at the
+initial solution of the optimization. Both terms are evaluated
+at the discrete time steps tk. The weighting factors are a result
+of a parameter study, where the weighting factors with the
+lowest deviation between the desired set temperature Tset,out
+and the temperature Tcf at the outlet of the reactor have been
+selected. As constraints the model equations f(x*, u*, KP, KI) are
+describing the reactor model with Eqs. ((3), (7)e(10), (12), (13),
+the PI-controller equations from PR1, PR2 and the gray colored
+switching element in Fig. 8. Using the cost functional introduced before, a disturbance is necessary to calculate a set of
+parameters.
+The disturbance in the inlet temperature is adapted to the
+boundary conditions of the MH during absorption (maximum
+hydrogen charging, maximum heat flow) and the boundary
+conditions of the test bench (maximum measurable outflow).
+During desorption only a small temperature variance can be
+handled because of the limited hydrogen outflow of the
+pressure controller at the outlet. Thus, a trapezoidal signal,
+shown in Fig. 9(a), with a temperature decrease of 2.5 K for
+absorption and a temperature increase of 1 K for desorption is
+applied as a disturbance. A hold time of 30 s is provided when
+the target temperature is reached. Note, that the trapezoidal
+signal has the same time length for the temperature increase
+and decrease, what leads to different amounts of released
+thermal energy between desorption and absorption.
+As a result the control parameters KP ¼ 4.11 and KI ¼ 1, 55
+are determined for a sampling time of the temperature
+controller of 0.5 s. Using these parameters on the test bench,
+another experiment for the controller validation has been
+performed where the identical disturbance has been applied
+as in the simulations for the design of the controller.
+
+3.4.2.
+
+Validation of the controller
+
+Fig. 9 shows the results of the comparison between simulation
+(dark blue) and experimental results (light blue). The cooling
+fluid inlet temperature Tcf (yellow) shows the disturbance that
+has been imposed on the system around the set point temperature of 70  C (black). This signal can be used to split the
+following discussion in two phases. First of all, from t z 2 min
+to t ¼ 10 min, there is the negative disturbance in Tcf, which in
+turn requires the exothermal absorption process to stabilize
+the temperature. Second, from t ¼ 10 min to the end of the
+experiment, a positive disturbance signal is applied to the
+
+system which triggers the endothermal desorption reaction.
+For both time frames, it can be observed that the simulated
+temperature signal (light blue) as well as the measured cooling
+fluid temperature (dark blue) shows a temperature stabilization with minor oscillations around the set point of 70  C.
+Thus, the implemented controller and the metal hydride
+reactor are able to proof the basic concept of the active thermal buffer.
+The oscillations in simulation and experimental temperature profiles can be traced back to the two pressure controllers
+with their different dynamical behavior. Further, the oscillations during the absorption reactions are larger due to the
+larger inlet temperature disturbance and because of the
+higher possible dynamics of the mainly active pressure regulator PR1. Due to inaccuracies in the modeling and the model
+based parameter tuning of the controller, the temperature
+controller is acting too aggressively in the measurement in
+comparison to the simulation.
+Fig. 9(b) shows the pressure setpoint for the temperature
+controller in the simulation and the measurement. First of all,
+in this diagram, the oscillations in the measurement especially during the absorption phase have a large amplitude. The
+reason for these oscillations are the differences in the
+modeled and experimental reaction rate, leading to underestimated reaction rates from the temperature controller
+perspective. Due to these point, the designed parameters of
+the temperature controller are acting too aggressive in the
+experiments (see before). However, in the following the general trends in the set pressure will be discussed neglecting the
+oscillating behaviour.
+During absorption phase, the setpoint of the pressure
+varies, although the set temperature is constantly at 70  C.
+This indicates two important characteristics of the MH hydrogen reaction system. First, while the inlet temperature
+continues to decrease to its minimum (until t ¼ 5 min), the
+pressure increases. This increase in set pressure leads to a
+higher equilibrium temperature inside of the material and
+consequently to higher temperature gradient between the
+material and the cooling fluid. Thus, the heat transfer can
+be increased by this set pressure in order to stabilize the
+temperature to 70  C despite the fluctuating inlet temperature. As mentioned in the introduction, this behaviour is
+quite special for thermal energy storages and can only be
+realized with thermochemical thermal energy storages as
+they show this pressure/temperature relation, which enables the design of such an active thermal energy buffer.
+Second, it can be observed that although the disturbance
+signal is symmetric, the set pressure at e.g. 3 and 8 min
+shows different values for the identical thermal power that
+needs to be transferred to stabilize the temperature. This
+behaviour is due to the fact that the pressure-temperature
+relationship is also a function of hydrogen charging and
+the hydrogen charging also varies during the process, which
+can be seen in Fig. 9(c).
+Overall, it can be stated that the model is capturing the
+crucial dynamics of the MH reactor in a sufficient way that the
+resulting controller is able to realize the desired temperature
+stabilization. The strong oscillations that can be observed
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+1513
+
+Fig. 9 e Results of the simulation and experiment with the proposed control structure. (a) Temperature of the cooling fluid at
+the inlet and outlet of the reactor during simulation and measurement. (b) Pressure pset from the simulation and the
+measurement data. (c) Hydrogen charging of the control loop simulation and experiment.
+
+especially during the absorption phase, are due to non-modeled
+effects in the reaction rate and the pressure regulators.
+Finally, Fig. 9(c) shows the hydrogen charging for simulation and experiment. During the first half of the absorption
+phase the measurement and simulation data agree well. Then,
+from t ¼ 8 min to t ¼ 10 min, the two curves start to deviate. For
+the subsequent desorption phase, this deviation increases.
+The reason for this lies in differences between the approximated material data to the real behaviour of the metal hydride.
+Concluding this experimental validation, it can be summarized that despite the deviations between model and
+
+experiment, especially regarding the reaction rate, the model
+was able to capture the crucial features of the MH behaviour.
+Thus, it was possible to design a controller which was able to
+realize an experimental proof of concept for the active thermal buffer module based on MHs.
+
+3.5.
+General discussion of the active thermal buffer
+module
+In order to realize an active thermal buffer element, next to
+the demonstration of the stabilization of the temperature, it is
+
+1514
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+4.
+
+Fig. 10 e Time sequence to compare the pressure pg in the
+reactor and the temperature Tcf at the outlet of the reactor.
+of special interest to evaluate the achieved response time.
+Thus, to demonstrate how fast a variation in the set pressure
+results in a response in the outlet temperature of the fluid.
+Therefore, the time sequences of the measured pressure pg
+and temperature Tcf are shown in Fig. 10 in detail for an
+arbitrarily selected time period. It is obvious that a variation in
+pressure leads to an temperature change within a maximum
+delay of 5 s, which is fast for a thermal energy storage system.
+Concluding, the experiments have proven that the dynamic of
+the MH even inside the reactor are very fast and thus, the gas
+pressure is a suitable control variable for the design of an
+active thermal buffer based on MHs.
+Next to the generic response time of the system, it is also
+important to determine the achieved thermal peak power as
+well as the achieved amount of thermal energy that has been
+provided by the system. In the present case, the thermal peak
+power can be calculated to 724.8 W for absorption and 134.8 W
+for desorption or 755 W/kgMH and 140 W/kgMH, respectively. It
+has to be considered, that the desorption peak power was
+limited by the framework of the test bench. Looking at the
+thermal energy calculated with (2) evaluated at every discrete
+time point and summed up, the reactor could compensate the
+thermal disturbance with 146.96 kJ during absorption and
+31.62 kJ during desorption. Due to the smaller temperature
+amplitude and the same time length as in the absorption
+disturbance, the released thermal energy during desorption is
+lesser.
+When designing such an active thermal buffer, the sizing
+of the module can be a limitation for its wide applicability. As
+the system is based on thermal capacity, the compensation of
+e.g., increased thermal loads when going uphill is rather not
+realistic as it would require very high masses. In this case, the
+additional weight of an increased heat exchanger removing
+the occurring thermal energy immediately, will be more useful. However, due to the possible response times and the
+achieved thermal power, the system can be included as small
+module to compensate for temperature peaks in the range of
+seconds, which would in turn afford high efforts in control of
+the tardy overall heat transfer fluid circuit.
+
+Conclusion
+
+In the present study, an experimental setup has been
+realized to demonstrate the temperature control in a heat
+transfer fluid circuit using an active thermal buffer reactor
+based on MHs, which requires neither hydrogen nor
+electricity. For this, a simple PI controller was designed
+based on validated 0D-model simulations. Using the gas
+pressure as actuating variable, the PI controller was able
+to transfer fluctuating inlet temperatures with 3.9 K and
+þ1.2 K to a constant outlet temperature. A temperature
+disturbance with the thermal energy of ~147 kJ and
+~32 kJ has been compensated at thermal powers of þ755
+W/kgMH and 140 W/kgMH for absorption and desorption,
+respectively.
+The features of such a system are:
+ Active control of the outlet temperature for fluctuating
+inlet temperatures by actuation of the gas pressure.
+ High peak powers 755 W/kgMH for heating are measured.
+Due to reaction enthalpies of more or less same size during
+absorption and desorption, similiar peaks for cooling can
+be expected.
+ Response times below 5 s of the system following the gas
+pressure due to immediate reaction and good heat transfer
+properties
+Future work will focus on an improved model quality by
+improved design of the measurement concept and on a
+advanced controller, e.g., with a feed forward part. For application, the achieved specific thermal power will assist in
+designing and sizing suitable systems and thereby it will help
+to evaluate the possibility of a cooler size reduction in an
+existing fuel cell cooling system.
+
+Declaration of competing interest
+The authors declare that they have no known competing
+financial interests or personal relationships that could have
+appeared to influence the work reported in this paper.
+
+Acknowledgements
+Partly funded by the German Research Foundation (DFG e
+Deutsche Forschungsgemeinschaft, Project-ID 279064222) as
+part of the Collaborative Research Centre 1244 (SFB 1244)
+Adaptive Skins and Structures for the Built Environment of
+Tomorrow, project A05.
+
+Appendix A. Measurement equipment overview
+An overview of the used measurement equipment is given in
+Table A.3.
+
+1515
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+Table A.3 e Overview of the measurement equipment at the test bench.
+parameter
+
+sensor name
+
+manufacturer's designation
+
+range
+
+deviation
+
+temperature T
+
+Tc,siev
+Tc,cf & Tc,cf,in calibrated to each other
+P1
+P2
+P3
+P4
+_ H2O
+M
+
+type K, class 1
+type K, class 1
+Keller PA-21-y
+integrated in PR1 (Brooks SLA5810)
+Keller PA-21-y
+Keller PA-21-y
+Promass 83F
+
+40 … 1000
+10 … 95  C
+1 … 160 bar
+0.120 bar
+1 … 30 bar
+1 … 60 bar
+0 … 2000 kgh1
+
+±1.5 K
+±0.05 K
+±0.8 bar
+e
+±0.15 bar
+±0.3 bar
+±0.1%
+
+_ H2
+M
+
+Bronkhorst Fe201CVe5F6 PGD-33-Y
+
+0 … 5 LNmin1
+
+pressure p
+
+_
+mass flow m
+
+Appendix B. Calculation of the hydrogen
+charging value
+
+Appendix C. Calculation of the hydrogen mass
+stream into and out of the reactor
+
+In the following, the calculation of the hydrogen charging
+value is described in more detail.
+During absorption u is calculated with the help of the
+Sieverts volume with the defined volume Vsiev ¼ 2.25 l and the
+measured values Tsiev and psiev. With those parameters and
+the approach
+
+As an approach the polytropic and reversible adiabatic
+outflow equation of an ideal gas
+sﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+2pg
+_ p ¼ Ag j
+(C.1)
+m
+RTamb
+
+nsiev ðtÞ ¼
+
+pSiev ðtÞVSiev
+;
+RTSiev ðTÞZðpSiev ðtÞ; TSiev ðtÞÞ
+
+(B.1)
+
+with the fugacity coefficient Z and the real gas coefficient R,
+the actual amount of hydrogen in the volume nsiev can be
+calculated. The value of the coefficient Z is calculated according to the approach in Ref. [30]. With the amount of
+hydrogen in the Sieverts volume nsiev, the amount of hydrogen
+in the void volume ntot, the absorbed amount of hydrogen nabs
+can be calculated as
+nabs ðtÞ ¼ nsiev ðt0 Þ  nsiev ðtÞ  ntot ðtÞ:
+
+(B.2)
+
+Furthermore, the hydrogen charging state is calculated
+with
+u¼
+
+nH2
+,100%;
+MH2 mMH
+
+(B.3)
+
+where nH2 represents the amount of hydrogen, MH2 the
+molar mass of hydrogen and mMH the mass of MH in the
+reactor.
+During desorption the hydrogen charging can be
+measured with PR2 for hydrogen flow rates below 5 Nl/min
+and recalculated with the ideal gas law to a hydrogen loading
+rate. For higher volume flow rates the hydrogen charging is
+estimated by the relation between pressure and the
+hydrogen charging as
+uðtÞ  uðt  1Þ pðtÞ  pðt  1Þ
+¼
+;
+Duges
+Dpges
+
+_ p into the reactor in Eq. (12) is not known.
+The mass flow rate m
+
+is set up with the outflow function j approximated as
+!!
+pp
+1
+:
+(C.2)
+jzjfit ¼ 0:4854 tanh 5:2
+pg
+In the equations, Ag represents the surface of the oulet
+cross section of the reactor, pg the gas pressure in the reactor,
+pp the gas pressure in the pipes. The detailed procedure of the
+derivation can be found in Ref. [31].
+
+Appendix D. Calculation of the equilibrium
+pressure in the 0D - Model
+In the following section, the calculation of the equilibrium
+pressure in Chapter 2.2 is discussed more in detail. Starting
+with the calculation of the required reaction enthalpies
+DHR,abs, DHR,des and the entropies DSabs, DSdes. Those are based
+on the evaluation of the PCI data in Ref. [24] for the hydrogen
+loadings of urel ¼ ½10 %; 50 %; 90 %. To calculate the enthalpy
+and entropy values for arbitary loadings, linear regression
+DX ¼ 41 urel þ 42
+
+(D.1)
+
+is used. Here, DX is a placeholder for the enthalpy and entropy values, 41 and 42 determine the coefficients, and urel is the
+present charging state. The values of the coefficients are listed
+in Table D.4.
+
+(B.4)
+
+where Duges and Dpges represent the changes between the
+initial and end values during a desorption reaction. Hence, an
+equality of the dynamics in the loading and pressure is
+assumed. The initial values for the calculation are taken from
+the previous reaction. The final charging is approximated via
+the approximated PCI's.
+
+Table D.4 e Coefficients of the linear regression in Eq. D.1
+for the reaction enthalpy and entropie values.
+DHR
+DSR
+
+reaction
+
+41
+
+42
+
+Absorption
+Desorption
+Absorption
+Desorption
+
+13.375
+2.75
+0.005
+0.027
+
+3.17 , 104
+3.395 , 104
+105.18
+108.551
+
+1516
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+Finally, the calculated loading-dependent enthalpy and
+entropy values are used to approximate the equilibrium
+pressure peq. Therefore, the Van't Hoff equation
+8
+> DHR;abs ðuÞ DSR;abs ðuÞ
+>
+þ
+  >
+< RT
+R
+peq
+MH
+¼
+ln
+>
+p0
+DH
+ðuÞ
+DS
+ðuÞ
+>
+R;des
+R;des
+>
+:
+þ
+RTMH
+R
+
+Absorption
+(D.2)
+Desorption
+
+distinguishs between absorption (abs) and desorption
+(des). In the equation, TMH represents the temperature of the
+MH, p0 the standardized pressure, R the ideal gas constant
+and, as described before, DHR and DSR the reaction enthalpy
+and entropy. Eq. (D.2) describes the so called plateau region of
+the typical progression of the standardized and logarithmically scaled pressure over the hydrogen load in the MH, called
+pressure concentration isotherm (PCI). The plateau is limited
+by steep climbs of the pressure for the nearly empty or fully
+charged MH. In the modeling, the steeper increase of the
+equilibrium pressure at higher hydrogen loading's during absorption and the steep decrease of the pressure for lower
+hydrogen load's have to be included. Therefore, Eq. (D.2) is
+adapted during absorption with
+Iadd ¼ að3Þcothðað1Þðu  að2Þumax Þ2 Þ  1;
+
+(D.3)
+
+and the coefficient values
+a ¼ ½ 12:8499 1:0197 0:1608 
+
+(D.4)
+
+where umax is the maximum hydrogen charging value. For
+desorption the steep decreases are simplified and u is limited
+to values greater than zero. With those supplements Eq. (13) is
+derived.
+
+references
+
+[1] Ren P, Pei P, Li Y, Wu Z, Chen D, Huang S. Degradation
+mechanisms of proton exchange membrane fuel cell under
+typical automotive operating conditions. Prog Energy
+Combust Sci 2020;80:100859. https://doi.org/10.1016/
+j.pecs.2020.100859.
+[2] de Bruijn FA, Dam VAT, Janssen GJM. Review: durability and
+degradation issues of pem fuel cell components. Fuel Cell
+2008;8(1):3e22. https://doi.org/10.1002/fuce.200700053.
+[3] Mench M, Kumbur EC, Veziroglu TN. Polymer electrolyte fuel
+cell degradation. Academic Press; 2011. https://doi.org/
+10.1016/C2010-0-67819-9.
+[4] Grigoriev S, Dzhus K, Bessarabov D, Millet P. Failure of pem
+water electrolysis cells: case study involving anode
+dissolution and membrane thinning. Int J Hydrogen Energy
+2014;39(35):20440e6. https://doi.org/10.1016/
+j.ijhydene.2014.05.043.
+[5] Wu B, Zhao M, Shi W, Liu W, Liu J, Xing D, Yao Y, Hou Z,
+Ming P, Gu J, Zou Z. The degradation study of nafion/ptfe
+composite membrane in pem fuel cell under accelerated
+stress tests. Int J Hydrogen Energy 2014;39(26):14381e90.
+https://doi.org/10.1016/j.ijhydene.2014.02.142.
+[6] Qiu D, Peng L, Lai X, Ni M, Lehnert W. Mechanical failure and
+mitigation strategies for the membrane in a proton exchange
+membrane fuel cell. Renew Sustain Energy Rev
+2019;113:109289. https://doi.org/10.1016/j.rser.2019.109289.
+[7] Pei P, Chen H. Main factors affecting the lifetime of proton
+exchange membrane fuel cells in vehicle applications: a
+
+review. Appl Energy 2014;125:60e75. https://doi.org/10.1016/
+j.apenergy.2014.03.048.
+[8] Lai YH, Dillard DA. Mechanical durability characterization
+and modeling of ionomeric membranes. John Wiley & Sons,
+Ltd; 2010. https://doi.org/10.1002/9780470974001.f500029.
+[9] Li Q, Liu Z, Sun Y, Yang S, Deng C. A review on temperature
+control of proton exchange membrane fuel cells. Processes
+2021;9(2). https://doi.org/10.3390/pr9020235.
+[10] Amamou AA, Kelouwani S, Boulon L, Agbossou K. A
+comprehensive review of solutions and strategies for cold
+start of automotive proton exchange membrane fuel cells.
+IEEE Access 2016;4:4989e5002. https://doi.org/10.1109/
+ACCESS.2016.2597058.
+€ lbig M,
+[11] Bürger I, Sourmelis Terzopoulos V, Kretschmer C, Ko
+Brack C, Linder M. Lightweight reactor design by additive
+manufacturing for preheating applications using metal
+hydrides. Int J Hydrogen Energy 2021;46(56):28686e99.
+https://doi.org/10.1016/j.ijhydene.2021.06.091.
+[12] Ramezanizadeh M, Alhuyi Nazari M, Hossein Ahmadi M,
+Chen L. A review on the approaches applied for cooling fuel
+cells. Int J Heat Mass Tran 2019;139:517e25. https://doi.org/
+10.1016/j.ijheatmasstransfer.2019.05.032.
+[13] Mohamed WANW, Talib SFA, Zakaria IA, Mamat AMI,
+Daud WRW. Effect of dynamic load on the temperature
+profiles and cooling response time of a proton exchange
+membrane fuel cell. J Energy Inst 2018;91(3):349e57. https://
+doi.org/10.1016/j.joei.2017.02.006.
+€ lbig, C. Weckerle, M. Linder, I. Bürger, Review on
+[14] M. Ko
+thermal applications for metal hydrides in fuel cell vehicles:
+Operation modes, recent developments and crucial design
+aspects, Renew Sustain Energy Rev 162. doi:https://doi.org/
+10.1016/j.rser.2022.112385.
+[15] Lototskyy MV, Tolj I, Pickering L, Sita C, Barbir F, Yartys V.
+The use of metal hydrides in fuel cell applications. Prog Nat
+Sci: Mater Int 2017;27(1):3e20. https://doi.org/10.1016/
+j.pnsc.2017.01.008.
+[16] Pfeifer P, Wall C, Jensen O, Hahn H, Fichtner M. Thermal
+coupling of a high temperature pem fuel cell with a complex
+hydride tank. Int J Hydrogen Energy 2009;34(8):3457e66.
+https://doi.org/10.1016/j.ijhydene.2009.02.041.
+[17] Urbanczyk R, Peil S, Bathen D, Heßke C, Burfeind J,
+Hauschild K, Felderhoff M, Schüth F. Ht-pem fuel cell system
+with integrated complex metal hydride storage tank. Fuel Cell
+2011;11(6):911e20. https://doi.org/10.1002/fuce.201100012.
+[18] Weiss-Ungethüm J, Bürger I, Schmidt N, Linder M, Kallo J.
+Experimental investigation of a liquid cooled high
+temperature proton exchange membrane (ht-pem) fuel cell
+coupled to a sodium alanate tank. Int J Hydrogen Energy
+2014;39(11):5931e41. https://doi.org/10.1016/
+j.ijhydene.2014.01.127.
+[19] Cavo M, Gadducci E, Rattazzi D, Rivarolo M, Magistri L.
+Dynamic analysis of pem fuel cells and metal hydrides on a
+zero-emission ship: a model-based approach. Int J Hydrogen
+Energy 2021;46(64):32630e44. https://doi.org/10.1016/
+j.ijhydene.2021.07.104.
+[20] Cavo Matteo, Gadducci Eleonora, Rivarolo Massimo,
+Magistri Loredana, Dellacasa Andrea, Romanello Matteo, et
+al. Thermal integration of pem fuel cells and metal
+hydrides storage system for zero emission ultimate ship
+(zeus), E3S Web. Conf 334. https://doi.org/10.1051/e3sconf/
+202233404004
+[21] Weckerle C, Nasri M, Hegner R, Bürger I, Linder M. A metal
+hydride air-conditioning system for fuel cell vehicles e
+functional demonstration. Appl Energy 2020;259:114187.
+https://doi.org/10.1016/j.apenergy.2019.114187.
+[22] Dieterich M, Bürger I, Linder M. Open and closed metal
+hydride system for high thermal power applications:
+preheating vehicle components. Int J Hydrogen Energy
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 5 0 ( 2 0 2 4 ) 1 5 0 2 e1 5 1 7
+
+2017;42(16):11469e81. https://doi.org/10.1016/
+j.ijhydene.2017.03.024.
+€ lbig M, Bürger I, Linder M. Characterization of metal
+[23] Ko
+hydrides for thermal applications in vehicles below zero
+degree. Int J Hydrogen Energy 2019;44(10):4878e88. https://
+doi.org/10.1016/j.ijhydene.2018.12.116.
+€ lbig M. Coupled metal hydride reactions for preheating
+[24] Ko
+vehicle components at low temperatures. Ph.D. thesis.
+University of Stuttgart; 2018.
+€ rme-und Stoffübertragung.
+[25] Baehr HD, Stephan K. Wa
+Springer; 2019.
+[26] Ron M. The normalized pressure dependence method for the
+evaluation of kinetic rates of metal hydride formation/
+decomposition. J Alloys Compd 1999;283(1e2):178e91.
+https://doi.org/10.1016/s0925-8388(98)00859-7.
+[27] Jemni A. Study of two-dimensional heat and mass transfer
+during absorption in a metal-hydrogen reactor. Int J
+
+1517
+
+Hydrogen Energy 1995;20(1):43e52. https://doi.org/10.1016/
+0360-3199(93)e0007-8.
+[28] Wagner W, Pruß A. The IAPWS formulation 1995 for the
+thermodynamic properties of ordinary water substance for
+general and scientific use. J Phys Chem Ref Data
+2002;31(2):387e535. https://doi.org/10.1063/1.1461829.
+[29] Henke B. Modellgestützte automatisierte Reglerauslegung
+für elektromechanische Antriebssysteme. Aachen: Shaker
+Verlag; 2016.
+[30] Domschke T. Gleichgewichte und
+Beladungsgeschwindigkeiten eines
+Niedertemperaturmetallhydrids. Ph.D. thesis. TU Berlin; 1989.
+€ nderungen von Gasen und
+[31] Stephan P, Stephan K. Zustandsa
+€ mpfen. Berlin, Heidelberg: Springer Berlin Heidelberg; 2018.
+Da
+p. 169e71. https://doi.org/10.1007/978-3-662-54805-9_28.
+
+

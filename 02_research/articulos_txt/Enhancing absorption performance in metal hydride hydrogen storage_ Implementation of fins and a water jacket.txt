@@ -1,0 +1,1618 @@
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+Contents lists available at ScienceDirect
+
+International Journal of Hydrogen Energy
+journal homepage: www.elsevier.com/locate/he
+
+Enhancing absorption performance in metal hydride hydrogen storage:
+Implementation of fins and a water jacket
+Dae Yeob Lee , Yasser Mahmoudi , Vincenzo Spallina , Amir Keshmiri *
+School of Engineering, The University of Manchester, Manchester, M13 9PL, UK
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+CFD
+Metal hydride
+Hydrogen storage
+Heat and mass transfer
+Cooling jacket
+
+This study investigates the flow and heat transfer characteristics of a Metal Hydride (MH) hydrogen storage
+device featuring internal fins and a water jacket for improved hydrogen storage performance. The MH is
+modelled as a porous medium, with computational fluid dynamics used to analyse transient heat and mass
+transfer, incorporating a conjugate turbulent heat transfer model for the water jacket. Investigations covered fin
+arrangements (in-line and staggered), materials (stainless-steel and copper), water flow rates (Re =
+5100–22000), and hydrogen inlet pressures (5–20 bar). Results show that staggered copper fins and higher flow
+rates or pressures significantly reduce hydrogen absorption time: staggered fins with Re = 5100 reduce ab­
+sorption time by 30 %, Re = 22000 achieves further 27 % reduction, and increasing inlet pressure to 20 bar
+decreased it by 61 %. However, increased fin numbers and pressures introduce challenges such as pressure drop
+and reactor mass. Four reactor designs were assessed, highlighting trade-offs in performance.
+
+NOMENCLATURE
+Abbreviation
+HTF
+heat transfer fluid
+MH
+metal hydride
+PCI
+pressure-composition-isotherm
+Parameters
+C
+reaction rate constant [1/ s]
+specific heat capacity [J/ (mol K)]
+cp
+ΔH
+reaction enthalpy [J/mol]
+ΔS
+reaction entropy [J/(mol K)]
+E
+activation energy [J/mol]
+g
+gravitational acceleration constant
+[m/s2 ]
+K
+Permeability [m2 ]
+M
+molecular weight [g/mol]
+→
+unit normal vector
+n
+P
+pressure [Pa]
+R
+ideal gas constant [J/(mol K)]
+Re
+Reynolds number
+r
+r-coordinate [m]
+(
+)
+S
+absorption rate [kg/ m3 s ]
+t
+time [s]
+T
+temperature [K]
+u
+velocity [m/s]
+
+(continued )
+Greek symbols
+β
+plateau hysteresis factor
+ε
+porosity
+λ
+thermal conductivity
+[W/(m K)]
+μ
+viscosity [kg/(m s)]
+ρ
+density [kg/m3 ]
+τ
+viscous force [Pa s]
+ϕ0
+plateau flatness constant
+ϕs
+plateau flatness factor
+Subscripts
+a
+absorption
+e
+emp
+eq
+g
+i
+l
+m
+o
+ref
+sat
+w
+
+effective
+empty state
+equilibrium
+gas
+inner
+liquid
+metal
+outer
+
+reference
+saturated state
+wall
+(continued on next column)
+
+wt.
+%
+z
+
+weight percentage
+​
+
+​
+
+z-coordinate [m]
+​
+
+​
+
+1. Introduction
+Hydrogen offers a high energy density, serves as a clean energy
+source, and produces no harmful emissions [1]. In addition, given that
+hydrogen is the most abundant element in the universe, it is a compel­
+ling candidate for developing a new, suitable energy infrastructure [2].
+However, hydrogen storage presents a significant challenge due to its
+extremely low density (0.089 g/L) under atmospheric conditions [3].
+Compared to other energy sources, hydrogen gas exhibits a notably low
+volumetric energy density under these conditions, although it possesses
+a high energy density per mass [3,4]. Consequently, various methods,
+such as compression and liquefaction, are necessary to increase its
+volumetric energy density. These conventional techniques are straight­
+forward to increase hydrogen density, nevertheless, they also introduce
+challenges related to safety and the substantial energy consumption
+required for these processes [5,6].
+Metal hydrides (MHs) for hydrogen storage are emerging as a novel
+approach, offering high volumetric energy density and operation under
+
+* Corresponding author.
+E-mail address: a.keshmiri@manchester.ac.uk (A. Keshmiri).
+https://doi.org/10.1016/j.ijhydene.2025.03.151
+Received 7 January 2025; Received in revised form 5 March 2025; Accepted 10 March 2025
+Available online 14 March 2025
+0360-3199/© 2025 The Authors. Published by Elsevier Ltd on behalf of Hydrogen Energy Publications LLC. This is an open access article under the CC BY-NC-ND
+license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+less severe conditions with enhanced safety [7]. MHs hydrogen storage
+utilise chemical bonds formed between hydrogen and metal or metal
+alloys. When hydrogen molecules reach the metal surface, they first
+dissociate and then hydrogen atoms diffuse into the metal lattice [8].
+Since hydrogen can be stored in its atomic state, MHs hydrogen storage
+system can achieve a very high volumetric energy density. The mecha­
+nism of hydrogen charging and discharging is provided by absorption
+and desorption, respectively. The kinetics of MHs are closely related to
+temperature and pressure, and the direction of these gas-solid in­
+teractions is determined by the equilibrium pressure [9]. Absorption is
+dominant when the hydrogen gas pressure is higher than the equilibrium
+pressure, while desorption proceeds when the hydrogen gas pressure is
+lower. The absorption is an exothermic process, hence favoured at low
+temperature [10]. The combination of absorption and desorption makes
+MHs suitable for thermal applications such as hydrogen compression,
+thermal energy storage, and heat pumps [11–13].
+Several MHs have been researched for hydrogen storage applica­
+tions. The most favoured MHs are magnesium (Mg)-based hydrides, ti­
+tanium (Ti)-based hydrides, and lanthanum (La)-based hydrides [9].
+Mg-based hydrides offer high hydrogen storage capacity but they suf­
+fer from poor kinetics and require high temperature and pressure for
+operation [14]. Ti-based hydrides are attractive due to their abundance
+and long-term stability, however, their high equilibrium pressure, acti­
+vation difficulties, and low hydrogenation rate limit their applicability
+[7]. Finally, La-based hydrides have a relatively low hydrogen storage
+capacity (1.4 wt%), however, under ambient temperature and pressure,
+they exhibit fast kinetics, and possess a high hydrogen volumetric ca­
+pacity [15]. These favourable characteristics make La-based hydrides a
+promising material for various applications, and they are the most
+commonly utilised on an industrial scale [16]. Therefore, in this study,
+Lanthanum–Nickel alloy (LaNi5 ) was used to investigate the absorption
+performance.
+Overall, the storage capacity and design of appropriate equipment
+require substantial effort to deal with slow absorption and desorption
+due to the low thermal conductivity of MHs [17]. To address this issue,
+many studies have explored effective heat transfer methods to enhance
+MHs reaction rate through experiments and numerical simulations. The
+most fundamental approaches include installing fins to enhance heat
+transfer and using heat transfer fluids (HTF) in the reactor to increase
+the cooling and heating. MacDonald and Rowe [18] applied external fins
+to the reactor to reduce its thermal resistance, which effectively
+decreased the hydrogen desorption time. Askri et al. [19] compared the
+effects of internal and external fins on absorption time in an MH reactor
+using a mathematical model. Chung et al. [20] experimentally assessed
+the absorption and desorption time of an MH reactor using a central heat
+pipe with external fins. Both absorption and desorption times were
+reduced by half compared to the case without heat pipe. Chibani et al.
+[21] applied external fins with phase change materials in the reactor as a
+cooling method for large-scale hydrogen storage within an energy
+storage system. Bai et al. [22] optimised the absorption time and ther­
+mal resistance of MH reactor by implementing an internal longitudinal
+tree-shaped fin design, achieving a 21 % reduction in absorption time
+compared to simple radial fins. The installation of an HTF tube has
+generally demonstrated a substantial reduction in absorption time. Tong
+et al. [23] developed a reactor design incorporating various types of heat
+exchanger pipes, including straight and coiled-tube configurations.
+Although the presence of the heat exchanger reduces the quantity of
+stored hydrogen, it significantly decreases hydrogen absorption time by
+34 % and 73 %, respectively. Parida and Muthukumar [24] developed
+an MH absorption bed with fins and a central cooling tube. Three fin
+designs, which is longitudinal, transverse, and spiral fins are compared
+for absorption and desorption rate. A few studies have analysed MH
+reactors with internal cooling fins and an external water jacket, con­
+ducting parametric studies on operating conditions, fins designs, and
+different cooling fluids [25,26].
+Similar research was conducted by Prasad and Muthukumar [27].
+
+Fig. 1. Three-dimensional view of one of the MH reactor designs tested in the
+present study.
+
+They compared two cases: 1) outer cooling channel, and 2) outer cooling
+channel with internal fins. The results of the numerical analysis showed
+that the second case exhibited a 51.8 % improvement in absorption time,
+and the peak temperature of the thermal fluid in case 1 was 35.6 ◦ C,
+while in case 2, it was 41.2 ◦ C, demonstrating the effective heat transfer
+achieved using internal fins.
+Although several studies have considered internal and external HTF
+flow for effective cooling, there is still lack of some fundamental aspect
+of the MH modelling, as outlined below:
+(i) Previous studies have not incorporated a fully coupled conjugate
+heat transfer model for MH reaction, where heat transfer in both
+solid and fluid domain is simultaneously solved. This modelling
+approach is essential because the heat and mass transfer during
+absorption strongly depend on local temperature, hydrogen
+concentration, and pressure [28]. By direct coupling heat transfer
+between solid structures and surrounding fluid flow, the present
+study provides a more realistic and detailed representation of
+transient behaviour during hydrogen absorption.
+(ii) Most of the previous studies have simplified the cooling system
+by applying a fixed heat transfer coefficient (HTC) instead of
+simulating the actual cooling fluid flow. The present study con­
+ducts a transient simulation incorporating a turbulent cooling
+flow, allowing for a more accurate assessment of its impact on
+MH absorption performance. Furthermore, instead of assuming a
+constant HTC, HTC values are inversely derived under different
+conditions.
+(iii) Due to MH expansion during absorption, the simulation should
+include an interface between MH bed and the expansion vol­
+ume–a domain of pure hydrogen gas–to secure space for expan­
+sion (Fig. 1). Moreover, incorporating the expansion zone affects
+the thermal flow pattern and increases thermal resistance, lead­
+ing to reduced reaction rates [29].
+The present study aims to address these gaps by developing a
+comprehensive numerical model that incorporates conjugate heat
+transfer and turbulence model for HTF flow in the reactor. In this paper,
+MH absorption for hydrogen charging was investigated using compu­
+tational fluid dynamics (CFD). The established simulation model was
+578
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+Table 1
+Geometrical details of the reactor designs modeled in the present study.
+Design No.
+
+Expansion volume [cm3]
+
+MH volume [cm3]
+
+Fin volume [cm3]
+
+MH weight [g]
+
+Surface Area by fin [cm2]
+
+Number of fins
+
+Fin arrangement
+
+Design 1
+Design 2
+Design 3
+Design 4
+
+45.9
+42.4
+39.0
+39.0
+
+206
+207
+208
+206
+
+–
+2.69
+5.37
+6.88
+
+857
+861
+864
+857
+
+–
+10.9
+21.8
+28.0
+
+0
+5
+10
+10
+
+–
+In-line
+In-line
+Staggered
+
+Fig. 2. Geometric details of metal hydride reactor designs (a) Design 1, (b) Design 2, (c) Design 3, and (d) Design 4. Dimensions are given in mm.
+
+validated against experiments data, and a mesh sensitivity analysis was
+performed. Innovative reactor designs incorporating internal fins, and
+an embedded water jacket are investigated to improve the absorption
+performance. Specifically, four different reactor designs with varying fin
+numbers and fin arrangement are compared for its hydrogen storage
+performance. Moreover, parametric studies on water flow rates,
+hydrogen inlet pressures, and heat transfer fin materials were conducted
+to optimise the MH absorption performance under various operating
+conditions with the novel reactor design.
+
+of the cylinder. The length and thickness of the internal fins are 12 mm
+and 0.5 mm, respectively, for all designs. A geometric comparison of
+each design is provided in Table 1 and shown in Fig. 2. The reduction in
+the volume of MH due to the installation of internal fins in the reactor
+can affect subsequent comparisons of absorption time. To ensure con­
+sistency, all designs contain nearly the same amount of MH. The height
+and outer radius of the cylinder with a water jacket are 120 mm and
+36.5 mm, respectively. The material of the fins and reactor wall is
+stainless-steel (SS316), and the wall thickness is 3 mm in all areas. The
+diameter of the water inlet and outlet is fixed at 10.5 mm and 5.25 mm,
+respectively, for all designs. A three-dimensional view of Design 4 is
+shown in Fig. 1 as an example. The application of fins increases the
+contact area between the MH and the reactor wall (e.g., 90 mm in Design
+1, and 93 mm in Design 3). However, this increase in the side surface
+area accounts for only up to 3 % of the total surface area of the fins.
+Therefore, the improvement in reactor performance due to fin applica­
+tion is primarily influenced by the increased surface area of the fins.
+
+2. Problem definition
+2.1. Reactor design
+To investigate the cooling effect of internal fins and water jacket,
+four different reactor configurations are compared. The geometry of the
+reactor is composed of four zones: the MH bed, the expansion zone, the
+reactor wall with fins, and water jacket. The MH bed is a porous medium
+for LaNi5 particles. The LaNi5 alloy undergoes approximately 17 %
+volumetric expansion during absorption [30]. To prevent deformation
+of the reactor due to the stress generated in this process, an adequate
+amount of space is required, which is designed as the expansion zone. In
+the present reactor designs, 19 % of expansion volume is secured to
+prevent reactor deformation.
+The reactor is cylindrical in shape, with water entering from the top
+of the reactor, flowing down to the bottom, and then rising to the top rim
+
+2.2. Initial and boundary conditions
+For the numerical model, the reactor is assumed to be in thermo­
+dynamic equilibrium at the initial state:
+Tinitial = TMH,0 = Twater,0 = 293 K, PH2 ,initial = 1 bar
+
+(1)
+
+The initial temperature of both the reactor and the water jacket is
+uniformly set to 293 K. For the absorption process, the initial pressure
+579
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+Table 2
+Initial condition of simulation.
+
+Table 4
+Thermal and physical properties of materials [31–33].
+
+Description
+
+Symbol
+
+Value
+
+Unit
+
+Description
+
+Symbol
+
+Value
+
+Unit
+
+Initial temperature of MH bed
+Initial pressure in reactor
+Hydrogen inlet temperature
+Water initial temperature
+Water inlet temperature
+Initial metal density
+Porosity of metal powder
+
+Tinitial
+PH2 ,initial
+TH2 ,inlet
+Twater,initial
+Twater,inlet
+
+293
+1
+293
+293
+293
+8300.5
+0.5
+
+K
+bar
+K
+K
+K
+kg/m3
+–
+
+Hydrogen free metal density
+Saturated metal density
+Stainless-steel density
+Liquid water density
+Copper density
+
+ρm,emp
+ρm,sat
+ρsteel
+ρwater
+ρcopper
+
+8300
+8417.5
+8000
+998.2
+8978
+
+kg/m3
+
+1.003 × 10− 3
+0.038, 0
+0.137
+1
+
+kg/(m s)
+−
+−
+bar
+
+ρm,initial
+ε
+
+Molecular mass of hydrogen
+Activation energy for absorption
+Reaction rate constant
+Reaction enthalpy
+Reaction entropy
+Specific heat capacity of metal hydride
+Specific heat capacity of hydrogen gas
+Specific heat capacity of stainless-steel
+Specific heat capacity of liquid water
+Specific heat capacity of copper
+Thermal conductivity of metal
+Thermal conductivity of hydrogen
+Thermal conductivity of stainless-steel
+Thermal conductivity of liquid water
+Thermal conductivity of copper
+Permeability of metal powder
+Viscosity of hydrogen
+
+Table 3
+Operating conditions for the parametric studies.
+Description
+
+Baseline
+
+Values
+
+Unit
+
+Number of fins
+Reynolds number of water
+Hydrogen inlet pressure
+
+0
+5100
+10
+
+0, 5, 10
+5100, 7600, 14000, 22000
+5, 10, 15, 20
+
+–
+–
+bar
+
+was set at 1 bar, as the hydrogen gas pressure must be higher than the
+equilibrium pressure. During the simulation, the hydrogen and water
+inlet temperature are maintained at 293 K. The hydrogen inlet pressure
+is linearly increased over the first 100 s until it reaches setting pressure,
+after which it is maintained at this pressure until the end of the simu­
+lation. The overall initial conditions for the simulation are summarised
+in Table 2.
+For the parametric study of water mass flow rate, values of 0.03,
+0.05, 0.10, and 0.15 kg/s are selected, which correspond to the Reynolds
+number (Re) of 5100, 7600, 14000, and 22000, respectively. The Re is
+
+Viscosity of liquid water
+Plateau flatness factor
+Plateau hysteresis factor
+Reference pressure
+
+The geometry of the reactor is composed of 4 zones including: 1) the
+MH bed, 2) the expansion zone, 3) the reactor wall with fins, and 4) the
+water jacket. A two-dimensional axisymmetric model is established for
+numerical modelling of the cylindrical reactor. Due to the complexity of
+the chemical reactions during MH absorption, the following assump­
+tions are applied in the present simulations, following the works re­
+ported in:
+
+(2)
+
+(1) Local thermal equilibrium in the porous zone is applied [30,33,
+34].
+(2) Hydrogen is regarded as an ideal gas [30,33,34].
+(3) Thermal-physical properties remain constant during the reaction
+[33].
+(4) Volumetric change of the MH during absorption is negligible
+[35].
+(5) Radiative heat flux is neglected [33,36].
+
+where λwater is the thermal conductivity of water, Twater is the temper­
+ature of the water, and →
+n is the unit normal vector. This implies no heat
+transfer occurs across the base and lateral surface of the water jacket
+outer wall.
+At the interface between MH and the reactor wall, the heat flux is
+expressed as:
+
+∂TMH
+∂Tw,i
+− λe → = − λsteel →
+∂n
+∂n
+
+(3)
+
+The thermal and physical material properties of LaNi5 , hydrogen,
+reactor, and water are provided in Table 4. The absorption of LaNi5 is
+determined by the following reaction:
+
+where λe and λsteel are the effective thermal conductivity in MH bed and
+thermal conductivity of stainless-steel, and TMH and Tw,i is the temper­
+ature of MH bed and inner wall.
+The convective boundary condition is applied from water flow on the
+reactor wall:
+)
+(
+∂Tw,o
+− λsteel → = h Tw,o − Twater
+∂n
+
+ϕs , ϕ0
+β
+Pref
+
+3.1. Assumptions
+
+velocity of water, L is the diameter of water jacket channel, and μ is the
+viscosity of liquid water. To prevent reversed flow at the water outlet
+due to gravity, the water flow rate is maintained above Re of 5100. The
+parameters for the operating conditions used in the simulation are
+presented in Table 3.
+For the base and lateral surface of the heat transfer fluid channel
+outer wall, adiabatic conditions are applied:
+
+∂Twater
+=0
+∂→
+n
+
+μg
+μl
+
+2.016
+21179.6
+59.187
+− 30800
+− 108
+419
+14890
+490
+4182
+381
+3.18
+0.1672
+16.3
+0.6
+387.6
+10− 8
+8.411 × 10− 6
+
+3. Numerical modelling
+
+calculated as Re = ρuL
+μ where ρ is the density of liquid water, u is the
+
+− λwater
+
+MH2
+Ea
+Ca
+ΔH
+ΔS
+cpm
+cpg
+csteel
+cwater
+ccopper
+λm
+λg
+λsteel
+λwater
+λcopper
+K
+
+kg/m3
+kg/m3
+kg/m3
+kg/m3
+kg/kmol
+J/mol
+1/s
+J/mol
+J/(mol K)
+J/(mol K)
+J/(mol K)
+J/(mol K)
+J/(mol K)
+J/(mol K)
+W/(m K)
+W/(m K)
+W/(m K)
+W/(m K)
+W/(m K)
+m2
+kg/(m s)
+
+LaNi5 + 3H2 ↔ LaNi5 H6 + 30.8 kJ/mol
+
+(5)
+
+3.2. Governing equations
+In this section, the governing equations for the hydrogen flow in the
+MH bed, water flow in the jacket, chemical reaction of the MH absorp­
+tion, and heat transfer for exothermic reaction and cooling are provided.
+
+(4)
+
+where Tw,o is the temperature of outer wall, and h is the heat transfer
+coefficient.
+
+3.2.1. Momentum equations
+The momentum equation for isotropic porous medium (MH bed)
+includes a viscous loss term. As the flow in porous medium is laminar,
+the Darcy’s law is used. The gravity term is applied in the axial direction.
+For radical momentum:
+
+580
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+Fig. 3. Validation of numerical model: (a) Temperature profile [39], (b) Reaction fraction profile [23], and (c) PCI curves of LaNi5 absorption reaction [39].
+
+)
+)
+(
+))]
+[ (
+( (
+∂ ρg ur uz
+1 ∂ ρg ur
+1 1 ∂ rρg ur ur
+∂P
++
++
+= + (∇ • τ)r + Sur
+ε
+∂t
+ε r
+∂r
+∂z
+∂r
+
+hydrogen gas in the porous media. In the MH bed, the mass of MH in­
+creases while hydrogen gas decreases during the absorption.
+For the MH:
+
+(6)
+
+For axial momentum:
+)
+)
+(
+))]
+[ (
+( (
+∂ ρg uz uz
+1 ∂ ρg uz
+1 1 ∂ rρg uz ur
+∂P
++
++
+= + (∇ • τ)z + ρg gz + Suz
+ε
+∂t
+ε r
+∂r
+∂z
+∂z
+(7)
+
+(1 − ε)
+
+For Hydrogen:
+(
+)
+(
+)
+∂ρg 1 ∂ rρg ur
+∂ rρg uz
+ε
++
++
+= − Sm
+∂t r
+∂r
+∂z
+
+where, ε is the porosity of MH, u is the velocity of hydrogen gas, τ is the
+viscous force, gz is the gravitational acceleration, Su is the momentum
+source term for porous medium, which is determined by Darcy’s law
+[37]:
+Sur = −
+
+μg
+K
+
+ur , Suz = −
+
+μg
+K
+
+uz
+
+∂ρm
+= Sm
+∂t
+
+(9)
+
+(10)
+
+where, ε is the porosity of MH, ρm and ρg denotes MH and hydrogen gas
+( )
+density, respectively. u is the velocity of gas. The hydrogen density ρg
+follows the ideal gas law:
+
+(8)
+
+ρg =
+
+where μg is the dynamic viscosity of hydrogen, and K is the permeability.
+A no-slip velocity boundary condition is applied to the reactor wall and
+water jacket.
+For the water flow in the water jacket, the Re varies from 5100 to
+22000 depending on the mass flow rate, indicating turbulent flow. Given
+the importance of accurately analysing heat transfer between the reactor
+wall and the water flow, the shear stress transport (SST) k− ω turbulence
+model is selected due to its capability in capturing near-wall flow dy­
+namics and thermal predictions [38].
+
+Pg MH2
+RT
+
+(11)
+
+where, Pg is the hydrogen gas pressure, and MH2 is the hydrogen mo­
+lecular weight which is 2.016 g/mol.
+Here, Sm represents the hydrogen absorption rate per unit volume
+[kg/m3 s], which is determined by the reaction kinetics of LaNi5 as fol­
+lows [39]:
+(
+) ( )
+)
+Pg (
+Ea
+(12)
+Sm = Ca exp −
+ρm,sat − ρm
+ln
+RT
+Peq
+where, Ca is the reaction rate constant for LaNi5 absorption, Ea is the
+activation energy, T is the MH bed temperature, and ρm,sat denotes
+
+3.2.2. Continuity equations for the MH absorption
+During absorption, mass transfer occurs between the MH and
+581
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+saturated MH density after absorption. Peq is the equilibrium pressure of
+LaNi5 absorption.
+
+Table 5
+Mesh independence assessment.
+
+3.2.3. Equilibrium pressure
+The equation for the equilibrium pressure of LaNi5 absorption fol­
+lows the Van’t Hoff equation, with an additional empirical term to ac­
+count for the complex behaviour during absorption. Based on
+experimental results of the pressure-concentration-isotherm (PCI), the
+plateau flatness factor, hysteresis factor, and hydrogen concentration
+terms are considered to fit the experimental results (Eq. (13)) [40]. The
+PCI curve for the equilibrium pressure of the experiment [39] and the
+equation are shown in Fig. 3 (c).
+( ) (
+[ (
+)
+)]
+Peq
+ΔH ΔS
+c
+1
+β
+ln
+−
++ (ϕs + ϕ0 )tan π
++
+(13)
+−
+=
+RT
+R
+csat 2
+2
+Pref
+
+Mesh
+
+No. of cell
+
+Average MH bed temperature
+[K]
+
+90 % Absorption time
+[s]
+
+Coarse
+Medium
+Fine
+Extra
+Fine
+
+120,000
+210,000
+300,000
+430,000
+
+303.2
+304.4
+305.0
+305.4
+
+690
+699
+701
+702
+
+10 ms for all simulation, and the residuals for all variables are converged
+below 10− 6 .
+For accurate simulation, a structured quadrilateral mesh is used,
+ensuring that the wall-adjacent cells achieved a y+ value of 1 for the
+highest Re. A mesh independency is tested with four different cell
+numbers: 120,000, 210,000, 300,000, and 430,000. The average MH
+bed temperature and 90 % of the absorption time is compared for the
+four different meshes (Table 5). As a result, the difference in absorption
+time between the fine and extra fine meshes is only 0.3 %. Therefore, the
+fine mesh is selected for further simulations as it provides good accuracy
+while being computationally efficient. One simulation case took around
+40 hours using 16 cores CPU (Intel E5-2680).
+
+where, Pref is the reference pressure, ΔS is the reaction entropy, ΔH is
+the reaction enthalpy, R is the ideal gas constant, T is the temperature of
+MH bed, ϕs and ϕ0 are plateau flatness factors, β is the plateau hysteresis
+factor, and c represents the concentration of MH:
+)/
+(
+MH2
+2 ρm − ρm,emp
+/
+c=
+(14)
+ρm,emp MLaNi5
+where, ρm and ρm,emp denotes MH density and hydrogen free MH den­
+sity, respectively. MLaNi5 represents molecular weight of LaNi5 which is
+432 g/mol.
+3.2.4. Energy equations
+The energy conservation in the MH bed is:
+(
+)
+(
+)
+(
+)
+(
+) ∂T
+∂T
+∂T
+1 ∂
+∂T
+∂
+∂T
+ρcp e + ρg cpg ur + uz
+=
+rλe
++
+λe
+∂z
+r ∂r
+∂t
+∂r
+∂z
+∂r
+∂z
+]
+[
+)
+(
+ΔH
++ Sm
++ T cpg − cpm
+MH2
+
+(15)
+
+where, cp is the specific heat capacity, λe is the effective thermal con­
+ductivity, and Sm is the hydrogen absorption rate.
+For the energy conservation of the MH reaction, the thermal equi­
+librium condition between MH and hydrogen gas is applied [41]. The
+effective thermal heat capacity and effective thermal conductivity are
+determined as:
+(
+)
+ρcp e = ερg cpg + (1 − ε)ρm cpm
+(16)
+And
+λe = ελg + (1 − ε)λm
+
+(17)
+
+where, λg and λm are the thermal conductivity of hydrogen gas and MH,
+respectively.
+Conjugate heat transfer is solved for the fins and the reactor wall
+using Eq. (18)
+(
+)
+(
+)
+(
+) ∂T 1 ∂
+∂T
+∂
+∂T
+ρcp steel =
+r λsteel
++
+λsteel
+(18)
+∂z
+∂t r ∂r
+∂r
+∂z
+where, λsteel is the thermal conductivity of steel wall and fins.
+3.3. Numerical settings
+In this study, a numerical simulation of MH absorption is conducted
+using the commercial CFD software ANSYS Fluent 2022R1. The gov­
+erning equations from Eq. (12)–(15) are employed to analyse transient
+mass and heat transfer during MH absorption. The mass and energy
+source terms are implemented using User-Defined-Functions (UDF) in
+the solver. Due to the cylindrical shape of the reactor, a two-dimensional
+axisymmetric model is applied for the simulation. The time step is set to
+
+Fig. 4. Temperature and hydrogen charging capacity profiles during absorp­
+tion for different reactor designs: (a) Re = 5100, and (b) Re = 22000.
+582
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+Fig. 5. Temperature contour of the four different geometry designs at 100, 500, and 1000 s: (a) Design 1, (b) Design 2, (c) Design 3, and (d) Design 4.
+
+4. Results and discussion
+
+2 % and 6 %, respectively. These results demonstrate that both tem­
+perature and reaction fraction profiles from the present numerical model
+agree well with experimental data and the literature, validating the
+model’s accuracy.
+
+The results of the numerical simulations are presented in this section.
+The equilibrium pressure is validated against experimental results.
+Additionally, temperature and reaction fraction profiles during the ab­
+sorption are compared with experimental data. Hydrogen storage ca­
+pacity is expressed in terms of the weight percentage (wt.%) of stored
+hydrogen relative to MH:
+Mass of stored hydrogen
+wt.% =
+× 100 %
+Mass of metal alloy
+
+4.2. Reactor design
+In this section, four different reactor designs are tested to evaluate
+the effects of cooling and charging capacity variation. Water flow at Re
+= 5100 and 22000, were tested for comparison.
+The mass-averaged temperature and charging capacity variation
+profiles of MH bed for the different reactor designs are shown in Fig. 4.
+At the beginning of the absorption process, the temperature of the MH
+bed increases rapidly due to the exothermic hydrogen absorption reac­
+tion. The average bed temperature peaks at 100 s, which corresponds to
+the end of the hydrogen inlet pressure increase. The maximum average
+temperature is similar across all designs. Subsequently, the temperature
+gradually decreases due to the cooling effect of the water flow. After
+reaching the maximum charging capacity (1.38 wt%), the MH bed
+temperature decreases to 293 K, which is equal to the hydrogen and
+water inlet temperatures.
+The impact of the cooling, influenced by reactor geometry, is
+assessed by comparing the time required to charge 90 % of the hydrogen
+in the MH. Increasing surface area using internal fins reduces thermal
+resistance within the reactor, enhancing heat dissipation during the
+exothermic absorption reaction. As a result, hydrogen charging time is
+shortened. Design 3 reduced the hydrogen charging time by 11 % and 6
+% compared to Designs 1 and 2, respectively. Reactor Design 4, which
+has a staggered fin arrangement, achieved a 3.2 % reduction in
+
+(19)
+
+4.1. Validation
+The equilibrium pressure equation for LaNi5 absorption (Eq. (13)) is
+compared with experimental data. Three PCI curves under different
+isothermal temperature conditions are shown in Fig. 3 (c). The equation
+for equilibrium pressure and experimental results shows good agree­
+ment under the three different conditions.
+The present numerical model is validated against experimental data
+and a numerical model from Jemni et al. [39]. In the experiment, tem­
+peratures were measured using thermocouples during the absorption
+reaction at two different temperature conditions (293 K and 313 K).
+These experimental temperature results are compared with the pre­
+dictions of the present numerical model, as shown in Fig. 3 (a). Due to
+limited information in the experimental literature, the reaction fraction
+profile is compared with another numerical model that investigated the
+identical experiment using numerical simulation (Fig. 3 (b)) [23].
+The maximum error for temperature and reaction fraction in Fig. 3 is
+583
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+highest temperature of 348 K across all reactor designs. In all cases, the
+temperature starts to decrease near the reactor wall and fins. The peak
+temperature also decreases over time as the reaction progresses. It is
+noteworthy that the fins contribute to cooling the inside of the reactor,
+leading to lower temperatures near the fins. At 1000 s, the highest
+temperatures in the centre of the MH bed are 339 K, 338 K, 333 K, and
+330 K for Designs 1 to 4, respectively.
+At the 90◦ elbow of the central water jacket, a high water tempera­
+ture is observed in all cases at 100 s (Fig. 5), corresponding to the
+mainstream water flow. After 500 s, while the temperature in the central
+part of the MH bed remains high, the temperature around the wall and
+fins decreases. In addition, the temperature variation of the water is not
+clearly visible, as the stainless-steel wall is cooled down by the water
+flow.
+Moreover, due to the presence of two 90◦ elbows in the water jacket,
+a recirculation zone forms on the lower side of the cylinder (Fig. 6). In
+this recirculation zone, flow separation and reversed flow occur,
+enhancing heat transfer from the heated reactor wall by promoting fluid
+mixing. As a result, the temperature near the recirculation zone dem­
+onstrates lower than the lower central part of the cylinder.
+The charging capacity contours, and hydrogen streamlines of the
+four different reactor designs are shown in Fig. 7. As the temperature
+decreases near the wall and internal fins (as shown in Fig. 5), the
+charging capacity increases in these regions. The tendency of hydrogen
+charging is strongly influenced by proximity to the wall and internal
+fins.
+At 100 s, hydrogen charging capacity increases near the wall and fin
+areas due to its relatively low temperature, which enhances the driving
+
+Fig. 6. Water flow streamline in water jacket (Re = 5100).
+
+hydrogen charging time compared to Design 3, despite having the same
+number of fins. The improvement is attributed to the staggered config­
+uration, which enhances the surfaces area.
+The temperature contours at 100, 500, and 1000 s of absorption are
+shown in Fig. 5. At 100 s, the majority of the MH bed area reaches the
+
+Fig. 7. Charging capacity contours and hydrogen pathlines for the four different geometry designs at 100, 500, and 1000 s: (a) Design 1, (b) Design 2, (c) Design 3,
+and (d) Design 4.
+584
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+the highest water outlet temperatures are 299 K and 295 K, respectively.
+This reduction occurs because higher Re leads to shorter contact time
+between water and the MH bed, limiting heat absorption per unit of flow
+and keeping the water temperature lower.
+The time required to achieve 90 % hydrogen charging is analysed for
+different Re. As Re increased from 5100 to 7600, 14000, and 22000, the
+charging time decreased from 851 to 793, 728, and 699 s, corresponding
+to reduction of 7 %, 14 %, and 18 %, respectively.
+The average heat transfer coefficient (HTC) between the stainlesssteel wall and water jacket is shown in Fig. 8 (b). As Re increases,
+HTC rise by 20.7 %, 34.4 %, and 18.3 % at each stage. Fig. 8 (b) es­
+tablishes a quantitative relationship between Re and average HTC,
+aiding reactor performance analysis. Notably, the largest increase in
+HTC occurs when Re increases from 7600 to 14000.
+The charging capacity distribution along the axial middle line of the
+reactor is shown in Fig. 9. In Fig. 9, the x-axis represents the distance
+from the interface between the MH bed and expansion zone to the
+bottom of the MH bed (line A-A). Across all designs, the hydrogen
+charging capacity is higher at the interface and the bottom of the MH
+bed compared to its centre. In Design 1, which has no fins, the charging
+capacity profile is smooth. In contrast, Designs 2, 3, and 4 show higher
+charging capacities at the fin locations due to the presence of fins, which
+result in lower temperatures near this area. The reduced temperature
+lowers the equilibrium pressure, consequently, the greater difference
+between the equilibrium pressure and the loading pressure enhances the
+driving force (reaction rate) for absorption.
+Overall, the charging capacity at the bottom of the reactor was
+higher than at the top, which can be attributed to the more effective heat
+transfer occurring at the bottom of the water jacket by the presence of
+recirculation of flow. The higher efficiency in heat removal at the bot­
+tom enhances the reaction rate, leading to increased hydrogen absorp­
+tion in that region.
+
+Table 6
+Charging time [s] by different designs and water flow rates.
+Reynolds Number
+
+Design 1
+
+Design 2
+
+Design 3
+
+Design 4
+
+5100
+7600
+14000
+22000
+
+851
+793
+728
+699
+
+816
+757
+691
+663
+
+777
+717
+651
+622
+
+754
+696
+631
+602
+
+force for absorption. Consequently, hydrogen pathlines in the MH bed
+converge towards these regions, increasing charging capacity. In the
+expansion zone, hydrogen gas primarily flows downward into the MH
+bed. However, along the side walls of the reactor, where the temperature
+is higher, the hydrogen gas moves upward due to thermal buoyancy. At
+500 s, the fully charged area expands towards the centre of the MH bed.
+Designs 2, 3, and 4, highlight the influence of cooling fins on hydrogen
+charging. At this stage, hydrogen gas no longer flows along the wall but
+instead moves towards the interface between the high- and low-charging
+capacity regions, particularly near the central of the reactor. By 1000 s,
+incompletely charged areas remain at the centre of the MH bed, showing
+differences in charging rates across the reactor designs, especially
+cooling fins, on hydrogen absorption.
+Notably, the bottom side of the MH bed shows faster absorption than
+the central part of the MH bed, as the recirculation zone promotes heat
+transfer in this region. Consequently, this increased heat transfer lowers
+the equilibrium pressure, and the significant difference between the
+hydrogen gas pressure and the equilibrium pressure drives faster
+absorption.
+The results of charging time for all cases are compared in Table 6.
+Reactor Design 4 shows the shortest hydrogen charging time in all water
+flow rate cases. This improvement suggests that the staggered fin
+arrangement enhanced heat transfer efficiency more effectively than the
+in-line fin configuration.
+4.3. Heat transfer fluid mass flow rate
+
+4.4. Hydrogen inlet pressure
+
+In this section, the sensitivity analysis of different reactor designs to
+varying Reynolds number (Re) of water is investigated. Fig. 8 (a) shows
+the profiles of average MH bed temperature, water outlet temperature,
+and charging capacity. Initially, these profiles resemble those from the
+reactor design study. However, variations in the Re of the water flow
+introduce some differences. A higher Re reduces the peak temperatures
+in both the MH bed and the water outlet, demonstrating that increased
+HTF velocity enhances heat removal more effectively than adjusting the
+number of heat transfer fins. Specifically, the highest MH bed temper­
+atures for Re of 5100 and 22000 are 342 K and 340 K, respectively, while
+
+In this section, the impact of different hydrogen inlet pressures on the
+hydrogen charging time and MH bed temperature are examined. The
+simulation is conducted using reactor Design 4 and Re = 22000, which
+showed the shortest hydrogen charging time in previous results. For the
+parametric study, hydrogen inlet pressures of 5, 10, 15, and 20 bar are
+tested. The initial hydrogen inlet pressure is set at 1 bar and linearly
+increased up to the target pressure within the first 100 s of the simula­
+tion. Fig. 10 shows the average MH bed temperature and charging ca­
+pacity profiles for the different hydrogen inlet pressures.
+The effect of hydrogen inlet pressure shows a different trend
+
+Fig. 8. (a) Temperature and hydrogen charging capacity profiles during absorption for different Reynolds number of Design 1, and (b) Average HTC between SS wall
+and water jacket.
+585
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+Fig. 9. Charging capacity curves at the middle line of the reactor (line A-A): (a, c, e, g) Re = 5100, (b, d, f, h) Re = 22000.
+
+586
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+driving force of absorption. As a result, while increasing the hydrogen
+inlet pressure reduces the hydrogen charging time, the rate of reduction
+does not increase linearly. This suggests that increasing the hydrogen
+inlet pressure up to 10 bar significantly enhances charging capacity but
+further increases yield diminishing returns.
+4.5. Application of copper fin
+In this section, the impact of using copper fins instead of stainlesssteel fins is analysed, while the reactor itself remains made of
+stainless-steel. Copper has a thermal conductivity that is approximately
+20 times higher than stainless-steel, making widely used material for
+enhancing heat transfer. As a result, the use of copper fins is expected to
+significantly improve heat transfer efficiency in the reactor. For a
+comprehensive comparison between stainless-steel and copper fins,
+hydrogen charging times for different reactor designs and water flow Re
+evaluated. The overall comparison between stainless-steel and copper
+fins is presented in Fig. 11.
+The overall hydrogen charging time is notably reduced across all
+reactor designs and water flow rates when copper fins are used. In the
+previous results from Section 4.2 Reactor Design, it was showed that
+stainless-steel fins reduced hydrogen charging time by a maximum of 14
+% when comparing Design 1 to Design 4. However, in the same case,
+copper fins reduced the charging time by 38 %. The effectiveness of
+copper fins is especially apparent when the surface area of fins is
+increased. The average reduction in charging time using copper fins is
+10 %, 19 %, and 25 % in Design 2,3, and 4, respectively, compared to
+stainless-steel fins. Notably, when comparing Design 3 and 4, stainlesssteel fins showed a reduction of around 3 %, whereas copper fins
+resulted in a 10 % reduction. These results demonstrate that the use of
+high thermal conductivity materials, such as copper, inside the MH bed,
+along with even a slight increase in surface area, is highly effective in
+reducing hydrogen charging time.
+4.6. Optimisation of reactor design
+The presence of porous medium (i.e. MH), internal fins, and their
+arrangements affects the pressure drop in MH bed. This is because the
+fins act as obstacles, reducing the available hydrogen flow area. Addi­
+tionally, the increased surface area in the MH bed increases frictional
+drag. A high pressure drop requires more power to compress the MH
+bed, and the resulting lower pressure and hydrogen velocity in MH bed
+can reduce the hydrogen absorption rate. Therefore, selecting the
+optimal reactor design must carefully consider this trade-off. Fig. 12 (a)
+presents the hydrogen charging times and corresponding pressure drop
+for each reactor design. For the comparison, the copper fin with water
+flow rate in Re 22000 is applied. The pressure drop is measured from the
+interface of the expansion zone and the MH bed to the bottom of the MH
+bed, with an inlet hydrogen pressure of 10 bar for all designs. The
+pressure drop for reactor designs 1 to 4 are 350, 359, 368, and 372 Pa,
+respectively. As the number of fins increases, a higher pressure drop is
+observed. In the case of staggered fins (Design 4), hydrogen movement
+within the MH bed becomes more restricted, leading to a further in­
+crease in pressure drop. The corresponding pressure drop is increased to
+3 %, 5 %, and 6 % for Design 2, 3, and 4, respectively. On the other hand,
+the hydrogen charging time is significantly reduced in these designs,
+decreasing to 83 %, 68 %, and 62 % of the baseline (Design 1). Although
+pressure drop occur in all designs, the magnitude is approximately 0.04
+% of the inlet pressure, making its impact on compression power or
+reaction rate negligible.
+The application of additional fins leads to an increase in the overall
+reactor mass. The mass increases observed in Design 2, 3 and 4 are 1.6
+%, 3.1 %, and 4 %, respectively, compared to Design 1. All reactor de­
+signs can store approximately 12 g of hydrogen, releasing about 183 kJ
+of heat during the absorption reaction. When normalised by the total
+reactor mass, the heat release rate is expressed as the power-to-mass
+
+Fig. 10. Temperature and hydrogen charging capacity profiles for different
+hydrogen inlet pressures: (a) Average bed temperature, (b) Charging capac­
+ity profile.
+
+compared to previous parametric studies. The greater the difference
+between the hydrogen gas pressure and the equilibrium pressure, the
+higher the reaction rate of absorption, especially at the initial stages. As
+the hydrogen inlet pressure increases, the difference between the gas
+pressure and the equilibrium pressure increases, which enhances the
+absorption reactions. Consequently, the heat generated from the ab­
+sorption process increases, as shown in Fig. 10 (a). Higher MH bed peak
+temperatures are observed with higher hydrogen inlet pressures.
+A higher initial increase in hydrogen pressure leads to a sharper in­
+crease in charging capacity, as shown in Fig. 10 (b). The absorption
+times to reach 90 % charging are 1033 s, 602 s, 470 s, and 401 s for
+hydrogen inlet pressures of 5 bar, 10 bar, 15 bar, and 20 bar, respec­
+tively. Although the hydrogen inlet pressure was increased in 5 bar in­
+crements, the most pronounced reduction in charging time occurred
+when the pressure increased from 5 bar to 10 bar, resulting in a 42 %
+reduction. This is because the pressure difference between hydrogen gas
+and the equilibrium pressure primarily drives the absorption process.
+However, at higher pressures (above 10 bar), the MH bed temperature
+rises due to the exothermic absorption reaction, which disrupts the
+587
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+Fig. 11. Hydrogen charging (90 %) time comparison between stainless-steel and copper fins.
+
+ratio (W/kg), calculated by dividing the released heat by the absorption
+time, as shown in Fig. 12 (b). The power-to-mass ratios for Design 1 to 4
+are 153.3, 180.3, 216.4, and 237.9 W/kg, respectively. Notably, while
+the reactor mass increases with additional fins, the substantial reduction
+in absorption time allows Design 4 to achieve the highest power-to-mass
+ratio, a 55 % improvement compared to Design 1. This elevated ratio is
+particularly beneficial for thermal energy storage and heat pump ap­
+plications, enabling effective utilisation of the heat generated during the
+absorption reaction.
+From a materials perspective, since MH reactors require relatively
+high pressure, durable stainless-steel is used for the reactor body.
+However, replacing the heat transfer fins with copper can effectively
+reduce absorption time. As a result, applying copper fins in reactor
+Design 4 enables highly efficient heat transfer and significantly reduces
+hydrogen charging time.
+
+turbulence model was applied for the water flow to accurately cap­
+ture the turbulent flow characteristics and its effect on MH absorp­
+tion. The appearance of recirculation flow by the 90◦ elbow
+effectively reduced localised temperature, enhancing the reaction
+rate near this region. HTC improvement was most pronounced at Re
+= 14000, where cooling efficiency significantly increased, while
+further increase in Re showed diminishing returns in heat transfer
+enhancement.
+• Increasing the hydrogen inlet pressure from 5 bar to 20 bar reduced
+the absorption time by up to 61 %, with the most significant reduc­
+tion (42 %) observed when the pressure increased from 5 bar to 10
+bar. Loading different hydrogen inlet pressures resulted in significant
+temperature changes during the MH absorption reaction and a
+considerable reduction in charging time.
+• Replacing stainless-steel fins with copper fins improved heat transfer
+efficiency due to its higher thermal conductivity. Copper fins
+reduced charging times by up to 38 %, compared to a maximum
+reduction of 14 % with stainless-steel fins.
+• Despite the increased reactor mass with additional fins, the reduction
+in absorption time resulted in a higher power-to-mass ratio for re­
+actors with copper fins. This feature makes these designs particularly
+suitable for applications such as thermal energy storage and heat
+pump.
+
+5. Conclusion
+This study conducted numerical simulations of transient heat and
+mass transfer during MH absorption, focusing on overcoming the chal­
+lenges posed by the low thermal conductivity of LaNi5 alloy through
+reactor design enhancement. The cylindrical reactors with internal
+cooling fins and an outer water jacket were tested under various
+boundary conditions to evaluate their performance. Four reactor con­
+figurations were studied: 0, 5, and 10 in-line fins and 10 staggered ar­
+rangements. The main findings of this study are as follows:
+
+This study provides insights into how reactor design modifications,
+specifically cooling enhancements, can reduce the absorption time of
+MH. Based on these findings, the proposed reactor design (Design 4
+incorporating copper fins) offers the best performance. Future work will
+focus on experimental studies of metal hydride absorption and desorp­
+tion using novel heat exchanger designs especially unique fin geometries
+with a combination of different MH under a broad range of operation
+parameters. By integrating computational and experimental ap­
+proaches, our research will provide a more robust understanding of MH
+hydrogen storage systems, bridging the gap between theoretical and
+practical implementation. Finally, utilising different machine learning
+algorithms such as Physics Informed Neural Network (PINN) [42,43]
+towards optimisation of the reactor/fin design could be utilised.
+
+• The application of 10 internal cooling fins in the MH reactor reduced
+the time to charge 90 % of maximum capacity by 14.6 %. Moreover,
+using a staggered arrangement of fins further reduced the charging
+time by 3.2 % compared to the inline arrangement. MH bed tem­
+perature and hydrogen charging profiles indicated that cooling fins
+significantly improved heat dissipation during absorption,
+enhancing the reaction rate.
+• Increasing the Re of water from 5100 to 22000 reduced the hydrogen
+charging time by up to 21 %. A sensitivity analysis with Re from
+5100, to 22000 demonstrated turbulent flow. The SST k− ω
+588
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+to the University of Manchester, which has supported the underpinning
+research in this study.
+References
+[1] Møller KT, et al. Hydrogen-A sustainable energy carrier. Prog Nat Sci: Mater Int
+2017;27(1):34–40. https://doi.org/10.1016/j.pnsc.2016.12.014.
+[2] Winter C-J. Hydrogen energy—abundant, efficient, clean: a debate over the
+energy-system-of-change. Int J Hydrogen Energy 2009;34(14):S1–52. https://doi.
+org/10.1016/j.ijhydene.2009.05.063.
+[3] Mazloomi K, Gomes C. Hydrogen as an energy carrier: prospects and challenges.
+Renew Sustain Energy Rev 2012;16(5):3024–33. https://doi.org/10.1016/j.
+rser.2012.02.028.
+[4] Züttel A, et al. Hydrogen: the future energy carrier. Phil Trans Math Phys Eng Sci
+2010;368:3329–42. https://doi.org/10.1098/rsta.2010.0113. 1923.
+[5] Hwang HT, Varma A. Hydrogen storage for fuel cell vehicles. Curr Opin Chem Eng
+2014;5:42–8. https://doi.org/10.1016/j.coche.2014.04.004.
+[6] Züttel A. Materials for hydrogen storage. Mater Today 2003;6(9):24–33. https://
+doi.org/10.1016/S1369-7021(03)00922-2.
+[7] Sakintuna B, Lamari-Darkrim F, Hirscher M. Metal hydride materials for solid
+hydrogen storage: a review. Int J Hydrogen Energy 2007;32(9):1121–40. https://
+doi.org/10.1016/j.ijhydene.2006.11.022.
+[8] Drawer C, Lange J, Kaltschmitt M. Metal hydrides for hydrogen
+storage–Identification and evaluation of stationary and transportation applications.
+J Energy Storage 2024;77:109988. https://doi.org/10.1016/j.est.2023.109988.
+[9] Schlapbach L, Züttel A. Hydrogen-storage materials for mobile applications. Nature
+2001;414(6861):353–8. https://doi.org/10.1038/35104634.
+[10] Broom DP. Hydrogen storage materials: the characterisation of their storage
+properties, vol. 1. Springer; 2011. https://doi.org/10.1007/978-0-85729-221-6.
+[11] Yartys VA, et al. Metal hydride hydrogen compression: recent advances and future
+prospects. Appl Phys A 2016;122:1–18. https://doi.org/10.1007/s00339-0169863-7.
+[12] Dong D, et al. Thermal optimisation of metal hydride reactors for thermal energy
+storage applications. Sustain Energy Fuels 2017;1(8):1820–9. https://doi.org/
+10.1039/C7SE00316A.
+[13] Choi H, Mills A. Heat and mass transfer in metal hydride beds for heat pump
+applications. Int J Heat Mass Tran 1990;33(6):1281–8. https://doi.org/10.1016/
+0017-9310(90)90257-U.
+[14] Rusman N, Dahari M. A review on the current progress of metal hydrides material
+for solid-state hydrogen storage applications. Int J Hydrogen Energy 2016;41(28):
+12108–26. https://doi.org/10.1016/j.ijhydene.2016.05.244.
+[15] Klopčič N, et al. A review on metal hydride materials for hydrogen storage.
+J Energy Storage 2023;72:108456. https://doi.org/10.1016/j.est.2023.108456.
+[16] Briki C, et al. Measurements of expansion of LaNi5 compacted powder during
+hydrogen absorption/desorption cycles and their influences on the reactor wall. Int
+J Hydrogen Energy 2019;44(26):13647–54. https://doi.org/10.1016/j.
+ijhydene.2019.04.010.
+[17] Kim KJ, et al. Metal hydride compacts of improved thermal conductivity. Int J
+Hydrogen Energy 2001;26(6):609–13. https://doi.org/10.1016/S0360-3199(00)
+00115-4.
+[18] MacDonald BD, Rowe AM. Impacts of external heat transfer enhancements on
+metal hydride storage tanks. Int J Hydrogen Energy 2006;31(12):1721–31. https://
+doi.org/10.1016/j.ijhydene.2006.01.007.
+[19] Askri F, et al. Optimization of hydrogen storage in metal-hydride tanks. Int J
+Hydrogen Energy 2009;34(2):897–905. https://doi.org/10.1016/j.
+ijhydene.2008.11.021.
+[20] Chung C, et al. Experimental study on the hydrogen charge and discharge rates of
+metal hydride tanks using heat pipes to enhance heat transfer. Appl Energy 2013;
+103:581–7. https://doi.org/10.1016/j.apenergy.2012.10.024.
+[21] Chibani A, et al. Effect of fin material type and reactor inclination angle on
+hydrogen adsorption process in large-scale activated carbon-based heat storage
+system. J Energy Storage 2024;98:113091. https://doi.org/10.1016/j.
+est.2024.113091.
+[22] Bai X-S, et al. Optimization of tree-shaped fin structures towards enhanced
+absorption performance of metal hydride hydrogen storage device: a numerical
+study. Energy 2021;220:119738. https://doi.org/10.1016/j.energy.2020.119738.
+[23] Tong L, et al. Complete and reduced models for metal hydride reactor with coiledtube heat exchanger. Int J Hydrogen Energy 2019;44(30):15907–16. https://doi.
+org/10.1016/j.ijhydene.2018.07.102.
+[24] Parida A, Muthukumar P. Reactor design and numerical study on metal hydride
+based finned reactor configurations for hydrogen compression application. Int J
+Hydrogen Energy 2023. https://doi.org/10.1016/j.ijhydene.2022.10.183.
+[25] Chibani A, et al. Impact of fins and cooling fluid on the hydrogenation process in a
+LaNi5-Based metal hydride reactor for hydrogen storage. Int J Hydrogen Energy
+2024;69:134–46. https://doi.org/10.1016/j.ijhydene.2024.04.314.
+[26] Gupta S, Sharma VK. Design and analysis of metal hydride reactor embedded with
+internal copper fins and external water cooling. Int J Energy Res 2021;45(2):
+1836–56. https://doi.org/10.1002/er.5859.
+[27] Prasad JS, Muthukumar P. Design and performance analysis of an annular metal
+hydride reactor for large-scale hydrogen storage applications. Renew Energy 2022;
+181:1155–66.
+[28] Lototskyy MV, et al. Metal hydride hydrogen compressors: a review. Int J
+Hydrogen Energy 2014;39(11):5818–51. https://doi.org/10.1016/j.
+ijhydene.2014.01.158.
+
+Fig. 12. Evaluation of hydrogen storage performance by reactor designs (a)
+Charging time and pressure drop and (b) Power generation per reactor mass
+by absorption.
+
+CRediT authorship contribution statement
+Dae Yeob Lee: Writing – original draft, Visualization, Validation,
+Software, Methodology, Formal analysis, Data curation, Conceptuali­
+zation. Yasser Mahmoudi: Writing – review & editing, Supervision,
+Conceptualization. Vincenzo Spallina: Writing – review & editing,
+Supervision, Conceptualization. Amir Keshmiri: Writing – review &
+editing, Supervision, Conceptualization.
+Data availability
+Data will be made available on request.
+Declaration of competing interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Acknowledgements
+The authors would like to acknowledge the funding by the UK En­
+gineering and Physical Sciences Research Council (EPSRC – Reference:
+EP/X525753/1) under the Impact Acceleration Account (IAA) provided
+589
+
+D.Y. Lee et al.
+
+International Journal of Hydrogen Energy 116 (2025) 577–590
+
+[29] Chung C, Ho C-J. Thermal–fluid behavior of the hydriding and dehydriding
+processes in a metal hydride hydrogen storage canister. Int J Hydrogen Energy
+2009;34(10):4351–64. https://doi.org/10.1016/j.ijhydene.2009.03.028.
+[30] Mellouli S, et al. A study of the thermal behavior of a deformable metal-hydride
+bed. Int J Hydrogen Energy 2016;41(3):1711–24. https://doi.org/10.1016/j.
+ijhydene.2015.10.058.
+[31] Chibani A, Bougriou C, Merouani S. Simulation of hydrogen absorption/desorption
+on metal hydride LaNi5-H2: mass and heat transfer. Appl Therm Eng 2018;142:
+110–7. https://doi.org/10.1016/j.applthermaleng.2018.06.078.
+[32] Chandra S, et al. Modeling and numerical simulation of a 5 kg LaNi5-based
+hydrogen storage reactor with internal conical fins. Int J Hydrogen Energy 2020;45
+(15):8794–809. https://doi.org/10.1016/j.ijhydene.2020.01.115.
+[33] Chibani A, et al. Heat and mass transfer during the storage of hydrogen in LaNi5based metal hydride: 2D simulation results for a large scale, multi-pipes fixed-bed
+reactor. Int J Heat Mass Tran 2020;147:118939. https://doi.org/10.1016/j.
+ijheatmasstransfer.2019.118939.
+[34] Nasrallah SB, Jemni A. Heat and mass transfer models in metal-hydrogen reactor.
+Int J Hydrogen Energy 1997;22(1):67–76. https://doi.org/10.1016/S0360-3199
+(96)00039-0.
+[35] Mohammadshahi S, Gray EM, Webb C. A review of mathematical modelling of
+metal-hydride systems for hydrogen storage applications. Int J Hydrogen Energy
+2016;41(5):3470–84. https://doi.org/10.1016/j.ijhydene.2015.12.079.
+
+[36] Askri F, Jemni A, Nasrallah SB. Prediction of transient heat and mass transfer in a
+closed metal–hydrogen reactor. Int J Hydrogen Energy 2004;29(2):195–208.
+https://doi.org/10.1016/S0360-3199(03)00089-2.
+[37] Nam J, Ko J, Ju H. Three-dimensional modeling and simulation of hydrogen
+absorption in metal hydride hydrogen storage vessels. Appl Energy 2012;89(1):
+164–75. https://doi.org/10.1016/j.apenergy.2011.06.015.
+[38] Menter FR. Two-equation eddy-viscosity turbulence models for engineering
+applications. AIAA J 1994;32(8):1598–605.
+[39] Jemni A, Nasrallah SB, Lamloumi J. Experimental and theoretical study of a
+metal–hydrogen reactor. Int J Hydrogen Energy 1999;24(7):631–44.
+[40] Nishizaki T, Miyamoto K, Yoshida K. Coefficients of performance of hydride heat
+pumps. J Less Common Metals 1983;89(2):559–66.
+[41] Jemni A, Nasrallah SB. Study of two-dimensional heat and mass transfer during
+absorption in a metal-hydrogen reactor. Int J Hydrogen Energy 1995;20(1):43–52.
+https://doi.org/10.1016/S0360-3199(98)00117-7.
+[42] Jalili D, et al. Transfer learning through physics-informed neural networks for
+bubble growth in superheated liquid domains. Int J Heat Mass Tran 2024;232:
+125940. https://doi.org/10.1016/j.ijheatmasstransfer.2024.125940.
+[43] Jalili D, et al. Physics-informed neural networks for heat transfer prediction in twophase flows. Int J Heat Mass Tran 2024;221:125089. https://doi.org/10.1016/j.
+ijheatmasstransfer.2023.125089.
+
+590
+
+

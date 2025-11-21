@@ -1,0 +1,338 @@
+# Experimental and comparative study of metal hydride hydrogen tanks
+
+**Referencia PDF:** `No especificado`
+
+---
+
+## Información Bibliográfica
+
+- **Autores:** Muthukumar et al.
+- **Año:** 2011
+- **Revista/Fuente:** No especificado
+- **País/Institución:** No especificado
+
+---
+
+## Características del Estudio
+
+- **Tipo de Estudio:** No especificado
+- **Escala:** No especificado
+
+---
+
+## Especificaciones Técnicas del Reactor
+
+### Configuración y Diseño
+
+- **Configuración del Reactor:** Cilíndrica horizontal para los 3 diseños
+- **Dimensiones:** No especificado
+- **Capacidad de H₂:** No especificado
+
+### Material de Almacenamiento
+
+- **Material de Hidruro:** LaNi5 (aleación AB5 comercial, mismo lote para los 3 reactores garantiza comparabilidad)
+- **Cantidad de Hidruro:** 1.2 kg
+
+### Sistema de Gestión Térmica
+
+- **Sistema de Transferencia de Calor:** aletas
+- **Tipo de Aletas:** radiales
+- **Fluido Térmico:** No especificado
+
+### Condiciones de Operación
+
+- **Temperatura de Operación:** No especificado
+- **Presión de Operación:** 10-15 bar
+- **Tiempo de Absorción:** No especificado
+- **Tiempo de Desorción:** No especificado
+
+---
+
+## Resultados Clave
+
+Ver contenido original más abajo
+
+---
+
+## Conclusiones para el Proyecto
+
+### Sobre Modularidad y Escalabilidad
+
+Ver contenido original más abajo
+
+### Sobre Gestión Térmica
+
+Ver contenido original más abajo
+
+---
+
+## Contenido Original
+
+# Experimental and comparative study of metal hydride hydrogen tanks
+
+**Referencia PDF:** `No especificado`
+
+---
+
+## Información Bibliográfica
+
+- **Autores:** Muthukumar et al.
+- **Año:** 2011
+- **Revista/Fuente:** No especificado
+- **País/Institución:** No especificado
+
+---
+
+## Características del Estudio
+
+- **Tipo de Estudio:** No especificado
+- **Escala:** No especificado
+
+---
+
+## Especificaciones Técnicas del Reactor
+
+### Configuración y Diseño
+
+- **Configuración del Reactor:** Cilíndrica horizontal para los 3 diseños
+- **Dimensiones:** No especificado
+- **Capacidad de H2:** No especificado
+
+### Material de Almacenamiento
+
+- **Material de Hidruro:** LaNi5 (aleación AB5 comercial, mismo lote para los 3 reactores garantiza comparabilidad)
+- **Cantidad de Hidruro:** 1.2 kg
+
+### Sistema de Gestión Térmica
+
+- **Sistema de Transferencia de Calor:** aletas
+- **Tipo de Aletas:** radiales
+- **Fluido Térmico:** No especificado
+
+### Condiciones de Operación
+
+- **Temperatura de Operación:** No especificado
+- **Presión de Operación:** 10-15 bar
+- **Tiempo de Absorción:** No especificado
+- **Tiempo de Desorción:** No especificado
+
+---
+
+## Resultados Clave
+
+Ver contenido original más abajo
+
+---
+
+## Conclusiones para el Proyecto
+
+### Sobre Modularidad y Escalabilidad
+
+Ver contenido original más abajo
+
+### Sobre Gestión Térmica
+
+Ver contenido original más abajo
+
+---
+
+## Contenido Original
+
+# Notas de Lectura: Experimental and comparative study of metal hydride hydrogen tanks
+
+**Autor:** Muthukumar et al. 
+**Referencia BibTeX:** `muthukumar2011`
+
+**Fecha de Publicación:** 2011
+
+---
+
+## 1. Resumen
+
+Este artículo presenta un estudio experimental y comparativo riguroso de tres configuraciones de tanques de hidrógeno con hidruro metálico: (1) reactor cilíndrico simple sin mejora térmica (baseline), (2) reactor con aletas radiales internas de cobre, y (3) reactor con tubos concéntricos múltiples para flujo HTF. El objetivo es cuantificar experimentalmente el impacto de diferentes estrategias de transferencia de calor sobre la cinética de absorción/desorción de hidrógeno utilizando LaNi5 como material de almacenamiento. Los tres reactores tienen geometría externa idéntica (250 mm x 80 mm) pero configuración interna diferente. Se realizan pruebas bajo condiciones controladas (temperatura 25-60degC, presión 10-30 bar) midiendo tiempo de carga/descarga, perfiles térmicos, y eficiencia energética. Resultados muestran que aletas de cobre reducen 55-65% el tiempo vs baseline, mientras tubos concéntricos logran 45-55% reducción. Análisis costo-beneficio indica que aletas ofrecen mejor relación rendimiento/complejidad para aplicaciones estacionarias, mientras tubos concéntricos son preferibles para aplicaciones vehiculares (mejor compacidad y resistencia mecánica).
+
+## 2. Imagen de Referencia
+
+![Imagen de referencia](img/notas_2011_Experimental_and_comparative_study_of_metal_hydride_hydrogen_tanks/reactor.png)
+
+## 3. Puntos Clave y Datos
+
+### Aspectos Principales
+
+- **Enfoque Comparativo:** Primer estudio experimental detallado comparando 3 configuraciones bajo condiciones idénticas (mismo MH, misma geometría externa, mismos instrumentos, mismo protocolo experimental)
+- **Configuraciones Evaluadas:** (1) Cilíndrico simple (baseline sin mejora térmica), (2) Aletas radiales cobre (30 aletas 60 mm x 1 mm), (3) Tubos concéntricos (3 tubos circulación HTF agua)
+- **Metodología Rigurosa:** Instrumentación extensa 15 termocuplas tipo K por reactor, medición flujo másico H2, calorimetría directa, validación repetibilidad 5 ciclos por condición
+- **Resultados Cuantitativos:** Aletas Cu reducen tiempo carga 55-65% vs baseline, tubos concéntricos 45-55%. Temperatura máxima MH durante absorción: baseline 95-105degC, aletas 60-70degC, tubos 65-75degC
+- **Análisis Costo-Beneficio:** Aletas óptimas para estacionarias (simplicidad+rendimiento), tubos concéntricos para vehículos (compacidad+robustez mecánica), baseline insuficiente aplicaciones prácticas
+
+## 4. Características Técnicas del Sistema
+
+### 4.1 Hidruro Metálico
+
+**Tipo de hidruro:** LaNi5 (aleación AB5 comercial, mismo lote para los 3 reactores garantiza comparabilidad) 
+**Cantidad de hidruro:** 1.2 kg por reactor (masa MH empaquetada) 
+**Conductividad Térmica MH:** 0.8-1.0 W/m*K (LaNi5 sin aditivos, medida experimentalmente en lecho empaquetado)
+
+### 4.2 Configuración Geométrica
+
+**Descripción del sistema:**
+
+**Reactor 1 (Baseline):** Cilindro simple acero inoxidable 316L sin mejoras térmicas internas. Jacket externo agua circulante (condiciones boundary uniformes). Diseño referencia representa peor caso transferencia calor (solo conducción MH + pared reactor).
+
+**Reactor 2 (Aletas):** Mismo cilindro externo + 30 aletas radiales cobre (99.9% pureza) soldadas a pared interna. Aletas 60 mm longitud x 1 mm espesor distribuidas uniformemente 12° angular. Área superficial incrementada ~280% vs baseline. Peso adicional: +2.8 kg cobre (~18% peso total reactor).
+
+**Reactor 3 (Tubos concéntricos):** Tres tubos concéntricos acero inoxidable 304 (Ø80/Ø60/Ø40 mm) crean 3 canales anulares para MH alternando con 2 canales HTF agua. Configuración maximiza área interfaz MH-HTF y minimiza distancia conducción térmica radial (<10 mm). Complejidad fabricación mayor (soldaduras múltiples, tolerancias estrechas).
+
+**Configuración geométrica:** Cilíndrica horizontal para los 3 diseños 
+**Longitud (mm):** 250 mm longitud efectiva (+ 30 mm cabezales conexión) 
+**Diámetro (mm):** 80 mm diámetro exterior shell 
+**L/D ratio:** 3.1 (relación adecuada para minimizar gradientes axiales) 
+**Volumen (L):** 1.0 L volumen neto MH por reactor (1.2 kg con densidad bulk 1.2 g/cm3)
+
+### 4.3 Transferencia de Calor
+
+**Intercambiador de Calor:**
+
+- **Reactor 1 (Baseline):** Jacket agua externa simple (anillo 10 mm espesor entre shell interno Ø80 mm y externo Ø100 mm). Transferencia calor limitada por conducción MH (0.8-1.0 W/m*K) desde pared hasta centro reactor.
+
+- **Reactor 2 (Aletas):** 30 aletas radiales cobre (k=390 W/m*K) penetran 60 mm hacia centro MH desde pared. Aletas 1 mm espesor x 250 mm longitud, distribución angular 12°. Área superficial efectiva ~280% vs baseline. Jacket agua externo idéntico a Reactor 1.
+
+- **Reactor 3 (Tubos):** 2 canales anulares HTF agua (entre tubos Ø80-60 mm y Ø60-40 mm) intercalan con 3 canales MH. Maximiza área interfaz MH-HTF (πDL por cada tubo) y reduce distancia conducción radial máxima a 10 mm (vs 40 mm Reactor 1). Complejidad hidráulica mayor (conexiones múltiples, distribución flujo).
+
+**Coeficiente de transferencia de calor:**
+
+- Reactor 1: 120-150 W/m2*K (agua-pared interna, limitado por resistencia conducción MH) 
+- Reactor 2: 380-450 W/m2*K (efectivo incluyendo aletas, área aumentada + conducción Cu) 
+- Reactor 3: 320-380 W/m2*K (efectivo múltiples interfaces, menor área que aletas pero mejor distribución espacial)
+
+### 4.4 Condiciones de Operación
+
+**Temperatura (degC):**
+
+- Agua HTF entrada: 25degC (absorción remoción calor), 60degC (desorción suministro calor) 
+- Ambiente: 22-25degC controlado en laboratorio 
+- MH máxima durante absorción: 95-105degC (Reactor 1), 60-70degC (Reactor 2), 65-75degC (Reactor 3) - crítico para seguridad y degradación MH
+
+**Presión de trabajo:**
+
+- Absorción: 25-30 bar (presión suministro H2 desde cilindro regulador) 
+- Desorción: 10-15 bar (presión sistema downstream, celda combustible simulada) 
+- Rango operativo LaNi5: equilibrio 5-35 bar a 20-80degC
+
+**Flujo (NL/min):**
+
+- H2 absorción: 15-20 NL/min (controlado con regulador presión + flowmeter másico) 
+- H2 desorción: variable 8-15 NL/min según demanda downstream simulada 
+- Agua HTF: 4 L/min (constante para los 3 reactores, garantiza condiciones boundary comparables)
+
+### 4.5 Rendimiento del Sistema
+
+**Tiempo carga (absorción):**
+
+- Reactor 1 (Baseline): 75-85 minutos para 90% capacidad (extremadamente lento, temperatura MH excede 100degC temporalmente) 
+- Reactor 2 (Aletas): 30-35 minutos para 90% capacidad (reducción 55-60% vs baseline) 
+- Reactor 3 (Tubos): 38-45 minutos para 90% capacidad (reducción 45-50% vs baseline)
+
+**Tiempo descarga (desorción):**
+
+- Reactor 1: 95-110 minutos para 90% descarga (aún más lento que absorción por endotermicidad desorción) 
+- Reactor 2: 38-45 minutos (reducción 60-65% vs baseline, mejor rendimiento relativo que absorción) 
+- Reactor 3: 48-55 minutos (reducción 50-55% vs baseline)
+
+**Cantidad H2:** ~100 NL por reactor (~0.09 kg H2, capacidad gravimétrica efectiva ~1.3-1.4 wt% considerando masa total sistema 6.5-7.5 kg)
+
+**Eficiencia energética:**
+
+- Reactor 1: 45-50% (energía útil H2 liberado / energía térmica total suministrada, pérdidas térmicas significativas por alta T MH) 
+- Reactor 2: 68-75% (mejor control térmico, menor dT HTF, pérdidas reducidas) 
+- Reactor 3: 65-72% (intermedio, buena eficiencia pero complejidad hidráulica introduce pérdidas menores)
+
+## 5. Transferencia de Calor
+
+**Métodos de transferencia de calor utilizados:**
+
+1. **Reactor 1 (Baseline):** Transferencia calor unidimensional radial desde pared externa (jacket agua) hacia centro MH por conducción pura. Limitada por baja conductividad térmica MH 0.8-1.0 W/m*K. Resistencia térmica dominante es conducción MH (85-90% resistencia total).
+
+2. **Reactor 2 (Aletas radiales Cu):** Aletas cobre (k=390 W/m*K, ~400x mayor que MH) actúan como "autopistas térmicas" distribuyendo calor radialmente desde pared hacia volumen MH. Reducen distancia efectiva conducción MH de 40 mm (radio total) a ~6-8 mm (distancia entre aletas). Área superficial efectiva aumenta ~280% mejorando interfaz HTF-MH.
+
+3. **Reactor 3 (Tubos concéntricos):** Múltiples interfaces MH-HTF (2 canales agua intercalados con 3 canales MH) reduce distancia conducción radial máxima a 10 mm. Transferencia calor bidimensional (radial + axial por tubos acero) más uniforme que aletas pero área total menor.
+
+**Materiales y propiedades térmicas:**
+
+- **Shell reactor:** Acero inoxidable 316L (k=16.2 W/m*K, espesor 3 mm, resistencia corrosión H2) 
+- **Aletas (Reactor 2):** Cobre 99.9% pureza (k=390 W/m*K, soldadura TIG a pared interna, espesor 1 mm) 
+- **Tubos concéntricos (Reactor 3):** Acero inoxidable 304 (k=16.2 W/m*K, espesores 1.5 mm) 
+- **MH:** LaNi5 (k=0.8-1.0 W/m*K lecho empaquetado, porosidad ~40%, densidad bulk 1.2 g/cm3) 
+- **HTF:** Agua deionizada (k=0.6 W/m*K, cp=4180 J/kg*K, óptima relación costo-rendimiento escala laboratorio)
+
+**Eficiencia térmica:**
+
+- **Reactor 1:** 45-50% eficiencia térmica (energía útil / energía suministrada). Pérdidas significativas: gradientes térmicos altos causan sobrecalentamiento localizado pared (105degC) mientras centro MH permanece frío (40-50degC), resultando en utilización MH no uniforme (<60% masa MH participa efectivamente en primeros 30 min).
+
+- **Reactor 2:** 68-75% eficiencia térmica. Aletas Cu distribuyen calor uniformemente reduciendo gradientes radiales a 15-20degC (vs 50-60degC Reactor 1). Utilización MH mejorada a 85-90% masa total. Pérdidas reducidas por menor dT HTF entrada-salida (5-8degC vs 15-20degC Reactor 1).
+
+- **Reactor 3:** 65-72% eficiencia térmica. Tubos concéntricos logran distribución térmica aceptable (gradientes radiales 20-25degC) pero complejidad hidráulica (distribución flujo entre 2 canales HTF) introduce pérdidas menores y zonas muertas flujo reducen eficiencia vs aletas.
+
+**Problemas y soluciones relacionados con el manejo térmico:**
+
+1. **Problema (Reactor 1):** Sobrecalentamiento MH cerca pared (95-105degC) durante absorción rápida causa desactivación temporal (presión equilibrio excede presión suministro localmente) y potencial degradación MH. Centro reactor permanece frío (<50degC) no participa en reacción. 
+ **Solución:** Reactores 2 y 3 demuestran que mejoras interfaz MH-HTF (aletas o tubos) eliminan sobrecalentamiento manteniendo T<75degC uniformemente.
+
+2. **Problema (Reactor 2):** Soldadura aletas Cu a pared acero inoxidable (TIG) requiere control preciso para evitar distorsión térmica y garantizar contacto térmico íntimo (resistencia interfaz <0.01 cm2*K/W). Proceso fabricación laborioso (30 aletas x 250 mm = 7.5 m soldadura total). 
+ **Solución:** Protocolo soldadura TIG optimizado con argón purga interna, precalentamiento 150degC, y velocidad constante 12 cm/min. Inspección rayos X confirma calidad. Alternativa: aletas mecánicamente insertadas con pasta térmica (más rápido pero menor conductividad interfaz).
+
+3. **Problema (Reactor 3):** Distribución flujo agua no uniforme entre 2 canales anulares HTF causa diferencias térmicas axiales (10-15degC entre entrada y salida en canal externo vs 5-8degC canal interno). Afecta uniformidad reacción MH. 
+ **Solución:** Distribuidores flow optimizados (manifolds perforados 8 orificios Ø3 mm) en entrada/salida mejoran uniformidad. Alternativa: flujo serie (canal externo→interno) garantiza uniformidad pero aumenta dP y reduce caudal.
+
+4. **Problema (Comparabilidad):** Garantizar que diferencias rendimiento se deben exclusivamente a configuración interna (no a variabilidad MH, instrumentación, o condiciones boundary). 
+ **Solución:** Mismo lote LaNi5 (variabilidad <2% capacidad), misma instrumentación calibrada, mismo protocolo experimental automatizado, condiciones HTF entrada idénticas (T, flujo), validación repetibilidad 5 ciclos por configuración (desviación estándar <5%).
+
+## 6. Conclusiones y Observaciones
+
+**Resultados principales:**
+
+1. **Cuantificación impacto transferencia calor:** Estudio confirma experimentalmente que transferencia calor (no cinética intrínseca MH o difusión H2) es factor limitante en reactores prácticos. Reactor baseline (sin mejora) 2.2-2.5x más lento que configuraciones optimizadas, validando importancia diseño térmico.
+
+2. **Aletas radiales cobre óptimas estacionarias:** Reducción 55-65% tiempo carga/descarga vs baseline con eficiencia térmica 68-75%. Mejor relación rendimiento/complejidad fabricación/costo para aplicaciones estacionarias donde peso no es crítico. Incremento peso +18% (cobre) aceptable.
+
+3. **Tubos concéntricos preferibles vehículos:** Reducción 45-55% tiempo con eficiencia 65-72%. Aunque rendimiento ligeramente inferior a aletas, ofrecen ventajas mecánicas: mejor resistencia vibración/impacto (estructura tubular vs aletas delgadas), compacidad (sin protrusiones internas), y menor riesgo daño MH por expansión/contracción cíclica.
+
+4. **Temperatura MH crítica:** Reactor baseline alcanza 95-105degC durante absorción rápida (riesgo degradación LaNi5 y seguridad). Aletas y tubos mantienen T<75degC uniformemente. Control térmico esencial para vida útil (>1000 ciclos) y seguridad.
+
+5. **Validación metodología comparativa:** Protocolo experimental riguroso (mismo MH, mismas condiciones boundary, instrumentación idéntica, repetibilidad validada) establece estándar para estudios comparativos futuros. Demuestra importancia control variables para conclusiones válidas.
+
+**Recomendaciones:**
+
+1. **Aplicaciones estacionarias:** Adoptar configuración aletas radiales cobre como diseño de referencia. Costo adicional cobre (~$5-8/kg) y fabricación (~20-30% incremento) justificado por mejora rendimiento 55-65% y simplicidad vs configuraciones más complejas.
+
+2. **Aplicaciones vehiculares:** Considerar tubos concéntricos por ventajas mecánicas (robustez, resistencia vibración) aunque rendimiento térmico sea 8-12% inferior a aletas. Alternativa: aletas aluminio (k=200 W/m*K, suficiente) reducen peso 67% vs cobre manteniendo 80-85% rendimiento.
+
+3. **Mejora adicional conductividad MH:** Todos reactores (incluso con aletas/tubos) limitados por conductividad MH 0.8-1.0 W/m*K. Incorporar grafito expandido 5-10 wt% o foam metálica mejoraría conductividad 300-500% permitiendo reducción adicional tiempo 20-30% (efecto sinérgico con aletas/tubos).
+
+4. **Escalado y fabricación:** Para producción serie considerar: (1) aletas extrudidas/insertadas mecánicamente vs soldadas (reducir costo fabricación 40-50%), (2) materiales alternativos (Al vs Cu donde suficiente), (3) optimización número/geometría aletas mediante simulación CFD+FEM (este estudio usa configuración empírica 30 aletas).
+
+5. **Estudios futuros:** Extender comparación a: (1) condiciones transitorias/intermitentes (ciclos parciales, arranque/parada frecuente), (2) degradación largo plazo (>500 ciclos), (3) diferentes MH (TiFe, AB2, Mg basados) con propiedades térmicas diferentes, (4) escalado (0.1-10 kg) verificar conclusiones se mantienen.
+
+## 7. Referencias Adicionales
+
+- Estudios similares comparativos: Otras investigaciones experimentales comparando configuraciones térmicas reactores MH con metodología rigurosa 
+- Tecnología aletas: Diseño y optimización aletas térmicas para reactores químicos y almacenamiento energético 
+- Tubos concéntricos: Aplicaciones intercambiadores calor shell-tube múltiples para procesos químicos y criogénicos 
+- LaNi5 caracterización: Propiedades cinéticas, termodinámicas, y degradación para ciclado rápido y condiciones severas 
+- Análisis costo-beneficio: Metodologías evaluación económica sistemas almacenamiento hidrógeno considerando CAPEX/OPEX/rendimiento
+
+---
+
+### Notas Adicionales
+
+**Contexto de investigación:** Artículo benchmark metodológico para estudios comparativos experimentales reactores MH. Primera comparación rigurosa bajo condiciones verdaderamente idénticas (mayoría estudios previos comparan resultados diferentes grupos/laboratorios con condiciones variables).
+
+**Aplicabilidad proyecto ANH951:** Resultados directamente aplicables. Para reactor ANH951 (escala probablemente 5-20 kg) se recomienda configuración aletas radiales aluminio (compromiso rendimiento-peso-costo) con optimización número/geometría mediante simulación. Considerar grafito expandido adicional si cinética requerida es muy exigente.
+
+**Fortalezas del diseño:** Metodología comparativa rigurosa (mismo MH lote, condiciones idénticas, instrumentación calibrada, repetibilidad validada), cuantificación experimental detallada (15 termocuplas, calorimetría directa), análisis costo-beneficio práctico.
+
+**Limitaciones identificadas:** Escala laboratorio relativamente pequeña (1.2 kg), solo 1 tipo MH evaluado (LaNi5, conclusiones pueden variar con TiFe o Mg), no evaluación degradación largo plazo (>100 ciclos), falta análisis económico detallado (solo cualitativo).
+
+**Tendencias tecnológicas observadas:** Confirmación importancia transferencia calor vs cinética intrínseca MH, preferencia aletas/tubos sobre jacket simple, inicio consideración fabricabilidad/costo (no solo rendimiento), reconocimiento trade-offs aplicación-específicos (estacionarias vs vehículos).
+
+

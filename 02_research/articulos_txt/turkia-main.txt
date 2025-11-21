@@ -1,0 +1,707 @@
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 7 ( 2 0 2 2 ) 1 9 7 3 2 e1 9 7 4 0
+
+Available online at www.sciencedirect.com
+
+ScienceDirect
+journal homepage: www.elsevier.com/locate/he
+
+An experimental study to validate optimum
+distance between metal hydride tanks with
+staggered arrangement for effective thermal
+management
+Ismail Hilali a,*, Ahmet Akbas b, Vehbi Balak a, Dursun Akaslan c,
+Kemal Guner c
+a
+
+Department of Mechanical Engineering, Harran University, Sanliurfa, 63000, Turkey
+Elif Engineering Co, Sanliurfa, 63330, Turkey
+c
+Department of Computer Engineering, Harran University, Sanliurfa, 63000, Turkey
+b
+
+highlights
+ A numerical model for transferring thermal energy efficiently among multiple tanks is validated.
+ The usage of optimum spacing among MH tanks for transferring thermal energy efficiently among multiple tanks are studied.
+ The 5 and 6 mm distances applied with Re ¼ 12,000 and 6000 respectively are experimentally proved to be the most ideal.
+ The usage of metal hydride tanks with fin with the ideal distance might be critical in future works.
+
+article info
+
+abstract
+
+Article history:
+
+Thermal control is crucial in enhancing the life cycle of metal hydride tanks, which ne-
+
+Received 25 June 2021
+
+cessitates considering several critical parameters. In addition, a suitable arrangement of a
+
+Received in revised form
+
+metal hydride bank plays a significant role in transferring the heat efficiently. We have
+
+17 March 2022
+
+already studied the existence of an optimal distance in theory and proved that the maxi-
+
+Accepted 20 March 2022
+
+mized heat transfer rate is a function of the geometric arrangement. In this study, which is
+
+Available online 8 April 2022
+
+the second step of our previous work, we aim to experimentally validate the possible ideal
+distance in optimized metal hydride array by taking into account the results of our pre-
+
+Keywords:
+
+vious study. The experiments are carried out at a triple metal hydride bank with a forced
+
+Metal hydride heat management
+
+convection system and the effects of optimum distance on the heat transfer performance
+
+Optimization
+
+of the metal hydride bank are analyzed with the staggered arrays in order to validate the
+
+Thermal imaging
+
+results of numerical calculations for staggered metal hydride bank with the pitch-to-
+
+Tank arrangement
+
+diameter ratio of 0.06 and 0.07 at the Reynolds number of 6000 and 12,000, respectively.
+The results obtained at the end of the experiments are as follows; i) metal hydride storage
+tanks are strongly affected by the array geometry for maximum heat transfer, especially
+for small pitch arrays at high Reynolds numbers; ii) the experimental findings are
+compared with the theoretical models and validated; iii) the overall efficiency of fuel cellmetal hydride system could potentially be increased by simple geometrical arrangements.
+© 2022 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+* Corresponding author.
+E-mail address: ihilali@gmail.com (I. Hilali).
+https://doi.org/10.1016/j.ijhydene.2022.03.201
+0360-3199/© 2022 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 7 ( 2 0 2 2 ) 1 9 7 3 2 e1 9 7 4 0
+
+Introduction
+The role of renewable energy sources such as wind, solar,
+geothermal, tidal, biomass, and hydro is crucial in significantly reducing carbon emissions. Hydrogen is also another
+renewable form of energy being that its high energy content
+per unit weight. However, this very reactive element does not
+exist as a single atom in nature. For example, while it exists in
+the plasma state at stars like the Sun in the universe, most of
+the hydrogen on Earth is found in molecular forms like water
+and organic compounds (i.e. coal as in solid state, natural gas as
+in gas state, and petroleum as in liquid state). Being able to be
+produced from diverse and aforementioned domestic resources makes hydrogen another crucial form of renewable
+energy source. With these in hand, hydrogen-based renewable energy production is planned to be 19 EJ in 2050 to achieve
+the global energy transformation. In addition, the generated
+hydrogen can be compressed and stored in a storage module
+for several months [1]. However, the cost of stored hydrogenbased energy is currently too high and it doesn't seem to
+reduce at the same rate as in renewable power investment
+costs. Several steps in-hierarchy are required to ensure that
+effective storage of hydrogen is possible. These steps are
+profoundly reflected in many studies that are shared by
+varying researchers [2].
+Efficient energy storage is critical for maintaining energy
+sustainability and reducing the losses due to ill-advised
+design. Today, owing to the fact that the cost increase in energy demands, stored hydrogen is considered a solution for
+automobile and transportation related applications thanks to
+the cost-effectiveness of liquid hydrocarbons. Additionally,
+energy stored in the bonds of chemical compounds has
+become one of the most widely used energy storage methods
+for the last century. As stated above, since hydrogen tends to
+be in compound form, it is also possible to store it chemically
+within metal hydride. However, metal hydrides have several
+disadvantages, that is low-density energy on a mass basis in
+regard to the weight of the metal powder, in storing hydrogen.
+On the other hand, metal hydride has high-density energy on
+a volume basis. Thus, this kind of stored energy provides
+reliable advantages over the other methods such as
+compactness and a wide variety of metal hydrides operated at
+different temperature-pressure according to characteristics of
+the storage system.
+Metal hydrides are extensively used in hydrogen-fueled
+automobile and transportation applications because of their
+good energy density and low operating pressure. It is very well
+known that the performance and life cycle of metal hydrides
+are highly related to temperature. Additionally, the extra heat
+transfer area has an impact on heat management, and more
+than one tank is preferred as a solution. Moreover, when one
+tank is used, the system's performance will be affected by the
+performance of the metal hydride tank. Therefore, it is
+important to utilize more than one tank in the system in case
+it is accomplishable. In addition, occupied space and investment costs should be considered and competed economically
+with cost-effective hydrocarbons for mobile and transportation applications e for providing affordable and reliable
+vehicles to end-users.
+
+19733
+
+A wide variety of experimental studies have been released
+in the literature for the last years to enhance the heat transfer
+and thus provide a stable hydrogen capacity. However, no
+focus on the effect of array geometry of metal hydride tanks
+has appeared in these publications. All studies on this specific
+subject have been examined with consideration of a single
+tank. Omrani et al. designed and positioned horizontally the
+nine metal hydride tanks in two parallel rows in a wellinsulated air box [3]. Mahmoodi et al. found that the desorption performance of a metal hydride tank using the new novel
+geometric configuration of heat pipes might be experimentally increased. Additionally, they focused especially on the
+effects of heat pipe number and fin in metal hydride tanks [4].
+Kumar et al. studied the absorption/desorption characteristics
+of a metal hydride tank with 99 cooling tubes [5]. Tarasov et al.
+used multiple metal hydride tanks in experiments [6]. Lototskyy et al. developed an assembly of the metal hydride containers staggered with heating/cooling tubes. But the study
+does not contain any data related to tank arrangements [7]. A
+3D, kinetic, numerical, and physical model has been developed, simulated, and experimented by Lin et al. in order both
+to optimize metal hydride tanks and to increase the hydriding/dehydriding rate by applying different methods such as
+pulverization, self-densification, constant flows for the gassolid reaction and particle and porosity [8e11]. Hilali et al.
+studied the theoretical arrangement of metal hydride tanks
+under different conditions. The study examined an optimum
+distance among tanks based on relevant conditions [12].
+The purpose of our study is to experimentally prove that an
+ideal distance might be possible in a metal hydride array by
+considering the results of the theoretical study with two main
+parameters, which are kinetic equation for the desorption
+process and heat equations. The tanks are placed in the
+theoretically calculated distances and experimentally examined in this study.
+
+Theoretical study
+Three metal hydride tanks filled with LaNi5 alloy are used, and
+the staggered arrangement is considered as illustrated in
+Fig. 1. U∞ and T∞ are described as air velocity and air temperature respectively.
+The tanks are selected as solid cylinders of equal size by
+simplification. The Van't Hoff plots for describing the relations
+between the hydrogen equilibrium pressure and the temperatures according to the metal hydride types are used for numerical modeling as shown in Fig. 2. The Van't Hoff plots
+indicate the thermodynamics of a hydride, which leads to the
+reaction enthalpy and entropy. lnPeq correlates linearly with
+1/T; where the slope and Y-intercept correspond respectively
+to the enthalpy of reaction and to the entropy of the reaction,
+estimating the straight line to the Y-axis intersection [13e16].
+The equilibrium pressure is calculated by Eq. (1):
+ln Peq ¼ A 
+
+B
+T
+
+Tw ¼ T ¼
+
+B
+A  ln Peq
+
+(1)
+
+19734
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 7 ( 2 0 2 2 ) 1 9 7 3 2 e1 9 7 4 0
+
+Fig. 1 e Geometric definitions of the staggered arrangement.
+
+Fig. 3 e The ideal distance as the intersection of
+asymptotes.
+where the Nusselt number is calculated using the following
+formula:
+Fig. 2 e The Van't Hoff plots of some metal hydrides.
+
+NuD ¼ 0; 71,ReD 0;6 ,Pr0;36 ReD  103
+
+where constants A and B represent the enthalpy and entropy
+change in the kinetic origin of LaNi5 alloy.
+The intersection of asymptotes is illustrated in Fig. 3 with
+the purpose of providing the existence of an optimal distance
+in maximizing the heat transfer rate. This technique was used
+to optimize the geometric arrangement. The aim was to find
+the relationship between the heat transfer rate Q, and the
+varying spacing, S, in the two extreme distances at S / 0 and
+S / ,. Then the formulas are equalized to obtain the ideal
+distance [17].
+The heat transfer rate, that is qlarge , is calculated as in the
+following equations from Eq. (2) to Eq. (6). The equations start
+with the calculation of the extreme limit of a maximum distance as shown in Eq. (2);
+k
+q1 y NuD pDLðTw  T∞ Þ
+D
+
+(2)
+
+ReD ¼
+
+Umax :D
+;
+n
+
+Umax ¼
+
+(3)
+
+ðS þ DÞ
+:U∞
+S
+
+In Eq. (3), the maximum velocity occurring in the staggered
+tank configuration defines the flow characteristics. In this
+formula, outer diameter D and y denote the hydraulic diameter and the viscosity of the fluid respectively at the film
+temperature (Tf ¼ ðTw  T∞ Þ=2Þ.
+The number of Hydrogen tanks in the cross-flow plane is
+found with the following formula:
+n¼
+
+HW
+
+(4)
+
+ðS þ DÞ2 Cos 30
+
+The heat transfer rate is calculated by
+qlarge ¼ q1 *n
+qlarge y2; 58
+
+(5)
+HLW
+ðS þ DÞ2
+
+
+
+kðTw  T∞ Þ ReD 0;6 , Pr0;36
+
+(6)
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 7 ( 2 0 2 2 ) 1 9 7 3 2 e1 9 7 4 0
+
+From Eq. (6) for a maximum distance, the maximum heat
+transfer rate is inverse proportional to S2 and decreases while
+the distance is becoming larger.
+In the opposite extreme limit of minimum distance, the
+heat transfer rate, qsmall is defined in terms of Reynolds
+number as:
+qsmall ¼ m_ cp ðTw  T∞ Þ
+
+(7)
+
+where m_ is the total mass flow rate as calculated through the
+L  W plane, m_ ¼ rWLU. U is defined as a mean velocity and
+derived by using Darcy and Carman-Kozeny equations [18].
+h . 
+i3
+2
+S D þ 2S=D
+Uy
+
+2
+200mH
+1 þ S=
+D
+rU2∞ D2
+
+
+1
+W:L 2 S
+:ReD :
+qsmall y r:Cp :n:
+25
+H
+D
+
+(8)
+
+3
+
+:ðTw  T∞ Þ
+
+(9)
+
+From Eq. (9) for a minimum distance, the maximum heat
+transfer rate is proportional to S3 and increases while the
+distance is increasing.
+The optimum arrangement could be achieved by
+combining Eq. (6) and Eq. (9) using the intersection of asymptotes as shown in Fig. 3.
+qlarge ¼ qsmall
+The optimization result is:
+
+Sopt
+y4:ReD0:47 :Pr0:21
+D
+
+(10)
+
+The ideal distance is predicted by the correlation given in
+Eq. (10). The maximum heat transfer rate can be obtained for a
+defined volume that corresponds to the ideal distance, Sopt by
+substituting Eq. (6) or Eq. (9).
+
+19735
+
+The numerical analysis of our system was simulated by
+using the finite element method in a CFD Program (i.e.,
+Autodesk CFD) due to its flexibility in modeling any geometric
+shape. The first validation was compared with the outputs of
+the analytical results.
+
+Experimental work and validation
+In order to validate the proposed model, an experimental
+setup is designed as illustrated in Figs. 4 and 5. Moreover,
+measurements were calculated based on the same parameters, namely air velocity, air temperature, and geometric
+configurations. The setup consists of seven components
+namely: an axial fan with frequency controller (1), an air
+heater with accurate and sensitive PID temperature
+controller (2), an airflow meter (3), a fuel cell system (4),
+metal hydride storage tanks with an outer diameter of
+85 mm and a length of 400 mm (5), black coated aluminum
+plates (6) and a thermal imaging camera (7). Thermal images are recorded for temperature distribution between
+tanks by the thermal camera (i.e. Testo 885 professional
+thermal imager), which is used precisely to visualize and to
+the analysis of captured images in the experiments [19]. It is
+also important to note that the dimension of the duct is
+specified as 40 cm  40 cm  300 cm (W  H  L). The
+aluminum plates are perforated to the diameter of the
+metal hydride tanks and are mounted separately in the
+channel during the experiments. In the case of a perforated
+plate, the perforations form a gap between the tanks. The
+professional thermal imaging camera is mounted at a distance of 1 m from the metal hydride storage tanks during
+the experiments. The fuel cell system is based on the
+1200 W Nexa power source including an energy management module and electronic charger, as shown in Fig. 2 [20].
+
+Fig. 4 e Schematic of the experimental setup.
+
+19736
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 7 ( 2 0 2 2 ) 1 9 7 3 2 e1 9 7 4 0
+
+Fig. 5 e The principal elements of the test setup.
+
+The thermal imaging camera is calibrated according to
+factory specifications. Also, before the experiments, the
+accuracy of the camera is verified by measuring objects
+with known temperatures.
+The main findings of the study might be emphasized in
+two parts: The first step is to demonstrate the possibility of
+integrating the proposed arrangement with the fuel cell,
+and the second step is to observe the working regime of the
+system. The hydride tanks are fully charged by the electrolyser before the experiment is started. The designed
+system is operated for about 100 min during the experiment
+until the desired equilibrium pressures are reached by using
+the fuel cell. During the experiments, tank pressures are
+
+measured by a fuel cell energy management module. The
+present study consists of two stages determined by perforated plates; each of them evaluates the heat transfer rate
+separately based on different ambient temperatures (300 K
+& 310 K), Reynolds numbers (6000 & 12,000), and equilibrium
+pressures (60 kPa & 120 kPa). In each of the two stages, two
+plates are used with a distance of 5 and 6 mm between the
+tanks. These plates are selected based on the findings obtained in the previous results of the theoretical study. The
+tank pressures are obtained by setting the fuel cell up to the
+specified values under the constant load using an electronic
+loader. In the first stage, the plate is mounted to the duct
+with a distance of 5 mm between the tanks, and metal
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 7 ( 2 0 2 2 ) 1 9 7 3 2 e1 9 7 4 0
+
+DT ¼ Tp1  Tp2
+
+19737
+
+(11)
+
+The heat transfer rate is expressed as
+
+
+Q ¼ m_ air Cp Tp1  Tp2
+
+Fig. 6 e Measurement planes on the face of the plates.
+
+hydride tanks are placed in the plate. Then, as mentioned
+above, different ambient temperatures, Reynolds numbers,
+and equilibrium pressures are implemented in the setup for
+optimal heat transfer. The temperature on the plate is
+recorded with a thermal imaging camera while the metal
+hydride tanks are discharged under load during fuel cell
+operation. In the second stage, the same procedures are
+repeated for the plate with a distance of 6 mm.
+
+Results and discussion
+As shown in Fig. 6, the air temperature difference (DT), the
+difference between the inlet (P1) and outlet (P2) air temperatures, is defined in Eq. (11).
+
+(12)
+
+Here, m_ air and Cp denote the airflow rate and the specific heat
+capacity of air, respectively.
+As stated earlier, the temperature distribution on the plate
+surfaces and tanks are visualized and recorded by utilizing the
+thermal imaging camera. The captured thermal images are
+used to determine the effects of optimal distance on
+maximum heat transfer. The solid lines drawn on the plate in
+Fig. 6 are used to plot the temperature profile using the thermal image data along the lines to compare the results of the
+theoretical study. The contours in Fig. 7 illustrate the temperature distribution over the plate area based on the solid
+lines for relevant variables. The results of CFD and the
+experimental results are shown on the left side and the right
+side of Fig. 8, respectively.
+Fig. 7 illustrates the temperature distributions on the
+surface of the plate along each vertical line (P1 & P2) at
+Peq ¼ 60 kPa and Peq ¼ 120 kPa, respectively. The blue and
+red counter indicates the inlet and outlet air temperature
+respectively. The difference between the blue and red
+counters indicates the heat transfer rate of the metal hydride tanks. As the figures show, the temperature difference
+is approximately between 0.5 and 1 K depending on the
+Reynolds number. When the Reynolds number increases,
+the temperature difference also increases. These results are
+similar to the findings of another study of ours.
+Fig. 8 illustrates the results obtained by both simulation
+and experiments. As illustrated, both results are highly
+similar and verify the validity of the model. As seen, both
+contours are similar and the small differences are a
+consequence of the thermal camera measurements and the
+many uncertainties associated with the experimental setup
+since the simulated values are calculated under ideal conditions. In addition, different tank temperatures in
+
+Fig. 7 e The temperature profiles captured on the face of plates for (a) Peq ¼ 60; (b) Peq ¼ 120 kPa.
+
+19738
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 7 ( 2 0 2 2 ) 1 9 7 3 2 e1 9 7 4 0
+
+Fig. 8 e The visual comparison of CFD results and experimental results (a) for Peq ¼ 60 kPa; (b) for Peq ¼ 120 kPa.
+
+Table 1 e The comparison of numerical and experimental heat transfer rate.
+Peq (kPa)
+T∞ ¼300 K
+60
+120
+T∞ ¼310 K
+60
+120
+
+Re ¼ 6000
+
+Tw (K)
+
+Re ¼ 12,000
+
+Sopt (m)
+
+Qnumerical (W)
+
+Qexperimental (W)
+
+Sopt (m)
+
+Qnumerical (W)
+
+Qexperimental (W)
+
+274.1
+289.0
+
+0.006
+0.006
+
+349
+147
+
+311
+120
+
+0.005
+0.005
+
+539
+227
+
+498
+199
+
+274.1
+289.0
+
+0.006
+0.006
+
+481
+279
+
+311
+203
+
+0.005
+0.005
+
+742
+430
+
+498
+349
+
+experiments are also related to the kinetics of the
+hydriding-dehydriding reactions.
+Table 1 proves that the theoretical heat transfer rate is
+validated by the experimental results. As seen in Table 1, the
+experimental heat transfer rate varies from ~120 to ~500 W for
+defined pressures and temperatures. Similarly, the theoretical
+heat transfer rate varies from ~150 to ~750 W.
+The pressure variation curves of the metal hydride tank
+array according to time at different Reynolds numbers, and
+equilibrium pressures are illustrated in Fig. 9. The optimum
+distance curves found in the theoretical study are attached
+to this figure. Two distances (i.e. 5 and 6 mm) that one of
+which is the optimum distance, are chosen for pressure
+comparison according to the attached figures. As illustrated, the pressure drop rate of the optimum distance is
+the slowest and that of the non-ideal distance is the fastest
+at four experiments. The results show that the pressure
+
+performance of the ideally arranged tanks is the best while
+the non-ideally arranged tanks are the worst. In addition, it
+should be noted that when the tanks are at 60 kPa of
+equilibrium pressure, ideal and non-ideal distance curves
+indicate a wide time difference (9e13 min), while ideal and
+non-ideal curves show a less time difference (2e3 min) at
+120 kPa of equilibrium pressure. Fig. 10 shows calculated
+fractions of the experimental heat transfer rate to the
+theoretical heat transfer rate as a function of Reynolds
+number. The calculations are performed for a temperature
+range from 300 to 310 K. Comparing the experimental results with the theoretical ones, it can be seen that the best
+result is obtained for Peq ¼ 60 kPa and Re ¼ 12,000 at 300 K
+and the worst for Peq ¼ 60 kPa and Re ¼ 6000 at 310 K. On the
+other hand, the heat transfer fraction indicates that while
+the rate is increasing, experimental results (e.g. 92%) are
+becoming more meaningful.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 7 ( 2 0 2 2 ) 1 9 7 3 2 e1 9 7 4 0
+
+19739
+
+Fig. 9 e Diagrams of tank pressure change (a) and (b) for Re ¼ 6000, (c) and (d) for Re ¼ 12,000.
+
+Conclusions
+
+Fig. 10 e The fractions of experimental heat transfer rate to
+the numerical heat transfer.
+
+This work focused on the cruciality of optimum distance
+among metal hydride tanks for transferring thermal energy
+efficiently. A numerical model is used to develop an experimental study to validate optimum distance among metal hydride tanks with staggered arrangements for effective thermal
+management. For experimental validation of the recommended mathematical model, heat transfer during discharge
+and temperature distribution were considered. The varying
+inputs such as air velocity, pressure, and ambient temperature were applied as main parameters to affect the temperature distribution during discharge. The data output as the
+result of the thermal response of input parameters revealed
+the importance of optimizing an ideal distance between the
+metal hydride tanks, as it plays a critical role in the ability to
+transfer heat above 75% of the theoretical capacity. Therefore,
+
+19740
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 7 ( 2 0 2 2 ) 1 9 7 3 2 e1 9 7 4 0
+
+the study concludes that an optimal distance between the
+metal hydride storage devices has positive effects on the
+thermal conductivity of the proposed system as it critically
+improves effective thermal management. Moreover, the usage
+capacity of the tanks is to increase related to ideal distance.
+The heat transfer losses may occur outside the measurement
+range due to the design of the setup. In future studies, it can be
+fixed, and a more effective result can be achieved by using
+more than three tanks and different metal hydride materials.
+The experimental and theoretical results of this work can
+provide a direction for the characterization of a metal hydride
+storage system. Therefore, an effective design of the storage
+system can be implemented. The placement alternatives can
+be suggested according to the number of metal hydride tanks
+and material (type of metal hydride alloy and tank material),
+or an indication can be given on how to improve hydrogen
+discharge depending on constrained conditions. In addition, it
+is important to consider the potential of contributing to
+commercially available works such as automobiles, etc. In the
+mobile systems powered by fuel cells, the distance could be
+arranged by software and mechanical systems according to
+the vehicle speed and could validate the concept of autonomous thermal energy management. This study shows a
+promising future for technology and research in this field.
+
+Declaration of competing interest
+The authors declare that they have no known competing
+financial interests or personal relationships that could have
+appeared to influence the work reported in this paper.
+
+references
+
+[1] IRENA. Global energy transformation: the REmap transition
+pathway. Abu Dhabi, [Online]. Available: https://www.irena.
+org/publications/2019/Apr/Global-energy-transformationThe-REmap-transition-pathway; 2019.
+[2] Dincer I, Ezan MA. Heat storage: a unique solution for energy
+systems. Springer; 2018.
+[3] Omrani R, Nguyen HQ, Shabani B. Thermal coupling of an
+open-cathode proton exchange membrane fuel cell with
+metal hydride canisters: an experimental study. Int J
+Hydrogen Energy 2020;45(53):28940e50. https://doi.org/
+10.1016/j.ijhydene.2020.07.122.
+[4] Mahmoodi F, Rahimi R. Experimental and numerical
+investigating a new configured thermal coupling between
+metal hydride tank and PEM fuel cell using heat pipes. Appl
+Therm Eng 2020;178:115490. https://doi.org/10.1016/
+j.applthermaleng.2020.115490.
+[5] Kumar A, Raju NN, Muthukumar P, Selvan PV. Experimental
+studies on industrial scale metal hydride based hydrogen
+storage system with embedded cooling tubes. Int J Hydrogen
+
+Energy 2019;44(26):13549e60. https://doi.org/10.1016/
+j.ijhydene.2019.03.180.
+[6] Tarasov BP, et al. Metal hydride hydrogen storage and
+compression systems for energy storage technologies. Int J
+Hydrogen Energy 2021;46(25):13647e57. https://doi.org/
+10.1016/j.ijhydene.2020.07.085.
+[7] Davids MW, et al. Metal hydride hydrogen storage tank for
+light fuel cell vehicle. Int J Hydrogen Energy
+2019;44(55):29263e72. https://doi.org/10.1016/
+j.ijhydene.2019.01.227.
+[8] Lin X, Zhu Q, Leng H, Yang H, Lyu T, Li Q. Numerical analysis
+of the effects of particle radius and porosity on hydrogen
+absorption performances in metal hydride tank. Appl Energy
+Sep. 2019;250:1065e72. https://doi.org/10.1016/
+J.APENERGY.2019.04.181.
+[9] Lin X, Xie W, Zhu Q, Yang H, Li Q. Rational optimization of
+metal hydride tank with LaNi4.25Al0.75 as hydrogen storage
+medium. Chem Eng J Oct. 2021;421:127844. https://doi.org/
+10.1016/J.CEJ.2020.127844.
+[10] Lin X, Yang H, Zhu Q, Li Q. Numerical simulation of a metal
+hydride tank with LaNi4.25Al0.75 using a novel kinetic model
+at constant flows. Chem Eng J Dec. 2020;401:126115. https://
+doi.org/10.1016/J.CEJ.2020.126115.
+[11] Lin X, Sun D, Chen S, Zhu Q, Leng H, Li Q. Numerical analysis
+on pulverization and self-densification for hydrogen storage
+performance of a metal hydride tank. Appl Therm Eng Oct.
+2019;161:114129. https://doi.org/10.1016/
+J.APPLTHERMALENG.2019.114129.
+_ Karadag R, Bulut H, Aktacir MA. A study on ideal
+[12] Hilali I,
+distance between staggered metal hydride tanks in forced
+convection. Int J Hydrogen Energy Sep. 2018;43(38):17970e7.
+https://doi.org/10.1016/J.IJHYDENE.2018.03.051.
+[13] Luo Q, et al. Thermodynamics and kinetics of phase
+transformation in rare earthemagnesium alloys: a critical
+review. J Mater Sci Technol May 2020;44:171e90. https://
+doi.org/10.1016/J.JMST.2020.01.022.
+[14] Pang Y, Sun D, Gu Q, Chou K-C, Wang X, Li Q. Comprehensive
+determination of kinetic parameters in solid-state phase
+transitions: an extended
+JonhsoneMehleAvramieKolomogorov model with analytical
+solutions. Cryst Growth Des Apr. 2016;16(4):2404e15. https://
+doi.org/10.1021/acs.cgd.6b00187.
+[15] Li Q, et al. Thermodynamics and kinetics of hydriding and
+dehydriding reactions in Mg-based hydrogen storage
+materials. J Magnes Alloy Nov. 2021;9(6):1922e41. https://
+doi.org/10.1016/J.JMA.2021.10.002.
+[16] Li Q, et al. Kinetics of the hydrogen absorption and
+desorption processes of hydrogen storage alloys: a review.
+Int J Min Met Mater Jan. 2022;29(1):32e48. https://doi.org/
+10.1007/s12613-021-2337-8.
+[17] Bejan A. Convection heat transfer. Hoboken, NJ, USA: John
+Wiley & Sons, Inc.; 2013. https://doi.org/10.1002/
+9781118671627.
+[18] Stanescu G, Fowler AJ, Bejant A. The optimal spacing of
+cylinders in free-stream cross-flow forced convection. Int J
+Heat Mass Tran 1996;39(2):311e7.
+[19] Testo. Testo 885 professional thermal imager. www.testo.
+com/en/testo-885/p/0563-0885-X1.
+[20] Heliocentris. Fuel cell e battery hybrid system. http://www.
+heliocentrisacademia.com.
+
+

@@ -1,0 +1,3558 @@
+energies
+Review
+
+Thermal Management Techniques in Metal Hydrides for
+Hydrogen Storage Applications: A Review
+Vamsi Krishna Kukkapalli, Sunwoo Kim * and Seth A. Thomas
+Mechanical Engineering Department, University of Alaska Fairbanks, Fairbanks, AK 99775, USA
+* Correspondence: swkim@alaska.edu; Tel.: +1-907-474-6096
+
+Citation: Kukkapalli, V.K.; Kim, S.;
+Thomas, S.A. Thermal Management
+Techniques in Metal Hydrides for
+
+Abstract: Metal hydrides are a class of materials that can absorb and release large amounts of
+hydrogen. They have a wide range of potential applications, including their use as a hydrogen
+storage medium for fuel cells or as a hydrogen release agent for chemical processing. While being a
+technology that can supersede existing energy storage systems in manifold ways, the use of metal
+hydrides also faces some challenges that currently hinder their widespread applicability. As the
+effectiveness of heat transfer across metal hydride systems can have a major impact on their overall
+efficiency, an affluent description of more efficient heat transfer systems is needed. The literature
+on the subject has proposed various methods that have been used to improve heat transfer in metal
+hydride systems over the years, such as optimization of the shape of the reactor vessel, the use
+of heat exchangers, phase change materials (PCM), nano oxide additives, adding cooling tubes
+and water jackets, and adding high thermal conductivity additives. This review article provides a
+comprehensive overview of the latest, state-of-the-art techniques in metal hydride reactor design
+and heat transfer enhancement methodologies and identifies key areas for future researchers to
+target. A comprehensive analysis of thermal management techniques is documented, including
+performance comparisons among various approaches and guidance on selecting appropriate thermal
+management techniques. For the comparisons, the hydrogen adsorption time relative to the reactor
+size and to the amount of hydrogen absorbed is studied. This review wishes to examine the various
+methods that have been used to improve heat transfer in metal hydride systems and thus aims to
+provide researchers and engineers working in the field of hydrogen storage with valuable insights
+and a roadmap to guide them to further explore the development of effective thermal management
+techniques for metal hydrides.
+Keywords: metal hydride reactor; heat transfer; thermal management
+
+Hydrogen Storage Applications: A
+Review. Energies 2023, 16, 3444.
+https://doi.org/10.3390/en16083444
+
+1. Introduction
+Academic Editor: Muhammad Aziz
+Received: 25 January 2023
+Revised: 31 March 2023
+Accepted: 10 April 2023
+Published: 14 April 2023
+
+Copyright: © 2023 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+
+Hydrogen is a well-known, viable alternative fuel and energy storage medium due to
+its storage capabilities and mobility [1]. Despite having a low energy content, it has high
+energy density when compared to the traditional fossil fuels. It continues to provide the
+greatest energy capacity per mass when compared to fossil fuels [2]. The hydrogen economy
+could be made more efficient by using hydrogen-storing materials with greater energy
+densities as well as smaller volumes and lesser bulk [2]. Finding innovative materials or
+new material combinations with high volumetric and gravimetric capacity, rapid sorption
+kinetics at near to ambient temperatures, and high recycling tolerance is, however, one of
+the greatest challenges facing modern hydrogen storage systems now.
+Metal hydrides are a class of materials that are composed of metal and hydrogen. These
+materials have received significant attention in recent years due to their high hydrogenstorage capacities, which makes them promising candidates for use in hydrogen-based
+energy systems. Their high energy density, relatively low cost, and environmental compatibility make them a compelling choice for applications in portable electronics, electric
+vehicles, and renewable energy systems. However, their development for hydrogen storage
+
+Energies 2023, 16, 3444. https://doi.org/10.3390/en16083444
+
+https://www.mdpi.com/journal/energies
+
+Energies 2023, 16, 3444
+
+2 of 27
+
+applications faces major challenges, including the need to determine suitable materials
+possessing a high hydrogen-storage capacity whilst being stable, safe, and economically
+viable. Researchers have been exploring the use of various metal hydrides such as those
+based on magnesium, aluminum, and titanium to meet the abovementioned criteria. A
+number of factors can influence the performance of metal hydrides, including the choice of
+metal, the size and shape of the hydride particles, the purity of the materials, and the presence of impurities. Metal hydrides are being considered for their potential use in hydrogen
+fuel cells, which are an important component of hydrogen-based energy systems, as they
+are able to use hydrogen to provide electrical energy through oxidation and reduction. By
+this technique, fuel cell systems can be made more compact and efficient, as well as more
+environmentally friendly.
+Despite the progress that has been made in the development of metal hydrides for
+energy storage applications, there are still many areas to be researched. In order to fully
+realize the potential of this technology, researchers must continue to investigate and understand the fundamental science of metal hydrides and develop new and innovative
+approaches to optimize their performance. This review article focuses on the development
+of metal hydrides for energy storage applications and reviews the current state of the field,
+highlighting recent advances and ongoing challenges in thermal management of metal
+hydride. A comprehensive analysis of thermal management techniques is documented,
+including performance comparisons among various approaches and guidance on selecting
+appropriate thermal management techniques.
+Challenges in the Widespread Use of Metal Hydrides
+Alongside growing interest, there are many challenges associated with the use and
+development of metal hydrides. Researchers have struggled to improve and optimize the
+hydrogen storage performance of metal hydrides. This requires a deep understanding of
+the fundamental chemical and physical processes that govern their behavior, including
+hydrogen uptake and release kinetics, thermodynamics, and stability. In particular, metal
+hydrides can be prone to degradation and corrosion, which can limit their performance
+and lifespan. Additionally, the cost of producing metal hydrides is still relatively high,
+making them less attractive for use in commercial bids. Their use in real-world applications
+can also be limited by factors such as the cost and availability of materials, as well as the
+complexity and efficiency of the hydrogen release and storage systems. To overcome these
+challenges, various performance-boosting strategies are being devised; for instance, the
+development of new synthesizing methods for metal hydrides, as well as the use of novel
+materials and nanostructures to enhance their hydrogen storage capacity.
+Another major challenge hindering the use of metal hydrides for hydrogen storage
+applications is the effective management of heat during the absorption and desorption of
+hydrogen. The heat generated during the exothermic absorption process can cause the
+temperature of the metal hydride to rise, which can lead to thermal instability, decreased
+hydrogen uptake rate, and reduced cycle life. Similarly, the heat absorbed during the
+endothermic desorption process can cause a drop in temperature, which can also negatively
+impact the hydrogen uptake/release kinetics. Therefore, efficient thermal management
+techniques are crucial to improve the performance and safety of metal hydrides for hydrogen storage applications.
+Despite these challenges, the field of metal hydride research is rapidly evolving,
+and scientists and engineers are working to develop new and innovative approaches to
+address these challenges. For instance, researchers are exploring the use of nanoscale metal
+hydrides, which can offer improved hydrogen storage performance due to their increased
+surface area. Investigations on the use of composite materials are also underway.
+Another promising area of research is the development of smart hydrogen storage
+systems, which can intelligently regulate the release and uptake of hydrogen in response to
+changing energy demands. These systems have the potential to provide more efficient and
+effective hydrogen storage solutions for a wide range of applications.
+
+Energies 2023, 16, 3444
+
+3 of 27
+
+2. Methods
+The study of metal hydrides is an important area of research, as it has the potential
+to play a significant role in the development of sustainable energy systems. The goal
+of this research article is to explore the current state of research regarding this issue. A
+comprehensive review of the literature is undertaken to examine the various strategies that
+have been developed for improving the performance of metal hydrides, as well as exploring
+the challenges that remain in the development of these materials. Performance comparisons
+among various thermal management techniques are conducted, and this review provides
+guidance on selecting appropriate cooling/heating techniques for various types of metal
+hydride reactors. For the comparisons, the hydrogen adsorption time relative to the reactor
+size and to the amount of hydrogen absorbed is studied. By providing a comprehensive
+overview of the current state of metal hydride research, this article serves as a valuable
+resource for researchers and practitioners in this field and helps advance the development
+of these materials for practical use in the future.
+3. Metal Hydrides
+A metal hydride is a compound formed between a metal and hydrogen, in which the
+hydrogen atoms are bonded to the metal atoms through chemical bonds. Metal hydrides
+have a wide range of applications as energy storage materials, catalysts, and structural
+materials. There are various types of metal hydrides, each with their own unique properties
+and challenges. These include interstitial, substitutional, and complex types. Interstitial
+hydrides are those in which the hydrogen atoms are located between the metal atoms in the
+crystal lattice, while substitutional hydrides are those in which the hydrogen atoms replace
+metal atoms in the crystal lattice. In complex hydrides, the hydrogen atoms form covalent
+bonds with the metal atoms, resulting in a compound with a more complex chemical
+structure. Some of the most well-known metal hydrides include sodium aluminum hydride
+(NaAlH4 ), magnesium hydride (MgH2 ), and titanium hydride (TiH2 ). These hydrides can
+store and release large amounts of hydrogen in a relatively safe and controlled manner,
+making them ideal for energy storage applications.
+One of their main characteristics is the ability to absorb and release hydrogen gas
+through processes known as hydriding and dehydriding, respectively [2]. This property
+makes them attractive for use as hydrogen storage materials, as they can store large amounts
+of hydrogen at relatively low pressures [3]. Metal hydrides can also be used as catalysts in
+chemical reactions and as structural materials due to their high strength and low density.
+The metal hydrides (MH) reaction is denoted by [4,5]:
+x
+M + H2 ↔ MHx + ∆H.
+2
+
+(1)
+
+The equilibrium pressure in the system experiences a “plateau” phenomenon during
+the isothermal reaction phase. The well-known Van’t Hoff equation can be used to link this
+equilibrium pressure to the temperature:
+ln( P) =
+
+∆H ∆S
+−
+RT
+R
+
+(2)
+
+where ∆H and ∆S represent the enthalpy and entropy changes, respectively, throughout
+the process, R is used as the gas constant, and T is the temperature. Equation (2) describes a feature known as the P-C-T or P-C-I property, which varies significantly with
+different materials.
+There are several advantages to using metal hydrides for hydrogen storage:
+High capacity: Metal hydrides have a high hydrogen storage capacity, meaning that
+they can store large amounts of hydrogen in a relatively small volume. This makes them a
+compact and efficient storage option.
+
+Energies 2023, 16, 3444
+
+4 of 27
+
+Safe: Metal hydrides are generally considered to be a safe storage option because they
+do not release hydrogen gas unless they are subjected to specific conditions, such as high
+temperatures or pressures. This reduces the risk of explosions or fires.
+Stable: Metal hydrides are stable and do not react with other materials, making them
+a safe and reliable storage option.
+Reusable: Metal hydrides can be used to store and release hydrogen multiple times,
+making them a reusable and environmentally friendly storage option.
+Lightweight: Metal hydrides are typically lightweight, making them a suitable storage
+option for applications where weight is a concern, such as in vehicles.
+Some of the applications of metal hydrides are provided in Table 1.
+Overall, metal hydrides offer several advantages over traditional hydrogen storage
+methods and may be a more efficient and safe option in certain applications. In Figure 1,
+hydrogenation enthalpies and entropies of various hydride materials and their suitable
+applications are provided.
+Overall, metal hydrides have the potential to play a significant role in a variety of
+applications, and their properties and behavior are an active area of research in the field of
+materials science.
+Table 1. Some applications where metal hydrides are used.
+References
+
+Technology
+Area
+
+Engineering
+System
+
+Pros
+
+•
+•
+
+[6]—Krane
+et al., 2022
+
+Energy Storage
+
+Two-reactor metal
+hydride system
+
+•
+
+High energy density
+Non-toxic and
+non-flammable
+suitable for
+long-term storage.
+Can be cycled
+without degradation
+in capacity
+Can operate at a
+wide range of
+temperatures and
+pressures and low
+environmental
+impact
+
+Cons
+
+•
+•
+
+•
+•
+
+[7]—Zhang
+et al., 2023
+
+Catalysis
+
+Ammonia
+synthesis
+
+•
+
+High catalytic
+activity and
+selectivity for
+ammonia synthesis
+Lanthanum hydride
+species improves the
+catalytic
+performance
+
+•
+
+Suggested
+Hydrides
+
+Slow charging
+Limited number
+of experimental
+validations to
+support the
+dynamic model
+
+MgH2 , TiFeH2 ,
+LaNi5 H6
+
+Limited
+understanding of
+the mechanism
+behind the
+improved
+catalytic
+performance
+Potential
+deactivation of
+the catalyst over
+time
+
+Lanthanum
+hydride
+
+Energies 2023, 16, 3444
+
+5 of 27
+
+Table 1. Cont.
+References
+
+Technology
+Area
+
+Engineering
+System
+
+Pros
+
+Cons
+
+•
+•
+•
+
+[8]—Lv, Y.
+et al., 2023
+
+Energy storage
+
+Magnesium
+hydride
+conversion
+electrode
+
+•
+[9]—Zhou
+et al., 2023
+
+Fuel cells
+
+Hydrogen feeding
+system
+
+•
+
+[10]—Tiwari
+and Sharma,
+2023
+
+Energy storage
+
+Metal hydride
+reactor and
+thermocline-based
+heat storage
+system
+
+•
+
+High energy density
+Abundant raw
+materials and
+detailed
+understanding of ion
+diffusion and
+hysteresis in
+magnesium hydride
+conversion
+electrodes
+
+Comprehensive
+comparison of
+RE-based and
+Ti-based
+multicomponent
+metal hydrides
+Proposed a hybrid
+energy storage
+system using metal
+hydrides and
+thermocline heat
+storage
+Efficient thermal
+energy storage and
+release
+
+Slow reaction
+kinetics
+Low cycling
+stability
+Challenges in
+improving ion
+diffusion and
+charge transfer
+kinetics
+Limited practical
+application due
+to the need for
+high operating
+temperatures
+
+Magnesium
+hydride
+
+•
+
+Limited on
+long-term
+stability
+
+RE-based and
+Ti-based multicomponent
+metal hydrides
+
+•
+
+Limited
+discussion on
+real-world
+implementation
+and system
+optimization
+Limited
+experimental
+validation
+
+MgH2
+
+Limited
+discussion on the
+impact of methane
+poisoning on
+system
+performance
+
+La0.9 Ce0.1 Ni5
+
+•
+•
+
+•
+
+•
+
+•
+[11]—Alok
+Kumar, P.
+Muthukumar,
+2022
+
+•
+
+Hydrogen
+storage and
+purification
+
+[12]—
+Battery
+Krishnamoorthy
+modeling
+et al., 2023
+
+Lithium–ion and
+nickel–metal
+hydride batteries
+
+•
+
+Methane poisoning
+characteristics
+studied
+experimentally
+
+Provides efficient
+battery models for
+performance studies
+
+Nickel-metal
+hydride battery
+
+•
+
+[13]—Zhang
+et al., 2022
+
+•
+Chemicals
+
+CO2 capture
+
+Insight into CO2
+capture by nickel
+hydride complexes
+
+Suggested
+Hydrides
+
+•
+
+Limited
+discussion of
+practical
+applications
+Further
+optimization of
+the nickel hydride
+complexes is
+needed to
+enhance
+performance
+
+Nickel hydride
+complexes
+
+Energies 2023, 16, 3444
+
+6 of 27
+
+Table 1. Cont.
+References
+
+Technology
+Area
+
+Engineering
+System
+
+Pros
+
+Cons
+
+•
+
+•
+
+[14]—
+Brestovič, T.
+et al. 2022
+
+Metal Hydride
+Compressors
+
+Heat pump-based
+compression
+system
+
+•
+
+•
+
+Improved heat
+transfer efficiency
+due to the
+integration of a heat
+pump with a metal
+hydride compressor
+Utilization of
+low-temperature
+heat sources
+Increased COP
+values up to 2.2 in
+comparison to
+conventional heat
+pumps
+
+•
+
+•
+
+•
+
+•
+
+[15]—Massaro
+et al., 2023
+
+On-board
+hydrogen
+storage
+technologies
+
+•
+Fuel cell systems
+for aircraft
+electrification
+
+•
+
+•
+
+•
+[16]—Nguyen
+and Shabani,
+2022
+
+Metal hydride
+hydrogen
+storage
+
+Standalone solar
+hydrogen systems
+
+•
+
+High energy density
+of hydrogen, which
+provides high
+specific energy and
+range for aircraft
+On-board hydrogen
+storage technologies,
+such as metal
+hydrides, offer high
+storage capacity and
+low weight
+Fuel cell systems
+provide high
+efficiency and low
+noise emissions
+High volumetric and
+gravimetric hydrogen
+storage capacity of
+metal hydrides
+The ability to use
+renewable energy
+sources, such as solar
+energy, to power the
+metal hydride system
+Improved thermal
+management using
+phase change
+materials can
+enhance system
+performance
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+The use of metal
+hydride beds for
+compression may
+cause a decrease
+in the COP
+Additional
+heating of the gas
+after compression
+may be required
+Low heat transfer
+rates in the metal-.
+hydride bed may
+result in higher
+operating
+temperatures,
+which may
+negatively impact
+the overall
+performance of
+the system
+Limited scalability
+due to material
+properties
+Low volumetric
+energy density of
+hydrogen, which
+requires large
+storage volumes
+Safety concerns
+due to the high
+flammability and
+explosiveness of
+hydrogen
+Limited
+availability of
+hydrogen
+infrastructure
+
+High cost of
+metal hydride
+materials
+Slow kinetics for
+hydrogen uptake
+and release
+Limited cycle life
+due to material
+degradation
+
+Suggested
+Hydrides
+
+LaNi5
+
+Energies 2023, 16, 3444
+
+7 of 27
+
+Table 1. Cont.
+References
+
+Technology
+Area
+
+Engineering
+System
+
+Pros
+
+Cons
+
+•
+•
+
+•
+
+[17]—Eadi
+et al., 2023
+
+Hydrogen gas
+sensing
+
+Pd-Ni alloy thin
+films
+
+•
+
+•
+
+[18]—Kumar
+et al., 2022
+
+Metal
+hydride-based
+hydrogen
+storage
+
+•
+Standalone
+microgrids
+
+•
+
+Pd-Ni alloy thin
+films exhibit high
+sensitivity and
+selectivity towards
+hydrogen gas
+detection
+The sensing
+performance of
+Pd-Ni alloy thin
+films can be
+improved by
+optimizing the
+deposition
+parameters
+Pd-Ni alloy thin
+films are a promising
+candidate for
+practical hydrogen
+sensing applications
+due to their low cost
+and ease of
+fabrication
+
+Metal hydride-based
+hydrogen storage
+systems can provide
+a reliable and
+efficient means of
+energy storage for
+standalone
+microgrids
+Metal hydride
+systems have the
+potential for high
+energy density
+storage compared to
+other energy storage
+technologies
+Metal hydride
+systems are
+environmentally
+friendly and have no
+harmful emissions
+
+•
+
+•
+
+•
+
+•
+
+•
+
+Suggested
+Hydrides
+
+Pd-Ni alloy thin
+films can be
+sensitive to other
+gases, such as CO
+and H2 S, which
+can interfere with
+hydrogen gas
+detection
+The sensing
+performance of
+Pd-Ni alloy thin
+films can be
+affected by
+environmental
+factors, such as
+temperature and
+humidity
+Pd-Ni alloy thin
+films may require
+periodic
+calibration to
+maintain
+accurate
+hydrogen gas
+detection
+Metal hydride
+systems can be
+expensive to
+manufacture and
+maintain
+The hydrogen
+uptake and
+release kinetics of
+metal hydride
+systems can be
+slow, leading to
+reduced system
+performance
+Metal hydride
+systems can be
+affected by
+temperature and
+humidity
+changes, which
+can reduce
+system efficiency
+
+MgH2 , TiFeH2 ,
+LaNi4.8 Al0.2 H11.3
+
+Energies 2023, 16, 3444
+
+8 of 27
+
+Table 1. Cont.
+References
+
+Technology
+Area
+
+Engineering
+System
+
+Pros
+
+Cons
+
+•
+•
+
+[19]—Tian
+et al., 2022
+
+Hybrid rocket
+propulsion
+
+Solid-fuel
+additives
+
+•
+
+•
+
+•
+
+[20]—Lee et al.,
+2022
+
+Hydrogen
+storage
+
+Magnesium
+hydrogen tank
+
+•
+
+•
+
+Addition of metal
+and metalloid
+solid-fuel additives
+can improve the
+combustion
+performance of
+hydroxy-terminated
+polybutadiene-based
+hybrid rocket motors
+Metal and metalloid
+additives can
+increase the density
+and specific impulse
+of the rocket motor
+Additives can also
+reduce the nozzle
+ablation rate, which
+can extend the
+lifetime of the motor
+
+The two-in-one
+flexible
+high-temperature
+micro-sensor
+developed in this
+study can provide
+real-time monitoring
+of surface
+temperature and
+strain of magnesium
+hydrogen tanks
+The sensor is
+low-cost, lightweight,
+and can be easily
+integrated into
+existing tank designs
+Real-time monitoring
+of tank conditions
+can improve safety
+and performance in
+hydrogen storage
+systems
+
+•
+
+•
+
+•
+
+•
+
+Suggested
+Hydrides
+
+The effect of the
+additives on the
+mechanical
+properties of the
+motor is not well
+understood
+The production
+and processing of
+the solid-fuel
+additives can be
+expensive and
+difficult
+The use of metal
+and metalloid
+additives may
+require
+additional safety
+measures due to
+the potential for
+increased
+reactivity and
+flammability
+
+The study
+focuses solely on
+the development
+and testing of the
+micro-sensor and
+does not address
+other aspects of
+hydrogen storage
+technology
+The use of
+magnesium as a
+hydrogen storage
+material has
+some drawbacks,
+including low
+hydrogen storage
+capacity and high
+reactivity with air
+and moisture
+
+MgH2
+
+Energies 2023, 16, 3444
+
+9 of 27
+
+Table 1. Cont.
+References
+
+Technology
+Area
+
+Engineering
+System
+
+Pros
+
+•
+
+•
+[21]—Sezgin
+et al., 2022
+
+Hydrogen
+energy systems
+
+Underwater
+applications
+
+•
+
+•
+
+[22]—Kailiang
+Ren, Jiajia
+Miao, et al.,
+2022
+
+Electrochemical
+energy storage
+
+Batteries
+
+•
+
+•
+
+[23]—Dinesh
+Dashbabu, E.
+Anil Kumar, I.P.
+Jain, 2022
+
+Hydrogen
+compression
+
+Metal hydride
+hydrogen
+compressor
+
+•
+
+Hydrogen fuel cells
+are a promising
+power source for
+underwater
+applications due to
+their high efficiency,
+low noise, and zero
+emissions
+Hydrogen can be
+stored in metal
+hydride tanks, which
+have high energy
+density and can
+operate at low
+pressures
+Hydrogen systems
+can provide longer
+endurance and
+greater range than
+traditional
+battery-powered
+systems
+LaFeO3 coated with
+C/Ni exhibited
+superior
+electrochemical
+performance at high
+temperatures
+compared to bare
+LaFeO3
+The coating with
+C/Ni helps to
+increase the
+conductivity of the
+material and
+improves its
+electrochemical
+properties
+Metal hydride
+hydrogen
+compressor with
+Al-substituted LaNi5
+hydride can
+effectively compress
+hydrogen
+Study provides a
+comprehensive
+thermodynamic
+analysis of the
+compressor
+
+Cons
+
+•
+
+•
+
+•
+
+•
+
+•
+
+•
+
+Suggested
+Hydrides
+
+The high cost and
+complexity of
+hydrogen
+systems may
+limit their
+adoption in some
+applications
+The need for
+refueling
+infrastructure
+and the limited
+availability of
+hydrogen fuel
+may also be
+barriers to
+adoption
+
+TiFe, LaNi5 ,
+AB2
+(MmNi3.6 Co0.7
+Mn0.4 Al0.3 ),
+MgH2 , LiBH4
+
+The preparation
+of the
+C/Ni-coated
+LaFeO3 requires
+additional
+processing steps
+The long-term
+stability of the
+coating is
+unknown
+
+NiMH
+
+The performance
+of the compressor
+decreases at
+higher operating
+temperatures
+The thermal
+conductivity of
+the metal hydride
+decreases with
+increasing Al
+content
+
+LaNi5 H6 -xAlx
+
+Energies 2023, 16, 3444
+
+10 of 27
+
+Table 1. Cont.
+References
+
+Technology
+Area
+
+Engineering
+System
+
+Pros
+
+•
+
+[24]—Sayantan
+Jana et al., 2022
+
+Embedded cooling
+tube type metal
+hydride reactor
+
+Heating and
+cooling
+
+•
+•
+•
+•
+
+Energies 2023, 16, x FOR PEER REVIEW
+
+[25]—Singh
+et al., 2022
+
+Renewable
+energy
+
+Reversible SOFC,
+•
+Novel energy storage
+hydrogen storage,
+system design based
+rankine cycle,
+on multiple
+absorption
+technologies
+refrigeration
+hydride
+and thermo- hydrogen and thermal
+
+chemical material
+
+[26]—H.
+Chang, Y.B.
+Tao, H. Ye, 2023
+
+High thermal
+conductivity
+Energy-efficiency
+Rapid
+heating/cooling
+Absence of moving
+parts
+Long life cycle
+
+Hydrogen and
+thermal storage
+
+Sandwich reaction
+bed filled with
+metal hydride and
+thermochemical
+material
+
+Cons
+
+•
+•
+
+•
+
+•
+
+Limited by heat
+transfer efficiency
+Relatively low
+hydrogen storage
+capacity
+Higher cost
+compared to
+conventional
+systems
+
+Suggested
+Hydrides
+
+Mg2 NiH4 ,
+Top of Form
+
+bottom of form
+9 of 26
+
+Need for further
+testing and
+optimization
+
+LaNi4.8 Al0.2 ,
+MgH2 , Ni-MH
+alloy, CaH2
+
+the numerical results
+storage
+was conducted
+•
+Proposed a new
+• sandwich
+Conducted
+numerireaction
+bed for hydrogen
+cal simulations
+to investistorageof
+gateand
+thethermal
+performance
+•
+Conducted
+•
+No experimental
+the system under differnumerical
+validation of the
+ent operating
+simulationsconditions
+to
+numerical results
+investigate the
+
+was conducted
+
+performance
+of the
+Overall, metal hydrides offer
+several advantages
+over traditional hydrogen storage
+system
+under
+methods and may be a more efficient and safe option in certain applications. In Figure 1,
+operating
+hydrogenation enthalpies and different
+entropies
+of various hydride materials and their suitable
+conditions
+applications are provided.
+
+Figure
+1. Hydrogenation
+enthalpies
+andand
+entropies
+of various
+hydride
+materials
+and their
+apFigure
+1. Hydrogenation
+enthalpies
+entropies
+of various
+hydride
+materials
+and suitable
+their suitable
+plications:
+(A) heat
+(B) heat
+(C) hydrogen
+storage,
+(D) hydrogen
+compression
+[27]. [27].
+applications:
+(A) pumps,
+heat pumps,
+(B) storage,
+heat storage,
+(C) hydrogen
+storage,
+(D) hydrogen
+compression
+
+Type AB
+hydrides
+(forthe
+which
+LaNi5 serves
+paradigm)
+and
+AB2 metal
+5 metal
+Overall,
+metal
+hydrides
+have
+potential
+to playasathe
+significant
+role
+intype
+a variety
+of
+hydrides
+are
+the
+most
+well
+known
+for
+hydrogen
+absorption
+(such
+as
+Mn
+Zn).
+The
+AB5
+2 in the
+applications, and their properties and behavior are an active area of research
+field
+of materials science.
+Type AB5 metal hydrides (for which LaNi5 serves as the paradigm) and type AB2
+metal hydrides are the most well known for hydrogen absorption (such as Mn2Zn). The
+AB5 group has excellent hydrogenation ability at ambient temperature. However, its hy-
+
+Energies 2023, 16, 3444
+
+11 of 27
+
+Energies 2023, 16, x FOR PEER REVIEW
+
+group has excellent hydrogenation ability at ambient temperature. However, its hydrogen
+capacity is typically in the range of 1 to 1.5 wt%. Metal hydrides based on magnesium (Mg
+and Mg2 Ni) display unacceptably slow rates of hydrogenation and dehydrogenation even
+10 of 26
+after significant activation at 673 K (400 ◦ C) [28].
+4. Reactor House Shape Optimization
+
+The metal hydride reactor provides the region where the materials are filled. In other
+words, it acts as a packed bed-type vessel, which serves to enhance mass and heat exchange
+In
+type hydride
+of reactor,
+normally
+viahydride
+a central
+artery.
+As indicated
+in this
+the metal
+bed.hydrogen
+There haveisbeen
+severalfed
+metal
+reactor
+designs
+built over in
+Figuretime,
+2, the
+heat
+between
+the reaction
+the heat
+canthree
+be acand
+the exchange
+main geometric
+configurations
+of bed
+theseand
+reactors
+can source/sink
+be divided into
+types: tubular
+reactors,
+disc reactors,
+chamber
+reactors.
+complished
+through
+the outer
+surface and
+of the
+tube wall.
+The annular space between the
+
+4.1. .Tubular Reactors
+
+artery and the wall is densely packed with metal hydride materials. The tubular reactor
+4.1. Tubular Reactors
+has been in use since the early applications of metal hydrides in heat pump systems [29],
+In this type of reactor, hydrogen is normally fed via a central artery. As indicated
+and its design
+has evolved over time. To allow effective radial heat transmission, the outin Figure 2, the heat exchange between the reaction bed and the heat source/sink can be
+side diameter of a single tube unit should normally not exceed 30 mm [30–34]. The length
+accomplished through the outer surface of the tube wall. The annular space between the
+of theartery
+tube and
+mustthe
+bewall
+increased
+to store
+a with
+givenmetal
+volume
+of metal
+hydride.
+The tube
+unit’s
+is densely
+packed
+hydride
+materials.
+The tubular
+reactor
+aspecthas
+ratio,
+which
+defined
+as the
+ratio of cylinder
+height
+to diameter,
+is often
+more
+than
+been
+in useissince
+the early
+applications
+of metal
+hydrides
+in heat pump
+systems
+[29],
+10. Although
+circular
+tubesTo
+areallow
+the most
+common,
+Veerraju
+et al. [35]the
+conand its design
+hascross-sectional
+evolved over time.
+effective
+radial heat
+transmission,
+outside
+diameter
+of
+a
+single
+tube
+unit
+should
+normally
+not
+exceed
+30
+mm
+[30–34].
+The
+tend that elliptical tubes may be superior due to their compact structure and lower hylength
+the tube
+must be increased
+storebea utilized,
+given volume
+of metalishydride.
+The to
+draulic
+loss. of
+Because
+standardized
+tubingtomay
+this reactor
+very simple
+tube
+unit’s
+aspect
+ratio,
+which
+is
+defined
+as
+the
+ratio
+of
+cylinder
+height
+to
+diameter,
+manufacture and maintain. It also has a high bearing pressure and excellent sealing. Furis often more than 10. Although circular cross-sectional tubes are the most common,
+thermore,
+the tube units are modular and self-contained, making it very easy to scale up
+Veerraju et al. [35] contend that elliptical tubes may be superior due to their compact structhe reactor by adding more units. Small-scale studies are best performed with a single
+ture and lower hydraulic loss. Because standardized tubing may be utilized, this reactor is
+tubular
+reactor
+but larger
+applications
+from tube
+columns
+or banks.
+very
+simple[31,34,36],
+to manufacture
+and maintain.
+It alsocan
+has benefit
+a high bearing
+pressure
+and excellent
+The literature
+[37–40] contains
+descriptions
+of tubeand
+units
+in parallel, making
+square, itand
+sealing. Furthermore,
+the tube
+units are modular
+self-contained,
+veryhexagoeasy
+nal configurations.
+to scale up the reactor by adding more units. Small-scale studies are best performed with
+a single tubular reactor [31,34,36], but larger applications can benefit from tube columns
+or banks. The literature [37–40] contains descriptions of tube units in parallel, square, and
+hexagonal configurations.
+
+Figure 2. A typical tubular reactor.
+
+4.2. Disc Reactors
+Figure 2. A typical tubular reactor.
+The reaction bed of the disc reactor is flat [41,42], and the aspect ratio is significantly
+less than one. In a common design, heat exchange occurs on one side of the reactor while
+4.2. .Disc
+Reactors
+hydrogen
+flows axially into or out of the reactor through the screen that covers the metal
+hydride
+layer.
+It offers
+heat transfer
+quick
+reactionratio
+kinetics
+for a thin
+The reaction bed
+of thea large
+disc reactor
+is flatsurface
+[41,42],and
+and
+the aspect
+is ignificantly
+bed.one.
+A single
+on the
+other hand,
+can only carry
+a certain
+amount
+metal
+hydride.
+less than
+In a disc,
+common
+design,
+heat exchange
+occurs
+on one
+side ofofthe
+reactor
+while
+Furthermore,
+due
+to
+the
+structure’s
+location
+of
+mass
+and
+heat
+elements
+on
+either
+side,
+hydrogen flows axially into or out of the reactor through the screen that covers the metal
+increasing capacity by adding more disc units is technically tough.
+
+hydride layer. It offers a large heat transfer surface and quick reaction kinetics for a thin
+bed. A single disc, on the other hand, can only carry a certain amount of metal hydride.
+Furthermore, due to the structure’s location of mass and heat elements on either side, increasing capacity by adding more disc units is technically tough.
+Several studies have attempted to address this issue; a Chinese research group [43,44],
+
+Energies 2023, 16, 3444
+
+12 of 27
+
+Several studies have attempted to address this issue; a Chinese research group [43,44],
+for example, created a novel configuration known as an annulus–disc reactor. Figure 3
+shows an example of annulus–disc reactor. In such a reactor, hydrogen flows through tubes
+that penetrate the annulus–disc components and allow radial mass transfer with metal
+hydride. The units contain metal hydride. The outside surfaces of the annulus–disc units
+Energies 2023, 16, x FOR PEER REVIEWundergo simultaneous heat transfer. The number of annulus–disc units can be adjusted
+11 of 26to
+Energies 2023, 16, x FOR PEER REVIEW
+vary the capacity of this type of reactor. Meanwhile, a rapid reaction rate was achieved by
+correctly managing the dimension and separation of annulus–disc units.
+
+11 of 2
+
+Figure 3. Cross-section of an annulus reactor.
+
+4.3.
+Chamber
+Reactors of an
+Figure
+Cross-section
+of annulus
+an annulus
+reactor.
+Figure
+3.3.Cross-section
+reactor.
+The reaction bed in a tank or chamber metal hydride reactor is a large cylinder or
+4.3. Chamber Reactors
+4.3.chamber,
+Chamberallowing
+Reactorsmore metal hydride to be packed than in the preceding two types
+cube
+The reaction
+bed may
+in a tank
+or enter
+chamber
+metal
+hydride
+reactor
+is the
+a large
+cylinder
+or cube
+of reactors.
+Hydrogen
+easily
+escape
+the reactor
+via
+arteries
+[45,46]
+orcylinder o
+Theallowing
+reactionmore
+bed metal
+in
+a tank
+orand
+chamber
+metal
+hydride
+reactor
+istwo
+a large
+chamber,
+hydride
+to
+be
+packed
+than
+in
+the
+preceding
+types
+the surrounding outer filter [47–50]. Heat exchange in the metal hydride bed is frequentlyof
+cube chamber,
+allowing
+more
+metal
+to be
+packed
+thanarteries
+in the [45,46]
+preceding
+reactors.
+Hydrogen
+may easily
+enter
+andhydride
+escape
+reactor
+via the
+thetwo type
+provided
+by
+a few embedded
+components,
+such
+as the
+spiral
+coils [45,51],
+heat pipes
+[52], or
+and
+of
+reactors.
+Hydrogen
+may
+easily
+enter
+and
+escape
+the
+reactor
+via
+the
+arteries
+[45,46] o
+surroundingtube
+outer
+filter [47–50].
+Heat exchange
+hydride
+is [56]
+frequently
+conventional
+bundles
+[48,50,53,54].
+Dehoucheinetthe
+al. metal
+[55] and
+Mengbed
+et al.
+proprovided
+byofa the
+fewmicro-channel
+embedded
+as spiral
+coilsmetal
+[45,51],
+heatbecause
+pipes
+[52],
+the surrounding
+outer
+filter components,
+[47–50].
+Heat
+exchange
+in the
+hydride
+bed is
+posed
+the use
+technique
+insuch
+the metal
+hydride
+tank
+reactor
+itfrequentl
+and
+conventional
+tube
+bundles [48,50,53,54].
+Dehouche
+et al. coils
+[55] and
+Meng
+et al.
+[56] [52], and
+provided
+by
+a
+few
+embedded
+components,
+such
+as
+spiral
+[45,51],
+heat
+pipes
+can achieve intensive heat transfer in a limited area. Figure 4 presents a schematic of the
+proposed
+the usetube
+of the
+micro-channel
+technique in the metal
+hydride
+tank
+because
+conventional
+bundles
+[48,50,53,54].
+etin
+al.the[55]
+andreactor
+Meng
+al. [56] pro
+latter
+authors’ micro-channel
+reactor.
+The forcedDehouche
+flow of fluid
+multiple
+circularetmiitposed
+can achieve
+intensive
+heat
+transfer
+in
+a
+limited
+area.
+Figure
+4
+presents
+a
+schematic
+theinuse
+the of
+micro-channel
+in the metal
+hydride tank
+reactor because i
+crochannels
+thisoftype
+reactor allowstechnique
+uniform temperature
+distribution
+and reaction
+of the latter authors’ micro-channel reactor. The forced flow of fluid in the multiple
+[56].
+micro-structure
+has the in
+advantage
+directing
+the4 fluid
+flow afor
+heat
+canThe
+achieve
+intensive design
+heat transfer
+a limitedofarea.
+Figure
+presents
+schematic
+of th
+circular microchannels in this type of reactor allows uniform temperature distribution and
+transmission
+usingmicro-channel
+electrokinetic reactor.
+or capillary
+force,
+which
+saves
+theincost
+of external
+latter
+authors’
+The
+forced
+flow
+of
+fluid
+the
+multiple
+circular
+mi
+reaction [56]. The micro-structure design has the advantage of directing the fluid flow for
+pumps
+while
+considerably
+enhancing
+heat
+transfer.
+crochannels
+in this
+type
+of reactor or
+allows
+uniform
+distribution
+and reactio
+heat
+transmission
+using
+electrokinetic
+capillary
+force, temperature
+which saves the
+cost of external
+[56].
+The
+micro-structure
+design
+has
+the
+advantage
+of
+directing
+the
+fluid
+flow
+for hea
+pumps while considerably enhancing heat transfer.
+
+transmission using electrokinetic or capillary force, which saves the cost of externa
+pumps while considerably enhancing heat transfer.
+
+Figure 4. Schematic of micro-channel reactor.
+
+Figure 4. Schematic of micro-channel reactor.
+
+The tank reactor’s most important characteristic is its high capacity. As a result, it is
+
+Energies 2023, 16, 3444
+
+13 of 27
+
+The tank reactor’s most important characteristic is its high capacity. As a result, it
+is recommended for environments where more metal hydride materials are required to
+achieve the appropriate output. To meet the requirements for excellent performance, the
+number and placement of heat and mass transmission devices must be carefully evaluated
+as the bed dimension increases [53,54]. Fortunately, the highly developed computational
+fluid dynamics (CFD) approach [56–58] is a powerful tool for completing this task. It
+should be emphasized that these configurations have also been combined to create novel
+hybrid reactor designs. One example is the so-called bottle reactor [59,60], which is a hybrid
+of a tubular and a tank reactor. The disc reactor has mostly been employed for kinetic
+measurements [61,62].
+5. Heat Transfer Techniques
+Heat transfer in metal hydrides typically involves the transfer of heat between a metal
+hydride material and its surroundings. This can be achieved through several different
+techniques, including conduction, convection, and radiation. Other techniques that may
+be used to transfer heat in metal hydrides include phase change materials, which absorb
+or release heat as they change from a solid to a liquid or from a liquid to a gas, and
+thermoelectric materials, which can convert heat into electricity or vice versa.
+There are various parameters which can influence the heat transfer in the metal
+hydrides. For example, heat transfer in metal hydride systems may be improved by
+increasing the surface area between the metal hydride bed and the heat transfer fluid.
+Numerous studies on increasing surface area by adding fins have been reported [63,64].
+Figure 5 shows a cross-section of a six-finned reactor. Mellouli et al. [65] recommended
+metal hydride tanks equipped with finned spiral tube heat exchangers for use in fuel cell
+systems. Compared to metal hydride tanks without circular fins, the time required to
+obtain 90% hydrogen storage was cut by 66% because the fins provided effective heat
+transmission. Cylindrical reactors with u-shaped heat transfer fluid tubes brazed with
+circular fins [66] and uniformly positioned multiple copper tubes equipped with evenly
+brazed cylindrical shape pin fins on the perimeter of tubes [67] have both led to a notable
+improvement in the hydrogen storage capabilities. A cylindrical reactor with an exterior
+heat transfer fluid jacket and rectangular copper fins was recently developed by Gupta
+and Sharma [68]. According to their modelling, the fins decreased the bed’s maximum
+temperature increase during the formation of metal hydride by 22.3 ◦ C and its maximum
+temperature reduction during the breakdown process by 6.8 ◦ C. A numerical analysis by
+Raju and Kumar [69] compared three designs: a shell and tube heat exchanger with lanate
+on the tube side, an internal helical heat exchanger, and a cylindrical reactor to study the
+potential enhancement in hydrogen storage. In terms of performance, the internal helical
+heat exchanger variation outperformed the other two types.
+5.1. Phase Change Fluid Flow Designs
+The metal hydride bed’s temperature increases because of heat release during the
+hydride formation process. As a result, the equilibrium pressure of the gas inside the
+reactor increases, consequently decreasing the rate of reaction. For the heat transfer fluid to
+continue hydride production, heat must be removed effectively. It is also recommended
+that the rate of heat transfer to the metal hydride bed be high enough to permit quick and
+continuous hydrogen gas desorption. Therefore, for effective heat and mass transmission in
+the metal hydride system, the heat transfer fluid’s characteristics and flow rate are crucial.
+Heat transfer fluids have been made from air, water [70,71], oils [53,72], and phase change
+materials (PCM) [73–75]. Since increasing the heat transfer fluid flow rate improves the
+convective heat transfer coefficient and hence increases the rate of heat transfer, numerous
+studies have been conducted to optimize the heat transfer fluid flow rate.
+
+Energies 2023, 16, 3444
+
+during the formation of metal hydride by 22.3 °C and its maximum temperature reductio
+during the breakdown process by 6.8 °C. A numerical analysis by Raju and Kumar [69
+compared three designs: a shell and tube heat exchanger with lanate on the tube side, a
+internal helical heat exchanger, and a cylindrical reactor to study the potential enhance
+14 of 27
+ment in hydrogen storage. In terms of performance, the internal helical heat exchange
+variation outperformed the other two types.
+
+Figure5.5.Cross-section
+Cross-section
+of six-fin
+reactor.
+Figure
+of six-fin
+reactor.
+
+According to Mellouli et al. [51], raising the heat transfer fluid flow rate significantly
+shortens the time needed to store hydrogen. The storage period decreased by 44% with
+an increase in the overall heat transfer coefficient from 750 Wm−2 K−1 to 1250 Wm−2 K−1 ,
+according to their experiment on a reactor with MmNi4.6 Al0.4 [76]. While greater heat
+transfer rates and the outlet temperature of the heat transfer fluid are priorities for thermal
+storage applications, the quick evacuation of heat from the metal hydride bed is the key
+objective for hydrogen storage applications. The thermal potential of heat transfer fluid
+must be utilized in metal hydride-based applications over a long residence period at a
+significant flow rate.
+Water has historically been utilized as the heat transfer fluid in metal hydride systems
+designed to operate at low temperatures (70 ◦ C), but in high temperature applications, air,
+oils, and PCMs have been used [53,72–75]. Wang et al. [72] and Mosher et al. [53] employed
+oils as a heat transfer fluid in metal hydride systems running at 150 ◦ C. Heat transfer
+qualities have improved because of the use of PCMs in metal hydride systems [73,74]. More
+recently, nanofluids have been suggested for use in metal hydride systems as heat transfer
+fluids. Al2 O3 -H2 O, CuO-H2 O, and MgO-H2 O nanofluids were employed by Urunkar
+and Patil [77] with successful outcomes. As a result, the heat transfer fluid and its flow
+characteristics have a big influence on the quality of functioning of metal hydride systems.
+The selection of a suitable heat transfer fluid is based on the application and operating
+temperature of the metal hydride system. Table 2 shows some examples of phase change
+material techniques.
+Table 2. Some examples of phase change material techniques.
+Reference
+
+Thermal Management Technique
+
+[77]—Rahul U. Urunkar,
+Sharad D. Patil (2021)
+
+Use of various nanofluids for enhancing
+heat and mass transfer in metal hydride
+reactor for hydrogen storage
+
+Observations
+
+•
+
+Addition of Al2 O3 , TiO2 and CuO nanoparticles to
+water in the cooling loop of the reactor significantly
+enhanced the heat transfer rate and decreased the
+reactor temperature, improving the performance of
+the system.
+
+Energies 2023, 16, 3444
+
+15 of 27
+
+Table 2. Cont.
+Reference
+
+Thermal Management Technique
+
+Observations
+
+•
+
+[78]—Syedvali
+Pinjari et al. (2023)
+
+Acid functionalized carbon nanotubes
+
+•
+
+•
+
+[79]—Atef
+Chibani et al. (2022)
+
+[80]—Huy Quoc
+Nguyen et al. (2022)
+
+•
+
+Heat and mass transfer analysis revealed improved
+hydrogen desorption performance from the metal
+hydride by incorporating a phase change material
+in porous media (metal foam) form.
+
+•
+
+Employing organic phase change material can
+enhance the thermal management of metal hydride
+hydrogen storage, reducing thermal losses and
+increasing the hydrogen release rate.
+The study also showed the potential of using a
+numerical model for optimization of the system.
+
+Phase change material incorporated in
+porous media (metal foam)
+
+Organic phase change material
+
+•
+
+[81]—Atef Chibani,
+Slimane Merouani,
+Noureddine Gherraf,
+Yacine Benguerba (2022)
+
+Phase change material–metal foam-based
+latent heat storage system
+
+[82]—Atef Chibani, Aissa
+Dehane, Slimane
+Merouani, Cherif
+Bougriou, Djemaa
+Guerraiche (2022)
+
+Melting/solidification of phase change
+material in a multi-tube heat exchanger in
+the presence of metal foam
+
+[83]—A. Chibani, S.
+Merouani, N. Gherraf, I.
+Ferhoune, Y.
+Benguerba (2022)
+
+Phase change material with
+nano-oxide additives
+
+[84]—Atef
+Chibani et al. (2022)
+
+Metal hydride-phase change material
+reactor with nano oxide
+
+Acid functionalized carbon nanotubes were
+effective at storing hydrogen at room temperature,
+with a high maximum sorption capacity
+of 4.43 wt%.
+Analysis of sorption kinetics revealed a
+diffusion-controlled mechanism to be the
+dominant factor.
+This discovery suggests that acid functionalized
+carbon nanotubes could be a promising candidate
+for hydrogen storage.
+
+•
+
+The results of thermodynamic and kinetic analyses
+of hydrogen absorption in large-scale metal
+hydride reactor coupled to thermal energy storage
+system indicated that using a phase change
+material–metal foam-based latent heat storage
+system can enhance the hydrogen absorption rate
+and reduce the thermal fluctuations in the metal
+hydride reactor.
+
+•
+
+Using metal foam with smaller pore sizes enhances
+the heat transfer and reduces the time for melting
+and solidification of PCM.
+
+•
+
+Using PCM with nano-oxide additives enhanced
+heat transfer during hydrogen desorption from
+metal hydride.
+Significant enhancement of hydrogen desorption
+rate and reduction in desorption time with the
+addition of nano-oxide additives.
+Higher thermal conductivity and latent heat
+capacity of the PCM with additives contributed to
+better heat transfer during the desorption process.
+
+•
+
+•
+
+•
+
+The addition of nano-oxide additives to the phase
+change material improves the charging process of
+the metal hydride reactor by enhancing the heat
+and mass transfer rates.
+
+Energies 2023, 16, 3444
+
+16 of 27
+
+Energies 2023, 16, x FOR PEER REVIEW
+Table 2. Cont.
+
+Reference
+
+15 of 26
+
+Thermal Management Technique
+
+Observations
+
+•
+[85]—Elarem,
+Raja, et al. (2021)
+
+Nanoparticles enhanced phase change
+material and nanofluid
+
+systems,
+making
+The results ofto
+theindividual
+numerical analysis
+showed
+that it a
+the combinedpromising
+system had higher
+thermal
+storage
+option for thermal energy
+capacity and faster heat transfer rate compared to
+storage
+applications.
+individual systems,
+making
+it a promising option
+for thermal energy storage applications.
+
+5.2. Adding Cooling Tubes/Water Jackets
+
+Designing
+metal
+hydride
+reactors with embedded cooling tubes (ECT) is one of the
+5.2. Adding
+Cooling
+Tubes/Water
+Jackets
+
+mostDesigning
+effective metal
+techniques
+to reactors
+accomplish
+storage
+dramatically
+hydride
+with successful
+embedded hydrogen
+cooling tubes
+(ECT)since
+is oneitof
+the
+enhances
+the
+heat
+transfer
+area.
+Numerous
+computational
+analyses
+[63,86]
+and experimost effective techniques to accomplish successful hydrogen storage since it dramatically
+enhances
+the heat[87–89]
+transferon
+area.
+computational
+analyses
+[63,86] and
+experi- have
+mental
+research
+ECTNumerous
+models have
+been published.
+Empirical
+correlations
+mental
+research [87–89]
+on ECT models
+have been
+published.
+Empirical
+correlations
+been
+developed
+to determine
+the number
+of ECT
+required
+for a particular
+sizehave
+of cylindribeen
+developed
+to
+determine
+the
+number
+of
+ECT
+required
+for
+a
+particular
+size
+of
+cylincal reactor, alloy mass, and tube size. Figure 6 shows a reactor diagram of a six-pass finned
+drical reactor, alloy mass, and tube size. Figure 6 shows a reactor diagram of a six-pass
+configuration.
+finned configuration.
+
+Figure 6.6.Reactor
+of aofsix-pass
+finned
+configuration
+with the
+tube
+numbers.
+Figure
+Reactordiagram
+diagram
+a six-pass
+finned
+configuration
+with
+the
+tube numbers.
+
+This design was employed for metal hydride applications since it maintained a comThis design
+washaving
+employed
+for metal
+hydride
+applications
+it maintained
+pact nature
+while still
+a greater
+heat transfer
+surface
+area. Thesince
+bed thickness
+was a compact
+nature while
+having
+a greater
+heat transfer
+Theperformance
+bed thickness was
+also discovered
+to bestill
+a crucial
+geometric
+component
+for thesurface
+effectivearea.
+thermal
+of metal
+hydride systems.
+The same
+group also
+recommend
+reactorperformance
+with
+also
+discovered
+to be a crucial
+geometric
+component
+forthe
+thetube-bundle
+effective thermal
+plate
+fins for
+usage systems.
+in large-scale
+[90]. Afzal
+Sharma [91]
+Jana and Muthu
+of metal
+hydride
+Thesystems
+same group
+also and
+recommend
+theand
+tube-bundle
+reactor with
+Kumar
+[92]
+evaluated
+the
+performance
+of
+tube-bundle
+model
+reactors
+and
+determined
+plate fins for usage in large-scale systems [90]. Afzal and Sharma [91] and Jana that
+and Muthu
+it was only moderately better than the ECT model.
+
+Kumar [92] evaluated the performance of tube-bundle model reactors and determined
+that
+it was onlyofmoderately
+better
+than the ECT
+model.
+5.3. Improvement
+Effective Thermal
+Conductivity
+of Metal
+Hydride Bed (High Thermal
+
+Conductivity Materials)
+−1 of heat
+5.3. Improvement
+of1 K
+Effective
+Thermal
+of Metal
+Hydride
+Bedpowder
+(High Thermal
+Only 0.1 Wm−
+can be Conductivity
+conducted through
+a typical
+loose
+bed of
+Conductivity
+metal hydride,Materials)
+and the hydrogenation and dehydrogenation cycles can further pulverize
+
+the particles
+[73].
+As−1aKresult,
+the metal
+hydride
+bed’s effective
+conductivity
+can bed of
+−1 of heat
+Only 0.1
+Wm
+can be
+conducted
+throughthermal
+a typical
+loose powder
+
+metal hydride, and the hydrogenation and dehydrogenation cycles can further pulverize
+the particles [73]. As a result, the metal hydride bed’s effective thermal conductivity can
+be further diminished, and as the hydride bed has poor heat transport, heat aggregation
+may take place. This significantly slows down the hydride bed’s reaction rate and even
+
+Energies 2023, 16, 3444
+
+17 of 27
+
+be further diminished, and as the hydride bed has poor heat transport, heat aggregation
+may take place. This significantly slows down the hydride bed’s reaction rate and even
+prevents hydrogenation and dehydrogenation. The hydrogenation and dehydrogenation
+times in the hydride bed increase because heat cannot be adequately transported. Enhancing the metal hydride bed’s effective thermal conductivity is the key to improving
+heat transfer efficiency [93,94]. Numerous internal heat transfer augmentation procedures
+have been devised to boost the effective thermal conductivity of the hydride bed [95].
+Compaction, covering with copper, adding high thermal conductivity materials, and
+constructing internal thermal structures are the key strategies that will be discussed in
+further depth.
+5.3.1. Compaction
+Porosity in metal hydride powder beds can significantly reduce their effective thermal
+conductivity. By mechanically compressing the powder, the internal porosity of the bed
+can be reduced, and its apparent density increased. This leads to an improvement in
+both the thermal conductivity and hydrogen storage capacity of the bed [96]. Additionally, compaction can enhance the safety of the powder when it is in contact with air and
+water. This method is commonly used to densify loose metal hydride powder beds [97]. Dehouche et al. [98] discovered, for example, that compressing LaNi4.8 Sn0.2 , LmNi4.9 Sn0.1 , and
+MmNi4.7 Al0.3 powder beds at a maximum pressure of 1.5 metric tons increased apparent
+density from 3 g cm−3 to roughly 6 g cm−3 and improved effective thermal conductivity from 0.1 to 1.7 Wm−1 K−1 . Humphries et al. [99] realized a thermal conductivity of
+2.08 Wm−1 K−1 by compacting MgH2 powder at room temperature in an argon atmosphere
+at a pressure of 370 MPa. Jepsen et al. [100] increased the apparent density of LiH + MgB2
+to 1.35 g cm−3 and lowered the porosity to 20% by compacting the desorbed state under
+300 MPa pressure. Thermal conductivity increased to roughly 0.3 and 0.6 Wm−1 K−1 ,
+respectively.
+5.3.2. Addition of High Thermal Conductivity Materials
+Carbon materials such as graphite powder [101,102], carbon nanotubes (CNTs) [103–105],
+carbon bars [106–108], and expanded graphite [63,109–111] are used as thermal conductivity reinforcement materials for hydride beds because of their high thermal conductivity
+and lack of reactivity with hydrides. Materials made of metals, including powder and
+foam copper powder [112], aluminum foam [91,113,114], and copper foam [115,116] are
+other alternatives. Metal-based high thermal conductivity materials are frequently added
+to the AB5 alloy powder bed due to their equivalent densities. Due to the small variation
+in metal hydride density, the distribution of metal-based reinforcing materials during the
+mixed addition and hydride bed hydrogenation/dehydrogenation processes is be uniform. To improve heat conduction, metal-based reinforcing elements are frequently used in
+metal hydride beds. Carbonaceous and metal foam materials’ higher porosity and lower
+bulk densities have no impact on the hydrogen storage material bed’s mass hydrogen
+storage density. The choice of foam metal is related to the required parameters, such as
+increased heat transmission and mass hydrogen storage density, because different metal
+foams have varying thermal conductivity and density. Additionally, the extra particles fill
+the bed’s interstices, creating a heat-conduction channel. Tix Cr2 -yMny was combined by
+Pourpoint et al. [101] with different CNT and graphite mass fractions. According to the
+findings, raising the CNTs content from 1% to 5% had little effect on thermal conductivity, which stayed at 0.18 Wm−1 K−1 . This could be explained by the high apparent
+characteristic size of the CNTs as well as the composites’ improved bonding ability and
+porosity following delivery. The effect of the increased content and powder density may
+work together to increase the composite material’s effective thermal conductivity to about
+0.3 Wm−1 K−1 when 1 and 10% graphite is added. The La0.9 Ce0.1 Ni5 powders were altered
+by Park et al. [75] by adding 3 wt% expanded natural graphite, increasing the thermal
+conductivity from 2.02 to 2.67 Wm−1 K−1 . According to Wang et al. [114], adding 10% Al
+
+Energies 2023, 16, 3444
+
+18 of 27
+
+foam to a large LaNi5 hydride tank (5 kg) increased the hydride bed’s effective thermal
+conductivity and reduced the time to reach 90% hydrogenation saturation by roughly five
+times. A brief list of metal hydride materials and their thermal conductivity are provided
+in Table 3.
+Table 3. Metal hydride materials and their thermal conductivity.
+Metal Hydride Material
+
+Thermal Conductivity (Wm−1 K−1 )
+
+MgH2
+TiFeH2
+LaNi5 H6
+FeTiH2
+CaNi5 H6
+ZrCoH2
+Mg2 NiH4
+FeTiH1.9
+Mg2 FeH6
+PdH0.6
+TiCr0.5 V0.5 H2
+LiBH4
+
+4.3
+4.6
+13.5
+10.0
+10.0
+12.0
+10.0
+10.0
+4.0
+71.0
+8.0
+2.4
+
+5.3.3. Innovative High Thermal Conductive Structures
+The layout of the heat transfer structure inside the metal hydride layer determines
+the way in which the high thermal conductivity structure is implemented. The utilization of copper mesh with high porosity (approximately 91%), significant surface area
+(6882 m2 -m−3 ), and strong thermal conductivity (389 Wm−1 K−1 ) is the focus of the current
+work [117]. When the amount injected is kept to a minimum, copper mesh does not react
+with hydride powder, and the hydrogen storage density of the metal hydride hydrogen tank
+is not greatly affected [118]. To improve powder contact and transform powder–powder
+contact into powder–copper wire–powder contact, a great number of pores in the powder
+bed are used as a matrix. In some cases, the powder is encased and crushed within a
+copper mesh framework. Nagel et al. [117] investigated the thermal conductivity of the
+MmNi4.46 Al0.54 powder bed of 0.3–0.4 Wm−1 K−1 with copper wire matrix under a vacuum. In comparison to a bed of pure hydride powder, this hydride bed’s effective thermal
+conductivity was improved by the copper wire matrix’s presence by 0.4 Wm−1 K−1 . By
+combining aerating LaNi5 with high thermal conductivity Al foam, Laurencelle et al. [119]
+showed that the hydrogen absorption process’ difference in hydrogen content at various
+positions in the hydride bed could be significantly reduced. Additionally, the hydride
+bed could be expanded from less than 8 mm to 60 mm, and the hydrogen charging could
+be finished very quickly (15 min). The duration for the hydride bed’s peak temperature
+was lowered from 90 min to 60 min when Romanov et al. [115] introduced La0.9 Ce0.1 Ni5
+to the copper foam matrix and heated the specimen from room temperature to 333 K.
+Kim et al. [120] used a copper mesh structure to construct a packed bed of La(Ce)Ni5
+powder that required 4.3% of the container’s volume. The hydrogen charging experiment proved that a hydride bed with a copper mesh structure could be charged in 73.5%
+less time.
+5.3.4. Other Non-Conventional Methods
+Recent advancements in the design of metal hydride reactors include the use of
+phase-changing materials, heat pipes, and microchannel reactors (PCM). Heat pipes and
+PCM have been shown to increase system efficiency, albeit each component’s performance
+may differ. The work by Frde et al. [121], in which a U-shaped copper tube with fins
+was used to improve heat transmission in a system integrated with a PEM fuel cell, is
+one illustration of the usage of heat pipes in a metal hydride system. The desorption of
+hydrogen at approximately room temperatures was facilitated by the waste heat from the
+fuel cell, potentially increasing system efficiency. Another study by Chung et al. [122,123]
+
+Energies 2023, 16, 3444
+
+19 of 27
+
+also reported that the use of heat pipes led to a 50% improvement in the absorption and
+desorption behavior of the hydride, making heat pipes a suitable choice due to the small
+size of the system. Tetuko et al. [124] created a passive system in which a 500 W PEM fuel
+cell was coupled with a metal hydride reactor using heat pipes. The system employed
+five metal hydride reactors, each with a diameter of 75 mm and a length of 380 mm, and
+five heat pipes that were used to remove 880 W to achieve a hydrogen release rate of
+2.5 SLPM. It is critical to remember that while this method is effective for absorbing
+hydrogen, a different heat extraction procedure would be necessary. In a different study
+by Meng et al. [125], a micro channel heat exchanger was utilized in a rectangular metal
+hydride tank, and it was shown that the center-to-center distance between the fluid channels
+significantly affected the heat transfer. The presence of channels that were dispersed evenly
+led to a more homogenous response front. Mudawwar and Visaria had also patented a
+metal hydride tank design with a modular heat exchanger that featured microchannel heat
+exchangers in each of the modules as well as a coiled tube to cool the entire system [126].
+Several studies have been conducted on the use of phase-changing materials (PCM) to
+improve heat transfer in metal hydride systems. Despite the low gravimetric capacity of the
+PCM alloy due to its weight, Garrier et al.’s [127] use of PCM in a large-scale MgH2 tank
+demonstrated that it was still a viable option for stationary applications at massive scales.
+Darzi et al. [128] evaluated the use of a Rubitherm PCM jacket with a radius of 70 mm
+around a LaNi5 tank with a radius of 40 mm. They observed that adding 0.6 porosity metal
+foam to the PCM jacket enhanced thermal conductivity and sped up heat transfer from the
+metal hydride tank. Additionally, they determined that adding aluminum foam to the PCM
+jacket significantly reduced the amount of time needed to complete a full charge by 28%.
+In a metal hydride system with a PCM jacket, Ben Maad et al. [129] focused on the effects
+of thermal conductivity and melting enthalpy on system performance. They discovered
+that increasing the thermal conductivity of PCM up to 5 Wm−1 K−1 significantly increased
+the hydrogen absorption rate but increasing it beyond this point had no appreciable effect.
+5.4. Performance Comparison and Selection
+From the different heat transfer methods described in Section 5, the thermal performances are compared between the heat transfer techniques. This study was carried out by
+evaluating the time elapsed for hydrogen absorption based on three different parameters:
+the reactor characteristic length, mass of the metal hydride in the reactor, and the amount
+of hydrogen stored. The characteristic length is defined as the closest distance between
+the centerline of the reactor and the inner surface of the reactor. For example, in the case
+of long cylinders, the characteristic length is the inner radius. In the case of a rectangular
+reactor, the characteristic length would be half of the shortest reactor dimension. Comparison for different heat exchange methods was conducted at 90% reaction time. This
+method provides a standardized way of characterizing the different cooling methods being
+investigated. The relative times used for each of these parameters are as follows:
+2
+Time relative to the characteristic length : tL−
+c
+2/3
+Time relative to the mass of the metal hydride : tm−
+MH
+−2/3
+Time relative to the mass of the hydrogen stored : tm H2
+
+where t, Lc , m MH , and m H2 are the hydrogen absorption time, the characteristic length of
+the reactor, the mass of metal hydride, and the mass of the hydrogen, respectively. The
+characteristic time for cooling or heating of a solid body is tc = L2c /α, where α is the
+thermal diffusivity. When the time elapsed until 90% reaction completion is divided by the
+characteristic length squared, the quantity characterizes the cooling time compared to the
+reactor size. This idea can be extended to the relative cooling time to the mass of the metal
+hydride and to the mass of the hydrogen stored. Since both the mass of metal hydride
+(m MH ) and the mass of the hydrogen stored in it (m H2 ) must increase as L3c , the mass-based
+cooling time can be defined as shown above.
+
+Energies 2023, 16, 3444
+
+external cooling fluids/jackets [75,76], and phase change materials [73,74,116]. Many o
+these methods being investigated also implemented and compared the effectiveness o
+different fin geometries. There were also a few other less common methods investigated
+20 of 27
+such as physical mixing of the reactor [114] and use of aluminum foam externally
+[119]
+One of the more commonly seen technologies was the use of multiple embedded cooling
+tubes. For the
+comparison of characteristic length, the values of 𝑡𝐿 ranged from 0.01 to
+For the selection of research papers that were studied for this cooling time analysis,
+−2
+0.09 s·mm
+. For thethat
+mass
+the prominent
+metal hydride
+the reactor,
+the the
+time
+relative
+the mass o
+it is observed
+theof
+most
+coolinginmethods
+included
+use
+of multiple
+/
+/
+−2/3. The
+embedded
+coolingranged
+tubes [70,71,86,88,91,92],
+single
+tube
+metal hydride
+𝑡𝑚
+from 0.25 to 3.49
+s·gcooling
+lastconfigurations
+range of 𝑡𝑚[51,89,110],
+determined
+external
+cooling
+fluids/jackets
+[75,76],
+and
+phase
+change
+materials
+[73,74,116].
+Many
+of using
+−2/3
+corresponding to the amount of hydrogen stored, was 6.96–68.4 s·g . For reactors
+these methods being investigated also implemented and compared the effectiveness of
+external
+cooling methods, all three parameters showed a higher value, and higher rang
+different fin geometries. There were also a few other less common methods investigated,
+of values.
+𝑡𝐿 , the
+values
+ranged
+0.2 use
+to 0.93
+s·g−2/3. When
+observing
+the meta
+suchFor
+as physical
+mixing
+of the
+reactorfrom
+[114] and
+of aluminum
+foam externally
+[119].
+/
+−2/3
+of the
+more commonly
+was thefrom
+use of1.5
+multiple
+embedded
+cooling
+hydrideOne
+and
+hydrogen
+stored,seen
+thetechnologies
+values ranged
+to 7.54
+s·g for
+𝑡𝑚
+and
+−
+2
+/ of characteristic length, the values of tLc ranged from 0.01 to
+tubes. For−2/3
+the comparison
+27.13 to 155 s·g −2 for 𝑡𝑚
+. The use of a singular internal cooling tube showed a rang
+0.09 s·mm . For the mass of the metal hydride in the reactor,
+the time relative the mass of /
+/
+−2/3𝑡𝐿 , 20.0–60.6 s·g−2/3 for−𝑡𝑚
+2/3 −2/3 for 𝑡𝑚
+of 0.15–0.313
+s·mm−2
+and
+427–624
+s·g
+. Th
+2/3 . The,last
+metal hydride
+tmfor
+ranged
+from
+0.25
+to
+3.49
+s
+·
+g
+range
+of tm−
+MH
+H2 determined,
+last to be
+analyzed towas
+the useofofhydrogen
+phase change
+materials.
+reactors
+th
+corresponding
+the amount
+stored, was
+6.96–68.4 sThese
+·g−2/3 . For
+reactorsdisplayed
+using
+−2
+methods,
+all threewhich
+parameters
+showedaarange
+higher value,
+and higher
+rangefor 𝑡𝐿
+highestexternal
+ratios cooling
+for each
+parameter,
+included
+of 3.2–8.25
+s·mm
+−2 , the/values ranged from 0.2 to 0.93 s·g−2/3
+/
+of
+values.
+For
+tL
+.
+When
+observing
+the
+metal
+−2/3
+−2/3
+32.56–83.78 s·g for c𝑡𝑚
+, and 621–3099 s·g for 𝑡𝑚
+. Figures 7 and 82/3
+provide
+sum
+hydride and hydrogen stored, the values ranged from 1.5 to 7.54 s·g−2/3 for tm−
+and
+MH
+maries of comparisons
+between
+and the other two parameters. The blue squares rep
+2/3 𝑡𝐿
+27.13 to 155 s·g−2/3 for tm−
+H2 . The use of a singular internal cooling tube showed a range
+resent the use of phase−2change
+squares
+refer to reactors
+2/3
+2/3multipl
+2 materials, the
+−2/3red
+−2/3 forusing
+of 0.15–0.313 s·mm for tL−
+for tm−
+tm−
+c , 20.0–60.6 s·g
+MH , and 427–624 s·g
+H2 .
+embedded
+cooling
+tubes, the
+triangles
+the use of
+a singular
+embedded cool
+The last
+to be analyzed
+wasgreen
+the use
+of phase refer
+changetomaterials.
+These
+reactors displayed
+−
+2
+2
+ing tube,
+theratios
+black
+useincluded
+of an external
+theand
+highest
+fordots
+each indicate
+parameter,the
+which
+a range ofcooling
+3.2–8.25 jacket.
+s·mm for tL−
+c ,
+2/3
+−2/3 for tm−2/3 . Figures 7 and 8 provide
+32.56–83.78 s·g−2/3 for tm−
+MH , and 621–3099 s·g
+H2
+2
+summaries of comparisons between tL−
+c and the other two parameters. The blue squares
+represent the use of phase change materials, the red squares refer to reactors using multiple
+embedded cooling tubes, the green triangles refer to the use of a singular embedded cooling
+tube, and the black dots indicate the use of an external cooling jacket.
+
+Figure 7. The metal hydride mass-based time vs. the characteristic length-based time.
+
+Figure 7. The metal hydride mass-based time vs. the characteristic length-based time.
+From this analysis, it is determined that the use of multiple embedded cooling tubes
+generally causes a low reaction time, as well as a low ratio for each of the three parameters.
+Slightly higher values for this cooling analysis can be observed with the use of a singular
+internal cooling tube, or the use of an external fluid. Lastly, large time comparison values
+for each of the three parameters were detected when using phase change materials as the
+sole method of heat exchange. Although using a large amount of internal cooling tubes
+
+Energies 2023, 16, 3444
+
+21 of 27
+
+Energies 2023, 16, x FOR PEER REVIEW
+
+increases the reactor performance, there are other trade-offs to consider such as complexity
+and cost of manufacturing when compared to the other methods such as the use of an
+external water jacket. When looking at methods such as phase change materials, it is
+observed that they do improve heat transfer performance but are generally not as effective
+as other cooling methods as seen from their higher reaction time. It is also evident from
+this time-based cooling analysis that some reactor types can have a large range of values
+present. For example, when looking at the characteristic length parameter for the use of
+phase change materials, there are values ranging from 3.2 to 8.25 s·mm−2 . One of the
+of 26
+main factors causing this range in values is that each reactor has different20methods
+of
+enhancing the thermal conductivity of the PCM, such as copper [116] and aluminum [74]
+metal foam being mixed with phase change materials to help reaction time. These different
+enhancement methods provide a wide range of reaction times even though both reactors
+use phase change materials. Other smaller ranges of values can be caused for many
+reasons, such as different supply pressures, type of cooling fluid, and selection of different
+metal hydrides.
+
+Figure 8. The stored hydrogen mass-based time vs. the characteristic length-based time.
+
+Figure 8. The stored hydrogen mass-based time vs. the characteristic length-based time.
+
+6. Conclusions
+
+Metal
+hydrides
+a promising
+class
+ofofmaterials
+a widecooling
+range tubes
+of potential
+From this
+analysis,
+it is are
+determined
+that the
+use
+multiple with
+embedded
+applications
+in hydrogen
+storage
+and as
+chemical
+processing.
+optimization
+of the reactor
+generally
+causes a low
+reaction time,
+as well
+a low ratio
+for each The
+of the
+three parameters.
+vessel
+shape
+and
+the
+improvement
+of
+heat
+transfer
+are
+key
+factors
+in
+the
+design and
+Slightly higher values for this cooling analysis can be observed with the use of a singular
+operation
+of
+metal
+hydride
+systems.
+The
+purpose
+of
+this
+review
+paper
+was
+to examine
+internal cooling tube, or the use of an external fluid. Lastly, large time comparison values
+the
+various
+approaches
+to
+reactor
+shape
+optimization,
+including
+the
+use
+of
+spiral
+reactors
+for each of the three parameters were detected when using phase change materials as the
+and
+cyclone
+reactors,
+as
+well
+as
+to
+consider
+the
+various
+techniques
+and
+methods
+that
+sole method of heat exchange. Although using a large amount of internal cooling tubes have
+been developed to improve heat transfer in metal hydride systems, such as the use of heat
+increases the reactor performance, there are other trade-offs to consider such as complexexchangers, phase change materials, and porous media.
+ity and cost of manufacturing when compared to the other methods such as the use of an
+Several novel approaches to thermal management that have recently appeared were
+external water jacket. When looking at methods such as phase change materials, it is obalso considered, such as the integration of heat pipes, microchannels, and advanced maserved that they do improve heat transfer performance but are generally not as effective
+terials such as graphene and carbon nanotubes and the use of nano fluids, PCM metal
+as other cooling methods as seen from their higher reaction time. It is also evident from
+foams and PCM nano oxide additives. These innovative systems have shown promise in
+this time-based cooling analysis that some reactor types can have a large range of values
+improving heat transfer and reducing temperature gradients in metal hydrides, which can
+present. For example, when looking at the characteristic length parameter for the use of
+lead to significant performance and safety improvements.
+phase change materials, there are values ranging from 3.2 to 8.25 s·mm−2. One of the main
+Overall, there is still significant room for improvement in the design and operation
+factors causing this range in values is that each reactor has different methods of enhancing
+of metal hydride systems. Further research is needed to optimize reactor shapes and
+the thermal conductivity of the PCM, such as copper [116] and aluminum [74] metal foam
+heat transfer approaches for specific metal hydrides and applications. In particular, the
+being mixed with phase change materials to help reaction time. These different enhancement methods provide a wide range of reaction times even though both reactors use phase
+change materials. Other smaller ranges of values can be caused for many reasons, such as
+different supply pressures, type of cooling fluid, and selection of different metal hydrides.
+
+Energies 2023, 16, 3444
+
+22 of 27
+
+development of advanced modeling and simulation tools will be critical in predicting
+and optimizing the performance of metal hydride systems under different operating conditions. Additionally, it will be important to consider the practicality and scalability of
+different reactor designs and heat transfer methods, as well as the environmental and
+economic impacts of metal hydride systems. Their use as a hydrogen storage medium
+has the potential to contribute to the development of a cleaner, more sustainable energy
+system, but it is important to carefully evaluate the trade-offs and potential drawbacks of
+this technology.
+In summary, the optimization of reactor shape and heat transfer is a critical area of
+research in the field of metal hydrides. Further studies are needed to fully understand
+the potential of this technology and to develop practical, efficient, and cost-effective metal
+hydride systems for a wide range of applications.
+Author Contributions: Conceptualization, V.K.K., S.K. and S.A.T.; methodology, V.K.K. and S.K.;
+investigation, V.K.K., S.K. and S.A.T.; writing—original draft preparation, V.K.K.; writing—review
+and editing, V.K.K., S.K. and S.A.T.; supervision, S.K. All authors have read and agreed to the
+published version of the manuscript.
+Funding: This research received no external funding.
+Data Availability Statement: No new data were created or analyzed in this study. Data sharing is
+not applicable to this article.
+Conflicts of Interest: The authors declare no conflict of interest.
+
+References
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+
+10.
+11.
+12.
+
+13.
+14.
+15.
+
+Schlapbach, L.; Züttel, A. Hydrogen-Storage Materials for Mobile Applications. Nature 2001, 414, 353–358. [CrossRef] [PubMed]
+Huot, J. Metal Hydrides. In Handbook of Hydrogen Storage; Hirscher, M., Ed.; Wiley-VCH Verlag GmbH & Co. KGaA: Weinheim,
+Germany, 2010; pp. 81–116, ISBN 9783527322732.
+Sun, D.-W.; Deng, S.-J. A Theoretical Model Predicting the Effective Thermal Conductivity in Powdered Metal Hydride Beds. Int.
+J. Hydrogen Energy 1990, 15, 331–336. [CrossRef]
+Sandrock, G.; Bowman, R.C. Gas-Based Hydride Applications: Recent Progress and Future Needs. J. Alloys Compd. 2003, 356–357,
+794–799. [CrossRef]
+Block, F.R.; Dey, A.; Kappes, H.; Reith, K. Hydrogen Purification with Metal Hydrides in a New Kind of Reactor. J. Less Common
+Met. 1987, 131, 329–335. [CrossRef]
+Krane, P.; Nash, A.L.; Ziviani, D.; Braun, J.E.; Marconnet, A.M.; Jain, N. Dynamic Modeling and Control of a Two-Reactor Metal
+Hydride Energy Storage System. Appl. Energy 2022, 325, 119836. [CrossRef]
+Zhang, X.; Liu, L.; Wang, J.; Ju, X.; Si, R.; Feng, J.; Guo, J.; Chen, P. The Role of Lanthanum Hydride Species in La2 O3 Supported
+Ru Cluster Catalyst for Ammonia Synthesis. J. Catal. 2023, 417, 382–395. [CrossRef]
+Lv, Y.; Zhang, X.; Chen, W.; Ju, S.; Liu, Z.; Xia, G.; Ichikawa, T.; Zhang, T.; Yu, X. Ion Diffusion, and Hysteresis of Magnesium
+Hydride Conversion Electrode Materials. J. Mater. Sci. Technol. 2023, 155, 47–53. [CrossRef]
+Zhou, P.; Cao, Z.; Xiao, X.; Zhan, L.; He, J.; Zhao, Y.; Wang, L.; Yan, M.; Li, Z.; Chen, L. Development of RE-Based and Ti-Based
+Multicomponent Metal Hydrides with Comprehensive Properties Comparison for Fuel Cell Hydrogen Feeding System. Mater.
+Today Energy 2023, 33, 101258. [CrossRef]
+Tiwari, S.; Sharma, P. Integration of Metal Hydride Reactor with Thermocline Based Heat Storage System. J. Energy Storage 2023,
+59, 106506. [CrossRef]
+Kumar, A.; Muthukumar, P. Experimental Investigation on the Poisoning Characteristics of Methane as Impurity in La0.9 Ce0.1 Ni5
+Based Hydrogen Storage and Purification System. Energy 2022, 259, 124888. [CrossRef]
+Krishnamoorthy, U.; Gandhi Ayyavu, P.; Panchal, H.; Shanmugam, D.; Balasubramani, S.; Al-rubaie, A.J.; Al-khaykan, A.; Oza,
+A.D.; Hembrom, S.; Patel, T.; et al. Efficient Battery Models for Performance Studies-Lithium Ion and Nickel Metal Hydride
+Battery. Batteries 2023, 9, 52. [CrossRef]
+Zhang, M.; Liang, X.; Wang, Y.; Yang, H.; Liang, G. Insights into the Capture of CO2 by Nickel Hydride Complexes. Catalysts
+2022, 12, 790. [CrossRef]
+Brestovič, T.; Jasminská, N.; Lázár, M. Measurements of Operating Parameters of a Metal Hydride Compressor with a Heat Pump.
+Appl. Sci. 2022, 12, 3302. [CrossRef]
+Massaro, M.C.; Biga, R.; Kolisnichenko, A.; Marocco, P.; Monteverde, A.H.A.; Santarelli, M. Potential and Technical Challenges
+of On-Board Hydrogen Storage Technologies Coupled with Fuel Cell Systems for Aircraft Electrification. J. Power Sources 2023,
+555, 232397. [CrossRef]
+
+Energies 2023, 16, 3444
+
+16.
+17.
+18.
+19.
+
+20.
+
+21.
+22.
+
+23.
+24.
+25.
+
+26.
+27.
+28.
+29.
+30.
+31.
+32.
+33.
+34.
+35.
+36.
+37.
+38.
+39.
+40.
+41.
+42.
+43.
+44.
+
+23 of 27
+
+Nguyen, H.Q.; Shabani, B. Thermal Management of Metal Hydride Hydrogen Storage Using Phase Change Materials for
+Standalone Solar Hydrogen Systems: An Energy/Exergy Investigation. Int. J. Hydrogen Energy 2022, 47, 1735–1751. [CrossRef]
+Eadi, S.B.; Oh, J.S.; Kim, C.; Sim, G.; Kim, K.; Kim, H.Y.; Kim, J.J.; Do, H.R.; Chu, S.; Jung, S.H.; et al. Improved Hydrogen Gas
+Sensing Performance of Pd–Ni Alloy Thin Films. Int. J. Hydrogen Energy 2023, 48, 12534–12539. [CrossRef]
+Kumar, S.; Sharma, R.; Srinivasa Murthy, S.; Dutta, P.; He, W.; Wang, J. Thermal Analysis and Optimization of Stand-Alone
+Microgrids with Metal Hydride Based Hydrogen Storage. Sustain. Energy Technol. Assess. 2022, 52, 102043. [CrossRef]
+Tian, H.; Wang, Z.; Guo, Z.; Yu, R.; Cai, G.; Zhang, Y. Effect of Metal and Metalloid Solid-Fuel Additives on Performance and
+Nozzle Ablation in a Hydroxy-Terminated Polybutadiene Based Hybrid Rocket Motor. Aerosp. Sci. Technol. 2022, 123, 107493.
+[CrossRef]
+Lee, C.-Y.; Shen, C.-C.; Chiu, C.-W.; Hsieh, H.-T. Real-Time Micro-Monitoring of Surface Temperature and Strain of Magnesium
+Hydrogen Tank through Self-Made Two-In-One Flexible High-Temperature Micro-Sensor. Micromachines 2022, 13, 1370. [CrossRef]
+[PubMed]
+Sezgin, B.; Devrim, Y.; Ozturk, T.; Eroglu, I. Hydrogen Energy Systems for Underwater Applications. Int. J. Hydrogen Energy 2022,
+47, 19780–19796. [CrossRef]
+Ren, K.; Miao, J.; Shen, W.; Su, H.; Pan, Y.; Zhao, J.; Pan, X.; Li, Y.; Fu, Y.; Zhang, L.; et al. High Temperature Electrochemical
+Discharge Performance of LaFeO3 Coated with C/Ni as Anode Material for NiMH Batteries. Prog. Nat. Sci. Mater. Int. 2022, 32,
+684–692. [CrossRef]
+Dashbabu, D.; Kumar, E.A.; Jain, I.P. Thermodynamic Analysis of a Metal Hydride Hydrogen Compressor with Aluminium
+Substituted LaNi5 Hydrides. Int. J. Hydrogen Energy 2022. [CrossRef]
+Jana, S.; Raju, N.N.; Muthukumar, P. Performance Tests on Embedded Cooling Tube Type Metal Hydride Reactor for Heating and
+Cooling Applications. Therm. Sci. Eng. Prog. 2022, 33, 101349. [CrossRef]
+Raj Singh, U.; Sai Kaushik, A.; Sekhar Bhogilla, S. A Novel Renewable Energy Storage System Based on Reversible SOFC,
+Hydrogen Storage, Rankine Cycle and Absorption Refrigeration System. Sustain. Energy Technol. Assess. 2022, 51, 101978.
+[CrossRef]
+Chang, H.; Tao, Y.B.; Ye, H. Numerical Study on Hydrogen and Thermal Storage Performance of a Sandwich Reaction Bed Filled
+with Metal Hydride and Thermochemical Material. Int. J. Hydrogen Energy 2023. [CrossRef]
+Lototskyy, M.; Satya Sekhar, B.; Muthukumar, P.; Linkov, V.; Pollet, B.G. Niche Applications of Metal Hydrides and Related
+Thermal Management Issues. J. Alloys Compd. 2015, 645, S117–S122. [CrossRef]
+Sandrock, G. Hydride Storage. In Handbook of Fuel Cells; John Wiley & Sons, Ltd.: Chichester, UK, 2010.
+Sheft, I.; Gruen, D.M.; Lamich, G.J. Current Status and Performance of the Argonne Hycsos Chemical Heat Pump System. J. Less
+Common Met. 1980, 74, 401–409. [CrossRef]
+Bjurstrom, H.; Komazaki, Y.; Suda, S. The Dynamics of Hydrogen Transfer in a Metal Hydride Heat Pump. J. Less Common Met.
+1987, 131, 225–234. [CrossRef]
+Lee, S.-G.; Lee, H.-H.; Lee, K.-Y.; Lee, J.-Y. Dynamic Reaction Characteristics of the Tubular Hydride Bed with Large Mass. J.
+Alloys Compd. 1996, 235, 84–92. [CrossRef]
+Park, J.-G.; Han, S.-C.; Jang, H.-Y.; Lee, S.-M.; Lee, P.S.; Lee, J.-Y. The Development of Compressor-Driven Metal Hydride Heat
+Pump (CDMHHP) System as an Air Conditioner. Int. J. Hydrogen Energy 2002, 27, 941–944. [CrossRef]
+Klein, H.-P.; Groll, M. Development of a Two-Stage Metal Hydride System as Topping Cycle in Cascading Sorption Systems for
+Cold Generation. Appl. Therm. Eng. 2002, 22, 631–639. [CrossRef]
+Muthukumar, P.; Prakashmaiya, M.; Srinivasamurthy, S. Experiments on a Metal Hydride Based Hydrogen Compressor. Int. J.
+Hydrogen Energy 2005, 30, 879–892. [CrossRef]
+Veerraju, C.; Gopal, M.R. Heat and Mass Transfer Studies on Elliptical Metal Hydride Tubes and Tube Banks. Int. J. Hydrogen
+Energy 2009, 34, 4340–4350. [CrossRef]
+Gopal, M.R.; Murthy, S.S. Experiments on a Metal Hydride Cooling System Working with ZrMnFe/MmNi4.5 Al0.5 Pair. Int. J.
+Refrig. 1999, 22, 137–149. [CrossRef]
+Ron, M. A Hydrogen Heat Pump as a Bus Air Conditioner. J. Less Common Met. 1984, 104, 259–278. [CrossRef]
+Park, J.-G.; Jang, K.-J.; Lee, P.S.; Lee, J.-Y. The Operating Characteristics of the Compressor-Driven Metal Hydride Heat Pump
+System. Int. J. Hydrogen Energy 2001, 26, 701–706. [CrossRef]
+Chernikov, A.; Izhvanov, L.; Solovey, A.; Frolov, V.; Shanin, Y. An Installation for Water Cooling Based on a Metal Hydride Heat
+Pump. J. Alloys Compd. 2002, 330–332, 907–910. [CrossRef]
+Werner, R.; Groll, M. Two-Stage Metal Hydride Heat Transformer Laboratory Model: Results of Reaction Bed Tests. J. Less
+Common Met. 1991, 172–174, 1122–1129. [CrossRef]
+Goodell, P.D. Thermal Conductivity of Hydriding Alloy Powders and Comparisons of Reactor Systems. J. Less Common Met. 1980,
+74, 175–184. [CrossRef]
+Anevi, G.; Jansson, L.; Lewis, D. Dynamics of Hydride Heat Pumps. J. Less Common Met. 1984, 104, 341–348. [CrossRef]
+Wang, Y.; Yang, F.; Zhang, Z.; Feng, X.; Guo, Q. Design and Process Simulation of Metal Hydride Reactors. Hsi-An Chiao Tung Ta
+Hsueh/J. Xi’an Jiaotong Univ. 2006, 40, 831–835.
+Zhang, Z.; Wang, Y.; Feng, X.; Yang, F.; Guo, Q. An Annulus-Disc Type Chemical Heat Pump Reactor. 2007. Available online:
+https://patents.google.com/patent/CN1303379C/zh (accessed on 9 April 2023).
+
+Energies 2023, 16, 3444
+
+45.
+46.
+47.
+48.
+49.
+50.
+51.
+52.
+53.
+54.
+
+55.
+56.
+57.
+58.
+59.
+60.
+61.
+62.
+63.
+64.
+65.
+66.
+67.
+68.
+69.
+70.
+71.
+72.
+73.
+
+24 of 27
+
+Bogdanović, B.; Ritter, A.; Spliethoff, B.; Straβburger, K. A Process Steam Generator Based on the High Temperature Magnesium
+Hydride/Magnesium Heat Storage System. Int. J. Hydrogen Energy 1995, 20, 811–822. [CrossRef]
+Lévesque, S.; Ciureanu, M.; Roberge, R.; Motyka, T. Hydrogen Storage for Fuel Cell Systems with Stationary Applications— I.
+Transient Measurement Technique for Packed Bed Evaluation. Int. J. Hydrogen Energy 2000, 25, 1095–1105. [CrossRef]
+Wakao, S.; Sekine, M.; Endo, H.; Ito, T.; Kanazawa, H. A Heat Storage Reactor for Metal Hydrides. J. Less Common Met. 1983, 89,
+341–350. [CrossRef]
+Dehouche, Z.; de Jong, W.; Willers, E.; Isselhorst, A.; Groll, M. Modelling and Simulation of Heating/Air-Conditioning Systems
+Using the Multi-Hydride-Thermal-Wave Concept. Appl. Therm. Eng. 1998, 18, 457–480. [CrossRef]
+Qin, F.; Chen, J.; Lu, M.; Chen, Z.; Zhou, Y.; Yang, K. Development of a Metal Hydride Refrigeration System as an Exhaust
+Gas-Driven Automobile Air Conditioner. Renew. Energy 2007, 32, 2034–2052. [CrossRef]
+Payá, J.; Linder, M.; Laurien, E.; Corberán, J.M. Dynamic Model and Experimental Results of a Thermally Driven Metal Hydride
+Cooling System. Int. J. Hydrogen Energy 2009, 34, 3173–3184. [CrossRef]
+Mellouli, S.; Askri, F.; Dhaou, H.; Jemni, A.; Ben Nasrallah, S. A Novel Design of a Heat Exchanger for a Metal-Hydrogen Reactor.
+Int. J. Hydrogen Energy 2007, 32, 3501–3507. [CrossRef]
+Yonezu, I.; Nasako, K.; Honda, N.; Sakai, T. Development of Thermal Energy Storage Technology Using Metal Hydrides. J. Less
+Common Met. 1983, 89, 351–358. [CrossRef]
+Mosher, D.A.; Arsenault, S.; Tang, X.; Anton, D.L. Design, Fabrication and Testing of NaAlH4 Based Hydrogen Storage Systems.
+J. Alloys Compd. 2007, 446–447, 707–712. [CrossRef]
+Verga, M.; Armanasco, F.; Guardamagna, C.; Valli, C.; Bianchin, A.; Agresti, F.; Lo Russo, S.; Maddalena, A.; Principi, G. Scaling
+up Effects of Mg Hydride in a Temperature and Pressure-Controlled Hydrogen Storage Device. Int. J. Hydrogen Energy 2009, 34,
+4602–4610. [CrossRef]
+Dehouche, Z.; Peretti, H.; Yoo, Y.; Belkacemi, K.; Goyette, J. Catalyzed Light Hydride Nanomaterials Embedded in a MicroChannels Hydrogen Storage Container. Recent Pat. Nanotechnol. 2009, 3, 116–134. [CrossRef] [PubMed]
+Meng, X.; Yang, F.; Wang, Y.; Deng, J.; Zhang, Z. Design and Process Simulation of a Micro-Channel Chemical Heat Pump Reactor.
+In Proceedings of the Chinese Chemical Engineering Machinery Conference 2008, Shanghai, China, 18–22 July 2008.
+Hardy, B.J.; Anton, D.L. Hierarchical Methodology for Modeling Hydrogen Storage Systems. Part II: Detailed Models. Int. J.
+Hydrogen Energy 2009, 34, 2992–3004. [CrossRef]
+Freni, A.; Cipitì, F.; Cacciola, G. Finite Element-Based Simulation of a Metal Hydride-Based Hydrogen Storage Tank. Int. J.
+Hydrogen Energy 2009, 34, 8574–8582. [CrossRef]
+Wierse, M.; Werner, R.; Groll, M. Magnesium Hydride for Thermal Energy Storage in a Small-Scale Solar-Thermal Power Station.
+J. Less Common Met. 1991, 172–174, 1111–1121. [CrossRef]
+Laurencelle, F.; Dehouche, Z.; Goyette, J.; Bose, T. Integrated Electrolyser—Metal Hydride Compression System. Int. J. Hydrogen
+Energy 2006, 31, 762–768. [CrossRef]
+Jemni, A.; Nasrallah, S.B.; Lamloumi, J. Experimental and Theoretical Study of a Metal–Hydrogen Reactor. Int. J. Hydrogen Energy
+1999, 24, 631–644. [CrossRef]
+Li, Q.; Lin, Q.; Chou, K.-C.; Jiang, L. A Study on the Hydriding-Dehydriding Kinetics of Mg1.9 Al0.1 Ni. J. Mater. Sci. 2004, 39,
+61–65. [CrossRef]
+MacDonald, B.D.; Rowe, A.M. Impacts of External Heat Transfer Enhancements on Metal Hydride Storage Tanks. Int. J. Hydrogen
+Energy 2006, 31, 1721–1731. [CrossRef]
+Satya Sekhar, B.; Lototskyy, M.; Kolesnikov, A.; Moropeng, M.L.; Tarasov, B.P.; Pollet, B.G. Performance Analysis of Cylindrical
+Metal Hydride Beds with Various Heat Exchange Options. J. Alloys Compd. 2015, 645, S89–S95. [CrossRef]
+Mellouli, S.; Askri, F.; Dhaou, H.; Jemni, A.; Ben Nasrallah, S. Numerical Simulation of Heat and Mass Transfer in Metal Hydride
+Hydrogen Storage Tanks for Fuel Cell Vehicles. Int. J. Hydrogen Energy 2010, 35, 1693–1705. [CrossRef]
+Singh, A.; Prakash Maiya, M.; Srinivasa Murthy, S. Performance of a Solid State Hydrogen Storage Device with Finned Tube Heat
+Exchanger. Int. J. Hydrogen Energy 2017, 42, 26855–26871. [CrossRef]
+Keshari, V.; Maiya, M.P. Design and Investigation of Hydriding Alloy Based Hydrogen Storage Reactor Integrated with a Pin Fin
+Tube Heat Exchanger. Int. J. Hydrogen Energy 2018, 43, 7081–7095. [CrossRef]
+Gupta, S.; Sharma, V.K. Design and Analysis of Metal Hydride Reactor Embedded with Internal Copper Fins and External Water
+Cooling. Int. J. Energy Res. 2021, 45, 1836–1856. [CrossRef]
+Raju, M.; Kumar, S. Optimization of Heat Exchanger Designs in Metal Hydride Based Hydrogen Storage Systems. Int. J. Hydrogen
+Energy 2012, 37, 2767–2778. [CrossRef]
+Karmakar, A.; Mallik, A.; Gupta, N.; Sharma, P. Studies on 10 kg Alloy Mass Metal Hydride Based Reactor for Hydrogen Storage.
+Int. J. Hydrogen Energy 2021, 46, 5495–5506. [CrossRef]
+Raju, N.N.; Kumar, A.; Malleswararao, K.; Muthukumar, P. Parametric Studies on LaNi4.7 Al0.3 Based Hydrogen Storage Reactor
+with Embedded Cooling Tubes. Energy Procedia 2019, 158, 2384–2390. [CrossRef]
+Wang, X.; Liu, H.; Li, H. A 70 MPa Hydrogen-Compression System Using Metal Hydrides. Int. J. Hydrogen Energy 2011, 36,
+9079–9085. [CrossRef]
+El Mghari, H.; Huot, J.; Xiao, J. Analysis of Hydrogen Storage Performance of Metal Hydride Reactor with Phase Change
+Materials. Int. J. Hydrogen Energy 2019, 44, 28893–28908. [CrossRef]
+
+Energies 2023, 16, 3444
+
+74.
+75.
+76.
+77.
+78.
+79.
+
+80.
+81.
+
+82.
+
+83.
+
+84.
+85.
+
+86.
+87.
+88.
+89.
+90.
+91.
+92.
+93.
+94.
+95.
+96.
+97.
+98.
+99.
+
+25 of 27
+
+Tong, L.; Xiao, J.; Bénard, P.; Chahine, R. Thermal Management of Metal Hydride Hydrogen Storage Reservoir Using Phase
+Change Materials. Int. J. Hydrogen Energy 2019, 44, 21055–21066. [CrossRef]
+Park, C.S.; Jung, K.; Jeong, S.U.; Kang, K.S.; Lee, Y.H.; Park, Y.-S.; Park, B.H. Development of Hydrogen Storage Reactor Using
+Composite of Metal Hydride Materials with ENG. Int. J. Hydrogen Energy 2020, 45, 27434–27442. [CrossRef]
+Muthukumar, P.; Madhavakrishna, U.; Dewan, A. Parametric Studies on a Metal Hydride Based Hydrogen Storage Device. Int. J.
+Hydrogen Energy 2007, 32, 4988–4997. [CrossRef]
+Urunkar, R.U.; Patil, S.D. Enhancement of Heat and Mass Transfer Characteristics of Metal Hydride Reactor for Hydrogen Storage
+Using Various Nanofluids. Int. J. Hydrogen Energy 2021, 46, 19486–19497. [CrossRef]
+Pinjari, S.; Bera, T.; Kapur, G.S.; Kjeang, E. The Mechanism and Sorption Kinetic Analysis of Hydrogen Storage at Room
+Temperature Using Acid Functionalized Carbon Nanotubes. Int. J. Hydrogen Energy 2023, 48, 1930–1942. [CrossRef]
+Chibani, A.; Merouani, S.; Bougriou, C. The Performance of Hydrogen Desorption from a Metal Hydride with Heat Supply by a
+Phase Change Material Incorporated in Porous Media (Metal Foam): Heat and Mass Transfer Assessment. J. Energy Storage 2022,
+51, 104449. [CrossRef]
+Nguyen, H.Q.; Mourshed, M.; Paul, B.; Shabani, B. An Experimental Study of Employing Organic Phase Change Material for
+Thermal Management of Metal Hydride Hydrogen Storage. J. Energy Storage 2022, 55, 105457. [CrossRef]
+Chibani, A.; Merouani, S.; Gherraf, N.; Benguerba, Y. Thermodynamics and Kinetics Analysis of Hydrogen Absorption in
+Large-Scale Metal Hydride Reactor Coupled to Phase Change Material-Metal Foam-Based Latent Heat Storage System. Int. J.
+Hydrogen Energy 2022, 47, 27617–27632. [CrossRef]
+Chibani, A.; Dehane, A.; Merouani, S.; Bougriou, C.; Guerraiche, D. Melting/Solidification of Phase Change Material in a
+Multi-Tube Heat Exchanger in the Presence of Metal Foam: Effect of the Geometrical Configuration of Tubes. Energy Storage Sav.
+2022, 1, 241–258. [CrossRef]
+Chibani, A.; Merouani, S.; Gherraf, N.; Ferhoune, I.; Benguerba, Y. Numerical Investigation of Heat and Mass Transfer during
+Hydrogen Desorption in a Large-Scale Metal Hydride Reactor Coupled to a Phase Change Material with Nano-Oxide Additives.
+Int. J. Hydrogen Energy 2022, 47, 14611–14627. [CrossRef]
+Chibani, A.; Merouani, S.; Bougriou, C.; Dehane, A. Heat and Mass Transfer Characteristics of Charging in a Metal Hydride-Phase
+Change Material Reactor with Nano Oxide Additives: The Large Scale-Approach. Appl. Therm. Eng. 2022, 213, 118622. [CrossRef]
+Elarem, R.; Alqahtani, T.; Mellouli, S.; Edacherian, A.; Askri, F.; Jemni, A. Numerical Analysis of a Built-in Thermal Storage
+System of Metal Hydride and Nanoparticles Enhanced Phase Change Material and Nanofluid. Int. J. Energy Res. 2021, 45,
+5881–5893. [CrossRef]
+Anbarasu, S.; Muthukumar, P.; Mishra, S.C. Thermal Modeling of LmNi4.91 Sn0.15 Based Solid State Hydrogen Storage Device
+with Embedded Cooling Tubes. Int. J. Hydrogen Energy 2014, 39, 15549–15562. [CrossRef]
+Blinov, D.V.; Borzenko, V.I.; Dunikov, D.O.; Romanov, I.A. Experimental Investigations and a Simple Balance Model of a Metal
+Hydride Reactor. Int. J. Hydrogen Energy 2014, 39, 19361–19368. [CrossRef]
+Kumar, A.; Raju, N.N.; Muthukumar, P.; Selvan, P.V. Experimental Studies on Industrial Scale Metal Hydride Based Hydrogen
+Storage System with Embedded Cooling Tubes. Int. J. Hydrogen Energy 2019, 44, 13549–13560. [CrossRef]
+Dhaou, H.; Souahlia, A.; Mellouli, S.; Askri, F.; Jemni, A.; Ben Nasrallah, S. Experimental Study of a Metal Hydride Vessel Based
+on a Finned Spiral Heat Exchanger. Int. J. Hydrogen Energy 2010, 35, 1674–1680. [CrossRef]
+Mohan, G.; Prakash Maiya, M.; Srinivasa Murthy, S. The Performance Simulation of Air-Cooled Hydrogen Storage Device with
+Plate Fins. Int. J. Low-Carbon Technol. 2010, 5, 25–34. [CrossRef]
+Afzal, M.; Sharma, P. Design of a Large-Scale Metal Hydride Based Hydrogen Storage Reactor: Simulation and Heat Transfer
+Optimization. Int. J. Hydrogen Energy 2018, 43, 13356–13372. [CrossRef]
+Jana, S.; Muthukumar, P. Design and Performance Prediction of a Compact MmNi4.6 Al0.4 Based Hydrogen Storage System. J.
+Energy Storage 2021, 39, 102612. [CrossRef]
+Luo, S.; Luo, W.; Clewley, J.D.; Flanagan, T.B.; Wade, L.A. Thermodynamic Studies of the LaNi5 −xSnx-H System from x = 0 to
+0.5. J. Alloys Compd. 1995, 231, 467–472. [CrossRef]
+Linder, M.; Kulenovic, R. An Energy-Efficient Air-Conditioning System for Hydrogen Driven Cars. Int. J. Hydrogen Energy 2011,
+36, 3215–3221. [CrossRef]
+Weckerle, C.; Nasri, M.; Hegner, R.; Linder, M.; Bürger, I. A Metal Hydride Air-Conditioning System for Fuel Cell
+Vehicles—Performance Investigations. Appl. Energy 2019, 256, 113957. [CrossRef]
+Suda, S. Experimental Evaluation of Heat Pump Performance in Connection with Metal Hydride Properties. J. Less Common Met.
+1984, 104, 211–222. [CrossRef]
+Lozano, G.A.; Bellosta von Colbe, J.M.; Bormann, R.; Klassen, T.; Dornheim, M. Enhanced Volumetric Hydrogen Density in
+Sodium Alanate by Compaction. J. Power Sources 2011, 196, 9254–9259. [CrossRef]
+Dehouche, Z.; Grimard, N.; Laurencelle, F.; Goyette, J.; Bose, T.K. Hydride Alloys Properties Investigations for Hydrogen Sorption
+Compressor. J. Alloys Compd. 2005, 399, 224–236. [CrossRef]
+Humphries, T.D.; Yang, J.; Mole, R.A.; Paskevicius, M.; Bird, J.E.; Rowles, M.R.; Tortoza, M.S.; Sofianos, M.V.; Yu, D.; Buckley,
+C.E. Fluorine Substitution in Magnesium Hydride as a Tool for Thermodynamic Control. J. Phys. Chem. C 2020, 124, 9109–9117.
+[CrossRef]
+
+Energies 2023, 16, 3444
+
+26 of 27
+
+100. Jepsen, J.; Milanese, C.; Puszkiel, J.; Girella, A.; Schiavo, B.; Lozano, G.; Capurso, G.; Bellosta von Colbe, J.; Marini, A.; Kabelac,
+S.; et al. Fundamental Material Properties of the 2LiBH4 -MgH2 Reactive Hydride Composite for Hydrogen Storage: (II) Kinetic
+Properties. Energies 2018, 11, 1170. [CrossRef]
+101. Pourpoint, T.L.; Sisto, A.; Smith, K.C.; Voskuilen, T.G.; Visaria, M.K.; Zheng, Y.; Fisher, T.S. Performance of Thermal Enhancement
+Materials in High Pressure Metal Hydride Storage Systems. In Proceedings of the Heat Transfer Summer Conference, Jacksonville,
+FL, USA, 10–14 August 2008; Volume 1, pp. 37–46.
+102. Lozano, G.A.; Eigen, N.; Keller, C.; Dornheim, M.; Bormann, R. Effects of Heat Transfer on the Sorption Kinetics of Complex
+Hydride Reacting Systems. Int. J. Hydrogen Energy 2009, 34, 1896–1903. [CrossRef]
+103. Meethom, S.; Kaewsuwan, D.; Chanlek, N.; Utke, O.; Utke, R. Enhanced Hydrogen Sorption of LiBH4 –LiAlH4 by Quenching
+Dehydrogenation, Ball Milling, and Doping with MWCNTs. J. Phys. Chem. Solids 2020, 136, 109202. [CrossRef]
+104. Inoue, S.; Iba, Y.; Matsumura, Y. Drastic Enhancement of Effective Thermal Conductivity of a Metal Hydride Packed Bed by
+Direct Synthesis of Single-Walled Carbon Nanotubes. Int. J. Hydrogen Energy 2012, 37, 1836–1841. [CrossRef]
+105. Gao, S.; Wang, X.; Liu, H.; He, T.; Wang, Y.; Li, S.; Yan, M. Effects of Nano-Composites (FeB, FeB/CNTs) on Hydrogen Storage
+Properties of MgH2 . J. Power Sources 2019, 438, 227006. [CrossRef]
+106. Bae, S.-C.; Tanae, T.; Monde, M.; Katsuta, M. Heat Transfer Enhancement of Metal Hydride Particle Bed for Heat Driven Type
+Refrigerator by Carbon Fiber. J. Therm. Sci. Technol. 2008, 3, 2–10. [CrossRef]
+107. Yasuda, N.; Tsuchiya, T.; Okinaka, N.; Akiyama, T. Thermal Conductivity and Cycle Characteristic of Metal Hydride Sheet
+Formed Using Aramid Pulp and Carbon Fiber. Int. J. Hydrogen Energy 2013, 38, 1657–1661. [CrossRef]
+108. Fujioka, K.; Hatanaka, K.; Hirata, Y. Composite Reactants of Calcium Chloride Combined with Functional Carbon Materials for
+Chemical Heat Pumps. Appl. Therm. Eng. 2008, 28, 304–310. [CrossRef]
+109. Shim, J.-H.; Park, M.; Lee, Y.H.; Kim, S.; Im, Y.H.; Suh, J.-Y.; Cho, Y.W. Effective Thermal Conductivity of MgH2 Compacts
+Containing Expanded Natural Graphite under a Hydrogen Atmosphere. Int. J. Hydrogen Energy 2014, 39, 349–355. [CrossRef]
+110. Chaise, A.; de Rango, P.; Marty, P.; Fruchart, D.; Miraglia, S.; Olivès, R.; Garrier, S. Enhancement of Hydrogen Sorption in
+Magnesium Hydride Using Expanded Natural Graphite. Int. J. Hydrogen Energy 2009, 34, 8589–8596. [CrossRef]
+111. Zamengo, M.; Ryu, J.; Kato, Y. Magnesium Hydroxide—Expanded Graphite Composite Pellets for a Packed Bed Reactor Chemical
+Heat Pump. Appl. Therm. Eng. 2013, 61, 853–858. [CrossRef]
+112. Romanov, I.A.; Borzenko, V.I.; Kazakov, A.N. Influence of High Thermal Conductivity Addition on PCT-Isotherms of Hydrogen
+Storage Alloy. J. Phys. Conf. Ser. 2018, 1128, 012105. [CrossRef]
+113. Wang, H.; Prasad, A.K.; Advani, S.G. Hydrogen Storage Systems Based on Hydride Materials with Enhanced Thermal Conductivity. Int. J. Hydrogen Energy 2012, 37, 290–298. [CrossRef]
+114. Wang, H.; Prasad, A.K.; Advani, S.G. Accelerating Hydrogen Absorption in a Metal Hydride Storage Tank by Physical Mixing.
+Int. J. Hydrogen Energy 2014, 39, 11035–11046. [CrossRef]
+115. Romanov, I.A.; Borzenko, V.I.; Kazakov, A.N. Using the Copper-Foam for Thermal Conductivity Improvement of La0.9 Ce0.1 Ni5 Alloy Bed during Interaction with Hydrogen. J. Phys. Conf. Ser. 2019, 1359, 012103. [CrossRef]
+116. Lewis, S.D.; Chippar, P. Analysis of Heat and Mass Transfer During Charging and Discharging in a Metal Hydride—Phase
+Change Material Reactor. J. Energy Storage 2021, 33, 102108. [CrossRef]
+117. Nagel, M.; Komazaki, Y.; Suda, S. Effective Thermal Conductivity of a Metal Hydride Bed Augmented with a Copper Wire Matrix.
+J. Less Common Met. 1986, 120, 35–43. [CrossRef]
+118. Anil Kumar, E.; Madaria, Y.; Sarath Babu, K.; Srinivasa Murthy, S. Influence of Effective Thermal Conductivity on Hydrogen
+Sorption in Mg-LaNi4.6 Al0.4 Composite Hydride Beds for Thermal Energy Storage. Therm. Sci. Eng. Prog. 2020, 19, 100653.
+[CrossRef]
+119. Laurencelle, F.; Goyette, J. Simulation of Heat Transfer in a Metal Hydride Reactor with Aluminium Foam. Int. J. Hydrogen Energy
+2007, 32, 2957–2964. [CrossRef]
+120. Kim, J.B.; Han, G.; Kwon, Y.; Bae, J.; Cho, E.; Cho, S.; Lee, B.J. Thermal Design of a Hydrogen Storage System Using La(Ce)Ni5 .
+Int. J. Hydrogen Energy 2020, 45, 8742–8749. [CrossRef]
+121. Førde, T.; Eriksen, J.; Pettersen, A.G.; Vie, P.J.S.; Ulleberg, Ø. Thermal Integration of a Metal Hydride Storage Unit and a PEM
+Fuel Cell Stack. Int. J. Hydrogen Energy 2009, 34, 6730–6739. [CrossRef]
+122. Chung, C.A.; Yang, S.-W.; Yang, C.-Y.; Hsu, C.-W.; Chiu, P.-Y. Experimental Study on the Hydrogen Charge and Discharge Rates
+of Metal Hydride Tanks Using Heat Pipes to Enhance Heat Transfer. Appl. Energy 2013, 103, 581–587. [CrossRef]
+123. Chung, C.A.; Chen, Y.-Z.; Chen, Y.-P.; Chang, M.-S. CFD Investigation on Performance Enhancement of Metal Hydride Hydrogen
+Storage Vessels Using Heat Pipes. Appl. Therm. Eng. 2015, 91, 434–446. [CrossRef]
+124. Tetuko, A.P.; Shabani, B.; Andrews, J. Thermal Coupling of PEM Fuel Cell and Metal Hydride Hydrogen Storage Using Heat
+Pipes. Int. J. Hydrogen Energy 2016, 41, 4264–4277. [CrossRef]
+125. Meng, X.; Wu, Z.; Bao, Z.; Yang, F.; Zhang, Z. Performance Simulation and Experimental Confirmation of a Mini-Channel Metal
+Hydrides Reactor. Int. J. Hydrogen Energy 2013, 38, 15242–15253. [CrossRef]
+126. Mudawar, I.; Visaria, M. Coiled and Microchannel Heat Exchangers for Metal Hydride Storage Systems 2014. U.S. Patent No.
+8778063B2, 15 July 2014.
+127. Garrier, S.; Delhomme, B.; de Rango, P.; Marty, P.; Fruchart, D.; Miraglia, S. A New MgH2 Tank Concept Using a Phase-Change
+Material to Store the Heat of Reaction. Int. J. Hydrogen Energy 2013, 38, 9766–9771. [CrossRef]
+
+Energies 2023, 16, 3444
+
+27 of 27
+
+128. Rabienataj Darzi, A.A.; Hassanzadeh Afrouzi, H.; Moshfegh, A.; Farhadi, M. Absorption and Desorption of Hydrogen in Long
+Metal Hydride Tank Equipped with Phase Change Material Jacket. Int. J. Hydrogen Energy 2016, 41, 9595–9610. [CrossRef]
+129. Ben Mâad, H.; Askri, F.; Ben Nasrallah, S. Heat and Mass Transfer in a Metal Hydrogen Reactor Equipped with a Phase-Change
+Heat-Exchanger. Int. J. Therm. Sci. 2016, 99, 271–278. [CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+
+

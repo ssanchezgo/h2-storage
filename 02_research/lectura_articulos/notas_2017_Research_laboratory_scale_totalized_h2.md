@@ -1,6 +1,11 @@
 # Notas de Lectura: Research and development of a laboratory scale Totalized Hydrogen Energy Utilization System
 
-**Autor:** Sekhar et al.  
+
+**Autor:** Sekhar et al.
+
+**Revista:** energy
+
+
 **Referencia BibTeX:** `sekhar2017`
 
 **Fecha de Publicación:** 2017
@@ -9,119 +14,150 @@
 
 ## 1. Resumen
 
+
 Este artículo presenta el desarrollo de un Sistema de Utilización Total de Energía de Hidrógeno (Totalized Hydrogen Energy Utilization System - THEUS) a escala de laboratorio que integra producción, almacenamiento y utilización de hidrógeno en un sistema compacto autónomo. El enfoque innovador combina electrolizador alcalino (producción), tanque de hidruro metálico LaNi5 (almacenamiento), celda de combustible PEM (utilización) y recuperación térmica integrada. El sistema demuestra viabilidad técnica para aplicaciones residenciales/comerciales pequeñas (1-3 kW) con eficiencia global del 35-45% y manejo inteligente de energía. Se valida experimentalmente durante 500+ ciclos operativos con foco en optimización de flujos energéticos entre subsistemas y minimización de pérdidas térmicas mediante integración térmica avanzada.
 
 ## 2. Imagen de Referencia
+
 
 ![Imagen de referencia](img/notas_2017_Research_laboratory_scale_totalized_h2/reactor.png)
 
 ## 3. Puntos Clave y Datos
 
+
 ### Aspectos Principales
 
+
 - **Innovación Principal:** Sistema integrado THEUS que totaliza producción-almacenamiento-utilización H2 con recuperación térmica entre subsistemas (PEM→MH, Electrolizador→calefacción)
+
 - **Escala de Desarrollo:** Sistema de laboratorio 1-3 kW eléctrico, diseñado como demostrador de concepto para aplicaciones residenciales autónomas off-grid
+
 - **Tecnologías Integradas:** Electrolizador alcalino 2 kW + tanque MH LaNi5 0.8 kg + celda combustible PEM 1.5 kW + sistema control inteligente
+
 - **Resultados Operativos:** Eficiencia global round-trip 35-45%, recuperación térmica 40-55%, validación >500 ciclos carga/descarga automáticos
+
 - **Contribución Científica:** Metodología de integración térmica y balance energético entre subsistemas, algoritmo control óptimo basado en demanda variable
 
 ## 4. Características Técnicas del Sistema
 
+
 ### 4.1 Hidruro Metálico
 
-**Tipo de hidruro:** LaNi5 (aleación AB5 estándar, alta ciclabilidad)  
-**Cantidad de hidruro:** 0.8 kg (masa MH en reactor)  
-**Conductividad Térmica MH:** 0.8-1.2 W/m·K (valor típico LaNi5 sin aditivos, limitante para transferencia calor)
+
+**Tipo de hidruro:** LaNi5 (aleación AB5 estándar, alta ciclabilidad)
+**Cantidad de hidruro:** 0.8 kg (masa MH en reactor)
+**Conductividad Térmica MH:** 0.8-1.2 W/m*K (valor típico LaNi5 sin aditivos, limitante para transferencia calor)
 
 ### 4.2 Configuración Geométrica
 
+
 **Descripción del sistema:** Reactor cilíndrico vertical tipo shell-tube con 5 tubos internos de agua caliente para absorción y serpentín externo de aire para desorción. Diseño compacto optimizado para integración THEUS con electrolizador en base y FC en parte superior. Sistema modular permite reemplazo/mantenimiento componentes individuales. Aislamiento térmico 30 mm lana mineral reduce pérdidas standby <15 W.
 
-**Configuración geométrica:** Cilíndrica vertical con tubos rectos internos  
-**Longitud (mm):** 280 mm altura total reactor  
-**Diámetro (mm):** 140 mm diámetro externo shell  
-**L/D ratio:** 2.0 (relación típica para reactores compactos)  
+**Configuración geométrica:** Cilíndrica vertical con tubos rectos internos
+**Longitud (mm):** 280 mm altura total reactor
+**Diámetro (mm):** 140 mm diámetro externo shell
+**L/D ratio:** 2.0 (relación típica para reactores compactos)
 **Volumen (L):** 3.5 L volumen total reactor (incluye MH, HTF, espacio gas)
 
 ### 4.3 Transferencia de Calor
 
-**Intercambiador de Calor:**  
 
-- **Absorción H2:** 5 tubos internos acero inoxidable Ø12 mm circulación agua caliente (50-70°C) del electrolizador o calentador auxiliar  
-- **Desorción H2:** Serpentín helicoidal externo (4 vueltas, pitch 60 mm) aire caliente (65-85°C) del escape celda combustible PEM  
+**Intercambiador de Calor:**
+
+- **Absorción H2:** 5 tubos internos acero inoxidable Ø12 mm circulación agua caliente (50-70degC) del electrolizador o calentador auxiliar
+
+- **Desorción H2:** Serpentín helicoidal externo (4 vueltas, pitch 60 mm) aire caliente (65-85degC) del escape celda combustible PEM
+
 - **Innovación:** Doble sistema aprovecha calor residual ambos procesos (electrólisis exotérmica + FC exotérmica) para ciclado MH sin energía externa adicional
 
-**Coeficiente de transferencia de calor:** 180-220 W/m²·K (tubos agua interna), 45-65 W/m²·K (serpentín aire externo, convección forzada)
+**Coeficiente de transferencia de calor:** 180-220 W/m2*K (tubos agua interna), 45-65 W/m2*K (serpentín aire externo, convección forzada)
 
 ### 4.4 Condiciones de Operación
 
-**Temperatura (°C):**  
 
-- Absorción: 50-70°C (agua caliente del electrolizador, temperatura favorable equilibrio LaNi5)  
-- Desorción: 65-85°C (aire caliente del exhaust FC, suficiente para presión 5-8 bar)  
-- Ambiente: 15-35°C operación sistema THEUS
+**Temperatura (degC):**
 
-**Presión de trabajo:**  
+- Absorción: 50-70degC (agua caliente del electrolizador, temperatura favorable equilibrio LaNi5)
 
-- Absorción: 15-25 bar (presión suministro desde electrolizador con compresor mecánico 30 bar máximo)  
-- Desorción: 5-8 bar (presión suministro a celda combustible PEM, adecuada para FC sin boost)  
+- Desorción: 65-85degC (aire caliente del exhaust FC, suficiente para presión 5-8 bar)
+
+- Ambiente: 15-35degC operación sistema THEUS
+
+**Presión de trabajo:**
+
+- Absorción: 15-25 bar (presión suministro desde electrolizador con compresor mecánico 30 bar máximo)
+
+- Desorción: 5-8 bar (presión suministro a celda combustible PEM, adecuada para FC sin boost)
+
 - Seguridad: válvulas alivio 40 bar
 
-**Flujo (NL/min):**  
+**Flujo (NL/min):**
 
-- H2 absorción: 15-25 NL/min (producción electrolizador 2 kW)  
-- H2 desorción: 10-18 NL/min (consumo FC 1.5 kW variable según demanda)  
-- Agua HTF: 3-5 L/min (circuito cerrado absorción)  
+- H2 absorción: 15-25 NL/min (producción electrolizador 2 kW)
+
+- H2 desorción: 10-18 NL/min (consumo FC 1.5 kW variable según demanda)
+
+- Agua HTF: 3-5 L/min (circuito cerrado absorción)
+
 - Aire HTF: 80-120 L/min (ventilador centrífugo desorción)
 
 ### 4.5 Rendimiento del Sistema
 
-**Tiempo carga (absorción):** 45-60 minutos para carga completa 0.8 kg MH → ~70 NL H2 (~0.06 kg H2, 1.4 wt%)  
-**Tiempo descarga (desorción):** 50-70 minutos descarga completa dependiendo demanda FC (mayor tiempo por limitación térmica aire vs agua)  
-**Cantidad H2:** 60-70 NL capacidad almacenamiento (~0.055-0.065 kg H2)  
-**Eficiencia global THEUS:** 35-45% round-trip (electricidad→H2→electricidad, incluye todas pérdidas subsistemas y conversión)  
-**Recuperación térmica:** 40-55% calor residual aprovechado (electrolizador + FC → MH cycling)  
+
+**Tiempo carga (absorción):** 45-60 minutos para carga completa 0.8 kg MH → ~70 NL H2 (~0.06 kg H2, 1.4 wt%)
+**Tiempo descarga (desorción):** 50-70 minutos descarga completa dependiendo demanda FC (mayor tiempo por limitación térmica aire vs agua)
+**Cantidad H2:** 60-70 NL capacidad almacenamiento (~0.055-0.065 kg H2)
+**Eficiencia global THEUS:** 35-45% round-trip (electricidad→H2→electricidad, incluye todas pérdidas subsistemas y conversión)
+**Recuperación térmica:** 40-55% calor residual aprovechado (electrolizador + FC → MH cycling)
 **Ciclabilidad:** >500 ciclos demostrados sin degradación significativa (<5% pérdida capacidad)
 
 ## 5. Transferencia de Calor
 
+
 **Métodos de transferencia de calor utilizados:**
 
-1. **Absorción H2 (exotérmica):** Tubos internos agua caliente (50-70°C) del electrolizador mantienen temperatura favorable equilibrio y evacuan calor reacción (~25 kJ/mol H2). Flujo agua 3-5 L/min garantiza ΔT<10°C a lo largo del reactor.
+1. **Absorción H2 (exotérmica):** Tubos internos agua caliente (50-70degC) del electrolizador mantienen temperatura favorable equilibrio y evacuan calor reacción (~25 kJ/mol H2). Flujo agua 3-5 L/min garantiza dT<10degC a lo largo del reactor.
 
-2. **Desorción H2 (endotérmica):** Serpentín helicoidal externo aire caliente (65-85°C) del exhaust FC PEM suministra calor reacción (~31 kJ/mol H2). Ventilador centrífugo 80-120 L/min necesario por baja capacidad térmica aire vs agua.
+2. **Desorción H2 (endotérmica):** Serpentín helicoidal externo aire caliente (65-85degC) del exhaust FC PEM suministra calor reacción (~31 kJ/mol H2). Ventilador centrífugo 80-120 L/min necesario por baja capacidad térmica aire vs agua.
 
 3. **Gestión térmica integrada:** Sistema control monitorea temperaturas 8 puntos (reactor, electrolizador, FC, HTF) y ajusta flujos/válvulas para optimizar transferencia calor según modo operación (carga/descarga/standby). Calentadores auxiliares (resistencias eléctricas 500 W) activan solo si calor residual insuficiente.
 
 **Materiales y propiedades térmicas:**
 
-- **Reactor:** Acero inoxidable 316L (k=16 W/m·K, resistencia corrosión H2, espesor 3 mm)  
-- **Tubos HTF:** Acero inoxidable 304 (k=16.2 W/m·K, Ø12 mm pared 1 mm)  
-- **Aislamiento:** Lana mineral 30 mm espesor (k=0.04 W/m·K, reduce pérdidas standby <15 W)  
-- **MH:** LaNi5 k=0.8-1.2 W/m·K (limitante conductividad, no se usan aditivos en este diseño compacto)
+- **Reactor:** Acero inoxidable 316L (k=16 W/m*K, resistencia corrosión H2, espesor 3 mm)
+
+- **Tubos HTF:** Acero inoxidable 304 (k=16.2 W/m*K, Ø12 mm pared 1 mm)
+
+- **Aislamiento:** Lana mineral 30 mm espesor (k=0.04 W/m*K, reduce pérdidas standby <15 W)
+
+- **MH:** LaNi5 k=0.8-1.2 W/m*K (limitante conductividad, no se usan aditivos en este diseño compacto)
 
 **Eficiencia térmica:**
 
-- **Recuperación calor electrolizador:** 45-55% calor disponible (eficiencia electrolizador ~65%, calor residual ~35%) transferido a MH para absorción H2  
-- **Recuperación calor FC:** 40-50% calor disponible (eficiencia FC ~45-50%, calor residual ~50-55%) transferido a MH para desorción H2  
-- **Pérdidas standby:** <15 W con aislamiento 30 mm (importante para operación intermitente residencial)  
+- **Recuperación calor electrolizador:** 45-55% calor disponible (eficiencia electrolizador ~65%, calor residual ~35%) transferido a MH para absorción H2
+
+- **Recuperación calor FC:** 40-50% calor disponible (eficiencia FC ~45-50%, calor residual ~50-55%) transferido a MH para desorción H2
+
+- **Pérdidas standby:** <15 W con aislamiento 30 mm (importante para operación intermitente residencial)
+
 - **Eficiencia transferencia calor:** 60-70% absorción (tubos agua, mejor), 40-50% desorción (aire, limitado por convección)
 
 **Problemas y soluciones relacionados con el manejo térmico:**
 
-1. **Problema:** Aire caliente FC (65-85°C) insuficiente para desorción rápida LaNi5 vs agua caliente absorción (50-70°C)  
-   **Solución:** Serpentín helicoidal mayor área superficial (4 vueltas, pitch 60 mm) + ventilador alta capacidad 80-120 L/min. Calentador auxiliar 500 W activa si T<65°C o demanda alta.
+1. **Problema:** Aire caliente FC (65-85degC) insuficiente para desorción rápida LaNi5 vs agua caliente absorción (50-70degC)
+ **Solución:** Serpentín helicoidal mayor área superficial (4 vueltas, pitch 60 mm) + ventilador alta capacidad 80-120 L/min. Calentador auxiliar 500 W activa si T<65degC o demanda alta.
 
-2. **Problema:** Gradientes térmicos radiales en MH durante absorción rápida (15-25 NL/min alta tasa)  
-   **Solución:** 5 tubos distribuidos uniformemente + control flujo agua adaptativo reduce ΔT radial <15°C, aceptable para escala laboratorio.
+2. **Problema:** Gradientes térmicos radiales en MH durante absorción rápida (15-25 NL/min alta tasa)
+ **Solución:** 5 tubos distribuidos uniformemente + control flujo agua adaptativo reduce dT radial <15degC, aceptable para escala laboratorio.
 
-3. **Problema:** Sincronización operación electrolizador-MH-FC con demanda variable (perfil residencial intermitente)  
-   **Solución:** Algoritmo control basado en estado carga MH (SOC), prioridad demanda, y disponibilidad renovables. MH actúa como buffer energético desacoplando producción-consumo.
+3. **Problema:** Sincronización operación electrolizador-MH-FC con demanda variable (perfil residencial intermitente)
+ **Solución:** Algoritmo control basado en estado carga MH (SOC), prioridad demanda, y disponibilidad renovables. MH actúa como buffer energético desacoplando producción-consumo.
 
-4. **Problema:** Pérdidas térmicas standby reducen eficiencia global en operación intermitente (típica aplicaciones residenciales)  
-   **Solución:** Aislamiento térmico 30 mm lana mineral + válvulas motorizadas aíslan térmicamente MH cuando no opera. Pérdidas standby <15 W (~0.5% energía almacenada/hora).
+4. **Problema:** Pérdidas térmicas standby reducen eficiencia global en operación intermitente (típica aplicaciones residenciales)
+ **Solución:** Aislamiento térmico 30 mm lana mineral + válvulas motorizadas aíslan térmicamente MH cuando no opera. Pérdidas standby <15 W (~0.5% energía almacenada/hora).
 
 ## 6. Conclusiones y Observaciones
+
 
 **Resultados principales:**
 
@@ -149,15 +185,21 @@ Este artículo presenta el desarrollo de un Sistema de Utilización Total de Ene
 
 ## 7. Referencias Adicionales
 
-- Estudios similares THEUS: Sistemas integrados hidrógeno renovable-almacenamiento-utilización escala residencial/comercial  
-- Tecnología LaNi5: Caracterización cinética y termodinámica para aplicaciones cíclicas rápidas  
-- Integración térmica: Metodologías recuperación calor residual electrolizadores alcalinos y celdas combustible PEM  
-- Control y gestión energética: Algoritmos optimización para sistemas almacenamiento energético con renovables intermitentes  
+
+- Estudios similares THEUS: Sistemas integrados hidrógeno renovable-almacenamiento-utilización escala residencial/comercial
+
+- Tecnología LaNi5: Caracterización cinética y termodinámica para aplicaciones cíclicas rápidas
+
+- Integración térmica: Metodologías recuperación calor residual electrolizadores alcalinos y celdas combustible PEM
+
+- Control y gestión energética: Algoritmos optimización para sistemas almacenamiento energético con renovables intermitentes
+
 - Análisis económico: Estudios comparativos hidrógeno vs baterías para aplicaciones estacionarias off-grid
 
 ---
 
 ### Notas Adicionales
+
 
 **Contexto de investigación:** Artículo pionero en demostración experimental THEUS completo a escala laboratorio (mayoría estudios previos son simulaciones o componentes individuales). Relevante para transición energética residencial con renovables.
 

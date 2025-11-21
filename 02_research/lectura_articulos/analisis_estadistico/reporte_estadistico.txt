@@ -1,0 +1,54 @@
+======================================================================
+REPORTE ESTADÍSTICO - BASE DE CONOCIMIENTOS ANH951
+Generado: 2025-11-19 21:55:15
+======================================================================
+
+Total de artículos analizados: 51
+
+
+Arquitectura:
+--------------------------------------------------
+  Modular: 27 (52.9%)
+  No especificado: 23 (45.1%)
+  Monolítico: 1 (2.0%)
+
+Estrategia_Térmica:
+--------------------------------------------------
+  Híbrida: 50 (98.0%)
+  Pasiva: 1 (2.0%)
+
+Escala:
+--------------------------------------------------
+  Industrial: 36 (70.6%)
+  Laboratorio: 9 (17.6%)
+  Piloto: 4 (7.8%)
+  ** Considera fenómenos desde nivel partícula MH (μm, difusión H) hasta reactor completo (m, convección HTF), integrando mediante modelos efectivos (medio poroso, Darcy-Forchheimer): 2 (3.9%)
+
+Tipo_Estudio:
+--------------------------------------------------
+  Review: 26 (51.0%)
+  Experimental: 23 (45.1%)
+  Simulación: 1 (2.0%)
+  Diseño: 1 (2.0%)
+
+Aplicación:
+--------------------------------------------------
+  Estacionaria: 30 (58.8%)
+  Móvil: 16 (31.4%)
+  No especificado: 5 (9.8%)
+
+
+Rango temporal:
+--------------------------------------------------
+  Primer artículo: 1925
+  Último artículo: 2026
+  Mediana: 2018
+
+
+Materiales de hidruro (Top 5):
+--------------------------------------------------
+  No especificado: 29 (56.9%)
+  TiFe: 8 (15.7%)
+  LaNi5: 6 (11.8%)
+  MgH2: 4 (7.8%)
+  AB5: 2 (3.9%)

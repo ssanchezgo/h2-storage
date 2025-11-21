@@ -1,0 +1,2741 @@
+*Manuscript text (with figures and captions embedded)
+Click here to view linked References
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+Standardized hydrogen storage module with high utilization
+factor based on metal hydride-graphite composites
+Inga Bürger1, Mila Dieterich1, Carsten Pohlmann2,3, Lars Röntzsch2 and Marc Linder1
+1
+
+German Aerospace Center (DLR) - Institute of Engineering
+Thermal Process Technology, Pfaffenwaldring 38 – 40, 70569 Stuttgart, Germany
+
+Thermodynamics,
+
+2
+
+Materials
+
+Fraunhofer Institute for Manufacturing Technology and
+Branch Lab Dresden, Winterbergstraße 28, 01277 Dresden, Germany
+3
+
+Advanced
+
+IFAM,
+
+now at Aaqius & Aaqius, 12 Rue Vivienne, 75002 Paris, France
+
+Corresponding author: Inga Bürger, inga.buerger@dlr.de, +49 711 6862 492, fax: +49 711 6862 632
+
+Graphical Abstract
+
+Abstract
+In view of hydrogen based backup power systems or small-scale power2gas units, hydrogen storages
+based on metal hydrides offer a safe and reliable solution. By using Hydralloy C5 as suitable hydride
+forming alloy, the present tank design guarantees very simple operating conditions: pressures
+between 4 bar and 30 bar, temperatures between 15 °C and 40 °C and minimal efforts for thermal
+management in combination with fast and constant charging and discharging capabilities. The
+modular tank consists of 4 layers with 5 reactor tubes each that are filled with metal hydridegraphite composites of a diameter of 21 mm. Experiments show that each layer of this tank is able to
+desorb the desired amount of hydrogen for a fuel cell operation at electrical power of 160 Wel for
+100 min reaching a utilization factor of 93 % of the stored hydrogen at RC. Furthermore, the
+experimental results of modularity, increasing loads and the electric air ventilation are presented.
+
+1
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+Keywords
+Metal hydride, stationary application, reactor design, metal hydride-graphite composites
+
+1 Introduction
+Increasing availability of devices that convert renewable energy into electricity like photovoltaic
+modules or wind turbines create the need for energy buffers in order to match energy availability
+and energy needs. For remote or decentralized power supply, one promising option is to convert
+electricity to chemical energy in form of hydrogen gas [1]. This allows a separate dimensioning of
+power and capacity, immense cyclic use without degradation as well as different options to re-use
+the energy on demand. An example of such a system is depicted in Figure 1. In this case, the surplus
+electricity converted from a fluctuating renewable energy source is used for hydrogen production by
+an electrolyzer. This hydrogen is then stored in a buffer tank and can be later used for different
+energy services such as electricity and heat via fuel cells, heat for cooking via catalytic burners and
+potentially also mobility.
+
+Figure 1: Scheme of a hydrogen-based power2gas system to store surplus electrical power.
+
+Suitable electrolyzer and fuel cell power demands for private domestic applications range between
+600 W to 1.2 kW, and already exist on the market1. As hydrogen buffer tank for such systems usually
+either a high-pressure tank, which requires a hydrogen compressor, or a low-pressure tank is used,
+which requires a lot of free space2. In addition, pressure tanks especially at high pressures bear safety
+risks when bursting. Metal hydrides can lower these risks dramatically due to the chemical
+absorption of hydrogen inside of the solid metal. Additionally, suitable metal hydrides prove cycling
+stabilities in the five-figure range [2,3]. Consequently, hydrogen can be stored with highest
+volumetric densities (up to 150 g-H2 per liter) at rather low pressures and an inherent safety aspect:
+The corresponding exo-/endothermic storage reaction between the metal (Me) and the hydrogen
+(H2) to a metal hydride (MeH) can be written as
+(1)
+
+1
+2
+
+E.g., www.actaspa.com
+E.g., www.heliocentris.com
+
+2
+
+As the desorption of hydrogen is an endothermal process, any unintentional release of hydrogen is
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+immediately decelerated due to the heat demand for desorption. However, at the same time the
+involved heat of reaction is most challenging when designing a metal hydride hydrogen storage.
+Overcoming this drawback, a simple and standardized storage design combining the advantages of
+metal hydrides - safe, low volume, low pressure, little maintenance, no compressor - with improved
+thermal transfer is proposed in this paper.
+In the literature, several studies have been published focusing on metal hydride buffer tanks for
+stationary applications.
+For example, magnesium hydride-based storage tanks are intensively studied, as this material shows
+very high storage capacities of up to 7.7 wt.% [4]. Due to their high operating temperature, these
+materials require a rather complex heat management based on a process integration [5] or e.g. the
+combination with a phase change material to preserve the associated thermal energy [6].
+The advantages of metal hydrides working near ambient conditions for this buffer storage application
+is discussed by Hagstorm [7]. In this paper, it is emphasized that for the selection of a suitable
+material a small hysteresis as well as a flat plateau of the PCI curve are crucial, leading to the
+suggestion of LmNi(1)3 (JMC4) or Hydralloy C15 (GfE5).
+Lototskyy et al. also designed metal hydride reactors using an AB2-type material as fuel cell supply
+tanks [8]. In that paper, the effect of different hydrogen desorption rates is discussed as well as the
+influence of liquid or air heat transfer on the overall performance, and for the charging process very
+fast rates are assumed. A similar study has been performed by Capurso et al. using Hydralloy C5
+powder material in 0.5 liter containers as hydrogen storage for an urban concept car [9].
+Bossi et al. tested a setup where a LaNi5 based storage reactor for 6000 NL6 hydrogen is coupled to a
+fuel cell fluid for stationary back-up systems [10], and Nakano et al. studied in the project THEUS a
+metal hydride tank that is integrated as buffer tank between an electrolyzer and a fuel cell [11]. In
+both cases, the hydride tank is integrated into a water based cooling/heating system, which leads to
+a rather complex tank design and overall system.
+Furthermore, Liu et al. designed a new overall fuel cell -metal hydride hydrogen storage design for
+stationary applications [12]. This system show advantages for the air-cooled fuel cell due to a more
+direct heat management, however, in this case the capacity of the tank is linked to the size of the
+fuel cell.
+3
+
+Lm = La-rich misch metal
+Japan Metals & Chemicals Co. Ltd.
+5
+Gesellschaft für Elektrometallurgie mbH.
+6
+NL = normal liter at 0 °C and 1.103 bar
+4
+
+3
+
+Summarizing the experience of the given references, the focus of the present metal hydride tank has
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+been on a standardized system design with a very low complexity of the thermal management.
+Therefore, the following points have been considered.
+o
+
+A suitable low temperature metal hydride material with a low hysteresis has been chosen
+that can store and release hydrogen under the applying conditions of room temperature
+between 10 and 40 °C. Thus, no further system integration with e.g. fuel cell or water
+management was required.
+
+o
+
+The power of the electrolyzer and the fuel cell were assumed to be in a similar range, thus,
+charging and discharging rates are similar with similar effects on the reactor design.
+
+o
+
+The pure hydride material has been mixed with expanded natural graphite (ENG) and
+compressed to metal hydride-graphite composites (MHC) to improve the radial thermal
+conductivity. Thus, the final storage system is based on tubes with comparatively large
+diameter and aluminum foam on the outside to improve heat transfer and requires only
+simple air ventilation at low power.
+
+For demonstration, a tank based on 4 layers with 5 tubes each, that are filled with in total 6 kg of
+Hydralloy C5® based MHC, has been built. The storage reactor has been designed in such a way that
+each layer is able to supply sufficient hydrogen to generate an electric power of 160 W by a fuel cell
+for more than 100 minutes. For the evaluation of the performance, a utilization factor has been
+defined that refers to the ratio between the “mass of hydrogen released/stored with relevant flow
+rates” and the “maximum mass of hydrogen that can be discharged/charged” at the corresponding
+operation conditions. The final goal was to show that with the presented reactor utilization factors of
+more than 90% can be reached.
+In this paper, first, the general system layout based on Hydralloy C5® is described and the effect of
+the usage of MHCs with enhanced heat conductivity is presented. Then, details on the final tank and
+the test rig are given before the experimental results are shown concluding that this system is able to
+store and provide hydrogen at the required rate. Finally, the results of varying flow rates and air
+ventilation are presented and a summary and evaluation of the total system is discussed.
+
+4
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+2 System layout
+As mentioned in the introduction, for hydrogen storage in metal hydride systems, usually an intense
+thermal management is required. For the present setup, the first measure to reduce the complexity
+of the system is the implementation of a material that can store (absorb) and release (desorb)
+hydrogen under ambient conditions (between 15 °C and 40 °C). Thus, in contrast to other proposed
+systems [11] no further heating or cooling integration is required.
+The material that has been chosen is known as Hydralloy C5 (AB2-type metal hydride) and has been
+widely studied in the literature. It is stable during cycling as powder [2,13] and in form of MHC
+[14,15]. Additionally, it can be filled into tanks in the unactivated state without inert-gas measures
+and can easily be activated inside the final tank [9]. Furthermore, the kinetics of the material are fast,
+i.e. absorption and desorption proceed in the relevant temperature and pressure range in less than
+30 s [16], and its hysteresis as well as plateau slope are moderate [9,17]. Figure 2 shows the Van´t
+Hoff plot for this material indicating 20 %, 50 % and 80 % transformed fraction for absorption and
+desorption, respectively. The arrows indicate the operational conditions for this system.
+For absorption, a hydrogen supply pressure of 30 bar is assumed, as this corresponds to a reasonable
+pressure provided by an electrolyzer without a complementary compressor7. Thus, if room
+temperature of 15 °C to 40 °C is assumed, there is still a temperature difference of 10 K to the
+equilibrium of 80 % transformed fraction for absorption that can be used to remove the heat
+efficiently. As several typical fuel cells operate with back pressures between ambient and 200 mbar
+backpressure and as the expected pressure difference to the inlet pressure is only few 10s of mbar,
+for desorption [18], it is assumed that 4 bar correspond to a reasonable operation pressure. As can
+be seen in Figure 2, the equilibrium temperature at 4 bar is 5 °C, thus in this case there is a
+temperature difference of 10 K to provide the heat to the storage tank.
+In short, it can be stated that this material fulfills the thermodynamic requirements for a metal
+hydride hydrogen storage allowing for a quite simple thermal management as mentioned in the
+introduction.
+
+7
+
+E.g., www.actaspa.com
+
+5
+
+T in °C
+120 100 80
+
+60
+
+40
+
+20
+
+0
+
+-20
+
+T
+
+PH2,eq in bar
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+Charging from electrolyzer
+
+10
+Feeding fuel cell
+T
+
+80%
+20% abs
+80% 20%
+des
+
+Hydralloy C5
+
+1
+2,70
+
+3,00
+
+3,30
+
+3,60
+
+3,90
+
+1000/T in K-1
+Figure 2: Van´t hoff plot of Hydralloy C5 [17], and operation conditions for the present reactor design.
+
+Next to the selection of a suitable material, also for the reactor design two aspects were considered
+to keep the complexity of the system low: First, air was chosen as easy to handle heat transfer fluid
+that is also non-toxic and abundant. Second, the design of the reactor focused on a reduced amount
+of reactor wall material in comparison to the metal hydride material. Therefore, the applying loads
+and suitable heat transfer measures were analyzed for the design.
+In most studies on metal hydride tanks, the thermal management of metal hydride reactions is
+difficult due to fast reaction rates and large amounts of thermal energy that have to be removed. E.g.
+in a recent study by Lototsky et al. on a hydrogen storage tank for forklifts [19], it is necessary to
+remove continuously ~ 9,2 kW during 15 minutes in order to fill the tank with 0.91 kg of hydrogen.
+Reducing the refueling time to the required values of less than 5 min for automotive applications will
+further increase the required cooling power. In order to handle these high heat fluxes – especially in
+combination with a relatively low thermal conductivity of metal hydride beds of only approximately
+1 W(mK)-1 [20] – several options to enhance the heat transfer have been discussed in the literature
+extending the heat transfer area with fins, foams etc. [21,22], or minimizing the distance to the heat
+transfer surface by reactor design [23] as well as introducing a heat transfer secondary phase, e.g.
+graphite, into the storage material [24].
+
+6
+
+Even though the thermal loads of the present application are lower, the utilization of one of these
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+well-studied measures – metal hydride-graphite composites – can still contribute significantly to the
+simple system layout and a reduction in overall reactor mass. This will be shown in the following
+basic calculation for the temperature decrease in a tubular reactor for powdery and pelletized metal
+hydride material.
+For this calculation it is necessary to know the thermal loads that will apply during operation.
+Furthermore, the maximum temperature decrease that still allows a continuous operation has to be
+considered. If these values are known, the maximum diameter of a tubular reactor using a given
+material can be calculated [25]. In Table 1, the basic conditions for the reference case as well as the
+layout of the present system are summarized. For the desired continuous electrical power of 160 Wel
+per layer, a hydrogen mass flow rate of 2.7 10-3 gs-1 is required (assuming fc = 0.5). In order to
+release this amount of hydrogen, with a reaction enthalpy of RH = 28.4 kJmol-1, 38 W of thermal
+energy have to be provided to the material. Thus, for a continuous supply of 100 min, at least 1.35 kg
+of powdery Hydralloy material (corresponding to 1.42 kg of Hydralloy-based MHC including ENG) is
+required. Assuming an inner diameter of the tube of 21 mm, the total reactor length for the powder
+material is 1.95 m whereas only 1.05 m is required for the compacted MHC. As the resulting thermal
+power density of the MHC is about 2 times higher than the thermal power density of the powder, it is
+obvious that the MHC help to make the storage system more compact. However, for the MHC it is
+more difficult to supply the heat of reaction due to the smaller surface area. In order to show this for
+the present example, the temperature profile has been calculated for MHC pellets and powder
+(Table 1).
+Assuming a cylindrical shape with a constant temperature at the outside wall and a homogeneous
+heat sink due to the reaction (assumed to be independent of temperature), the occurring
+temperature decrease at the center of the tube can be calculated with:
+(2)
+
+where S is the volumetric heat sink density during the desorption reaction in Wm-3,  is the heat
+conductivity of the material in W(mK)-1 and R is the radius of the tube in m.
+Due to the strong influence of the thermal conductivity, the temperature drop in the powder bed is a
+factor 5 higher than for the MHC material (see graph in Table 1) – despite the clearly higher power
+density in the MHC. Thus, the advantage of MHC for a compact system is based on three facts: The
+material is more compact, thus a smaller volume has to be covered by external steel walls. The
+increased thermal conductivity enables tubes with much larger diameters while still showing
+homogenous reaction, and a higher temperature gradient to a simple heat transfer fluid like air is
+7
+
+acceptable. Especially the homogeneous reaction profile, that appears when pellets are used, is
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+important as it also leads to a very homogeneous charging state of the material. Thus, basically all
+material in the reactor reacts at the same time and a high value of the utilization factor for the stored
+hydrogen can be achieved.
+So far it has been shown that due to their high thermal conductivity, the MHC show a very
+homogeneous temperature profile inside of the tube although their power density is quite high (see
+also graph in Table 1). Thus, the performance during the desorption process is assumed to be very
+good although tubes with a diameter of 21 mm are used. However, even though the low ratio of
+outside surface to volume is good for the reduction of steel, this low ratio aggravates the heat
+transfer from the surface to the air. For the present setup, aluminum foam is used at the outside of
+the tubes resulting in a heat transfer coefficient of approximately 150 Wm-2K-1. Thus, the
+temperature drop from the air to the center of the MHC is dominated by a Ta = 3.78 K from the air
+to the steel wall, while inside of the MHC the temperature gradient of Ti ~0.33 K can almost be
+neglected. This temperature difference of ~4.1 K is acceptable for the present system, as the distance
+of the operational temperature to the equilibrium temperature is more than 10 K, as mentioned
+above.
+In summary it can be stated that with Hydralloy-based MHC a simple and compact hydrogen storage
+system could be designed as this material can operate at ambient conditions. Due to the utilization of
+MHC with a high thermal conductivity, the required homogeneous temperature and transformed
+fraction distribution can be achieved in tubes with an inner diameter of 21 mm.
+
+8
+
+Hydralloy® powder
+
+Hydralloy®-based MHC
+
+30
+
+30
+
+28
+
+28
+
+T in °C
+
+T in °C
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+Table 1: Summary of properties for powder or MHC material as well as calculated design parameters (materials
+properties taken from [17]).
+
+Ta
+
+26
+Ti
+
+24
+0
+
+2
+
+Ta
+
+26
+Ti
+24
+
+4
+
+6
+
+8
+
+10
+
+12
+
+0
+
+2
+
+4
+
+6
+
+8
+
+R in mm
+
+R in mm
+
+Req. power in Wel per
+layer
+
+160
+
+160
+
+ in kgm-3
+
+2000
+
+4040
+
+ in Wm K
+
+1
+
+9.9
+
+m in kg
+
+1.35
+
+1.42
+
+L in m
+
+1.95
+
+1.01
+
+Q/A in Wm-2
+
+295
+
+567
+
+Q/V in kWm-3
+
+56.3
+
+108.3
+
+Ti in K
+
+1.55
+
+0.30
+
+Ta in K
+
+1.96
+
+3.78
+
+-1 -1
+
+10
+
+12
+
+3 Experimental details
+In this Section, first details on the MHC are given, then the reactor design is shown and finally the
+test rig is presented.
+
+Metal hydride-graphite composites
+The hydride material that has been used for the MHC is Hydralloy C5. To improve heat transfer
+properties, 5 wt.% of ENG were added to Hydralloy powder particles of approx. 10 µm and the
+mixture was compressed to composites (so-called MHC) at a pressure of 75 MPa with a diameter (D)
+to height (H) ratio of approximately 1.5. After compaction, a hole was drilled in the center of each
+MHC pellet in order to enable sufficient gas transport in axial direction. Then, the MHC pellets were
+filled under ambient conditions into the reactor tubes using few pieces of polyurethane foam as
+spacer material between the pellets to buffer the volume expansion of the MHCs [26]. In our
+
+9
+
+previous work [14], it has been shown that similar composites were geometrically stable for over
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+1000 cycles with a thermal conductivity of the cycled material in the range of 10 Wm-1K-1.
+
+Reactor design
+Table 2 shows a picture of the final reactor consisting of 20 stainless steel tubes with an outer
+diameter of 25 mm, 2 mm wall thickness and a length of about 34 cm. For the overall design, the
+standardized dimensions of standard 19 inch rags have been considered according to the basic idea
+to combine a fuel cell, standardized modular hydrogen storage and optionally an electrolyzer in one
+rag. Thus, the outer dimensions of the storage tank were 261 × 444 × 458 mm.
+In order to enhance the heat transfer to air at the outside surface of the tubes, aluminum foam has
+been attached to the tubes using an adhesive paste. In addition, four small ventilators with a
+required electric output of 8 Wel were used to blow air through the foam. This prototype consists of 4
+layers with 5 tubes each that can be operated separately. Furthermore, gas filters, a pressure sensor,
+an overpressure valve and 3 thermocouples were integrated.
+It is obvious that the weight of this system with approx. 30 kg was still too heavy for a 19 inch rack
+solution. However, it will be possible to reduce the weight by 50 %, e.g. by replacing the fittings, as
+the mass of the hydride, the mass of the stainless steel tubes, and that of the foam is only 6 kg, 6.5
+kg, and 1.5 kg, respectively.
+
+10
+
+Table 2: Photograph of storage tank demonstrator and its main features.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+Mass MHC in kg
+
+6
+
+Total mass in kg
+
+30
+
+Stored volume of H2 in m3
+
+1
+
+Designed load in Wel per layer
+
+160 for 100 min, @ 4 bar back pressure
+
+Dimensions in mm
+
+261 × 444 × 458
+
+Test rig set-up
+The reactor was integrated into an existing test rig (see Figure 3) that provides hydrogen at flow rates
+of up to 74.9 mg s-1 at pressures up to 100 bar to simulate the electrolysis (MFC 1). Furthermore,
+hydrogen can be released at constant flow rates of up to 74.9 mg s-1 at pressures > 10 bar using MFC
+2 and at pressures < 10 bar using MFC 3, in order to simulate the hydrogen demand of a fuel cell. All
+mass flow controllers (MFC) have an accuracy of ± (0.5 %Rd + 0.1 % FS8). The pressure sensor PS1 can
+measure pressures up to 160 ±1.6 bar, and one thermocouple is integrated into the hydrogen supply
+tubes. Furthermore, another pressure sensor (PS) that is calibrated up to 40 ± 0.4 bar is integrated
+into the reactor. Thermocouples (Type K) have been integrated in three representative tubes. In case
+the pressure inside of the reactor exceeds 38 bar, an excess valve (EV) opens and the hydrogen is
+
+8
+
+Rd = Reading, FS = full scale
+
+11
+
+released to the hood. In order to fully desorb the reactor it is also possible to extract the hydrogen by
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+a vacuum pump (VP) to decrease the pressures to 0.5 mbar.
+
+Figure 3 Test rig layout
+
+4 Results and discussion
+Preliminary to the results, in this section, the testing procedure as well as the list of experiments is
+presented.
+The goal of the experiments was to evaluate the capability of the tank and to demonstrate that each
+layer of the reactor is able to store or provide sufficient hydrogen for 160 Wel by an electrolyzer or a
+fuel cell, over a time period of 100 min thereby utilizing about 90% of the storage capacity of the
+material at application relevant conditions. Using the dimensioning described in the previous section,
+this implies that - for the given charging and discharging loads - the developed storage system
+operates at steady-state and the temperature at the center of the reactor tubes stays almost
+constant during the experiment. In the reference experiment for absorption and desorption the
+pressure was changed between 4 and 30 bar at room temperature while keeping up a flow rate of
+2.6 mgs-1 for at least 100 min per layer. For the complete storage (4 layers), these conditions refer to
+an electric fuel cell power of 640 Wel for 100 min (efficiency of the fuel cell: fc = 0.5).
+In addition to this experiment under reference conditions (indicated in the following as “RC”),
+experimental results for the following conditions will be presented: separately operated layers
+(modularity), increased flow rate (factor: 2, 4, 8, (16) *RC), and an experiment without fans (effect of
+outside heat transfer). The absorption experiments always refer to the charging process with
+
+12
+
+hydrogen at constant flow rate from an electrolyzer, while the desorption experiments refer to the
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+discharging process where hydrogen is provided to a fuel cell.
+
+Reference conditions (RC)
+The experiment for absorption and desorption at RC has been performed as first and last experiment
+of 38 experiments as well as several times in between. Figure 4 shows the mass flow rate, the
+pressure as well as the temperature difference profile for one experiment at the beginning (olive)
+and the final experiment (black) for absorption (left) and desorption (right).
+As it can be seen at the top, the mass flow rate for the studied two layers has been set to a constant
+value of 5.2×10-3 gs-1 in order to simulate the continuous operation of an electrolyzer or a fuel cell at
+320 Wel. This flow rate could be absorbed or desorbed from the storage for the desired 100 min. The
+graphs at the center of Figure 4 show the corresponding pressure profiles. In contrast to the
+temperature signal that is at steady-state (Figure 4, bottom), the pressure signal does not exhibit a
+perfectly flat plateau. This behavior has been expected as pressure-concentration-isotherms of the
+pure material also show a sloping plateau [17]. Furthermore, from Figure 4, for absorption, the main
+fraction of hydrogen is absorbed at pressures between 10 and 15 bar and for desorption between 4
+and 6.5 bar. The reason for this difference is the hysteresis of the material as well as the difference in
+the temperature. For both experiments the initial temperature was room temperature. However,
+during the exothermal absorption reaction the temperature increases and reaches its steady-state
+approximately 5 K above room temperature, while for the endothermal desorption the temperature
+decreases by 5 K (based on ambient temperature). Thus, according to the thermodynamics of the
+material, it is reasonable that for higher temperatures a higher pressure is required.
+Overall it can be stated that during the reference experiment, the behavior of the tank showed the
+desired steady-state behavior for 100 min, thus, the stored hydrogen can be used to a large extend (
+utilization factor 93%, see following section). Furthermore, during the 38 cycles the material did not
+show any degradation – in contrast – the material was rather continuously further activated.
+
+13
+
+10,0
+
+A
+
+mflow in mgs-1
+
+7,5
+5,0
+2,5
+0,0
+30
+
+B
+
+P in bar
+
+25
+20
+15
+10
+5
+0
+
+C
+
+5,0
+2,5
+
+T in K
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+0,0
+-2,5
+1st experiment
+
+-5,0
+
+38th experiment
+
+-7,5
+0
+
+1200 2400 3600 4800 6000 7200 0
+
+t in s
+
+1200 2400 3600 4800 6000 7200
+
+t in s
+
+Figure 4: Mass flow rate (A), pressure (B) and temperature difference (C) versus time for absorption (left) and desorption
+(right) under RC.
+
+Modularity – scale-up
+After the proof of a continuous operation at steady-state, for the presented reactor it is important to
+show that in the modular system the single layers operate independently. This implies that for higher
+or lower required powers of electrolyzer or fuel cell and the same operation time, the storage
+reactor can be scaled up or down by simply increasing or decreasing the number of layers. Figure 5
+presents the results for a continuous flow rate at 5.2 mgs-1 (2*RC) for layer 1 and layer 2 (triangles),
+furthermore the results for both layers at the double flow rate of 10.4 mgs-1 (2*RC – 5.2 mgs-1/layer,
+squares). As the pressure (A) as well as the temperature signals (B), show a very good agreement, it
+can be concluded that the single layers are independent of each other, thus the setup can be scaled
+up or down regarding the loads. The temperature difference between the signals for layer 1 (open
+symbols) and layer 2 (closed symbols) can be explained by a slightly different position of the
+thermocouples inside of the reactor tubes.
+14
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+Figure 5: Pressure (A) and temperature difference (T1: full and T2: open symbols, B) versus experimental time with 2*RC
+and 2 layers (squares) as well as with 2*RC and two single layers (triangles up and triangles down).
+
+Increased load and hydrogen utilization factor
+As shown before, each layer of the developed hydrogen storage reactor was able to operate at
+steady state for an electric load of 160 W and 100 min. Furthermore, it has been shown that the
+design is scalable, thus the number of layers can be adapted to the actual load without affecting the
+reachable discharge state.
+In this section, the effect of an increased load of the present setup has been studied in order to
+reveal the limits of the present design. Furthermore, the utilization factor of the stored hydrogen is
+discussed. Figure 6 shows the results for absorption and desorption of 2 layers with flow rates of 5.2
+(RC), 10.5 (2*RC), 21 (4*RC), as well as 41.9 (8*RC) mgs-1.
+
+15
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+Figure 6: Mass flow rate (A), pressure (B) and temperature difference (C) versus time for absorption (left) and desorption
+(right) under RC, 2*RC, 4*RC, and 8*RC.
+
+For absorption (left), the trends are as expected: The time interval with constant flow rates (A) scales
+almost linearly with the applied flow rate. Thus, for 2*RC 50 min, for 4* RC 25 min and for 8*RC
+about 13 min are reached. However, in order to reach the corresponding power loads for flow rates
+above 2*RC, the temperature in the reactor does not reach a steady state anymore, but it
+continuously increases – indicating that heat transport is limiting even at T > 25 K. Corresponding to
+the thermodynamics of the material, not only the temperatures inside of the material, but also the
+pressures increase and for the higher rates basically no plateau is appearing.
+For the desorption process (right), even for loads with 2*RC it was not possible to deliver sufficient
+hydrogen at pressures above 4 bar. As it can be seen in Figure 6 (A, right), the time interval with a
+constant flow rate of hydrogen for 2*RC reaches less than the required 3000 s. This can be explained
+by the corresponding temperature and pressure plots. As the temperature decreases by more than
+16
+
+10 K (red circles), the equilibrium pressure decreases below the required 4 bar back pressure. For
+higher flow rates the behavior is even more pronounced.
+
+40
+
+40
+1 bar
+
+35
+30
+
+repeat
+experiments
+
+4*RC
+
+25
+
+2*RC
+
+20
+
+RC
+
+15
+
+utilization factor+
+RC
+87-93%
+2*RC 85%
+4*RC 89%
+RC(1bar) 83%
+
+10
+5
+
+1 bar
+
+35
+
+4 bar
+
+mass desorbed in g
+
+mass absorbed in g
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+4 bar
+
+30
+25
+
+4*RC
+
+20
+
+RC
+
+15
+
+utilization factor+
+RC
+81-83%
+2*RC 36%
+4*RC 74%
+RC1bar 76%
+
+10
+5
+
+0
+
+0
+0
+
+1200 2400 3600 4800 6000 7200
+
+repeat
+experiments
+
+2*RC
+
+0
+
+1200 2400 3600 4800 6000 7200
+
+time in s
+
+time in s
+
++
+
+max. hydrogen mass at operation conditions: m
+
+max,4bar
+
+= 37,3 g; m
+
+max,1bar
+
+= 44,2 g
+
+Figure 7: Mass absorbed (left) and mass desorbed (right) versus time for repeated experiments at RC (light grey, grey,
+black), 2*RC (red), 4*RC (green), and RC starting/ending at 1 bar instead of 4 bar (turquoise).
+
+Next to the discussion of the experimental observations in Figure 6, Figure 7 shows the calculated
+hydrogen mass absorbed (left) or desorbed (right) during the same experiments. Using these data, it
+is possible to discuss the actual utilization factor of the stored hydrogen that has been reached at the
+different flow rates. As long as the mass flow rate is constant, the evolution of the hydrogen mass is
+represented with straight lines, and as soon as the mass flow rate decreases the evolution of the
+absorbed/desorbed mass is shown with dots. All values are already reduced by the amount of
+hydrogen stored in the void volume of 0.90×10-3 m3 at the exact experimental conditions (on average
+this refers to about 2 g hydrogen).
+For the experiment at RC, three repeated experiments are shown (light grey to black). All the
+corresponding graphs show exactly the same slope, and towards the end, for a higher cycling number
+a slightly higher mass of hydrogen can be absorbed. This indicates that the capacity is still slightly
+increasing with the cycles. In the last experiment at RC (black), a final value of 34.6 g absorbed
+hydrogen is reached at constant flow rate. This value refers to a very good utilization factor of 93 %,
+when at the experimental conditions starting from 4 bar and reaching 30 bar at 25 °C a maximum
+hydrogen mass of 37.3 g (1.31 wt.%, grey dashed line) is calculated. In case the experiment at RC
+conditions is extended starting from a pressure of 1 bar instead of 4 bar (turquoise), the absorption
+time is extended by 8.8% reaching a final mass of 36.6 g of hydrogen. However, under these
+conditions a storage capacity of 1.55 wt% resulting in 44.2 g would theoretically be feasible leading
+to a utilization factor of 83%. As discussed before, for the experiments with 2*RC and 4*RC, the
+17
+
+absorption time at constant flow rate decreases - as expected - to times of almost ½ and ¼.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+Therefore, it is clear that also the utilization factor for 4*RC is only reduced to 82% in comparison to
+93% for RC.
+For desorption, it could be observed that all final values are approx. 2 g lower than for desorption.
+The reason for this behavior is in the experimental setup, where in the first seconds starting at high
+pressure the mass flow meter is not able to measure the correct values. Therefore, the trends are
+still obvious, but for the utilization factor lower values are calculated. In the repeated experiments
+(grey to black) the same effects as for absorption can be observed: during cycling the amount of
+hydrogen increases and for the extension to 1 bar more hydrogen is released (turquoise). In case of
+an increasing flow rate of 2*RC (red) and 4*RC (green), however, it is obvious that the utilization
+factor of the stored hydrogen at constant flow rate is significantly decreasing and for 2*RC and 4*RC
+values of 74%, and 36%, respectively, are calculated compared to 83% at RC.
+The reason in the strong decline of the utilization factor for higher flow rates during desorption in
+contrast to absorption can be explained by Figure 2. As mentioned in the beginning, the temperature
+difference between the nominal operational temperature and the equilibrium temperature was 10 K
+for absorption and desorption. However, in this graph, the assumption for the nominal ambient
+temperature was between 15 °C and 40 °C. Since the experiments were performed with ambient air
+at an ambient temperature of around 20 °C, the absorption reaction was thermodynamically favored
+at the current experimental conditions.
+At this point it can be summarized that the modular tank design with a simple thermal management
+is able to combine constant mass flow rates with a high hydrogen utilization factor – at RC. If the load
+is increased to higher values, the temperature and pressure profiles get highly dynamic and
+especially for desorption the load cannot be provided until the storage reactor is fully depleted. Thus,
+in case higher loads are required, a modular scale-up of the reaction is necessary, e.g. the number of
+layers should be increased. However, this will not only increase the possible hydrogen loads, but also
+the total amount of hydrogen stored. In case, the total amount of hydrogen should stay constant
+while the loads should be increased, it is obvious that a different design with thinner tube diameters
+is required in order to decrease the heat load per surface area.
+
+Effect of electric fan
+The last effect that has been studied is the impact of the fan on the performance of the reactor. As
+mentioned in the section on the system layout, the external heat transfer is more important for the
+reactor design with thicker tubes and MHC inside.
+
+18
+
+Figure 8 depicts the resulting temperature and pressure profiles for the reference absorption
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+experiment with fan (black) and without fan (turquoise). The temperature clearly indicates that the
+heat transfer between air and the tube is significantly reduced when the fan is switched off, as the
+temperature continuously decreases to less than 10 °C. After around 2400 s the pressure in the tank
+reaches 4 bar (indicated by arrow) and the required mass flow of hydrogen cannot be provided. At
+this time clearly no steady state has been reached and only 10.2 g of hydrogen are desorbed.
+Concluding, it can be stated that the fans are strictly required to guarantee the desired performance.
+However, with their electric power consumption of about 1.7 W per layer this effort seems
+reasonable.
+
+Figure 8: Pressure (A) and temperature difference (B) versus time for desorption experiment at RC with fan and without
+fan.
+
+5 Conclusion
+In the present publication a standardized metal hydride buffer hydrogen storage reactor is presented
+that focusses on two aspects for a simple system: selection of a storage material able to operate near
+ambient conditions and a simple heat transfer design using MHC as well as air as heat transfer fluid.
+The main objective was to investigate the operational characteristics of such a tank with regard to
+the utilization factor of the stored hydrogen for given charging and discharging rates.
+The reactor consists of 4 identical layers that are designed to provide sufficient hydrogen for 100 min
+of fuel cell operation at 160 Wel using MHC at ambient temperatures between 10 °C and 40 °C. The
+19
+
+experimental results demonstrate that it is possible to operate this reactor at the load of this
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+reference case at steady-state with a temperature difference between ambient and reaction of
+approximately 5 K. Furthermore, it has been shown that the modular system is scalable thus that
+single tube layers operate independently. The effect of an increased load on the present system for
+absorption and desorption is also presented using loads that are a factor of 2, 4 and 8 higher. It is
+shown that for absorption at RC a very high utilization factor of the stored hydrogen of 93 % can be
+achieved, that is only reduced to 89% when the flow rate is increased to 4*RC. For desorption at RC,
+a slightly lower utilization factor of 83 % is calculated due to the measuring setup and due to the
+operating conditions this value is even reduced to 36 % for 4*RC. Finally, the experimental results
+reveal that electric fans are crucial for the overall performance as they significantly influence the
+heat transfer from the reactor tube to the air. With 30 kg the laboratory system is currently too
+heavy, however using improved assembly techniques it will be possible to reduce the weight by 50 %.
+Summarizing, a solid-state hydrogen storage tank with simple design and little heat transfer effort
+was presented that is able to reach high utilization factors of around 90 %.
+
+Acknowledgements
+This work is financially supported by the German Federal Ministry of Education and Research (BMBF)
+within the project Highly Dynamic Hydride-Graphite Composites (HD-HGV) (grant number 03EK3020).
+The authors want to thank Maximilian Marschall and Philipp Golebniak for their contributions to
+reactor design and measurements of the tank.
+
+References
+[1]
+
+G. Saur, Wind-To-Hydrogen Project : Electrolyzer Capital Cost Study, NREL/TP-550-44103,
+2008. doi:10.2172/944892.
+
+[2]
+
+G. Friedlmeier, A. Manthey, M. Wanner, M. Groll, Cyclic stability of various applicationrelevant metal hydrides, J. Alloys Compd. 231 (1995) 880–887. doi:10.1016/09258388(95)01776-3.
+
+[3]
+
+M. Wanner, G. Friedlmeier, G. Hoffmann, M. Groll, Thermodynamic and structural changes of
+various intermetallic compounds during extended cycling in closed systems, J. Alloys Compd.
+253-254 (1997) 692–697. doi:10.1016/S0925-8388(96)03041-1.
+
+[4]
+
+B. Sakintuna, F. Lamari-Darkrim, M. Hirscher, F. Lamaridarkrim, Metal hydride materials for
+20
+
+solid hydrogen storage: A review, Int. J. Hydrogen Energy. 32 (2007) 1121–1140.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+doi:10.1016/j.ijhydene.2006.11.022.
+[5]
+
+B. Delhomme, A. Lanzini, G. a. Ortigoza-Villalba, S. Nachev, P. de Rango, M. Santarelli, P.
+Marty, P. Leone, Coupling and thermal integration of a solid oxide fuel cell with a magnesium
+hydride tank, Int. J. Hydrogen Energy. 38 (2013) 4740–4747.
+doi:10.1016/j.ijhydene.2013.01.140.
+
+[6]
+
+P. Marty, P. de Rango, B. Delhomme, S. Garrier, Various tools for optimizing large scale
+magnesium hydride storage, J. Alloys Compd. 8388 (2013). doi:10.1016/j.jallcom.2013.02.169.
+
+[7]
+
+M. Hagstrom, Metal hydride hydrogen storage for near-ambient temperature and
+atmospheric pressure applications, a PDSC study, Int. J. Hydrogen Energy. 20 (1995) 897–909.
+doi:10.1016/0360-3199(95)00025-9.
+
+[8]
+
+M. V. Lototskyy, M.W. Davids, I. Tolj, Y. V. Klochko, B.S. Sekhar, S. Chidziva, F. Smith, D.
+Swanepoel, B.G. Pollet, Metal hydride systems for hydrogen storage and supply for stationary
+and automotive low temperature PEM fuel cell power modules, Int. J. Hydrogen Energy.
+(2015). doi:10.1016/j.ijhydene.2015.01.095.
+
+[9]
+
+G. Capurso, B. Schiavo, J. Jepsen, G. Lozano, T. Klassen, M. Dornheim, Development of a
+modular room-temperature hydride storage system for vehicular applications, Appl. Phys. A.
+236 (2016) 1–11. doi:10.1007/s00339-016-9771-x.
+
+[10]
+
+C. Bossi, a. Del Corno, M. Scagliotti, C. Valli, Characterisation of a 3 kW PEFC power system
+coupled with a metal hydride H2 storage, J. Power Sources. 171 (2007) 122–129.
+doi:10.1016/j.jpowsour.2006.11.006.
+
+[11]
+
+A. Nakano, H. Ito, T. Maeda, T. Munakata, T. Motyka, C. Corgnale, S. Greenway, J.M. PerezBerrios, Study on a metal hydride tank to support energy storage for renewable energy, J.
+Alloys Compd. 580 (2013) S418–S422. doi:10.1016/j.jallcom.2013.03.152.
+
+[12]
+
+Z. Liu, Y. Li, Q. Bu, C.J. Guzy, Q. Li, W. Chen, C. Wang, Novel fuel cell stack with coupled metal
+hydride containers, J. Power Sources. 328 (2016) 329–335.
+doi:10.1016/j.jpowsour.2016.07.096.
+
+[13]
+
+T. Maeda, T. Fuura, I. Matsumoto, Y. Kawakami, M. Masuda, Cyclic stability test of AB2 type
+(Ti, Zr)(Ni, Mn, V, Fe)2.18 for stationary hydrogen storage in water contaminated hydrogen, J.
+Alloys Compd. 580 (2013) S255–S258. doi:10.1016/j.jallcom.2013.03.230.
+
+[14]
+
+M. Dieterich, C. Pohlmann, I. Bürger, M. Linder, L. Röntzsch, Long-term cycle stability of metal
+hydride-graphite composites, Int. J. Hydrogen Energy. (2015).
+21
+
+doi:10.1016/j.ijhydene.2015.09.013.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+[15]
+
+C. Pohlmann, L. Röntzsch, F. Heubner, T. Weißgärber, B. Kieback, Solid-state hydrogen storage
+in Hydralloy–graphite composites, J. Power Sources. 231 (2013) 97–105.
+doi:10.1016/j.jpowsour.2012.12.044.
+
+[16]
+
+M. Ron, The normalized pressure dependence method for the evaluation of kinetic rates of
+metal hydride formation/decomposition, J. Alloys Compd. 283 (1999) 178–191.
+doi:10.1016/S0925-8388(98)00859-7.
+
+[17]
+
+K. Herbrig, L. Röntzsch, C. Pohlmann, T. Weißgärber, B. Kieback, Hydrogen storage systems
+based on hydride–graphite composites: computer simulation and experimental validation, Int.
+J. Hydrogen Energy. (2013) 1–11. doi:10.1016/j.ijhydene.2013.03.104.
+
+[18]
+
+J. Mitzel, E. Gülzow, A. Kabza, J. Hunger, S.S. Araya, P. Piela, I. Alecha, G. Tsotridis,
+Identification of critical parameters for PEMFC stack performance characterization and control
+strategies for reliable and comparable stack benchmarking, Int. J. Hydrogen Energy. 41 (2016)
+21415–21426. doi:10.1016/j.ijhydene.2016.08.065.
+
+[19]
+
+M. V. Lototskyy, I. Tolj, A. Parsons, F. Smith, C. Sita, V. Linkov, Performance of electric forklift
+with low-temperature polymer exchange membrane fuel cell power module and metal
+hydride hydrogen storage extension tank, J. Power Sources. 316 (2016) 239–250.
+doi:10.1016/j.jpowsour.2016.03.058.
+
+[20]
+
+S. Suda, Y. Komazaki, N. Kobayashi, Effective thermal conductivity of metal hydride beds, J.
+Less Common Met. 89 (1983) 317–324. doi:10.1016/0022-5088(83)90340-5.
+
+[21]
+
+F.S. Yang, G.X. Wang, Z.X. Zhang, X.Y. Meng, V. Rudolph, Design of the metal hydride reactors
+- A review on the key technical issues, Int. J. Hydrogen Energy. 35 (2010) 3832–3840.
+doi:10.1016/j.ijhydene.2010.01.053.
+
+[22]
+
+P. Muthukumar, M. Groll, Metal hydride based heating and cooling systems: A review, Int. J.
+Hydrogen Energy. 35 (2010) 3817–3831. doi:10.1016/j.ijhydene.2010.01.115.
+
+[23]
+
+M. Linder, R. Mertz, E. Laurien, Experimental results of a compact thermally driven cooling
+system based on metal hydrides, Int. J. Hydrogen Energy. 35 (2010) 7623–7632.
+doi:10.1016/j.ijhydene.2010.04.184.
+
+[24]
+
+C. Pohlmann, L. Röntzsch, T. Weißgärber, B. Kieback, Heat and gas transport properties in
+pelletized hydride–graphite-composites for hydrogen storage applications, Int. J. Hydrogen
+Energy. 38 (2012) 1685–1691. doi:10.1016/j.ijhydene.2012.09.159.
+
+[25]
+
+I. Bürger, M. Bhouri, M. Linder, Considerations on the H2 desorption process for a
+22
+
+combination reactor based on metal and complex hydrides, Int. J. Hydrogen Energy. 40 (2015)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+
+7072–7082. doi:10.1016/j.ijhydene.2015.03.136.
+[26]
+
+K. Herbrig, C. Pohlmann, Ł. Gondek, H. Figiel, N. Kardjilov, A. Hilger, I. Manke, J. Banhart, B.
+Kieback, L. Röntzsch, Investigations of the structural stability of metal hydride composites by
+in-situ neutron imaging, J. Power Sources. 293 (2015) 109–118.
+doi:10.1016/j.jpowsour.2015.05.039.
+
+23
+
+Table1
+
+Table 1: Summary of properties for powder or MHC material as well as calculated design parameters (materials
+properties taken from [17]).
+
+Hydralloy®-based MHC
+
+30
+
+30
+
+28
+
+28
+
+T in °C
+
+T in °C
+
+Hydralloy® powder
+
+Ta
+
+26
+Ti
+
+24
+0
+
+2
+
+Ta
+
+26
+Ti
+24
+
+4
+
+6
+
+8
+
+10
+
+12
+
+0
+
+2
+
+4
+
+6
+
+8
+
+R in mm
+
+R in mm
+
+Req. power in Wel per layer
+
+160
+
+160
+
+ in kgm-3
+
+2000
+
+4040
+
+ in Wm-1K-1
+
+1
+
+9.9
+
+m in kg
+
+1.35
+
+1.42
+
+1.95
+
+1.01
+
+295
+
+567
+
+56.3
+
+108.3
+
+Ti in K
+
+1.55
+
+0.30
+
+Ta in K
+
+1.96
+
+3.78
+
+L in m
+Q/A in Wm
+
+-2
+
+Q/V in kWm
+
+-3
+
+10
+
+12
+
+Table2
+
+Table 1: Photograph of storage tank demonstrator and its main features.
+
+Mass MHC in kg
+
+6
+
+Total mass in kg
+Stored volume of H2 in m
+
+30
+3
+
+1
+
+Designed load in Wel per layer
+
+160 for 100 min, @ 4 bar back pressure
+
+Dimensions in mm
+
+261 × 444 × 458
+
+Figure1
+Click here to download high resolution image
+
+Figure2
+Click here to download high resolution image
+
+Figure3
+Click here to download high resolution image
+
+Figure4
+Click here to download high resolution image
+
+Figure5
+Click here to download high resolution image
+
+Figure6
+Click here to download high resolution image
+
+Figure7
+Click here to download high resolution image
+
+Figure8
+Click here to download high resolution image
+
+Figure and Table Caption (s) provided separately in addition to within the manuscript file
+Click here to download Figure and Table Caption (s) provided separately in addition to within the manuscript file: figure_tabl
+
+Figure 1: Scheme of a hydrogen-based power2gas system to store surplus electrical power.
+Figure 2: Van´t hoff plot of Hydralloy C5 [16], and operation conditions for the present reactor
+design.
+Figure 3: Test rig layout.
+Figure 4: Mass flow rate (A), pressure (B) and temperature difference (C) versus time for
+absorption (left) and desorption (right) under RC.
+Figure 5: Pressure (A) and temperature difference (T1: full and T2: open symbols, B) versus
+experimental time with 2*RC and 2 layers (squares) as well as with 2*RC and two single layers
+(triangles up and triangles down).
+Figure 6: Mass flow rate (A), pressure (B) and temperature difference (C) versus time for
+absorption (left) and desorption (right) under RC, 2*RC, 4*RC, and 8*RC.
+Figure 7: Mass absorbed (left) and mass desorbed (right) versus time for repeated experiments at
+RC (light grey, grey, black), 2*RC (red), 4*RC (green), and RC starting/ending at 1 bar instead of 4
+bar (turquoise).
+Figure 8: Pressure (A) and temperature difference (B) versus time for desorption experiment at RC
+with fan and without fan.
+
+Table 1: Summary of properties for powder or MHC material as well as calculated design
+parameters (materials properties taken from [17]).
+Table 2: Photograph of storage tank demonstrator and its main features.
+
+

@@ -52,6 +52,7 @@ Punto clave 3
 
 ### 4.5 Rendimiento del Sistema
 
+
 **Tiempo carga:** [minutos o horas]
 **Cantidad H2:** [kg o g de hidrógeno almacenado]
 

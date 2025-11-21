@@ -1,0 +1,506 @@
+# Notas de Lectura: Impact of using a heat transfer fluid pipe in a metal hydride-phase change material tank
+
+
+**Autor:** Mellouli, S., Askri, F., Abhilash, E., Ben Nasrallah, S.
+
+**Referencia BibTeX:** `mellouli2017`
+
+**Fecha de Publicación:** 2017
+
+---
+
+## 1. Resumen
+
+
+Este estudio presenta una innovación significativa en el diseño de tanques de almacenamiento de hidrógeno, combinando hidruros metálicos (MH) con materiales de cambio de fase (PCM) y un sistema de tuberías de fluido de transferencia de calor (HTF). Se estudian tres configuraciones: base sin HTF, HTF abierto y HTF cerrado, logrando reducción de tiempo de carga del 72-94% según configuración.
+
+## 2. Imagen de Referencia
+
+
+![Configuración del sistema](img/notas_2017_impact_of_using_heat_transfer_fliud_pipe_tanks.png)
+
+## 3. Puntos Clave y Datos
+
+
+### Aspectos Principales
+
+
+- Sistema híbrido MH-PCM con tubos de fluido de transferencia de calor (HTF)
+
+- Tres configuraciones estudiadas: base, HTF abierto (94% reducción tiempo), HTF cerrado (72% reducción)
+
+- Sistema HTF cerrado con tubos en U integrados optimiza transferencia MH→PCM
+
+- PCM actúa como sumidero de calor durante absorción
+
+- Geometría optimizada: volumen MH 0.85L, volumen PCM 0.65L
+
+- Modelado matemático completo con validación numérica
+
+## 4. Características Técnicas del Sistema
+
+
+### 4.1 Hidruro Metálico
+
+
+- **Tipo de hidruro:** LaNi5
+
+- **Cantidad de hidruro:** 0.85 L volumen lecho
+
+- **Conductividad Térmica MH:** 1.2 W/m*K (efectiva)
+
+### 4.2 Configuración Geométrica
+
+
+- **Descripción del sistema:** Cilindro anular con MH en centro, PCM en anillo externo, tubos HTF en U integrados, porosidad 0.5
+
+- **Configuración geométrica:** Cilíndrica anular con tubos HTF integrados
+
+- **Longitud (mm):** 164.3
+
+- **Diámetro (mm):** 180 (externo)
+
+- **L/D ratio:** 0.91
+
+- **Volumen (L):** 1.5 (total: 0.85L MH + 0.65L PCM)
+
+### 4.3 Transferencia de Calor
+
+
+- **Intercambiador de Calor:** Tubos en U con HTF (agua), radio tubos 6mm, espaciado 15mm
+
+- **Coeficiente de transferencia de calor:** PCM calor latente Lf, conductividad efectiva MH: 1.2 W/m*K
+
+### 4.4 Condiciones de Operación
+
+
+- **Temperatura (degC):** Inicial: 20 (293K), HTF: 20 (293K)
+
+- **Presión de trabajo:** Carga: 10 bar, HTF: 2 bar
+
+- **Flujo (NL/min):** Velocidad HTF: 0.5 m/s (agua)
+
+### 4.5 Rendimiento del Sistema
+
+
+- **Tiempo carga:** Base: 3600s, HTF abierto: 94% reducción, HTF cerrado: 72% reducción
+
+- **Cantidad H2:** Hmax capacidad según hidruro LaNi5
+
+## 5. Transferencia de Calor
+
+
+**Métodos de transferencia de calor utilizados:**
+
+- Conducción en lecho poroso de MH (porosidad 0.5)
+
+- Transferencia de calor MH→PCM por conducción
+
+- Convección forzada en tubos HTF con agua
+
+- Calor latente de fusión del PCM como sumidero térmico
+
+**Materiales y propiedades térmicas:**
+
+- MH (LaNi5): k=1.2 W/m*K (efectiva), cp según composición
+
+- PCM: calor latente Lf, conductividad kPCM
+
+- HTF: agua a 293K, velocidad 0.5 m/s
+
+- Tubos: radio 6mm, espesor pared 2mm
+
+**Eficiencia térmica:**
+
+- Configuración base: tiempo referencia 3600s
+
+- HTF abierto: reducción 94% tiempo (disipación ambiente)
+
+- HTF cerrado: reducción 72% tiempo (transferencia MH→PCM)
+
+- PCM almacena calor de reacción efectivamente
+
+**Problemas y soluciones relacionados con el manejo térmico:**
+
+- Problema: Acumulación calor en MH durante absorción
+
+- Solución: Integración de PCM como sumidero de calor latente
+
+- Problema: Velocidad lenta de evacuación de calor
+
+- Solución: Tubos HTF en U para transferencia activa
+
+- Problema: Balance entre disipación y almacenamiento
+
+- Solución: Configuración HTF cerrada optimiza MH→PCM
+
+## 6. Conclusiones y Observaciones
+
+
+**Resultados principales:**
+
+- Sistema híbrido MH-PCM-HTF mejora significativamente gestión térmica
+
+- HTF abierto logra 94% reducción tiempo (máxima eficiencia disipación)
+
+- HTF cerrado reduce 72% tiempo manteniendo almacenamiento en PCM
+
+- PCM efectivo como sumidero de calor latente durante absorción
+
+- Modelado matemático validado con ecuaciones de balance energía y cinética
+
+- Geometría optimizada: MH 0.85L, PCM 0.65L, tubos HTF 6mm radio
+
+**Recomendaciones:**
+
+- Configuración HTF abierta para aplicaciones donde velocidad es crítica
+
+- Configuración HTF cerrada para maximizar recuperación de calor en PCM
+
+- Optimizar espaciado de tubos HTF según requerimientos térmicos
+
+- Considerar costo-beneficio entre complejidad y mejora de rendimiento
+
+- Evaluar diferentes PCM según temperatura de fusión requerida
+
+- Validar experimentalmente predicciones del modelo matemático
+
+## 7. Referencias Adicionales
+
+
+- Estudios previos sobre sistemas MH-PCM sin HTF
+
+- Análisis de materiales PCM para aplicaciones de hidrógeno
+
+- Modelado de transferencia de calor en sistemas híbridos
+
+- Optimización geométrica de intercambiadores en tanques MH
+
+---
+
+### Notas Adicionales
+
+
+Modelo matemático incluye ecuaciones de balance de energía para MH y PCM, cinética de absorción y condiciones de contorno en interfaces. Tres casos estudiados demuestran impacto significativo de tubos HTF. Radio PCM interno: 40mm, espaciado tubos: 15mm. Sistema base proporciona referencia para comparación de mejoras.
+
+## 2. Análisis de Configuraciones
+
+
+### Diseño Base
+
+
+**Sistema MH-PCM tradicional:**
+
+- Contacto directo MH-PCM
+
+- Sin tubos HTF
+
+- Almacenamiento calor integral
+
+ **Innovaciones propuestas:**
+
+- Integración tubos HTF
+
+- Geometría optimizada
+
+- Control térmico mejorado
+
+### Configuraciones Estudiadas
+
+
+#### Caso 1: Sistema Base
+
+
+- MH en contacto directo con PCM
+
+- Almacenamiento calor completo
+
+- Tiempo carga base: 3600s
+
+### # Caso 2: HTF Abierto
+
+
+- Tubos rectos HTF
+
+- Disipación calor ambiente
+
+- Reducción tiempo: 94%
+
+### # Caso 3: HTF Cerrado
+
+
+- Tubos U integrados
+
+- Transferencia MH→PCM
+
+- Reducción tiempo: 72%
+
+## 3. Especificaciones Técnicas
+
+
+### Geometría del Sistema
+
+
+#### Dimensiones Principales
+
+
+- **Longitud total:** 164.3 mm
+
+- **Diámetro externo:** 180 mm
+
+- **Volumen MH:** 0.85 L
+
+- **Volumen PCM:** 0.65 L
+
+#### Detalles Constructivos
+
+
+- **Radio PCM interno:** 40 mm
+
+- **Radio tubos HTF:** 6 mm
+
+- **Espesor pared:** 2 mm
+
+- **Espaciado tubos:** 15 mm
+
+### Parámetros Operativos
+
+
+#### Condiciones HTF
+
+
+- **Fluido:** Agua
+
+- **Temperatura:** 293 K
+
+- **Velocidad:** 0.5 m/s
+
+- **Presión:** 2 bar
+
+#### Condiciones MH
+
+
+- **Presión carga:** 10 bar
+
+- **Temperatura inicial:** 293 K
+
+- **Porosidad lecho:** 0.5
+
+- **Conductividad efectiva:** 1.2 W/m*K
+
+## 4. Modelado Matemático
+
+
+### Ecuaciones Gobernantes
+
+
+#### Balance de Energía MH
+
+
+$$ (\rho c_p)_{e,MH} \frac{\partial T_{MH}}{\partial t} = \nabla \cdot (k_{e,MH} \nabla T_{MH}) + \dot{m}_{H_2}\Delta H $$
+
+Donde:
+
+- $(\rho c_p)_{e,MH}$: Capacidad calorífica efectiva del MH
+
+- $k_{e,MH}$: Conductividad térmica efectiva
+
+- $\dot{m}_{H_2}$: Tasa de absorción H2
+
+- $\Delta H$: Entalpía de reacción
+
+#### Balance de Energía PCM
+
+
+$$ \rho_{PCM} c_{p,PCM} \frac{\partial T_{PCM}}{\partial t} = \nabla \cdot (k_{PCM} \nabla T_{PCM}) + \rho_{PCM} L_f \frac{\partial f_l}{\partial t} $$
+
+Donde:
+
+- $\rho_{PCM}$: Densidad del PCM
+
+- $L_f$: Calor latente de fusión
+
+- $f_l$: Fracción líquida
+
+#### Cinética de Absorción
+
+
+$$ \frac{\partial H}{\partial t} = C_a \exp(-\frac{E_a}{RT}) \ln(\frac{P}{P_{eq}}) (H_{max} - H) $$
+
+### Condiciones de Contorno
+
+
+1. **Interfaz MH-PCM:**
+
+ $$ -k_{MH} \frac{\partial T_{MH}}{\partial n} = -k_{PCM} \frac{\partial T_{PCM}}{\partial n} $$
+
+2. **Tubo HTF:**
+
+ $$ -k_{MH} \frac{\partial T_{MH}}{\partial n} = h(T_{MH} - T_{HTF}) $$
+
+## 5. Resultados y Análisis
+
+
+### Rendimiento Térmico
+
+
+#### Caso 1 (Base)
+
+
+- Tiempo carga: 3600s
+
+- Almacenamiento calor: 100%
+
+- Temperatura máxima: 388K
+
+#### Caso 2 (HTF Abierto)
+
+
+- Reducción tiempo: 94%
+
+- Pérdida calor: 85%
+
+- Control temperatura: ±2K
+
+#### Caso 3 (HTF Cerrado)
+
+
+- Reducción tiempo: 72%
+
+- Almacenamiento calor: 95%
+
+- Eficiencia global: 82%
+
+### Análisis Paramétrico
+
+
+1. **Efecto velocidad HTF:**
+
+- Rango: 0.1-1.0 m/s
+
+- Óptimo: 0.5 m/s
+
+- Mejora: 15%
+
+2. **Diámetro tubos:**
+
+- Rango: 4-8 mm
+
+- Óptimo: 6 mm
+
+- Compromiso peso/rendimiento
+
+3. **Espaciado tubos:**
+
+- Rango: 10-20 mm
+
+- Óptimo: 15 mm
+
+- Factor limitante: conductividad MH
+
+## 6. Conclusiones
+
+
+### Ventajas y Desventajas
+
+
+#### Ventajas y Limitaciones Caso 2 (HTF Abierto)
+
+
+- ✓ Máxima velocidad carga
+
+- ✓ Control preciso temperatura
+
+- ✗ Pérdida calor reacción
+
+- ✗ Menor eficiencia energética
+
+#### Ventajas y Limitaciones Caso 3 (HTF Cerrado)
+
+
+- ✓ Balance velocidad-almacenamiento
+
+- ✓ Recuperación calor >95%
+
+- ✓ Integración térmica MH-PCM
+
+- ✗ Mayor complejidad constructiva
+
+### Recomendaciones
+
+
+1. **Configuración geométrica:**
+
+- Optimizar geometría tubos U
+
+- Minimizar resistencias contacto
+
+- Mejorar distribución PCM
+
+2. **Operación:**
+
+- Control adaptativo flujo HTF
+
+- Monitoreo temperatura PCM
+
+- Ciclos carga/descarga optimizados
+
+3. **Implementación:**
+
+- Análisis costo-beneficio
+
+- Evaluación escalabilidad
+
+- Integración sistemas existentes
+
+## 7. Referencias y Recursos
+
+
+### Referencias Clave
+
+
+1. Ben Mâad et al. (2016) "Numerical simulation of heat and mass transfer during hydrogen absorption in an Mg-Ni-based metal hydride with PCM"
+
+2. Askri et al. (2015) "Optimization of hydrogen storage in metal-hydride tanks"
+
+3. Mellouli et al. (2016) "Numerical study of heat exchanger effects on charge/discharge times of metal-hydride storage tanks"
+
+### Software y Herramientas
+
+
+1. **Simulación:**
+
+- COMSOL Multiphysics 5.2
+
+- MATLAB R2016b
+
+- Fluent 17.0
+
+2. **Análisis Datos:**
+
+- Origin Pro 2017
+
+- Python Scripts
+
+- Excel Analytics
+
+### Condiciones de Operación
+
+
+- Temperatura: 580 K
+
+- Presión: No especificada
+
+- Flujo de calor: 7600 W/m2
+
+- Otras condiciones relevantes: No especificadas
+
+### Notas sobre Figuras
+
+
+**Figura 1:**
+1a. Geometría caso 1: Tanque cilíndrico de MH rodeado por una camisa de PCM para el almacenamiento directo de calor de reacción
+1b -> Tanque similar al Caso 1, pero con 12 tubos rectos de HTF que extraen el calor para disiparlo en el ambiente caso 2
+1c -> Tanque con 12 tubos en forma de U que transfieren el calor de reacción desde el lecho de MH al PCM caso 3
+tabla 1 -> Muestra las dimensiones de los diferentes tanques simulados (radios y altura) para cada uno de los tres casos
+tabla 2 -> Enumera las propiedades termofísicas del hidruro

@@ -1,0 +1,1528 @@
+International Journal of Hydrogen Energy 155 (2025) 150341
+
+Contents lists available at ScienceDirect
+
+International Journal of Hydrogen Energy
+journal homepage: www.elsevier.com/locate/he
+
+A modular MgH2 demonstration tank to store reversibly hydrogen
+H. El Alem a,* , Z. Djordjevic b , N. Skryabina b, D. Fruchart b, M. Hajji a , M. Balli c,d ,
+A. Zaabout e, O. Mounkachi a,f,**
+a
+
+LAMCSCI, Faculty of Sciences, Mohammed V University in Rabat, Morocco
+Jomi-Leman SA, 1115 route de St Thomas, 26190, La Motte Fanjas, France
+c
+AMEEC Team, LERMA, International University of Rabat, Parc Technopolis, Rocade de Rabat-Salé, 11100, Morocco
+d
+Department of Mechanical Engineering, University of Sherbrooke, Quebec, J1K 2R1, Canada
+e
+Applied Chemistry and Engineering Research Centre of Excellence, Mohammed VI Polytechnic University (UM6P), Ben Guerir, Morocco
+f
+College of Computing, Mohammed VI Polytechnic University (UM6P), Lot 660, Ben Guerir, 43150, Ben Guerir, Morocco
+b
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Handling Editor: Ibrahim Dincer
+
+While solid state hydrogen storage in metal hydrides has gained significant attention, the performance of built
+tanks depends strongly on their designs. Namely, attention must be paid to safety, energy efficiency, and
+implementation kinetics. Hence, the optimization of heat transfers remains a key point, considering the high
+enthalpy of the Mg ↔ MgH2 reactions. Herein, the micro-sized MgH2 powder was activated with additives during
+high energy ball milled, then blended with expanded graphite to optimize the heat transfers. The resulting disks
+after pressurization were enforced as stacks of flat capsules forming the here studied demonstration tanks. In fact,
+two original tank designs including MgH2-filled capsules and intercalary heat-controller units were proposed.
+Correspondingly, two types of heaters were developed and numerically studied by using ANSYS Fluent codes.
+Thanks to large heat exchange surfaces set in between the elements forming the complete stacks, one of the
+proposed heating configurations was found to be more efficient promoting accordingly fast enough Mg ↔ MgH2
+reactions. On the other hand, subsequent experiments were carried out to ensure fast responses to the correlated
+thermodynamic conditions that are temperature and pressure as well as time-efficient absorption/desorption
+processes.
+
+Keywords:
+Solid-state hydrogen storage
+MgH2
+Modular tank
+Sorption processes
+Heat management
+
+1. Introduction
+Since global climate change has become a central concern, the search
+for new and clean energy resources has stimulated worldwide research
+activities accelerating innovation while restructuring energy industries.
+In parallel with the early merged renewable energy technologies such as
+photovoltaics [1] and wind power [2], the hydrogen vector appears as a
+promising clean and versatile solution. It would enable an effective shift
+from carbonaceous fuels to clean applications [3]. As energy carrier,
+hydrogen is expected playing a unique role in different sectors of our
+daily life such as electricity and heat productions [4,5], green ammonia
+manufacturing [6] and metallurgy [7].
+However, one of the main challenges facing the hydrogen industry is
+related to storage issues because of its very weak density. In fact, storing
+hydrogen in liquid (LH) and gaseous (GH) forms [8] presents major
+
+drawbacks including high costs and significant safety issues [9]. For
+instance, LH storage requires extremely low temperatures (<20 K),
+while GH storage requires very high pressures (30–70 MPa). These
+routes need very specific and energy-consuming infrastructures, with
+increasing risks. Conversely, storing hydrogen in solid forms offers
+several notable advantages [10,11]. It was found safer and features high
+volumetric hydrogen densities. For example, Metal Hydrides (MH),
+allow compact and stable hydrogen storage, thus easing uses for various
+industrial and energy applications [4–7,12]. It is worthy to underline
+that solid state hydrogen storage (SSHS) solutions were actively devel­
+oped. However, the optimization of hydrogen absorption/desorption
+(A/D) performance of (MH) tanks is vital for the development of safe
+energy storage solutions [9]. These tanks should enable an efficient
+storage by leveraging the capacity of hydrides to absorb and desorb
+hydrogen under specific temperature and pressure (T, P) conditions. In
+
+This article is part of a special issue entitled: ICGH 2024 (Bououdina) published in International Journal of Hydrogen Energy.
+* Corresponding author.
+** Corresponding author. LAMCSCI, Faculty of Sciences, Mohammed V University in Rabat, Morocco.
+E-mail addresses: houda.elalem@gmail.com (H. El Alem), o.mounkachi@um5r.ac.ma (O. Mounkachi).
+https://doi.org/10.1016/j.ijhydene.2025.150341
+Received 16 March 2025; Received in revised form 12 June 2025; Accepted 3 July 2025
+Available online 9 July 2025
+0360-3199/© 2025 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and
+similar technologies.
+
+H. El Alem et al.
+
+International Journal of Hydrogen Energy 155 (2025) 150341
+
+this context, many hydride materials have been studied owing to their
+ability to react with hydrogen in controlled manners. Particularly, LaNi5
+based alloys absorb and desorb hydrogen at moderate (T, P) conditions.
+They were used for storage applications as (NiMH) batteries, but the
+hydrides face limited storage capacity (<1.5 w%) [12]. Besides, the
+exotic PdHx presents a unique ability to form at ambient pressure and
+temperature [13]. Unfortunately, its high cost prevents large-scale use.
+Conversely, magnesium hydride (MgH2) is one of the most studied
+materials for hydrogen storage due to its high volumetric hydrogen
+density, its abundance and affordability [14–17]. However, its A/D
+conditions usually require temperatures higher than 300 ◦ C [17].
+Consequently, the rates of A/D processes were predominantly influ­
+enced by heat transfer and mass reactions within the tank. Therefore,
+enhancing the efficiency of heat and mass transfer in hydrogen hydride
+tanks is a key parameter for the development of this promising storage
+technique [18]. For this purpose, various approaches can be considered
+such as the enhancement of effective thermal conductivity using metal
+foams [19] or expanded natural graphite (ENG) [20–23]. Also, it was
+proposed to upgrade the heat transfer surfaces with fins, or integrate
+cooling tubes to implement the external heat transfers [24,25]. In our
+developed MgH2 tank, we have chosen to incorporate ENG not only to
+enhance the thermal conductivity of the MgH2 bodies but also to prevent
+agglomeration of the particles, thereby easing the hydrogen diffusion to
+reaction fronts. Besides, a better mechanical stability of the composite
+enables to increase its durability during the hydrogen A/D cycles. In this
+paper, novel heat exchange configurations are explored with the aim of
+optimizing the sorption process in a solid storage tank based on MgH2.
+This current experimental research work is supported by numerical
+simulations to validate challenging high-performance tanks.
+
+elements, as well as the used hydrogen storage material.
+2.1.1. A MgH2 tank with a new design
+The new designed tank was manufactured at JOMI LEMAN SAS. It
+consists of a stack of capsules as shown in Fig. 1. Each capsule contains
+two disks (diameter Φ = 30 cm) of activated MgH2. It is worth recalling
+that the primary MgH2 was prepared from ~40 μm mean size of 98 w%
+pure Mg granules by using a dedicated temperature/pressure-controlled
+furnace (50 kg batch). The 7.3 H-w% powder was High-Energy Ball
+Milled (Zoz, 20 kg batch) for a few hours with TiVCr® [22] additive as
+catalyst.
+Then the very reactive MgH2 powder blended with ENG [21,22] in
+different proportions (here 4 w%). After pressing (1 ton/cm2 by using a
+SATIL Corp. press), the resulting disks were A/D for up to 7400 cycles
+without loss in hydrogenation capacity. To assert the overall perfor­
+mances of the materials, Sievert’s (PCT SETARAM Pro) and Differential
+Scanning Calorimetry (SETARAM 131) analyzers were used. Fig. 1
+shows different parts (Fig. 1a–b) stacked as elemental bodies (Fig. 1c) of
+the tank, without using phase change materials (PCM) as was made
+elsewhere in order to optimize the energy management at the absorp­
+tion/desorption (A/D) reactions via heat transfers with the PCM
+[26–28]. Herein, to simplify and to rend faster the demonstration unit,
+the exothermal reaction was controlled by an air-cooling system as
+explained hereafter. Finally, the MgH2 based material was checked for
+its sorption kinetic characteristics at 320 ◦ C with 6.5 w% absorbed in 10
+min under 0.5 MPa (max. ~ 6.8 w%) and 6.0 w% desorbed in 17 min
+under 0.15 MPa (max. ~ 6.5 w%).
+On Fig. 2, the assembly of the elements forming the new design
+unveils that each capsule shown in Fig. 1b was positioned between a
+steel heat diffuser (HD) corresponding to the previously described
+configuration and a disk equipped with an air cooler serpentine (2.6 m
+long). The heating elements were designed to heat the hydride material
+and reach the sorption temperature. Thermocouples, labelled R1, R2, R3,
+and C1, C2, C3, were positioned at different parts of the tank to control
+and measure temperatures. Similarly, other thermocouples, named S1
+and S2, were placed aside the coolers. The latter were designed to reduce
+heat and prevent the temperature from exceeding a specific threshold,
+thereby preserving the properties of the hydride material used. The
+
+2. Metal hydride tank configurations
+2.1. Proposed configurations
+Metal hydride tanks offer a promising alternative for hydrogen
+storage in terms of efficiency and safety. However, their behavior and
+operation remain complex. The two essential elements for the tank’s
+operation are the source and configurations of heating via heater
+
+Fig. 1. The configurations: (a) (MgH2-D) disk, (b) heat diffuser with its serpentine heat resistance (2.6 m long), (c) a steel (316 SS) capsule containing two (MgH2-D)
+disks in between two heater-diffusers.
+2
+
+H. El Alem et al.
+
+International Journal of Hydrogen Energy 155 (2025) 150341
+
+Fig. 2. The newly developed magnesium hydride tank.
+
+present tank also features thermal insulation surrounding the entire
+vessel, thus minimizing thermal losses. Furthermore, flanges were fixed
+at the top and bottom of the tank to secure the various components.
+
+at 210 ◦ C. This has allowed the initiation of the absorption without
+preheating. Subsequently, the temperature began to rise due to the
+enthalpy of formation (exothermic reaction) in accordance with Eq. (1).
+To maintain the reaction rate, the excess heat was evacuated accord­
+ingly by using the air-cooling circuit, which is regulated via the
+distributed thermocouples throughout the structure.
+
+2.1.2. Numerical simulations and experimental strategies
+In this study, the heating element corresponds to a stainless-steel
+heat diffuser. Additionally, magnesium hydride-containing disks were
+designed for hydrogen storage. Throughout this study, both simulations
+and experiments are used to investigate the effect of different proposed
+heat diffuser configurations on the thermal behavior and A/D perfor­
+mance of above designed MgH2 tank.
+In this way, two configurations were numerically studied. The first
+one, as shown in Fig. 1a, features an activated (MgH2-D) with perfora­
+tions designed to house three disk heaters. These heating elements were
+included to heat the disk at the set temperature for the hydrogen A/D
+procedures. This setup represents the standard approach. In the second
+configuration, the heating elements were integrated into the steel heat
+diffuser (HD) arranged in a serpentine pattern. The heat diffuser was
+then connected to the (MgH2-D) unit, as shown in Fig. 1b. This enables
+us to maximize the contact surface between the heating element and the
+disk, ensuring a better heat dispatch. Finally, the study extends to
+consider the impact of stainless-steel (SS) capsules that contains two
+(MgH2-D) separated by a metal mesh (MM), as depicted in Fig. 1c. This
+capsule was fixed at both the upper and lower faces to the heat diffuser
+shown in Fig. 1b. Consequently, the test plan begins with a desorption
+step, according to both the numerical simulation and experimental in­
+vestigations for all the further processes.
+The whole series of experimental tests carried out on the manufac­
+tured metal hydride tank have consisted of the following steps. First, a
+set-point temperature was established depending on the selected ab­
+sorption or desorption phase. For the absorption test, the set-point was
+340 ◦ C, while 360 ◦ C is settled for desorption according to previous
+simulations [23,27,29] and tests conducted on other tank designs [25,
+30,31].
+The desorption test started with a preheating to 150 ◦ C with a power
+rating of 750 w in each heater, for a total of 1500 W (each disk being in
+contact with two heaters). Typically, the preheating temperature should
+be close to the set-point temperature. In our case, we opted for a lower
+temperature to assess the thermal diffusivity, thus the time required to
+reach the target temperature. Then, the preheating for an additional 2 h
+while maintaining a temperature of 360 ◦ C heating was paused, fol­
+lowed by a desorption process, completed within ~3 h. The absorption
+process was initiated 12 h after the desorption test noticing that thanks
+to the thermal insulation, the tank is cooled down and then maintained
+
+X
+Mg + H2 ↔ MgH2 + ΔH (ΔH ∼ 74 kJ / mole H2 )
+2
+
+(1)
+
+2.2. Mathematical thermal transfer calculation
+2.2.1. Mathematical model description
+The simulation studies were conducted using ANSYS Fluent [32]. For
+the first configuration the computation considers an activated (MgH2-D)
+with three disk heaters as shown in Fig. 3a. For the second configuration
+the computation includes a steel heat diffuser (HD) as illustrated in
+Fig. 1b in contact with an activated (MgH2-D). Both cases were found
+governed by the Fourier equation of heat propagation, as concerning the
+heating elements, the steel (HD), and the (MgH2-D). Finally for this
+configuration the computation includes the entire system as depicted in
+Fig. 1c.
+For all these different configurations, the (MgH2-D) containing
+capsule was filled with hydrogen, meaning that a convection term was to
+be considered. A representative model detailing the different concerns of
+heat transfer is shown in Fig. 3.
+The geometrical and thermal properties of each component in the
+studied configurations are presented in Table 1, while the thermophysical properties of heating element, (MgH2-D) and hydrogen, were
+obtained from Refs. [21,24,27,28]. All the parameters of columns 1 and
+3 are defined in the Table Nomenclature.
+2.2.2. Thermal transfer calculations
+Analysis of the first configuration presented in Fig. 3a includes four
+nodes: the heater element, hydrogen gas, (MgH2-D) and insulation
+cover, labelled as disk heater, H2, (MgH2-D), and I, respectively.
+Following, the second model shown in Fig. 3b includes five nodes: the
+stainless-steel tube, heater, heat diffuser, (MgH2-D), and hydrogen gas,
+respectively labelled as SS, Cu–Ni, (MgH2-D), and H2. Based on the en­
+ergy balance equation (2), a set of nonlinear equations were derived
+governing the temperature distribution in each of the components. The
+different thermal variables are THCE , TH2 TMgH2 D , Ti , Tss , Tni− ch , and THD
+considering the conduction and convection heat transfer mechanisms.
+
+3
+
+H. El Alem et al.
+
+International Journal of Hydrogen Energy 155 (2025) 150341
+
+Fig. 3. Designs of the first studied configuration 1: (a) (MgH2-D) with three disk heaters, (b) (HD) with a serpentine temperature control element fixed to the
+(MgH2-D).
+
+of electricity (HCE) to heat (QHCE,gen ) was expressed by I2 R where I and R
+are the electrical current and the resistance, respectively. The direct
+contact between the heater and the (MgH2-D) eases the heat transfer
+(qcond
+HCE− MgH2 D ) and represents the main source of energy for the system,
+
+Table 1
+Properties of each component considered for the numerical study.
+Heating element
+
+(MgH2-D) unit
+
+Parameters
+
+Values
+
+Parameters
+
+Values
+
+ρHCE
+
+8940 kg/m3
+
+ρMgH2 D
+
+1800 kg/m3
+
+CpHCE
+eHCE
+rHCE
+kHCE
+
+ρni− ch
+
+Cpni− ch
+lni− ch
+rni− ch
+kni− ch
+
+ρHD
+
+CpHD
+eHD
+AHD
+kHD
+
+ρSS
+
+CpSS
+lSS
+rSS
+kSS
+
+ρj Cpj Vj
+
+377 J/(kg⋅K)
+0.01 (m)
+0.021 (m)
+40 W/(m⋅K)
+7920 (kg/m3)
+460 J/(kg⋅K)
+0.15 (m)
+0.0025 (m)
+13.18 W/(m⋅K)
+8000 kg/m3
+500 J/(kg⋅K)
+0.0085 (m)
+0.28 (m2)
+14 W/(m⋅K)
+8000 kg/m3
+500 J/(kg⋅K)
+0.0085 (m)
+0.15 (m)
+14 W/(m⋅K)
+
+dTj
+= Qj,in − Qj,out + Qj,gen
+dt
+
+CpMgH2 − D
+AMgH2 D (config.1)
+eMgH2 D (config.1)
+kMgH2 D
+AMgH2 D (config.2)
+eMgH2 D (config.2)
+
+ρHCE CpHCE VHCE
+
+1545 J/(kg⋅K)
+0.28 (m2)
+0.015 (m)
+2 W/(m⋅K)
+0.28 (m2)
+0.015 (m)
+0.3
+
+εMgH2 D
+
+Hydrogen
+Parameters
+rH2
+TH2
+KH2
+CpH2
+​
+​
+​
+​
+​
+​
+
+Thus, the heat balance equation for the HCE can expressed as follows:
+dTHCE
+= QHCE,gen − qcond
+HCE− MgH2 D
+dt
+
+(3)
+
+For the (MgH2-D), heat exchange occurs by conduction from the
+heater (HCE) (qcond
+HCE− MgH2 D ), while convective heat exchange takes place
+between the (MgH2-D) body and hydrogen (qconv
+MgH2 D− H2 ). In this case, the
+heat balance equation for the (MgH2-D) can be written as follows:
+
+Values
+0,06 (m)
+300 (K)
+0.24 W/(m⋅K)
+14000 J/(kg⋅K)
+
+ρMgH2 D CpMgH2 D VMgH2 D
+
+dTMgH2 D
+conv
+= qcond
+HCE− MgH2 D − qMgH2 D− H2
+dt
+
+(4)
+
+Regarding the heat balance of hydrogen gas, the rejected heat from
+the (MgH2-D) was transferred by convection (qconv
+MgH2 D− H2 ).
+
+​
+​
+
+ρMgH2 D CpMgH2 D VMgH2 D
+
+​
+​
+
+dTMgH2 D
+conv
+= qcond
+HCE− MgH2 D − qMgH2 D− H2
+dt
+
+(5)
+
+Concerning the insulation layer, no heat transfer was considered
+i
+(ρi Cpi Vi dT
+= 0).
+dt
+​
+​
+
+2.2.2.2. Configuration 2. The (Ni–Cr) new HCE has the same function as
+here above being the primary heat source for the system (QHCE,gen ). The
+
+(2)
+
+heater in direct contact with the stainless-steel tube (SS) (qcond
+HCE− MgH2 D )
+
+where ρj Cpj Vj represent the thermal power stored in the studied volume.
+ρi , Cpi , Vi refer respectively to the density, specific heat and volume of
+the component j. Qin , Qout and Qgen represent respectively the incoming,
+outing and generated thermal energies within the studied volume.
+
+impacts the corresponding heat balance as follows:
+
+ρni− ch Cpni− ch VnHCE
+
+dTni− ch
+= Qni− ch,gen − qcond
+HCE− SS
+dt
+
+(6)
+
+In a second layer, conduction heat occurs between the steel tube (SS)
+)
+and the heat diffuser (HD) (qcond
+SS− (HD) . The balance equation for the steel
+
+2.2.2.1. Configuration 1. The (Cu–Ni) heater combines excellent elec­
+trical resistance with high thermal conductivity. The heater conversion
+4
+
+H. El Alem et al.
+
+International Journal of Hydrogen Energy 155 (2025) 150341
+
+tube (SS) is accordingly given by:
+
+ρSS CpSS VSS
+
+dTSS
+cond
+= qcond
+HCE− SS − qSS− (HD)
+dt
+
+Table 3
+Imposed boundary conditions for the numerical simulation.
+
+(7)
+
+The diffuser (HD) recovered heat from the steel tube (SS) then
+transferred both by conduction to the (MgH2-D) unit. Thus, the heat
+balance equations for the (HD) and the (MgH2-D) can be written as:
+
+ρHD CpHD VHD
+
+dTHD
+cond
+= qcond
+SS− (HD) − q)− MgH2 D
+dt
+
+ρMgH2 D CpMgH2 D VMgH2 D
+
+(8)
+
+dTMgH2 D
+conv
+= qcond
+(HD)− MgH2 D − qMgH2 D− H2
+dt
+
+follows:
+
+kH2 *NuMgH2 D− H2
+rH2
+
+(10)
+
+where the Nusselt number NuMgH2 − D− H2 was determined from:
+NuMgH2 D− H2 = C⋅RenH2
+
+Boundary Conditions
+
+• Initial temperature of MgH2-D was 300
+K
+• Initial temperature of heat diffuser was
+300 K
+• Temperature of heating element was
+633 K
+
+• Outer wall of tank was thermally
+insulated
+• Hydrogen inlet was at temperature of
+300 K
+
+time of the (MgH2-D) influences the overall heating of the metal hydride
+tank. Rapid and efficient (MgH2-D) heating will result in a quick
+response from the tank, enabling faster hydrogen absorption or
+desorption. Conversely, slow heating will delay the processes. This
+relationship between the (MgH2-D) heating rate and the tank heating
+underscores the importance of well-designed thermal management to
+optimize the efficiency of the hydrogen storage system. To reach the
+desired temperature of the (MgH2-D) units we propose a new configu­
+ration featuring a stainless-steel heat diffuser, in which the heating el­
+ements were integrated in the form of a coil. This configuration was
+implemented after simulation results demonstrated its effectiveness
+compared to the standard configuration, where the heating elements
+were arranged as tubes positioned inside of the (MgH2-D) units.
+Simulation results of the effect of the applied heating configurations
+are presented separately. Figs. 4–6 illustrate the thermal behavior of the
+(MgH2-D) under different heating conditions. In the standard configu­
+ration illustrated in Fig. 4, the time required to heat the (MgH2-D) was
+significantly long. As shown in Fig. 4c, the temperature of the (MgH2-D)
+units rises from 300 to 400 K within 9 min, but this thermal increase
+remains confined to the regions near the heating element. However,
+achieving a uniform temperature distribution across the entire disk re­
+quires a much longer duration, exceeding 180 min, as depicted in
+Fig. 4d. This figure highlights a more extensive thermal propagation
+across the disk but without reaching complete uniformity over its entire
+surface, confirming that the time required for overall heating was high.
+On one hand this phenomenon was explained by the ratio between
+the size of the heating element and the surface area to be heated. Spe­
+cifically, the (MgH2-D) surface was relatively large compared to the
+diameter of the heating element, which limits the heat transfer effi­
+ciency and slows down thermal diffusion throughout the disk. This
+structural constraint results in a pronounced thermal gradient, where
+only the areas in direct contact with the heating element rapidly reach
+the desired temperature, while the rest of the disk experiences a much
+slower temperature rise.
+On the other hand, although Cu–Ni is a material with high thermal
+conductivity, the heating disks were positioned at only three specific
+locations on the (MgH2-D). This limited configuration restricts contact
+with the entire surface of the disk, preventing uniform heat transfer.
+Furthermore, the heat generated by the heating elements was concen­
+trated in these specific areas, creating significant thermal gradients be­
+tween the heated and non-heated regions. Moreover, this configuration
+may lead to localized overheating, which could affect the stability of the
+MgH2 material and its ability to optimally absorb and desorb hydrogen.
+In the proposed new configuration, a steel Heat Diffuser (HD)
+
+(9)
+
+Detailed expressions for each thermal flux were listed in Table 2,
+)
+where the heat transfer coefficients (hconv
+were calculated as
+MgH2 D− H2
+
+hconv
+MgH2 D− H2 =
+
+Initial Conditions
+
+(11)
+
+Since the convection regime is laminar, the value of C and the coefficient
+n are calculated as follows:
+C = 0.59, n = 1/4 for 104 < Re < 107 (laminar regime) with: Re =
+gβ (TMgH2 D − TH2 )D3H
+2
+vα
+
+where g, β, v, α represent gravity, coefficient of thermal expansion of
+hydrogen, diameter of hydrogen passage cavity, viscosity of hydrogen
+and thermal diffusivity of hydrogen, respectively.
+To analyze the thermal performance of the system, the governing
+equations of heat transfer (Eqs. (3)–(9)) were solved numerically using
+the finite volume method (FVM), as implemented in ANSYS Fluent. The
+computational domain was discretized into a structured mesh, ensuring
+adequate refinement in regions with high thermal gradients. The
+implemented algorithm was employed for pressure-velocity coupling,
+ensuring convergence of the numerical solution. The boundary condi­
+tions defined in Table 3 were applied to simulate realistic operating
+conditions, and a grid independence study was conducted to validate the
+accuracy of the numerical model. Convergence was found achieved
+when residuals for energy drop below 10− 6, ensuring a reliable solution
+for further analysis.
+3. Results and discussion
+3.1. Numerical simulation
+The heating phase plays a crucial role in triggering the sorption
+process within the MgH2 hydride material by initiating the sorption
+reactions of hydrogen. It directly affects the temperature of the mate­
+rials, which in turn influences the fastness and efficiency of the process.
+Optimized thermal management improves the performance of the
+(MgH2-D) by easing the absorption and the release of hydrogen under
+specific temperature and pressure conditions. Consequently, the heating
+Table 2
+Thermal fluxes for the studied configurations.
+Configuration 1(Fig. 3a)
+
+Configuration 2 (Fig. 3b)
+(
+
+)
+cond
+QHCE,gen = I2 R qcond
+HCE− MgH2 D = 2πeHCE kHCE− MgH2 D THCE − TMgH2 D /log
+(
+)
+conv
+qconv
+MgH2 D− H2 = 2πrH2 eMgH2 D hMgH2 D− H2 TMgH2 D − TH2
+
+(
+
+rMgH2 D
+rHCE
+
+)
+
+(
+cond
+QHCE,gen = I2 R qcond
+HCE− SS = 2π lHCE kHCE− SS (THCE − TSS )/log
+
+kcond
+SS− HD *AHD
+(TSS − T(HD) )
+eHD
+cond
+kHD− MgH2 D *AMgH2 D (
+)
+qcond
+T(HD) − TMgH2 D
+(HD)− MgH2 D =
+eMgH2 D
+(
+)
+conv
+qconv
+MgH2 D− H2 = hMgH2 D− H2 * AMgH2 D TMgH2 D − TH2
+qcond
+SS− (HD) =
+
+5
+
+rSS
+rHCE
+
+)
+
+H. El Alem et al.
+
+International Journal of Hydrogen Energy 155 (2025) 150341
+
+Fig. 4. Effect of the disk heaters (configuration 1) on the (MgH2-D) unit over time: (a) 1 min, (b) 6 min, (c) 9 min, (d) 180 min.
+
+Fig. 5. Cross-section view illustrating the heating effect (configuration 2) on the (MgH2-D) under the impact of the serpentine heater configuration 2 over time (a)
+1 min, (b) 3 min, (c) 6 min, (d) 9 min.
+
+incorporates a serpentine heating element (Fig. 1b), designed to maxi­
+mize thermal contact with the (MgH2-D) unit. As a result, the (HD),
+heater was in direct contact with the (MgH2-D) unit enabling uniform
+and rapid heating of the disk in just 9 min. The temperature distribution
+within the (MgH2-D) is illustrated in Fig. 5, which presents a crosssection in the XY plane, highlighting the radial and axial propagation
+of heat throughout the disk. The thermal diffusion initially results in a
+
+high temperature gradient near the (HD), followed by gradual homog­
+enization due to the thermal conductivity of (MgH2-D) and internal heat
+exchanges. After a few minutes, the entire disk reaches a stable tem­
+perature, thereby optimizing the efficiency of the hydrogen storage and
+release process. The (Ni–Cr) heater was chosen for its high mechanical
+strength and durability in high-temperature environments and so a
+longer lifetime. The heating process relies on progressive thermal
+6
+
+H. El Alem et al.
+
+International Journal of Hydrogen Energy 155 (2025) 150341
+
+Fig. 6. Heating configuration 2 of a capsule over time: (a) 1 min, (b) 3 min, (c) 6 min, (d) 29 min.
+
+dissipation, where the serpentine heating element rapidly increases the
+temperature of the steel (HD) from 300 to 533 K within 1 min, as shown
+in Fig. 5a. This diffuser plays a crucial role in homogenizing the heat flux
+by efficiently transferring thermal energy to the (MgH2-D) unit which in
+turn, reaches 257 ◦ C in just 1 min.
+Compared to the previous configuration 1, this design demonstrates
+significant improvements in (HD) efficiency and uniformity. The direct
+contact between the (HD), which incorporates a serpentine heating
+element, and the (MgH2-D) eliminates thermal impedances existing in
+the previously discussed configuration, leading to a faster and more
+homogeneous temperature distribution. This enhances the overall per­
+formance of the hydrogen absorption and desorption process. Regards to
+the heat distribution within the (MgH2-D) in straight contact with the
+(HD), we extended our analysis to assess its impact on the entire capsule
+designed to accommodate two (MgH2-D). The capsule serves as a base
+unit then replicated in the design of the solid-state hydrogen storage
+demonstrator. Ensuring uniform and efficient heat propagation
+throughout the entire capsule was crucial to optimize the hydrogen
+sorption processes of the reservoir.
+As illustrated in Fig. 6, which represents the evolution of heat
+propagation across the entire capsule, this one reaches the required
+temperature of 630 K after 29 min as shown in Fig. 6d. It was noticeably
+longer than the 9 min needed to heat a single (MgH2-D). This difference
+can be explained by several factors related to the design of the demon­
+strator. The capsule contains two (MgH2-D) units along with a super­
+structure as support which increases both the sensible heat to provide
+and the thermal inertia. Furthermore, while the capsule was insulated,
+its geometry differs from that of the single disk. The two (MgH2-D)s were
+separated by a diffuser, so the heat transfer is made more complex.
+Despite the increase in heating time, the here considered design re­
+mains well efficient in terms of heat distribution and process time.
+Additionally, it allows better control of the parameters influencing the
+hydrogen absorption and desorption steps such as H2 pressure and
+dissipation of heat generated by the reaction. It was also worth noting
+that the capsule included a cooling tube within the diffuser channel,
+activated when the reaction temperature exceeds a predetermined
+threshold.
+
+3.2. Absorption/desorption experiments
+A fourfold unit capsules was supported forming an axial staking
+structure, as shown Fig. 2. The completed demonstrator was experi­
+mentally tested to evaluate the absorption and desorption processes.
+Following the preheating time (-0h03), for desorption the thermal
+monitors R1, R2 and R3 were set at ~360 ◦ C while accordingly the
+thermocouples C1, C2 and C3 show 339–357 ◦ C. Thirty minutes later, the
+mass-flow showed a gas outing rate of ~99 g/h, as the tank pressure
+decreases from 6 to 4.1 bar.
+The end of the desorption process takes place roughly ~3:45 h later,
+as shown in Fig. 7. During this a mass of 362.5 g of hydrogen was des­
+orbed as shown on Table 4. Furthermore, the four capsules in the tank
+reached a temperature ranging between 340 and 360 ◦ C, which corre­
+sponds to the range indicated in the literature, thus confirming effective
+desorption. As is well known, for the absorption test the reaction process
+begins immediately since the tank was maintained at a high temperature
+enough after the end of the desorption test. As shown in Fig. 8 and
+
+Fig. 7. Behavior of temperature, pressure and flow rate versus time during the
+hydrogen desorption. The lines are guides to the eyes.
+7
+
+International Journal of Hydrogen Energy 155 (2025) 150341
+
+H. El Alem et al.
+
+Table 4
+Results recorded step by step during the desorption process (S, C, R are given in Fig. 2).
+Time
+
+S1 (◦ C)
+
+S2 (◦ C)
+
+C1 (◦ C)
+
+C2 (◦ C)
+
+C3 (◦ C)
+
+R1 (◦ C)
+
+R2 (◦ C)
+
+R3 (◦ C)
+
+Flow rate g/h
+
+Pressure bar
+
+− 0:03
+0:00
+0:30
+1:00
+1:15
+1:30
+2:00
+2:30
+2:45
+3:00
+3:04
+3:30
+3:45
+3:46
+4:30
+5:00
+5:17
+5:15
+
+351
+351
+335
+337
+329
+324
+333
+331
+329
+326
+333
+339
+345
+347
+325
+309
+324
+317
+
+350
+349
+336
+337
+329
+325
+333
+332
+330
+329
+335
+351
+353
+354
+331
+316
+326
+319
+
+337
+349
+353
+362
+356
+352
+352
+354
+353
+350
+351
+–
+–
+349
+340
+333
+322
+315
+
+353
+355
+357
+358
+353
+357
+352
+351
+355
+350
+352
+351
+353
+346
+337
+326
+324
+318
+
+331
+341
+339
+349
+352
+354
+348
+348
+358
+352
+354
+360
+363
+348
+344
+338
+325
+317
+
+349
+357
+355
+367
+370
+368
+356
+367
+358
+359
+362
+–
+–
+351
+331
+321
+322
+315
+
+356
+359
+355
+356
+367
+357
+359
+363
+365
+359
+365
+–
+–
+351
+339
+315
+325
+319
+
+349
+359
+352
+359
+361
+366
+359
+356
+367
+365
+368
+–
+–
+357
+344
+335
+326
+318
+
+0 (0)
+0 (100)
+99.7 (100)
+99.7 (100)
+149.6 (150)
+144.3 (150)
+99.7 (100)
+99.7 (100)
+99.6 (100)
+99.0 (100)
+49.6 (50)
+49.5 (50)
+30 (50)
+0
+0
+0
+0
+0
+
+6.7
+6.6
+4.1
+4.3
+3.2
+2.8
+3.7
+3.4
+3
+2.3
+3.4
+2.7
+1.3
+3.8
+3.8
+3.8
+3.1
+2.6
+
+the temperature reaches values above 340 ◦ C only 1.5 h later, particu­
+larly in the center of the stack (thermocouple C2). This prompted us to
+implement cooling regulations to control the temperature and prevent
+the end of the absorption reaction because of the phase equilibrium limit
+Mg ↔ MgH2 [17,33]. It is worth underlining that during the test, the
+set-point flow rate of the incoming hydrogen was experimentally
+decreased from ~150 to ~50 g/h. This immediately resulted in tank
+cooling since the hydrogen reaction was reduced. Alos, this has affected
+more particularly the C3 and R3 thermometers of the external and basal
+capsule in contact with the metallic table, i.e. the less insulated. How­
+ever, a counter response was automatically delivered by the electronic
+controller to impulse the internal pressure delivered to the tank. Such an
+experiment demonstrates the prompt reactivity of this newly designed
+tank.
+At the end of the absorption test, the Mg to MgH2 transformation was
+made complete, the inning pressure level was increased, the H2 flow
+vanished, and all the measured temperatures begin to slightly decrease.
+The mass flowmeter recorded a total absorption of 364 g in very fair
+agreement with the desorption capacity of 362.5 g, i.e. a tank capacity
+>4 Nm3.
+
+Fig. 8. Behavior of temperature, pressure and flow rate versus time during
+hydrogen absorption. The lines are guides to the eyes.
+
+3.3. Efficiency estimates
+
+Table 5, upon initiating the test and opening the valves, an hydrogen
+absorption rate of ~100 g/h under a pressure of 0.1 bar was measured.
+During the storage process, the temperature and the pressure of the
+tank continue to increase with the amount of hydrogen absorbed. Hene,
+
+Even though the newly designed tank with heater configuration 2,
+has not been fully optimized, an estimate of its energy storage efficiency
+was carried out. For this purpose, it is considered first that the tank was
+maintained continuously working at the reaction temperature of
+
+Table 5
+Results recorded step by step during hydrogen absorption process (S, C, R are given in Fig. 2).
+Time
+
+S1 (◦ C)
+
+S2 (◦ C)
+
+C1 (◦ C)
+
+C2 (◦ C)
+
+C3 (◦ C)
+
+R1 (◦ C)
+
+R2 (◦ C)
+
+R3 (◦ C)
+
+Flow rate g/h
+
+Pressure bar
+
+0:00
+0:45
+1:02
+1:15
+1:30
+1:35
+1:47
+2:00
+2:15
+2:30
+2:37
+2:41
+3:05
+3:15
+3:25
+4:00
+
+210
+285
+300
+317
+334
+341
+337
+333
+333
+298
+318
+330
+300
+262
+267
+275
+
+213
+277
+294
+311
+330
+338
+334
+328
+318
+267
+285
+299
+281
+247
+250
+267
+
+208
+263
+282
+298
+316
+322
+327
+327
+326
+326
+321
+318
+313
+311
+294
+278
+
+211
+286
+300
+316
+333
+340
+345
+344
+346
+350
+343
+343
+348
+352
+338
+277
+
+211
+246
+263
+277
+294
+301
+307
+308
+304
+297
+291
+289
+286
+284
+273
+265
+
+208
+268
+282
+304
+323
+330
+335
+333
+329
+318
+303
+302
+301
+296
+268
+274
+
+213
+287
+302
+318
+335
+342
+345
+345
+346
+347
+330
+328
+323
+314
+270
+270
+
+212
+249
+267
+279
+297
+305
+311
+310
+301
+288
+278
+277
+277
+275
+260
+262
+
+99.6
+99.7
+99.7 (100)
+149.8 (150)
+149.7 (150)
+149.7 (150)
+149.7 (150)
+149.7 (150)
+149.7 (150)
+149.7 (150)
+49.6 (50)
+49.6 (50)
+49.6 (50)
+49.6 (50)
+22.4 (50)
+0 (50)
+
+0.1
+1.3
+1.9
+2.9
+4.3
+5.1
+5.3
+5.4
+5.8
+6.3
+4.5
+4.9
+6
+7.4
+9.1
+9.1
+
+8
+
+H. El Alem et al.
+
+International Journal of Hydrogen Energy 155 (2025) 150341
+
+approximately 320 ◦ C, while, the absorption and desorption processes
+were operated by external pressures of 1.5 and 0.2 MPa, respectively.
+The stack forming the tank was insulated with a 10 cm thick Rockwool035® blanket leading to an insulation index of ~0.8. So, during a
+sorption cycle, the energy loss of sensible heat ΔLS which is mainly due
+to the mass of steel superstructure, was approximated as ~3.2 kWh. On
+the other hand, the hydrogen energy stored in the tank corresponds to
+HE = ~12 kWh (~0.364 kg H2). Accordingly, the heat of MgH2 for­
+mation (ΔS) to be outed during the absorption process accounts for ~1/
+3 HE (74 kJ/mol H2). So, the present energy storage efficiency may be
+approximated as ESE = (HE-ΔS-ΔLS)/(HE-ΔS) ~ 0.6. It might be up to
+0.75 if reversible heat storage was leaned in the form of a PCM tank
+ancillary.
+Once again, better performances can be expected with a less mass of
+steel and if better thermal insulation are considered. Conversely, the
+values of ESE should be severely reduced if the tank is stopped for a long
+time. In matter of SSHS tanks, it is challenging to design configurations
+enabling to transfer and recover the heat of H – M reaction. In ref. [25] a
+recent review on heat exchanger geometry was made, however mainly
+addressed to low temperature metal hydrides. The large review on
+magnesium-based materials for hydrogen-based energy storage [16]
+gathers plenty of interesting information on the various characteristics
+of the base MgH2 materials. Also, the latter paper cites a panel of po­
+tential applications including H-reversible storage, heat transfer, heat
+production, energy and regeneration via SOF, while indicating the cor­
+responding tanks and ancillaries. Nevertheless, to our knowledge the,
+only development at industry level of activated MgH2 powders (up to 30
+t/year) followed by various types and scales of equipped tanks was
+detailed in ref. [34]. However, the new demonstrator here designed and
+tested looks perfectible at certain levels, to be retained for the incoming
+industrial scale prototype.
+
+demonstration tank was tested both numerically and experimentally,
+leading to original findings as summarized hereafter:
+The design of serpentine-shaped heaters and coolers embedded in a
+steel heat diffuser plays a determining role in reaching rapidly the
+thermal set-point. Then, in a few minutes, the hydrogen flow can be
+monitored either by a heating (or cooling) input or via the external
+pressure set point.
+The newly developed SSHS tank design based on stacks of MgH2
+capsules and heat control plates appears to be efficient particularly
+when it comes to the fast control of hydrogen absorption and desorption
+processes. In this way, global or partial (sequential) tank implementa­
+tion can be easily scheduled at demand.
+CRediT authorship contribution statement
+H. El Alem: Writing – original draft, Software, Formal analysis. Z.
+Djordjevic: Investigation. N. Skryabina: Writing – review & editing,
+Project administration, Conceptualization. D. Fruchart: Writing – re­
+view & editing, Project administration, Conceptualization. M. Hajji:
+Writing – original draft, Visualization, Formal analysis. M. Balli: Formal
+analysis, Conceptualization, Writing – review & editing. A. Zaabout:
+Writing – review & editing, Software, Formal analysis. O. Mounkachi:
+Resources, Project administration, Funding acquisition, Conceptualiza­
+tion, Writing – review & editing.
+Declaration of competing interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Acknowledgement
+
+4. Conclusion
+
+This work was funded by the Moroccan Ministry of Higher Educa­
+tion, Scientific Research and Innovation, the National Center for Sci­
+entific and Technical Research (CNRST), the OCP Foundation, and
+Mohammed VI Polytechnic University through the APRD research pro­
+gram. It is also supported by the French industrial company Jomi-Leman
+SA.
+
+To sum up, a novel MgH2 tank was proposed to minimize the heat
+transfer time from the storage material, ensuring fast and efficient
+sorption conditions. The impact of the heater plate on the response of
+elemental storage capsule was analyzed through numerical simulations.
+A stack of capsules and heaters assembled to form a MgH2-based
+
+Nomenclature
+Symbols
+A
+e
+l
+r
+D
+R
+I
+Q
+H2
+h
+k
+T
+Cp
+V
+
+ε
+ρ
+
+Subscripts
+HCE Cu–Ni
+HD
+H2
+MgH2 D
+SS
+HCE Ni–Cr
+conv, cond
+
+Area (m2)
+Thickness (m)
+Length (m)
+Radius (m)
+Diameter (m)
+Electrical resistance (Ω)
+Electric current (A)
+Thermal flux (W)
+Hydrogen
+Heat transfer coefficient (W/m2K)
+Thermal conductivity (W/mK)
+Temperature (◦ C)
+Specific heat (J/kg.K)
+Volume (m3)
+Porosity of metal hydride
+Density (kg/m3)
+Copper–Nickel heater
+Heat diffuser
+Hydrogen
+Magnesium hydride disk
+Steel
+Nickel–Chromium heater
+Convection, conduction
+(continued on next page)
+
+9
+
+H. El Alem et al.
+
+International Journal of Hydrogen Energy 155 (2025) 150341
+
+(continued )
+Symbols
+Nu
+Re
+
+Nusselt number (heat transfer coefficient convection/conduction)
+Reynolds number (the ratio of inertia to viscous forces)
+
+References
+
+[18] Chaise A, de Rango P, Marty Ph, Fruchart D. Experimental and numerical study of a
+magnesium hydride tank. Int J Hydrogen Energy 2010;35(12):6311–22. https://
+doi.org/10.1016/j.ijhydene.2010.03.057.
+[19] Glage A, Ceccato R, Lonardelli I, Girardi F, Agresti F, Principi G, et al. A powder
+metallurgy approach for the production of a MgH2–Al composite material. J Alloys
+Compd 2009;478(1–2):273–80. https://doi.org/10.1016/j.jallcom.2008.12.032.
+[20] Klein HP, Groll M. Heat transfer characteristics of expanded graphite matrices in
+metal hydride beds. Int J Hydrogen Energy 2004;29:1503–11. https://doi.org/
+10.1016/j.ijhydene.2004.01.017.
+[21] Chaise A, de Rango P, Marty Ph, Fruchart D, Miraglia S, Olivès R, et al.
+Enhancement of hydrogen sorption in magnesium hydride using expanded natural
+graphite. Int J Hydrogen Energy 2009;34:8589–96. https://doi.org/10.1016/j.
+ijhydene.2009.07.112.
+[22] de Rango P, Chaise A, Fruchart D, Marty Ph, Miraglia S. Hydrogen storage tank
+(~10 kW-MW) containing fast activated MgH2 composite with 4 at. % BCC TiVCr
++%Zr7Ni10 + 5% vol ENG, patent WO2009080975. 2008.
+[23] Pohlmann C, Röntzsch L, Kalinichenka S, Hutsch T, Kieback B. Magnesium alloygraphite composites with tailored heat conduction properties for hydrogen storage
+applications. Int J Hydrogen Energy 2010;35:12829–36. https://doi.org/10.1016/
+j.ijhydene.2010.08.104.
+[24] Delhomme B, de Rango P, Marty Ph, Bacia M M, Zawilski B, Raufast C, Miraglia S,
+Fruchart D. Large scale magnesium hydride tank coupled with an external heat
+source. Int J Hydrogen Energy 2012;37:9103–11. https://doi.org/10.1016/j.
+ijhydene.2012.03.018.
+[25] Kudiiarov V, Elman R, Pushilina N, Kurdyumov N. State of the art in development
+of heat exchanger geometry optimization and different storage bed designs of a
+metal hydride reactor. Materials 2023;16:489. https://doi.org/10.3390/
+ma16134891.
+[26] de Rango P, Bienvenu G, Chaise A, Fruchart D, Garrier S, Jehan M, et al. Tank for
+hydrogen storage containing fast activated MgH2 with MCP (Mg-Zn-Al alloys) for
+parallel heat storage. 2008. patent WO2010076415.
+[27] Garrier S, Delhomme B, de Rango P, Marty Ph, Fruchart D, Miraglia S. A new MgH2
+tank concept using a phase-change material to store the heat of reaction. Int J
+Hydrogen Energy 2013;38(23):9766–71. https://doi.org/10.1016/j.
+ijhydene.2013.05.026.
+[28] de Rango P, Marty Ph, Fruchart D. Hydrogen storage systems based on magnesium
+hydride: from laboratory tests to fuel cell integration. Appl Phys A 2016;122:126.
+https://doi.org/10.1007/s00339-016-9646-1.
+[29] de Rango P, Fruchart D, Marty Ph, Stockage massif de l’hydrogène dans l’hydrure
+de magnésium, Réf : IN170 v1. https://doi.org/10.51257/a-v1-in170 (in French) .
+[30] Yoshida K, Kajiwara K, Sugime H, Noda S, Hanada N. Numerical simulation of heat
+supply and hydrogen desorption by hydrogen flow to porous MgH2 sheet. Chem
+Eng J 2021;421:129648. https://doi.org/10.1016/j.cej.2021.129648.
+[31] Yoshida K, Noda S, Hanada N. Heat supply to and hydrogen desorption from
+magnesium hydride in a thermally insulated container with hot gas flow. Chem
+Eng J 2024;491:152070. https://doi.org/10.1016/j.cej.2024.152070.
+[32] ANSYS, Engineering Simulation Software, https://www.ansys.com.
+[33] de Rango P, Chaise A, Charbonnier J, Fruchart D, Jehan M, Marty Ph, et al.
+Nanostructured magnesium hydride for pilot tank development. J Alloys Compd
+2007;446–447:52–7. https://doi.org/10.1016/j.jallcom.2007.01.108.
+[34] Jehan M, Fruchart D. McPhy-Energy’s proposal for solid state hydrogen storage
+materials and systems. J Alloys Compd 2013;580:S343–8. https://doi.org/
+10.1016/j.jallcom.2013.03.266.
+
+[1] Saxena A, Brown C, Arneth A, Rounsevell M. Advanced photovoltaic technology
+can reduce land requirements and climate impact on energy generation. Commun
+Earth Environ 2024;5:586. https://doi.org/10.1038/s43247-024-01754-4.
+[2] Watson S, Moro A, Antunes dos Rei V, Baniotopoulos CC, Barth S, Bartoli G, et al.
+Future emerging technologies in the wind power sector: a European Perspective.
+Renew Sustain Energy Rev 2019;113:109270. https://doi.org/10.1016/j.
+rser.2019.109270.
+[3] Yue M, Lambert H, Pahon E, Roche R, Jemei S, Hissel D. Hydrogen energy systems:
+a critical review of technologies, applications, trends and challenges. Renew
+Sustain Energy Rev 2021;146(34):111180. https://doi.org/10.1016/j.
+rser.2021.111180.
+[4] Fan L, Tu Z, Chan SH. Recent development of hydrogen and fuel cell technologies.
+Rev Energy Rep 2021;7:8421–46. https://doi.org/10.1016/j.egyr.2021.08.003.
+[5] Böhm H, Moser S, Puschnigg S, Zauner A. Power-to-hydrogen & district heating:
+technology-based and infrastructure-oriented analysis of future sector coupling
+potentials. Int J Hydrogen Energy 2021;46(63):31938–51. https://doi.org/
+10.1016/j.ijhydene.2021.06.233.
+[6] Great Britain Royal Society Ammonia. Zero-carbon fertilizer. Fuel Energy, Store
+2020;39. ISBN 1782524487, 9781782524489.
+[7] Tang J, Chu M-S, Li F, Feng C, Liu Z-G, Zhou Y-S. Development and progress on
+hydrogen metallurgy. Int J Miner Metall Mater 2020;27(6):713–23. https://doi.
+org/10.1007/s12613-020-2021-4.
+[8] Andersson J, Grönkvist J. Large-scale storage of hydrogen. Int J Hydrogen Energy
+2019;44(23):11901–19. https://doi.org/10.1016/j.ijhydene.2019.03.063.
+[9] Lamari F, Weinberger B, Langlois P, Fruchart D. Instances of safety-related
+advances in hydrogen as regards its gaseous transport and buffer storage and its
+solid-state storage. Hydro 2024;5(3):387–402. https://doi.org/10.3390/
+hydrogen5030022.
+[10] Klopčič N, Grimmer I, Winkler F, Sartory M, Trattner A. A review on metal hydride
+materials for hydrogen storage. J Energy Storage 2023;72(B):108456. https://doi.
+org/10.1016/j.est.2023.108456.
+[11] Nemukula E, Mtshali CB, Nemangwele F. Metal hydrides for sustainable hydrogen
+storage: a review. Int J Energy Res 2025;1:6300225. https://doi.org/10.1155/er/
+6300225.
+[12] Nei J, Wang M. Hydrogen storage alloy development for wide operating
+temperature nickel-metal hydride battery applications. Int J Hydrogen Energy
+2024;49A(2):19–38. https://doi.org/10.1016/j.ijhydene.2023.09.087.
+[13] Wicke E, Brodowski H. In: Alefed AG, Völkl J, editors. Hydrogen in palladium and
+palladium alloys, hydrogen in metals II. Verlag: Springer; 1978. p73–151. ISBN 3540-08883-0.
+[14] Grochala W, Edwards PP. Thermal decomposition of the non-interstitial hydrides
+for the storage & production of hydrogen. Chem Rev 2004;104(3):1283–316.
+https://doi.org/10.1021/cr030691s.
+[15] Jain IP, Lal C, Jain A. Hydrogen storage in Mg: a most promising material. Int J
+Hydrogen Energy 2010;35(10):5133–44. https://doi.org/10.1016/j.
+ijhydene.2009.08.088.
+[16] Yartys VA, Lototskyy MV, Akiba E, Albert R R, Antonov VE, Ares JR, et al.
+Magnesium based materials for hydrogen based energy storage. Past, Present
+Future Int J Hydrogen Energy 2019;44(15):7809–59. https://doi.org/10.1016/j.
+ijhydene.2018.12.212. 22.
+[17] Wiswall R. In: Alefed G, Völkl J, editors. Hydrogen storage in metals, hydrogen in
+metals II, application oriented properties. Verlag: Springer; 1978. p201–38. ISBN
+3-540-08883-0.
+
+10
+
+

@@ -1,0 +1,493 @@
+WHITE PAPER
+
+SOLID HYDROGEN CARRIERS
+Advanced metal hydride technology for
+hydrogen storage, purification and compression
+applications
+June 2024
+Metal hydrides are solid hydrogen carriers that can be used in multiple applications such as highpurity hydrogen storage or thermochemical hydrogen purification and compression. Fraunhofer
+IFAM’s recent technological advances prove that metal hydride composites offer various
+advantages over conventional metal hydrides, for example, full charge-discharge cycle times of a
+few minutes.
+
+WHITE PAPER
+SOLID HYDROGEN CARRIERS
+
+Authors
+Dr. Mateusz BALCERZAK, Group Manager »Hydrogen Storage Technology and Systems«
+Phone: +49 351 2537-331; E-mail: Mateusz.Balcerzak@ifam-dd.fraunhofer.de
+Dipl.-Ing. Marius LAU, Research Fellow
+Phone: +49 351 2537-320; E-mail: Marius.Lau@ifam-dd.fraunhofer.de
+Dr.-Ing. Felix HEUBNER, Head of Department »Hydrogen Technology«
+Phone: +49 351 2537-570; E-mail: Felix.Heubner@ifam-dd.fraunhofer.de
+
+Affiliation
+Fraunhofer Institute for Manufacturing Technology and Advanced Materials IFAM
+Dresden Branch, Winterbergstraße 28, 01277 Dresden, GERMANY
+https://www.ifam.fraunhofer.de/en/h2
+
+Contents
+INTRODUCTION ...................................................................................................................... 2
+METAL HYDRIDES AS SOLID HYDROGEN CARRIERS ................................................................. 3
+METAL HYDRIDE COMPOSITES ............................................................................................... 5
+METAL HYDRIDE DEVICES....................................................................................................... 7
+R&D SERVICES ........................................................................................................................ 9
+350 BAR HYDROGEN LABORATORY AT FRAUNHOFER IFAM .................................................... 9
+CONCLUSION ........................................................................................................................11
+REFERENCES ..........................................................................................................................12
+
+1
+
+WHITE PAPER
+SOLID HYDROGEN CARRIERS
+
+INTRODUCTION
+The new hydrogen economy requires a
+variety of storage, distribution and
+dispensing technologies. Solid hydrogen
+carriers (SHC) and in particular metal
+hydrides (MH) are a commercially viable
+alternative to compressed gas or liquid
+hydrogen storage solutions. SHC allow to
+safely store hydrogen with high purity
+(7.0), at low pressures (1 to 40 bar), in a
+very compact manner (up to 150 kg H2/m³
+compared to 39 kg H2/m³ for hydrogen at
+700 bar) and without boil-off or blow-off
+losses (Figure 1) [GUP16]. MH bind hydrogen in a chemical way, i.e. in the event of
+an unintended leak of the storage vessel,
+the gas will not be released into the
+surroundings all at once but at a small rate.
+This ensures a high level of intrinsic
+technical safety.
+
+Figure 1: Hydrogen energy carriers in comparison (SHC: solid
+hydrogen carriers; LOHC: liquid organic hydrogen carriers;
+STP: standard temperature and pressure).
+
+For some years, multiple industries have used MH for high-purity hydrogen storage applications
+to run fuel cell-powered submarines, railed vehicles, stationary power devices and portable
+electronics, among other things (Figure 2). Furthermore, MH are used for vibration-free
+thermochemical hydrogen compressors, thermochemical heat pumps, and systems for
+hydrogen purification. MH can also serve as reversible hydrogen gettering materials, thus,
+selectively removing hydrogen from gas mixtures.
+In application-oriented research projects, Fraunhofer IFAM has explored ways to improve metal
+hydride technology comprising
+•
+•
+•
+•
+•
+•
+•
+
+the development of hydrogen absorbing metal alloys with optimised working gas pressure
+and temperature range for storage and compression applications,
+the fast activatability of MH-forming metal alloys, i.e., a fast initial hydrogen uptake, by
+optimised microstructure and/or the use of catalytic species,
+the increase of the durability and reliability of MH composites,
+the optimization and analysis of heat and mass transfer of MH systems,
+the development and testing of MH vessels,
+the development of MH storage devices with high volumetric and gravimetric storage
+capacity, and
+the cost reduction of MH materials production and recycling.
+
+Figure 2: Metal hydrides for hydrogen storage applications to run wheel loaders, submarines, forklift trucks, railed
+vehicles, stationary power devices and portable electronics.
+
+2
+
+WHITE PAPER
+SOLID HYDROGEN CARRIERS
+
+Fraunhofer IFAM’s mission is to develop MH systems towards commercialization. Compared to
+conventional MH technology that often employs highly porous MH materials in form of granules
+or powders, Fraunhofer IFAM uses advanced MH composites that consist of the MH-forming metal
+alloy and secondary auxiliary materials, such as graphite and/or polymers. These secondary
+materials ensure that MH composites retain their shape and allow them to increase reaction
+kinetics over the whole lifetime. Miniaturized sensors can be employed to determine the state-ofcharge of MH composites and to detect specific signs of degradation.
+
+METAL HYDRIDES AS SOLID HYDROGEN CARRIERS
+Gaseous hydrogen (H2 ) reacts at ambient or elevated temperatures with many metals or
+intermetallic alloys (Me) forming solid metal hydride compounds (MeH𝑥𝑥 ). The formation of a MH
+releases a chemical reaction enthalpy of several tens of kilojoules per mole of hydrogen (∆𝐻𝐻𝑅𝑅 ),
+depending on the specific metal or alloy involved in the reaction (cf. Equation 1 and Figure 3). In
+addition, the MH formation goes along with a slight volume expansion of the material.
+𝑥𝑥
+2
+
+Me(𝑠𝑠) + H2 (𝑔𝑔) ⇌ MeH𝑥𝑥 (𝑠𝑠) + ∆𝐻𝐻𝑅𝑅
+
+(1)
+
+Figure 3: Metal–hydrogen interaction with steps towards the formation of a metal hydride (schematic). The hydride
+formation is exothermal and goes along with a volume expansion.
+
+Conversely, the dehydrogenation of MH materials, that is, the release of high-purity hydrogen
+from the MH, is an endothermic process that consumes heat. This is important in the context of
+fuel cells (FC), because waste heat from FC systems can be used to release hydrogen from MH
+storage devices, thereby, reducing the effort of FC cooling.
+MH formation and decomposition are closely related to the hydrogen gas pressure and the
+temperature in the reaction zone (Figure 3). After adsorption of hydrogen on the surface of the
+metal, hydrogen dissociates and diffuses into the metal lattice forming a lattice gas. After
+saturation, the MH phase nucleates and grows. The thermodynamics of hydride formation can be
+described by pressure-concentration-isotherms (PCT) and the derived van´t Hoff plot (Figure 4). A
+PCT curve shows a characteristic plateau for hydrogen absorption and desorption. Here, the solid
+solution (lattice gas) and the MH phase coexist. The plateau pressure for absorption and
+desorption are temperature dependent. The PCT curve characteristics are very important for all
+
+3
+
+WHITE PAPER
+SOLID HYDROGEN CARRIERS
+
+MH applications. For example, in the plateau region hydrogen uptake and release go along with
+small pressure changes at a given temperature. On the other hand, the plateau gas pressure
+increases exponentially with increasing temperature. This relation can be used for hydrogen
+compression applications as follows: The MH is formed at a low temperature and at low pressure.
+Then the valves of the storage compartment are closed and the temperature is slightly increased,
+thus, the pressure is rising and hydrogen can be released from the again open compartment at
+high pressure. For example, according to the PCT in Figure 4, the MH forms at 25 °C (298 K) and
+at 15 bar. At 100 °C (373 K), hydrogen is released at 78 bar. In this example, a 25 % temperature
+increase triggers a 520 % pressure increase!
+
+Figure 4: Pressure and temperature dependence of hydride formation and decomposition (here: Ti-Mn alloy [HER13]):
+A – Pressure-concentration-isotherms (PCT); B – corresponding van´t Hoff plots for hydrogen absorption and desorption.
+
+The PCT curves and the derived van´t Hoff plots are unique fingerprints for every metal alloy
+composition and the respective MH. Metallurgy allows the production of metal alloys with tailored
+temperature and pressure characteristics. Thus, MH materials for various applications with specific
+properties can be prepared. The following table lists a small selection of technically important MH
+materials with indicated medium working temperature and pressure for hydrogen release:
+Material
+FeTiH2 – FeTi
+TiMn2H3 – TiMn2
+LaNi5H6 – LaNi5
+MgH2 – Mg
+Mg2NiH4 – Mg2Ni
+
+Temperature [°C]
+25
+25
+25
+300
+300
+
+Pressure [bar]
+4
+8
+2
+2
+4
+
+Commercial MH storage devices are available with a wide range of hydrogen storage capacities –
+from a few normal liters (portable cartridges) to several hundred normal cubic meters (stationary
+storage). Most MH storage devices have modular designs. They consist of one or more pressure
+containers (modules) holding the MH material that traditionally comes in form of lumps, granules,
+or powders. Inside each module, some free space is mandatory to counteract the volume
+expansion of the MH-forming material, thus, preventing additional mechanical stress on the
+container walls. Nevertheless, powder-based approaches have various drawbacks in view of the
+usable space, the effective heat and mass flows and, thereby, on the storage dynamics.
+Fast hydrogen uptake and release cycles can be guaranteed if the heat of the chemical reaction is
+quickly transported inside and away from the reaction zone. The heat transfer characteristics
+4
+
+WHITE PAPER
+SOLID HYDROGEN CARRIERS
+
+inside the reaction bed can be significantly improved by MH composites that consist of the MH
+material and secondary materials with a high intrinsic thermal conductivity like carbon, aluminium,
+or copper. The heat transfer away from the reaction bed requires suitable heat exchangers. The
+long-term stability of the hydrogen uptake and release characteristics of MH devices can be
+obtained by the preservation of the structural integrity of the reaction bed that can deteriorate by
+multiple causes, for example, MH particle migration or crack formation in the reaction zone
+lowering the effective thermal conductivity.
+
+METAL HYDRIDE COMPOSITES
+Fraunhofer IFAM has developed advanced MH composite
+materials (Figure 5) that are tested in storage modules and
+complete MH storage devices. These modern concepts provide
+more durable, more stable, and thus safer and less expensive
+MH storage and compression solutions than are available
+today. Special R&D focus is on the relation between the MHforming metal alloys, the secondary auxiliary materials such as
+carbon or aluminium, and the internal structure that unites all
+these materials in one composite material with tailored
+properties that are relevant for a specific application:
+•
+•
+•
+•
+
+Figure 5: Metal hydride composites.
+
+Hydrogen storage capacity (volumetric and gravimetric),
+working temperature and gas pressure of the MH device,
+fast hydrogen absorption and desorption kinetics by tailored thermal conductivity, and
+high mechanical stability of the MH composites throughout cycling and therewith lowest
+material degradation.
+
+The first step on the route towards MH composites with tailored properties is to employ
+metallurgical processes to produce the hydride-forming metal alloys in form of fine particles with
+specific physical and chemical properties [KAL09, KAL10]. These processes include atomization of
+a metallic melt, melt spinning, electrolytic extraction, mechanical alloying, grinding and
+decrepitation. Thereafter, the master alloy particles are homogeneously blended with the
+secondary auxiliary materials, for example graphite, aluminium flakes or polymers, before being
+compacted by uniaxial pressing into composites of a defined geometrical shape (Figure 6 and
+Figure 7) [POH10, POH13, POH15].
+
+5
+
+WHITE PAPER
+SOLID HYDROGEN CARRIERS
+
+Figure 6: Schematic of MH composite production combining a MH-forming metal alloy and secondary auxiliary materials
+with highest thermal conductivity and other functional properties.
+
+Figure 7: Arrangement of metal hydride composites made of different materials and with different parameters.
+Subfigure A (from left to right): Mg-, TiMn2-, LiNH2- and NaAlH4-based composites. Subfigure B: TiMn2-based
+composites processed in Ar atmosphere. Subfigure C: TiMn2-based composites manufactured at ambient air.
+
+The secondary auxiliary materials can serve three main purposes:
+1. They enhance the structural integrity and raise process efficiency when the material
+mixture is being compacted.
+2. They improve the hydrogen uptake dynamics by increasing the effective thermal
+conductivity (typical target values are between 5 and 30 W/(m⋅K).
+3. They provide the reaction zone with much greater mechanical stability to withstand the
+volume changes that occur during hydrogen uptake and release.
+
+6
+
+WHITE PAPER
+SOLID HYDROGEN CARRIERS
+
+Research has shown graphite to be especially suitable as a
+secondary auxiliary material as it provides the highest return
+with the least effort. For example, heat conductivities of
+several tens of W/(m∙K) can be achieved using a few
+mass-% of expanded natural graphite (ENG) as secondary
+auxiliary material. Interestingly, the internal structure of
+MH-ENG composites is anisotropic due to the compaction
+process (Figure 8) which can be beneficial for the technical
+design of MH storage containers, particularly, for the heat
+exchanger layout.
+
+METAL HYDRIDE DEVICES
+
+Figure 8: Microscopic cross-section view
+of a MgH2-ENG composite. MgH2 is
+colored grey to white and the
+horizontally aligned graphite is indicated
+in brown color (red in false color).
+
+MH composites with cylindrical geometry and an anisotropic internal structure are a very good
+choice for rapidly responding MH storage devices. For convenience in the production process, the
+tablet-shaped composites are stacked on top of each other inside a cylindrical pressure vessel.
+Small radial gaps are filled as soon as the storage material begins to expand during initial hydrogen
+uptake. Heat is transferred mainly towards the heat exchange boundary, i.e., the outer surface of
+the container (Figure 9) from where a heat transfer fluid (gas or liquid) transfers the reaction heat
+further.
+DESIGN
+The design of a MH device is not only influenced by the type of application for which the device
+will be used but also by the type of heat sinks and heat sources to which the device can be
+coupled. For example, the exhaust heat of a FC can be elegantly used the trigger the endothermic
+hydrogen release from the MH device if the heat flow and temperature levels are adjusted
+properly.
+
+Figure 9: A: Schematic drawing of a MH-based SHC storage module (left), including heat transfer (Q) during hydrogen
+desorption. B: A 15-module storage device equipped with temperature, pressure, and filling level sensor.
+
+7
+
+WHITE PAPER
+SOLID HYDROGEN CARRIERS
+
+Typical methods for identifying and monitoring MH composite characteristics either focus on
+values related to heat and mass flow (volumetric, gravimetric, or calorimetric analyses) or on
+single-point measurements, for example, by inserting thermocouples into the hydride bed to
+measure the temperature locally (Figure 9). For example, Figure 10-A illustrates the hydrogen
+absorption and desorption characteristics of a Ti-Mn–ENG composite. From this it follows that
+proper thermal management allows to charge and discharge storage devices within a few
+minutes. Figure 10-B shows the same composite after 20 hydrogen uptake and release cycles. The
+composite has been removed from the storage device after cycling for further analysis and
+obviously exhibits a good mechanical stability.
+
+Figure 10-A: Absorption and desorption characteristics of a Ti-Mn–ENG composite following 20 hydrogen uptake and
+release cycles. Inset B shows the tested composite after cycling. The predrilled holes were used to insert thermocouples.
+Figure 8-C shows the metal hydride device test rig at Fraunhofer IFAM (in-house development).
+
+VOLUME EXPANSION
+The hydride formation goes along with a material-specific volume expansion between 10 and
+30 vol.-%. Consequently, MH increase their volume during hydrogen uptake, too, although the
+degree of expansion depends not only on the kind of materials used but also on the internal
+structure of the composite. For example, pores inside the composite can partly or even fully
+accommodate the volume change. Furthermore, an anisotropic internal structure can lead to
+directional dependence of the expansion. Nevertheless, the hydrogen uptake generates stress on
+the composite material from which mechanical forces may act on the pressure vessel walls. For
+system safety, the forces need to be monitored and must be considered in the design of the
+pressure vessel. Fraunhofer IFAM has successfully developed and applied several ways to quantify
+stresses inside MH composites and the resulting forces acting on walls of MH storage devices
+[HEU15a, HEU17, HEU18].
+
+8
+
+WHITE PAPER
+SOLID HYDROGEN CARRIERS
+
+STATE-OF-CHARGE
+Due to the PCT characteristics, particularly the flat plateau region,
+gas pressure measurements are unreliable to determine the filling
+level (state-of-charge) of MH materials in dynamic applications.
+Fraunhofer IFAM invented a dynamic filling level sensor for MH
+devices that is based on the measurement of internal stresses in
+MH composites that evolve during hydrogen uptake and release
+[HEU15b]. This sensor can also provide information on
+degradation effects of the hydrogen storage material, for example
+due to gas impurities, which is beneficial to predict the lifetime of
+the hydrogen storage material.
+Current R&D at Fraunhofer IFAM focuses on designing and
+evaluating of miniaturized sensors. Prototypes with diameters of
+less than 1.6 cm (0.63 inch) have already been produced and
+successfully tested in the laboratory (Figure 11).
+
+Figure 11: State-of-charge sensor
+for MH storage devices.
+
+R&D SERVICES
+Fraunhofer IFAM provides interdisciplinary expertise and all-inclusive know-how on metal hydride
+technology. The spectrum of our R&D services comprises paper studies (technical design studies,
+literature and patent search, freedom-to-operate analyses, value-added chain analyses including
+and life cycle cost analyses) as well as technical projects (preparation and testing of MH materials,
+design and testing of MH storage devices, system integration of MH storage devices into FCs
+systems and testing thereof).
+Please contact us for more details.
+
+350 BAR HYDROGEN LABORATORY AT FRAUNHOFER IFAM
+Since 2008, Fraunhofer IFAM invests into a 350 bar Hydrogen laboratory for the development of
+sorption materials. Last installations were done in 2022. The following equipment is reserved for
+development of metal hydrides and R&D services:
+Equipment
+Membrane Compressor (Diekers)
+Piston compressor (HDT)
+PCT Pro (Setaram)
+GasPro HA (KEP, Setaram)
+
+Characteristics
+350 bar max. output pressure,
+Hydrogen purity 6.0
+200 bar max. output pressure, Hydrogen
+purity 5.0
+Sieverts apparatus (PCT) for determination
+of pressure composition isotherms.
+(200 bar 400°C)
+Sieverts apparatus (PCT) for determination
+of pressure composition isotherms,
+molecular vacuum pump installed
+(200 bar, 400°C)
+
+9
+
+WHITE PAPER
+SOLID HYDROGEN CARRIERS
+
+ISOSORP® Gas HP-Flow II (Rubotherm)
+Rubotherm Series IsoSORP SA (Waters GmbH)
+
+novoclav (büchiglasuster)
+
+Thermogravimetric suspension balance for
+determination of kinetics and cycle stability
+(200 bar, 400°C)
+Thermogravimetric suspension balance for
+determination of kinetics and cycle stability,
+several gas inlets for gas mixtures etc,
+molecular vacuum pump installed
+(350 bar, 400°C)
+Stirred batch reactor for hydrogenation of
+metals, inner volume 600 ml (450°C, 200 bar)
+
+Further equipment is used for alloy synthesis:
+Equipment
+2 x Glovebox Ar (M. Braun)
+Arc melting devices:
+MAM-1 (Edmund Bühler),
+AM 500 (Edmund Bühler)
+Induction melting devices
+
+Function
+Sample preparation in inert atmosphere
+Melting of up to 500 g (Fe-based) with
+cooled Cu crucible and suction casting option
+Several induction melting devices with
+different crucibles are used for melting of
+reactive alloys
+
+Please contact us for more details.
+
+Figure 12: Impressions of the 350 bar Hydrogen laboratory at Fraunhofer IFAM in Dresden.
+
+10
+
+WHITE PAPER
+SOLID HYDROGEN CARRIERS
+
+CONCLUSION
+Solid hydrogen carriers like metal hydrides offer advantages compared to state-of-the-art high
+pressure or liquid hydrogen storage technology. Because hydrogen is chemically bound to a host
+metal, the volumetric storage density can go up to 150 kg H2/m³ at low operation pressures in the
+order of 1 to 40 bar. Metal hydrides can be used for hydrogen storage, hydrogen purification and
+thermochemical hydrogen compression.
+Advanced metal hydride composites that are manufactured using a simple production process
+have distinct advantages over conventional powder or granular materials, for example, in view of
+operation dynamics and system storage density. Modern metal hydride devices allow hydrogen
+uptake and release cycles in the order of a few minutes only. The safe operation of metal hydride
+devices can be improved with thermomechanical sensors that determine the state-of-charge as
+well as degradation effects.
+
+11
+
+WHITE PAPER
+SOLID HYDROGEN CARRIERS
+
+REFERENCES
+[GUP16] Gupta, R. B., Basile, A., Veziroğlu, T. N. (Eds.). (2016). Compendium of Hydrogen Energy,
+Volume 2: Hydrogen Storage, Distribution and Infrastructure. Woodhead Publishing. ISBN 978178242-362-1.
+[HAN24] Hannappel, P., Alvares, E., Heubner, F., Pistidda, C. Jerabek, P., Weißgärber, T. (2024).
+Thermodynamic assessment of the Ce-H and CeNi5-H system. Calphad Journal 85, 102701.
+[HER13] Herbrig, K., Röntzsch, L., Pohlmann, C., Weißgärber, T., Kieback, B. (2013). Hydrogen
+storage systems based on hydride–graphite composites: computer simulation and experimental
+validation. International Journal of Hydrogen Energy 38 (17), 7026–7036.
+[HEU15a] Heubner, F., Pohlmann, C., Mauermann, S., Kieback, B., Röntzsch, L. (2015).
+Mechanical stresses originating from metal hydride composites during cyclic hydrogenation.
+International Journal of Hydrogen Energy, 40 (32), 10123-10130.
+[HEU15b] Heubner, F., Pohlmann, C., Röntzsch, L., Kieback, B. (2015). Messeinrichtung und
+Verfahren zur Bestimmung der Menge eines in einem Speicher aufgenommenen Gases an einem
+porösen Speichermaterial. German patent DE 10 2015 100 584 B3.
+[HEU17] Heubner, F., Mauermann, S., Kieback, B., Röntzsch, L. (2017). Stress development of
+metal hydride composites for high density hydrogen storage applications. Journal of Alloys and
+Compounds, 705, 176-182.
+[HEU18] Heubner, F., Hilger, A., Kardjilov, N., Manke, I., Kieback, B., Gondek, Ł., Banhart, J.,
+Röntzsch, L. (2018). In-operando stress measurement and neutron imaging of metal hydride
+composites for solid-state hydrogen storage. Journal of Power Sources, 397, 262-270.
+[JEH13] Jehan, M., Fruchart, D. (2013). McPhy-Energy’s proposal for solid state hydrogen storage
+materials and systems. Journal of Alloys and Compounds, 580, 343-348.
+[KAL09] Kalinichenka, S., Röntzsch, L. ; Kieback, B. (2009). Structural and hydrogen storage
+properties of melt-spun Mg–Ni–Y alloys. International Journal of Hydrogen Energy 34 (18), 7749–
+7755.
+[KAL10] Kalinichenka, S., Röntzsch, L., Baehtz, C., Kieback, B. (2010). Hydrogen desorption
+kinetics of melt-spun and hydrogenated Mg90Ni10 and Mg80Ni10Y10 using in situ synchrotron, X-ray
+diffraction and thermogravimetry. Journal of Alloys and Compounds 496 (1–2), 608–613.
+[LAU24] Lau, M., Ehrensberger, O., Weißgärber, T., Heubner, F. (2024).Impact of hydride
+composite materials on thermochemical hydrogen compression. International Journal of Hydrogen
+Energy 71, 562-570.
+[POH10] Pohlmann, C., Röntzsch, L., Kalinichenka, S., Hutsch, T., Kieback, B. (2010). Magnesium
+alloy-graphite composites with tailored heat conduction properties for hydrogen storage
+applications. International Journal of Hydrogen Energy 35 (23), 12829–12836.
+[POH13] Pohlmann, C., Röntzsch, L., Heubner, F., Weißgärber, T., Kieback, B. (2013). Solid-state
+hydrogen storage in Hydralloy–graphite composites. Journal of Power Sources 231, 97–105.
+[POH15] Pohlmann, C., Herbrig, K., Gondek, Ł. Kardjilov, N., Hilger, A., Figiel, H., Banhart, J.,
+Kieback B., Manke, I., Röntzsch, L. (2015). In operando visualization of hydride-graphite
+composites during cyclic hydrogenation by high-resolution neutron imaging. Journal of Power
+Sources 277, 360–369.
+12
+
+

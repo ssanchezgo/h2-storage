@@ -1,0 +1,4130 @@
+iew
+ed
+
+A novel design of the metal hydride reactor
+
+integrated with phase change material for H2 storage
+Xiaofei Donga, Hongxia Zhaoa, *, Hailong Lib, *, Giacomo Fucuccic, *, Qingrong
+Zhengd, Honghua Zhaoe, Jinhuan Puf
+
+a School of Energy and Power Engineering, Shandong University, Jinan, Shandong 250061,
+
+China
+
+pe
+er
+re
+v
+
+b School of Business, Society and Technology, Mälardalens University, 72123 Västerås,
+
+Sweden
+
+c Department of Enterprise Engineering “Mario Lucertini”, University of Rome “Tor
+
+Vergata”, Via del Politecnico 1, 00133 Rome, Italy
+
+d Provincial Key Laboratory of Naval Architecture & Ocean Engineering, Institute of Marine
+
+Engineering, Jimei University, Xiamen 361021, Fujian, China
+
+e Department of Engineering Mechanics, Dalian University of Technology, Dalian P.R. China,
+
+116024
+
+f Institute for Advanced Technology, Shandong University, Jinan, Shandong 250061, China
+
+* Corresponding author
+
+E-mail addresses: hongxia.zhao@sdu.edu.cn, hailong.li@mdu.se,
+giacomo.falcucci@uniroma2.it
+
+ot
+
+Abstract：Using metal hydride for hydrogen storage and transportation is a promising
+technology due to its advantages of large hydrogen storage capacity, low pressure and
+
+tn
+
+low energy consumption. It is common to combine the metal hydride reactor with phase
+change materials to recover the heat generated during the hydrogen absorption and use
+it for hydrogen desorption, which can improve the overall energy efficiency. For the
+reactor design, the heat transfer rate is a key factor affecting the performance of
+
+rin
+
+hydrogen absorption and desorption. To enhance heat transfer, this paper proposes a
+honeycomb fin metal hydride reactor integrated with PCM. Based on simulations,
+results show that the achieved hydrogen storage capacity is 1.326 wt.%, the gravimetric
+
+ep
+
+and volumetric storage densities are 0.411% and 14.76 kg of H2 per m3, and the mean
+saturated rates are 1.222×10-3 g s-1 and 0.773×10-3 g s-1 for absorption and desorption
+process. In addition, the effects of operational parameters such as fin size, thickness of
+PCM, hydrogen absorption pressure, and physical properties including solid (liquid)
+
+Pr
+
+thermal conductivity of PCM on the hydrogen absorption and desorption are
+investigated. It is found that he small fin size is beneficial to the reaction rate. With the
+increase of PCM thickness, the mean saturated rates increase, while the gravimetric and
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+volumetric storage densities decrease. The impact of operating parameters is also
+
+iew
+ed
+
+significant, increasing the PCM thermal conductivity and changing the initial
+temperature and hydrogen pressure all can accelerate the reaction rate.
+
+Keywords ： Metal hydride ； Hydrogen storage ； Honeycomb fin ； Phase change
+material；Hydrogen absorption; Hydrogen desorption
+Nomenclature
+pressure coefficients
+
+Greek symbols
+
+Ca
+
+hydrogen absorption reaction rate coefficient (s-1)
+
+∆H
+
+enthalpy of reaction (J mol-1)
+
+Cd
+
+hydrogen desorption reaction rate coefficient (s-1)
+
+ε
+
+porosity
+
+Cp
+
+heat capacity (J kg-1 K-1)
+
+λ
+
+thermal conductivity (W m-1 K-1)
+
+df
+
+outer width of fin (mm)
+
+μ
+
+dynamic viscosity (kg m-1 s-1)
+
+dp
+
+PCM thickness (mm)
+
+ρ
+
+density (kg m-3)
+
+ds
+
+outer diameter of fin (mm)
+
+Ea
+
+activation energy (J mol-1)
+
+Ed
+
+pe
+er
+re
+v
+
+A,B
+
+Subscripts
+
+initial
+
+hydrogen desorption activation energy (J mol-1)
+
+a
+
+absorption
+
+f
+
+liquid fraction
+
+ave
+
+average
+
+H
+
+shell container height, (mm)
+
+d
+
+desorption
+
+h
+
+MH bed height (mm)
+
+eff
+
+effective
+
+K
+
+permeability (m2)
+
+emp
+
+empty
+
+k
+
+mean saturated rate (g s-1)
+
+eq
+
+equilibrium
+
+L
+
+latent heat of the PCM (kJ kg-1)
+
+g
+
+gas
+
+lf
+
+inner width of fin (mm)
+
+in
+
+inlet
+
+M
+
+molar mass (kg kmol-1)
+
+l
+
+liquid
+
+
+
+hydrogen mass per unit time and unit volume (kg
+
+m
+
+melting
+
+p
+
+phase change material
+
+tn
+
+ot
+
+0
+
+m-3 s-1)
+
+m
+
+mass (kg)
+
+n
+
+normal vector
+
+ref
+
+reference
+
+P
+
+pressure (MPa)
+
+s
+
+solid
+
+R
+
+universal gas constant (J mol-1 K-1)
+
+sat
+
+saturated
+
+T
+
+temperature (K)
+
+sol
+
+solidification
+
+t
+
+time (s)
+
+Abbreviation
+
+tf
+
+fin thickness (mm)
+
+KPIs
+
+key parameter indicators
+
+Pr
+
+ep
+
+rin
+
+m
+
+V
+
+Volume (m3)
+
+MH
+
+metal hydride
+
+v
+
+velocity in the metal hydride (m s-1)
+
+PCM
+
+phase change material
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+weight percentage
+
+SGSD
+
+system gravimetric storage density
+
+X
+
+reacted fraction
+
+SVSD
+
+system volumetric storage density
+
+1 Introduction
+
+iew
+ed
+
+wt.%
+
+The development of hydrogen energy and the achievement of an effective
+
+hydrogen economy are currently challenged by the available solutions for H2 storage
+and transportation. Safety, large capacity, low cost and convenient access are the
+
+requirements for hydrogen storage technology. Metal hydride (MH), as a solid
+
+hydrogen storage technology, is considered as a potential candidate to meet the demand
+for hydrogen energy applications due to important advantages, among which the high
+
+pe
+er
+re
+v
+
+volume hydrogen storage capacity, good safety and no explosion risks. However,
+during the hydrogen absorption/desorption cycle, there is always a large amount of
+
+reaction heat, which can easily cause the hydrogen absorption/desorption reaction to be
+suspended [1]. For example, the hydrogen absorption process is exothermic, which
+inevitably leads to an increase in the temperature of the MH bed along with an increase
+in the equilibrium pressure. Once the equilibrium pressure is too high to drive the
+reaction, the hydrogen absorption process stops, resulting in a rapid reduction in
+hydrogenation rate and a loss of H2 storage capacity. Therefore, the improvement and
+accurate prediction of heat transfer plays a pivotal role in the design and optimization
+of metal hydride reactors to achieve high hydrogen storage efficiency [2].
+Many researchers have analyzed the heat and mass transfer characteristics of metal
+hydride reactors by establishing mathematical models and experimental studies. Wu et
+
+ot
+
+al. [3] proposed a three-dimensional model of a new magnesium based metal hydride
+reactor with spiral coil heat exchanger. Based on the numerical simulation, the results
+
+tn
+
+showed that the spiral coil reactor could effectively improve the hydrogen storage rate.
+Bao et al. [4] evaluated the impact of two heat transfer enhancement measures, namely,
+using metal fins and making metal hydride powder into compacts. It was concluded that
+
+rin
+
+expanded natural graphite compression technology should be recommended in MHTES
+applications, while also removing expensive metal fins. Wang et al. [5] proposed a
+radiation microchannel reactor (RMCR) to improve thermal efficiency and developed
+a radiation microchannel reactor with a jacket (RMCR-J) to eliminate adverse heat
+
+ep
+
+transfer regions inside the RMCR. Compared with different forms of reactors, radiation
+tubes could effectively remove reaction heat and rapidly reduce the temperature of the
+MH bed, thereby accelerating the H2 absorption process. Liu et al. [6] proposed a metal
+
+Pr
+
+hydride reactor with variable cross-section annular fins (VCSAF). A thermal coupling
+model between the bed and VCSAF was established, and the influence of different fin
+structural parameters on the homogeneity of the reactor was studied. The VCSAF
+structure had good performance in eliminating non-uniform reaction. With the
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+expansion of reaction scale, the heat generation capacity had significantly improved,
+
+iew
+ed
+
+which had guiding significance for the engineering application of high temperature heat
+storage technology of MH. Bai et al. [7] proposed a metal hydride reactor with coupled
+fins and metal foam, and used a three-dimensional multi-physical model for research.
+
+The results showed that compared with the original metal foam reactor and fin reactor,
+the time required for the optimized reactor to complete 90% hydrogen charging was
+
+reduced by 6.9% and 38%, respectively. Under the conditions of different materials
+
+with high thermal conductivity, the optimal fin volume ratio of the optimized fin metal
+foam reactor is about 0.4.
+
+pe
+er
+re
+v
+
+The above researches mainly focus on innovation in the forms of heat exchange
+
+tubes and fins. In addition, some scholars have studied the combination of PCM to
+further improve the hydrogen absorption and desorption rates, as shown in Table 1.
+
+Pr
+
+ep
+
+rin
+
+tn
+
+ot
+
+Figure 1 PCM is added in tubes of the metal hydride reactor [15]
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+Table 1 Summary of literature on metal hydride reactors with phase change materials
+
+d
+e
+
+Considered parameters
+
+w
+e
+i
+v
+
+Ref.
+
+Structure
+
+KPIs
+
+[8]
+
+Metal hydride
+
+Hydrogen mass stored in
+
+1. Design of the hybrid heat exchanger.
+
+1. The coiled-tube heat exchanger as a form of active heat
+
+reactor with
+
+metal hydride, and
+
+2. Heat transfer coefficient, heating water
+
+transfer method shows better performance than the PCM as a
+
+PCM jacket
+
+temperature distributions
+
+temperature and outlet pressure.
+
+kind of passive heat transfer method.
+
+and coiled-tube
+
+3. Relationships among dehydriding rate,
+
+2. The relationship between the average dehydriding rate and
+
+heat exchanger
+
+heat transfer coefficient, heating water
+
+three operation parameters is obtained.
+
+r
+e
+e
+p
+
+temperature and outlet pressure.
+[9]
+
+e
+r
+
+Without PCM,
+
+Hydrogen mass stored in
+
+1. Different controlled flowrates.
+
+1. By embedding copper foam into the PCM, PCM-MF
+
+pure PCM,
+
+metal hydride, and
+
+2. Different hydrogen pressures.
+
+composite has a significant improvement on both thermal and
+
+PCM and
+
+temperature distributions
+
+3. The reactor’s chargeability.
+
+charging/discharging performances of the MH canister.
+
+t
+o
+
+metal foam
+reactors
+
+[10]
+
+Key findings
+
+n
+t
+
+Reactors with a
+
+Reacted fraction and
+
+finned tube
+
+temperature distributions
+
+heat exchanger
+and PCM
+
+r
+P
+
+p
+e
+
+ir n
+
+2. The MH-PCM-MF system can maintain the charging
+/discharging for a significantly longer period compared to those
+achieved by using pure PCM.
+
+1. The amount of PCM.
+
+1. By comparing with the reactor without PCM (MH-HTF
+
+2. The inlet velocity of HTF.
+
+reactor), the MH-HTF-PCM reactor’s absorption time is
+
+3. The thermal conductivity of MH beds.
+
+shortened by 50%.
+
+4. The hydrogen supply pressure.
+
+2. For the MH-HTF-PCM reactor, there are optimal amount of
+PCM and the inlet velocity of HTF, and increase hydrogen
+supply pressure can effectively accelerate the hydrogen
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+absorption rate .
+[11]
+
+Reacted fraction and
+
+1. Mass ratio of PCM to MH (mr).
+
+1. The decrease of mr accelerates the desorption process.
+
+PCM unit
+
+temperature distributions
+
+2. The hydrogen supply pressure.
+
+2. When Pa is constant, there is a minimum mass ratio of PCM to
+
+(PCM
+
+MH (mr,min) to completely absorb hydrogen. In order to fully
+
+sandwiched
+
+absorb the hydrogen, Pa must increase to compensate for reduced
+
+between two
+
+mr.
+
+r
+e
+e
+p
+
+e
+r
+
+3. With the increase of Pa, mr,min and its change rate decrease.
+
+Porous metal
+
+Reacted fraction and
+
+1. The number of flat spiral tube planes
+
+1. Increasing the number of FSTPs throughout the PMHT affects
+
+hydride tank
+
+temperature distributions,
+
+(FSTPs).
+
+the absorption duration by an 8% improvement.
+
+(PMHT) with
+
+and PCM liquid fraction
+
+2. The PCM-jacket thicknesses (annulus-
+
+2. The total hydrogen absorption duration is improved by 44%
+
+shaped PCM and conical-shaped PCM).
+
+and 45% when using annulus-shaped PCMs and conical-shaped
+
+PCM and
+
+t
+o
+
+spiral tubes
+[13]
+
+w
+e
+i
+v
+
+A novel MH-
+
+layers of MH)
+[12]
+
+d
+e
+
+Metal Hydride
+
+Reacted fraction and
+
+reactor
+
+PCM liquid fraction
+
+n
+t
+
+equipped with
+nano-enhanced
+PCM and Utube heat
+
+p
+e
+
+exchanger.
+
+r
+P
+
+1. The use of U-tube.
+
+ir n
+
+PCMs compared to the non-PCM PMHTs.
+1. The U-tube heat exchanger can greatly improve the hydriding
+
+2. Add nanoparticles to the HTF.
+
+time duration by 33.5% compared to that with a basic MH tank
+
+3. The nano-enhanced PCM.
+
+configuration.
+2. The effect of the addition of nanoparticles to the HTF to
+enhance the hydriding process is found not much evident.
+3. The time duration of the hydriding process is reduced by
+11.55% and 17.21% when the nano-enhanced PCM is added with
+5% of graphene and 5% of CuO nanoparticles, respectively.
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+[14]
+
+Reacted fraction and
+
+1. The MH thermal conductivity.
+
+1. Increasing the thermal conductivity of the MH bed by adding
+
+hydride based
+
+temperature distributions,
+
+2. Fluid velocity.
+
+expended graphite is beneficial to the heat transfer from the MH
+
+thermal energy
+
+and heat flux
+
+3. The hydrogen pressure.
+
+bed to heat transfer fluid.
+
+2. the fluid velocity should match well with the thermal
+
+(MH-TES) for
+
+conductivity of the MH bed to keep the uniform heat exchange.
+
+the application
+
+3. In the MH-TES system, reheating cycle contributes to increase
+
+r
+e
+e
+p
+
+e
+r
+
+the turbine work and reduces the temperature of the condenser,
+
+solar power
+
+thus increasing the efficiency to30.8%.
+
+system
+PCM is added
+
+Reacted fraction,
+
+1. Design of the MH-nano-PCM system.
+
+1. The maximum energy loss is 1.39×107 J kg-1 in the proposed
+
+in tubes of the
+
+temperature distributions,
+
+2. Heat transfer and solidification
+
+reactor.
+
+metal hydride
+
+PCM liquid fraction, and
+
+processes in the nano-PCM tubes.
+
+2. The nano-PCM approach is a good strategy for latent energy
+
+reactor (as
+
+energy for the different
+
+shown in
+
+nano-PCM matrices
+
+t
+o
+
+n
+t
+
+Figure 1)
+[16]
+
+w
+e
+i
+v
+
+storage system
+
+of concentrated
+
+[15]
+
+d
+e
+
+A metal
+
+ir n
+
+via increasing the thermal conductivity of the PCM matrix.
+3. The tube position greatly influenced the PCM solidification
+rate.
+
+Metal Hydride
+
+Nu number, temperature
+
+1. Nu numbers for different values of Ra.
+
+1. The proposed method (a hybrid Lattice Boltzmann Phase-Field
+
+reactor
+
+evolution
+
+2. Temperature variation.
+
+algorithm) can accurately and reliably describe the melting
+
+equipped with
+PCM
+
+r
+P
+
+p
+e
+
+process of PCM.
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+In the above, the studied KPIs and the considered parameters have been
+
+iew
+ed
+
+summarized and discussed. It can be found that the optimization of fin form has not
+been studied, and few scholars have conducted a systematic and comprehensive
+analysis of the KPIs proposed in this article for evaluating the reaction process.
+
+In this paper, a new type of metal hydride reactor with honeycomb fins and
+
+integrated with phase change material is proposed to achieve uniform reaction and save
+time. The honeycomb structure has high structural efficiency and large surface area to
+
+volume ratio, resulting in good heat transfer performance. For this type of reactor,
+
+pe
+er
+re
+v
+
+honeycomb fins are placed inside to increase the heat transfer area, metal hydride is
+
+filled into the space between the fins, and phase change material is surrounded outside.
+A three-dimensional reactor model has been built using the COMSOL Multiphysics
+V5.6 to predict the reaction process. The influence of the reactor with or without fins
+on the hydrogenation process is compared by numerical simulation, and the influence
+of the fin size, the PCM thickness, the PCM thermal conductivity and latent heat value,
+the porosity of MH and the initial temperature and pressure on the reactor performance
+is studied, so as to optimize the reaction parameters of the new structure. The results of
+this study can provide reference for using honeycomb fins and PCM as an effective
+thermal management method in MH storage systems.
+
+2 Models, methods, and validation
+
+ot
+
+2.1 Metal hydride reactor geometry and material properties
+
+Figure 2 shows a schematic diagram of the MH reactor proposed in this study. The
+reactor is covered by a shell (cylinder), with an opening at the top for hydrogen to enter
+
+tn
+
+and exit. Hexagonal honeycomb fins are placed inside the reactor, surrounded by phase
+change material and filled with metal hydride. The dimensions of the reactor, including
+
+Pr
+
+ep
+
+rin
+
+the honeycomb fins and PCM, are listed in Table 2.
+
+a
+
+b
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+iew
+ed
+pe
+er
+re
+v
+
+c
+
+d
+
+Figure 2 Schematic diagram of the metal hydride reactor combined with honeycomb fins and
+phase change material (a: 3D cross sectional view; b: single honeycomb fin cross sectional view;
+c: 3D cross sectional front view; d the calculation domain of the reactor with grids)
+Table 2 Dimensions of honeycomb fins and PCM
+
+Value
+
+Outer width of fin (variable value), df (mm)
+
+7.5
+
+Inner width of fin (variable value), lf (mm)
+
+6.35
+
+Fin thickness (variable value), tf (mm)
+
+1
+
+Outer diameter of fin (fixed value), ds (mm)
+
+52.5
+
+PCM thickness (variable value), dp (mm)
+
+11.75
+
+ot
+
+Parameters
+
+MH bed height (fixed value), h (mm)
+
+70
+
+Shell container height (fixed value), H (mm)
+
+100
+
+tn
+
+In the calculation domain, as shown in Figure 2d, the shell thickness is not
+considered, the reactor is insulated, and the upper gap is designed to be large enough,
+so only the inside of the reactor is simulated. In this study, LaNi5 is selected as a
+
+rin
+
+hydrogen storage material and its thermophysical properties are shown in Table A.1 of
+Appendix A. It is crucial to select a suitable PCM to store and release heat during the
+hydrogen absorption and desorption process, PCM should have an appropriate melting
+
+ep
+
+temperature and latent heat, so that the reaction can proceed quickly. Therefore, LiNO33H2O is selected as the phase change material, with a phase change temperature of
+303K and a latent heat of 296kJ kg-1. Its specific thermophysical properties are shown
+
+Pr
+
+in Table A.2 of Appendix A.
+In order to develop and simplify the model describing the hydrogen absorption
+
+and desorption process, several assumptions are considered to establish the
+mathematical model for heat and mass transfer in MH and PCM:
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+(1) Local thermal equilibrium is valid between H2 and MH bed [17].
+
+iew
+ed
+
+(2) H2 is an ideal gas [18].
+
+(3) Natural convection [18] and thermal radiation in MH are ignored [17].
+(4) MH is isotropic and has a uniform porosity [19].
+
+(5) Heat transfer through phase change media only occurs through conduction, and due
+to the weak melting front velocity of PCM, convection can be ignored [20].
+
+(6) The thermophysical properties of MH and PCM remain unchanged during the
+absorption process [3].
+
+pe
+er
+re
+v
+
+(7) MH-PCM system is adiabatic [19].
+
+2.2 Mathematical model of metal hydride reaction bed
+2.2.1
+
+Energy equation
+
+The energy equation for MH bed is[20]：
+
+
+
+
+
+
+T
+(1)
+   eff , MH T   m H  T C p , g  C p , s 
+t
+Where: ∆H is reaction enthalpy (J mol-1); T is temperature (K); Cp,g and Cp,s are the
+
+C 
+
+p eff , MH
+
+specific heats of hydrogen and metal hydride, respectively (J kg-1 K-1); (ρCp)eff,MH
+represents the effective volumetric specific heat of MH; λeff,MH represents the effective
+thermal conductivity of MH (W m-1 K-1), which can be calculated using equations (2)
+and (3).
+
+C 
+
+  g C p , g  1    s C p , s
+
+ot
+
+p eff , MH
+
+eff , MH  g  1   s
+
+(2)
+(3)
+
+tn
+
+Where: ε, ρg, ρs, λg, λs are porosity, H2 density (kg m-3), MH density (kg m-3), H2 thermal
+conductivity (W m-1 K-1), and MH thermal conductivity (W m-1 K-1), respectively.
+2.2.2
+
+Mass conservation equation
+
+rin
+
+Solve the continuity equation in the MH layer to find the pressure and velocity
+
+fields of hydrogen in these regions, expressed as [21]：
+
+ep
+
+
+
+
+ g       g v    m
+t
+
+
+
+
+
+v 
+
+K
+
+
+
+(4)
+
+(5)
+
+P
+
+Pr
+
+The mass conservation equation of MH bed is shown in equation (6):
+
+1     s  m
+
+
+(6)
+
+t
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+
+
+
+
+iew
+ed
+
+Where:  is the Darcy velocity (m s-1); m is the mass of hydrogen absorbed per unit
+
+time and volume (kg m-3 s-1); K is the permeability inside the MH bed (m2); μ is the H2
+dynamic viscosity (kg m-1 s-1); P is the pressure gradient (Pa).
+2.2.3
+
+Reaction kinetic energy
+
+We compute the mass of absorbed and desorbed hydrogen per unit time and
+volume as proposed in [22]:
+- absorption:
+
+(7)
+
+pe
+er
+re
+v
+
+
+ E   Pg 
+ sat   s 
+m  Ca exp  a  ln
+ RT   Peq 
+
+- desorption:
+
+(8)
+
+
+ E  Pg  P d ,eq 
+ s   0 
+m  Cd exp  d 
+ RT  Pd ,eq 
+
+Where: Ca and Cd are the rates of hydrogen absorption and desorption reaction,
+respectively (s-1); Ea and Ed are the activation energies for hydrogen absorption and
+desorption, respectively (J mol-1); ρsat is the saturated density of metal hydride
+(kg m-3), 𝜌𝑠 is the density of the metal hydride reaction process (kg m-3), ρ0 is the
+initial density of metal hydride (kg m-3). Table A.2 of Appendix A reports all the values
+employed for the described parameters. Pg is the hydrogen pressure (MPa); Peq is the
+
+ot
+
+equilibrium pressure in [MPa] of the reaction process, which can be calculated in the
+general form of the Van't-Hoff equation [23], as shown in equations (9) and (10).
+
+tn
+
+ Pa ,eq 
+  Aa  Ba
+ln
+P 
+T
+ ref 
+
+(10)
+
+rin
+
+ Pd ,eq 
+  Ad  Bd
+ln
+P 
+T
+ ref 
+
+(9)
+
+In the above, when the reference pressure Pref is 1MPa, the values of A and B in
+
+ep
+
+hydrogen absorption and desorption processes are Aa=10.7 Ba=3704.6, Ad=10.57,
+Bd=3704.6, respectively.
+The kinetics equations are formulated as follows [5]:
+- absorption:
+
+Pr
+
+ E   Pg 
+ dX 
+1  X 
+
+  Ca exp  a  ln
+ dT  a
+ RT   Peq 
+
+(11)
+
+- desorption:
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+Where: X is the reacted fraction.
+
+iew
+ed
+
+(12)
+
+ E  Pg  P d ,eq 
+ dX 
+X
+
+  Cd exp  d 
+ dT  d
+ RT  Pd ,eq 
+
+The storage capacity for hydrogen is generally measured with regard to weight
+
+percentage, the calculated value of hydrogen storage in this paper is the hydrogen
+storage capacity within 8000s and the calculation formula is given as [24]:
+
+2.3 PCM mathematical model
+
+pe
+er
+re
+v
+
+mass of hydrogen absorbed 100 ρs  ρ0 
+wt.% 
+
+mass of alloy used
+ρ0
+
+(13)
+
+For PCM, the liquid phase change material has high viscosity, so the convective
+heat transfer can be ignored [21]. Therefore, the energy equation for PCM is as follows.
+
+T
+(14)
+   eff , PCM T 
+t
+Where: (ρCp)eff,PCM represents the effective volumetric specific heat of PCM; λeff,PCM
+
+C 
+
+p eff , PCM
+
+represents the effective thermal conductivity of PCM (W m-1 K-1), the calculation
+formula is as follows:
+
+C 
+
+p eff , PCM
+
+ f p ,l C p , p ,l 1  f  p , s C p , p , s   p L
+
+(15)
+(16)
+
+ot
+
+eff , PCM  f p ,l  1  f  p , s
+
+
+T
+
+Where: ρp,l and ρp,s are the density of the liquid and solid phases of PCM, respectively
+(kg m-3); Cp,p,l and Cp,p,s are the specific heat of the liquid and solid phases of PCM
+
+tn
+
+(J kg-1 K-1)；f is the liquid fraction of PCM, which is calculated according to equation
+(17) [20]；L is the latent heat of PCM (kJ kg-1). The variable density ρp and α of PCM
+are calculated by equations (18) and (19).
+
+rin
+
+
+1
+ T  T 
+sol
+f 
+
+T
+
+T
+ mel sol 
+
+0
+
+T  Tmel
+
+Tsol  T  Tmel
+
+(17)
+
+T  Tsol
+(18)
+
+1 1  f  p , s  f p ,l
+2
+p
+
+(19)
+
+ep
+
+ p  1  f  p , s  f p ,l
+
+Pr
+
+
+
+Where: Tmel and Tsol are the melting and solidification temperatures of PCM,
+respectively (K).
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+2.4 Initial and boundary conditions
+Initial conditions
+
+iew
+ed
+
+2.4.1
+
+For the hydrogen absorption process, the initial temperature of MH and PCM is
+
+set as 293.15K, and the initial MH density is taken as the hydrogen free metal density,
+
+which is 7164 kg m-3. The hydrogen pressure is 0.8MPa, and the initial MH pressure is
+the equilibrium pressure at the temperature of 293.15K. The MH pressure changes
+linearly from the initial equilibrium pressure to 0.8MPa within 100s, and then remains
+
+constant during the subsequent absorption process. For the hydrogen desorption process,
+
+pe
+er
+re
+v
+
+the initial temperature is set as 313.15K, the initial MH density is 7259 kg m-3, and the
+hydrogen pressure is 0.1MPa. The MH pressure changes linearly from the initial
+equilibrium pressure to 0.1MPa within 100s.
+For hydriding:
+T r ,  , z ,0   T0  293.15 K
+
+ s r , , z ,0   0   emp
+Pg r ,  , z ,0   P0  0.8MPa
+
+
+
+
+
+For dehydriding:
+
+0  t  100 s
+t  100 s
+
+ot
+
+ P T   P0  Pa ,eq T0   t / 100
+Pin   a ,eq 0
+P0
+
+
+(20)
+(21)
+(22)
+(23)
+
+(24)
+
+ s r , , z ,0   0   sat
+
+(25)
+
+Pg r ,  , z ,0   P0  0.1MPa
+
+(26)
+
+tn
+
+T r ,  , z ,0   T0  313.15 K
+
+rin
+
+
+
+
+
+ P T   P0  Pd ,eq T0   t / 100
+Pin   d ,eq 0
+P0
+
+
+(27)
+
+Boundary conditions
+
+ep
+
+2.4.2
+
+0  t  100 s
+t  100 s
+
+The boundary conditions are as follows:
+Inlet boundary condition [25]：
+
+Pr
+
+Pg r ,  , z ,0   Pin
+
+T  n  0
+
+(28)
+(29)
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+The conjugate heat transfer boundary condition between MH bed and PCM is
+
+iew
+ed
+
+given by:
+
+(30)
+
+MH TMH  n  PCM TPCM  n
+2.5 Key performance indicators (KPIs)
+2.5.1
+
+System gravimetric and volumetric storage density (SGSD and SVSD)
+
+The system gravimetric and volumetric storage densities of the developed MH
+
+reactor are calculated using the following equations [26]. The total mass of the reactor
+
+pe
+er
+re
+v
+
+includes the mass of metal hydride, the mass of fins and the mass of phase change
+
+material. The total volume of the reactor includes the volume of metal hydride, the
+volume of fins and the volume of phase change material.
+mass of the hydrogen stored
+System gravimetric storage density 
+total mass of the reactor
+mass of the hydrogen stored
+System volumetric storage density 
+total volume occupied by the reactor
+2.5.2
+
+Mean saturated rate
+
+(31)
+(32)
+
+k
+
+The mean hydrogen absorption and desorption rates are calculated as follows [7]:
+mH 2 , sat
+(33)
+
+t
+Average MH temperature
+
+2.5.3
+
+The change of average temperature curve can also reflect the reaction rate. The
+
+MH
+
+VMH
+
+VMH
+
+(34)
+
+tn
+
+Tave
+
+ TdV
+
+
+ot
+
+average MH temperature in the calculation domain is calculated as follows:
+
+Where: VMH is the volume of MH.
+2.6 Grid independence verification
+
+rin
+
+Figure 3 shows the grid independence verification of the reactor mathematical
+
+model. The model is tested using four different tetrahedral grids characterized by 72171,
+124701, 203297, and 294827 tetrahedral elements, respectively. The specific allocation
+
+ep
+
+of grid quantity is shown in Table 3. As can be seen from figure 3, there is no significant
+difference in temperature and reaction fraction between Grid 3 and Grid 4. Therefore,
+while ensuring computational accuracy, in order to save time and cost, the grid with
+
+Pr
+
+203297 elements is selected for the following.
+Number
+
+Table 3 Grid parameters
+Number
+
+Number
+
+Edge
+
+Vertex
+
+Average
+
+Unit
+
+Grid
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+element
+
+unit
+
+unit mass
+
+tetrahedral
+
+triangular
+
+elements
+
+elements
+
+1
+
+72171
+
+17792
+
+2572
+
+208
+
+0.6019
+
+2
+
+124701
+
+26003
+
+3086
+
+208
+
+0.6319
+
+3
+
+203297
+
+38429
+
+3708
+
+208
+
+0.6575
+
+4
+
+294827
+
+49811
+
+4393
+
+208
+
+0.6687
+
+volume
+
+volume
+
+iew
+ed
+
+of
+
+ratio
+
+(m3)
+
+0.002022
+
+3.152×10-4
+
+0.002274
+
+3.162×10-4
+
+0.00259
+
+3.166×10-4
+
+0.00255
+
+3.171×10-4
+
+pe
+er
+re
+v
+
+of
+
+b
+
+tn
+
+ot
+
+a
+
+c
+
+d
+
+Figure 3 Grid independence assessment of the reactor meshes (a: comparison of MH temperature
+
+rin
+
+and PCM temperature in hydrogen absorption process; b: comparison of reaction fraction in
+hydrogen absorption process; c: comparison of MH temperature and PCM temperature in
+hydrogen desorption process; d: comparison of PCM liquid fraction in hydrogen desorption
+
+ep
+
+process)
+
+2.7 Simulation methods and model validation
+The above equations of MH bed and PCM are solved numerically using COMSOL
+
+Pr
+
+Multiphysics V5.6 software. The time dependent solver is used to solve the change of
+reactor temperature distribution, hydrogen absorption and PCM liquid phase
+distribution with time [23]. The relative error and absolute error are set to 10-3 and 104 respectively.
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+In order to investigate the reliability of the current model, comparisons are made
+
+iew
+ed
+
+with the experimental and numerical results of Jemni et al. [27], Chung et al. [23], and
+Maad et al. [28]. Firstly, in the absence of PCM, with pressure and temperature of
+
+0.8MPa and 293K respectively, the comparison with the results of Jemni et al. [27] and
+
+Chung et al. [23] is shown in Figure 4. From the figure, it can be seen that the maximum
+deviation between numerical results and the experimental results is around 5%.
+Therefore, the established model proves effective in simulating the process of hydrogen
+absorption and desorption.
+
+pe
+er
+re
+v
+
+In order to verify the reliability of the model in the presence of the phase change
+material, the numerical results are compared with those of Maad et al. [28], as shown
+
+in Figure 5. The figure shows the variation of liquid fraction with time, with a maximum
+deviation between the two sets of results of about 4.3%. Therefore, our model provides
+
+ot
+
+reliable predictions also for PCM-enhanced reactors.
+
+b
+
+ep
+
+rin
+
+tn
+
+a
+
+c
+
+Figure 4 Comparison of simulation results with experimental and numerical data (a:
+
+Pr
+
+comparison of MH temperature in hydrogen absorption process with Jemni et al. [27]; b:
+
+comparison of MH temperature and reaction fraction in hydrogen absorption process with Chung
+
+et al. [23]; c: comparison of MH temperature and reaction fraction in hydrogen desorption process
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+pe
+er
+re
+v
+
+iew
+ed
+
+with Chung et al. [23])
+
+Figure 5 Comparison with the numerical results of liquid fraction of PCM obtained by Maad et al.
+[28]
+
+3 Results and discussion
+
+In this section, the numerical simulation results of the hydrogen absorption and
+desorption process in the proposed honeycomb fin metal hydride reactor are presented.
+The effects of different geometrical conditions (fin size, PCM thickness) and operating
+conditions (thermal conductivity of PCM, initial temperature and pressure) on the
+hydrogen absorption and desorption reaction are investigated.
+3.1 Hydrogen absorption process
+3.1.1
+
+Performance comparison of reactors with and without fins
+
+When hydrogen is injected at 0.8MPa into the reactor, the pressure is greater than
+
+ot
+
+the equilibrium pressure inside the reactor, leading to hydrogen absorption in the MH
+and heat release. By controlling the same mass of filled metal hydride and phase change
+
+tn
+
+material, a metal hydride reactor with hexagonal honeycomb fins and a metal hydride
+reactor without fins are compared at 0.8MPa and 293.15K. The changes in temperature,
+reaction fraction, and liquid phase fraction over time in the reactor are shown in Figure
+
+rin
+
+6. The reactor with hexagonal honeycomb fins achieved a reaction rate of 90% at 2420s,
+which is more than 66% higher than the reactor without fins at 7090s. At the initial
+stage of the reaction, the reaction fraction of the two is similar to the bed temperature.
+After reaching its maximum, the temperature begins to decrease. As the reaction
+
+ep
+
+continues, the proposed hexagonal honeycomb fin reactor exhibits a faster hydrogen
+absorption rate compared to the reactor without fins. This is because at the initial stage
+of the reaction, hydrogen enters the reactor and generates heat: at this stage the
+
+Pr
+
+absorption rate is weakly dependent on the heat transfer from the alloy bed and the
+reaction kinetic plays a more important role in determining the reaction rate, compared
+to heat transfer to the bed [25]. As the reaction proceeds, heat transfer becomes more
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+important. The heat generated by hydrogen absorption is released in a short time and
+
+iew
+ed
+
+transferred to the phase change material. After reaching the phase change temperature,
+the phase change material stores the heat released by the reaction, and the metal hydride
+temperature gradually decreases until equilibrium. Due to the heat transferred from the
+outermost part of the reactor to the phase change material, the internal heat transfer of
+the reactor without fins is slow, resulting in a slow drop in metal hydride temperature
+
+and a slow rise in PCM temperature. Finally, the phase transition of PCM completely
+occurs and the reaction rate slows down. The relevant KPIs are shown in Table 4 of
+
+pe
+er
+re
+v
+
+Section 3.1.5: it can be seen that the adoption of hexagonal honeycomb fins improves
+the heat transfer and hydrogen absorption rate. However, the Table shows that due to
+
+the presence of the fins, the overall gravimetric and volumetric storage densities of the
+reactor are reduced.
+
+In order to observe the heat transfer phenomenon in the reactor more intuitively,
+the changes in temperature and reaction fraction at several points in time in the reactor
+
+ot
+
+are shown in Figure B.1 of Appendix B.
+
+tn
+
+a
+
+b
+
+Figure 6 Comparison of (a) temperature and reaction fraction; (b) liquid fraction of PCM in the
+reactors with and without fins
+
+Effect of fin size on hydrogen storage
+
+rin
+
+3.1.2
+
+On the premise that the volume of metal hydride and phase change material is
+
+basically the same, the width df and thickness tf of hexagonal honeycomb fin are
+
+ep
+
+changed to 6.5mm/0.86mm, 7.5mm/1mm, 8.5mm/1mm, respectively. The physical
+parameters are reported in Table 5: the bold values represent the initial parameters. The
+reaction fraction, bed temperature, and liquid fraction of three different fin sizes are
+
+Pr
+
+compared at 0.8MPa and 293.15K, as shown in Figure 7. The results show that the
+reaction time of 6.5 mm/0.86 mm fin size is less, and the hydrogen absorption rate and
+temperature drop faster. The specific numerical changes are shown in Table 4 of
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+Section 3.1.5. The mean saturated rate decreases from 1.269×10-3 for 6.5mm fins to
+
+iew
+ed
+
+1.204×10-3 for 8.5mm fins. This is due to the higher fin density in the reactor with the
+6.5mm fins, which makes the metal hydride distribution more uniform and the heat
+
+transfer faster, while the reaction evolution in the presence of 7.5 mm and 8.5 mm fins
+is basically the same. Compared with the two forms, the 6.5 mm fin reaction rate
+increases by about 7%, and the hydrogen storage capacity of the three fin forms all
+
+reach 1.326 wt.%. The specific change processes at several points in time in the reactor
+are shown in Figure B.2 of Appendix B.
+Parameters
+Fin width, df (mm)
+Fin thickness, tf (mm)
+MH volume, VMH (cm3)
+
+Value
+
+6.5/7.5/8.5
+
+0.86/1.0/1.0
+
+49.45/49.22/49.36
+0.354/0.353/0.354
+
+ot
+
+MH mass, mMH (kg)
+
+pe
+er
+re
+v
+
+Table 5 Parameters of different fin sizes
+
+ep
+
+rin
+
+tn
+
+a
+
+b
+
+c
+
+Pr
+
+Figure 7 Under different fin sizes, (a) MH temperature and PCM temperature; (b)
+
+3.1.3
+
+reaction fraction; (c) liquid fraction of PCM in the reactor change over time
+
+Effect of changes in PCM thickness on hydrogen storage
+
+In this section we evaluate the effect of PCM thickness on reactor performance.
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+The results are summarized in Figure 8. The PCM thickness dp is 11.25mm, 11.75mm,
+
+iew
+ed
+
+12.25mm, and 12.75mm, respectively. The specific volume and mass parameters of
+
+PCM are shown in Table 6, with the bold values in the table representing the initial
+
+parameters. It can be seen that when PCM thickness dp increases from 11.25mm to
+
+12.75mm, MH has a faster heat release and reaction rate, thereby improving its heat
+storage capacity. Due to the increase in volume and mass of PCM, it can absorb more
+
+reaction heat and increase the heat release rate of MH, so that the equilibrium
+temperature reached by bed temperature is lower. The time required for the reactor to
+
+pe
+er
+re
+v
+
+reach 90% reaction fraction is 2480s, 2420s, 2360s, and 2300s, respectively. All
+
+reactors reach a hydrogen storage capacity of 1.326 wt.%, but at different times. The
+hydrogen absorption time is reduced by about 7% when the PCM thickness increases
+from 11.25mm to 12.75mm. Besides, the other KPIs are shown in Table 4. We find
+that, as the PCM thickness increases, the total mass and volume of the reactor grow,
+resulting in a decrease in the gravimetric and volumetric storage densities. Such a
+decrease is balanced by an increase in the mean saturated rates. By comparison, the
+gravimetric and volumetric storage densities in reference [26] are 0.73% and 20.4 kg
+of H2 per m3, respectively, while the gravimetric and volumetric storage densities of
+our reactor are decreased by an average of 44.1%, 28.3%, respectively. This is because
+the application of honeycomb fins and PCM increases the volume and mass of the
+
+ot
+
+reactor. However, the adoption of honeycomb fins provides a faster more effective heat
+transfer, accelerating the reaction rates of hydrogen absorption and desorption. This
+enhancement is sided by the reduction in energy consumption due to the heat recovered
+
+tn
+
+through the exploitation of the PCM. The specific reaction fraction, temperature, and
+liquid fraction change processes at several points in time in the reactor are shown in
+
+rin
+
+Figure B.3 of Appendix B.
+
+Table 6 Parameters of different PCM thickness
+Value
+
+PCM thickness, dp (mm)
+
+11.25/11.75/12.25/12.75
+
+PCM volume, VPCM (cm3)
+
+157.72/166.02/174.43/182.95
+
+PCM mass, mPCM (kg)
+
+0.309/0.325/0.342/0.359
+
+Pr
+
+ep
+
+Parameters
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+iew
+ed
+pe
+er
+re
+v
+
+a
+
+b
+
+c
+
+Figure 8 Under different PCM thickness, (a) MH temperature and PCM temperature; (b)
+reaction fraction; (c) liquid fraction of PCM in the reactor change over time
+
+3.1.4
+
+Effect of changes in operating parameters on hydrogen storage
+
+ot
+
+3.1.4.1 Effect of solid thermal conductivity of PCM
+The changes of bed temperature, PCM temperature, reaction fraction and liquid
+
+tn
+
+fraction with time during hydrogen absorption in metal hydride reactor under different
+solid thermal conductivity of PCM are shown in figure 9. The solid thermal
+conductivities are 1.32W m-1 K-1, 2.64W m-1 K-1, 5.28W m-1 K-1, 7.92W m-1 K-1, and
+
+rin
+
+15.84W m-1 K-1, respectively, while the other parameters remain unchanged. As shown
+in the figure, when the solid thermal conductivity of PCM increases from 1.32W m-1
+K-1 to 15.84W m-1 K-1, the time for hydrogen absorption decreases, and the time to
+
+ep
+
+reach 1.326 wt.% hydrogen storage is also shorter, and the hydrogen absorption time is
+reduced by about 20%. The corresponding mean saturated rates are 1.222×10-3 g s-1,
+1.226×10-3 g s-1, 1.239×10-3 g s-1, 1.414×10-3 g s-1, and 1.554×10-3 g s-1. This is
+because the increase of the solid thermal conductivity allows a faster transfer and a
+
+Pr
+
+larger storage in the PCM of the heat generated by hydrogen absorption process.
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+iew
+ed
+pe
+er
+re
+v
+
+a
+
+b
+
+c
+
+Figure 9 Under different solid thermal conductivity of PCM, (a) MH temperature and PCM
+temperature; (b) reaction fraction; (c) liquid fraction of PCM in the reactor change over time
+
+3.1.4.2 Effect of liquid thermal conductivity of PCM
+
+ot
+
+From the above, it can be seen that when the solid thermal conductivity increases
+by 12 times, the reaction time only decreases by 20%. This shows that thermal
+
+tn
+
+conductivity has little effect on the reactor bed temperature and hydrogen absorption
+reaction fraction. This may be due to the solid thermal conductivity of the PCM
+affecting only the initial stage of heat transfer [29]. When the phase change temperature
+
+rin
+
+is reached, as the reaction heat transfers, the PCM gradually undergoes a phase
+transition from solid to liquid from the inside out, and excess reaction heat is stored in
+the liquid PCM. As the liquid fraction of the PCM becomes larger, the impact of the
+
+ep
+
+solid PCM thermal conductivity on the reactor performance becomes negligible.
+When the liquid thermal conductivity is 0.58W m-1 K-1, 1.16W m-1 K-1,
+
+2.32W m-1 K-1 and 3.48W m-1 K-1 respectively, the bed and PCM temperatures, reaction
+fraction and liquid fraction in the metal hydride reactor are shown in Figure 10. From
+
+Pr
+
+Figure 10, it can be seen that the time taken for the bed temperature to drop to the
+equilibrium temperature decreases by about 3100s, and the maximum temperature
+reached by the bed decreases. The time for the reactor to reach 90% reaction rate
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+decreases by about 71%. The corresponding KPIs are shown in Table 4. It can be seen
+
+iew
+ed
+
+that the mean saturated rate gradually increases. In addition, when the liquid thermal
+conductivity increases from 2.32W m-1 K-1 to 3.48W m-1 K-1, the hydrogen absorption
+
+rate increases slightly, thus further increasing the liquid thermal conductivity does not
+provide any significant improvements. This is because the heat diffusion can only reach
+
+the heat unsaturated PCM through the metal hydride bed, honeycomb fins and liquid
+phase change material. When the liquid thermal conductivity of PCM increases and
+
+exceeds the thermal conductivity of the metal hydride bed, the main limiting factor of
+
+pe
+er
+re
+v
+
+heat diffusion changes from the liquid thermal conductivity of PCM to the thermal
+conductivity of the metal hydride bed.
+
+b
+
+rin
+
+tn
+
+ot
+
+a
+
+c
+
+Figure 10 Under different liquid thermal conductivity of PCM, (a) MH temperature and PCM
+
+ep
+
+temperature; (b) reaction fraction; (c) liquid fraction of PCM in the reactor change over time
+
+3.1.4.3 Effect of initial temperature
+The effect of initial temperature on the hydrogen absorption process is studied, as
+
+shown in Figure 11. For each case, the initial temperature values are 273.15K, 283.15K,
+
+Pr
+
+293.15K, and 303.15K, respectively. All other parameters are left unchanged. The
+figure shows that changes in the initial temperature have a significant impact on the
+hydrogen absorption. Through the change of reaction fraction and bed temperature, it
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+can be seen that lower initial temperature has faster reaction rate. At an initial
+
+iew
+ed
+
+temperature of 273.15K, approximately 75% of hydrogen is absorbed within 1000s, the
+
+mean saturated rate is 1.591×10-3 g s-1, while, at an initial temperature of 303.15K, the
+reaction fraction reaches only 0.61 even after 8000s, with a hydrogen storage capacity
+of 0.811 wt.%, and the mean saturated rate is 0.359×10-3 g s-1. This shows that the
+reaction rate decreases as the initial temperature increases. This can be ascribed to the
+
+fact that, since the melting temperature of PCM is 303K, when the initial temperature
+is set to 273.15K, the difference with the melting temperature of PCM is about
+
+pe
+er
+re
+v
+
+30K. The heat released by hydrogen absorption can be fully absorbed by PCM,
+promoting rapid reaction. However, when the initial temperature is 303.15K, the
+
+melting temperature of PCM has already been reached, causing PCM to undergo phase
+transition at the beginning of the reaction. This results in an initial temperature that is
+too high, causing the PCM temperature to rise too fast to fully absorb the heat generated
+by the reaction. As shown in the figure 11 of the bed temperature and liquid fraction,
+bed temperature can not be declined at high temperature, liquid phase fraction within
+660s has reached 90%, so that the hydrogen absorption rate and the amount of hydrogen
+absorption are reduced. Therefore, the lower initial temperature can promote the
+
+a
+
+Pr
+
+ep
+
+rin
+
+tn
+
+ot
+
+process of reaction.
+
+b
+
+c
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+iew
+ed
+
+Figure 11 Under different initial temperature, (a) MH temperature and PCM temperature; (b)
+reaction fraction; (c) liquid fraction of PCM in the reactor change over time
+
+3.1.4.4 Effect of hydrogen absorption pressure
+
+In addition to the influencing factors studied above, hydrogen absorption pressure
+
+is also an important operating parameter of hydrogen storage reaction. Figure 12 shows
+the influence of hydrogen pressure (0.6MPa, 0.8MPa, 1.0MPa, 1.2MPa) on the
+absorption process. The results indicate that the increase in hydrogen pressure
+
+effectively improves the heat transfer and hydrogen absorption rate. During the
+
+pe
+er
+re
+v
+
+hydrogen absorption process, the temperature first rises rapidly to the highest values
+
+corresponding to different pressures, then maintains for a period of time before rapidly
+decreasing, and then decreases at a slower rate. The sharp increase in temperature is
+due to the low temperature at the beginning of the reaction, low equilibrium hydrogen
+pressure, large reaction driving force (the difference between hydrogen pressure in the
+reactor and equilibrium hydrogen pressure), and fast reaction speed; the reaction
+fraction sharply increases, and in a short time, a large amount of heat is released from
+the reaction, which cannot be transmitted from the bed layer to the phase change
+material zone in time, resulting in a sharp increase in bed temperature. After reaching
+the highest temperature, the driving force of the reaction begins to decrease, and the
+reaction tends to be gentle. The heat generated by the reaction is slowly transferred to
+
+ot
+
+the phase change material, and the heat generated by the reaction is basically in
+equilibrium with the heat transferred to the PCM. Therefore, it will be maintained for a
+period of time at the highest temperature. Then the temperature rapidly decreases, and
+
+tn
+
+the temperature in the phase change zone rises to the phase change temperature. The
+PCM begins to melt, absorbing and storing the heat. Finally, as the reaction approaches
+completion and the temperature difference between the reaction zone and the phase
+
+rin
+
+change material gradually reduces, causing a decrease in the bed temperature, and
+causing a change of slope for the reaction and liquid fractions. In addition, it can be
+seen from the figure that the higher the hydrogen pressure, the greater the rise in
+
+ep
+
+temperature, leading to the highest temperatures of 330K, 338K, 345K, and 351K,
+respectively. The large pressure difference, in fact, provides the driving force in the
+reaction process, promoting the progress of the reaction. The time for the reactor to
+
+Pr
+
+reach 90% reaction fraction is 3420s, 2300s, 1900s, and 1640s, respectively, the
+hydrogen absorption time is reduced by about 52%, and the corresponding mean
+saturated rates are 0.840×10-3 g s-1, 1.222×10-3 g s-1, 1.431×10-3 g s-1, and 1.700×
+10-3 g s-1.
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+iew
+ed
+pe
+er
+re
+v
+
+a
+
+b
+
+c
+
+Figure 12 Under different hydrogen absorption pressure, (a) MH temperature and PCM
+temperature; (b) reaction fraction; (c) liquid fraction of PCM in the reactor change over time
+
+3.1.5
+
+Key performance indicators’ results of hydrogen absorption process
+
+ot
+
+The values of weight percentage, system gravimetric storage density, system
+volumetric storage density and mean saturated rate corresponding to the changes of
+
+tn
+
+different parameters during hydrogen absorption are shown in Table 4.
+Table 4 Key performance indicators’ results of hydrogen absorption process
+wt.%
+
+SGSD (%)
+
+SVSD (kg of H2 per m3)
+
+k (g s-1)
+
+reactor without fin
+
+1.232
+
+0.642
+
+16.52
+
+0.545×10-3
+
+1.326
+
+0.411
+
+14.76
+
+1.222×10-3
+
+6.5
+
+1.326
+
+0.411
+
+14.76
+
+1.269×10-3
+
+7.5
+
+1.326
+
+0.411
+
+14.76
+
+1.222×10-3
+
+8.5
+
+1.326
+
+0.411
+
+14.76
+
+1.204×10-3
+
+rin
+
+Parameters
+
+the developed MH
+reactor
+
+Pr
+
+ep
+
+Different fin size (mm)
+
+Different PCM thickness (mm)
+11.25
+
+1.326
+
+0.417
+
+15.19
+
+1.062×10-3
+
+11.75
+
+1.326
+
+0.411
+
+14.76
+
+1.222×10-3
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+12.25
+
+1.326
+
+0.405
+
+14.40
+
+1.326×10-3
+
+12.75
+
+1.326
+
+0.399
+
+14.05
+
+iew
+ed
+
+Different solid thermal conductivity of PCM (W m-1 K-1)
+1.32
+
+1.326
+
+0.411
+
+14.76
+
+2.64
+
+1.326
+
+0.411
+
+14.76
+
+5.28
+
+1.326
+
+0.411
+
+14.76
+
+7.92
+
+1.326
+
+0.411
+
+14.76
+
+15.84
+
+1.326
+
+0.411
+
+14.76
+
+pe
+er
+re
+v
+
+Different liquid thermal conductivity of PCM (W m-1 K-1)
+
+1.549×10-3
+
+1.222×10-3
+1.226×10-3
+1.239×10-3
+1.414×10-3
+1.554×10-3
+
+0.58
+
+1.326
+
+0.411
+
+14.76
+
+1.222×10-3
+
+1.16
+
+1.326
+
+0.411
+
+14.76
+
+1.863×10-3
+
+2.32
+
+1.326
+
+0.411
+
+14.76
+
+2.682×10-3
+
+3.48
+
+1.326
+
+0.411
+
+14.76
+
+3.401×10-3
+
+Different initial temperature (K)
+273.15
+
+1.326
+
+0.411
+
+14.76
+
+1.591×10-3
+
+283.15
+
+1.326
+
+0.411
+
+14.76
+
+1.397×10-3
+
+293.15
+
+1.326
+
+0.411
+
+14.76
+
+1.222×10-3
+
+303.15
+
+0.811
+
+0.411
+
+14.76
+
+0.359×10-3
+
+14.76
+
+0.840×10-3
+
+Different hydrogen absorption pressure (MPa)
+
+0.8
+1.0
+
+0.411
+
+1.326
+
+0.411
+
+14.76
+
+1.222×10-3
+
+1.326
+
+0.411
+
+14.76
+
+1.431×10-3
+
+1.326
+
+0.411
+
+14.76
+
+1.700×10-3
+
+tn
+
+1.2
+
+1.326
+
+ot
+
+0.6
+
+3.2 Hydrogen desorption process
+3.2.1
+
+Performance comparison of reactors with and without fins
+
+rin
+
+By controlling the same volume of filled metal hydride and phase change material,
+
+a metal hydride reactor with hexagonal honeycomb fin and a metal hydride reactor
+without fin are compared at 0.1MPa and 313.15K. As shown in Figure 13, the metal
+
+ep
+
+hydride temperature, PCM temperature, reaction fraction and PCM liquid fraction of
+the two are compared. It can be observed that the reactor equipped with honeycomb fin
+releases hydrogen at a significantly faster rate. The metal hydride reactor with
+
+Pr
+
+hexagonal honeycomb fin has released 90% H2 in 4560s, compared with the reactor
+without fin that only released 70% H2 in 8000s. And the reaction time for the reactor
+without fins to reach 90% is 6720s. At the initial stage of the reaction, the bed
+temperature of the two reactors has a similar downward trend. With the reaction going
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+on, the proposed hexagonal honeycomb fin reactor shows a faster hydrogen release rate.
+
+iew
+ed
+
+As the reaction progresses, heat transfer becomes more important. Due to the use of
+
+fins, the heat required for hydrogen release is absorbed in a short period of time, while
+the reactor without fin absorbs less heat within a certain period of time. Therefore, as
+
+shown in Figure 13a, the temperature rise rate of the reactor without fin is very slow.
+
+After reaching the phase transition temperature, the temperature of the hexagonal
+
+honeycomb fin reactor gradually increases and tends to equilibrium. Due to the slow
+
+heat transfer and temperature rise rate of the reactor without fin, the temperature is only
+
+pe
+er
+re
+v
+
+295K at 8000s, resulting in a slower phase transition rate of PCM. As shown in Figure
+13c, the liquid fraction of the reactor without fin is 22%, while that of the hexagonal
+honeycomb fin reactor is 5%. The final amount of hydrogen gas not released in the
+
+reactor without fin is 0.403 wt.%, while the hexagonal honeycomb fin reactor basically
+releases hydrogen completely, so the developed MH reactor has a faster reaction rate.
+The comparison of specific KPIs is shown in Table 7. The changes in temperature and
+reaction fraction at several points in time in the reactor are shown in Figure C.1 of
+
+tn
+
+ot
+
+Appendix C.
+
+ep
+
+rin
+
+a
+
+Pr
+
+b
+
+c
+
+Figure 13 Comparison of (a) MH temperature and PCM temperature; (b) reaction fraction; (c)
+liquid fraction in the reactors with and without fins
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+3.2.2
+
+Effect of fin size change on hydrogen release
+
+iew
+ed
+
+The size and form of the reactor are the same as those of the hydrogen absorption
+
+process. The reaction fraction, temperature, and liquid phase fraction of three different
+fin forms are compared at 0.1MPa and initial temperature of 313.15K, as shown in
+
+Figure 14. It can be seen that the 6.5mm/0.86mm fin size reaction takes less time, and
+the hydrogen release rate and temperature reach equilibrium quickly. There is basically
+
+no obvious difference in the reaction process between 7.5mm and 8.5mm fins.
+
+Compared to these two forms, the 6.5mm fin size reaction rate increases by about 12%,
+
+pe
+er
+re
+v
+
+all three fin type reactors achieve 1.326wt.% in 8000s, and the mean saturated rates are
+0.868×10-3 g s-1, 0.773×10-3 g s-1, and 0.766×10-3 g s-1 for 6.5mm/7.5mm/8.5mm
+
+fins, respectively. Besides, the specific change processes at several points in time in the
+reactor are shown in Figure C.2 of Appendix C.
+
+c
+
+ep
+
+b
+
+rin
+
+tn
+
+ot
+
+a
+
+Figure 14 Under different fin sizes, (a) MH temperature and PCM temperature; (b)
+reaction fraction; (c) liquid fraction of PCM in the reactor change over time
+
+3.2.3
+
+Effect of changes in PCM thickness on hydrogen release
+
+Pr
+
+To verify the effect of PCM thickness on the reactor, four reactor forms with the
+
+same external height (h=70mm) but different PCM thicknesses (dp=11.25mm,
+11.75mm, 12.25mm, 12.75mm) are compared, and LaNi5 alloy of the same quality is
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+used. The changes in hydrogen desorption capacity, PCM liquid fraction, and the
+
+iew
+ed
+
+temperature of the hydride bed and PCM over time are shown in Figure 15. From the
+
+figure, it can be seen that when the thickness of PCM increases from dp=11.25mm to
+
+dp=12.25mm, the change in reaction rate is minimal, and the comparison of specific
+values is shown in Table 7. For all four cases, the hydrogen release amount reached
+
+1.326wt.% in the similar time. However, from the comparison of liquid phase fractions
+in Figure 15c, the curing ratios of PCM are 97%, 95%, 93%, and 89%, respectively,
+basically complete desorption.
+
+tn
+
+ot
+
+a
+
+pe
+er
+re
+v
+
+which shows that the quality of the phase change materials used can make the hydrogen
+
+c
+
+rin
+
+b
+
+Figure 15 Under different PCM thickness, (a) MH temperature and PCM temperature; (b)
+reaction fraction; (c) liquid fraction of PCM in the reactor change over time
+
+Effect of changes in operating parameters on hydrogen release
+
+ep
+
+3.2.4
+
+3.2.4.1 Effect of solid thermal conductivity of PCM
+By evaluating the influence of different solid phase change materials on the
+
+desorption process of reactors, five different thermal conductivities are compared, and
+
+Pr
+
+the other physical properties remain unchanged. The changes in bed temperature,
+reaction fraction, phase change material temperature, and liquid phase fraction over
+time are shown in Figure 16. It is obvious that when the thermal conductivity increases
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+from 1.32W m-1 K-1 to 7.92W m-1 K-1, the hydrogen desorption reaction time is
+
+iew
+ed
+
+significantly reduced. When the thermal conductivity increases to 15.84W m-1 K-1, the
+reaction time is slightly shortened. The time for the reactor to complete 90% of the
+
+reaction rate is 4560s, 4170s, 4060s, 3760s, and 3660s, respectively, and the hydrogen
+
+desorption time is reduced by about 20%. The corresponding mean saturated rates are
+0.773×10-3 g s-1, 0.835×10-3 g s-1, 0.861×10-3 g s-1, 0.920×10-3 g s-1, and 0.941×
+
+10-3 g s-1. In addition, the average temperature of MH bed and PCM is also affected by
+thermal conductivity. It can be seen from Figure 16a that in the initial stage of the
+
+pe
+er
+re
+v
+
+reaction, the temperature drop rate of the MH bed is basically the same. When the
+
+thermal conductivity increases from 1.32W m-1 K-1 to 15.84W m-1 K-1, the temperature
+reaches the thermal equilibrium state faster. The increase in solid thermal conductivity
+enables the faster transfer of heat stored in phase change materials to the MH bed,
+
+ot
+
+promoting the hydrogen desorption process.
+
+ep
+
+b
+
+rin
+
+tn
+
+a
+
+c
+
+Figure 16 Under different solid thermal conductivity of PCM, (a) MH temperature and PCM
+temperature; (b) reaction fraction; (c) liquid fraction of PCM in the reactor change over time
+
+Pr
+
+3.2.4.2 Effect of liquid thermal conductivity of PCM
+When the liquid thermal conductivity is 0.58W m-1 K-1, 1.16W m-1 K-1, 2.32W m-1
+
+K-1 and 3.48W m-1 K-1 respectively, the bed temperature, reaction fraction, phase
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+change material temperature and liquid fraction in the metal hydride reactor are shown
+
+iew
+ed
+
+in Figure 17. As the liquid thermal conductivity increases, the time required for the bed
+temperature to decrease to the equilibrium temperature decreases by at least 5370s, and
+
+the minimum temperature reached by the bed temperature decreases. The time required
+
+for the reactor to complete 90% of the reaction rate is 4560s, 2660s, 1670s, and 1370s,
+respectively. The hydrogen desorption time decreases by about 70%. The changes of
+other KPIs are shown in Table 7. It can be seen that the mean saturated rate gradually
+increases. Similar to the variation pattern of hydrogen absorption process, when the
+
+pe
+er
+re
+v
+
+thermal conductivity increases from 2.32W m-1 K-1 to 3.48W m-1 K-1, the impact on
+the reaction is limited, the hydrogen desorption time decreases by about 18%.
+
+b
+
+rin
+
+tn
+
+ot
+
+a
+
+c
+
+Figure 17 Under different liquid thermal conductivity of PCM, (a) MH temperature and PCM
+
+ep
+
+temperature; (b) reaction fraction; (c) liquid fraction of PCM in the reactor change over time
+
+3.2.4.3 Effect of initial temperature
+Keeping the other conditions unchanged, the initial temperature values are
+
+293.15K, 303.15K, 313.15K, and 323.15K, respectively, as shown in Figure 18. From
+
+Pr
+
+the figure, it can be clearly seen that at the initial temperature of 293.15K, the hydrogen
+release reaction is basically impossible, and the MH temperature and phase change
+temperature do not change after decreasing to the lowest value. At 8000s, the reaction
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+fraction remains at 0.94, which is only 6% of the reaction, and the remaining 1.253wt.%
+
+iew
+ed
+
+hydrogen is not released. Since the bed temperature has been maintained at 287.8K,
+which does not reach the temperature at which the phase change material occurs.
+Therefore, as shown in Figure 18c, The liquid fraction at 293.15K has been consistently
+0. As the initial temperature increases, the bed temperature increases, and the
+
+equilibrium pressure also increases, increasing the reaction driving force and thus
+accelerating the hydrogen desorption rate. The time required for the reactors to
+
+complete 90% of the reaction rate at 303.15K, 313.15K, and 323.15K is 6490s, 4560s,
+
+pe
+er
+re
+v
+
+and 3580s, respectively, and the hydrogen desorption time is reduced by about 45%,
+the corresponding mean saturated rates are 0.575×10-3 g s-1, 0.773×10-3 g s-1, and
+
+0.931×10-3 g s-1, respectively, show a gradually increasing trend. Therefore, a higher
+initial temperature can promote the reaction.
+
+c
+
+ep
+
+b
+
+rin
+
+tn
+
+ot
+
+a
+
+Figure 18 Under different initial temperature, (a) MH temperature and PCM temperature; (b)
+reaction fraction; (c) liquid fraction of PCM in the reactor change over time
+
+3.2.4.4 Effect of hydrogen desorption pressure
+
+Pr
+
+The change of reaction fraction, metal hydride bed temperature, phase change
+
+material temperature and PCM liquid fraction with time by changing the hydrogen
+release pressure is shown in Figure 19. The effect of hydrogen release pressure
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+(0.025MPa, 0.05MPa, 0.075MPa, 0.1MPa, 0.125MPa) on the hydrogen desorption
+
+iew
+ed
+
+process is shown. Similar to the absorption process, at the beginning of desorption, the
+reaction rate is very fast, and the bed temperature drops sharply. The lower the
+hydrogen release pressure, the more the bed temperature decreases, reaching 265K,
+
+275K, 283K, 288K, and 293K, respectively. This further increases the pressure
+
+difference between the hydrogen release pressure and equilibrium pressure during the
+
+reaction process, increases the reaction driving force, and promotes the progress of the
+reaction. The time for the reactor to complete 90% of the reaction rate is 1420s, 2170s,
+
+pe
+er
+re
+v
+
+4290s, 4560s, and 6760s, respectively, the hydrogen desorption time is reduced by
+about 79%, and the specific mean saturated rate changes are shown in Table 7. Within
+the studied pressure range, the smaller the hydrogen release pressure, the higher the
+reaction rate, resulting in an increase in heat provided by PCM and a decrease in its
+
+ot
+
+liquid fraction, as shown in Figure 19c.
+
+ep
+
+b
+
+rin
+
+tn
+
+a
+
+c
+
+Figure 19 Under different hydrogen absorption pressure, (a) MH temperature and PCM
+
+temperature; (b) reaction fraction; (c) liquid fraction of PCM in the reactor change over time
+
+Pr
+
+3.2.5
+
+Key performance indicators’ results of hydrogen desorption process
+
+The values of weight percentage, system gravimetric storage density, system
+
+volumetric storage density and mean saturated rate corresponding to the changes of
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+Parameters
+
+wt.%
+
+SGSD (%)
+
+SVSD (kg of H2 per m3)
+
+k (g s-1)
+
+reactor without fin
+
+0.923
+
+0.642
+
+16.52
+
+0.408×10-3
+
+1.326
+
+0.411
+
+14.76
+
+6.5
+
+1.326
+
+0.411
+
+14.76
+
+7.5
+
+1.326
+
+0.411
+
+14.76
+
+iew
+ed
+
+different parameters during hydrogen desorption are shown in Table 7.
+
+8.5
+
+1.326
+
+0.411
+
+14.76
+
+0.766×10-3
+
+Table 7 Key performance indicators of hydrogen desorption process
+
+the developed MH
+reactor
+
+Different PCM thickness (mm)
+
+pe
+er
+re
+v
+
+Different fin size (mm)
+
+0.773×10-3
+
+0.868×10-3
+0.773×10-3
+
+11.25
+
+1.326
+
+0.417
+
+15.19
+
+0.793×10-3
+
+11.75
+
+1.326
+
+0.411
+
+14.76
+
+0.773×10-3
+
+12.25
+
+1.326
+
+0.405
+
+14.40
+
+0.761×10-3
+
+12.75
+
+1.326
+
+0.399
+
+14.05
+
+0.750×10-3
+
+Different solid thermal conductivity of PCM (W m-1 K-1)
+1.326
+
+0.411
+
+14.76
+
+0.773×10-3
+
+2.64
+
+1.326
+
+0.411
+
+14.76
+
+0.835×10-3
+
+5.28
+
+1.326
+
+0.411
+
+14.76
+
+0.861×10-3
+
+7.92
+
+1.326
+
+0.411
+
+14.76
+
+0.920×10-3
+
+14.76
+
+0.941×10-3
+
+15.84
+
+ot
+
+1.32
+
+1.326
+
+0.411
+
+Different liquid thermal conductivity of PCM (W m-1 K-1)
+1.326
+
+0.411
+
+14.76
+
+0.773×10-3
+
+1.16
+
+1.326
+
+0.411
+
+14.76
+
+1.758×10-3
+
+2.32
+
+1.326
+
+0.411
+
+14.76
+
+1.948×10-3
+
+3.48
+
+1.326
+
+0.411
+
+14.76
+
+2.335×10-3
+
+rin
+
+tn
+
+0.58
+
+Different initial temperature (K)
+0.073
+
+0.411
+
+14.76
+
+3.230×10-6
+
+303.15
+
+1.326
+
+0.411
+
+14.76
+
+0.575×10-3
+
+313.15
+
+1.326
+
+0.411
+
+14.76
+
+0.773×10-3
+
+323.15
+
+1.326
+
+0.411
+
+14.76
+
+0.931×10-3
+
+ep
+
+293.15
+
+Pr
+
+Different hydrogen desorption pressure (MPa)
+0.025
+
+1.326
+
+0.411
+
+14.76
+
+2.257×10-3
+
+0.05
+
+1.326
+
+0.411
+
+14.76
+
+2.153×10-3
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+0.075
+
+1.326
+
+0.411
+
+14.76
+
+1.481×10-3
+
+0.1
+
+1.326
+
+0.411
+
+14.76
+
+0.125
+
+1.326
+
+0.411
+
+14.76
+
+iew
+ed
+
+4 Conclusion
+
+0.773×10-3
+0.564×10-3
+
+In this paper, an innovative honeycomb fin metal hydride reactor integrated with
+
+PCM is presented, based on LaNi5 hydrogen storage alloy as medium. A 3D CFD model
+is established to investigate its performance. In addition, the effects of key factors are
+also studied. The main conclusions are as follows:
+
+pe
+er
+re
+v
+
+(1) The presence of the fins increases the rate of the hydrogen storage, thanks to
+the enhanced thermal management of the reactor. Within the reaction time of 8000s,
+
+during the absorption process the hydrogen storage capacity of the reactor without fins
+and with hexagonal honeycomb fins is 1.232wt.% and 1.326wt.%, respectively, and
+during the desorption process the reactor without fins and with hexagonal honeycomb
+fins are 0.923wt.% and 1.326wt.%, respectively. The time taken to complete a cycle of
+hydrogen absorption and desorption is reduced by 12250s. However, due to the
+presence of the fins, the gravimetric and volumetric storage densities of the proposed
+MH reactor are lower than those of the reactor without fins (0.411% and 14.76 kg of
+H2 per m3, against 0.642% and 16.52 kg of H2 per m3, respectively).
+
+(2) During the absorption and desorption processes, the mean saturated rate for the
+
+ot
+
+developed reactor is faster than that for the reactor without fins.
+(3) In general, the smaller the fin size, the denser the distribution of fins in the
+reactor, which slightly accelerates the reaction rate. The hydrogen absorption process
+
+tn
+
+increases by about 7% and the hydrogen desorption process increases by about 12%.
+(4) With the increase of PCM thickness, the total mass and volume of the reactor
+increase, resulting in a decrease in the gravimetric and volumetric storage densities, and
+
+rin
+
+an increase in the mean saturated rates.
+(5) The higher the solid and liquid thermal conductivities are, the faster the
+
+hydrogen absorption and desorption rates of the reactor, the time for the hydrogen
+
+ep
+
+absorption process to reach 90% reaction fraction is reduced by 20% and 71%,
+respectively, and the hydrogen desorption process is reduced by 20% and 70%.
+(6) The lower the initial temperature is, the higher the hydrogen pressure is, the
+
+Pr
+
+greater the reaction driving force is, the faster the hydrogen absorption rate is, while the
+slower the hydrogen desorption rate is.
+
+Appendix A. Thermophysical properties of H2, LaNi5 and LiNO3-
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+iew
+ed
+
+3H2O
+Table A.1 Thermophysical properties of H2 and LaNi5 [13,27,28]
+Parameters
+
+Value
+
+Hydrogen absorption reaction rate, Ca (s-1)
+Hydrogen desorption reaction rate, Cd (s-1)
+Hydrogen absorption activation energy, Ea (J mol-1)
+Hydrogen desorption activation energy, Ed (J mol-1)
+Reaction enthalpy, ∆H (J mol-1)
+
+9.57
+
+21179.6
+16473
+30478
+7164
+
+pe
+er
+re
+v
+
+Initial density of metal hydride, ρemp (kg m-3)
+
+59.187
+
+Saturated density of metal hydride, ρsat (kg m-3)
+
+7259
+
+Specific heat of metal hydride, Cp,s (J kg-1 K-1)
+
+419
+
+Thermal conductivity of metal hydride, λs (W m-1 K-1)
+
+2.0
+
+Porosity，ε
+
+0.5
+
+Permeability, K (m2)
+
+10-8
+
+Specific heat of hydrogen, Cp,g (J kg-1 K-1)
+
+14890
+
+Molar mass of hydrogen, Mg (kg kmol-1)
+
+2.016
+
+Thermal conductivity of hydrogen, λg (W m-1 K-1)
+
+0.1815
+
+Universal gas constant, R (J mol-1 K-1)
+
+8.314
+
+Parameters
+
+Value
+
+Melting temperature, Tmel (K)
+
+303
+
+Transition temperature range, ΔT (K)
+
+2
+
+Latent heat, L (kJ kg-1)
+
+296
+
+Density of liquid phase change material, ρp,l (kg m-3)
+
+1780
+
+Density of solid phase change material, ρp,s (kg m-3)
+
+2140
+
+rin
+
+tn
+
+ot
+
+Table A.2 Thermophysical properties of LiNO3-3H2O [15,27,29]
+
+2770
+
+Specific heat of solid phase change material, Cp,p,s (J kg-1 K-1)
+
+1730
+
+Thermal conductivity of liquid phase change material, λp,l (W m-1 K-1)
+
+0.58
+
+ep
+
+Specific heat of liquid phase change material, Cp,p,l (J kg-1 K-1)
+
+Thermal conductivity of solid phase change material, λp,s (W m-1 K-1)
+
+1.32
+
+Appendix B. Hydrogen absorption process
+
+Pr
+
+Parameters
+
+Hydrogen absorption process
+t=200s
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+iew
+ed
+
+Reaction
+
+pe
+er
+re
+v
+
+fraction
+
+Temperatur
+e
+
+t=4000s
+
+Reaction
+
+Temperatur
+
+rin
+
+e
+
+tn
+
+ot
+
+fraction
+
+in hydrogen absorption process
+
+Pr
+
+ep
+
+Figure B.1 Distribution of temperature and reaction fraction in the reactors with and without fins
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+Parameters
+
+6.5mm
+
+7.5mm
+
+8.5mm
+
+t=200s
+
+w
+e
+i
+v
+
+Reaction
+fraction
+
+r
+e
+e
+p
+
+e
+r
+
+t=2000s
+
+t
+o
+
+n
+t
+
+Temperature
+
+r
+P
+
+p
+e
+
+ir n
+
+d
+e
+
+t=200s
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+d
+e
+
+r
+e
+e
+p
+t=2000s
+
+t
+o
+
+n
+t
+
+Liquid
+
+r
+P
+
+p
+e
+
+ir n
+
+w
+e
+i
+v
+
+e
+r
+
+t=200s
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+d
+e
+
+fraction of
+
+w
+e
+i
+v
+
+PCM
+
+r
+e
+e
+p
+t=2000s
+
+t
+o
+
+e
+r
+
+n
+t
+
+ir n
+
+Figure B.2 Under different fin sizes, comparison of the reaction fraction, MH temperature, and liquid fraction of PCM of the reactor at 200s and 2000s
+Parameters
+
+11.25mm
+
+Reaction fraction
+
+r
+P
+
+p
+e
+
+11.75mm
+
+12.25mm
+
+12.75mm
+
+t=200s
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+d
+e
+
+r
+e
+e
+p
+t=2000s
+
+t
+o
+
+n
+t
+
+Temperature
+
+r
+P
+
+p
+e
+
+w
+e
+i
+v
+
+e
+r
+
+t=200s
+
+ir n
+
+t=2000s
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+d
+e
+
+r
+e
+e
+p
+t=200s
+
+t
+o
+
+Liquid fraction
+
+n
+t
+
+of PCM
+
+r
+P
+
+p
+e
+
+w
+e
+i
+v
+
+e
+r
+
+t=2000s
+
+ir n
+
+Figure B.3 Under different PCM sizes, comparison of reaction fraction, MH temperature, and liquid fraction of PCM of the reactors at 200s and 2000s
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+Parameters
+
+Hydrogen desorption process
+t=100s
+
+Reaction
+
+pe
+er
+re
+v
+
+fraction
+
+iew
+ed
+
+Appendix C. Hydrogen desorption process
+
+Temperature
+
+ot
+
+t=8000s
+
+Reaction
+
+rin
+
+tn
+
+fraction
+
+ep
+
+Temperature
+
+Pr
+
+Figure C.1 Distribution of temperature and reaction fraction in the reactors with and without fins
+in hydrogen desorption process
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+Parameters
+
+6.5mm
+
+7.5mm
+
+8.5mm
+
+t=200s
+
+w
+e
+i
+v
+
+Reaction
+fraction
+
+r
+e
+e
+p
+
+e
+r
+
+t=4000s
+
+t
+o
+
+n
+t
+
+Temperature
+
+r
+P
+
+p
+e
+
+ir n
+
+d
+e
+
+t=200s
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+d
+e
+
+r
+e
+e
+p
+t=4000s
+
+t
+o
+
+n
+t
+
+Liquid
+
+r
+P
+
+p
+e
+
+ir n
+
+w
+e
+i
+v
+
+e
+r
+
+t=200s
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+d
+e
+
+fraction
+
+r
+e
+e
+p
+t=4000s
+
+t
+o
+
+w
+e
+i
+v
+
+e
+r
+
+n
+t
+
+ir n
+
+Figure C.2 Under different fin sizes, comparison of the reaction fraction, MH temperature, and liquid fraction of PCM of the reactor at 200s and 4000s
+
+r
+P
+
+p
+e
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+References
+
+iew
+ed
+
+[1] Wu Z, Yang F, Zhu L，et al. Improvement in hydrogen desorption performances of
+
+magnesium based metal hydride reactor by incorporating helical coil heat exchanger.
+International Journal of Hydrogen Energy, 2016, 41(36):16108-16121.
+
+[2] Wang Y, Yang F, Meng X, et al. Simulation study on the reaction process based
+
+single stage metal hydride thermal compressor. International Journal of Hydrogen
+Energy, 2010, 35(1):321-328.
+
+[3] Wu Z, Yang F, Zhang Z, et al. Magnesium based metal hydride reactor
+Energy, 2014, 130: 712-722.
+
+pe
+er
+re
+v
+
+incorporating helical coil heat exchanger: simulation study and optimal design. Applied
+[4] Bao Z. Performance investigation and optimization of metal hydride reactors for
+high temperature thermochemical heat storage. International Journal of Hydrogen
+Energy, 2015, 40(16): 5664-5676.
+
+[5] Wang D, Li S, Huang Z, et al. Design optimization, sensitivity analysis and
+operational comparison of a duplex helical elliptical tube metal hydride reactor.
+Sustainable Energy & Fuels, 2020, 4(11): 5851-5868.
+
+[6] Liu Y, Wang H, Ayub I, et al. A variable cross-section annular fins type metal
+hydride reactor for improving the phenomenon of inhomogeneous reaction in the
+thermal energy storage processes. Applied Energy, 2021, 295: 117073.
+
+ot
+
+[7] Bai X, Yang W, Tang X, et al. Parametric optimization of coupled fin-metal foam
+metal hydride bed towards enhanced hydrogen absorption performance of metal
+hydride hydrogen storage device. Energy, 2022, 243: 123044.
+
+tn
+
+[8] Tong L, Yuan Y, Yang T, et al. Hydrogen release from a metal hydride tank with
+phase change material jacket and coiled-tube heat exchanger. International Journal of
+Hydrogen Energy, 2021, 46(63): 32135-32148.
+
+rin
+
+[9] Nguyen H Q, Mourshed M, Paul B, et al. An experimental study of employing
+organic phase change material for thermal management of metal hydride hydrogen
+storage. Journal of Energy Storage, 2022, 55: 105457.
+
+ep
+
+[10] Ye Y, Yue Y, Lu J, et al. Enhanced hydrogen storage of a LaNi5 based reactor by
+using phase change materials. Renewable Energy, 2021, 180: 734-743.
+[11] Ye Y, Lu J, Ding J, et al. Numerical simulation on the storage performance of a
+
+Pr
+
+phase change materials based metal hydride hydrogen storage tank. Applied Energy,
+2020, 278: 115682.
+[12] Ardahaie S S, Hosseini M J, Eisapour M, et al. A novel porous metal hydride tank
+for hydrogen energy storage and consumption assisted by PCM jackets and spiral tubes.
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+Journal of Cleaner Production, 2021, 311: 127674.
+
+iew
+ed
+
+[13] Elarem R, Alqahtani T, Mellouli S, et al. Numerical analysis of a built-in thermal
+
+storage system of metal hydride and nanoparticles enhanced phase change material and
+nanofluid. International Journal of Energy Research, 2021, 45(4): 5881-5893.
+
+[14] Yao J, Zhu P, Guo L, et al. Study of a metal hydride based thermal energy storage
+system using multi-phase heat exchange for the application of concentrated solar power
+system. International Journal of Hydrogen Energy, 2021, 46(57): 29332-29347.
+
+[15] Chibani A, Merouani S, Gherraf N, et al. Numerical investigation of heat and mass
+
+pe
+er
+re
+v
+
+transfer during hydrogen desorption in a large-scale metal hydride reactor coupled to a
+phase change material with nano-oxide additives. International Journal of Hydrogen
+Energy, 2022(32):47.
+
+[16] Facci A L, Lauricella M, Succi S, et al. Optimized modeling and design of a PCMenhanced H2 storage. Energies, 2021, 14, 1554.
+
+[17] Askri F, Jemni A, Nasrallah S B. Study of two-dimensional and dynamic heat and
+mass transfer in a metal–hydrogen reactor. International Journal of Hydrogen Energy,
+2003, 28(5): 537-557.
+
+[18] Jemni A, Nasrallah S B. Study of two-dimensional heat and mass transfer during
+absorption in a metal-hydrogen reactor. International Journal of Hydrogen Energy,
+1995, 20(1): 43-52.
+
+ot
+
+[19] Darzi A A R, Afrouzi H H, Moshfegh A, et al. Absorption and desorption of
+hydrogen in long metal hydride tank equipped with phase change material jacket.
+International Journal of Hydrogen Energy, 2016, 41(22): 9595-9610.
+
+tn
+
+[20] El Mghari H, Huot J, Xiao J. Analysis of hydrogen storage performance of metal
+hydride reactor with phase change materials. International Journal of Hydrogen Energy,
+2019, 44(54): 28893-28908.
+
+rin
+
+[21] Hassan I A, Mohammed R H, Ramadan H S, et al. Performance evaluation of a
+novel concentric metal hydride reactor assisted with phase change material. Applied
+Thermal Engineering, 2023: 120065.
+
+ep
+
+[22] Xiao J, Peng R, Cossement D, et al. CFD model for charge and discharge cycle of
+adsorptive hydrogen storage on activated carbon. International Journal of Hydrogen
+Energy, 2013, 38(3): 1450-1459.
+
+Pr
+
+[23] Chung C A, Ho C J. Thermal-fluid behavior of the hydriding and dehydriding
+processes in a metal hydride hydrogen storage canister. International Journal of
+Hydrogen Energy, 2009, 34(10): 4351-4364.
+[24] Prasad J S, Muthukumar P. Design of metal hydride reactor for medium
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+Engineering Progress, 2023, 37: 101570.
+
+iew
+ed
+
+temperature thermochemical energy storage applications. Thermal Science and
+[25] Afzal M, Sharma P. Design and computational analysis of a metal hydride
+hydrogen storage system with hexagonal honeycomb based heat transfer
+
+enhancements-part A. International Journal of Hydrogen Energy, 2021, 46(24): 1311613130.
+
+[26] Prasad J S, Muthukumar P. Experimental investigation on annular metal hydride
+Storage, 2021, 44:103473.
+
+pe
+er
+re
+v
+
+reactor for medium to large-scale hydrogen storage applications. Journal of Energy
+[27] Jemni A, Nasrallah S B, Lamloumi J. Experimental and theoretical study of
+
+ametal-hydrogen reactor. International Journal of Hydrogen Energy, 1999, 24(7): 631644.
+
+[28] Maad H B, Askri F, Nasrallah S B. Heat and mass transfer in a metal hydrogen
+reactor equipped with a phase-change heat-exchanger. International Journal of Thermal
+Sciences, 2016, 99: 271-278.
+
+[29] Yao J, Zhu P, Ren J, et al. Simulation on hydrogen absorption process of metal
+hydride based hydrogen storage reactor coupled with phase-change thermal storage (in
+
+Pr
+
+ep
+
+rin
+
+tn
+
+ot
+
+Chinese). The Chinese Journal of Process Engineering, 2018, 18(5):1093-1011.
+
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=4589106
+
+

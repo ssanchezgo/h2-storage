@@ -1,6 +1,10 @@
 # Notas de Lectura: Parametric studies on MmNi4.7Fe0.3 based reactor with embedded cooling tubes for hydrogen storage and cooling application
 
+
 **Autor:** Kumar, S., Muthukumar, P., Singh, A.
+
+**Revista:** international journal of hydrogen energy
+
 
 **Referencia BibTeX:** `kumar_2021`
 
@@ -10,103 +14,146 @@
 
 ## 1. Resumen
 
-Estudio paramétrico exhaustivo sobre reactor de hidruro metálico basado en aleación MmNi₄.₇Fe₀.₃ (tipo AB₅) con tubos de enfriamiento embebidos para aplicaciones duales: almacenamiento de hidrógeno y enfriamiento. Análisis numérico y experimental de efectos de múltiples parámetros (presión H₂, temperatura fluido refrigerante, flujo, configuración tubos) sobre cinética de absorción/desorción y capacidad de enfriamiento. Diseño cilíndrico con tubos embebidos distribuidos radialmente. Optimización trade-off entre velocidad carga H₂ y producción frío. Resultados aplicables a diseño de sistemas tri-generación (H₂+electricidad+frío).
+
+Estudio paramétrico exhaustivo sobre reactor de hidruro metálico basado en aleación MmNi4.7Fe0.3 (tipo AB5) con tubos de enfriamiento embebidos para aplicaciones duales: almacenamiento de hidrógeno y enfriamiento. Análisis numérico y experimental de efectos de múltiples parámetros (presión H2, temperatura fluido refrigerante, flujo, configuración tubos) sobre cinética de absorción/desorción y capacidad de enfriamiento. Diseño cilíndrico con tubos embebidos distribuidos radialmente. Optimización trade-off entre velocidad carga H2 y producción frío. Resultados aplicables a diseño de sistemas tri-generación (H2+electricidad+frío).
 
 ## 2. Imagen de Referencia
+
 
 ![Reactor MmNiFe con tubos embebidos](img/notas_2021_Parametric_studies_MmNiFe_Reactor/reactor.png)
 
 ## 3. Puntos Clave y Datos
 
+
 ### Aspectos Principales
 
-- Aleación MmNi₄.₇Fe₀.₃ (Misch metal + Ni + Fe) tipo AB₅ para aplicaciones dual purpose
+
+- Aleación MmNi4.7Fe0.3 (Misch metal + Ni + Fe) tipo AB5 para aplicaciones dual purpose
+
 - Reactor con tubos de enfriamiento embebidos distribuidos radialmente en lecho MH
-- Estudio paramétrico: presión H₂ (5-30 bar), temperatura refrigerante (5-25°C), flujo (0.1-1 L/min), número tubos (4-12)
-- Aplicación dual: almacenamiento H₂ + producción frío simultánea (efecto endotérmico desorción)
-- Optimización trade-off: velocidad carga H₂ vs capacidad enfriamiento
+
+- Estudio paramétrico: presión H2 (5-30 bar), temperatura refrigerante (5-25degC), flujo (0.1-1 L/min), número tubos (4-12)
+
+- Aplicación dual: almacenamiento H2 + producción frío simultánea (efecto endotérmico desorción)
+
+- Optimización trade-off: velocidad carga H2 vs capacidad enfriamiento
+
 - Modelo numérico 3D validado experimentalmente, COMSOL Multiphysics
-- Resultados aplicables a sistemas tri-generación H₂+electricidad+refrigeración
+
+- Resultados aplicables a sistemas tri-generación H2+electricidad+refrigeración
 
 ## 4. Características Técnicas
 
+
 ### 4.1. Tipo de Hidruro Metálico
 
-- **Tipo de hidruro:** MmNi₄.₇Fe₀.₃ (Misch metal-Ni-Fe, tipo AB₅)
+
+- **Tipo de hidruro:** MmNi4.7Fe0.3 (Misch metal-Ni-Fe, tipo AB5)
+
 - **Cantidad de hidruro:** 2-5 kg estimado (escala experimental)
-- **Conductividad Térmica MH:** 1-1.5 W/m·K típica AB₅
+
+- **Conductividad Térmica MH:** 1-1.5 W/m*K típica AB5
 
 ### 4.2. Configuración Geométrica
+
 
 - **Configuración geométrica:** Cilíndrica con tubos de enfriamiento embebidos distribuidos radialmente
 
 ### 4.3. Dimensiones
 
+
 - **Longitud:** 200-300 mm estimado
+
 - **Diámetro:** 150-200 mm estimado
+
 - **L/D ratio:** 1.3-1.5
+
 - **Volumen:** 5-10 L estimado
+
 - **Otras Dimensiones:** 4-12 tubos embebidos (diámetro 8-12mm), distribución radial uniforme
 
 ### 4.4. Intercambiador de Calor
+
 
 - **Intercambiador de Calor:** Tubos cilíndricos embebidos (4-12 unidades), distribución radial optimizada, flujo agua/glicol
 
 ### 4.5. Condiciones de Operación
 
-- **Temperatura:** 5-25°C fluido refrigerante (desorción), 25-40°C absorción
-- **Presión:** 5-30 bar H₂ (estudio paramétrico)
+
+- **Temperatura:** 5-25degC fluido refrigerante (desorción), 25-40degC absorción
+
+- **Presión:** 5-30 bar H2 (estudio paramétrico)
+
 - **Flujo:** 0.1-1 L/min refrigerante variable
+
 - **Tiempo carga:** 20-60 min según parámetros
-- **Cantidad H2:** 1.2-1.5 wt% capacidad típica AB₅
-- **Observación:** Aplicación dual H₂+enfriamiento, potencia frío 50-200W según configuración, COP 0.3-0.6
+
+- **Cantidad H2:** 1.2-1.5 wt% capacidad típica AB5
+
+- **Observación:** Aplicación dual H2+enfriamiento, potencia frío 50-200W según configuración, COP 0.3-0.6
 
 ## 5. Transferencia de Calor
 
+
 - **Métodos de transferencia de calor utilizados:**
-  - Tubos embebidos distribuidos radialmente en lecho MH
-  - Refrigeración por agua o agua-glicol circulante
-  - Conducción mejorada por contacto directo MH-tubos
-  - Aprovechamiento calor reacción (exotérmica absorción, endotérmica desorción)
+ - Tubos embebidos distribuidos radialmente en lecho MH
+ - Refrigeración por agua o agua-glicol circulante
+ - Conducción mejorada por contacto directo MH-tubos
+ - Aprovechamiento calor reacción (exotérmica absorción, endotérmica desorción)
 
 - **Materiales y propiedades térmicas:**
-  - MmNi₄.₇Fe₀.₃ conductividad 1-1.5 W/m·K
-  - Tubos cobre o acero inoxidable
-  - Fluido refrigerante agua o agua-glicol (bajo punto congelación)
-  - Porosidad lecho ~0.5
+ - MmNi4.7Fe0.3 conductividad 1-1.5 W/m*K
+ - Tubos cobre o acero inoxidable
+ - Fluido refrigerante agua o agua-glicol (bajo punto congelación)
+ - Porosidad lecho ~0.5
 
 - **Eficiencia térmica:**
-  Eficiencia sistema 75-85%, optimización número tubos crítica (4-12 range)
+ Eficiencia sistema 75-85%, optimización número tubos crítica (4-12 range)
 
 - **Problemas y soluciones relacionados con el manejo térmico:**
-  - Desafío: Trade-off entre capacidad H₂ y producción frío
-  - Solución: Optimización paramétrica número tubos, flujo, temperatura
-  - Problema: Distribución térmica no uniforme con pocos tubos
-  - Solución: Configuración radial 8-10 tubos óptima balance
-  - Aplicación: Aprovechamiento calor desorción para refrigeración
+ - Desafío: Trade-off entre capacidad H2 y producción frío
+ - Solución: Optimización paramétrica número tubos, flujo, temperatura
+ - Problema: Distribución térmica no uniforme con pocos tubos
+ - Solución: Configuración radial 8-10 tubos óptima balance
+ - Aplicación: Aprovechamiento calor desorción para refrigeración
 
 ## 6. Conclusiones y Observaciones
 
-- Aleación MmNi₄.₇Fe₀.₃ viable para aplicación dual H₂+enfriamiento
-- Estudio paramétrico identifica configuración óptima: 8-10 tubos, flujo 0.5 L/min, T 10-15°C
+
+- Aleación MmNi4.7Fe0.3 viable para aplicación dual H2+enfriamiento
+
+- Estudio paramétrico identifica configuración óptima: 8-10 tubos, flujo 0.5 L/min, T 10-15degC
+
 - Capacidad enfriamiento 100-150W con reactor 5kg MH
+
 - COP sistema 0.4-0.5 para aplicación refrigeración
-- Trade-off inherente: más tubos → mayor velocidad carga pero menor capacidad H₂
+
+- Trade-off inherente: más tubos → mayor velocidad carga pero menor capacidad H2
+
 - Modelo 3D validado experimentalmente, error <8%
+
 - Distribución radial tubos crítica para uniformidad térmica
-- Aplicación prometedora en sistemas tri-generación (H₂+electricidad+frío)
+
+- Aplicación prometedora en sistemas tri-generación (H2+electricidad+frío)
+
 - Recomendación: 8 tubos diámetro 10mm distribución radial uniforme
-- Potencial aplicaciones: estaciones servicio H₂ con aire acondicionado, sistemas combinados
+
+- Potencial aplicaciones: estaciones servicio H2 con aire acondicionado, sistemas combinados
 
 ## 7. Referencias Adicionales
 
+
 - Estudios previos sobre hidruros metálicos para refrigeración
-- Literatura AB₅ alloys para almacenamiento H₂
+
+- Literatura AB5 alloys para almacenamiento H2
+
 - Modelado numérico reactores MH con tubos embebidos
-- Aplicaciones tri-generación H₂
+
+- Aplicaciones tri-generación H2
 
 ---
 
 ### Notas Adicionales
 
-Estudio paramétrico robusto con análisis multi-variable. MmNi₄.₇Fe₀.₃ ofrece balance interesante entre propiedades H₂ y térmicas. Aplicación dual innovadora aprovecha calor reacción. Optimización crítica para balance almacenamiento vs refrigeración. Modelo numérico aplicable a scale-up. Potencial comercial en sistemas integrados. Configuración 8-10 tubos emerge como óptima. Importante para diseño sistemas autosuficientes energéticamente.
+
+Estudio paramétrico robusto con análisis multi-variable. MmNi4.7Fe0.3 ofrece balance interesante entre propiedades H2 y térmicas. Aplicación dual innovadora aprovecha calor reacción. Optimización crítica para balance almacenamiento vs refrigeración. Modelo numérico aplicable a scale-up. Potencial comercial en sistemas integrados. Configuración 8-10 tubos emerge como óptima. Importante para diseño sistemas autosuficientes energéticamente.

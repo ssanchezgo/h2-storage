@@ -1,0 +1,1688 @@
+Renewable Energy 198 (2022) 667–678
+
+Contents lists available at ScienceDirect
+
+Renewable Energy
+journal homepage: www.elsevier.com/locate/renene
+
+Comparison, advancement, and performance evaluation of heat exchanger
+assembly in solid-state hydrogen storage device
+R. Sreeraj , A.K. Aadhithiyan , S. Anbarasu *
+Hydrogen Energy Systems Research Facility, Department of Mechanical Engineering, NIT Rourkela, Odisha, 769008, India
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Metal hydride
+Solid-state hydrogen storage systems
+Sorption time
+Gravimetric density
+Specific output energy rate
+
+Despite myriads of mathematical and experimental studies using various heat exchanger-metal hydride assem­
+blies, an adept comparison of reactors on standard performance defining parameters, i.e., reactor weight,
+external energy utilization, and alloy material, are not studied or reported for industrial storage containers and
+onboard applications. This lacuna is a critical barrier in developing efficacious hydrogen storage reactors for
+various applications. This article chronicles the 3-D design and optimization of three basic heat exchanger setups
+of solid-state hydrogen storage systems (shell and tube, spiral tube, and tubular) on critical parameters. For 5 kg
+LaNi5, a tubular design with small tube diameters has resulted in a shorter reaction time (120 s) for 90%
+saturation at 303 K and 15 bar inlet conditions; however, the reactor’s gravimetric density was exceptionally
+high. In contrast, the reactor with three spiral tubes accomplished an exemplary reaction rate at a reasonable
+gravimetric density. This spiral arrangement became the base for developing a novel reactor that integrated heat
+pipes to reduce the sorption time. The proposed design achieved a specific output energy rate of 527 W/kg for
+90% saturation in 366 s at a supply pressure of 15 bar, which is 23.7% higher than the reactor without heat pipes.
+
+1. Introduction
+Secure, efficient, and cost-effective hydrogen storage is mandated for
+marketing hydrogen application systems. Metal hydride-based hydrogen
+storage (MHHS) techniques could be a viable alternative to the highpressure or high-cost hydrogen storage methods currently in use [1].
+Nevertheless, controlling the reaction heat due to the hydrogenation or
+dehydrogenation process (exothermic absorption and endothermic
+desorption) is ineluctable [2–4]. Considerable efforts have been made in
+recent years to increase the reaction rate by effectively improving the
+heat transfer from/to metal hydride by enhancing the thermophysical
+properties of the hydride [5–9] or by increasing the heat transfer surface
+area [10–14], or heat transfer coefficient of heat transfer fluid (HTF)
+[15–21].
+A prominent heat exchanger design is critical for MHHS devices to
+maximize alloy content while minimizing empty reactor weight and
+volumetric density [22]. Shell and tube, spiral, and tubular heat ex­
+changers are the most conventional heat exchanger designs used in
+MHHS systems [3]. Few authors have evaluated the effects of shell and
+tube heat exchanger assembly in metal hydride bed (MHB), wherein
+heat transfer fluid circulates through tubes within a metal hydride-filled
+
+casing. Anbarasu et al. investigated the absorption and desorption rates
+of 2.75 kg LmNi4.91Sn0.15 using 36 and 60 straight embedded tubes,
+respectively. The desorption time was 1320 s for 36 tubes at a fluid inlet
+temperature of 60 ◦ C and the absorption time was 720 s at 30 ◦ C and 25
+bar inlet conditions. Simultaneously, the reactor with 60 tubes took 660
+and 540 s for the same operating conditions [23,24]. Kumar et al. ach­
+ieved an absorption time of 300 s for 40 kg LaNi4.7Al0.3 using 99 straight
+tubes at 40 bar supply pressure [25]. Similarly, in the tubular bundle
+configuration, HTF flows through the shell set in with alloy-filled tubes.
+At a peak supply pressure of 13.8 MPa and an inlet heat transfer oil
+temperature of 130 ◦ C, a reactor containing 86 kg of modified sodium
+alanate in a stacked array of 48 tubes stored 3 kg of hydrogen in 30 min
+[26]. In the spiral tube design, HTF circulates through spiral tubes
+embedded within the alloy-filled casing. 1 kg of LaNi5 with a single
+helical tube integrated with copper fins completed hydrogenation in
+500 s at a supply pressure and cooling fluid inlet temperature of 10 bar
+and 20 ◦ C, respectively [27]. Visaria and Mudawar, on the other hand,
+accomplished the desorption of 4 kg high-pressure metal hydride
+(Ti1.1CrMn) equipped with a spiral heat exchanger assembly in 1440 s at
+a temperature of 2.5 ◦ C [28]. Here the time taken for the absorption
+process at a supply pressure of 270 bar was 1260 s and 720 s at an HTF
+
+* Corresponding author.
+E-mail address: anbarasus@nitrkl.ac.in (S. Anbarasu).
+https://doi.org/10.1016/j.renene.2022.08.051
+Received 4 March 2022; Received in revised form 8 August 2022; Accepted 9 August 2022
+Available online 20 August 2022
+0960-1481/© 2022 Elsevier Ltd. All rights reserved.
+
+R. Sreeraj et al.
+
+Renewable Energy 198 (2022) 667–678
+
+temperature of 21 and 2.5 ◦ C, respectively.
+Raju and Kumar [3] optimized the shell and tube, helical, and
+tubular bundle reactors based on geometrical parameters, concluding
+that the helical coil heat exchanger in MHB provides better gravimetric
+and volumetric densities (0.0139 kg/kg and 0.0167 kg/L). However, the
+study falls short of thoroughly examining the thermal and mass transfer
+aspects, as well as a proper comparison. Mellouli et al. [29] compared a
+tubular reactor with an outer cooling jacket to a spiral tube design with
+and without an outer cooling jacket. The spiral design with an outer
+cooling jacket completed 80% absorption in 750 s for 1 kg LaNi5 at 10
+bar hydrogen pressure and 293 K inlet HTF temperature, which is 70%
+faster than the tubular reactor. Liang et al. investigated the performance
+difference between a metal hydride reactor with heat transfer frames
+such as a straight tube, spiral, its combo, and dual spiral tube and found
+that the dual spiral heat exchanger metal hydride assembly absorbed
+5.19 g of hydrogen in 271 s, whereas the straight tube takes 1321 s for
+5.52 g.
+Although multifarious studies have reported on MHHS, it is evident
+from the literature review that there has been no unified and compre­
+hensive comparison of these storage systems. Furthermore, the existing
+research area lacks in-depth studies of configurations with similar hy­
+dride materials, gravimetric capabilities, and operating conditions,
+limiting the selection of viable models for diverse applications [30,31].
+The present work is focused on developing a metal hydride heat
+exchanger assembly that can effectively control thermal variation in
+hydride beds to reduce the reaction time while offering a higher specific
+output energy rate at a less gravimetric penalty. The MHB combined
+with the described pre-set heat exchanger designs is simulated for
+different geometric parameters to evaluate its absorption performance.
+Further, the appropriate bed layout is chosen based on the lesser reactor
+weight, higher specific output energy rate and quick absorption time
+that satisfies the optimum performance criteria for a 5 kg metal hydride
+reactor. The optimal design is further improvised by enhancing the heat
+transfer in the bed by mounting heat pipes, and then its hydrogen
+sorption performance at various operating conditions is assessed, which
+enumerates the novelty of the design and work.
+
+(
+S = Ca exp −
+
+The velocity and permeability of hydrogen gas through the porous
+hydride can be written by Darcy’s law and Kozeny-Carman equation
+[32,33], where permeability is estimated to be 1.08 × 10− 12 m2
+dp2 ε3
+κ
+1
+→
+ug= −
+⋅ ∇P and κ =
+150 (1 − ε)2
+μg
+
+(1 − ε)
+
+∂ρMH
+=S
+∂t
+
+(6)
+
+During the absorption process, water as HTF is supplied to maintain
+the reaction in thermal equilibrium, and the energy equation for HTF is
+(ρCP )f
+
+(
+)
+∂T
+u )f ⋅ ∇T = ∇ kf ⋅ ∇T
++ (ρCP →
+∂t
+
+(7)
+
+At the beginning of the sorption process, temperature, pressure and
+density all over the MHB are assumed to be uniform throughout the alloy
+bed.
+}
+T = Ti = Tin,f ; P = Pi = Ps ; ρ = ρi ; wt% = 0 at ​ t = 0
+(8)
+The initial temperature of MHB can be considered the inlet tem­
+perature of HTF, and the pressure of the metal hydride reaches the
+supply pressure almost immediately; hence, the initial pressure can be
+considered the supply pressure of hydrogen gas.
+At the cooling tube and HTF interface:
+q=k
+
+(
+)
+∂T
+= hf Tw − Tf t ≥ 0
+∂r
+
+(9)
+
+At the Porous medium and filter wall interface:
+q=
+
+∂T
+= 0; P = Ps t ≥ 0
+∂r
+
+(10)
+
+3. Model description and design of different MHHS devices
+In this present study, three prominent heat exchanger designs of
+metal hydride-based energy storage studies were explored to propose a
+simple, compact, and efficient energy storage device. The reaction ki­
+netics of AB5 metal hydride was investigated using reactors comprising
+embedded straight tubes (shell-and-tube design), spiral tubes, and
+tubular frameworks (Fig. 1).
+Although numerous factors and arrangements exist for optimizing
+envisaged metal hydride reactors, only a few core indices are used to
+evaluate the proposed investigation. The thickness of casings and tubes
+was kept uniform throughout the study (except for tubular design), and
+the selection was based on mechanical factors such as bearing pressure
+and material properties. Maximum pressure of 100 bar and a safety
+factor of 3 were accounted for in calculating tube and shell thickness.
+Stainless steel material of grade SS316L was used for all structures due to
+cost implications and exceptional thermal properties. Other parameters,
+including HTF’s inlet temperature and flow rate, were maintained
+constant for the optimization study; temperature and flow rate was set to
+303 K and 0.5 l/min, respectively. Depending on the Reynolds number,
+the flow of HTF through the heat exchanger tubes is categorized as
+laminar or turbulent. The HTF flow is determined by the k-ε model for
+fully turbulent conditions. Moreover, on the exterior of the reactor wall,
+a heat transfer coefficient of 500 W/m2K was given. The thermophysical
+
+(1)
+
+The volume-averaged method for specific heat capacity and thermal
+conductivity of porous alloy is
+(ρCP )eff = ε⋅(ρCP )g + (1 − ε)(ρCP )MH and
+keff = ε⋅kg + (1 − ε)kMH
+
+(5)
+
+Whereas Eq. (6) gives the mass conservation of metal hydride
+
+All 3D models in this analysis used 5 kg of LaNi5–H2 and were solved
+with COMSOL Multi-physics® 5.6. Heat transfer through porous media,
+heat transfer in solids, turbulent flow, laminar flow, heat transfer in
+fluids, and darcy law were the physics interfaces used for numerical
+simulations, which were solved using linear solvers such as PARDISO for
+the temperature of porous, solid, and fluid domains and Algebraic Multigrid GMRES for fluid velocity. Certain assumptions were crucial to
+expedite the current mathematical procedure due to the complexities of
+reaction kinetics. The solution methodology and assumptions used to
+simplify the governing equations are similar to those reported by
+Anbarasu et al. [32]. Furthermore, the influence of the reactor wall on
+the storage system during hydrogenation was neglected in the numerical
+procedure. Based on assumptions made [32], the energy conservation
+equation for the suggested porous medium is as follows:
+(
+)
+(
+)
+∂T
+∇H
+ug ⋅ ∇T = ∇ keff ⋅ ∇T + S⋅
++ (ρCP )g →
+Mg
+∂t
+
+(3)
+
+where the equilibrium pressure can be calculated from the Van’t Hoff
+equation and it can be expressed as,
+(
+))
+)
+( (
+ΔH ΔS
+wt%t
+β
+Peq = Pref exp −
+(4)
+− 0.5
++
++ + (φ + φ0 )tan π
+Ru .T Ru
+2
+wt%sat
+
+2. Mathematical model
+
+(ρCP )eff
+
+) ( )
+Ea
+P
+ln
+(ρsat − ρMH )(1 − ε)
+Peq
+Ru .T
+
+(2)
+
+where S is the hydrogen absorption rate per unit volume, and it can be
+expressed as follows
+
+668
+
+R. Sreeraj et al.
+
+Renewable Energy 198 (2022) 667–678
+
+Fig. 1. Visualization of the heat exchanger assemblies used, (i) shell and tube, (ii) spiral tube, and (iii) tubular design.
+
+properties of materials and other parametric values used in the numer­
+ical model are summarized in Table 1.
+
+3.2. Design II – spiral design
+In design II, the spiral tubes enhance the heat transfer rate within the
+metal hydride-filled cylindrical shell. Spiral heat exchangers outcom­
+pete other heat exchangers in terms of heat transfer coefficient. The
+general graphical representation of the design is depicted in Fig. 2 (b).
+The number of spiral tubes, axial pitch, diameter, and radial distance are
+varied for design optimization. Table 3 elucidates the variation in
+physical parameters of the design at each arrangement. The remaining
+dimensions and parameters are identical to design I. The prevalent
+equation of the Nusselt number for calculating the heat transfer coeffi­
+cient of a spiral tube heat exchanger is given in Eq. (14) [35].
+( 0.85
+)
+hf dCT
+Re
+= 0.0266 0.15 + 0.225i1.55 Pr0.4
+(14)
+Nuh =
+kf
+i
+
+3.1. Design I – shell and tube design
+In shell and tube heat exchanger assembly, the hydride is filled inside
+a cylindrical casing, and HTF is circulated through embedded straight
+tubes within the cylinder to regulate hydride bed temperature. The
+arrangement of cooling tubes is kept with an equal separation between
+them for better performance [34]. The cooling tubes inside the shell are
+arranged in three circular strata of varying radial distances, and the
+number of tubes used is 24, 36, 48, and 60. The outer diameter and
+thickness of the shell are 114.3 mm and 5.85 mm, respectively, and the
+cooling tube diameter is varied from 6.35 to 12.7 mm for analysis. Fig. 2
+(a) depicts a cross-sectional view of the design, and Table 2 reveals
+variation in physical parameters as well as the computed weight ratio of
+alloy (mass of alloy to total mass of reactor). Due to symmetrical
+manifestation, a 3D simulation of the reactor’s semi portion is consid­
+ered for analyzing the heat and hydrogen transfer. A Nusselt number
+correlation is shown in Eqs. 11–13; this helps to calculate the heat
+transfer coefficient of HTF flowing through tubes [34].
+(
+)1/3
+dCT
+Nu = 1.86 Re⋅Pr
+LCT
+Laminar flow (Re < 2100)
+[
+
+(
+
+dCT
+Nu = 0.116 1 +
+LCT
+
+In this heat exchanger design, metal hydride-filled tubes are housed
+within the cylindrical shell (Fig. 2 (c)). Apart from tube diameter, no
+other parameters are optimized in this arrangement, consisting of 37
+tubes in each case. Since no internal heat transfer methods are used in
+metal hydride tubes, the tube diameter was limited to 25.4 mm. The
+time required to reach hydrogen saturation for tubes larger than 25.4
+mm in diameter was exceptionally long. The physical parameters of each
+setup are tabulated in Table 4. The Nusselt number correlation of HTF
+flowing over the banks of tubes is achieved using the same equation used
+for the shell and tube design (Eqs. 11–13).
+
+(11)
+
+) 2 ]( 2
+)
+3 Re3 − 125 (Pr)1/3
+
+(12)
+
+Transition regime (2100 < Re < 10, 000)
+[
+
+3.3. Design III – tubular design
+
+)0.7 ]
+dCT
+Nu = 0.023 1 +
+(Re)0.8 (Pr)1/3
+LCT
+
+4. Grid independent test and model validation
+
+(
+
+The numerical analysis’s 3D model was tested for various mesh sizes
+to optimize the effect of element sizes on the average hydrogen con­
+centration and bed temperature during the absorption process. For all
+domains in the reactor, the grid element size varied from coarse to extra
+fine (Table 5). It was observed that the fluctuation in numerical results
+of fine and extra fine mesh was almost statistically insignificant when
+contemplating the computational time. As a result, the fine mesh was
+used for every simulation throughout the study.
+As shown in Fig. 3, the mathematical model used in this study was
+validated with an experimental result of a shell and tube reactor design
+from Karmakar et al. [36]. In the experiment, the author used 10 kg of
+LaNi5 at a supply pressure of 25 bar and HTF temperature of 298 K with
+a fluid flow rate of 20 l/min. It took 1700 s to reach 100% hydrogen
+saturation for these operating conditions. Fig. 3 demonstrates a good
+match between the numerically predicted hydrogen concentration and
+the experimental results. The underlying assumptions for the thermo­
+physical properties of the alloy are primarily responsible for the subtle
+differences in results.
+
+(13)
+
+Turbulent flow (Re > 10, 000)
+
+Table 1
+The thermophysical properties of LaNi5 and hydrogen, as well as other param­
+eters adopted in the numerical model [12].
+Property
+
+Values
+LaNi5
+
+Crystal Density, ρ (kg/m3)
+Porosity, ε
+Thermal conductivity, k (W/m K)
+Specific heat capacity, Cp (J/kg K)
+Molecular weight, M (kg/mol)
+Maximum H2 capacity, wt%
+Slope factor, φ
+Slope constant, φo
+Hysteresis factor, β
+Activation energy, Ea (J/mol H2)
+Reaction entropy, ΔS (J/mol H2 K)
+Reaction enthalpy, ΔH (J/mol H2)
+Reaction constant, Ca (1/s)
+
+8200.0
+0.5
+2.4
+419.0
+0.432
+0.014
+0.038
+0.0
+0.137
+21179.6
+108.0
+30800.0
+59.187
+
+H2
+
+Steel
+7850.0
+
+0.18
+14890.0
+0.002432
+
+19.0
+490.0
+
+669
+
+R. Sreeraj et al.
+
+Renewable Energy 198 (2022) 667–678
+
+Fig. 2. Graphical representation of design configurations used for the simulation.
+Table 2
+Design specifications of different cases of metal hydride-shell and tube design.
+Radial distance (mm)
+cases
+
+R1
+
+R2
+
+R3
+
+Tube OD (mm)
+
+Tubes (nos.)
+
+L (mm)
+
+Tube mass (kg)
+
+Total mass (kg)
+
+Alloy weight ratio
+
+SCR(stL/min.g)
+
+case 1
+case 2
+case 3
+case 4
+case 5
+case 6
+case 7
+case 8
+case 9
+case 10
+
+14.36
+14.36
+14.36
+14.36
+18.08
+11.43
+11.41
+24.65
+14.36
+14.36
+
+29.15
+29.15
+29.15
+29.15
+29.15
+29.15
+20.23
+37.89
+29.15
+29.15
+
+43.92
+43.92
+43.92
+43.92
+40.23
+46.87
+33.47
+46.71
+43.92
+43.92
+
+6.35
+6.35
+6.35
+6.35
+6.35
+6.35
+6.35
+6.35
+9.53
+12.7
+
+24
+36
+48
+60
+36
+36
+36
+36
+36
+36
+
+165.15
+174.22
+184.34
+195.72
+174.22
+174.22
+174.22
+174.22
+219.52
+344.53
+
+0.474
+0.751
+1.059
+1.406
+0.751
+0.751
+0.751
+0.751
+1.497
+4.360
+
+8.12
+8.55
+9.02
+9.55
+8.55
+8.55
+8.55
+8.55
+10.02
+14.89
+
+0.615
+0.584
+0.554
+0.523
+0.584
+0.584
+0.584
+0.584
+0.498
+0.335
+
+0.014
+0.025
+0.033
+0.043
+0.028
+0.019
+0.021
+0.010
+0.041
+0.076
+
+Table 3
+Design specifications of different cases of metal hydride-spiral tube design.
+cases
+
+case 1
+case 2
+case 3
+case 4
+case 5
+case 6
+case 7
+case 8
+case 9
+case
+10
+case
+11
+case
+12
+case
+13
+
+Radial distance (mm)
+R1
+
+R2
+
+R3
+
+21.77
+14.36
+15.86
+14.36
+14.36
+14.36
+14.36
+14.36
+14.36
+18.08
+
+36.53
+29.15
+24.72
+29.15
+29.15
+29.15
+29.15
+29.15
+29.15
+29.15
+
+43.92
+33.58
+43.92
+43.92
+43.92
+43.92
+43.92
+43.92
+40.23
+
+11.43
+
+29.15
+
+11.41
+24.65
+
+R4
+
+Radial Pitch
+(mm)
+
+Tube OD
+(mm)
+
+Tube
+(nos.)
+
+L (mm)
+
+Tube mass
+(kg)
+
+Total mass
+(kg)
+
+Alloy weight
+ratio
+
+SCR(stL/
+min.g)
+
+10
+10
+10
+8
+12
+15
+12
+15
+15
+12
+
+6.35
+6.35
+6.35
+6.35
+6.35
+6.35
+9.53
+9.53
+12.7
+6.35
+
+2
+3
+4
+3
+3
+3
+3
+3
+3
+3
+
+166.28
+190.82
+210.14
+204.90
+182.46
+174.82
+251.82
+221.69
+354.21
+182.47
+
+0.509
+1.257
+1.846
+1.686
+1.002
+0.769
+2.189
+1.544
+3.373
+1.002
+
+8.18
+9.32
+10.22
+9.97
+8.93
+8.57
+11.23
+10.10
+14.06
+8.93
+
+0.611
+0.536
+0.489
+0.501
+0.559
+0.582
+0.445
+0.494
+0.355
+0.559
+
+0.024
+0.040
+0.051
+0.048
+0.035
+0.025
+0.063
+0.057
+0.078
+0.036
+
+46.87
+
+12
+
+6.35
+
+3
+
+182.49
+
+1.003
+
+8.93
+
+0.559
+
+0.026
+
+20.23
+
+33.47
+
+12
+
+6.35
+
+3
+
+178.88
+
+0.850
+
+8.76
+
+0.570
+
+0.020
+
+37.89
+
+46.71
+
+12
+
+6.35
+
+3
+
+194.98
+
+1.337
+
+9.51
+
+0.525
+
+0.024
+
+42.44
+
+Table 4
+Design specifications of different cases of metal hydride-tubular design.
+cases
+
+Tube OD
+(mm)
+
+thickness
+(mm)
+
+No.
+Tubes
+
+L (mm)
+
+Tube mass
+(kg)
+
+Total mass
+(kg)
+
+Shell OD
+(mm)
+
+Shell ID
+(mm)
+
+Alloy weight
+ratio
+
+SCR(stL/min.
+g)
+
+case 1
+case 2
+case 3
+case 4
+
+12.7
+15.88
+19.05
+25.4
+
+1.245
+1.651
+1.245
+2.1082
+
+37
+37
+37
+37
+
+397.92
+262.19
+151.26
+92.43
+
+5.175
+5.617
+3.058
+4.139
+
+16.56
+16.32
+12.33
+13.07
+
+114.3
+141.3
+168.28
+219.08
+
+102.26
+128.19
+154.05
+202.72
+
+0.301
+0.306
+0.405
+0.382
+
+0.070
+0.060
+0.044
+0.037
+
+670
+
+R. Sreeraj et al.
+
+Renewable Energy 198 (2022) 667–678
+
+5. Results and discussion
+
+Table 5
+The detailed different mesh sizes used for grid-independent test.
+Sl.
+No.
+
+Grid
+name
+
+Number of
+elements
+
+Maximum element
+size
+
+Minimum element
+size
+
+1
+2
+3
+4
+
+Coarse
+Normal
+Fine
+Extra
+fine
+
+795161
+1036146
+1291115
+7268580
+
+5.72
+3.83
+3.03
+1.31
+
+1.71
+1.14
+0.572
+0.0857
+
+5.1. Comprehensive analysis and optimization of metal hydride reactor
+designs
+The design configurations of MHB with three potential heat
+exchanger layouts used for the comparative analysis are depicted in
+Figs. 1 and 2. The geometrical parameters of these designs are interac­
+tively varied for determining the optimized arrangement from each. The
+optimal design choice is based on including and organizing the heat
+transfer frames to augment the heat transfer rate most evenly from the
+considered MHB structure. Table 2 summarizes the various shell-andtube design cases based on physical criteria, alloy weight ratio, and
+specific charging rate (SCR), which is defined as the ratio of H2 ab­
+sorption rate for 90% saturation per unit mass of alloy (taqWH a , stL/min.g).
+
+Similarly, data for spiral tube and tubular designs are provided in Ta­
+bles 3 and 4, respectively. The 3D designs of these frameworks are
+thoroughly examined based on the reaction time and the drop of average
+bed temperature for 90% saturation, as illustrated in Fig. 4 (a)–(c). The
+figure conjectures that saturation time and temperature reduction are
+inversely proportional to the gravimetric and volumetric density of the
+reactor. Reducing the saturation time by increasing the heat transfer
+area will lead to higher volumetric and gravimetric penalties. Hence,
+selecting an optimum configuration based on any of these single criteria
+is not an ideal option.
+It is inevitable to choose an optimized arrangement using a
+comprehensive index that incorporates the heat recovered, weight, and
+time constraints. Specific output energy rate (SOER, W/kg) is defined as
+the ratio of total heat recovery rate for 90% hydrogen saturation to the
+total weight of the alloy. It specifies the efficacy of the structured heat
+exchanger assembly in the metal hydride bed, i.e., the maximum energy
+per unit time that can be extracted by the HTF per unit hydride mass.
+This term describes the effectiveness of the reactor for a specific weight
+ratio of alloy. A reactor with a high SOER and alloy weight ratio is the
+archetype for an optimized design, and the equation for SOER is:
+
+Fig. 3. Validation of the mathematical model with experimental data.
+
+Fig. 4. (a)–(c) Reaction time and average bed temperature at 90% saturation for various adopted MHB configurations.
+671
+
+R. Sreeraj et al.
+
+SOER =
+
+Renewable Energy 198 (2022) 667–678
+
+Eout
+ta Wa
+
+temperature for the 90% saturation level are unsatisfactory for design
+selection, the combined performance indices evaluation of SOER and
+alloy weight ratio of all cases (Design I) are specified in Fig. 5 (a). In the
+manuscript, the minimum alloy weight ratio required for design selec­
+tion is set at 0.5. As shown in Fig. 5 (a), case 3 (Table 2) is superior in
+that it has a SOER of 740.1 W/kg at an alloy weight ratio of 0.554 for
+design I. The SOER of each case mentioned in Table 2 is 322.7, 559.9,
+740.1, 968.8, 624.4, 430.4, 460.4, 243.6, 924.6 and 1795.7 W/kg,
+respectively.
+Similarly, 13 cases were studied for design II, shown in Table 3. Due
+to the higher heat transfer coefficient, this design performs better than
+the initial arrangement (Design I) with comparatively less system
+weight. The time for reaching 90% saturation and respective tempera­
+ture for all cases were shown in Fig. 4 (b). The optimized design can be
+put forward as case 10 (Table 3); here, the radial distance between the
+spiral tubes is 18.08, 29.15, and 40.23 mm, respectively. The alloy
+weight ratio of this reactor is 0.559, and the length of the reactor to fill 5
+kg alloy is 182.47 mm. Here, the alloy weight ratio of the reactor is
+nearly equivalent to that of a shell and tube design with 48 HTF tubes,
+but it has a 9.5% higher SCR of 0.0369 stL/min.g. For the chosen design,
+the time taken for 90% hydrogenation is 229 s at a temperature of 323 K.
+Even though there is a reduction of 8.7% in saturation time compared to
+the shell and tube design, the difference in temperature drop is indis­
+cernible; which is due to the comparatively less temperature variation of
+LaNi5 with concentration. The SOER for each case in design II is 523.5,
+862, 1802.5, 1138.2, 789.5, 558, 1615.7, 1406.9, 2085.9, 828.9, 591.9,
+476, and 565.6 W/kg. Considering the alloy weight ratio, case 10
+(Table 3) with a SOER of 828.9 W/kg is the prerogative choice; in other
+cases, either the alloy weight ratio is less than 0.55, or the SOER is
+inadequate. From the collective analysis of designs I and II, the spiral
+design (case 10) improves the heat recovery rate by 12% compared to
+the shell and tube design (case 3).
+The third design has been optimized based on the diameter of the
+tube in which the alloy is filled. The minimum tube diameter has been
+set at 12.7 mm because the further reduction of the tube diameter
+
+(15)
+
+where E out and ta are the total heat extracted from the reactor by the
+HTFs, and the time taken for 90% saturation of the MHB, respectively
+and Wa represents the mass of the alloy.
+The quantity E out can be evaluated by the following equation.
+∫ta
+Eout =
+t=0
+
+(
+
+)(
+
+)
+
+(
+
+ρuACp f Tf ,outlet − Tf ,inlet + hair Ac (Tc − Tair ) + hhp Ahp Ta − Thp
+
+)
+
+(16)
+
+Here the first term represents heat extracted by the heat exchanger,
+the second term convective heat transfer from the reactor’s external
+periphery, and the final term is only valid where heat transfer via heat
+pipes is possible. The temperature for each domain is calculated by
+taking the surface average of the respective boundaries.
+The performance evaluation of all cases of each design is shown in
+Figs. 4 and 5. It consists of the factors such as reaction time and average
+bed temperature at 90% hydrogen saturation and their respective SOER
+and alloy weight ratio. These are the main parameters to consider when
+selecting an appropriate design. For industrial-scale stationary storage
+applications, the weight ratio is not as important as other factors. Here
+the reaction time, average bed temperature, and SOER are related to the
+reaction kinetics of metal hydride, and the weight ratio of the alloy is
+based on the physical consideration of the reactor. For the design I, case
+3 can be presumably considered as the optimized design from the ar­
+rangements shown in Table 2, as the performance of other designs is not
+optimally favoured (Fig. 4 (a)); here, 48 HTF tubes having an outer
+diameter of 6.35 mm were used, the tube stack layer nearer to the filter
+has 6 tubes, and the middle layer has 18 tubes, and the last layer consists
+of 24 tubes. This design has comparatively less saturation time with an
+alloy weight ratio higher than 0.5. Case 3 (Table 2) has achieved a 90%
+saturation time at 251 s with a specific charging rate of 0.0337 stL/min.
+g, and the temperature drop at the instance is 326 K. As the time and
+
+Fig. 5. (a)–(c) SOER and alloy weight ratio for different MHB configurations.
+672
+
+R. Sreeraj et al.
+
+Renewable Energy 198 (2022) 667–678
+
+dissuades the practicality of MHHS devices. Here, 4 cases were studied,
+which are summarized in Table 4. The time and temperature for 90%
+saturation of each case are shown in Fig. 4 (c). The heat transfer
+enhancement of such a design is reasonably good, but the weight ratio of
+the reactor is meagre, especially at a lower diameter, making it unviable
+for energy storage applications. Despite having higher SOER values such
+as 1204.8, 1276.8, 1006.2, and 766.8 W/kg for design III, the alloy
+weight ratio in all cases is below 0.5 (Fig. 5 (c)).
+
+Table 6
+Thermophysical properties of the heat pipe.
+
+5.2. Design progression
+
+Parameters
+
+Values
+
+Heat pipe length (mm)
+Effective length (mm)
+Heat pipe diameter (mm)
+Wick type
+Condenser length (mm)
+Evaporator length (mm)
+Adiabatic section (mm)
+Operating temperature (K)
+Heat transfer coefficient (W/m2K)
+
+300
+120
+7
+Sintered
+60
+180
+60
+303–393
+1600
+
+Based on an evaluation of the various heat exchanger assemblies, it
+was discovered that the spiral tube design with three spiral tubes at
+radial distances of 18.08, 29.15, and 40.23 mm outperformed other
+designs when both SOER and specific alloy weight percentages were
+factored together. Hence, this design was selected and upgraded by
+appending heat pipes between the outermost tube and the reactor’s
+external surface, as shown in Fig. 6. Table 6 outlines the characteristics
+of the heat pipe used in the present analysis. Adding heat pipes between
+the reactor’s outer surface and the outermost spiral tube will increase
+the reaction rate since the hydrogenation volume is greater in the vi­
+cinity of the external spiral tube than in the internal tubes. In in-progress
+studies (parametric analysis), an adiabatic boundary condition is carried
+out to determine the actual effect of heat pipes on reaction kinetics.
+5.2.1. Effect of number of heat pipes
+The effect of coupling heat pipes to a spiral design on heat and
+hydrogen mass transfer is depicted in Fig. 7. The HTF inlet temperature
+was set to 303 K with a flow rate of 0.5 l/min and the hydrogen supply
+pressure through the filter was considered 15 bar. For each study, the
+maximum hydrogen storage capacity value was about 1.4 wt%. Except
+for the parameters used for the specified analysis, all other conditions
+are presumed the same for the subsequent studies. The position of heat
+pipes was not accounted for in design optimization; however, the most
+susceptible part of the reactor is nearer to the outermost spiral tube,
+where the pressure drop is high and the heat transfer rate is relatively
+low compared to other tubes; thus, between the last spiral tube and the
+reactor’s outer periphery is found to be the appropriate location for heat
+pipes. The absorption time for the reactor without considering heat
+pipes are 445 s and for the reactor with two heat pipe is 406 s, i.e., there
+was a gradual reduction in the reaction time on increasing the number of
+heat pipes, the reactor with four and six heat pipe the absorption time is
+reduced to 366 and 330 s respectively. The reduction in reaction time
+was due to the addition of heat pipes as a heat transfer simulator. The
+number of heat pipes in the current analysis was limited to six due to
+cost considerations in practical applications. The SOER of the reactor
+without heat pipes are 426 W/kg, while the SOER is improved to 473 W/
+kg for two heat pipes — an increase of 11%. The same dynamics are
+
+Fig. 7. Effect of number of heat pipes on hydrogen concentration and average
+bed temperature.
+
+maintained as the number of heat pipes increases; a reactor with four
+heat pipes yielded a SOER of 527 W/kg, while the reactor with six heat
+pipes has 585 W/kg. The benefits of adding heat pipes to a reactor with
+heat transfer from the outside surface through other means are statis­
+tically insignificant. The number of heat pipes was set to four for the
+subsequent sensitivity analysis.
+5.2.2. Effect of supply pressure
+The effect of varying the supply pressure from 5 to 15 bar on the
+hydrogen reaction rate and average bed temperature of MHB is depicted
+in Fig. 8. As the driving factor for the reaction kinetics is the difference
+between supply pressure and the equilibrium pressure of the MHB at a
+given temperature [32], increasing the supply pressure will expedite the
+
+Fig. 6. Pictorial and cross-sectional view of coupled spiral tube and heat pipe design.
+673
+
+R. Sreeraj et al.
+
+Renewable Energy 198 (2022) 667–678
+
+Fig. 8. Effect of hydrogen supply pressure on hydrogen concentration and
+average bed temperature.
+
+Fig. 9. Effect of cooling fluid inlet temperature on hydrogen concentration and
+average bed temperature.
+
+reaction rate, which is evident from Fig. 8. For the supply pressure of 5
+and 8 bar, the hydrogen storage capacity of the reactor was less than the
+maximum achievable weight percentage of 1.4% within 1000 s. For a
+supply pressure of 15 bar, the MHB can achieve 90% and 100% satu­
+ration at a period of 366 and 640 s, respectively. The peak temperature
+of MHB rises with increasing supply pressure due to a sudden spike in
+reaction rate caused by a relatively high driving force, which will
+decrease depending on the efficiency of the heat transfer arrangement
+within the system. For a supply pressure of 5 bar, the peak temperature
+of metal hydride is estimated to be approximately 320 K, and the
+hydrogen concentration is around 7% during the interval. For this
+condition, the temperature of the MHB hasn’t reached the initial stage in
+the time frame of 1000 s. The maximum temperature rises for a 15-bar
+supply pressure is around 351 K, corresponding to a hydrogen concen­
+tration of 12%, and it gradually reverts to the initial temperature at
+about 930 s. Although the peak temperature is higher at higher supply
+pressure, it reaches the initial temperature quicker due to a faster heat
+transfer rate in the early phase and a lower enthalpy generation later.
+Increasing the hydrogen supply pressure accelerates the hydrogen
+sorption rate, but the discrepancy declines due to the intrinsic reaction
+limit caused by the interaction among driving force (Ps-Peq) and heat
+transfer rate.
+
+not return to their initial temperatures within the stipulated time.
+5.2.4. Effect of heat transfer coefficient on the exterior surface
+In other characterization studies, the exterior surface of the reactor
+was taken as an adiabatic condition for evaluating the optimal effect of
+the heat transfer system arrangement. In practice, heat transfer from the
+reactor’s exterior surface is a critical factor in determining performance.
+The impact of the exterior surface’s heat transfer on the hydrogen
+reacted fraction and average bed temperature by varying heat transfer
+coefficient is shown in Fig. 10. The heat transfer coefficient is varied
+from 0 to 2000 W/m2K with an increment of 500 W/m2K. It is observed
+from Fig. 10 that, in comparison to other parameters such as supply
+pressure, this has a negligible effect on the reactor’s heat and hydrogen
+mass transfer after a certain value. Beyond 500 W/m2K, there was no
+significant effect on average absorption time, but the average MHB
+temperature decreased marginally to 1000 W/m2K. The slight temper­
+ature variation in the metal hydride does not affect the equilibrium
+pressure due to the PCT characteristics, so it emphasizes that increasing
+the heat transfer coefficient by external means above 500 W/m2K is
+inconsequential. For 500 W/m2K, the time for reaching 90% hydrogen
+saturation is 216 s, and for achieving an initial average bed temperature
+of 303 K is 694 s; this has a percentage decrement of 31% and 25%,
+
+5.2.3. Effect of HTF inlet temperature
+The effect of HTF inlet temperature, which is the same as the initial
+MHB temperature, on hydrogen absorption kinetics is illustrated in
+Fig. 9. The HTF inlet temperature varied from 297 to 312 K, at a flow
+rate of 0.5 l/min and a hydrogen supply pressure of 15 bar, which is kept
+constant for this study. The variation in peak temperature rise for each
+case is barely detectable, which are 350, 351, 352, and 353 K, respec­
+tively, resulting in a similar rate of hydriding at the early phase. How­
+ever, due to the apparent higher driving force for low inlet temperatures
+and better heat transfer effect, the rate of hydriding accelerates later
+than in higher inlet HTF temperature cases. However, the decrease in
+saturation time with the reduction in HTF inlet temperature diminishes
+because of the logarithmic relation between equilibrium pressure and
+temperature. The temperature increment tailored in this study aids in
+identifying this property of the selected hydride. The time taken for the
+HTF temperature of 297, 303, 307, and 312 K about 90% hydrogen
+saturation is 333, 366, 402, and 449 s, respectively; this implies that the
+system achieves maximum reacted fraction in the shortest period with a
+higher cooling rate at low HTF inlet temperatures. The system reached
+complete saturation at 704 s for an inlet temperature of 297 K and 777 s
+for 303 K. The cases with inlet temperatures of 307 K and 312 K could
+
+Fig. 10. Effect of heat transfer coefficient from reactor outer periphery on
+hydrogen concentration and average bed temperature.
+674
+
+R. Sreeraj et al.
+
+Renewable Energy 198 (2022) 667–678
+
+respectively, concerning the reactor without any external heat transfer
+coefficient.
+
+thermal energy savings between the spiral and modified reactor is pro­
+jected to enumerate the economic features incurred by the advanced
+design. The economic report aims to analyze the reactor operating about
+12 h/day, which is given in Table 7. The energy savings of the reactors
+are calculated using the thermal energy retrieved from the reactor via
+the heat exchanger (Eout/ta). It is possible to continue the analysis for
+hydrogen desorption to estimate the effective energy utilization of the
+reactor. The economic balance equation for loss recovery is
+∑
+(
+)
+ĊR + nd
+(17)
+Ċp,input = nd ĊP,output + Ċfuel
+
+5.2.5. Effect of HTF flow rate
+The flow rate of cooling fluid is another paramount parameter that
+affects the performance of the metal hydride reactor. But this effect is
+significantly less compared to the effect of supply pressure of hydrogen.
+The effect of the flow rate of HTF on the heat and mass rate of the alloy
+bed is shown in Fig. 11. Here, the flow rate is varied from 0.25 l/min to
+5 l/min. This high flow rate increases fluid flow turbulence and thus the
+heat transfer coefficient, reducing absorption time significantly by
+increasing the heat dissipation rate from MHB. The changes in perfor­
+mance were evident up to 3 l/min; afar that value, the effect of flow rate
+is minimal. The variation in performance was more evident in the
+average bed temperature curve than in absorption time, and this is
+mainly due to the PCT characteristics of the hydride, i.e., the reduction
+in equilibrium pressure is prolonged with the variation in bed temper­
+ature. For 0.25 l/min, the time for attaining 90% hydrogen saturation is
+estimated as 476 s, but it is unable to revert to the minimum temperature
+of 303 K within 1000 s. Compared to 0.5 l/min, 3 l/min reduced 90%
+hydrogen saturation time and average bed temperature by 20% and
+18%, respectively, and did not decrease further when the flow rate was
+increased above 3 l/min.
+The space-time transformation of temperature and reacted fraction
+in the alloy domain and the temperature variation in HTF over different
+time scales are depicted in Fig. 12. The reaction is carried out at 15 bar
+supply pressure, 303 K HTF inlet temperature, and 0.5 l/min flow rate
+conditions and the time frames were chosen for these pictorial repre­
+sentations are 0, 50, 100, 250, 500, and 1000 s. The temperature of the
+metal hydride rises sharply at the beginning of the absorption process
+due to a higher reaction rate, and after that timespan, further temper­
+ature rise ceases due to the reduced reaction rate and the continued heat
+removal rate by the HTF. Similarly, the temperature of the HTF rises
+with time in the axial direction and the reacted fraction is more in the
+vicinity of the inlet region of HTF than the region where HTF leaves.
+Hence, the temperature drops and the hydrogen absorption rate de­
+creases in the axial direction, and complete equilibrium between MHB
+and HTF occurs within 1000 s.
+Although the exergy of the recovered heat by the heat transfer frames
+of the particular hydride is low, the tecno-economic comparison be­
+tween the modified design and its counterpart delivers the supremacy of
+the reactor in terms of thermal energy retrieved. The complete economic
+analysis of a metal hydride reactor is dependent on sorption processes
+and reactor components. Therefore, an economic report based solely on
+
+where ĊR is the total cost of the reactor, including material, alloy, and
+manufacturing costs, ĊP is the cost rates of power/day, Ċfuel is the energy
+received from fuel distribution/day, and nd represents the number of
+days at which the loss was recovered. Fig. 13 depicts the variation in net
+savings between the two reactors. The modified reactor can recover the
+difference in initial costs in 133 days and turn a profit in 1242 days. This
+tecno-economic comparison outlines the time and energy savings of the
+advanced hydride reactor design developed from the spiral heat
+exchanger assembly chosen based on SCR and SOER.
+6. Conclusion
+The comparison of different reactor designs shows that the spiral
+design with three tubes has a 9.5% and 12% improvement in specific
+charging rate and specific output energy rate, respectively, over the
+shell-and-tube design for the same alloy weight ratio of 0.55. In contrast,
+the practicality of tubular design is thwarted due to its lower alloy
+weight ratio. Based on the descriptive analysis, a novel reactor is
+developed comprising spiral tubes and heat pipes through the design
+progression of spiral configuration. The main conclusions outlined from
+the study of the modified design are as follows.
+• Retrofitting heat pipes between the outer frame and outermost spiral
+tube will increase the reaction rate since the hydrogenation volume
+is more in the vicinity of the outer tube than in internal tubes.
+• Increasing the number of heat pipes reduces the reaction time
+gradually as it acts as a heat transfer enhancer. On the other hand,
+adding heat pipes had a lower impact on reactors with external heat
+transfer arrangements (cooling jackets, fins, phase change materials
+etc.).
+• For a supply pressure of 15 bar, the developed design with four heat
+pipes completed 90% hydrogen saturation of 5 kg LaNi5 in 366 s
+when HTF was fed at 0.5 l/min at a temperature of 303 K with an
+adiabatic condition on the external periphery of the reactor.
+• The specific charging rate and the specific output energy rate of the
+developed design are 0.0231 stL/min.g and 527 W/kg, respectively,
+which is 21.5% and 23.7% more than the reactor without heat pipes.
+• The economic analysis implies that the novel reactor surpasses the
+net savings cost of the optimized spiral reactor in 133 days, owing to
+the 62 s difference in absorption and making it profitable in around
+1242 days.
+Furthermore, sensitivity analysis of the novel reactor indicated that
+it did not reach its 1.4 wt% within the entailed timeframe at lower
+supply pressure. Similarly, for HTF inlet temperature, increasing the
+temperature reduces the reaction rate, but the variation was low
+compared to supply pressure since the material’s temperature de­
+pendency is small (i.e., negligible change in driving force). The change
+in average absorption concentration and bed temperature after 500 W/
+m2K and 3 l/min was marginal for the proposed design. Overall, when
+working space and energy output are traded off equally, it can be
+deduced from the extensive quantitative modelling studies that the
+proposed novel design is an excellent choice for precise stationery and
+onboard thermal applications.
+
+Fig. 11. Effect of heat transfer flow rate on hydrogen concentration and
+average bed temperature.
+675
+
+R. Sreeraj et al.
+
+Renewable Energy 198 (2022) 667–678
+
+Fig. 12. Contour of alloy bed temperature, reacted fraction and HTF temperature at different time intervals (0, 50, 100, 250, 500, 1000 s).
+
+676
+
+R. Sreeraj et al.
+
+Renewable Energy 198 (2022) 667–678
+
+Table 7
+Economic performance of the MHHS system’s absorption cycle.
+Model
+
+Material cost (₹)
+
+Alloy cost (₹)
+
+Manufacturing cost (₹)
+
+Energy consumption of constant temp bath (₹/day)
+
+Energy savings (₹/day)
+
+Spiral
+Modified design
+
+₹994.5 ($12.60)
+₹5794.5 ($ 73.43)
+
+₹19581.4 ($ 248.16)
+₹19581.4 ($ 248.16)
+
+₹30000 ($ 380.19)
+₹30000 ($ 380.19)
+
+₹150 ($ 1.90)
+₹150 ($ 1.90)
+
+₹157.932 ($ 2.0)
+₹194.463 ($ 2.46)
+
+hydrogen atmosphere, Int. J. Hydrogen Energy 39 (2014) 349–355, https://doi.
+org/10.1016/j.ijhydene.2013.09.092.
+[8] M. Dieterich, C. Pohlmann, I. Bürger, M. Linder, L. Röntzsch, Long-term cycle
+stability of metal hydride-graphite composites, Int. J. Hydrogen Energy 40 (2015)
+16375–16382, https://doi.org/10.1016/j.ijhydene.2015.09.013.
+[9] L. Popilevsky, V.M. Skripnyuk, Y. Amouyal, E. Rabkin, Tuning the thermal
+conductivity of hydrogenated porous magnesium hydride composites with the aid
+of carbonaceous additives, Int. J. Hydrogen Energy 42 (2017) 22395–22405,
+https://doi.org/10.1016/j.ijhydene.2017.04.088.
+[10] I. Ayub, M.S. Nasir, Y. Liu, A. Munir, F. Yang, Z. Zhang, Performance improvement
+of solar bakery unit by integrating with metal hydride based solar thermal energy
+storage reactor, Renew. Energy 161 (2020) 1011–1024, https://doi.org/10.1016/j.
+renene.2020.07.133.
+[11] S. Chandra, P. Sharma, P. Muthukumar, S.S.V. Tatiparti, Modeling and numerical
+simulation of a 5 kg LaNi5-based hydrogen storage reactor with internal conical
+fins, Int. J. Hydrogen Energy 45 (2020) 8794–8809, https://doi.org/10.1016/j.
+ijhydene.2020.01.115.
+[12] A. Singh, M. Prakash Maiya, S. Srinivasa Murthy, Performance of a solid state
+hydrogen storage device with finned tube heat exchanger, Int. J. Hydrogen Energy
+42 (2017) 26855–26871, https://doi.org/10.1016/j.ijhydene.2017.06.071.
+[13] P. Muthukumar, M.P. Maiya, S. Srinivasa Murthy, R. Vijay, R. Sundaresan, Tests on
+mechanically alloyed Mg2Ni for hydrogen storage, J. Alloys Compd. 452 (2008)
+456–461, https://doi.org/10.1016/j.jallcom.2007.03.112.
+[14] V. Keshari, M.P. Maiya, Design and investigation of hydriding alloy based
+hydrogen storage reactor integrated with a pin fin tube heat exchanger, Int. J.
+Hydrogen Energy 43 (2018) 7081–7095, https://doi.org/10.1016/j.
+ijhydene.2018.02.100.
+[15] S. Anbarasu, P. Muthukumar, S.C. Mishra, Thermal modeling of Mg2Ni-based
+solid-state hydrogen storage reactor, Heat Tran. Eng. 35 (2014) 1354–1362,
+https://doi.org/10.1080/01457632.2013.877314.
+[16] M. Tange, T. Maeda, A. Nakano, H. Ito, Y. Kawakami, M. Masuda, T. Takahashi,
+Experimental study of hydrogen storage with reaction heat recovery using metal
+hydride in a totalized hydrogen energy utilization system, Int. J. Hydrogen Energy
+36 (2011) 11767–11776, https://doi.org/10.1016/j.ijhydene.2011.06.023.
+[17] A. Souahlia, H. Dhaou, F. Askri, M. Sofiene, A. Jemni, S. Ben Nasrallah,
+Experimental and comparative study of metal hydride hydrogen tanks, Int. J.
+Hydrogen Energy 36 (2011) 12918–12922, https://doi.org/10.1016/j.
+ijhydene.2011.07.022.
+[18] C. Weckerle, M. Nasir, R. Hegner, I. Bürger, M. Linder, A metal hydride airconditioning system for fuel cell vehicles – functional demonstration, Appl. Energy
+259 (2020), 114187, https://doi.org/10.1016/j.apenergy.2019.114187.
+[19] P. Muthukumar, M.P. Maiya, S.S. Murthy, Experiments on a metal hydride-based
+hydrogen storage device, Int. J. Hydrogen Energy 30 (2005) 1569–1581, https://
+doi.org/10.1016/j.ijhydene.2004.12.007.
+[20] F.A.M. Elhamshri, M. Kayfeci, Enhancement of hydrogen charging in metal
+hydride-based storage systems using heat pipe, Int. J. Hydrogen Energy 44 (2019)
+18927–18938, https://doi.org/10.1016/j.ijhydene.2018.10.040.
+[21] S. Garrier, B. Delhomme, P. De Rango, P. Marty, D. Fruchart, S. Miraglia, A new
+MgH2 tank concept using a phase-change material to store the heat of reaction, Int.
+J. Hydrogen Energy 38 (2013) 9766–9771, https://doi.org/10.1016/j.
+ijhydene.2013.05.026.
+[22] M. Visaria, I. Mudawar, T. Pourpoint, Enhanced heat exchanger design for
+hydrogen storage using high-pressure metal hydride: Part 1. Design methodology
+and computational results, Int. J. Heat Mass Tran. 54 (2011) 413–423, https://doi.
+org/10.1016/j.ijheatmasstransfer.2010.09.029.
+[23] S. Anbarasu, P. Muthukumar, S.C. Mishra, Tests on LmNi4.91Sn0.15 based solid
+state hydrogen storage device with embedded cooling tubes - Part B: desorption
+process, Int. J. Hydrogen Energy 39 (2014) 4966–4972, https://doi.org/10.1016/j.
+ijhydene.2014.01.039.
+[24] S. Anbarasu, P. Muthukumar, S.C. Mishra, Tests on LmNi4.91Sn0.15 based solid
+state hydrogen storage device with embedded cooling tubes - Part A: absorption
+process, Int. J. Hydrogen Energy 39 (2014) 3342–3351, https://doi.org/10.1016/j.
+ijhydene.2013.12.090.
+[25] A. Kumar, N.N. Raju, P. Muthukumar, P.V. Selvan, Experimental studies on
+industrial scale metal hydride based hydrogen storage system with embedded
+cooling tubes, Int. J. Hydrogen Energy 44 (2019) 13549–13560, https://doi.org/
+10.1016/j.ijhydene.2019.03.180.
+[26] T.A. Johnson, S.W. Jorgensen, D.E. Dedrick, Performance of a full-scale hydrogenstorage tank based on complex hydrides, Faraday Discuss 151 (2011) 327–352,
+https://doi.org/10.1039/c0fd00017e.
+[27] H. Dhaou, N. Ben Khedher, S. Mellouli, A. Souahlia, F. Askri, A. Jemni, S. Ben
+Nasrallah, Improvement of thermal performance of spiral heat exchanger on
+hydrogen storage by adding copper fins, Int. J. Therm. Sci. 50 (2011) 2536–2542,
+https://doi.org/10.1016/j.ijthermalsci.2011.05.016.
+[28] M. Visaria, I. Mudawar, Coiled-tube heat exchanger for High-Pressure Metal
+Hydride hydrogen storage systems - Part 1. Experimental study, Int. J. Heat Mass
+
+Fig. 13. Economic comparison of the selected and modified spiral designs
+comprising setup costs, operational costs, and payback period.
+
+CRediT authorship contribution statement
+R. Sreeraj: Conceptualization, Methodology, Study design, Soft­
+ware, Validation, Formal analysis, Investigation, Resources, Data cura­
+tion, Writing – original draft. A.K. Aadhithiyan: Investigation, Writing
+– review & editing. S. Anbarasu: Resources, Writing – review & editing,
+Supervision, Project administration, Funding acquisition.
+Declaration of competing interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Acknowledgement
+The authors gratefully acknowledge the financial assistance pro­
+vided by the Department of Science and Technology (Project title: DSTIIT Bombay Energy Storage Platform on Hydrogen, DST No: DST/TMD/
+MECSP/2K17/14).
+References
+[1] H. Barthelemy, M. Weber, F. Barbier, Hydrogen storage: recent improvements and
+industrial perspectives, Int. J. Hydrogen Energy 42 (2017) 7254–7262, https://doi.
+org/10.1016/j.ijhydene.2016.03.178.
+[2] Z. Bao, Performance investigation and optimization of metal hydride reactors for
+high temperature thermochemical heat storage, Int. J. Hydrogen Energy 40 (2015)
+5664–5676, https://doi.org/10.1016/j.ijhydene.2015.02.123.
+[3] M. Raju, S. Kumar, Optimization of heat exchanger designs in metal hydride based
+hydrogen storage systems, Int. J. Hydrogen Energy 37 (2012) 2767–2778, https://
+doi.org/10.1016/j.ijhydene.2011.06.120.
+[4] R. Sreeraj, A.K. Aadhithiyan, S. Anbarasu, Integration of thermal augmentation
+methods in hydride beds for metal hydride based hydrogen storage systems :
+review and recommendation, J. Energy Storage 52 (2022), 105039, https://doi.
+org/10.1016/j.est.2022.105039.
+[5] S. Mellouli, H. Dhaou, F. Askri, A. Jemni, S. Ben Nasrallah, Hydrogen storage in
+metal hydride tanks equipped with metal foam heat exchanger, Int. J. Hydrogen
+Energy 34 (2009) 9393–9401, https://doi.org/10.1016/j.ijhydene.2009.09.043.
+[6] M. Afzal, P. Sharma, Design of a large-scale metal hydride based hydrogen storage
+reactor: simulation and heat transfer optimization, Int. J. Hydrogen Energy 43
+(2018) 13356–13372, https://doi.org/10.1016/j.ijhydene.2018.05.084.
+[7] J.H. Shim, M. Park, Y.H. Lee, S. Kim, Y.H. Im, J.Y. Suh, Y.W. Cho, Effective thermal
+conductivity of MgH2 compacts containing expanded natural graphite under a
+
+677
+
+R. Sreeraj et al.
+
+Renewable Energy 198 (2022) 667–678
+
+Tran. 55 (2012) 1782–1795, https://doi.org/10.1016/j.
+ijheatmasstransfer.2011.11.035.
+[29] S. Mellouli, F. Askri, H. Dhaou, A. Jemni, S. Ben Nasrallah, Numerical study of heat
+exchanger effects on charge/discharge times of metal-hydrogen storage vessel, Int.
+J. Hydrogen Energy 34 (2009) 3005–3017, https://doi.org/10.1016/j.
+ijhydene.2008.12.099.
+[30] M. Afzal, R. Mane, P. Sharma, Heat transfer techniques in metal hydride hydrogen
+storage: a review, Int. J. Hydrogen Energy 42 (2017) 30661–30682, https://doi.
+org/10.1016/j.ijhydene.2017.10.166.
+[31] A.K. Aadhithiya, R. Sreeraj, S. Anbarasu, Thermal modelling and performance
+evaluation of LmNi4.91Sn0.15 hydride bed configurations for space-constrained
+thermal applications, Appl. Therm. Eng. (2022), 119116, https://doi.org/10.1016/
+j.applthermaleng.2022.119116.
+[32] S. Anbarasu, P. Muthukumar, S.C. Mishra, Thermal modeling of LmNi4.91Sn0.15
+based solid state hydrogen storage device with embedded cooling tubes, Int. J.
+Hydrogen Energy 39 (2014) 15549–15562, https://doi.org/10.1016/j.
+ijhydene.2014.07.088.
+[33] A.T. Wijayanta, K. Nakaso, T. Aoki, Y. Kitazato, J. Fukai, Effect of pressure,
+composition and temperature characteristics on thermal response and overall
+reaction rates in a metal hydride tank, Int. J. Hydrogen Energy 36 (2011)
+3529–3536, https://doi.org/10.1016/j.ijhydene.2010.12.047.
+[34] R.H. Perry, D.W. Green, J.O. Maloney, 10. Transport and Storage of Fluids, 1997.
+[35] S. Ali, Pressure drop correlations for flow through regular helical coil tubes, Fluid
+Dynam. Res. 28 (2001) 295–310, https://doi.org/10.1016/S0169-5983(00)000344.
+[36] A. Karmakar, A. Mallik, N. Gupta, P. Sharma, ScienceDirect Studies on 10kg alloy
+mass metal hydride based reactor for hydrogen storage, Int. J. Hydrogen Energy
+(2020), https://doi.org/10.1016/j.ijhydene.2020.11.091.
+
+wt%: Maximum H2 storage capacity (%)
+Ca: Reaction constant (1/s)
+κ: Permeability (m2)
+d: Diameter (m)
+r: Radius (m)
+i: Curvature ratio
+L: Length of the reactor (m)
+A: Cross-sectional area (m)
+h: Heat transfer coefficient (W/m2 K)
+n: number
+Ċ: Cost
+
+Abbreviations
+
+MHB: Metal hydride bed
+MHHS: Metal hydride-based hydrogen storage
+HTF: Heat transfer fluid
+ID: Inner diameter
+OD: Outer diameter
+SCR: Specific charging rate
+SOER: Specific output energy rate
+
+Greek letters
+
+φ: Slope factor
+φo: Slope Constant
+ρ: Density (kg/m3)
+k: Thermal conductivity (W/m K)
+β: Hysteresis factor
+ε: Porosity
+
+Nomenclature
+
+Subscripts
+
+MH: Metal hydride
+g: Hydrogen Gas
+eq: Equilibrium
+ref: reference
+eff: effective
+f: Heat transfer fluid
+p: particle
+w: Reactor wall
+CT: Coolant tube
+a: Alloy
+i: Initial state
+sat: Saturation state
+s: Supply
+hp: Heat pipe
+c: Reactor outer surface
+d: days
+P: power
+
+Symbols
+
+T: Temperature (◦ C)
+P: Pressure (bar)
+u: Velocity (m/s)
+S: H2 absorption rate per unit volume (Kg/m3s)
+ΔS: Entropy of formation (J/mol H2 K)
+ΔH: Enthalpy of formation (J/mol H2)
+Ea: Activation energy (J/mol H2
+M: Molecular weight (kg/mol)
+Cp: Specific heat capacity (J/kg K)
+Ru: Gas constant (J/mol K)
+t: Time (s)
+qH : H2 absorbed from 90% saturation (stL)
+Eout: Heat removed from 90% saturation (J)
+W: Mass (kg)
+ta: Time required for 90% saturation (s)
+
+678
+
+

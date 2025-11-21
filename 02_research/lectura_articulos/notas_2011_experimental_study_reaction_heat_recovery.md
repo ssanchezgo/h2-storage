@@ -1,5 +1,6 @@
 # Notas de Lectura: Experimental Study of Reaction Heat Recovery in Metal Hydride Systems
 
+
 **Autor:** Mellouli, S., Askri, F., Dhaou, H., Jemni, A., Ben Nasrallah, S.
 
 **Referencia BibTeX:** `mellouli2011`
@@ -10,81 +11,119 @@
 
 ## 1. Resumen General
 
+
 Este estudio experimental analiza la recuperación de calor de reacción en sistemas de hidruro metálico mediante el uso de un intercambiador de calor espiral. Los autores diseñaron y probaron un sistema de dos reactores con una configuración innovadora para maximizar la recuperación de calor durante los procesos de absorción y desorción del hidrógeno.
 
 ## 2. Objetivos del Estudio
 
+
 - **Objetivo Principal:** Estudiar experimentalmente la eficiencia de un sistema de recuperación de calor en recipientes de hidruro metálico
+
 - **Objetivos Específicos:**
-  - Analizar el intercambio térmico entre reactores mediante intercambiador espiral
-  - Evaluar el rendimiento del sistema con y sin recuperación de calor
-  - Determinar los parámetros óptimos de operación
+ - Analizar el intercambio térmico entre reactores mediante intercambiador espiral
+ - Evaluar el rendimiento del sistema con y sin recuperación de calor
+ - Determinar los parámetros óptimos de operación
 
 ## 3. Metodología
 
+
 - **Configuración:** Sistema de dos reactores con intercambiador de calor espiral
+
 - **Material del Reactor:** Acero inoxidable
-- **Hidruro Metálico:** LaNi₄.₈Al₀.₂
+
+- **Hidruro Metálico:** LaNi4.8Al0.2
+
 - **Intercambiador:** Espiral de tubería de cobre
+
 - **Parámetros de Medición:** Temperaturas, presiones, flujos de calor, tiempos de carga/descarga
 
 ## 4. Especificaciones Técnicas
 
+
 ### 4.1 Hidruro Metálico
 
-- **Tipo de hidruro:** LaNi₄.₈Al₀.₂
+
+- **Tipo de hidruro:** LaNi4.8Al0.2
+
 - **Cantidad de hidruro:** No especificado
+
 - **Conductividad Térmica MH:** No especificado
 
 ### 4.2 Configuración Geométrica
 
+
 - **Configuración geométrica:** Cilíndrica con intercambiador espiral
+
 - **Longitud (mm):** 200
+
 - **Diámetro (mm):** 120
+
 - **L/D ratio:** 1.67
+
 - **Volumen (L):** 2.26
 
 ### 4.3 Transferencia de Calor
 
+
 - **Coeficiente de transferencia de calor:** No especificado
+
 - **Intercambiador de Calor:** Espiral de tubería de cobre
+
 - **Descripción del sistema:** Sistema dual de reactores con recuperación de calor
 
 ### 4.4 Condiciones de Operación
 
-- **Temperatura (ºC):** 20-80
+
+- **Temperatura (oC):** 20-80
+
 - **Presión de trabajo:** 10-30 bar
+
 - **Flujo (NL/min):** No especificado
 
 ### 4.5 Rendimiento
 
+
 - **Tiempo carga:** Reducido 15-25% con recuperación de calor
+
 - **Cantidad H2:** No especificado
+
 - **Imagen de referencia:** Configuración espiral con dos reactores
 
 ## 5. Resultados Principales
 
+
 ### 5.1 Eficiencia de Recuperación
 
+
 - **Recuperación de calor:** 65-75% del calor de reacción
+
 - **Mejora en tiempos:** Reducción del 15-25% en tiempos de carga/descarga
+
 - **Temperatura uniforme:** Mejor distribución térmica en el reactor
 
 ### 5.2 Análisis Térmico
 
+
 - **Intercambiador espiral:** Configuración óptima para maximizar área de transferencia
+
 - **Distribución térmica:** Mejora significativa comparado con sistemas convencionales
+
 - **Eficiencia energética:** Incremento del 20-30% en eficiencia global
 
 ### 5.3 Parámetros de Operación
 
+
 - **Flujo térmico:** Optimizado mediante configuración espiral
+
 - **Presión de trabajo:** Rango operativo 10-30 bar
+
 - **Control térmico:** Sistema de doble reactor permite mejor control
 
 ## 6. Conclusiones
 
+
 ### 6.1 Conclusiones Principales
+
 
 1. El sistema de recuperación de calor con intercambiador espiral mejora significativamente la eficiencia
 2. La configuración de dos reactores permite optimizar los ciclos de carga/descarga
@@ -92,56 +131,84 @@ Este estudio experimental analiza la recuperación de calor de reacción en sist
 
 ### 6.2 Ventajas del Sistema
 
+
 - Mayor eficiencia energética
+
 - Mejor control térmico
+
 - Reducción de tiempos de operación
+
 - Configuración compacta y escalable
 
 ### 6.3 Limitaciones Identificadas
 
+
 - Complejidad del sistema de control
+
 - Costos adicionales del intercambiador
+
 - Necesidad de optimización específica por aplicación
 
 ## 7. Aplicaciones y Relevancia
 
+
 ### 7.1 Aplicaciones Potenciales
 
+
 - Sistemas de almacenamiento de hidrógeno estacionarios
+
 - Aplicaciones vehiculares con requerimientos de recarga rápida
+
 - Sistemas industriales de gran escala
 
 ### 7.2 Contribución Científica
 
+
 - Demostración experimental de eficiencia de recuperación de calor
+
 - Metodología para diseño de intercambiadores espirales
+
 - Análisis cuantitativo de mejoras en rendimiento
 
 ### 7.3 Relevancia para el Proyecto
 
+
 - **Alta relevancia:** Sistema de recuperación de calor aplicable a nuestro diseño
+
 - **Configuración espiral:** Alternativa viable para intercambiador de calor
+
 - **Metodología experimental:** Referencia para pruebas de validación
 
 ## 8. Notas Adicionales
 
+
 ### 8.1 Aspectos Técnicos Destacados
 
-- Uso de LaNi₄.₈Al₀.₂ como hidruro de referencia
+
+- Uso de LaNi4.8Al0.2 como hidruro de referencia
+
 - Configuración espiral optimizada para transferencia de calor
+
 - Sistema de doble reactor para maximizar recuperación energética
 
 ### 8.2 Datos de Interés
 
+
 - Dimensiones del reactor: 120mm diámetro x 200mm altura
+
 - Material: Acero inoxidable
+
 - Intercambiador: Tubería de cobre en configuración espiral
+
 - Eficiencia de recuperación: 65-75%
 
 ### 8.3 Referencias Relacionadas
 
+
 - Estudios complementarios sobre intercambiadores de calor en sistemas MH
+
 - Análisis de configuraciones geométricas para optimización térmica
+
 - Metodologías de recuperación de calor en sistemas de almacenamiento
 
 ---

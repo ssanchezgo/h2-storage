@@ -1,0 +1,1280 @@
+Applied Energy 363 (2024) 123076
+
+Contents lists available at ScienceDirect
+
+Applied Energy
+journal homepage: www.elsevier.com/locate/apenergy
+
+Experimental investigation on hydrogen transfer in coupled metal hydride
+reactors for multistage hydrogen purification application
+Alok Kumar a, 1, P. Muthukumar a, b, *
+a
+b
+
+School of Energy Science and Engineering, Indian Institute of Technology Guwahati, Guwahati 781039, Assam, India
+Department of Mechanical Engineering, Indian Institute of Technology Tirupati, Tirupati 517506, Andhra Pradesh, India
+
+H I G H L I G H T S
+
+G R A P H I C A L A B S T R A C T
+
+• Demonstrated the purification of
+hydrogen from gas samples with 80%
+impurity.
+• Presented the hydrogen transfer char­
+acteristics between coupled reactors.
+• Reported the desired operating condi­
+tions
+for
+multistate
+hydrogen
+purification.
+• Performed TCD analysis of gas samples
+at various stages of purification process.
+• Studied poisoning and regeneration
+characteristics
+of
+metal
+hydride
+reactors.
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Metal hydride
+Hydrogen purification
+Coupled reactor
+Hydrogen storage
+Thermal conductivity detector
+
+Three stage metal hydride hydrogen separation system was tested, wherein each stage was configured with 1.2
+kg of LaNi4.7Al0.3, LaNi5 and La0.9Ce0.1Ni5, placed in descending order of their equilibrium bed pressure
+respectively as R1 (La0.9Ce0.1Ni5) > R2 (LaNi5) > R3 (LaNi4.7Al0.3). Hydrogen absorption capacity obtained for
+R1, R2 and R3 were 15.91 g, 15.93 g and 16.02 g respectively for 3rd activation cycle, performed at 30 bar and
+25 ◦ C. For coupled reactor operation, optimum hydrogen transfer was for desorbing reactor at 90 ◦ C and
+absorbing reactor at 20 ◦ C, which was 12.31 g for R1 to R2 in 350 s, 13.33 g for R2 to R3 in 300 s and 13.38 g for
+R1 to R2 in 280 s, constituting to 1.03, 1.11 and 1.12 wt% of hydrogen storage respectively. Further, the system
+was tested for hydrogen purification, wherein inlet sample with 80% impurity (18% Ar, 20% CO2, 20% N2, 20%
+CH4 and 2% CO) and 20% H2 was used for purification study. According to Thermal Conductivity Detector (TCD)
+results, the system delivered 91.54%, 99.996% and 99.9999% pure hydrogen respectively for stage 1, stage 2 and
+stage 3 purification. The system works within low temperature range of 20–90 ◦ C.
+
+* Corresponding author at: Department of Mechanical Engineering, Indian Institute of Technology Tirupati, Andhra Pradesh 517506, India.
+E-mail addresses: alok.protone@gmail.com (A. Kumar), pmkumar@iittp.ac.in, pmkumar@iitg.ac.in (P. Muthukumar).
+1
+Currently at Centre for Sustainable Energy Use in Food Chain (CSEF), Institute of Energy Futures, College of Engineering, Design and Physical Sciences, Brunel
+University London, Uxbridge UB8 3PH, Middlesex, UK.
+https://doi.org/10.1016/j.apenergy.2024.123076
+Received 9 September 2023; Received in revised form 7 March 2024; Accepted 19 March 2024
+Available online 29 March 2024
+0306-2619/© 2024 Elsevier Ltd. All rights reserved.
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+1. Introduction
+
+Nomenclature
+Symbols
+Bed Avg
+HTF_in
+HTF_out
+Ps
+R1
+R2
+R3
+Ta
+Td
+
+Observing consistent rise in global warming, due to dependency on
+fossil fuels to meet global energy demand, the world is looking for a
+parallel shift towards the renewable energy utilization technologies to
+meet energy demand without affecting environment [1–3]. Among
+different renewable energy sources, hydrogen stands firmly due to its
+high energy density, and capabilities to replace conventional energy
+sources effectively [4,5]. As an excellent energy carrier and environ­
+mental friendly in nature, H2 has become perfect option for limiting the
+rapid increase in CO2 concentration in the atmosphere and restricting
+global temperature rise to 1.5 ◦ C. Therefore, the world is gearing to­
+wards hydrogen energy economy for fulfilling the various energy de­
+mand [6,7]. Hydrogen can be extracted through electrolysis of water, PV
+electrolysis, decomposition of fossil fuels, thermolysis of water,
+reforming, biomass conversion, gasification, dark fermentation, bio
+photolysis, etc. [8–11]. And, it can be utilised for different engineering/
+industrial applications such as hydrogen fuel cell, food and chemical
+industries, automobile industries, ceramic and steel industries, weather
+balloon, synthesis of chemical compounds, space sector, etc. [12–16].
+However, most of the engineering application requires pure grade
+hydrogen for its efficient operation. One of such examples is the use of
+hydrogen in electric generator coil cooling, wherein the performance of
+generator in the thermal power plants is directly influenced by the pu­
+rity level of hydrogen [17,18]. Similarly, efficiency of hydrogen fuel cell
+
+Average bed temperature, ◦ C
+Water inlet temperature, ◦ C
+Water outlet temperature, ◦ C
+Hydrogen supply pressure, bar
+Reactor with La0.9Ce0.1Ni5
+Reactor with LaNi5
+Reactor with LaNi4.7Al0.3
+Absorption temperature, ◦ C
+Desorption temperature, ◦ C
+
+Abbreviations
+ECT
+Embedded Cooling Tube
+GC
+Gas Chromatography
+HTF
+Heat Transfer Fluid
+MH
+Metal Hydride
+MHHPS Metal Hydride Hydrogen Purification System
+PCT
+Pressure Concentration Isotherm
+PV
+Photo Voltaic
+TCD
+Thermal Conductivity Detector
+
+Fig. 1. Illustration on working of metal hydride based hydrogen purification system (MHHPS).
+
+directly depends on purity level of hydrogen. But, hydrogen obtained
+through most of the production techniques are not pure [19]. Hence,
+hydrogen purification plays a significant role in the overall hydrogen
+value chain. Some well stablished hydrogen purification techniques,
+such as pressure swing adsorption, membrane diffusion, cryogenic
+separation, metal hydride (MH) systems, catalytic purification bases
+purification etc. [19–23], are available for H2 separation from impure
+gas mixtures. Among these techniques, metal hydride based hydrogen
+separation is the simplest and economical technique to purify hydrogen
+using thermal heat input (Fig. 1), wherein, hydrogen separation is
+accomplished in three steps, i.e. absorption, flushing and desorption
+[24]. During absorption, impure gas mixture is supplied to the metal
+hydride (MH) reactor which is maintained at low temperature through
+regular circulation of heat transfer fluid (HTF). As metal hydride gas
+high affinity towards hydrogen, it absorbs only hydrogen and the other
+gaseous impurities remains in the void volume. Absorption is followed
+by flushing, which is performed at low temperature and the impure
+gases present in the void space is released to the atmosphere. In the last
+stage i.e. desorption, the temperature of MH bed is raised to elevated
+temperature, and pure hydrogen is desorbed as an end product.
+Metal hydride reactor is an engineered vessel with sufficient mech­
+anistic strength, that allows the intermetallic alloy to remain in tacked,
+and facilitate the hydrogen transfer to/from the MH reactor and
+simultaneously assists the smooth flow of HTF through the bed to
+
+Table 1
+Experimental parameters for the coupled reactor system study.
+Type of Study
+
+Reactor
+involved
+
+Operating
+Parameters
+
+Gas Composition
+
+Parametric study on
+rate of hydrogen
+transfer in coupled
+reactor system
+
+R1 to R2
+R1 to R3
+
+Desorbing
+reactor
+temperature (Td):
+70 ◦ C, 80 ◦ C &
+90 ◦ C
+Absorbing
+reactor
+temperature (Ta):
+20 ◦ C & 30 ◦ C
+• R1: Ps = 20 bar
+& Ta = 20 ◦ C
+• R1 to R2: Td =
+90 ◦ C & Ta =
+20 ◦ C
+• R2 to R3: Td =
+90 ◦ C & Ta =
+20 ◦ C
+• R3: Td = 90 ◦ C
+
+Pure Hydrogen
+(99.995% purity)
+
+R2 to R3
+
+Multistage hydrogen
+purification study
+
+R1, R2
+and R3
+
+Hydrogen with 80%
+impurity (CO, CO2,
+CH4, N2 and Ar)
+
+2
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+Fig. 2. (a) Detailed schematic of 3-Stage metal hydride based hydrogen purification system with HTF and Gas circuit and (b) pictorial view of the 3-stage metal
+hydride based hydrogen purification system
+
+accomplish hydriding/dehysriding process. The MH reactor is designed
+on the principle of optimization of combined heat and mass transfer
+characteristics of the MH bed. As the thermal conductivity of MH alloys
+are very less [25,26], it becomes very essential to optimize bed thickness
+in such a manner, that it could facilitate effective transfer of excess heat
+from the bed, in order to boost its absorption/desorption kinetics
+[27,28].
+In past, several studies have been performed on the reactor design,
+wherein parameters like reactor strength, hydrogen transfer, bed
+
+packing, reactor configuration, fabrication feasibility etc., are consid­
+ered while designing a MH reactor [28–30]. Alloy selection in MH‑hy­
+drogen system also plays a significant role in executing the targeted
+applications successfully and efficiently [31]. Pressure-ConcentrationIsotherm (PCT) of MH alloys can be tailored, by altering its interme­
+tallic composition according to its application [24,32]. Some of the al­
+loys like MgH2, complex hydrides, etc., have comparatively high H2
+storage capacity (⁓7.5 wt%), but due to their high stability and high
+desorption temperatures, these are not suitable for MHHPS [33,34].
+3
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+Fig. 3. (a) Pictorial view of the reactor and (b) reactor configuration with dimensions.
+
+However, some metal hydrides fall under the group of AB5, A2B and AB2
+are suitable for hydrogen purification application [19,35].
+In 1996, Au et al. [36] reported the used of metal hydride (MlNi5xAlx) for storing, purifying, recovering, and transporting hydrogen from
+a purge gas line of an ammonia plant. The system reported hydrogen
+recovery of around 70% with up to 97% saving in power consumption,
+which resulted to 60% saving in hydrogen price. According to Dunikov
+et al. [37], N2 hardy affects purification characteristics of AB5, but it
+decreases storage capacity by 3–4%. A test was performed with 27% N2
+in H2 + N2 gas mixture, which was fed to LaFe0.1Mn0.3Ni4.8. Hydrogen
+loss of <5% was observed during the recovery phase. However, impu­
+rities such as CO, CO2 and H2S significantly affect rate of reaction by
+slowing down initial rate of reactor by 2 to 20 times [38,39]. According
+to Oztek M.T [40], impurities like He and Ar have no impact on the
+reversible purification characteristics of alloys like Mg2Ni, VTiNi and
+LaNi5. However, the impurities like CO2, CO, O2, H2S can cause alloy
+poisoning. Handa et al. [41] reported poisoning characteristics of CO2
+on various AB5 alloys. The poisoning characteristics of CO2 on various
+AB5 alloys, varied in the sequence CaNi5 < LaNi5 < MmNi4.025Co0.4M­
+n0.275Al0.3 < LaCo5 respectively. Compared to other gaseous impurities,
+the poisoning effect of CO was comparatively more dominant. Wan et al.
+[42] reported poisoning characteristics of CO on LaNi4⋅7Al0⋅3, wherein
+H2 with 300 ppm CO content was used for the study. Significant
+poisoning was observed, and the alloy got deactivated after 3 cycle,
+wherein absorption was carried out at 30 ◦ C. But the storage capacity
+was not affected, when tested at 80 ◦ C. However, the poisoned alloy was
+
+regenerated/reactivated after one pure hydrogen absorption cycle at
+high pressure.
+Use of intermetallic alloys for bio hydrogen purification and storage
+has been proven as an efficient technology in past two decades [43–45].
+However, depending upon the content of the other gases in impure
+hydrogen sample, purification process may be accomplished in single or
+multiple purification stages [46,47]. Kazakov et al. [46] reported the use
+of LaNi4.4Fe0.3Al0.3 and LaNi4.6Mn0.2Al0.2 as hydrogen purification
+alloy, to separate hydrogen from gas sample of biological hydrogen
+production stream. They reported that the alloys were suitable for
+hydrogen separation from a dilute gas stream from biohydrogen pro­
+duction line. Similarly, Dunikov et al. [47] reported the hydrogen sep­
+aration from a biohydrogen production sample with concentration in the
+range of 40–60 vol% and feed pressure of 5.6 bar. The study reported 2step purification using La0.9Ce0.1Ni5 and LaNi4.8Mn0.3Fe0.1 alloy (1 kg
+each) in each purification step. The purified hydrogen was sent to PEM
+fuel cell, and it was observed that, the degree of purification was suffi­
+cient to run a 200 W PEM fuel cell to its maximum capacity. Dunikov and
+Blinov [48–50] studied hydrogen separation from lean mixture of CH4H2 (90% CH4 and 10% H2), wherein the supply pressure of mixture was
+9.5 bar and the alloy used was LaNi4.8Mn0.3Fe0.1.Though the study does
+not report the purification level of the hydrogen obtained, but reported
+the hydrogen recovery in lean mixture, which drop down to ⁓74% in
+the present case. AB2 alloys such as Zr0.9Ti0.1V2 [51], Ti0.515Zr0.485Cr0.8
+[52] and Ti0.515Zr0.485Mn1.2M0.1 [52] can also be used for hydrogen
+purification as an alternative to AB5 alloys. According to Hanada et al.
+4
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+Fig. 4. Plot for (a) amount of H2 absorbed and (b) HTF and MH bed temperature variation during activation cycle of reactors R1 (La0.9Ce0.1Ni5), R2 (LaNi5) and
+R3 (LaNi4.7Al0.3).
+
+5
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+Fig. 5. (a) Rate of hydrogen transfer from R1 to R2 at different absorption/desorption temperatures, (b) temperature variation curve of desorbing reactor (R1) to
+absorbing reactor (R2) at 20 ◦ C and (c) temperature variation curve of desorbing reactor (R1) to absorbing reactor (R2) at 30 ◦ C.
+
+6
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+sample. For higher impurity content (>20%), the system is operated in
+multi stage. The schematic and pictorial view of the test setup is depicted
+in Fig. 2a and Fig. 2b.
+
+Table 2
+Details of hydrogen transfer in the coupled reactor (R1 to R2).
+Td (R1)
+
+Ta (R2)
+
+H2 Transfer from R1 to R2
+
+wt%
+
+Time
+
+70 C
+70 ◦ C
+80 ◦ C
+80 ◦ C
+90 ◦ C
+90 ◦ C
+
+20 C
+30 ◦ C
+20 ◦ C
+30 ◦ C
+20 ◦ C
+30 ◦ C
+
+10.34 g
+9.46 g
+12.02 g
+10.45 g
+12.31 g
+11.49 g
+
+0.86
+0.79
+1.01
+0.87
+1.03
+0.96
+
+390 s
+385 s
+390 s
+380 s
+350 s
+350 s
+
+◦
+
+◦
+
+2.1. Alloy and reactor details
+Initially, experiments on the coupled reactor system was performed,
+wherein three identical reactors with 6 embedded cooling tubes (ECT)
+were filled with different AB5 alloys and arranged as multiple hydrogen
+purification batteries/bed in series. The pictorial view of the 6 ECT
+reactor with its detailed specification and cooling tube arrangement is
+depicted in Fig. 3. The basic configuration of the reactor is similar to that
+of shell and tube type heat exchanger, wherein the shell side MH alloy is
+placed, and the ECT's facilitates the effective heat transfer to/from the
+MH bed. Stainless steel sintered filter of 2 μm pore size is welded at the
+centre of the reactor to facilitate uniform hydrogen absorption/
+desorption process along the axial direction, keeping alloy in tacked
+within the reactor shell. These alloys were arranged in the descending
+order of their equilibrium bed pressure at room temperature (PCT
+characteristics), such that ‘stage 1 reactor (R1)’ was filled with
+La0.9Ce0.1Ni5, ‘stage 2 reactor (R2)’ with LaNi5 and ‘stage 3 reactor (R3)’
+with LaNi4.7Al0.3 and these reactors were filled with equal alloy mass of
+1.2 kg each. The reason for arranging the metal hydride alloys in its
+descending order of PCT characteristics is because of purification
+application. Considering the operational temperature and pressure
+ranges, the descending order (PCT) of material arrangement, facilitates
+maximum hydrogen transfer during coupling, due to higher pressure
+gradient for a given temperature range. Parallelly, the last stage alloy,
+being more stable as compared with adjacent stages (low equilibrium
+pressure), ensures ultrapure hydrogen delivery because of efficient
+flushing.
+Initially the reactors and the gas circuit were tested at 100 bar
+pressure, to ensure the leak proof in gas circuit. The leak test was per­
+formed using argon gas. Before conducting coupled system studies,
+activation of intermetallic alloys was performed by conducting succes­
+sive hydrogenation/dehydrogenation cycles for all the reactor beds. The
+activation was carried out using pure hydrogen, which was supplied at
+30 bar, wherein the absorption temperature (HTF inlet) of 25 ◦ C was
+maintained. The absorption half cycle was followed by the desorption
+half cycle which was performed at 90 ◦ C, and the reactor was further
+evacuated down to 10− 2 mbar, before the next cycle. The reactors were
+reached their maximum absorption capacities and got activated in the
+third activation cycle, wherein R1, R2 and R3 absorbed 15.91 g, 15.93 g
+and 16.02 g respectively in 201 s, 178 s and 130 s (Fig. 4a).
+The given absorption amount contributes to 1.32 wt%, 1.33 wt% and
+1.34 wt% of the hydrogen storage capacity for respective reactors. The
+corresponding peak bed temperature achieved for each of R1, R2 and R3
+were 87.8 ◦ C, 92 ◦ C and 130.5 ◦ C respectively in 16th s, 11th s, and 8th s.
+As depicted in Fig. 4b, their respective HTF outlet temperature was
+31.4 ◦ C in 22 s, 31.7 ◦ C in 21 s and 35.5 ◦ C in 22 s, for 25 ◦ C absorption
+temperature and 30 bar H2 supply pressure. During studies, water as
+HTF at fixed flow rate of 4 lpm was used. The uncertainty in experi­
+mental measurements was calculated using method adopted by Kline
+and McClintock [54]. The uncertainty in measurement was ±2.4%,
+±0.5 ◦ C and ± 2% respectively for hydrogen storage, temperature and
+pressure measurement. The impure hydrogen mixture was prepared
+using Coriolis mass flow meter, which had flow accuracy of ±0.25%.
+
+[52], the order of poisonings tolerance of some AB2 alloys are
+Ti0.515Zr0.485Mn1.2Fe0.1 < AB2-Ni < AB2 < AB2-Co < AB2-Fe (AB2 =
+Ti0.515Zr0.485Cr0.8) respectively.
+Though hydrogen purification using intermetallic alloys is a known
+technology, however obtaining ultrapure hydrogen (99.9995%) from a
+sample with higher impurity range (50–80%) using low grade heat input
+(80–90 ◦ C) is still a challenge. There is a significant research gap in
+exploring the right combination of metal hydride alloys for hydrogen
+purification from higher level of impurity. Considering the scope of
+research, a sustainable multistage thermally driven metal hydride based
+hydrogen purification system was studied and reported in the present
+work. The choice of multistage purification technique for the present
+study facilitates the system ability to handle higher range of impurity
+content in the supply sample. The MH alloys are selected based on their
+thermodynamic properties, such that the system can work in low tem­
+perature and pressure range. The consideration of low working tem­
+perature allows futuristic approach for its coupling with waste heat
+recovery or solar thermal systems having low grade heat input (up to
+90 ◦ C). Moreover, the multistage purification technique will facilitate
+the recovery of ultrapure hydrogen from the gas samples with even
+higher level of impurity [53].
+2. Methodology
+Three identical MH reactors with 6 embedded cooling tube (ECT)
+were fabricated using SS316 material and each were filled with 1.2 kg
+La0.9Ce0.1Ni5, LaNi5, and LaNi4.7Al0.3 in the shell space of each reactor,
+and were placed in first, second and third purification stages, respec­
+tively. Water as HTF was used, that flows through ECT of the reactor,
+facilitating effective heat transfer within the reactor. In order to obtain
+suitable parameters for the MHHPS operation, parametric studies on
+coupled reactor system was performed by varying absorption and
+desorption parameters, which is depicted in Table 1, wherein pure
+hydrogen was used for study. A complete one cycle of H2 separation
+process consists of three steps i.e. absorption of gas mixture, flushing of
+impure void gases and desorption of H2 absorbed. The suitable operating
+parameters for the absorption, flushing and desorption were obtained
+through parametric studies.
+During absorption, reactor was maintained at low temperature
+(20 ◦ C) and the impure gas mixture was sent through the gas circuit to
+the reactor at 20 bar. During absorption, H2 gets absorbed in the inter­
+metallic alloys forming hydride (solid solution), whereas the impurity
+remains in the void space. Due to exothermic absorption, HTF recircu­
+lation at room temperature is facilitated through ECT of the reactor, to
+remove the exothermic heat of reaction, from the MH bed to ensure
+faster absorption kinetics. Further, the reactor is flushed at low tem­
+perature (⁓15 ◦ C) to ensure removal of impurity without losing
+hydrogen. Further, reactor is prepared for desorption, wherein it is
+raised to 90 ◦ C through continuous HTF recirculation through high
+temperature recirculating bath. Once the reactor attains the desired
+temperature, the desorption circuit is opened to collect the purified
+hydrogen. A Coriolis mass flow meter installed in the gas circuit records
+the amount of gas transfer to/from the reactor during absorption,
+flushing and desorption. The single and multistage operation of the
+purification system is determined by level of impurity present in the gas
+
+2.2. Absorption of impure mixture
+Initially, impure gas mixture was sent to stage 1 reactor (R1). Ab­
+sorption was performed at 20 ◦ C and 20 bar gas supply pressure. The
+temperature was maintained by constant supply of water as HTF
+through ECT of reactor. During this recirculation, HTF (water) valves
+Wv1, Wv2, Wv11 and Wv14 were kept in open position and cold temper­
+ature bath in running mode (Fig. 2a). The impure mixture was supplied
+7
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+Fig. 6. (a) Rate of hydrogen transfer from R1 to R3 at different absorption/desorption temperatures, (b) temperature variation curve during hydrogen transfer from
+R1 to R3 at 20 ◦ C and (c) temperature variation curve during hydrogen transfer from R1 to R3 at 30 ◦ C.
+
+8
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+using K-type thermocouples, which was connected to a data acquisition
+system (DAQ). The gas circuit was completely isolated from atmosphere
+and the system operated in a close loop. The hydrogen transfer to/from
+the reactor were recorded using the Coriolis mass flow meter (CFM).
+After certain number of purification cycles, the bed poisoning was
+witnessed. Therefore, the MH bed was regenerated time to time
+(depending upon impurity level). The MH bed was regenerated by
+repeating activation process, wherein the MH reactor was evacuated
+down to 10− 2 mbar at 95 ◦ C, using a vacuum pump and recirculation of
+high temperature HTF. Once the bed achieves set vacuum pressure, all
+the valves were closed and the reactor was cooled down to perform
+absorption using pure hydrogen. During the regeneration absorption
+process, pure hydrogen was supplied at higher pressure (20–30 bar).
+Once the absorption was completed, MH bed was again raised to higher
+temperature (95 ◦ C) and the evacuation process was repeated followed
+by absorption. This absorption-desorption-evacuation was repeated till
+the bed gets regenerated. It takes 2–3 cycle for complete regeneration of
+the MH bed.
+
+Table 3
+Details of hydrogen transfer in the coupled reactor (R1 to R3).
+Td (R1)
+
+Ta (R3)
+
+H2 Transfer from R1 to R3
+
+wt%
+
+Time
+
+70 C
+70 ◦ C
+80 ◦ C
+80 ◦ C
+90 ◦ C
+90 ◦ C
+
+20 C
+30 ◦ C
+20 ◦ C
+30 ◦ C
+20 ◦ C
+30 ◦ C
+
+12.53 g
+11.95 g
+13.07 g
+12.51 g
+13.38 g
+12.71 g
+
+1.04
+0.99
+1.08
+1.04
+1.12
+1.06
+
+360 s
+360 s
+310 s
+305 s
+280 s
+290 s
+
+◦
+
+◦
+
+to stage 1 reactor through gas circuit, wherein valve Gv1, Gv4 and Gv5
+were kept open and supply cylinder was set to 20 bar using pressure
+regulator. Further, gas mixture uniformly spreads within the reactor
+trough a sintered porous tube filter of 2 μm pore size. After coming in
+contact with the gas mixture, R1 containing La0.9Ce0.1Ni5, starts
+absorbing hydrogen to form La0.9Ce0.1Ni5-H6. At the same time, the
+other gaseous impurities remain unabsorbed in the void space of the
+reactor. Due to exothermic nature of absorption reaction, continuous
+supply of low temperature HTF is maintain to remove the excess heat of
+reaction to ensures faster absorption rate.
+
+2.5. Gas analysis
+The gas samples during absorption, desorption and flushing were
+collected and analysed using TCD analysis in gas chromatography. CP
+Molesieve 5A column was used for the analysis, wherein oven temper­
+ature was raised from 40 to 150 ◦ C to facilitate gas separation within the
+column. Initially the oven was maintained at 40 ◦ C for 10 min and
+further, the temperature of oven vas raised to 150 ◦ C in a time step of
+20 ◦ C / min. The retention time of the peak was detected using pure gas
+samples of different gases. It was observed that, for column flow rate of
+6 lpm, the H2, Ar, N2, CH4 and CO peaks were detected at retention time
+of 3-4th min, 5th min, 8-9th min, 11th min and 15-16th min respectively,
+considering above oven program. Hydrogen showed a negative peak
+because of lower thermal conductivity of He (carrier gas) as compared to
+hydrogen. Once peak oven temperature was achieved, it was further
+continued for 10 min to facilitate gas detection. The detector tempera­
+ture was fixed as 250 ◦ C during the gas analysis. At end of each sample
+analysis, the column was further raised to 300 ◦ C, to ensure no gases left
+out before the next sample get injected.
+
+2.3. Flushing of void gases
+In order to remove unabsorbed impure gases from the void space,
+reactors were flushed at low temperature (15 ◦ C). During flushing, the
+recirculating chillers were brought down to 15 ◦ C and HTF was recir­
+culated through the MH reactor. During recirculation, HTF valve posi­
+tioning was same as absorption process, however the gas circuit was set
+similar to desorption circuit, wherein, valves Gv5, Gv3 and Gv2 were kept
+open and impure gases were directly flushed to atmosphere, or removed
+through vacuum pump. The flushing process is completed in a few
+seconds (5–10 s), as the void volume was less. For bigger reactor sys­
+tems, it may take longer time to flush the reactor. After flushing, the gas
+valves were closed, and the reactor was prepared for desorption process.
+2.4. Desorption of the absorbed hydrogen
+After performing flushing, reactor was prepared for desorption,
+wherein HTF at 90 ◦ C was recirculated through R1 using hot recircu­
+lating bath. For facilitating HTF recirculation, valves Wv1, Wv2, Wv7 and
+Wv9 were kept open, keeping recirculation pump in on position.
+Simultaneously, the absorbing reactor R2 was maintained at low tem­
+perature (20 ◦ C), through continuous recirculation of HTF using recir­
+culating chillers, keeping valves Wv3, Wv4, Wv11 and Wv13 in open
+position. Once thermal equilibrium between MH bed and HTF for the
+respective absorbing (R2) and desorbing (R1) reactor was maintained,
+hydrogen from R1 was sent to R2. During this process, gas valves Gv5,
+Gv3 and Gv7 was kept opened to facilitate gas transfer from R1 to R2.
+Once, the transfer was completed, R2 was further prepared for flushing
+(cooled down to 15 ◦ C), and once the flushing temperature was attained,
+the gas valves Gv6, Gv3 and Gv2 were opened to remove void gases.
+Further, to obtaining ultra-pure grade of hydrogen (⁓99.9995%
+purity), hydrogen transfer from R2 to R3 was performed, wherein R2
+was heated to 90 ◦ C and R3 was cooled to 20 ◦ C, by keeping respective
+water valves in open position. Once the thermal equilibrium between
+the MH bed and HTF was attained, gas valves Gv6, Gv3 and Gv9 were
+opened to facilitate H2 transfer from R2 to R3. At end R3 was flushed at
+20 ◦ C, similar to flushing in R1 and R2, keeping gas valves, Gv8, Gv3 and
+Gv2 in open position and facilitating recirculation of cold HTF through
+Wv5, Wv6, Wv12 and Wv14. Finally, the ultra-pure H2 was obtained after
+desorption of R3. During desorption, R3 was raised to 90 ◦ C using HTF
+recirculation through valves Wv5, Wv6, Wv10 and Wv9. Once the bed
+attains thermal equilibrium with HTF, the gas valve Gv8, Gv3 and Gv2
+was opened to collect ultra-pure H2. During hydrogen purification pro­
+cess, the temperature variation in the MH bed and HTF was recorded
+
+3. Results and discussions
+This section presents the experimental outcomes of hydrogen trans­
+fer and temperature variation during coupled reactor study. Capability
+of metal hydride materials for hydrogen separation from lean hydrogen
+mixture are also discussed along with TCD results of gas samples at
+various stages of hydrogen purification.
+3.1. Heat and mass transfer in coupled reactor system
+In order to depict the suitable operating parameters for the efficient
+working of coupled reactor system, the parametric study was performed
+by varying absorption/desorption operating conditions as depicted in
+Table 1. The parametric studies were performed using commercial grade
+type-1 hydrogen cylinder with 99.9995% purity.
+3.1.1. Hydrogen transfer from R1 to R2
+In this study, the desorbing reactor (R1) was filled with a fixed
+amount of 14.5 g hydrogen while the absorbing reactor (R2) was kept
+empty. From the result obtained (Fig. 5a), it was observed that, the rate
+of hydrogen transfer was largely affected by the operating temperatures
+of absorbing and desorbing reactors. For 70 ◦ C desorption temperature
+(R1) and 30 ◦ C absorption temperature (R2), the amount of hydrogen
+transfer from R1 to R2 was 9.46 g, which was just 65.3% of the total
+hydrogen available for transfer in R1.
+With increase in the temperature of desorbing reactor and decrease
+in the temperature of absorbing reactor, hydrogen transfer from R1 to
+9
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+Fig. 7. (a) Hydrogen transfer from R2 to R3 at different absorption/desorption temperatures and (b) temperature variation curve during hydrogen transfer from R2
+to R3 at 20 ◦ C and (c) temperature variation curve during hydrogen transfer from R2 to R3 at 30 ◦ C.
+
+R2 was increased significantly. For 90 ◦ C desorption temperature (R1)
+and 20 ◦ C absorption temperature (R2), the amount of hydrogen transfer
+from R1 to R2 was 12.31 g, which constitutes to nearly 85% of the total
+hydrogen available for transfer. The exothermic and endothermic nature
+of the absorption/desorption reaction in the coupled reactor system can
+be observed by the temperature variation within the MH bed and HTF
+during coupled reactor study (Fig. 5b & Fig. 5c). With increase in
+
+temperature difference between the absorbing and desorbing reactors,
+the pressure gradient between the reactors also increases, which leads to
+faster rate of hydrogen transfer between the reactors. Moreover, for
+lower absorption temperature, the equilibrium bed pressure of the alloy
+is lower, this increases the rate of absorption for the absorbing reactor.
+The details of the hydrogen transfer between the coupled reactor R1 &
+R2 is depicted in Table 2.
+10
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+test MHHPS for harsh operational conditions. The purification was
+carried in 3 stages and for each stage, TCD analysis of gas sample was
+performed using Agilent make CP Molsieve 5A column, wherein Helium
+was used as carrier gas.
+
+Table 4
+Details of hydrogen transfer in the coupled reactor (R2 to R3).
+(Td) R2
+
+(Ta) R3
+
+H2 Transfer from R2 to R3
+
+wt%
+
+Time
+
+70 C
+70 ◦ C
+80 ◦ C
+80 ◦ C
+90 ◦ C
+90 ◦ C
+
+20 C
+30 ◦ C
+20 ◦ C
+30 ◦ C
+20 ◦ C
+30 ◦ C
+
+12.24 g
+11.72 g
+13.08 g
+12.26 g
+13.33 g
+12.77 g
+
+1.02
+0.98
+1.09
+1.02
+1.11
+1.06
+
+370 s
+380 s
+350 s
+340 s
+300 s
+320 s
+
+◦
+
+◦
+
+3.2.1. Stage 1 Purification
+Initially, the TCD analysis on the absorption gas sample was con­
+ducted and result obtained was calibrated with calibration sample. As
+shown in Fig. 8a, the gas composition constitutes of 20% H2, 18% Ar,
+20% N2, 20% CH4, 20% CO2 and 2% CO by weight. Lesser CO content in
+the impure gas mixture was considered because of its significant effect
+on poisoning characteristics of metal hydride [38]. It was also reported
+that, significant CO content in the impure gas mixture degrades the
+absorption kinetics of the system in few purification cycles [42]. After
+TCD analysis, the impure gas sample was sent for absorption to stage 1
+reactor i.e. R1 (La0.9Ce0.1Ni5), maintaining absorption condition of 20
+bar and 20 ◦ C. As depicted in Fig. 8b, the amount of hydrogen absorbed
+in stage 1 reactor was 10.59 g in 262 s, attaining the peak bed tem­
+perature of 60 ◦ C in 23 s and peak HTF temperature of nearly 22.5 ◦ C.
+Despite of high supply pressure (20 bar) the rate of absorption was on
+the slower side, because of the high impurity content in the absorption
+gas sample. After completion of absorption half cycle, the reactor R1
+was, further cooled down to 15 ◦ C, and prepared for flushing. During
+flushing, the reactor was maintained at 15 ◦ C, and the discharge valve
+was opened to flush the reactor to ambient conditions. The amount of
+gas came out during flushing was recorded as 1.03 g, which lefts 9.56 g
+hydrogen available for transfer within reactor R1. The flushed sample
+was further analysed using online TCD.
+As depicted in Fig. 8c, the gases detected in the flushed sample
+constitute of 4.65% H2, 30.19% Ar, 31.88% N2 and 33.28% CH4.
+However, due to significant poisoning characteristics of CO, it goes
+through methanation to form methane and moisture, once it reacts with
+hydrogen in presence of Ni of La0.9Ce0.1Ni5, and hence, it was not
+detected in the flushed sample [55]. However, with lesser CO content
+and high desorption temperature (above 80–85 ◦ C), the reactor re­
+generates to absorb hydrogen in subsequent absorption cycle [42]. Apart
+from these gases, CO2, must have been present in the desorption sample,
+but it was not detected during TCD analysis because of molecular sieve
+column used for the analysis. It can be observed that, during flushing,
+impurities present in the void space of the reactor leaves the reactor with
+very little amount of hydrogen i.e. 4.65%, which constitutes to 0.04 g of
+total gas flushed. Hydrogen coming out during flushing is mostly the
+unabsorbed hydrogen, which is present in the void space of the reactor
+along with impurities. After successful flushing of the impurities from
+R1, the reactor was prepared for desorption, wherein the reactor was
+heated to 90 ◦ C.
+Simultaneously, the stage 2 reactor (R2 filled with LaNi5) was pre­
+pared for absorption. Before hydrogen transfer in the coupled reactor
+system, R1 was maintained at 90 ◦ C and R2 was maintained at 20 ◦ C.
+Once the respective bed and HTF temperatures stabilizes, the rector
+valves were opened for facilitating hydrogen transfer from R1 to R2. The
+amount of hydrogen transferred from R1 to R2 was 8.91 g in 330 s,
+which constitute of 93.20% of total gas available for transfer. During this
+process, the peak bed temperature of 49.5 ◦ C in 14 s and peak HTF
+temperature of nearly 22.2 ◦ C was attained in the absorbing reactor R2
+(Fig. 9a). However, because of endothermic desorption the bed and HTF
+temperature of R1 dropped to 70.8 ◦ C and 87.6 ◦ C respectively. Further,
+during gas transfer from R1 to R2, sample after stage 1 purification was
+collected and analysed. As depicted in Fig. 9b, it was observed that, after
+stage 1 purification, 91.54% pure hydrogen was obtained with impurity
+of 8.46%. The impurities comprise of 2.54% Ar, 2.14% N2, 3.79% CH4
+and trace of 0.01% CO. In the TCD results of the flushed gas sample
+(Fig. 8c), CO was not present majorly because of methanation and very
+low flushing temperature. Due to very low flushing temperature, even
+the trace of CO might not have come out due to significantly lowpressure gradient. But, a trace of CO was observed in desorption
+
+3.1.2. Hydrogen transfer from R1 to R3
+Similarly, the experiments were performed to study the reaction ki­
+netics of hydrogen transfer from R1 to R3 as coupled system, wherein
+temperatures of the reaction bed were varied as per selected parameters
+(Table 1). The rate of hydrogen transfer was directly proportional to the
+difference between the absorbing and desorbing bed temperature. As
+depicted in Fig. 6a, the rate and amount of hydrogen absorbed was less
+for 70 ◦ C desorption temperature (R1) and 30 ◦ C absorption temperature
+(R3), and it was maximum for 90 ◦ C desorption temperature (R1) and
+20 ◦ C absorption temperature (R3). The amount of hydrogen transfer
+varied from 11.948 g in 360 s to 13.37 g in 280 s, which was in the range
+of 82.4–92.2% of the total hydrogen available for transfer. As shown in
+Table 3, for the various operating temperatures, the reaction kinetics got
+varied, which was mainly because of the difference in the equilibrium
+bed pressure of the absorbing and desorption bed at different tempera­
+ture. The endothermic/exothermic reactions can be clearly observed in
+Fig. 6b and Fig. 6c, wherein the temperature variation plot for the
+coupled reactor system is presented. Due to significant pressure differ­
+ence for lower (20 ◦ C) absorbing and higher (90 ◦ C) desorbing MH bed
+(Fig. 6b), the bed temperature variation has showed highest rise and
+drop for the respective absorbing and desorbing beds.
+3.1.3. Hydrogen transfer from R2 to R3
+Similarly, hydrogen transfer between R2 and R3 was also studied.
+For 70 ◦ C desorption temperature (R2) and 30 ◦ C absorption tempera­
+ture (R2), the amount of hydrogen transfer was 11.72 g, which was
+80.8% of the total hydrogen available for transfer. Hydrogen transfer
+from R2 to R3 increased significantly with increase in the temperature of
+desorbing reactor and decrease in the temperature of absorbing reactor
+(Fig. 7a). For 90 ◦ C desorption temperature (R2) and 20 ◦ C absorption
+temperature (R3), the amount of hydrogen transfer was 13.33 g, which
+constitutes of nearly 92% of the total hydrogen available for transfer.
+With increase in temperature difference between the absorbing and
+desorbing reactors, the pressure gradient between the reactors also in­
+creases. This leads to faster rate of hydrogen transfer between the re­
+actors. Moreover, for lower absorption temperature, the equilibrium bed
+pressure of the alloy is lower, this increases the rate of absorption for the
+absorbing reactor. The details of the hydrogen transfer between the
+coupled reactor R1 & R3 is depicted in Table 4. The temperature vari­
+ation of the MHHPS and HTF during coupled reactor study is depicted in
+Fig. 7b and Fig. 7c. The endothermic nature of the desorbing bed and the
+exothermic reaction in the absorbing bed can be clearly observed. For all
+the three cases, it was observed that for 90 ◦ C desorption temperature
+and 20 ◦ C absorption temperature, the amount of hydrogen absorbed
+was maximum. This is because of higher pressure difference between the
+equilibrium pressure of desorbing reactor at 90 ◦ C and absorbing reactor
+at 20 ◦ C. Therefore, it is suggested to maintain maximum temperature
+difference between the absorbing and the desorbing reactor.
+3.2. Hydrogen separation from impure gas mixture
+To test the developed multistage hydrogen purification system with
+higher level of impurities, experiments was conducted with the multiple
+gas sample containing 80% impurities in the form of CH4, N2, Ar, CO2,
+CO and 20% H2. The reason of selecting high range of impurity was to
+11
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+Fig. 8. (a) TCD results of the absorption gas mixture supplied to stage 1 reactor (R1) and (b) rate of gas transfer and temperature variation during absorption of
+impure gas sample to R1, and (c)TCD results of the flushed sample from stage 1 reactor.
+*The TCD analysis was carried out using Agilent CP Molsieve 5A column. The column was unable to detect CO2 as it gets absorbed at the wall of molecular sieve
+column, and does not elutes to detector.
+
+sample after stage 1 purification. This was mainly because of high
+desorption temperature considered for efficient hydrogen transfer from
+desorbing reactor (at 90 ◦ C) to absorbing reactor (at 20 ◦ C). High
+desorption temperature, leads to discharge even smallest of gas packet
+from the reactor, due to significant pressure gradient between the
+desorbing and absorbing reactors. Moreover, to overcome the poisoning
+
+effect of CO, high desorption temperature facilitates alloy regeneration
+in each desorption cycle [42]. The purity level of hydrogen obtained
+after stage 1 purification was low due to presence of lean hydrogen
+mixture as inlet sample, and methanation due to CO presence in the
+impure gas mixture.
+
+12
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+Fig. 9. (a) Gas transfer from stage 1 reactor (R1) to stage 2 reactor (R2) after first stage purification and (b) TCD results of desorption sample after stage 1
+purification.
+
+3.2.2. Stage 2 Purification
+After completion of stage 1 purification, reactors were prepared for
+stage 2 purification. Initially, stage 2 reactor was flushed at 15 ◦ C.
+However, just 0.23 g of gas came out in flushing stage 2, the amount was
+significantly small to reach gas chromatography, through online sam­
+pling like. Therefore, due to unavailability of sufficient gas sample, TCD
+analysis was not performed for stage-2 flushing. Further, the reactors R2
+and R3 were prepared for coupling, wherein R2 and R3 were maintained
+at 90 ◦ C and 20 ◦ C respectively. Once the respective bed and HTF
+temperatures stabilized, the rector valves were opened to facilitate
+hydrogen transfer from R2 to R3. Amount of hydrogen transferred from
+R2 to R3 was 8.12 g in 150 s, which constitutes to 91.13% of total
+hydrogen available for transfer. During this process, the peak bed tem­
+perature of 74.8 ◦ C in 18 s and peak HTF temperature of nearly 24.5 ◦ C
+was attained in the absorbing reactor R3. However, because of endo­
+thermic desorption, the bed and HTF temperature of R2 was dropped to
+59.6 ◦ C and 86.2 ◦ C respectively (Fig. 10a). Because of lower equilib­
+rium pressure of R3 at 20 ◦ C, the rate of absorption was faster as
+compared to R1 to R2.
+Further, after stage 2 purification, the desorption sample of stage 2
+(during gas transfer from R2 to R3) was collected and analysed.
+
+According to the TCD result, the gas composition after stage 2 purifi­
+cation was of 99.996% hydrogen with 0.004% impurity in the form of
+traces of 0.003% N2 and 0.001% CH4 (Fig. 10b).
+3.2.3. Stage 3 Purification
+Finally, for obtaining ultra-pure hydrogen, stage 3 purification was
+carried out by desorbing R3 (LaNi4.7Al03) at 90 ◦ C. As depicted in
+Fig. 11a, amount of hydrogen desorbed from R3 was 7.51 g in 210 s,
+with reversibility of reversibility of 92.4%, wherein the bed and HTF
+temperature was dropped to 59.3 ◦ C and 82.1 ◦ C respectively. At last,
+the desorption sample after stage 3 purification (R3) was collected and
+analysed, wherein ultra-pure hydrogen was obtained with purity level of
+99.9999% and negligible or no impurity (Fig. 11b). Because of signifi­
+cant equilibrium pressure of R3 at 90 ◦ C, the high reversibility was due
+to negligible loss of gas during the flushing process, as the 99.996% pure
+hydrogen was transferred from R2 to R3.
+It was observed that, in each stage of purification, hydrogen recovery
+was >90%. Considering final recovery (after stage 3 purification)
+compared to initial absorption (stage 1 absorption), the net hydrogen
+recovery observed was 78.5%. The main reason for low recovery is the
+experimentation on small system, wherein there is always 0.5–1 g gas
+13
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+Fig. 10. (a) Gas transfer from stage 2 reactor (R2) to stage 3 reactor (R3) during second stage purification and (b) TCD analysis of desorption sample after stage 2
+purification.
+
+14
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+Fig. 11. (a) Plot representing rate of gas transfer and temperature variation during of HTF and MH bed during desorption of pure hydrogen after third stage pu­
+rification and (b) TCD analysis of desorption sample after stage 3 purification.
+Table 5
+Summary of gas analysis during multistage hydrogen purification.
+Purification stage
+
+Absorbed mass
+
+Flushed mass
+
+Remained mass
+
+Hydrogen transferred
+
+H2 Purity
+
+H2 recovery
+
+Stage 1 (R1)
+Stage 2 (R2)
+Stage 3 (R3)
+
+10.59 g
+8.91 g
+8.21 g
+
+1.03 g
+0.23 g
+Not traceable
+
+9.56 g
+8.68 g
+8.21 g
+
+8.91 g
+8.12 g
+7.51 g
+
+91.54%
+99.996%
+99.9999%
+
+93.20%
+93.50%
+91.47%
+
+loss within the gas circuit, due to evacuation and purging. For larger
+system this amount (0.5–1 g) will not affect much in the calculation of
+hydrogen recovery. The summary of gas transfer in each stage is
+depicted in Table 5.
+
+< LaNi4.7Al0.3. The variation in equilibrium bed pressure facilitated
+efficient coupling of the MH reactors for multistage operation. The
+conclusions drawn from the study are as follows:
+• The maximum hydrogen transfer in couple reactor system was
+observed for temperature slot of 20 ◦ C for absorbing reactor and
+90 ◦ C for desorbing reactor, which was in the range of 1.03 wt% to
+1.13 wt%. The rate of hydrogen transfer was directly proportional to
+the pressure difference between the reactors. This pressure differ­
+ence can be maximised by offering higher temperature difference
+between the absorbing and desorbing reactor.
+• The rectors showed significant hydrogen purification characters,
+wherein the impurity level of up to 20% can be separated using single
+stage purification, however with increase in the impurity content the
+purification can be performed in two stage (20–50% impurity) or 3
+
+4. Conclusions
+The present work reports the hydrogen storage and separation
+characteristics of metal hydride based multistage hydrogen purification
+system. The discussed system used different compositions of AB5 inter­
+metallic alloys to separate hydrogen from an impure gas sample with
+range of impurity in single or multistage. The multi-reactor system
+showed hydrogen storage capacity of 1.3–1.4 wt%. Due to alloy tailoring
+characteristics of the MH alloys, the equilibrium bed pressure can be
+varied at room temperature, which is in the order La0.9Ce0.1Ni5 < LaNi5
+15
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+stage (50%–90%) impurity. The reversibility of the system can be in
+the range of 90–99%, however, with further increase in the desorp­
+tion temperature and decrease in the flushing temperature, the
+hydrogen losses during different stages of purification can be
+minimised.
+• Regeneration of MH alloys are possible after alloy poisoning,
+wherein reactivation of alloys can be performed by evacuating MH
+reactor to 10− 2 mbar at 90–95 ◦ C, followed by absorption at 20–30
+bar and 20–30 ◦ C.
+• The absorption, flushing and desorption samples were collected for
+TCD analysis using helium as carrier gas. The TCD analysis was found
+to be effective method for detecting gas samples, however, because
+of maximum impurities flushed during stage 1 purification, the gas
+volume obtained after flushing of stage 2 and stage 3 reactors was not
+enough to perform TCD analysis.
+• The MH based hydrogen purification technology can be cost effec­
+tive, as it can be operated using low grade thermal input, and with
+minimal electrical input which can be drawn from solar. The core of
+the system, i.e. the reactors, has no moving parts within it. This
+minimises the maintenance cost of the system as there is no wear and
+tear.
+
+[4] Acar C, Dincer I. Review and evaluation of hydrogen production options for better
+environment. J Clean Prod 2019;218:835–49. https://doi.org/10.1016/j.
+jclepro.2019.02.046.
+[5] Abe JO, Popoola API, Ajenifuja E, Popoola OM. Hydrogen energy, economy, and
+storage: review and recommendation. Int J Hydrogen Energy 2019;44:15072–86.
+https://doi.org/10.1016/j.ijhydene.2019.04.068.
+[6] López Ortiz A, Meléndez Zaragoza MJ, Collins-Martínez V. Hydrogen production
+research in Mexico: a review. Int J Hydrogen Energy 2016;41:23363–79. https://
+doi.org/10.1016/j.ijhydene.2016.07.004.
+[7] Ogden JM. Prospects for building ahydrogen energy infrastructure. Annu Rev
+Energy Environ 1999;24:227–79.
+[8] Nahar G, Mote D, Dupont V. Hydrogen production from reforming of biogas :
+review of technological advances and an Indian perspective. Renew Sustain Energy
+Rev 2017;76:1032–52. https://doi.org/10.1016/j.rser.2017.02.031.
+[9] Sengodan S, Lan R, Humphreys J, Du D, Xu W, Wang H. Advances in reforming and
+partial oxidation of hydrocarbons for hydrogen production and fuel cell
+applications. Renew Sustain Energy Rev 2018;82:761–80. https://doi.org/
+10.1016/j.rser.2017.09.071.
+[10] Gao Y, Jiang J, Meng Y, Yan F, Aihemaiti A. A review of recent developments in
+hydrogen production via biogas dry reforming. Energ Conver Manage 2018;171:
+133–55. https://doi.org/10.1016/j.enconman.2018.05.083.
+[11] Dincer I, Acar C. Review and evaluation of hydrogen production methods for better
+sustainability. Int J Hydrogen Energy 2014;40:11094–111. https://doi.org/
+10.1016/j.ijhydene.2014.12.035.
+[12] Belz S. A synergetic use of hydrogen and fuel cells in human spaceflight power
+systems. Acta Astronaut 2016;121:323–31. https://doi.org/10.1016/j.
+actaastro.2015.05.031.
+[13] Köhler J, Wietschel M, Whitmarsh L, Keles D, Schade W. Infrastructure investment
+for a transition to hydrogen automobiles. Technol Forecast Soc Change 2010;77:
+1237–48. https://doi.org/10.1016/j.techfore.2010.03.010.
+[14] Kadier A, Kalil MS, Abdeshahian P, Chandrasekhar K, Mohamed A, Azman NF,
+et al. Recent advances and emerging challenges in microbial electrolysis cells
+(MECs) for microbial production of hydrogen and value-added chemicals. Renew
+Sustain Energy Rev 2016;61:501–25. https://doi.org/10.1016/j.rser.2016.04.017.
+[15] Kumar A, Muthukumar P, Sharma P, Kumar EA. Absorption based solid state
+hydrogen storage system: a review. Sustain Energy Technol Assess 2022;52:
+102204. https://doi.org/10.1016/j.seta.2022.102204.
+[16] Kumar A, Jana S, Muthukumar P. Thermodynamic analysis on hydrogen storage
+system. In: Cabeza LFBT-E of ES. Oxford: Elsevier; 2022. p. 253–63. https://doi.
+org/10.1016/B978-0-12-819723-3.00134-7.
+[17] Snell DS. The hydrogen-cooled turbine generator hydrogen cooling for electrical.
+IEEE Xplore Transactions 1940;59:35–50.
+[18] Knowlton E, Rice CW, Freiburghouse EH. Hydrogen as a Cooling Medium for
+Electrical Machinery. Transactions of the American Institute of Electrical Engineers
+1925;44:922–34. https://doi.org/10.1109/T-AIEE.1925.5061179.
+[19] Grashoff GJ, Pilkington CE, Corti CW. Purification of hydrogen. Platin Met Rev
+1983;27:157–69.
+[20] Chen XY, Wei LX, Deng L, Yang FS, Zhang ZX. A review on the metal hydride based
+hydrogen purification and separation technology. Appl Mech Mater 2014;448–453:
+3027–36. https://doi.org/10.4028/www.scientific.net/AMM.448-453.3027.
+[21] Bhuiya MMH, Kumar A, Kim KJ. Metal hydrides in engineering systems, processes,
+and devices: a review of non-storage applications. Int J Hydrogen Energy 2015;40:
+2231–47. https://doi.org/10.1016/j.ijhydene.2014.12.009.
+[22] Kumar A, Muthukumar P. Experimental investigation on the poisoning
+characteristics of methane as impurity in La0.9Ce0.1Ni5 based hydrogen storage and
+purification system. Energy 2022;259:124888. https://doi.org/10.1016/j.
+energy.2022.124888.
+[23] Kumar A, Muthukumar P. Experimental studies on poisoning of La0.9Ce0.1Ni5 based
+hydrogen purification system with CO2 as impurity. Int J Hydrogen Energy 2022:
+1–10. https://doi.org/10.1016/j.ijhydene.2022.10.137.
+[24] Muthukumar P, Kumar A, Raju NN, Malleswararao K, Rahman MM. A critical
+review on design aspects and developmental status of metal hydride based thermal
+machines. Int J Hydrogen Energy 2018;43:17753–79. https://doi.org/10.1016/j.
+ijhydene.2018.07.157.
+[25] Kallweit J, Hahne E. Effective thermal conductivity of metal hydride powders:
+measurement and theoretical modelling. 2019. p. 373–8. https://doi.org/10.1615/
+ihtc10.790.
+[26] Zhao W, Yang Y, Bao Z, Yan D, Zhu Z. Methods for measuring the effective thermal
+conductivity of metal hydride beds: a review. Int J Hydrogen Energy 2020;45:
+6680–700. https://doi.org/10.1016/j.ijhydene.2019.12.185.
+[27] Ram Gopal M, Srinivasa Murthy S. Parametric studies on heat and mass transfer in
+metal hydride beds. Chemical Engineering and Processing: Process Intensification
+1993;32:217–23. https://doi.org/10.1016/0255-2701(93)80003-Y.
+[28] Afzal M, Mane R, Sharma P. Heat transfer techniques in metal hydride hydrogen
+storage: a review. Int J Hydrogen Energy 2017;42:30661–82. https://doi.org/
+10.1016/j.ijhydene.2017.10.166.
+[29] Yang FS, Wang GX, Zhang ZX, Meng XY, Rudolph V. Design of the metal hydride
+reactors - a review on the key technical issues. Int J Hydrogen Energy 2010;35:
+3832–40. https://doi.org/10.1016/j.ijhydene.2010.01.053.
+[30] Shafiee S, McCay MH. Different reactor and heat exchanger configurations for
+metal hydride hydrogen storage systems - a review. Int J Hydrogen Energy 2016;
+41:9462–70. https://doi.org/10.1016/j.ijhydene.2016.03.133.
+[31] Sun DW, Groll M, Werner R. Selection of alloys and their influence on the
+operational characteristics of a two-stage metal hydride heat transformer. Heat
+Recovery Systems and CHP 1992;12:49–55. https://doi.org/10.1016/0890-4332
+(92)90006-4.
+
+Author contributions
+Alok Kumar: Conceptualization and Visualization, Methodology,
+System Development, Analysis, Experimental Investigation and Valida­
+tion, Writing – original draft.
+P. Muthukumar: Writing – review & editing, Supervision, Resources,
+Project administration, Funding acquisition, Validation.
+CRediT authorship contribution statement
+Alok Kumar: Writing – original draft, Software, Investigation, Data
+curation, Conceptualization. P. Muthukumar: Writing – review &
+editing, Validation, Supervision, Resources, Conceptualization.
+Declaration of competing interest
+The system and process disclosed in this work have been filed as
+Patent (Indian Patent Application No: 202131059468) with Indian
+Institute of Technology Guwahati as the applicant and P. Muthukumar
+(Principal Investigator) & Alok Kumar (Research Scholar) at Indian
+Institute of Technology Guwahati, as inventors. The patent application is
+granted with patent no: 403389.
+Data availability
+Data will be made available on request.
+Acknowledgements
+The authors would like to extend sincere thanks to the Department of
+Science and Technology (DST), Government of India, project no. DST/
+TMD/MECSP/2k17/14 (c) for financial assistance.
+References
+[1] Oshiro K, Fujimori S. Role of hydrogen-based energy carriers as an alternative
+option to reduce residual emissions associated with mid-century decarbonization
+goals. Appl Energy 2022;313:118803. https://doi.org/10.1016/j.
+apenergy.2022.118803.
+[2] Tian J, Yu L, Xue R, Zhuang S, Shan Y. Global low-carbon energy transition in the
+post-COVID-19 era. Appl Energy 2022;307:118205. https://doi.org/10.1016/j.
+apenergy.2021.118205.
+[3] Mio A, Barbera E, Pavan AM, Danielis R, Bertucco A, Fermeglia M. Analysis of the
+energetic, economic, and environmental performance of hydrogen utilization for
+port logistic activities. Appl Energy 2023;347:121431. https://doi.org/10.1016/j.
+apenergy.2023.121431.
+
+16
+
+A. Kumar and P. Muthukumar
+
+Applied Energy 363 (2024) 123076
+
+[32] Mohtadi R, Orimo SI. The renaissance of hydrides as energy materials. Nat Rev
+Mater 2016. https://doi.org/10.1038/natrevmats.2016.91.
+[33] Ngene P, Longo A, Mooij L, Bras W, Dam B. Metal-hydrogen systems with an
+exceptionally large and tunable thermodynamic destabilization. Nat Commun
+2017:8. https://doi.org/10.1038/s41467-017-02043-9.
+[34] Xie XB, Ni C, Wang B, Zhang Y, Zhao X, Liu L, et al. Recent advances in hydrogen
+generation process via hydrolysis of Mg-based materials: a short review. J Alloys
+Compd 2020;816:152634. https://doi.org/10.1016/j.jallcom.2019.152634.
+[35] Tarasov BP, Bocharnikov MS, Yanenko YB, Fursikov PV, Lototskyy MV.
+A comprehensive review on hydrogen absorption behaviour of metal alloys
+prepared through mechanical alloying. Metals (Basel) 2020;10:1–26. https://doi.
+org/10.3390/met10050562.
+[36] Au M, Chen C, Ye Z, Fang T, Wu J, Wang O. The recovery, purification, storage and
+transport of hydrogen separated from industrial purge gas by means of mobile
+hydride containers. Int J Hydrogen Energy 1996;21:33–7. https://doi.org/
+10.1016/0360-3199(95)00044-E.
+[37] Dunikov D, Borzenko V, Malyshenko S. Influence of impurities on hydrogen
+absorption in a metal hydride reactor. Int J Hydrogen Energy 2012;37:13843–8.
+https://doi.org/10.1016/j.ijhydene.2012.04.078.
+[38] Schweppe F, Martin M, Fromm E. Hydrogen absorption of LaNi5 powders
+precovered with O2, CO, H2S, CO2 or N2. J Alloys Compd 1997;253–254:511–4.
+https://doi.org/10.1016/S0925-8388(96)03002-2.
+[39] Lin HC, Lin KM, Sung CW, Wu KC. Characteristics of activation and anti-poisoning
+in an LmNi4.8Al0.2 hydrogen storage alloy. Int J Hydrogen Energy 2007;32:
+2494–500. https://doi.org/10.1016/j.ijhydene.2006.10.064.
+[40] Oztek MT. Recovery of hydrogen and helium from their mixtures using metal
+hydrides. Thesis. Florida: Master of Science, University of Central Florida Orlando;
+2005.
+[41] Hanada N, Nakagawa T, Asada H, Ishida M, Takahashi K, Isobe S, et al.
+Dependence of constituent elements of AB5 type metal hydrides on hydrogenation
+degradation by CO2 poisoning. J Alloys Compd 2015;647:198–203. https://doi.
+org/10.1016/j.jallcom.2015.05.253.
+[42] Wan QI, Li P, Li Y, Zhai F, Zhang W, Cui L, et al. CO impurities effect on
+LaNi4⋅7Al0⋅3 hydrogen storage alloy hydrogenation/dehydrogenation properties.
+Bull Mater Sci Indian Academy of Sciences 2014;37:837–42.
+[43] Singh L, Wahid ZA. Methods for enhancing bio-hydrogen production from
+biological process: a review. Journal of Industrial and Engineering Chemistry 2015;
+21:70–80. https://doi.org/10.1016/j.jiec.2014.05.035.
+
+[44] Akhlaghi N, Najafpour-Darzi G. A comprehensive review on biological hydrogen
+production. Int J Hydrogen Energy 2020;45:22492–512. https://doi.org/10.1016/
+j.ijhydene.2020.06.182.
+[45] Kazakov AN, Dunikov DO, Mitrokhin SV. AB5-type intermetallic compounds for
+biohydrogen purification and storage. Int J Hydrogen Energy 2016;41:21774–9.
+https://doi.org/10.1016/j.ijhydene.2016.07.243.
+[46] Kazakov AN, Romanov IA, Mitrokhin SV, Kiseleva EA. Experimental investigations
+of AB5-type alloys for hydrogen separation from biological gas streams. Int J
+Hydrogen Energy 2020;45:4685–92. https://doi.org/10.1016/j.
+ijhydene.2019.11.207.
+[47] Dunikov D, Borzenko V, Blinov D, Kazakov A, Lin CY, Wu SY, et al. Biohydrogen
+purification using metal hydride technologies. Int J Hydrogen Energy 2016;41:
+21787–94. https://doi.org/10.1016/j.ijhydene.2016.08.190.
+[48] Dunikov D, Blinov D. Extraction of hydrogen from a lean mixture with methane by
+metal hydride. Int J Hydrogen Energy 2020;45:9914–26. https://doi.org/10.1016/
+j.ijhydene.2020.01.201.
+[49] Dunikov DO, Blinov DV. Use of methane-hydrogen mixtures for energy
+accumulation. J Phys Conf Ser 2019:1370. https://doi.org/10.1088/1742-6596/
+1370/1/012033.
+[50] Dunikov DO, Blinov DV. On efficiency of metal hydride extraction of hydrogen
+from a mixture with methane. J Phys Conf Ser 2019:1359. https://doi.org/
+10.1088/1742-6596/1359/1/012132.
+[51] Zhang TB, Yang XW, Li JS, Hu R, Xue XY, Fu HZ. On the poisoning effect of O2 and
+N2 for the Zr0.9Ti0.1V2 hydrogen storage alloy. J Power Sources 2012;202:217–24.
+https://doi.org/10.1016/j.jpowsour.2011.12.002.
+[52] Hanada N, Asada H, Nakagawa T, Higa H, Ishida M, Heshiki D, et al. Effect of CO2
+on hydrogen absorption in Ti-Zr-Mn-Cr based AB2 type alloys. J Alloys Compd
+2017;705:507–16. https://doi.org/10.1016/j.jallcom.2017.02.067.
+[53] Wang H, Liu Y, Zhang J. Hydrogen purification by Mg alloy hydrogen adsorbent.
+Adsorption 2022;28:85–95. https://doi.org/10.1007/s10450-021-00348-2.
+[54] Kline SJ, McClintock FA. Describing uncertainties in single-sample experiments.
+Mechanical Engineering 1953;75:3–8.
+[55] Sehested J, Dahl S, Jacobsen J, Rostrup-Nielsen JR. Methanation of CO over nickel:
+mechanism and kinetics at high H2/CO ratios. J Phys Chem B 2005;109:2432–8.
+https://doi.org/10.1021/jp040239s.
+
+17
+
+

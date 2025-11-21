@@ -1,0 +1,3589 @@
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+Contents lists available at ScienceDirect
+
+International Journal of Hydrogen Energy
+journal homepage: www.elsevier.com/locate/he
+
+Holding the invisible: Advanced materials for hydrogen storage
+Aimen Laalam , Parisa Bazazi
+
+∗
+
+Colorado School of Mines, Golden, CO, 80401, USA
+
+ARTICLE
+
+INFO
+
+Keywords:
+Hydrogen storage
+Material-based hydrogen storage
+Liquid-based hydrogen storage
+
+ABSTRACT
+Hydrogen storage remains the main barrier to the broader use of hydrogen as an energy carrier, despite
+hydrogen’s high energy density and clean combustion. This study presents a comparative evaluation of
+conventional and emerging storage methods, integrating thermodynamic, kinetic, economic, and environmental
+metrics to assess capacity, efficiency, cost, and reversibility. Physisorption analysis reveals that metal organic
+frameworks can achieve storage capacities up to 14.0 mmol/g. Chemical storage systems are evaluated, including nanostructured MgH2 (7.6 wt%), catalyzed reversible complex hydrides, liquid organic hydrogen carriers,
+and clathrate hydrates. Techno-economic analysis shows storage costs from $500–700/kg H2 to $30–50/kg H2 ,
+with energy efficiencies of 50%–90%. Life cycle assessment identifies manufacturing as the primary source
+of emissions, with carbon footprints varying from 150 to 2057 kg CO2 -eq/kg H2 . Cryo-compressed is the most
+practical transportation option while metal hydrides suit stationary use. This study provides a quantitative
+foundation to guide material selection and system design for next-generation hydrogen storage technologies.
+
+Contents
+1.
+2.
+
+3.
+
+Introduction ...................................................................................................................................................................................................... 2
+Physical hydrogen storage .................................................................................................................................................................................. 2
+2.1.
+Compressed hydrogen storage.................................................................................................................................................................. 2
+2.2.
+Liquid (cryogenic) hydrogen storage ........................................................................................................................................................ 3
+2.3.
+Cryo-compressed hydrogen storage .......................................................................................................................................................... 4
+2.4.
+Refrigeration system optimization for mixed cryogenic compression ........................................................................................................... 4
+2.5.
+Physical adsorption in porous materials.................................................................................................................................................... 5
+2.5.1.
+Carbon-based materials ............................................................................................................................................................. 5
+2.5.2.
+Metal–organic frameworks (MOFs) ........................................................................................................................................... 6
+2.5.3.
+Covalent organic frameworks (COFs) and polymers .................................................................................................................... 6
+2.5.4.
+Adsorption energy and temperature effects in porous materials .................................................................................................... 7
+2.5.5.
+Clathrate hydrates .................................................................................................................................................................... 7
+2.5.6.
+Comparing mechanisms of physical adsorption ........................................................................................................................... 8
+2.5.7.
+Nanostructured approaches and sustainable energy integration .................................................................................................... 9
+2.5.8.
+Analyzing physical adsorption methods data ............................................................................................................................. 10
+2.6.
+Summary and limitations of physical storage methods ............................................................................................................................... 12
+Chemical hydrogen storage ................................................................................................................................................................................. 12
+3.1.
+Nanostructured materials ........................................................................................................................................................................ 12
+3.2.
+Metal hydrides ....................................................................................................................................................................................... 13
+3.2.1.
+Nanoconfinement in metal hydride systems ................................................................................................................................ 14
+3.2.2.
+Kinetic enhancement mechanisms .............................................................................................................................................. 14
+3.2.3.
+Nanostructure–catalyst synergy in metal hydrides ....................................................................................................................... 15
+3.3.
+Complex hydrides................................................................................................................................................................................... 16
+3.4.
+Analysis of metal & complex hybrids storage data..................................................................................................................................... 16
+3.5.
+Liquid organic hydrogen carriers (LOHCs) ................................................................................................................................................ 17
+3.5.1.
+Formic acid as a hydrogen storage medium................................................................................................................................ 20
+3.6.
+Photocatalytic and light-driven storage systems ........................................................................................................................................ 20
+
+∗ Corresponding author.
+
+E-mail address: pbazazi@mines.edu (P. Bazazi).
+https://doi.org/10.1016/j.ijhydene.2025.151057
+Received 7 May 2025; Received in revised form 15 August 2025; Accepted 18 August 2025
+Available online 27 August 2025
+0360-3199/© 2025 The Authors. Published by Elsevier Ltd on behalf of Hydrogen Energy Publications LLC. This is an open access article under the CC BY-NC-ND
+license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+4.
+5.
+6.
+7.
+8.
+
+Summary of hydrogen storage methods ............................................................................................................................................................... 20
+Techno-economic analysis................................................................................................................................................................................... 20
+Life cycle assessment of hydrogen storage technologies ......................................................................................................................................... 24
+Safety considerations in hydrogen storage technologies ......................................................................................................................................... 24
+Conclusion, research gaps, and future directions................................................................................................................................................... 25
+CRediT authorship contribution statement ........................................................................................................................................................... 26
+Declaration of competing interest ........................................................................................................................................................................ 26
+References......................................................................................................................................................................................................... 26
+
+low temperatures, or adsorbed onto high surface area materials such as
+metal–organic frameworks (MOFs) or activated carbon.
+
+1. Introduction
+The global transition toward cleaner and more sustainable energy
+sources has elevated hydrogen as a promising energy carrier. Its unique
+characteristics, including abundance, high energy content per unit
+mass, and environmentally benign combustion (producing only water
+vapor), make it a valuable energy resource [1]. Hydrogen is anticipated
+to play a crucial role across multiple sectors, including transportation,
+energy storage, and industrial processes over the next few decades [2].
+Recent data from the International Energy Agency (IEA) highlights
+hydrogen’s expanding role in the energy sector, as seen in Fig. 1 [3].
+In 2023, global hydrogen demand reached a record 97 Mt, representing a 2.5% increase from 2022, driven primarily by refining and
+chemical industries. This demonstrates the potential for scale-up to
+49 Mt by 2030, representing a 30% increase from previous projections. Electrolysis is emerging as a critical technology, with global
+electrolyzer capacity expected to reach 520 GW by 2030 [3]. However,
+the practical implementation of hydrogen technologies faces significant
+challenges, particularly in hydrogen storage. Storage systems must
+simultaneously meet rigorous criteria, including high gravimetric and
+volumetric capacities, cost-effectiveness, rapid kinetic performance,
+and operational safety [4,5]. The low energy density of hydrogen at
+standard conditions necessitates innovative storage solutions to enable widespread adoption. Storage strategies range from small-scale
+options (e.g., pressurized tanks for vehicles) to large-scale underground
+hydrogen storage in geological formations that can buffer seasonal
+supply–demand variations [6,7]. Underground storage in salt caverns
+or depleted gas reservoirs provides massive capacity and capitalizes on
+existing subsurface infrastructure, making it a key component for bulk
+storage needs in a future hydrogen economy.
+Recognizing these challenges, the U.S. Department of Energy (DOE)
+has established progressive targets for hydrogen storage systems to
+guide research and development efforts. These targets, detailed in Table
+1, demonstrate a strategic approach to improving hydrogen storage
+technologies across multiple performance parameters, including gravimetric capacity, hydrogen content, volumetric capacity, and system
+operational characteristics.
+This paper provides a comprehensive review of hydrogen storage technologies, systematically examining physical storage methods
+(including adsorption on porous materials) versus chemical storage
+methods, which involves hydrogen bonding with other materials and
+released on-demand. Section 2 discusses physical hydrogen storage,
+including compressed gas, cryogenic liquid, cryo-compressed hydrogen,
+and novel physisorption techniques using porous materials. Section 3
+covers chemical storage, such as metal hydrides (and their advanced
+nanostructured variants), complex hydrides, and Liquid Organic Hydrogen Carriers LOHCs (with an emphasis on formic acid). Section 5
+provides an in-depth summary of the discussed methods and Sections 6
+and 7 dive into techno-economic considerations and life cycle assessments of the various methods. Finally the conclusion identifies research
+gaps and the future outlook.
+
+2.1. Compressed hydrogen storage
+Compressed hydrogen storage involves storing hydrogen gas at high
+pressures, typically between 350 and 700 bar, in tanks constructed from
+advanced materials such as metals or composite polymers to ensure
+structural integrity under stress [2]. This method is technologically
+mature and widely deployed due to its operational simplicity and rapid
+refueling capabilities, which are critical for automotive applications.
+Modern storage systems use tank designs categorized as Type I (allmetal), Type II (metal liner with composite hoop wrapping), Type III
+(metal liner fully wrapped with composite), and Type IV (polymer
+liner fully wrapped with composite). Type IV tanks are lightweight and
+minimize hydrogen permeation, though they require careful material
+selection to ensure durability over repeated pressure cycles [8].
+Despite their advantages, compressed systems face challenges, including significant energy consumption during compression (10%–15%
+of the hydrogen’s energy content) and high costs linked to carbon fiber
+composites [5]. Additionally, hydrogen’s low volumetric energy density limits practicality in space-constrained applications like light-duty
+vehicles.
+Safety concerns, such as risks of leaks or tank ruptures, necessitate
+robust engineering solutions, including advanced valve systems and
+compliance with rigorous safety standards [9]. Recent advancements
+focus on improving composite materials to enhance gravimetric capacity and reduce environmental impacts. For instance, novel carbon
+fiber composites and polymer liners have improved impermeability and
+resistance to hydrogen embrittlement [8]. Hybrid approaches, such as
+cryo-compressed storage (combining moderate compression with subambient subambient temperatures) and systems integrating hydrogen
+with other energy carriers like compressed air, aim to optimize efficiency and volumetric capacity [10,11]. Ongoing research, guided
+by DOE targets, emphasizes innovations in additive manufacturing,
+advanced resins, and pressure-regulation technologies to reduce costs
+and improve performance. However, achieving cost-competitive commercial deployment will require further breakthroughs in material
+science and infrastructure development.
+Advancements in materials science are focused on developing
+stronger, lighter materials for tank construction, such as advanced
+fiber-reinforced composites, to improve gravimetric capacities and
+reduce environmental impacts. Additionally, research into alternative
+tank designs and conformable storage systems aims to optimize space
+utilization in vehicles [12]. Contemporary studies are also exploring
+hybrid storage concepts, for instance, combining compressed hydrogen with other energy storage media. Notably, Bartela (2020) [10]
+proposed a hybrid energy storage system using compressed air and
+hydrogen to reduce energy consumption and improve efficiency. Nevertheless, the main drawbacks remain the high material costs and
+energy consumption for compression, along with the relatively low
+energy density of hydrogen compared to conventional fuels [13,14].
+Ongoing research seeks to address these issues through innovative composite materials and advanced pressure regulation systems, including
+the development of different tank types (Type I–IV) with improved
+performance characteristics [14].
+
+2. Physical hydrogen storage
+Physical hydrogen storage refers to storing hydrogen in its molecular form without chemical transformation. This includes storage as a
+compressed gas under high pressure, a cryogenic liquid at extremely
+2
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Fig. 1. Summary of global low-emissions hydrogen activity from 2021 onward. Panel (a) chart tracks production from renewables and fossil fuels with CCUS,
+showing a 50 percent increase since 2021 and panel (a’) highlights announced low-emissions hydrogen projects to 2030, including those at final investment
+decision. In panel (b), electrolyzer capacity surges from 0.6 GW to over 5 GW by 2024 (a ninefold jump), while announced electrolyzer projects (b’) also expand
+dramatically. Panel (c) shows annual electrolyzer manufacturing capacity quadrupling from 9 GW/yr to 41 GW/yr by 2024, and the charts of (c’) details total
+announced manufacturing capacity by 2030. Finally, panel (d) depicts rising numbers of published hydrogen strategies and (d’) shows electrolyzer installation
+investment reaching an estimated 7.0 billion USD by 2024. [3].
+
+expansion and cryogenic refrigeration cycles [2,18]. Boil-off losses
+arise from gradual hydrogen evaporation due to heat ingress, even
+with advanced insulation materials like multilayer vacuum insulation,
+leading to hydrogen loss and potential safety risks [19]. Safety and material challenges also arise because cryogenic temperatures require specialized materials and handling procedures to prevent embrittlement,
+thermal contraction, and material degradation [20]. The environmental
+impacts of producing and disposing of cryogenic equipment highlight
+
+2.2. Liquid (cryogenic) hydrogen storage
+Liquid hydrogen storage requires cooling hydrogen gas to cryogenic
+temperatures below −253 ◦ C, converting it into a liquid with significantly higher energy density than its compressed gas form [15,16]. This
+method enables higher hydrogen storage density, making it ideal for
+space-constrained applications such as in aerospace [17]. However, liquefaction is highly energy-intensive, consuming about 30%–40% of the
+hydrogen’s energy content due to extreme cooling via Joule–Thomson
+3
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Table 1
+U.S. department of energy revised targets for onboard hydrogen storage systems.
+Source: Adapted from energy.gov.
+Storage parameter
+
+Target (2020)
+
+Target (2025)
+
+Ultimate target
+
+Gravimetric capacity (kWh/kg)
+Hydrogen content (wt%)
+Volumetric capacity (kWh/L)
+Hydrogen density (g H2 /L system)
+Operating temperature (◦ C)
+Min/Max delivery temperature (◦ C)
+Cycle life (cycles)
+Fill time for 5 kg H2 (min)
+
+1.5
+4.5%
+1.0
+30
+–40 to +60
+–40 to +85
+1,500
+3–5
+
+1.8
+5.5%
+1.3
+40
+–40 to +60
+–40 to +85
+1,500
+3–5
+
+2.2
+6.5%
+1.7
+50
+–40 to +60
+–40 to +85
+1,500
+3–5
+
+the need for more efficient liquefaction processes, better insulation
+materials, and improved cryogenic handling technologies [16,21].
+Innovations in liquefaction technologies focus on reducing energy
+consumption through advanced refrigeration cycles, utilization of renewable energy sources, and recovery of expansion work [22]. Additionally, research into new insulation materials and tank designs aims
+to minimize boil-off losses and improve safety [17]. Active cooling systems or cryocoolers are being integrated into storage tanks to reliquefy
+boil-off gas and prevent losses. While cryogenic hydrogen storage is
+well established in space applications, it is now under investigation for
+automotive and stationary energy systems [23]. The key advantage of
+cryogenic storage is its higher volumetric density, making it suitable
+for applications requiring high energy density in a compact space [13].
+However, as noted, cryogenic storage’s energy penalty and boil-off
+issues limit its standalone viability for everyday use.
+
+enable safe, long-range vehicle operation, showing that such vessels
+can be fast refueled and offer improved efficiency compared to conventional storage. Despite these advancements, cryo-compressed hydrogen
+storage still encounters technical challenges. Highly effective insulation
+is critical to minimize heat ingress and prevent undesirable pressure
+rises within the tank. Moreover, integrating both a refrigeration system and high-pressure components introduces design complexity that
+affects system reliability and cost. Currently, infrastructure capable
+of delivering subcooled, pressurized hydrogen for vehicle refueling
+remains underdeveloped. However, prototype vehicles, such as those
+demonstrated by BMW and Lawrence Livermore National Laboratory,
+have validated the technical feasibility of cryo-compressed systems.
+Continued research and development in this area may enable cryocompressed hydrogen storage to achieve DOE’s long-term performance
+and cost targets [29].
+
+2.3. Cryo-compressed hydrogen storage
+
+2.4. Refrigeration system optimization for mixed cryogenic compression
+
+Cryo-compressed hydrogen storage is a hybrid approach that merges
+cryogenic cooling with high-pressure compression, offering a middle
+ground between liquid and high-pressure gas storage. Unlike liquid
+hydrogen stored near atmospheric pressure or gaseous hydrogen at
+ambient temperature and high pressure, this method utilizes subcooled
+hydrogen at elevated pressures to enhance storage efficiency [24]. By
+partially lowering the temperature, storage pressure can be reduced
+while maintaining a higher density than conventional compressed gas
+storage [25]. This approach mitigates boil-off losses associated with
+liquid hydrogen while improving volumetric energy density beyond
+that of high-pressure gas storage [26]. In cryo-compressed systems,
+hydrogen is typically cooled to temperatures anywhere between 2̃0
+K and 80 K and then compressed to pressures that can reach around
+20–35 MPa [27]. The combination of reduced temperature and moderate pressure substantially elevates hydrogen density in the storage
+vessel. The storage tank in a cryo-compressed system is usually a
+vacuum-insulated vessel (similar to a liquid hydrogen Dewar) but also
+reinforced to withstand significant internal pressure [26]. One can
+broadly identify variations in design for cryo-compressed tanks: (i)
+single-walled vessels with very thick insulation designed to minimize
+heat transfer under moderate pressures, and (ii) multi-layer, composite
+tanks using advanced carbon-fiber composites to handle the combined
+stresses of low temperatures and pressurization [25].
+Cryo-compressed storage offers longer dormancy, the duration before venting becomes necessary, and achieves higher overall hydrogen
+densities than either cryogenic or compressed storage alone. Dormancy
+times can reach weeks under optimized conditions, and hydrogen densities exceeding 40 g H2 ∕L have been reported, surpassing conventional
+700 bar tanks. [26]. This hybrid approach also lowers the effective
+boil-off: because the tank can tolerate some pressure increase, evaporating hydrogen can be kept in the tank until it is re-cooled or used,
+rather than vented. Recent research has explored strategies to enhance
+cryo-compressed system performance. For instance, incorporating a
+throttling valve for hydrogen venting with cooling recovery can reduce
+pressure swings and reclaim cooling power from vented gas [28].
+Similarly, Aceves et al. 2012 designed cryogenic pressure vessels that
+
+As mentioned earlier, cryogenic compressed hydrogen storage combines the advantages of compressed gas and liquid hydrogen storage
+by maintaining hydrogen in a supercritical state at cryogenic temperatures (70–80 K) and moderate pressures (30–50 MPa). This approach
+achieves storage densities comparable to liquid hydrogen while eliminating the need for constant energy input to sustain the liquid phase.
+Recent optimization studies have demonstrated significant improvements in storage efficiency through refrigeration systems, pressure
+regulation strategies, and integrated system designs.
+The most effective refrigeration optimization approaches combine
+liquid nitrogen pre-cooling with specialized expansion cycles using
+optimized working fluids. Xu et al. [30] demonstrated that mixed
+refrigerant systems coupled with gas expansion cycles achieve specific
+energy consumption as low as 5.87 kWh kg−1 H2 when using neon as
+the expansion working fluid, representing nearly 50% of the theoretical
+minimum of 2.92 kWh kg−1 H2 . Comparative analysis shows neon
+outperforms helium (6.15 kWh kg−1 H2 ) and hydrogen (6.42 kWh
+kg−1 H2 ) in expansion cycles due to superior thermophysical properties
+and heat transfer characteristics. Liquid nitrogen pre-cooling systems
+provide effective intermediate cooling before final refrigeration, typically reducing overall energy consumption by 20%–25% compared to
+systems relying solely on mechanical refrigeration. Song et al. [31]
+achieved storage densities of 72.53 kg m−3 at 70 K and 50 MPa
+using helium expansion cycles with liquid nitrogen pre-cooling, demonstrating specific energy consumption of 6.2 kWh kg−1 H2 and exergy
+efficiency of 47.2%. Heat exchanger network optimization using pinch
+analysis techniques further improves thermal efficiency by 10%–15%
+through enhanced heat integration and reduced irreversibilities.
+Optimal pressure regulation strategies use multi-stage compression
+with pressure ratios of 3–4 per stage, minimizing compression work
+while maintaining acceptable discharge temperatures. Variable pressure operation in the 30–50 MPa range enables dynamic optimization
+based on operating conditions, achieving energy savings of 8%–12%
+compared to fixed pressure systems. Advanced control systems incorporate real-time thermodynamic property calculations and predictive
+4
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+algorithms to maintain optimal conditions while ensuring safe operation under varying demand profiles. System integration optimization employs genetic algorithms to simultaneously optimize 25–30 key
+variables including compression ratios, refrigerant compositions, heat
+exchanger configurations, and operating temperatures. This systematic
+approach identifies optimal design parameters and operating strategies
+that maximize performance while maintaining operational reliability. In addition, integration of thermal energy storage systems and
+waste heat recovery further improves overall efficiency and provides
+operational flexibility for varying load conditions.
+Large scale comparative studies demonstrate clear performance advantages for optimized refrigeration cycles. Yang et al. [32] compared
+Claude and Brayton cycles for 120 t/d hydrogen liquefaction systems, showing that Claude cycles achieve 6.6% lower exergy losses
+(18.98 MW vs. 20.24 MW) and 4.4% lower specific energy consumption
+(5.62 vs. 5.88 kWh/kg LH2 ) while requiring 10.6% less refrigerant
+flow. The superior performance results from more efficient expansion
+processes and better integration of compression and expansion systems.
+Hybrid system approaches incorporating absorption cooling
+cycles
+demonstrate
+substantial
+performance
+improvements.
+Ghorbani et al. [28] achieved specific energy consumption reduction from 10.78 to 7.948 kWh/kg LH2 (26.3% improvement) with
+efficiency increases from 12.05% to 16.34% through integration of
+absorption cooling with conventional refrigeration systems. These hybrid approaches provide enhanced operational flexibility and improved
+part-load performance characteristics.
+The comprehensive performance comparison of different cryogenic
+hydrogen storage systems is illustrated in Fig. 2, which demonstrates
+the relationship between specific energy consumption and exergy efficiency for various optimization approaches. The figure clearly shows
+that the Claude cycle achieves the highest exergy efficiency (52.8%)
+while maintaining relatively low energy consumption (5.62 kWh/kg
+H2 ), positioning it closest to the theoretical minimum energy requirement. Mixed refrigerant systems with neon expansion demonstrate
+the lowest specific energy consumption (5.87 kWh/kg H2 ) among
+expansion cycle configurations, while conventional systems exhibit
+significantly higher energy requirements (10.78 kWh/kg H2 ) with correspondingly lower efficiency (31.2%). The bubble sizes in the figure represent storage densities, with optimized supercritical systems
+achieving the highest volumetric storage capacities (72.53 kg/m3 ).
+The systematic optimization of mixed cryogenic compressed hydrogen storage systems follows a structured approach that addresses
+each major system component and their interactions. The first step involves comprehensive system modeling and simulation using advanced
+process simulation software such as Aspen HYSYS or CHEMCAD to
+establish baseline performance characteristics and identify optimization
+opportunities. The modeling process must accurately represent the thermodynamic properties of hydrogen at cryogenic conditions, including
+real gas effects, phase behavior, and transport properties.
+The second optimization step focuses on component-level optimization to maximize the performance of individual system elements before
+addressing system-level interactions. Compressor optimization involves
+the selection of optimal compression ratios, intercooling strategies, and
+capacity control methods to minimize energy consumption while maintaining required pressure levels. Heat exchanger optimization addresses
+heat transfer enhancement, pressure drop minimization, and thermal
+effectiveness maximization through advanced design techniques and
+materials selection. Refrigeration system optimization evaluates different cycle configurations, working fluid selections, and operating
+conditions to achieve maximum cooling capacity with minimum energy
+input.
+The third step implements system-level optimization that considers the interactions and trade-offs between different components and
+subsystems. Multi-objective optimization algorithms, such as genetic algorithms or particle swarm optimization, systematically evaluate thousands of potential system configurations to identify optimal design
+
+and operating parameters. The optimization process typically considers 25–30 key variables simultaneously, including compression ratios,
+refrigerant compositions, heat exchanger configurations, and operating
+temperatures and pressures.
+The fourth step involves dynamic optimization that addresses system performance under varying operating conditions and transient
+scenarios. Dynamic optimization considers factors such as startup and
+shutdown procedures, load-following capabilities, and response to disturbances or equipment failures. The development of optimal control strategies ensures that the system maintains peak performance
+across all operating modes while providing adequate safety margins
+and operational flexibility.
+The final optimization step focuses on economic optimization that
+balances performance improvements with capital and operating cost
+considerations. Life cycle cost analysis evaluates the total cost of ownership including capital costs, operating expenses, maintenance requirements, and end-of-life considerations. The economic optimization
+process identifies the optimal balance between performance and cost,
+ensuring that optimization efforts focus on improvements that provide the greatest economic benefit. The most advanced optimized
+systems achieve storage densities of 72.53 kg m−3 with specific energy
+consumption approaching 5.87 kWh kg−1 H2 and exergy efficiencies
+exceeding 49%, demonstrating substantial improvements over conventional storage methods and the potential for mixed cryogenic systems
+to provide an optimal balance between storage density and energy
+efficiency for large-scale hydrogen storage applications.
+2.5. Physical adsorption in porous materials
+Physisorption-based hydrogen storage relies on the adsorption of
+hydrogen onto porous materials at cryogenic temperatures (∼ 77 K).
+This approach stores hydrogen at relatively low pressures by exploiting the large surface areas of adsorbent materials [33]. Commonly
+studied adsorbents include carbon-based nanostructures, metal–organic
+frameworks (MOFs), covalent organic frameworks (COFs), and novel
+host materials like clathrate hydrates. Although inherently safer due to
+their low-pressure operation and modular design, these systems require
+cryogenic cooling because hydrogen exhibits weak adsorption energies
+on these surfaces, limiting effective storage at higher temperatures.
+2.5.1. Carbon-based materials
+Carbon materials, including activated carbons, carbon nanotubes
+(CNTs), fullerenes, and graphene, have been extensively investigated
+for hydrogen storage due to their high surface areas, tunable pore
+structures, and chemical stability [34–36]. Early studies reported exceptionally high hydrogen uptake in certain carbon nanostructures, for
+instance, Dillon et al. (1997) [37] claimed hydrogen storage capacity
+of approximately 5–7 wt% in CNTs at ambient conditions. However,
+subsequent research revealed that achievable adsorption capacities are
+closely linked to specific surface area and pore size distribution, and
+that initial high values were not reproducible [38,39]. Typically, there
+is about 1 wt% hydrogen storage per 500 m2 ∕g of surface area at 77
+K, known as the Chahine rule. This implies that ultra-high surface area
+carbons (3000 m2 ∕g or more) are necessary to approach the DOE targets
+via physisorption, achievable only at cryogenic temperatures.
+Enhancing hydrogen uptake in carbon materials has been focused on
+structural tailoring, including templating for ordered porosity, chemical
+activation to increase micropore volume, and heteroatom or metal
+doping to strengthen hydrogen interactions [40–42]. For example,
+activated carbon derived from biomass waste can achieve surface areas
+above 3000 m2 ∕g and show hydrogen capacities ∼ 6 wt% at 77 K and
+40 bar [43]. However, practical applications of carbon adsorbents are
+limited by the need for cryogenic temperatures (typically liquid nitrogen temperature, 77 K) to achieve significant hydrogen uptake, and by
+challenges in producing materials with consistently high performance.
+5
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Fig. 2. Performance comparison of cryogenic hydrogen storage systems showing the relationship between specific energy consumption and exergy efficiency.
+Bubble sizes represent storage densities (kg/m3 ). The red dashed line indicates the theoretical minimum energy consumption (2.92 kWh/kg H2 ). Data points
+represent mixed refrigerant systems with different expansion working fluids (neon, helium, hydrogen), large-scale refrigeration cycles (Claude, Brayton), hybrid
+absorption cooling systems (ACC), and conventional storage systems.
+
+At ambient temperature, the uptake on carbon is only a few tenths of
+a percent at best, which is far below requirements [44].
+Recent advancements include the development of single-walled carbon nanohorns (SWNHs), which are similar to single-walled carbon
+nanotubes but consist of horn-shaped structures. SWNHs have been
+investigated for hydrogen storage due to their high purity and unique
+porous structures [45]. Studies have shown that SWNHs can adsorb
+hydrogen through physical adsorption mechanisms, with adsorption
+capacities influenced by their porosity and surface area. Additionally,
+research into carbide-derived carbons (CDCs) has demonstrated that
+materials with subnanometer pores can store up to 3 wt% hydrogen at
+60 bar and −196 ◦ C, with further increases possible through chemical or
+physical activation [46]. While carbon-based materials offer promising
+avenues for hydrogen storage due to their structural versatility and
+high surface areas, achieving practical storage capacities at ambient
+conditions remains a significant challenge. Ongoing research is focused
+on optimizing pore structures, surface chemistries, and material compositions to enhance hydrogen adsorption properties, with the goal
+of meeting the stringent requirements for practical hydrogen storage
+applications.
+
+groups or metal additives to create stronger adsorption sites [51]. For
+example, introducing open metal sites (e.g., in HKUST-1 or MOF-74)
+can increase the isosteric heat of adsorption and improve hydrogen
+uptake, especially at higher temperatures than 77 K [52].
+Despite their potential, effective hydrogen storage in MOFs still
+typically requires cryogenic temperatures. The physisorption binding
+energies in MOFs (generally ∼ 4–8 kJ∕mol for H2 ) are insufficient
+for significant adsorption at ambient temperature, at 298 K even the
+best MOFs adsorb only a small fraction of their 77 K capacity [53].
+Additionally, practical implementation of MOFs is hindered by issues
+such as limited material stability, many MOFs are sensitive to moisture
+or heat as well as challenges in large-scale synthesis and the high cost
+of precursors. Recent advances, however, show promising progress; a
+pore-engineered MOF was reported to achieve a record hydrogen excess
+uptake exceeding 7.0 wt% at 77 K and 100 bar [54], underscoring
+ongoing development toward viable sorbent-based storage systems.
+2.5.3. Covalent organic frameworks (COFs) and polymers
+COFs and porous organic polymers (such as Conjugated Microporous Polymers (CMPs), Hyper-Crosslinked Polymers (HCPs), Porous
+Aromatic Frameworks (PAFs), etc.) are constructed from light elements
+(H, B, C, N, O) linked by strong covalent bonds, resulting in materials
+with high surface areas and low densities [55]. They provide tunable
+pore sizes, structural diversity, and lightweight nature, making them
+promising for hydrogen storage applications [56,57]. Similar to MOFs,
+strategies to enhance hydrogen storage in COFs involve increasing
+surface area, optimizing pore size (to maximize overlap of adsorption
+potentials), and incorporating functional groups or dopants to enhance
+hydrogen interactions [58,59]. For example, porous aromatic frameworks doped with exposed metal sites have been studied to increase
+binding energies. However, as with other physisorbents, the hydrogen
+binding in COFs is weak; significant storage capacity is only observed at
+
+2.5.2. Metal–organic frameworks (MOFs)
+MOFs are crystalline materials composed of metal ions coordinated
+to organic ligands, forming porous structures with exceptionally high
+surface areas (often 3,000–6,000 m2 ∕g) [47,48]. Their tunable pore
+sizes, high porosity, and ability to incorporate functional sites make
+them attractive for hydrogen storage [49,50]. MOFs like MOF-5, MOF177, and IRMOF-20 have demonstrated promising hydrogen storage
+capacities under cryogenic conditions. Strategies to enhance hydrogen
+storage in MOFs include increasing surface area through elongated
+linkers, incorporating unsaturated open metal sites to increase hydrogen binding energies, and functionalizing pore surfaces with polar
+6
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Table 2
+Temperature-dependent hydrogen storage performance of representative MOFs
+and COFs.
+Material
+
+77 K
+(wt%)
+
+195 K
+(wt%)
+
+233 K
+(wt%)
+
+273 K
+(wt%)
+
+298 K
+(wt%)
+
+MOF-5
+MOF-177
+HKUST-1
+MOF-74(Mn)
+NU-1501
+COF-102
+COF-103
+PAF-1
+
+7.1
+11.2
+6.9
+8.6
+14.0
+8.1
+9.7
+10.3
+
+2.8
+4.1
+3.2
+4.8
+5.2
+2.9
+3.4
+3.7
+
+1.9
+2.7
+2.4
+3.9
+3.4
+1.8
+2.2
+2.4
+
+1.2
+1.6
+1.8
+3.1
+2.1
+1.0
+1.3
+1.4
+
+0.8
+1.0
+1.3
+2.4
+1.3
+0.6
+0.8
+0.9
+
+optimized binding energies in practical systems. At near-ambient conditions (273–298 K), current porous materials show clear limitations.
+Even top-performing MOFs reach only 2–3 wt% uptake at 298 K and
+10–50 bar. MOF-74(Mn) achieves 2.4 wt% at 50 bar, attributed to its
+strong open metal sites and favorable pore geometry, while MOF-5
+stores less than 1 wt% under similar conditions [61]. Covalent organic
+frameworks (COFs) follow similar temperature trends but generally
+offer lower capacities due to the absence of metal-based binding sites.
+COF-102 and COF-103 show promising cryogenic uptake (8.1 and
+9.7 wt% at 77 K, respectively) but drop to 0.6–0.8 wt% at 298 K. Their
+purely organic structure limits binding energies to the physisorption
+range, requiring new design strategies for ambient-temperature applications [66]. Porous aromatic frameworks (PAFs) serve as a middle
+ground between MOFs and COFs, combining high surface areas with
+moderate binding energies via 𝜋–𝜋 interactions and micropore confinement. PAF-1 achieves 10.3 wt% at 77 K but retains only 0.9 wt% at
+298 K, illustrating the limitations of physisorption-based storage. Still,
+their exceptional chemical and thermal stability makes PAFs appealing
+for applications where durability outweighs capacity [67].
+Temperature-dependent performance analysis reveals key principles
+for designing porous materials with improved hydrogen storage at
+ambient conditions. The main challenge is to achieve binding energies
+in the optimal 15–25 kJ mol−1 range while maintaining high surface
+areas and favorable pore structures. Multi-site binding strategies offer
+a promising route to enhance room-temperature uptake. Materials that
+combine open metal sites with functionalized organic linkers exhibit
+synergistic binding, with total interaction energies nearing the sum
+of individual contributions. For instance, amino-functionalized MOF74 variants reach 20–24 kJ mol−1 , achieving 3.2–3.8 wt% at 298 K and
+50 bar—a 50–60% improvement over unmodified forms [63]. Hierarchical pore architectures further optimize both high-pressure capacity and
+ambient-temperature retention. Bimodal distributions combine large
+mesopores for volume with micropores for strong binding. Such MOFs
+deliver 12–15 wt% at 77 K and retain 2.5–3.0 wt% at 298 K, representing well-balanced performance [64]. Spillover mechanisms via metal
+nanoparticle incorporation provide another pathway for enhancing
+ambient-temperature storage. Platinum or palladium nanoparticles dissociate H2 and enable transfer to nearby binding sites, increasing local
+hydrogen concentration and effective binding energy. This strategy
+has shown 2–4× capacity improvements at room temperature while
+preserving usable kinetics [68].
+
+cryogenic temperatures. Material stability under operating conditions
+(many COFs are powders that may pack poorly or have flexibility that
+leads to pore collapse) and challenges in large-scale synthesis remain
+obstacles [60]. Research is ongoing to create COFs with more robust
+architectures and to infiltrate COF pores with tiny amounts of catalyst
+or metal to enhance hydrogen uptake kinetics and reversibility.
+2.5.4. Adsorption energy and temperature effects in porous materials
+Optimizing hydrogen storage in porous materials requires tuning
+adsorption energies through complementary strategies. The ideal binding range, 15–25 kJ mol−1 , balances ambient-temperature retention
+with efficient desorption, well above typical physisorption energies
+(4–8 kJ mol−1 ) in pristine materials. Open metal sites offer a direct
+route to boosting adsorption energies. Varying metal centers in isostructural MOFs like M2 (dobdc) (MOF-74 analogs) shows clear trends: Mn2+
+(22.1), Fe2+ (19.8), Co2+ (17.2), Ni2+ (15.1), Cu2+ (12.8), and Zn2+
+(8.9 kJ mol−1 ), with binding strength tied to metal charge density
+and electronic structure [61]. This allows precise tuning via metal
+selection. Matching pore size to the kinetic diameter of H2 (2.89 Å)
+improves adsorption by enhancing the overlap of van der Waals potentials from opposing pore walls. Pores in the 6–12 Årange, particularly
+those around 7–8 Å, exhibit up to 40%–60% higher binding energies.
+This effect is more pronounced in slit-shaped pores than in cylindrical
+geometries [62].
+Ligand functionalization offers a versatile approach for tuning local
+binding environments by introducing polar groups, heteroatoms, or
+pendant metal sites. For example, amine-functionalized MOFs such as
+mmen-Mg2 (dobpdc) achieve binding energies of 21–25 kJ mol−1 through
+weak coordination between hydrogen and nitrogen lone pairs. Lithium
+incorporation via post-synthetic modification can also yield binding
+energies of 18–22 kJ mol−1 while preserving structural stability and
+reversibility [63]. Controlling framework interpenetration provides another means of optimizing adsorption. Non-interpenetrated structures
+tend to have larger pores but weaker interactions, whereas tailored
+interpenetration can produce ideal pore dimensions with enhanced
+adsorption potentials. This parameter can be systematically adjusted
+through ligand design and synthesis conditions [64]. The practical
+viability of porous hydrogen storage materials depends heavily on
+their performance from cryogenic (77 K) to ambient (298 K) conditions. Temperature-dependent analysis is essential for identifying performance limits and refining material design. At 77 K, top-performing
+MOFs approach theoretical storage limits. MOF-210 achieves a total
+uptake of 17.6 wt% at 80 bar, and NU-1501 reaches 14.0 wt% under
+similar conditions. These capacities reflect near-complete pore filling,
+as storage is limited by available pore volume rather than binding
+strength under cryogenic conditions [65]. (See Table 2.)
+The transition from cryogenic to intermediate temperatures
+(195–233 K) highlights the importance of binding energy in sustaining storage capacity. MOFs with stronger interactions, such as MOF74(Mn), retain 56% of their 77 K capacity at 195 K, compared to
+only 39% for MOF-5, which relies on weaker physisorption. This
+performance gap widens with temperature, underscoring the need for
+
+2.5.5. Clathrate hydrates
+Clathrate hydrates are crystalline, ice-like solids where hydrogen
+molecules are physically trapped within the cavities formed by a lattice
+of water molecules [69]. They have the potential for hydrogen storage
+at near-ambient temperatures and pressures, as the water lattice stabilizes the hydrogen, making them attractive for practical applications
+if their storage capacity can be improved [70]. Traditional clathrate
+hydrates of hydrogen, however, have very low hydrogen storage capacities (< 0.5 wt% typically) and require high formation pressures (often
+100–200 MPa for pure hydrogen hydrates), along with slow kinetics of
+formation and release [71]. These factors have historically made them
+impractical.
+Su et al. (2008) [72] developed a method to enhance hydrogen
+clathrate formation using an ultralow-density emulsion-templated polymer (polyHIPE foam) as a scaffold [72]. The macroporous structure
+with interconnected open cells provided abundant nucleation sites and
+short diffusion pathways, significantly improving hydrate formation
+kinetics. This approach achieved a hydrogen storage capacity of 0.18
+wt% at 270 K (just below room temperature), with 90% of that capacity
+reached within 60 min, far surpassing conventional hydrate formation
+rates. However, this capacity remains orders of magnitude below the
+DOE target (> 5 wt%).
+7
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Fig. 3. Temperature-dependent hydrogen storage performance trends for representative MOFs and COFs. Data points represent typical performance ranges reported
+in literature, with some values estimated based on established trends and binding energy relationships. The dramatic capacity loss from cryogenic (77 K) to ambient
+(298 K) conditions illustrates the fundamental challenge of physisorption-based storage systems. Materials with enhanced binding energies (e.g., MOF-74 series
+with open metal sites) demonstrate superior capacity retention compared to purely physisorption-based frameworks. The shaded region indicates the ambient
+temperature range (273–298 K) where practical applications require operation.
+
+Recent work continues to show both the challenges and the potential breakthroughs in clathrate hydrate research. Notably, FarrandoPerez et al. (2022) demonstrated that using a tailored activated carbon scaffold can dramatically reduce the pressure needed for hydrogen hydrate formation (by up to 30%) and achieve nearly complete
+water-to-hydrate conversion within minutes, highlighting the power of
+nanoconfinement to boost formation kinetics [73]. Meanwhile, Nguyen
+et al. (2021) showed that host–guest hydrogen bonding in clathrates
+can induce ‘‘liquid-like’’ water phases within an ostensibly crystalline
+structure-an effect that begins below the typical equilibrium dissociation temperature, suggesting that certain polar guest molecules may
+partially disrupt the lattice and lower its stability threshold [74].
+Comprehensive reviews, such as that by Gupta et al. (2021), also stress
+the advantages of hydrogen clathrates-particularly their low production
+cost, reversible nature, and low flammability risk, while acknowledging
+that further progress is needed to meet the US Department of Energy
+targets through strategies like promoter additives, nanoconfinement,
+and hybrid material approaches [75]. Current research thus remains
+focused on refining clathrate formers, optimizing scaffold design, and
+exploiting host–guest interactions to increase hydrogen encapsulation
+and reduce the pressures required for hydrate stability [76]. To date,
+clathrate hydrates remain an intriguing avenue for hydrogen storage,
+underscoring the need for continued breakthroughs to realize their full
+potential.
+
+where 𝑊 is the volume of adsorbed hydrogen, 𝑊0 is the total micropore
+volume, 𝐴 is the adsorption potential, 𝐸 is the characteristic energy,
+and 𝑛 is the heterogeneity parameter typically ranging from 1.5–3 for
+hydrogen adsorption on carbons [80]. This model effectively captures
+the micropore filling behavior that dominates hydrogen storage in activated carbons, where the lack of structural control limits optimization
+possibilities but the heterogeneous pore structure provides storage over
+wide pressure ranges.
+MOFs demonstrate the highest degree of adsorption site diversity,
+with multiple distinct site types exhibiting significantly different binding energies and geometric requirements [81,82]. This heterogeneity
+enables MOFs to achieve high storage capacities through efficient
+utilization of available pore volume but also creates challenges for optimization due to the complex interplay between different site types [82].
+The presence of open metal sites provides the strongest binding energies available through physisorption mechanisms (8–15 kJ mol−1 ),
+making MOFs particularly attractive for near-ambient temperature storage applications [81]. The multi-site adsorption behavior in MOFs is
+best described by the Langmuir–Freundlich model for heterogeneous
+surfaces [82]:
+𝑞=
+
+𝑛
+∑
+𝑞max,𝑖 𝑏𝑖 𝑃 1∕𝑛𝑖
+𝑖=1
+
+1 + 𝑏𝑖 𝑃 1∕𝑛𝑖
+
+where 𝑞 is the total adsorbed amount, 𝑞max,𝑖 is the maximum capacity
+for site type 𝑖, 𝑏𝑖 is the affinity constant, 𝑃 is pressure, and 𝑛𝑖 is the
+heterogeneity parameter for each site type [82]. This model accounts
+for the sequential filling of different adsorption sites (open metal
+sites, oxygen sites, aromatic sites) that characterizes MOF adsorption
+behavior [81].
+COFs occupy an intermediate position between carbon materials
+and MOFs in terms of site heterogeneity and binding energy distributions [83]. The crystalline structure enables precise control over adsorption environments while maintaining the chemical stability advantages
+of covalent bonding [83]. The uniform site distributions in COFs facilitate predictive modeling and rational design approaches, although the
+absence of strong binding sites limits their performance compared to
+MOFs with open metal sites [84]. For most COFs, the relatively uniform
+pore structure and homogeneous adsorption sites are well described by
+
+2.5.6. Comparing mechanisms of physical adsorption
+The comparative analysis of hydrogen adsorption mechanisms
+across carbon materials, MOFs, and COFs reveals fundamental differences in site heterogeneity, binding energy distributions, and optimization strategies [77]. Carbon materials exhibit the most heterogeneous
+adsorption environments due to their disordered structure and variable surface chemistry, resulting in broad binding energy distributions
+that can be advantageous for storage applications requiring operation
+over wide pressure ranges [78]. The micropore filling mechanism in
+activated carbons provides enhanced binding energies compared to
+open surfaces and is accurately described by the Dubinin–Astakhov
+model [79,80]:
+[ ( )𝑛 ]
+𝐴
+𝑊 = 𝑊0 exp − 𝐸
+8
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Table 3
+Comparative hydrogen adsorption performance and theoretical model effectiveness for representative porous materials across carbon-based, MOF,
+and COF material classes.
+Material class
+
+Representative material
+
+Surface area
+(m2 ∕g)
+
+H2 uptake
+(77 K, 1 bar, wt%)
+
+H2 uptake
+(298 K, 100 bar, wt%)
+
+Binding energy
+(kJ∕mol)
+
+Optimal model
+
+Activated Carbon
+Carbon Nanotubes
+
+Maxsorb III
+SWCNT (1.4 nm)
+
+3000
+1200
+
+2.5
+1.8
+
+0.8
+0.4
+
+5.2
+6.8
+
+Graphene
+MOF
+
+Functionalized Graphene
+MOF-5
+
+2200
+1270
+
+1.2
+1.3
+
+0.2
+0.9
+
+4.5
+4.8
+
+MOF
+MOF
+COF
+COF
+COF
+
+Ni-MOF-74
+NU-100
+COF-5
+COF-102
+Li-COF-366
+
+1065
+6143
+1670
+3472
+1180
+
+1.6
+9.95
+2.1
+3.3
+2.8
+
+1.2
+1.8
+0.6
+0.9
+1.4
+
+11.2
+6.1
+5.8
+6.2
+18.5
+
+Dubinin–Astakhov
+BET +
+Micropore Filling
+Langmuir–Freundlich
+Multi-site
+Langmuir
+Langmuir–Freundlich
+Virial Equation
+Dubinin–Astakhov
+BET Model
+Langmuir Model
+
+(11.2 kJ mol−1 ) compared to MOF-5 (4.8 kJ mol−1 ), necessitating the
+use of multi-site Langmuir or Langmuir–Freundlich models to capture
+the heterogeneous adsorption behavior [81,82]. COFs generally show
+intermediate binding energies, with dramatic enhancement possible
+through metal functionalization as demonstrated by Li-COF-366, where
+the transition from BET-type to Langmuir-type behavior reflects the
+creation of specific high-energy adsorption sites [83,84].
+Recent advances in computational modeling have enabled more
+sophisticated approaches to predicting and understanding hydrogen
+adsorption mechanisms in porous materials [85]. Grand Canonical
+Monte Carlo (GCMC) simulations provide molecular-level insights into
+adsorption behavior by explicitly modeling the interactions between
+hydrogen molecules and framework atoms, revealing important details
+about hydrogen clustering behavior, preferential adsorption sites, and
+the effects of framework flexibility on storage performance [85]. These
+simulations have become essential for validating and refining the classical adsorption models, particularly for complex MOF structures where
+multiple adsorption mechanisms operate simultaneously [82].
+Density functional theory (DFT) calculations have become essential
+tools for understanding the electronic structure basis of hydrogen adsorption, particularly for identifying and characterizing strong binding
+sites in MOF materials [81]. DFT studies have revealed that the binding
+energy at open metal sites depends critically on the metal oxidation
+state, coordination environment, and local electrostatic field, providing
+guidance for rational design of enhanced storage materials and supporting the development of more accurate theoretical models [81]. Machine
+learning approaches are emerging as powerful tools for accelerating
+the discovery and optimization of hydrogen storage materials, with
+neural network models trained on large databases of experimental and
+computational data capable of predicting adsorption isotherms and
+identifying promising material compositions with significantly reduced
+computational cost compared to first-principles methods [85].
+
+the standard BET model for multilayer adsorption [79]:
+𝑃
+1
+𝐶 −1 𝑃
++
+(
+) =
+𝑉𝑚 𝐶
+𝑉𝑚 𝐶 𝑃0
+𝑉 𝑃0 − 𝑃
+where 𝑉 is the adsorbed volume, 𝑉𝑚 is the monolayer capacity, 𝐶 is
+the BET constant related to adsorption energy, and 𝑃0 is the saturation
+pressure [79]. However, for functionalized COFs with enhanced binding sites, the Langmuir model becomes more appropriate due to the
+creation of specific high-energy adsorption sites [84].
+The temperature dependence of adsorption mechanisms varies significantly among the three material classes [77]. Carbon materials show
+the steepest decline in capacity with increasing temperature due to
+weak van der Waals interactions (4–8 kJ mol−1 ), following the exponential trend predicted by the Dubinin–Astakhov model [78,80]. MOFs
+with open metal sites exhibit more favorable temperature dependence
+due to stronger binding energies (8–15 kJ mol−1 ), enabling substantial uptake at temperatures up to 150–200 K, with the temperature
+dependence following Langmuir–Freundlich isotherm behavior [81,
+82]. COFs show intermediate temperature dependence, with tunable
+performance through functional group modifications and structural
+optimization. Unmodified COFs often follow BET-type isotherms, while
+functionalized variants shift toward Langmuir-type behavior [83,84].
+The validation of theoretical adsorption models requires comprehensive comparison with experimental data across different material
+classes and operating conditions [77,79]. Table 3 presents a systematic
+comparison of hydrogen adsorption performance and binding energies
+for representative materials from each category, demonstrating the
+range of adsorption behaviors and the effectiveness of different theoretical approaches for describing experimental observations [78,81].
+The experimental data reveal key trends in hydrogen adsorption
+behavior across material classes [78,81,83]. High surface area materials perform well at cryogenic conditions (77 K), for example NU100 achieves an exceptional uptake of 9.95 wt% due to its ultrahigh surface area of 6143 m2 /g, where the virial equation approach
+is required to describe high-density adsorption thermodynamics [85].
+However, surface area alone does not determine storage performance.
+Ni-MOF-74 despite, with a comparatively modest surface area, outperforms many materials at ambient temperatures, highlighting the
+critical role of strong binding sites. This behavior is effectively captured by the Langmuir–Freundlich model, which accounts for multi-site
+adsorption [81,82].
+The binding energy data demonstrate the fundamental differences
+in adsorption mechanisms among material classes and validate the theoretical model selections [77,81]. Carbon materials consistently show
+binding energies in the 4–7 kJ mol−1 range, reflecting their reliance on
+weak van der Waals interactions and supporting the use of the Dubinin–
+Astakhov model for microporous carbons and BET models for materials
+with broader pore distributions [78,80]. MOFs exhibit a broader range
+of binding energies depending on the presence and nature of open
+metal sites, with Ni-MOF-74 showing significantly enhanced binding
+
+2.5.7. Nanostructured approaches and sustainable energy integration
+Nanostructured materials address key limitations of conventional
+physical storage methods by improving hydrogen uptake under reduced
+pressure and temperature conditions. Compared to bulk materials, they
+benefit from quantum size effects, higher surface-to-volume ratios,
+and controlled pore architectures. For example, nanostructured MOFs
+with pore sizes between 0.6–1.2 nm show 40%–60% greater hydrogen
+uptake than their bulk counterparts. Carbon nanotubes with tailored
+defect densities exhibit binding energies of 8–12 kJ mol−1 , approaching
+the optimal range for ambient-temperature storage [86].
+Metal–organic frameworks show strong sensitivity to pore architecture, with hydrogen storage capacity closely tied to pore size, geometry,
+and surface chemistry. Empirical correlations between pore diameter
+and uptake enable predictive design of high-performance materials.
+For cage-type MOF structures, the total hydrogen adsorption capacity can be described by the empirical relationship [87]:
+𝑛tot,cage = 0.085 × 𝑉𝑝 − 0.013 × 𝑉𝑝2
+9
+
+(1)
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Fig. 4. Pore size effects on hydrogen storage in MOFs. (a) Hydrogen uptake capacity showing optimal performance in the 6-12 Årange across different MOF
+families. (b) Binding energy variation with pore diameter, demonstrating the inverse relationship between pore size and hydrogen-framework interactions. Data
+represent UiO series (circles), ZIF series (triangles), MIL series (squares), and NU series (inverted triangles).
+
+while channel-type structures follow:
+𝑛tot,channel = 0.076 × 𝑉𝑝 − 0.011 × 𝑉𝑝2
+
+conditions, offering insight into the highest reported hydrogen weight
+percentages (wt%) achieved under different pressures and temperatures. Fig. 5 presents a frequency histogram of hydrogen weight
+percentages across a diverse range of adsorption-based materials. The
+distribution is moderately skewed, with both the mean (3.02 wt%)
+and median (2.80 wt%) converging around 3 wt%. While some formulations exceed 5 wt%, most fall within the 1–4 wt% range. This
+spread underscores the role of material structure, surface chemistry,
+and measurement conditions, particularly temperature and pressure, in
+adsorption efficiency.
+Fig. 6 presents a comparative boxplot for eight material classes: Activated Carbon, Carbon Aerogel, Carbon Nanotube, Intercalated
+Graphite, MOF, PCN (Porous Coordination Network), Porous Organic
+Polymer and Templated Carbon. The data reveal distinct trends in
+hydrogen uptake across these materials. Carbon aerogels and activated
+carbons exhibit broad variability, with some samples achieving up to
+5 wt%. MOFs generally display hydrogen uptake in the range of 2–4
+wt%, though outliers can reach higher capacities. PCNs demonstrate
+some of the most promising results, with select cases exceeding 6 wt%.
+In contrast, templated carbons show comparatively low uptakes, often
+remaining below 1 wt%, but only few data points were available for
+this type of storage, which might not be representative.
+Fig. 7 presents hydrogen uptake in a three-dimensional space, with
+pressure on the 𝑥-axis, temperature on the 𝑧-axis, and hydrogen weight
+percentage on the 𝑦-axis. The data exhibit a linear trend in hydrogen
+storage capacity as a function of temperature and pressure, highlighting
+the predictability of these materials under varying conditions. Each
+cluster corresponds to a distinct material class, illustrating performance
+variations across different operational regimes.
+The trends observed in the 3D plot reveal several fundamental
+physical laws governing hydrogen adsorption in porous materials. The
+inverse relationship between temperature and adsorption capacity follows the Van’t Hoff equation, where adsorption decreases exponentially
+with increasing temperature due to reduced hydrogen–surface interaction strength [91]. The positive correlation with pressure reflects
+Henry’s law behavior at low pressures, transitioning to Langmuir-type
+saturation at higher pressures as available adsorption sites become
+occupied [77].
+Under cryogenic conditions (77–87K) and elevated pressures
+(50–100 bar), three key factors dominate hydrogen adsorption performance. Micropore accessibility becomes the primary controlling factor,
+as hydrogen molecules can effectively fill pores smaller than 2 nm
+where enhanced van der Waals interactions occur due to overlapping
+
+(2)
+
+where 𝑉𝑝 is the pore volume (cm3 g−1 ) and 𝑛tot represents the total
+hydrogen adsorption (mmol g−1 ) at 100 bar and 77 K. These relationships reveal optimal pore volumes of 3.3 cm3 g−1 for cage-type
+and 3.5 cm3 g−1 for channel-type MOFs, corresponding to maximum
+theoretical capacities of 14.0 and 13.3 mmol g−1 , respectively.
+An optimal pore size range of 6–12 Å balances surface area accessibility with binding energy. Pores smaller than 6 Å provide stronger
+interactions (8–12 kJ mol−1 ) due to overlapping potential fields, but
+limit accessibility and slow uptake. In contrast, pores larger than 12 Å
+improve accessibility but exhibit weak interactions (3–5 kJ mol−1 ),
+reducing retention at elevated temperatures [88]. Surface functionalization further tunes binding strength by introducing polar groups
+or open metal sites. The binding energy trend for divalent metals
+follows Mn2+ > Fe2+ > Co2+ > Ni2+ > Cu2+ > Zn2+ , with Mn-based
+frameworks reaching nearly 20 kJ mol−1 [82]. Decoration with metal
+nanoparticles provides an alternative route; CuNi@UiO-66 systems, for
+example, show 3.7× capacity improvement (0.20 to 0.74 wt%) at room
+temperature via spillover effects [68].
+The integration of nanostructured hydrogen storage technologies
+directly supports the transition to sustainable energy systems by addressing key infrastructure and efficiency challenges. These materials
+enable distributed storage architectures that complement renewable
+energy generation patterns, reducing the need for centralized, highpressure infrastructure that requires significant capital investment and
+energy-intensive compression [89]. Moreover, the modular nature of
+nanostructured adsorbent systems facilitates rapid deployment and
+scaling, essential characteristics for supporting the variable output of
+solar and wind energy systems. The reduced energy penalties associated
+with moderate-pressure operation (10–50,bar vs. 700,bar) improve
+the overall round-trip efficiency of renewable hydrogen systems from
+approximately 25%–35% to 40%–50%, making hydrogen storage economically competitive with battery systems for long-duration energy
+storage applications [90].
+2.5.8. Analyzing physical adsorption methods data
+To gain a broader perspective on physisorption-based hydrogen
+storage, we analyzed a representative dataset from the Hydrogen Materials, Advanced Research Consortium (HyMARC) Data Hub
+(datahub.hymarc.org) in accordance with the user agreement. The
+dataset encompasses various porous material classes and operating
+10
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Fig. 5. Distribution of hydrogen weight percent in the dataset. The histogram (in blue) shows the frequency of observations across various hydrogen weight
+percentages, with a kernel density estimate (KDE) curve overlaid to illustrate the overall distribution shape. Vertical dashed lines highlight the mean (green) and
+median (red), to identify the central tendency and skewness of the data. (For interpretation of the references to color in this figure legend, the reader is referred
+to the web version of this article.)
+
+Fig. 6. Box plot comparing hydrogen weight percent across different material classes. Each box spans the interquartile range (IQR) and shows the median as a
+black line, while whiskers extend to represent non-outlier data. Outliers are plotted as individual points with the palette highlighting each material class.
+
+11
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Fig. 7. 3D scatter plot of hydrogen weight percent against temperature and pressure, both on linear scales. Each material class is represented by a different color
+and marker shape, as specified in the legend. Axes tick labels and legends appear in black for clarity. The aspect ratio and view angle are configured to offer a
+balanced perspective on the 3D dataset.
+
+potential fields from opposing pore walls [92]. Surface area utilization
+reaches maximum efficiency under these conditions, with materials
+achieving near-complete monolayer coverage before multilayer adsorption begins. Thermodynamic favorability is optimized as the reduced
+thermal energy allows weak physisorption interactions (4–15kJmol−1 )
+to effectively compete with molecular kinetic energy, enabling stable
+adsorption even on relatively weak binding sites [77].
+The scatter plot data demonstrate that binding energy distribution
+determines material ranking under different conditions. Materials with
+uniform weak binding sites (activated carbons, COFs) show maximum performance only at cryogenic temperatures, while materials with
+strong binding sites (MOFs with open metal sites) maintain significant capacity at elevated temperatures [77]. Pore size optimization
+becomes critical under high-pressure conditions, where materials with
+pore diameters of 0.6–1.5 nm achieve optimal hydrogen packing density through enhanced molecule–wall interactions and efficient space
+utilization [92].
+
+temperature, with 6–7 wt% possible only at cryogenic temperatures
+(<–150 °C), as shown in HyMARC data (Figs. 2–4). These technologies
+fall short of meeting DOE targets for gravimetric capacity (> 5.5 wt%),
+volumetric capacity (> 40 g H2 /L), and room-temperature operation.
+Though reversible and cycle-stable, their energy costs and infrastructure needs remain major hurdles, driving the push toward chemically
+bonded hydrogen storage systems that may overcome these limits.
+
+2.6. Summary and limitations of physical storage methods
+
+3.1. Nanostructured materials
+
+The physical hydrogen storage methods covered here are the most
+mature, each with specific strengths and specific trade-offs. Compressed
+hydrogen enables fast refueling and simple operation, making it viable for vehicles, but it requires 10%–15% of hydrogen’s energy for
+compression and has low volumetric energy density. Liquid hydrogen
+boosts density but needs 30%–40% of the energy for liquefaction and
+suffers from boil-off losses. Cryo-compressed storage balances density
+and dormancy but adds system complexity and infrastructure demands.
+Physisorption in porous materials is safer due to low-pressure operation
+but is limited by weak van der Waals interactions (4–8 kJ/mol). Even
+top-performing materials typically reach only 2–4 wt% uptake at room
+
+Nanostructured adsorbents offer significant improvements in hydrogen storage performance compared to conventional bulk materials.
+Their high surface area, tunable pore size, and quantum effects lead
+to enhanced hydrogen uptake at lower pressures and temperatures.
+For example, MOFs with 0.6–1.2 nm pores achieve 40%–60% greater
+uptake than bulk analogs, while defect-engineered carbon nanotubes
+reach binding energies of 8–12 kJ/mol, close to the ideal range for ambient storage [86]. These materials also support decentralized hydrogen
+infrastructure by reducing dependence on high-pressure centralized
+systems, which are energy- and capital-intensive [89]. Their modularity allows for flexible scaling in line with variable renewable energy
+
+3. Chemical hydrogen storage
+Chemical storage methods store hydrogen within compounds
+through reversible chemical reactions, releasing it when needed. This
+category includes metal hydrides, complex hydrides, and liquid organic
+hydrogen carriers (LOHCs) such as hydrogenated organic liquids and
+related compounds like formic acid. These methods often achieve
+higher volumetric storage densities and can operate at lower pressures,
+but they introduce challenges in reaction kinetics, energy input for
+hydrogen release, and reversibility.
+
+12
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+output. Moderate-pressure operation (10-50 bar vs. 700 bar) improves
+round-trip efficiency from 25%–35% to 40%–50%, making hydrogen
+storage more competitive with batteries for long-duration use [90].
+
+to produce hydride nanostructures. Mechanical ball milling is a topdown approach that reduces micrometer-sized hydride powders to
+nanometer scales, significantly improving kinetics. For example, ballmilled MgH2 with Nb2 O5 catalysts has demonstrated faster hydrogen
+absorption and desorption [97]. Mechanochemical synthesis enables
+the direct formation of hydride nanoparticles during milling. Paskevicius et al. (2010) synthesized ∼ 7 nm MgH2 nanoparticles via a reaction
+between LiH and MgCl2 , achieving reduced decomposition enthalpy
+and enhanced kinetics [99]. Chemical reduction methods, such as using
+Grignard reagents, allow precise control over nanoparticle size and
+surface properties. Aguey-Zinsou & Ares-Fernández (2007) synthesized
+∼ 5 nm MgH2 colloids through chemical reduction, significantly lowering dehydrogenation temperatures compared to bulk MgH2 [103].
+Beyond nanoparticles, nanowires and nanorods have been investigated
+for hydrogen storage. Magnesium nanowires (∼ 30–50 nm diameter)
+produced via chemical vapor deposition exhibit improved hydrogen
+absorption and desorption kinetics due to internal stresses and shorter
+diffusion pathways [104]. Similarly, Pang et al. (2014) fabricated
+Mg2 FeH6 nanorods using a mechanical-force-driven vapor deposition
+approach, demonstrating enhanced hydrogen release properties [105].
+Another approach involves incorporating hydrides into nanostructured scaffolds to prevent particle agglomeration, enhance heat transfer, and maintain nanoscale features during cycling. Carbon-based materials, such as graphene and porous carbon, are particularly effective
+due to their high surface area and chemical stability. For instance,
+MgH2 nanoparticles (∼ 5 nm) dispersed on graphene achieve high loading (∼ 75 wt% MgH2 in composite) while maintaining fast hydrogenation at 50 ◦ C and significant hydrogen release at 200 ◦ C, far lower than
+bulk MgH2 [106]. Similarly, NaAlH4 confined within a carbon aerogel
+framework exhibits improved reversibility and kinetics [107]. Metal–
+organic frameworks (MOFs) and other porous hosts have also been
+explored as nanoconfinement strategies. Infiltrating LiBH4 into MOF
+or oxide matrices can lower melting points and improve cycling performance, although full reversibility remains a challenge [108]. Functionalized supports can provide additional catalytic effects, enhancing
+hydrogen uptake and release through spillover mechanisms [109].
+Through these nanostructuring and composite approaches, substantial
+improvements have been achieved, with many hydrides now exhibiting lower hydrogen release temperatures and significantly enhanced
+kinetics. However, challenges remain in scaling up nanoscale hydrides
+while ensuring long-term stability and safety. The potential for pyrophoric behavior in nanopowders and the high cost of nanoscale
+processing must be addressed. Despite these hurdles, ongoing advancements in nanostructured hydrides represent important steps toward
+making metal hydrides a viable hydrogen storage solution for practical
+applications [110].
+Another critical aspect is the stability of metal hydrides under
+actual storage conditions, governed by three critical factors: temperature cycling effects, pressure variations, and mechanical degradation
+from repeated hydrogen absorption–desorption cycles [111]. Temperature cycling between ambient and operating conditions (20–400 ◦ C)
+induces thermal stress that can cause particle decrepitation and surface oxidation, particularly affecting MgH2 , which operates at elevated
+temperatures [112]. Pressure cycling between vacuum and storage
+pressures (1–100 bar) creates mechanical stress that leads to particle pulverization and loss of inter-particle contact, reducing effective
+thermal conductivity and hydrogen transport kinetics [113]. Cycle
+life performance varies significantly among different metal hydride
+systems, with degradation mechanisms including capacity fade, kinetic deterioration, and structural changes. LaNi5 -based alloys demonstrate excellent cycling stability with minimal capacity loss (<5%) over
+1500–2000 cycles at moderate temperatures (20–60 ◦ C), while MgH2 based systems show more pronounced degradation (10%–20% capacity
+loss) over 100–500 cycles due to higher operating temperatures and
+associated thermal stress [111,114]. Advanced composite materials
+incorporating graphite or carbon additives show improved stability,
+
+3.2. Metal hydrides
+Metal hydrides store hydrogen by forming solid compounds (interstitial or complex phases) where hydrogen is absorbed into the metal
+lattice, offering high volumetric hydrogen densities and safe, relatively
+low-pressure storage [93]. Examples include interstitial hydrides like
+magnesium hydride (MgH2 ), which has a high theoretical storage capacity (∼ 7.6 wt%), and complex alanates like sodium alanate (NaAlH4 )
+or simple saline hydrides like lithium hydride (LiH). Typically, hydrogen absorption/desorption in metal hydrides occurs at moderate
+pressures (under 10 MPa) and, for some systems, near ambient temperatures, making them attractive for stationary storage or certain
+vehicular applications where weight is less critical [94].
+Metal hydrides offer a promising approach to hydrogen storage, providing high volumetric densities and safe, compact storage. However,
+many hydrides require elevated temperatures to release hydrogen. For
+instance, MgH2 desorbs hydrogen appreciably only above ∼ 300 ◦ C,
+posing challenges for onboard storage in vehicles [95]. Doping with
+transition metal catalysts can enhance kinetics and reduce desorption temperatures. A well-known example is NaAlH4 , which, when
+doped with Ti-based catalysts, enables reversible hydrogen storage at
+∼ 120 ◦ C, generating significant research interest [96]. Despite these
+advancements, metal hydrides still face limitations related to operating
+temperature, kinetics, stability, and practical storage capacities.
+High operating temperatures remain a major drawback, with many
+complex hydrides requiring temperatures above 250 ◦ C and MgH2 exceeding 300 ◦ C. Effective heat management is necessary for practical
+implementation. Additionally, without catalysts, absorption and desorption kinetics are slow due to hydrogen diffusion and crystal structure rearrangement. Repeated hydrogenation/dehydrogenation cycles
+can lead to particle coarsening or phase segregation, reducing capacity
+over time. For example, MgH2 particles tend to sinter, further slowing
+kinetics upon cycling [97]. While volumetric capacity is high, gravimetric capacity remains a limitation, as many metal hydrides have modest
+hydrogen storage capacities (< 2–3 wt%) due to the significant mass of
+the metal. Only select hydrides, such as MgH2 and AlH3 , exceed 5 wt%,
+often under impractical conditions. Furthermore, some hydrides rely on
+expensive or heavy elements, such as LaNi5 in NiMH batteries, which
+increases costs and limits large-scale adoption in transportation [98].
+To address these challenges, research has focused on modifying
+metal hydrides through nanostructuring and catalysis. Nanostructuring
+enhances hydrogen absorption and desorption kinetics by increasing
+surface area and reducing hydrogen diffusion distances. Paskevicius
+et al. [99] demonstrated that ∼7 nm MgH2 nanoparticles exhibit a
+reduction in decomposition enthalpy of 2.84 kJ mol−1 H2 compared
+to bulk MgH2 (𝛥𝐻nano = 71.22 ± 0.49 kJ mol−1 H2 vs. 𝛥𝐻bulk = 74.06 ±
+0.42 kJ mol−1 H2 ), along with a reduction in reaction entropy (𝛥𝑆nano =
+129.6 ± 0.8 J mol−1 H2 K −1 vs. 𝛥𝑆bulk = 133.4 ± 0.7 J mol−1 H2 K −1 ). This
+thermodynamic alteration results in a lower hydrogen equilibrium
+desorption temperature at 1 bar, with 𝑇1 bar reduced by ∼ 6 ◦ C to
+276.2 ± 2.4 ◦ C compared to bulk MgH2 at 281.8 ± 2.2 ◦ C.
+Additionally, it can alter thermodynamics, potentially lowering the
+temperature required for hydrogen release [100]. For instance, MgH2
+nanopowders begin desorbing hydrogen at lower temperatures ( 250 ◦ C
+or less) compared to bulk MgH2 (∼ 350 ◦ C) [101]. Varin et al. [102]
+reported that bulk MgH2 requires temperatures of 350–400 °C for significant hydrogen desorption, while Aguey-Zinsou et al. [103] demonstrated that 5 nm MgH2 nanoparticles synthesized via chemical reduction begin desorbing hydrogen at temperatures as low as 150–200 °C,
+representing a reduction of approximately 150–200 °C in the onset
+desorption temperature. Various synthesis methods have been explored
+13
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Table 4
+Stability test data for representative metal hydride materials under actual storage conditions. Capacity retention values are relative
+to initial performance after the specified number of cycles.
+Material
+
+Operating temp
+(◦ C)
+
+Pressure
+(bar)
+
+Cycle life
+
+Capacity
+retention
+
+Key degradation
+dactors
+
+Reference
+
+LaNi5
+
+20–60
+
+1–20
+
+1500–2000
+
+95% (after 1500 cycles)
+
+[114]
+
+LaNi4.7 Al0.3
+MgH2
+
+20–60
+300–400
+
+1–20
+1–30
+
+2000
+100–500
+
+MgH2 –Ni
+TiFe
+Hydralloy C5–ENG
+
+250–350
+20–100
+20–80
+
+1–30
+5–50
+1–30
+
+450+
+1000+
+1000
+
+85% (after 2000 cycles)
+80%–90% (after 100
+cycles)
+85% (after 450 cycles)
+90% (after 1000 cycles)
+95% (after 1000 cycles)
+
+Surface oxidation,
+decrepitation
+Reduced compared to LaNi5
+Thermal stress, sintering
+Improved vs. pure MgH2
+Moderate degradation
+Thermal conductivity loss
+
+[115]
+[116]
+[111]
+
+[114]
+[112]
+
+Fig. 8. Dehydrogenation temperature comparison for MgH2 in different carrier systems. All nanoconfined systems show significant temperature reductions
+compared to bulk MgH2 (> 300 °C), with reductions ranging from 100-180 °C depending on the carrier material and pore structure.
+
+with thermal conductivity stabilizing after initial degradation during
+the first 250 cycles [111]. To provide a comprehensive comparison of
+stability performance across different material classes, Table 4 summarizes experimental data from long-term cycling studies conducted
+under realistic storage conditions. These data demonstrate the wide
+variation in cycle life and capacity retention among different metal
+hydride systems.
+
+dispersion and preventing sintering [118]. Zirconium nodes introduce
+weak Lewis acid sites that facilitate H2 dissociation and recombination.
+Oxide-based supports, particularly TiO2 nanotubes, yield the greatest
+temperature reductions, with dehydrogenation near 160 ◦ C. Strong
+metal–support interactions enhance destabilization but often reduce
+reversibility. Interfacial phase formation can degrade capacity over
+extended cycling [119].
+
+3.2.1. Nanoconfinement in metal hydride systems
+Nanoconfining metal hydrides within porous scaffolds simultaneously lowers thermodynamic stability and improves kinetics, addressing key limitations of bulk hydrides. These effects depend on scaffold
+type, pore size, and hydride–scaffold interactions. Magnesium hydride
+(MgH2 ) is the benchmark system for nanoconfinement studies due to
+its high theoretical capacity (7.6 wt%) and well-known bulk behavior.
+In bulk, MgH2 requires dehydrogenation temperatures above 300 ◦ C
+and shows slow kinetics. Confinement within porous hosts significantly
+reduces these barriers, enhancing both kinetics and thermodynamics.
+(See Fig. 8.)
+Carbon-based scaffolds offer chemically inert, high-surface-area environments with tunable porosity. Confinement of MgH2 in carbon
+aerogels reduces dehydrogenation temperatures to ∼200 ◦ C—a 150 ◦ C
+drop from bulk values [117]. MgH2 interacts with carbon primarily
+via van der Waals forces, ensuring good reversibility and moderate
+destabilization. Metal-decorated carbons add catalytic functionality; Nidoped systems achieve complete hydrogen release within 30 min at 250
+◦ C. Metal–organic frameworks (MOFs) provide ordered pore networks
+with tunable chemistry. MgH2 confined in UiO-66 shows dehydrogenation at ∼180 ◦ C, with the rigid framework maintaining nanoparticle
+
+3.2.2. Kinetic enhancement mechanisms
+Nanostructuring provides dramatic kinetic improvements through
+multiple pathways including reduced diffusion distances, increased
+surface-to-volume ratios, and enhanced nucleation site density. The
+quantitative relationship between particle size and kinetic performance
+follows power law scaling relationships that enable predictive design of
+fast-kinetics systems. (See Fig. 9.)
+Hydrogen sorption kinetics in metal hydrides are strongly sizedependent. The absorption rate constant follows 𝑘abs ∝ 𝑑 −1.5 , and
+desorption scales as 𝑘des ∝ 𝑑 −1.2 , where 𝑑 is the particle diameter [120].
+These relationships predict substantial rate enhancements, up to 100×
+for absorption and 30× for desorption, when particle sizes are reduced
+from 100,nm to 5,nm. This improvement is attributed to reduced
+diffusion lengths and higher surface-area-to-volume ratios. In bulk
+MgH2 , hydrogen diffusion through thick hydride layers limits reaction
+rates, resulting in apparent activation energies of 160–180,kJ,mol−1 .
+Nanoconfinement lowers these values to 110–140,kJ,mol−1 and increases pre-exponential factors by 2–3 orders of magnitude due to a
+higher density of accessible active sites [121]. Temperature-dependent
+14
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Fig. 9. Kinetic enhancement in nanostructured systems. (a) Rate enhancement factor versus particle size showing power law scaling (∝ 𝑑 −1.5 ) for absorption
+processes. (b) Temperature-dependent performance comparing nanoconfined and bulk MgH2 systems, demonstrating superior kinetics across the operational
+temperature range.
+
+studies further show that nanoconfined MgH2 maintains superior kinetics across the operational range, with rate enhancement factors
+increasing from 0.8–1.5 at 200 °C to 3–7 at 300 °C [122].
+Combining nanostructuring with catalytic doping yields synergistic
+effects beyond those of either strategy alone. Transition metal additives such as Ni, Ti, and V reduce activation barriers by enabling
+alternate reaction pathways, while nanostructuring improves catalyst
+dispersion and accessibility. This combination enables full hydrogen
+desorption within 5–10 min at temperatures 100–150 °C lower than
+bulk MgH2 [123]. These advances position nanoconfined hydride systems as promising candidates for mobile hydrogen storage. By tailoring
+scaffold materials and controlling particle size, both thermodynamic
+and kinetic properties can be optimized. Ongoing work aims to refine
+this balance to achieve high capacity, fast kinetics, and long-term
+cycling stability [124].
+
+accessibility via nanostructuring, along with shorter diffusion paths and
+increased surface area that enhance catalytic efficiency.
+Recent advances demonstrate the potential of combining nanostructuring with tailored catalyst design for high-performance hydrogen
+storage. Ren et al. developed TiH2 nanoplates supported on graphene
+(NP-TiH2 @G), achieving 5 wt% reversible capacity with full dehydrogenation at 80 °C and rehydrogenation at 30 °C under 100 atm
+H2 [126]. The nanoplates (∼50 nm lateral, 15 nm thick) are synthesized
+sonochemically, with graphene serving as a template, agglomeration
+barrier, and thermal conductor. With 7 wt% TiH2 loading (∼70%
+catalyst by mass), this system outperforms previous designs. In parallel,
+Yuan et al. reported N-doped carbon-coated Ti3 C2 MXene catalysts with
+onset dehydrogenation at 85 °C and less than 5.5 wt% capacity loss
+over 10 cycles [127]. The MXene offers high conductivity and functional group density, while nitrogen doping introduces additional active
+sites and tunes hydrogen binding. Further enhancement was achieved
+by integrating CeF3 nanoparticles, reducing the onset temperature to
+87 °C and improving cycling stability through complementary catalytic
+mechanisms.
+The data in Table 5 highlights major advances in the cycling stability of Ti-catalyzed NaAlH4 systems. The nano-Ti@C catalyst shows
+exceptional durability, with only 0.07 wt% capacity loss over 100
+cycles (degradation <0.001%/cycle) [129]. This is attributed to carbon
+coating, which prevents sintering and maintains catalyst dispersion.
+Similarly, the Al65 Cu20 Fe15 -LBMACF system demonstrates excellent
+stability (∼0.06 wt% loss over 25 cycles), indicating the potential of
+quasicrystalline catalysts [128]. Degradation in Ti-based systems is primarily driven by sintering, formation of inactive intermetallics, surface
+oxidation, and mechanical fracturing. These challenges are mitigated
+through protective coatings, optimized synthesis, and support materials
+that stabilize active sites.
+Quantitative studies confirm that combining nanostructuring with
+catalysis yields synergistic improvements. While nanostructuring or
+catalysis alone enhances kinetics by 10–50× and 5–20×, respectively,
+their combination often achieves 100–500× improvement [121].
+Nanostructuring shortens diffusion paths and increases surface area,
+while catalysis lowers activation energy barriers. Recent directions
+include single-atom catalysts, core–shell architectures, and multifunctional materials that integrate kinetic and thermodynamic tuning.
+Machine learning is also being employed to accelerate optimization of
+catalyst composition and nanostructure design, moving toward systems
+that meet DOE targets for reversible, high-capacity hydrogen storage.
+
+3.2.3. Nanostructure–catalyst synergy in metal hydrides
+The integration of nanostructuring and catalytic doping has significantly advanced metal hydride performance, with synergistic effects
+that surpass the contributions of either approach alone. This strategy
+has been particularly effective in enabling reversible hydrogen storage
+at practical temperatures with improved cycling stability. A key example is the titanium-doped sodium alanate (NaAlH4 ) system, where
+Ti-based catalysis combined with nanoscale dispersion has produced
+near-commercial performance metrics [125].
+In Ti-doped NaAlH4 , the catalytic mechanism involves a progressive
+transformation of Ti species during cycling: Ti3+ → amorphous Ti0
+→ AlTi phases → Al3 Ti intermetallics. These transformations result in
+uniformly dispersed active sites, ∼30 nm in size, embedded within
+the aluminum matrix. These sites catalyze hydrogen dissociation and
+facilitate spillover processes. Rehydrogenation proceeds via (1) H2
+dissociation on Ti sites, (2) spillover and alane (Al𝑥 H𝑦 ) formation,
+and (3) reconstruction of NaAlH4 . This mechanistic insight provides a
+framework for designing more active and stable catalyst systems [125].
+Combining nanostructuring with Ti-based catalysis yields performance
+gains well beyond those achieved by either method alone. Nanostructured MgH2 can lower dehydrogenation temperatures by 100–150 °C,
+while Ti-catalyzed bulk NaAlH4 enables reversible storage near 120 °C.
+When both strategies are applied together, optimized systems reach
+dehydrogenation temperatures as low as 80 °C with full reversibility [126], a reduction of over 220 °C compared to uncatalyzed bulk
+NaAlH4 . This synergy results from improved catalyst dispersion and
+15
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Table 5
+Latest cycle stability data for Ti-Catalyzed NaAlH4 systems.
+Catalyst system
+
+Dehydrogenation
+temperature (◦ C)
+
+Cycles tested
+
+Capacity
+retention (%)
+
+Degradation rate
+(%/cycle)
+
+Key performance features
+
+Reference
+
+NP-TiH2 @G (7 wt%)
+
+80
+
+Multiple
+
+5 wt% reversible
+
+Not specified
+
+• Full dehydrogenation at 80 ◦ C
+• Rehydrogenation at 30 ◦ C
+• Superior to all literature results
+
+[126]
+
+Ti3 C2 /NC MXene
+
+85
+
+10
+
+>94.5
+
+<0.55
+
+• N-doped carbon coating
+• 3.0 wt% hydrogen uptake
+• Enhanced kinetics
+
+[127]
+
+CeF3 + Ti3 C2 MXene
+
+87
+
+10
+
+>94.5
+
+<0.55
+
+• Synergistic catalytic effect
+• Record stability and reversibility
+• Multi-component optimization
+
+[127]
+
+Al65 Cu20 Fe15 -LBMACF
+
+150
+
+25
+
+>98.8
+
+∼0.05
+
+• Minimum degradation
+• Long-term stability
+• Quasicrystalline structure
+
+[128]
+
+Nano-Ti@C
+
+Not specified
+
+100
+
+>99.93
+
+<0.001
+
+• Highly stable cyclability
+• Only 0.07 wt% loss after 100
+cycles
+• Metallic Ti catalyst
+
+[129]
+
+Ti2 C MXene (in-situ)
+
+Reduced onset
+
+Not specified
+
+Enhanced
+
+Not specified
+
+• In-situ doping via ball milling
+• 2D MXene structure
+• Moderate synthesis conditions
+
+[130]
+
+Bogdanovic in 1997 showed that complex hydrides could be tuned for
+reversibility, spurring efforts into other alanates and borohydrides [96].
+Still, the capacity of NaAlH4 is modest and the need for careful catalyst
+addition and O2 -free handling are issues.
+Complex hydrides often operate at moderate to high pressures to
+uptake hydrogen (some requiring > 5 MPa ). Many are not truly
+reversible under practical conditions, making them more akin to chemical hydrogen carriers (to be discussed below) where the spent fuel
+is regenerated off-board. Research continues into novel complex hydrides (e.g., mixtures like LiBH4 –MgH2 , a destabilized system that
+shows improved kinetics [136]; or transition-metal borohydrides with
+potentially lower stability). The key challenges remain high desorption
+temperatures, slow kinetics of hydrogen release, and in some cases the
+irreversibility or by-product formation during decomposition [137].
+Advanced borohydride systems have experienced renewed interest
+due to breakthrough developments in catalyst design and system optimization. Magnesium borohydride systems now achieve gravimetric
+capacities of 14.9 wt% through additive enhancement, while sodium
+borohydride offers controlled hydrogen release through improved hydrolysis catalysts [138,139]. These systems provide high storage densities suitable for mobile applications while addressing previous challenges related to byproduct management and system regeneration.
+Recent advances have focused on developing more efficient catalysts
+and simplified system designs that reduce operational complexity.
+
+3.3. Complex hydrides
+Complex hydrides are chemical compounds where hydrogen is
+bonded in complex anions (such as [BH4 ]− , [AlH4 ]− ) often paired
+with light cations. They offer some of the highest known gravimetric
+hydrogen capacities. For example, lithium borohydride (LiBH4 ) contains 18.5 wt% hydrogen (theoretical) and ammonia borane (NH3 BH3 )
+∼ 19.6 wt%. The allure of complex hydrides is tempered by their
+thermodynamic stability and kinetic sluggishness, which typically make
+hydrogen release difficult [131].
+A representative complex hydride is ammonia borane (NH3 BH3 ).
+It releases hydrogen in a three-step decomposition starting around
+110 ◦ C and finishing by ∼ 150 ◦ C (for ∼ 12 wt% H2 released), but the
+spent material is a polyborazine polymer that is difficult to rehydrogenate [19]. Baitalow et al. [132] characterized the dehydrogenation
+of NH3 BH3 in three distinct steps: first at 70–112 °C (release of the
+first equivalent of H2 ), second at 110–150 °C (release of the second
+equivalent), and third at >150 °C (release of the third equivalent).
+While the theoretical hydrogen content is 19.6 wt%, approximately
+12–13 wt% is practically accessible below 150 °C through the first two
+steps. Kondrat’ev et al. [133] determined that the activation energy for
+hydrogen evolution from solid NH3 BH3 is 94 ± 11 kJ mol−1 in the temperature range of 327–351 K, with a measured sublimation enthalpy
+of 76.3 ± 3.0 kJ mol−1 at 357 K. Significant research has gone into
+making ammonia borane more practical, such as using nano-confined
+AB in porous hosts or reactive additives to promote complete hydrogen
+release at lower temperatures, similar to the study by Chen et al.
+(2024). Despite progress, AB is seen more as a one-time use chemical
+hydrogen source (for fuel cells in portable power, for example) rather
+than a rechargeable storage medium [134].
+Metal Borohydrides (MBH4 ): LiBH4 , NaBH4 , Mg(BH4 )2 , etc., have
+very high hydrogen content but very high stability. LiBH4 releases
+hydrogen in multiple steps from 320 ◦ C upward, and direct rehydrogenation of LiH + B to LiBH4 requires > 600 ◦ C and > 35 MPa H2 , not
+feasible in onboard systems. Doping and reactive hydride composites
+have had some success (e.g., LiBH4 + MgH2 mixtures show lower
+combined dehydrogenation temperature due to mutual destabilization).
+Mg(BH4 )2 has attracted attention because it can reversibly release ∼
+9–14 wt% H2 under 200–300 ◦ C with appropriate catalysts, but full
+reversibility is still not achieved [135].
+Alanates (Aluminum hydrides): NaAlH4 (sodium alanate) is the
+classic case where Ti-catalysts (e.g., TiCl3 ) enabled a reversible capacity
+of ∼ 4 wt% at ∼ 120 ◦ C (vs. 3.7 wt% theoretical). This breakthrough by
+
+3.4. Analysis of metal & complex hybrids storage data
+To gain a comprehensive understanding of metal hydride performance, we analyzed a broad dataset of known metal hydrides obtained
+from the Hydrogen Materials, Advanced Research Consortium (HyMARC) Data Hub (datahub.hymarc.org) in accordance with the user
+agreement. The dataset includes hydrogen weight percentages (wt.%)
+for a wide range of metal hydrides, encompassing different classes
+such as AB, A2 B, AB2 , AB5 , metal-intercalated carbons (MIC), solid
+solutions (SS), magnesium hydrides (Mg), and complex hydrides. A
+statistical analysis of over 1300 samples from the literature reveals
+hydrogen storage capacities ranging from < 0.1 wt% to ∼ 15 wt% under
+various conditions, as summarized in Table 6. However, the majority of
+investigated hydrides exhibit capacities below 3 wt%, which remains
+insufficient to meet DOE targets for onboard hydrogen storage systems. The dataset also reflects significant variation in temperature and
+pressure conditions, highlighting the diversity of material classes and
+testing protocols used in these studies.
+16
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Table 6
+Statistical description of metal hydrides hydrogen storage data.
+count
+mean
+std
+min
+25%
+50%
+75%
+max
+
+Hydrogen Weight Percent (%)
+
+Temperature (◦ C)
+
+Pressure (MPa)
+
+1300.000000
+1.948169
+1.550483
+0.100000
+1.100000
+1.500000
+2.100000
+14.900000
+
+1300.000000
+99.814615
+112.143310
+85.000000
+25.000000
+40.000000
+150.000000
+405.000000
+
+1300.000000
+2.144502
+2.426366
+0.000100
+0.400000
+1.000000
+3.000000
+10.000000
+
+gravimetric capacity confines their use to niche applications, such as
+palladium membranes. Magnesium hydrides, particularly MgH2 , offer
+significantly higher hydrogen storage capacities, with a theoretical
+maximum of approximately 7 wt%. However, they require temperatures between 300 and 400 ◦ C for hydrogen release, which limits their
+practical viability. Additionally, they exhibit slow absorption and desorption kinetics unless modified through nanostructuring or catalytic
+doping. Despite these drawbacks, magnesium hydrides remain attractive due to their abundance, low cost, and high volumetric hydrogen
+density of around 110 kg H2 ∕m3 .
+Complex hydrides, including sodium alanate (NaAlH4 ), lithium
+borohydride (LiBH4 ), and ammonia borane (NH3 BH3 ), possess some
+of the highest known hydrogen storage capacities, with certain borohydrides exceeding 10 ∼ wt%. However, these materials often require
+elevated temperatures for hydrogen release, typically above (120 ◦ C)
+for alanates with catalysts and over 250 ◦ C for borohydrides. Many
+borohydrides also suffer from irreversible decomposition or sluggish
+kinetics. For example, LiBH4 releases hydrogen through multiple steps
+up to ∼ 400 ◦ C, and its rehydrogenation requires even harsher conditions, making it impractical for reversible storage without catalysts or
+nanoconfinement strategies.
+A promising avenue for improving hydrogen storage performance
+involves nanoconfinement, where hydrides are embedded within
+nanoporous scaffolds such as carbon aerogels or metal–organic frameworks (MOFs). This strategy enhances kinetics and can reduce reaction
+enthalpies, facilitating hydrogen release at lower temperatures. For
+instance, NaAlH4 melt-infiltrated into a carbon aerogel exhibited dehydrogenation at approximately 150 ◦ C, significantly lower than bulk
+NaAlH4 , while maintaining good reversibility [140]. These results
+highlight the potential of nanostructuring to overcome some of the
+intrinsic limitations of metal hydrides.
+While complex and magnesium hydrides offer higher hydrogen storage capacities, their practical application remains constrained by their
+demanding operational conditions, including high temperatures, slow
+kinetics, and, in some cases, irreversibility. In contrast, intermetallic
+hydrides, though limited in capacity, operate under milder conditions
+and demonstrate excellent cycle stability. The balance between storage
+capacity and operational feasibility is a critical consideration in advancing hydrogen storage technologies. The results of Fig. 12 supports the
+above claims about the abilities of metal hybrids for storing hydrogen
+under different conditions.
+
+This study includes various categories of metal hydrides, each with
+distinct hydrogen storage properties and operational constraints. AB,
+A2 B, AB2 , AB5 hydrides, which are intermetallic compounds, are
+well known for their reversible hydrogen absorption and desorption
+capabilities. They generally operate under moderate temperatures and
+pressures but offer relatively low hydrogen storage capacities, typically
+below 2 wt%. Metal-intercalated carbons (MICs) incorporate metals
+into carbon structures to enhance hydrogen adsorption properties.
+However, their storage capacities remain modest and require specific
+conditions for optimization. Solid solution (SS) hydrides consist of
+metals dissolved into one another, forming a single-phase alloy. While
+their hydrogen storage capacities are relatively low, they benefit from
+improved kinetics and stability. Magnesium hydrides (Mg) stand out
+due to their higher hydrogen storage capacities, often exceeding 5 wt%.
+However, their practical application is limited by the need for elevated
+temperatures, typically above 300◦ C, for hydrogen release. Complex
+hydrides, including alanates and borohydrides, exhibit some of the
+highest hydrogen storage capacities, with some materials exceeding
+10 wt%. Despite their potential, these hydrides often require high
+temperatures and pressures for hydrogen uptake and release, and they
+suffer from slow kinetics and cycling stability issues.
+Fig. 10 illustrates the distribution of hydrogen weight percent (H2
+wt%) among metal hydrides from this dataset. The histogram reveals
+that most materials cluster in the 0.5–3 wt% range, with a long tail extending to higher capacities for a few outliers (such as certain complex
+borohydrides). This indicates that while some materials (e.g., LiBH4 ,
+AlH3 ) exhibit high theoretical capacities, practical realizations often
+fall short due to issues like incomplete reversibility or requiring extreme conditions. Notably, current material capacities remain below
+the DOE’s ultimate gravimetric target (≈ 6.5 wt%) in reversible form,
+highlighting the need for further innovation.
+Fig. 11 compares hydrogen storage capacities across the different
+material categories. The boxplot provides a snapshot of both median
+performance and variability within each class where hydrogen storage
+capacity (wt%) is plotted against operating temperature and pressure
+for various hydride classes, including AB5 alloys, AB2 alloys, and
+complex hydrides. This visualization highlights the trade-offs between
+capacity and operational conditions. For instance, intermetallic AB5
+and AB2 hydrides, such as LaNi5 -based and TiFe-based compounds,
+function near ambient temperature and pressure but offer low capacities, typically below 2 wt%. In contrast, complex hydrides like alanates
+and borohydrides can achieve storage capacities exceeding 5 wt%,
+though only at high temperatures (150–350 ◦ C) and with sluggish
+kinetics.
+Intermetallic hydrides such as LaNi5 and FeTi are known for their
+reversible hydrogen absorption and desorption. They typically operate
+under mild temperatures, ranging from –20 to 60◦ C, and near-ambient
+pressures of 1–10 bar. Their stability and rapid kinetics make them
+suitable for applications such as NiMH batteries and stationary hydrogen storage. However, their low hydrogen capacities prevent their
+use in mobile applications where weight efficiency is critical. Another
+category, solid-solution hydrides, includes metals that form continuous
+solid solutions with hydrogen, such as palladium hydride. While these
+materials exhibit strong hydrogen absorption characteristics, their low
+
+3.5. Liquid organic hydrogen carriers (LOHCs)
+Liquid Organic Hydrogen Carriers (LOHCs) enable reversible hydrogen storage through hydrogenation and dehydrogenation reactions,
+allowing for safe and efficient hydrogen transport in liquid form under
+ambient conditions [141]. These compounds absorb hydrogen through
+exothermic hydrogenation, forming saturated molecules, and later release it via endothermic dehydrogenation, regenerating the original
+unsaturated compound. Functioning as a ‘‘liquid battery’’ for hydrogen,
+LOHCs store hydrogen chemically and release it when needed. Ideal
+LOHCs should exhibit high hydrogen storage capacities, favorable thermodynamics and kinetics, chemical and thermal stability, low toxicity,
+and economic viability [142].
+Several LOHC systems have been extensively studied.
+N-ethylcarbazole (NEC) was among the earliest demonstrated LOHCs,
+with a theoretical hydrogen capacity of ∼ 5.8 wt%. Hydrogenation
+of NEC forms perhydro-N-ethylcarbazole, which requires dehydrogenation at ∼ 180–210 ◦ C over a catalyst such as Pd on alumina
+to release hydrogen, with NEC being fully regenerated [141,143].
+Peters et al. [144] determined that optimal dehydrogenation occurs at
+180–200 ◦ C with suitable catalysts, with a reaction enthalpy of approximately 50–53 kJ mol−1 H2 . This relatively high dehydrogenation
+enthalpy necessitates significant heat input for hydrogen release, which
+remains a challenge for practical applications. This relatively high
+17
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Fig. 10. Distribution of hydrogen weight percent in the dataset. The histogram (in blue) shows the frequency of observations across various hydrogen weight
+percentages, with a kernel density estimate (KDE) curve overlaid to illustrate the overall distribution shape. Vertical dashed lines highlight the mean (green) and
+median (red). (Data compiled from DOE Metal Hydride databases and literature.). (For interpretation of the references to color in this figure legend, the reader
+is referred to the web version of this article.)
+
+Fig. 11. Box plot comparing hydrogen weight percent across different material classes. Each box represents the interquartile range (IQR), the bold black line
+in the box marks the median, and whiskers extend to capture non-outlier values. Outliers appear as individual points. The black outlines accentuate the box
+boundaries, while each material class is distinguished by a color from the ‘viridis’ palette.
+
+18
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Fig. 12. 3D scatter plot of hydrogen weight percent as a function of temperature and pressure, both represented on log scales. Each material class is indicated by a
+unique marker shape and color. Notably, among the various classes, Complex hydrids exhibit comparatively higher storage capacities under moderate temperature
+and pressure conditions.
+
+enthalpy requires significant heat input for hydrogen release, posing
+a challenge for practical deployment.
+Toluene/methylcyclohexane (MCH) is another widely researched
+LOHC system, where toluene is hydrogenated to MCH, storing approximately 6.1 wt% hydrogen. The reversible cycle between toluene and
+MCH has been utilized in laboratory and industrial applications due to
+its well-established production and handling infrastructure [93]. However, dehydrogenation of MCH requires temperatures around 300 ◦ C
+and the use of noble metal catalysts, typically Pt- or Pd-based. More
+recently, dibenzyltoluene (DBT) and its derivatives have gained attention for their suitability as LOHCs, offering a hydrogen capacity of
+∼ 6.2 wt%. Ojelade & Zaman [145] conducted a comprehensive thermodynamic analysis of the methylcyclohexane–toluene system, demonstrating almost 100% equilibrium conversion of methylcyclohexane
+with ≈99% H2 yield at 325 ◦ C and 1 bar during dehydrogenation. For
+the reverse toluene hydrogenation, calculations predict near-complete
+conversion at 100 ◦ C and 1 bar, though kinetic limitations in current catalysts prevent realizing these theoretical values at atmospheric
+pressure. These compounds remain liquid in both hydrogen-lean and
+hydrogen-rich states, possess low vapor pressure-which enhances safety
+by reducing flammability risks-and exhibit strong thermal stability,
+making them viable for large-scale applications [146].
+LOHCs present several advantages in hydrogen storage and transport. They achieve high volumetric hydrogen densities comparable to
+liquid hydrogen but without requiring cryogenic temperatures. Because
+LOHCs remain in liquid form under ambient conditions, they can
+be integrated into existing fuel storage and distribution infrastructure, reducing the need for new systems. In their hydrogen-lean form,
+most LOHCs are non-flammable, non-explosive, and exhibit low vapor
+pressure, minimizing safety concerns. Additionally, the reversibility of
+the hydrogenation/dehydrogenation cycle allows LOHCs to be reused
+multiple times, unlike one-time-use chemical hydrides [142].
+
+Despite these advantages, several challenges must be addressed for
+widespread adoption of LOHC technology. A major drawback is the
+endothermic nature of dehydrogenation, which requires substantial
+heat input, typically in the range of 150–300 ◦ C, depending on the
+carrier [141]. Efficient heat management and external heat sourcessuch as waste heat recovery-are necessary for continuous operation.
+Another limitation is the reliance on noble metal catalysts, such as Pd,
+Pt, and Ru, to facilitate hydrogenation and dehydrogenation reactions.
+These catalysts are expensive and susceptible to poisoning from sulfur
+and other impurities, necessitating high-purity LOHCs. Research into
+non-noble metal alternatives, such as Ni-based catalysts, is ongoing,
+though noble metals currently provide superior performance [147].
+The hydrogen release rate and overall efficiency also face challenges, particularly for applications requiring rapid hydrogen supply,
+such as fuel cells. Reactor designs must optimize heat transfer and
+catalysis to ensure sufficient hydrogen release while maintaining energy efficiency. The logistics of LOHC recycling further complicate
+implementation, as the spent hydrogen-lean carrier must be transported
+back to hydrogenation facilities, effectively requiring a closed-loop
+supply chain [146]. This adds cost and complexity, as tanker trucks or
+pipelines would need to carry hydrogen-rich LOHCs to fueling stations
+and return with hydrogen-lean LOHCs for reprocessing. Additionally,
+partial dehydrogenation and by-product formation can lead to multiple
+hydrogenated species or intermediates, which complicate hydrogen
+utilization and necessitate precise control of reaction conditions.
+Ongoing research focuses on addressing these challenges through
+improved catalysts and the discovery of new LOHC molecules with
+optimized properties. Developing catalysts with higher activity and selectivity can lower the temperature required for dehydrogenation while
+increasing hydrogen release rates. Exploring cheaper metal alternatives
+or structured bimetallic catalysts may also reduce costs [146]. Another promising avenue is the design of LOHC molecules with slightly
+19
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+lower hydrogen capacities but significantly lower dehydrogenation
+enthalpies, which could improve efficiency. Recent studies have investigated heterocycles, unsaturated nitrogen compounds, and eutectic
+mixtures of LOHCs to enhance performance [141]. Additionally, integrating LOHC systems with renewable or industrial waste heat sources
+is being explored to improve overall energy efficiency. For instance,
+utilizing surplus heat from power plants to drive the hydrogen release process could significantly enhance the viability of LOHC-based
+hydrogen storage [148].
+
+3.6. Photocatalytic and light-driven storage systems
+Light-driven hydrogen storage systems offer the potential to directly
+harness solar energy for hydrogen production and storage processes,
+enabling fully sustainable energy cycles. Recent advances have shown
+that photocatalytic materials can effectively drive hydrogen storage
+and release reactions using only sunlight, removing the need for external energy inputs [156]. These systems typically rely on advanced
+photocatalysts that convert light energy directly into chemical energy
+for hydrogen liberation, with some materials now capable of utilizing near-infrared light to extend the usable solar spectrum beyond
+traditional visible-light systems. The integration of photocatalytic processes with hydrogen storage materials has opened new possibilities
+for distributed energy systems and off-grid applications. Advanced
+photocatalysts demonstrate improved performance under real solar
+conditions and hold promise for practical outdoor deployment [156].
+The development of hybrid photocatalytic–storage systems allows continuous operation during daylight hours while storing hydrogen for
+later use, creating a complete solar-to-hydrogen solution. These technologies are especially valuable for remote or developing regions where
+access to conventional energy infrastructure is limited.
+
+3.5.1. Formic acid as a hydrogen storage medium
+Formic acid (HCOOH) functions as a specialized type of LOHC,
+storing hydrogen in a simple liquid that decomposes into hydrogen
+and carbon dioxide under relatively mild conditions [149]. Although its
+hydrogen content is only 4.4 wt%, which is modest compared to other
+hydrogen carriers, its primary advantage lies in the low-temperature
+release of hydrogen, typically between 70 and 120 ◦ C with appropriate
+catalysts. Additionally, formic acid remains a liquid under ambient
+conditions, making it easy to handle and integrate into existing fuel
+infrastructure.
+Catalytic decomposition of formic acid has been extensively studied, demonstrating efficient hydrogen release. For instance, Czaun
+et al. [150] generated the active catalyst in situ from RuCl3 ⋅𝑥H2 O and
+triphenylphosphine in an SDS-stabilized toluene/water emulsion. At 90
+◦ C they achieved complete conversion of formic acid to an equimolar
+H2 /CO2 stream with no detectable CO; the initial rate (1.69 × 10−5 mol
+L−1 s−1 with 2.43 mM Ru) corresponds to a turnover frequency of ≈25
+h−1 , rising to ≈100 h−1 at 100 ◦ C.
+A key challenge, however, is the production of CO2 as a byproduct.
+If this CO2 can be captured or chemically recycled-such as through
+hydrogenation back into formic acid using renewable hydrogen-the
+overall process could become carbon-neutral. Filonenko et al. [151]
+demonstrated a ruthenium-based catalyst capable of hydrogenating
+CO2 to formic acid with a TON up to 1,100,000 and a TOF up to
+23,000 h−1 at 120 ◦ C and 40 bar (H2 /CO2 = 1:1). However, the reaction
+has 𝛥𝐺◦ = +32.9 kJ mol−1 at standard conditions, necessitating the use
+of a base or other techniques to shift equilibrium for practical application. Recent research has focused on improving both decomposition and
+synthesis catalysts, as well as investigating electrocatalytic pathways
+for directly converting CO2 to formate using renewable electricity,
+potentially simplifying the hydrogen storage cycle and enhancing its
+environmental sustainability [152].
+Recent advances in formic acid–based hydrogen storage have
+brought the technology closer to practical application. Sang et al.
+(2024) introduced a potassium formate/potassium bicarbonate system
+that remained stable over six months and completed 40 full storage–
+release cycles [153]. Using only trace amounts of ruthenium catalyst,
+the system released hydrogen at a rate of 9.3 L/h with 99.5% purity and
+achieved a potential storage efficiency of up to 67%. Operated under
+mild conditions without additional chemical inputs, this carbon-neutral
+approach stores hydrogen in benign salt solutions. Photocatalytic methods have also advanced significantly, with Peng et al. (2024) reporting
+light-driven dehydrogenation of formic acid at activity levels 100
+times higher than previous photocatalytic systems [154]. Their system operates at room temperature using sunlight, eliminating the
+need for external heating. Notably, they demonstrated the coupling
+of photocatalytic hydrogen generation with enzymatic synthesis to
+produce high-value chemical and pharmaceutical compounds, marking
+the first such integration of renewable hydrogen production with sustainable chemical manufacturing. Ongoing efforts continue to address
+limitations by developing more efficient catalysts, refining decomposition mechanisms, and exploring advanced CO2 capture and recycling
+strategies. These improvements are essential for transitioning formic
+acid–based systems from a promising concept to an economically viable
+component of hydrogen energy infrastructure. More broadly, LOHCs
+remain a key research focus, with future directions aimed at reducing catalyst costs, optimizing carrier molecules, and integrating these
+systems with renewable energy and waste heat recovery to improve
+efficiency and overall sustainability [155].
+
+4. Summary of hydrogen storage methods
+Table 7 presents a comparison of established and emerging hydrogen storage technologies, including those discussed earlier. The aim is
+to highlight each technology’s principal advantages and disadvantages,
+typical operating conditions, achievable gravimetric storage capacities,
+and current development stage. From compressed and liquid hydrogen to advanced nanostructured materials and chemical carriers, this
+overview provides a clear snapshot of the current research landscape
+and practical applications in hydrogen storage.
+Fig. 13 provides a comprehensive comparison of hydrogen storage
+performance across all major material classes relative to established
+DOE targets. Complex metal hydrides demonstrate the highest maximum storage capacity (> 20 wt%), significantly exceeding the DOE
+Ultimate target of 6.5%, while several physical storage materials including PCN and activated carbon approach or exceed the DOE 2025
+target of 5.5%. The analysis reveals that chemical storage methods
+(orange bars) generally achieve higher maximum capacities but with
+greater variability, whereas physical storage methods (blue bars) show
+more consistent but lower performance levels. Notably, most material
+classes fall short of the DOE 2020 target of 4.5% in their mean performance, highlighting the ongoing challenges in developing practical
+hydrogen storage systems that meet commercial viability requirements.
+5. Techno-economic analysis
+The economic viability of hydrogen-storage technologies represents
+a critical factor determining their commercial adoption alongside technical performance metrics. While the techno-economic analysis presented in 8 provides system-level cost comparisons, a brief examination
+of the underlying economic factors reveals important considerations for
+technology development and deployment.
+Cost analysis reveals significant variations across storage technologies, primarily driven by material requirements and system complexity.
+Compressed-gas systems exhibit moderate capital costs of approximately 500–700 USD per kilogram of hydrogen capacity, dominated
+by high-pressure composite vessels that require expensive carbon-fiber
+materials [163]. Metal hydrides present a wide cost spectrum, with
+simple magnesium-based systems offering low material costs (10–30
+USD per kilogram) but requiring substantial thermal-management infrastructure, while advanced rare-earth alloys can cost 100–1000 USD
+per kilogram of material [164]. Emerging technologies such as metal–
+organic frameworks face high synthesis costs due to expensive organic
+linkers and specialized processing requirements, though these costs
+20
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Table 7
+Comprehensive comparison of hydrogen storage methods.
+Storage method
+
+Description
+
+Advantages
+
+Disadvantages
+
+Operational
+conditions
+
+Hydrogen
+storage capacity
+
+Development
+stage
+
+Compressed
+hydrogen storage
+
+Hydrogen gas stored at
+high pressures (up to 700
+bars) in specially designed
+tanks made of metals or
+composite materials. Types
+include Type I (metal),
+Type II (metal with
+composite overwrap), Type
+III (composite with metal
+liner), and Type IV (all
+composite).
+
+• Simple and
+established
+technology
+• Immediate
+applicability
+• High filling and
+extraction speeds
+• Well-established
+infrastructure
+
+• Requires robust,
+heavy tanks
+• Less space-efficient
+• High cost of
+compression
+• Safety concerns with
+high-pressure hydrogen
+gas
+• High energy
+consumption for
+compression
+
+• Pressure: Up to
+700 bar
+• Temperature:
+15-25 °C
+(288–298 K)
+
+• Gravimetric:
+1–3 wt%
+• Volumetric: Up
+to 36 kg⋅m−3
+
+Commercial use;
+ongoing research
+into lightweight
+composite
+materials
+
+Liquid hydrogen
+storage
+
+Hydrogen is liquefied at
+cryogenic temperatures
+(−253◦ C) and stored in
+thermally insulated
+cryogenic tanks designed
+to minimize heat transfer
+and prevent boil-off.
+
+• Higher energy
+density by volume
+compared to
+compressed gas
+• High volumetric
+hydrogen density
+(70.8 kg⋅m−3 )
+• Suitable for
+space-constrained
+applications
+
+• Very low
+temperatures required,
+resulting in high energy
+consumption for
+liquefaction (∼30% of
+hydrogen’s energy
+content)
+• Potential boil-off
+losses
+• Requires complex
+insulated storage tanks
+• Safety concerns with
+handling liquid
+hydrogen
+
+• Pressure: 1-5 bar
+(0.1–0.5 MPa)
+• Temperature:
+−253◦ C (20 K)
+
+• High
+volumetric
+capacity
+• Gravimetric
+capacity affected
+by tank mass
+and insulation
+
+Used in
+specialized
+applications;
+limited
+commercial use
+due to cost and
+technical
+challenges
+
+Physisorption in
+Porous Materials
+
+a. Carbon-Based
+Nanostructures: Hydrogen
+adsorbed onto materials
+like activated carbons,
+CNTs, and graphene via
+van der Waals forces.
+b. Metal-Organic
+Frameworks (MOFs):
+Crystalline materials with
+exceptionally high surface
+areas and tunable pore
+sizes.
+c. Covalent Organic
+Frameworks (COFs):
+Porous organic materials
+with high surface areas
+and low densities.
+
+• High surface area
+materials
+• Lightweight and
+chemically stable
+• Tunable structures
+• Safer,
+lower-pressure
+storage
+• Potential for
+modular design
+
+• Require cryogenic
+temperatures (77 K) for
+significant uptake
+• Low uptake at
+15-25 °C (288–298 K)
+• Lower storage
+capacities compared to
+other methods
+• Sensitive to
+temperature and
+pressure changes
+• Some materials may
+be expensive or
+unstable
+
+• Temperature: 77 K
+• Pressure: Up to 10
+MPa (varies with
+material)
+
+• Carbon
+materials: Up to
+7 wt% at 77 K
+• MOFs: Up to 9
+wt% at 77 K
+• COFs: Up to
+7.2 wt% at 77 K
+
+Research/Lab
+scale
+
+Metal hydrides
+
+Hydrogen stored by
+forming solid compounds
+where hydrogen is
+absorbed into the metal
+lattice; examples include
+magnesium hydride
+(MgH2 ), sodium alanate
+(NaAlH4 ), and lithium
+hydride (LiH).
+
+• High volumetric
+hydrogen density
+(up to 115 kg⋅m−3 )
+• Safe and compact
+storage
+• Reversible
+hydrogen absorption
+and desorption
+under moderate
+conditions
+
+• Low gravimetric
+capacity (<3–8 wt%)
+due to heavy metals
+• Heavy materials limit
+use in mobile
+applications
+• Slow kinetics of
+hydrogen
+absorption/desorption
+• High desorption
+temperatures
+• Heat management
+required
+
+• Pressure: 1-5 bar
+(0.1–0.5 MPa)
+• Temperature:
+15-25 °C
+(288–298 K) to
+300–400 °C
+(573–673 K)
+
+• Gravimetric:
+Up to 7.6 wt%
+(MgH2
+theoretical)
+• Volumetric: Up
+to 115 kg⋅m−3
+
+Commercial use
+in niche
+applications;
+ongoing research
+to improve
+materials and
+kinetics
+
+Complex
+hydrides
+
+Chemical compounds that
+store hydrogen in complex
+anions; examples include
+lithium borohydride
+(LiBH4 ), sodium
+borohydride (NaBH4 ), and
+sodium alanate (NaAlH4 ).
+
+• High gravimetric
+hydrogen capacity
+(up to 18 wt%)
+• Potential for
+reversible storage
+with catalysts
+(e.g., Ti-doped
+NaAlH4 )
+• Low cost
+
+• High desorption
+temperatures (> 250 ◦ C)
+• Slow kinetics of
+hydrogen release
+• Irreversibility and
+degradation over cycles
+• Challenges in
+rehydrogenation
+processes
+
+• Pressure: 5-50 bar
+(0.5–5 MPa)
+• Temperature: High
+(> 250 ◦ C)
+
+• Gravimetric:
+Up to 18 wt%
+(LiBH4 )
+•
+N-ethylcarbazole:
+5.8 wt%
+theoretical
+
+Research stage;
+significant
+challenges
+remain for
+practical
+application
+
+(continued on next page)
+
+may decrease with scale-up and process optimization [47]. Liquidorganic hydrogen carriers benefit from relatively low carrier-fluid
+costs (3–8 USD per kilogram) but require capital-intensive hydrogenation and dehydrogenation facilities, while ammonia systems leverage
+
+existing production infrastructure despite energy-intensive synthesis
+and cracking processes [146].
+Manufacturing complexities vary widely across technologies and
+significantly impact scalability. Compressed-gas storage relies on
+21
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Table 7 (continued).
+Storage
+method
+
+Description
+
+Advantages
+
+Disadvantages
+
+Operational
+conditions
+
+Hydrogen
+storage capacity
+
+Development
+stage
+
+Liquid
+Organic
+Hydrogen
+Carriers
+(LOHCs)
+
+Organic liquids that can
+absorb and release
+hydrogen through
+reversible hydrogenation
+and dehydrogenation
+reactions; examples
+include N-ethylcarbazole
+and toluene/methylcyclohexane systems.
+
+• High storage
+capacity (5–7 wt%)
+• Liquid at 15-25 °C
+(288–298 K) (easy
+to transport)
+• Safe and
+convenient transport
+• Utilizes existing
+infrastructure
+• Reversible
+processes
+
+• Requires catalysts
+(often expensive noble
+metals)
+• High dehydrogenation
+temperatures
+(180–300 ◦ C)
+• Endothermic
+dehydrogenation
+reactions
+• Low efficiency of
+dehydrogenation
+• Potential
+environmental impacts
+
+• Hydrogenation:
+– Pressure: Up to 6
+MPa
+– Temperature:
+180–200 ◦ C
+• Dehydrogenation:
+– Pressure:
+Atmospheric
+– Temperature:
+180–300 ◦ C
+
+• Toluene/
+methylcyclohexane:
+∼6.2 wt%
+
+Research stage;
+ongoing efforts
+to improve
+catalysts and
+processes
+
+Nanostructured
+Materials
+
+Utilizing nanostructured
+materials (e.g., MgH2
+nanoparticles, nanowires)
+to enhance hydrogen
+storage properties
+through increased surface
+area and altered
+thermodynamics.
+
+• Improved
+hydrogen absorption/desorption
+kinetics
+• Lower
+dehydrogenation
+temperatures
+• Enhanced surface
+reactivity
+
+• Potential for particle
+agglomeration
+• Complex synthesis
+methods
+• Stability issues over
+cycles
+• Challenges in
+scalability
+
+• Dehydrogenation
+starting at ∼ 85◦ C
+(Mg nanoparticles)
+• Pressure:
+2–10 MPa
+(20-100 bar)
+
+• MgH2
+theoretical
+capacity: 7.6
+wt%
+
+Research/Lab
+scale
+
+Glass
+Microspheres
+Storage
+
+Hydrogen stored in
+small, hollow glass
+microspheres; hydrogen
+diffuses into the
+microspheres at high
+temperatures and
+pressures and is released
+upon heating.
+
+• High hydrogen
+capacity (> 15 wt%)
+• Good
+maneuverability
+
+• Immature technology
+• Challenges in
+producing high-strength
+microspheres
+• High cost
+• Requires >100 °C
+(>373 K) for
+loading/unloading
+
+• Pressure: >50 bar
+(>5 MPa) internal
+pressure
+• Temperature:
+>100 °C (>373 K)
+for
+loading/unloading
+
+• Gravimetric:
+> 15 wt%
+
+Research stage;
+not yet practical
+for widespread
+use
+
+Fig. 13. Comparison of hydrogen storage performance across material classes relative to DOE targets. Horizontal bars show mean (light) and maximum (dark)
+hydrogen weight percentages for physical storage methods (blue) and chemical storage methods (orange). Vertical dashed lines indicate DOE 2020 (4.5%), 2025
+(5.5%), and Ultimate (6.5%) targets. Sample sizes (n) are indicated for each material class. (For interpretation of the references to color in this figure legend, the
+reader is referred to the web version of this article.)
+22
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Table 8
+Comparison of hydrogen storage methods.
+Storage method
+
+Approx. system cost
+
+Energy efficiency
+(round-trip)
+
+Safety & Infrastructure
+
+References
+
+Compressed gas
+
+$500–700/kg H2 capacity
+($15–20/kWh); high-pressure
+compressor needed
+
+∼80%–90% (compression
+uses 5%–20% of energy)
+
+Proven and modular;
+high-pressure hazards (mitigated
+by tank design); requires robust
+cylinders and 700 bar fueling
+stations.
+
+[157,158]
+
+Liquid H2
+
+$30–50/kg H2 capacity (tank)
++ ∼$1–2/kg liquefaction
+
+∼60%–70% (liquefaction
+consumes 30%–40%)
+
+High density; boil-off requires
+venting or re-liquefaction;
+cryogenic safety protocols needed;
+existing LH2 transport
+infrastructure limited to industrial
+use.
+
+[159,160]
+
+Cryo-Compressed H2
+
+∼$300–400/kg H2 (projected)
+
+∼70%–80% (liquefaction to
+∼80 K, minimal boil-off
+losses)
+
+Promising hybrid: extended
+dormancy with no venting
+(Rivard et al. 2019); requires
+cryogenic fueling; combines some
+complexity of both pressurized
+and cryogenic systems.
+
+[161]
+
+Metal Hydrides
+
+Highly variable
+(material-dependent;
+e.g. $10–30/kg for MgH2
+material) + heat exchangers
+
+∼70%–90% (depends on
+heat management; nearly
+isothermal storage)
+
+Low pressure operation (safer);
+heavy systems; needs thermal
+input for H2 release; best for
+stationary or vehicles with waste
+heat.
+
+[157,162]
+
+Adsorbents
+(MOF/Carbon)
+
+Lab-scale costs high (MOFs
+can be costly; activated
+carbon cheaper) – not yet
+optimized for cost
+
+∼70%–85% with
+cryo-cooling (e.g. LN2
+cooling overhead)
+
+Low/moderate pressure; requires
+cooling to ∼77 K for good
+capacity; safety similar to
+compressed gas but lower
+pressure; no commercial systems
+yet.
+
+[160]
+
+LOHC (e.g. DBT)
+
+Hydrogenation/dehydrogenation units: large capital; LOHC
+fluid ∼$5/kg (reused)
+
+∼60%–70% (35%–40%
+energy loss as heat)
+
+Ambient liquid – easy to handle
+with oil infrastructure; no H2 loss
+over time; requires chemical plant
+and catalysts at both ends. Not
+suitable for onboard/mobile
+release.
+
+[142,160]
+
+Ammonia
+
+Haber-Bosch plants
+(capital-intensive); NH3
+transport cheap (existing);
+NH3 cracking unit adds cost
+
+∼50%–60% (30% loss in
+synth + 10%–20% in
+cracking)
+
+Widely handled chemical (toxic,
+requires training); very high
+volumetric density; can use
+existing tanks/pipelines; versatile
+end-use (crack to H2 or direct
+fuel).
+
+[162]
+
+established composite-manufacturing techniques but requires precise
+filament-winding processes and specialized carbon-fiber materials with
+limited global production capacity. Metal-hydride production involves
+controlled-atmosphere processing to prevent oxidation and specialized heat-treatment procedures, with manufacturing costs increasing
+substantially for complex alloy compositions. Advanced adsorbent materials face challenges in maintaining consistent properties during
+scale-up, as laboratory synthesis methods often fail to translate effectively to industrial production. Chemical storage systems require
+high-pressure, high-temperature processing capabilities and advanced
+catalyst systems, adding complexity to manufacturing operations [165].
+Scalability considerations encompass both technical and economic
+factors that influence the transition from laboratory development to
+commercial deployment. Learning-curve effects observed in energystorage technologies suggest potential for significant cost reductions
+through increased production volumes, with typical cost reductions
+of 15%–25% per doubling of cumulative production [166]. However,
+realizing these benefits requires sustained market development and
+substantial capital investment for manufacturing scale-up. Supply-chain
+constraints present additional challenges, particularly for technologies
+dependent on rare materials or specialized components with limited
+production capacity. The geographic concentration of key materialssuch as rare-earth elements for advanced metal hydrides or carbon fiber
+for pressure vessels-creates potential supply vulnerabilities that must be
+considered in long-term economic planning.
+
+The integration of hydrogen storage systems with renewable energy sources presents both opportunities and challenges for economic
+optimization. Variable renewable-electricity costs can improve the economics of energy-intensive storage methods during periods of excess
+generation, while the need for flexible operation across varying charging schedules may complicate system design and increase costs. Market
+mechanisms, including time-of-use pricing and carbon-pricing policies,
+significantly influence the relative economic attractiveness of different storage technologies and their competitive position relative to
+alternative energy-storage and transportation-fuel options [167].
+The various hydrogen storage methods outlined above each occupy
+different ‘‘sweet spots’’ in terms of performance and cost. Table 8
+summarizes several key techno-economic metrics – approximate ranges
+for system cost, energy efficiency, and notable safety/infrastructure
+notes – to facilitate comparison. While exact numbers vary with system
+design and scale, general trends can be observed:
+Table 8 highlights the trade-offs across various hydrogen storage
+technologies, illustrating how system cost, energy efficiency, and safety
+or infrastructure requirements differ significantly between approaches.
+Compressed gas systems are mature and modular, with moderate capital costs (approximately $500–700 per kg H2 capacity), but they
+rely on robust high-pressure vessels and dedicated fueling infrastructure. Liquid hydrogen offers high energy density, yet the liquefaction
+process imposes a significant energy penalty of about 30%–40%. Cryocompressed hydrogen represents a hybrid solution that may reduce
+23
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+boil-off losses, although it inherits operational challenges from both
+high-pressure and cryogenic systems.
+Metal hydrides show a broad cost spectrum depending on the
+material-such as Mg-based alloys-and require effective thermal management to enable hydrogen release. Adsorbent-based systems, particularly
+those using advanced metal–organic frameworks (MOFs), remain in the
+research phase and face hurdles related to cryogenic operation and
+infrastructure scalability. LOHC technologies benefit from compatibility
+with existing petrochemical infrastructure, but the hydrogenation and
+dehydrogenation steps are energy-intensive, limiting their viability in
+mobile platforms. Ammonia-based storage stands out for its established
+production and distribution network; however, the toxicity and safety
+concerns associated with NH3 , along with the energy losses incurred
+during synthesis and cracking (around 40%–50%), remain important
+considerations.
+
+is essential. Multidisciplinary approaches that combine materials science, engineering, and environmental science can drive innovation
+and contribute significantly to reducing the environmental footprint of
+hydrogen storage.
+The quantitative comparison presented in Table 9 demonstrates
+the substantial range of environmental impacts associated with different hydrogen storage approaches. The data reveal that material
+production and manufacturing processes dominate the life cycle carbon
+footprint for most technologies, with operational emissions typically
+representing a smaller fraction of the total environmental burden.
+This finding has important implications for technology selection and
+development priorities, suggesting that efforts to reduce manufacturing
+emissions may yield greater environmental benefits than focusing solely
+on operational efficiency improvements.
+The pressure dependency observed in compressed gas storage systems illustrates the environmental trade-offs associated with achieving
+higher storage densities. While 700 bar systems offer improved volumetric storage capacity compared to 350 bar alternatives, this advantage comes at the cost of a 65% increase in life cycle carbon emissions,
+highlighting the importance of optimizing storage pressure based on
+specific application requirements and environmental constraints rather
+than simply maximizing storage density.
+The exceptionally high carbon footprint of metal hydride storage
+systems-nearly an order of magnitude greater than compressed gas
+alternatives-raises important questions about the environmental viability of this technology for large-scale deployment. While metal hydrides
+offer operational advantages such as low-pressure operation and inherent safety characteristics, these benefits must be weighed against
+the substantial environmental costs associated with material production
+and system manufacturing.
+The moderate performance of LOHC and ammonia storage systems
+makes them promising alternatives for applications where the environmental impact of compressed gas storage is acceptable, but the operational demands of liquid hydrogen are impractical. The established
+industrial infrastructure for ammonia production and handling may
+provide opportunities to leverage existing supply chains and manufacturing capabilities, potentially reducing environmental impact through
+economies of scale and process optimization.
+Regional manufacturing considerations are a critical factor in performance optimization, particularly for energy-intensive production
+processes. The wide variation in carbon fiber production emissions
+based on manufacturing location suggests that strategic placement of
+production facilities in regions with low-carbon electricity grids could
+significantly reduce the environmental impact of compressed gas storage systems; similarly, production of metal hydride alloys and MOF
+materials could benefit from regions with abundant renewable energy
+resources.
+Finally, a life cycle perspective reveals opportunities for environmental impact reduction through improved material utilization and
+system design optimization. Extended service lives, enhanced recyclability, and improved manufacturing efficiency all represent pathways to reduce the per-unit environmental impact of hydrogen storage
+technologies. Development of circular economy approaches for storage materials-particularly for high-impact technologies such as metal
+hydrides and MOFs-could substantially improve their environmental
+performance over multiple use cycles.
+
+6. Life cycle assessment of hydrogen storage technologies
+Life cycle assessment (LCA) quantifies the environmental burdens of
+hydrogen storage technologies across material extraction, production,
+operation, and end-of-life stages [2]. Key environmental impacts identified include energy consumption, greenhouse gas emissions, resource
+depletion, and potential pollution.
+Compressed and liquid hydrogen storage methods require substantial energy for compression and liquefaction, which lead to significant
+carbon footprints, particularly when electricity is sourced from fossil
+fuels [5]. Moreover, the manufacturing of storage tanks and cryogenic equipment contributes to environmental impacts due to material
+production and processing. Chemical storage methods, such as the
+production of metal hydrides and complex hydrides, are also energyintensive and may involve hazardous chemicals, resulting in emissions
+and waste [168]. The recycling and disposal of spent materials from
+these processes pose additional environmental challenges. Advanced
+nanostructured materials require specialized synthesis techniques and
+chemicals, which contribute to energy consumption and potential environmental impacts; however, the improved efficiency and performance
+of these materials may offset these impacts over their life cycle [169].
+To mitigate the environmental impacts of hydrogen storage technologies, a multifaceted approach involving technological advancements, sustainable practices, and policy interventions is essential. Improving energy efficiency is paramount; developing more efficient storage technologies and processes can significantly reduce energy consumption. This includes innovations in compression technologies, liquefaction processes, and material synthesis to enhance overall efficiency [33]. Utilizing renewable energy sources for hydrogen production, compression, liquefaction, and regeneration processes substantially lowers the carbon footprint as integration with renewable
+energy systems enhances sustainability [170]. Establishing comprehensive recycling systems for storage equipment materials is also crucial
+in reducing waste and environmental pollution. Advances in recycling
+technologies for composite materials, metals, and nanomaterials are essential to facilitate this process [6]. Adopting environmentally friendly
+manufacturing practices, such as green chemistry principles and clean
+production technologies, minimizes harmful emissions, making the
+development of scalable, low-impact synthesis methods for storage
+materials critical [21].
+Implementing strict environmental policies and industry standards
+helps regulate production, implementation, and waste disposal processes, while incentivizing the adoption of green technologies and
+sustainable practices promotes industry-wide improvements [2]. Enhancing safety protocols and implementing advanced monitoring technologies are vital to prevent leaks and environmental contamination; in
+underground storage scenarios, real-time monitoring of pressure, gas
+composition, and subsurface conditions is imperative [171]. Finally,
+investing in research and development to create new materials with
+higher capacities, better kinetics, and lower environmental impacts
+
+7. Safety considerations in hydrogen storage technologies
+Hydrogen leakage is a persistent challenge due to hydrogen’s small
+molecular size and lack of sensory indicators. Even well-engineered
+systems can leak through microscopic openings [178]. While minor
+leaks may not create immediate hazards, accumulation in enclosed
+spaces can lead to flammable mixtures or, in rare cases, asphyxiation [179]. Unlike natural gas, hydrogen cannot be effectively odorized
+for safety because common additives may separate or interfere with
+24
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+Table 9
+Life cycle carbon footprint comparison of hydrogen storage technologies.
+Storage technology
+
+Carbon footprint (kg
+CO2 -eq/kg H2 )
+
+Primary contributing factors
+
+Environmental
+sustainability
+
+References
+
+Compressed gas
+(350 bar)
+Compressed gas
+(700 bar)
+Liquid hydrogen
+
+200
+
+Most sustainable
+
+[172,173]
+
+Moderate
+
+[172,173]
+
+Moderate
+
+[174,175]
+
+LOHC Storage
+
+300–500
+
+Moderate
+
+[174,176]
+
+Ammonia storage
+
+450–650
+
+Moderate–high
+
+[174,177]
+
+MOF-based storage
+
+800–1200
+
+High impact
+
+[172,174]
+
+Metal hydride
+storage
+Gasoline tank (steel)
+
+2057
+
+Highest impact
+
+[172,173]
+
+3.5
+
+Aluminum extraction, carbon
+fiber production
+Higher carbon fiber content,
+pressure vessel materials
+Energy-intensive liquefaction,
+cryogenic infrastructure
+Organic carrier synthesis, catalyst
+production
+Haber–Bosch process,
+high-pressure infrastructure
+Complex synthesis, organic ligand
+production
+Energy-intensive alloy production,
+steel vessel
+Steel production and forming
+
+[173]
+
+Gasoline tank
+(plastic)
+
+1.8
+
+HDPE production and forming
+
+Reference
+comparison
+Reference
+comparison
+
+329
+150–250
+
+fuel cells and catalysts [13]. In compressed gas storage (350–700 bar),
+most leaks occur at joints and valves, not the tanks themselves [27].
+Cryogenic systems face additional issues from material stress due to
+extreme cold. Leaks in liquid hydrogen are often spotted by white vapor
+clouds formed from condensed moisture, which can drift unpredictably
+before hydrogen warms and rises [13]. In solid-state systems like metal
+hydrides, MOFs, or LOHCs, hydrogen is chemically or physically bound,
+reducing the risk of leak during storage. However, leaks can still occur
+during charging or release. Impurities such as oxygen or water can
+trigger unwanted hydrogen release in some hydrides [99]. In LOHCs,
+hydrogen remains secure in storage but must be carefully managed during release; catalyst degradation can cause incomplete conversion and
+system instability [146]. Preventing leaks requires tailored approaches,
+routine inspection, compatible materials, and containment layers for
+compressed and cryogenic systems, and strict control of temperature
+and contamination for material-based storage [28].
+Emergency Protocols: Hydrogen’s wide flammability range (4%–75%
+in air) and low ignition energy (≈0.02 mJ) [9] demand strict emergency
+protocols for all storage systems, including reliable detection, personnel
+training, clear response procedures, and coordination with local responders. Modern facilities use multiple detection tools such as catalytic
+bead sensors for low concentrations and thermal conductivity detectors
+for higher ones [180]. According to hydrogen safety panel guidance,
+sensors should be placed near valves, ceilings, and escape routes [181],
+linked to alarms and emergency shutdown systems. Regular drills, as
+recommended by NFPA [182], are essential for readiness. Human error
+accounts for about 60% of incidents [13], so staff must be prepared to
+recognize hydrogen hazards, operate equipment properly, and respond
+to leaks or fires. Given that hydrogen flames are nearly invisible
+and emit little heat, firefighting protocols advise letting controlled
+hydrogen fires burn unless the leak can be stopped to avoid explosion
+risk [183]. Adequate ventilation-at least six air changes per hour
+with sensor-triggered increases-is vital for indoor systems [184]. Postincident analysis should include root-cause investigation and sharing
+of lessons learned, as recommended by DOE’s Safety Panel [185]. For
+larger sites, joint planning and training with first responders ensure
+effective external support and safe coordination during emergencies.
+System Failures: Failures in hydrogen storage systems vary by
+technology but often result from mechanical stress, thermal imbalance,
+control faults, or material degradation. Compressed gas tanks can fail
+due to fatigue, impact damage, or design flaws. Though composite
+tanks undergo rigorous testing [186], analysis of 71 incidents revealed
+that over-pressurization, poor maintenance, or incompatible materials
+were often to blame [187]. Cryogenic systems are vulnerable to insulation loss, leading to rapid boil-off and pressure spikes. In hydride-based
+
+[173]
+
+systems, poor heat transfer during charging or discharging can reduce
+performance or damage materials [99]. Effective thermal design and
+monitoring are critical to avoid such failures.
+Modern systems rely on sensors, valves, and logic controls to manage operation, but these can fail. One recorded incident involved
+premature rupture disc activation due to control malfunction, which
+safely vented the tank but emphasized the need for redundant safeguards [188]. Material embrittlement is another concern-hydrogen
+diffusion weakens some metals, cutting fracture toughness by up to
+90% [189]. Proper material selection and inspection are essential.
+Impurities such as CO or moisture can also damage storage media or
+poison catalysts [146]. Mitigation includes redundant pressure relief
+devices, fail-safe system design, real-time monitoring, and strict adherence to safety standards like ISO 19881 and ASME Section VIII [186,
+190]. A robust safety framework must combine technical safeguards
+with training, oversight, and a strong safety culture.
+8. Conclusion, research gaps, and future directions
+Hydrogen storage technologies have advanced considerably in recent years, with significant progress across diverse material systems
+and storage approaches. These advancements target longstanding challenges in efficiency, safety, and scalability, contributing to the broader
+shift toward a reliable and sustainable hydrogen economy. This comprehensive study of hydrogen storage technologies reveals that while
+significant progress has been made across multiple storage approaches,
+each method presents distinct trade-offs that affects its suitability for
+specific applications. Compressed gas storage offers technological maturity but requires high-pressure infrastructure, liquid hydrogen provides
+high density but demands continuous energy input, physical adsorption methods show promise but typically need low temperatures, and
+chemical storage approaches offer safety advantages but often require
+elevated temperatures for hydrogen release. Recent breakthroughs in
+formic acid systems, solid-state reticular materials, and photocatalytic
+approaches that harness renewable energy demonstrate significant advancements. However, the fundamental challenge of developing storage technologies that operate efficiently under ambient conditions is
+still persist.
+The most critical research gap identified is the lack of ambientcondition hydrogen storage systems that achieve practical densities
+without extreme operational requirements, particularly constraining
+transportation and portable applications where normal operating conditions are essential. Immediate research priorities must focus on developing advanced materials with tailored thermodynamic properties
+25
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+
+for room-temperature operation, integrating nanostructured systems
+to improve kinetics and reduce activation barriers, and creating hybrid storage systems that combine multiple mechanisms to optimize
+performance across different conditions. These efforts should prioritize novel metal hydride compositions with reduced enthalpy requirements, porous materials with enhanced ambient-temperature capacities, and cost-effective catalysts that enable efficient operation at
+moderate temperatures and pressures.
+Advancing hydrogen storage technologies will require a strategic
+focus on several critical fronts: the development of materials that perform reliably under ambient conditions, the design of efficient catalysts
+for chemical storage systems, and the integration of lab-scale innovations into robust, deployable systems. Equally important are rigorous
+techno-economic analyses that assess large scale feasibility and guide
+investment decisions. Achieving these goals will depend on close collaboration among universities driving fundamental research, industry
+partners translating discoveries into engineering solutions, and government agencies providing targeted funding and regulatory support.
+Artificial intelligence and machine learning can transform hydrogen
+storage research by accelerating discovery and optimization across all
+areas. These methods accelerate the discovery process by enabling highthroughput screening of materials and identifying optimal operating
+parameters without the need for extensive experimentation. At the
+same time, hybrid storage systems that combine multiple mechanismssuch as physical and chemical storage, or solid-state and liquid-phase
+systems-are gaining attention for their ability to meet a wide range
+of application demands. These advances point toward a more flexible
+and application-specific future, where hydrogen storage technologies
+can be tailored to meet both performance requirements and operational
+constraints.
+
+[9] Hoseyni SM, Mostafa MOM, Cordiner J. Mitigating risks in hydrogen-powered
+transportation: A comprehensive risk assessment for hydrogen refuelling
+stations, vehicles, and garages. Int J Hydrog Energy 2024;91:1025–44.
+[10] Bartela Ł. A hybrid energy storage system using compressed air and hydrogen
+as the energy carrier. Energy 2020;196:117088.
+[11] Geweda A, Saif AGH, Zayed ME, Kabeel A, Zafar S, Khalid M. Recent advances
+in hybrid compressed air energy storage systems: Technology categorization, integration potentials with renewable energy systems, and retrofitting
+improvement strategies. Alex Eng J 2025;115:12–29.
+[12] Phiri R, Rangappa SM, Siengchin S, Oladijo OP, Ozbakkaloglu T. Advances in lightweight composite structures and manufacturing technologies: A
+comprehensive review. Heliyon 2024.
+[13] Aziz M. Liquid hydrogen: A review on liquefaction, storage, transportation, and
+safety. Energies 2021;14(18):5917.
+[14] Bhuiyan MMH, Siddique Z. Hydrogen as an alternative fuel: A comprehensive review of challenges and opportunities in production, storage, and
+transportation. Int J Hydrog Energy 2025;102:1026–44.
+[15] Hirose K. Handbook of hydrogen storage: New materials for future energy
+storage. John Wiley & Sons; 2010.
+[16] Abe JO, Popoola A, Ajenifuja E, Popoola OM. Hydrogen energy, economy and storage: Review and recommendation. Int J Hydrog Energy
+2019;44(29):15072–86.
+[17] Usman MR. Hydrogen storage methods: Review and current status. Renew
+Sustain Energy Rev 2022;167:112743.
+[18] Ratnakar RR, Gupta N, Zhang K, van Doorne C, Fesmire J, Dindoruk B,
+et al. Hydrogen supply chain and challenges in large-scale LH2 storage and
+transportation. Int J Hydrog Energy 2021;46(47):24149–68.
+[19] Schlapbach L, Züttel A. Hydrogen-storage materials for mobile applications.
+Nature 2001;414(6861):353–8.
+[20] Ilyushechkin A, Schoeman L, Carter L, Hla SS. Material challenges and hydrogen
+embrittlement assessment for hydrogen utilisation in industrial scale. Hydrogen
+2023;4(3):599–619.
+[21] Bagherian MA, Mehranzamir K. A comprehensive review on renewable energy
+integration for combined heat and power production. Energy Convers Manage
+2020;224:113454.
+[22] Taghavi M, Lee C-J. Development of novel hydrogen liquefaction structures
+based on waste heat recovery in diffusion-absorption refrigeration and power
+generation units. Energy Convers Manage 2024;302:118056.
+[23] Zhang T, Uratani J, Huang Y, Xu L, Griffiths S, Ding Y. Hydrogen liquefaction
+and storage: Recent progress and perspectives. Renew Sustain Energy Rev
+2023;176:113204.
+[24] Osman AI, Nasr M, Eltaweil AS, Hosny M, Farghali M, Al-Fatesh AS, et al.
+Advances in hydrogen storage materials: Harnessing innovative technology,
+from machine learning to computational chemistry, for energy storage solutions.
+Int J Hydrog Energy 2024.
+[25] Elberry AM, Thakur J, Santasalo-Aarnio A, Larmi M. Large-scale compressed
+hydrogen storage as part of renewable electricity storage systems. Int J Hydrog
+Energy 2021;46(29):15671–90.
+[26] Aceves SM, Espinosa-Loza F, Ledesma-Orozco E, Ross TO, Weisberg AH,
+Brunner TC, et al. High-density automotive hydrogen storage with cryogenic
+capable pressure vessels. Int J Hydrog Energy 2010;35(3):1219–26.
+[27] Moradi R, Groth KM. Hydrogen storage and delivery: Review of the state of
+the art technologies and risk and reliability analysis. Int J Hydrog Energy
+2019;44(23):12254–69.
+[28] Ghorbani B, Zendehboudi S, Saady NMC, Duan X, Albayati TM. Strategies to
+improve the performance of hydrogen storage systems by liquefaction methods:
+A comprehensive review. ACS Omega 2023;8(21):18358–99.
+[29] Aceves SM, Petitpas G, Espinosa-Loza F, Matthews MJ, Ledesma-Orozco E. Safe,
+long range, inexpensive and rapidly refuelable hydrogen vehicles with cryogenic
+pressure vessels. Int J Hydrog Energy 2013;38(5):2480–9.
+[30] Xu J, Huang F, Chen X, Yang Q, Zhang H. Design and optimization of cryogenic
+supercritical hydrogen storage system coupled with mixed refrigerant and gas
+expansion cycle. Appl Therm Eng 2024;243:122606.
+[31] Song Z, Xu J, Chen X. Design and optimization of a high-density cryogenic
+supercritical hydrogen storage system based on helium expansion cycle. Int J
+Hydrog Energy 2024;49:1401–18.
+[32] Yang J, Li Y, Tan H. Study on performance comparison of two hydrogen
+liquefaction processes based on the claude cycle and the Brayton refrigeration
+cycle. Processes 2023;11(3):932.
+[33] Chen Z, Kirlikovali KO, Idrees KB, Wasson MC, Farha OK. Porous materials for
+hydrogen storage. Chem 2022;8(3):693–716.
+[34] Yang Z, Xia Y, Mokaya R. Enhanced hydrogen storage capacity of high surface
+area zeolite-like carbon materials. J Am Chem Soc 2007;129(6):1673–9.
+[35] Niaz S, Manzoor T, Pandith AH. Hydrogen storage: Materials, methods and
+perspectives. Renew Sustain Energy Rev 2015;50:457–69.
+[36] Mahmoud LA, Rowlandson JL, Fermin DJ, Ting VP, Nayak S. Porous carbons:
+A class of nanomaterials for efficient adsorption-based hydrogen storage. RSC
+Appl Interfaces 2025.
+[37] Dillon A, Jones K, Bekkedahl T, Kiang C, Bethune D, Heben M. Storage of
+hydrogen in single-walled carbon nanotubes. Nature 1997;386(6623):377–9.
+
+CRediT authorship contribution statement
+Aimen Laalam: Writing – review & editing, Writing – original draft,
+Validation, Data curation, Conceptualization. Parisa Bazazi: Writing
+– review & editing, Writing – original draft, Validation, Supervision,
+Funding acquisition, Data curation.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to
+influence the work reported in this paper.
+References
+[1] Lykas P, Georgousis N, Bellos E, Tzivanidis C. A comprehensive review of solardriven multigeneration systems with hydrogen production. Int J Hydrog Energy
+2023;48(2):437–77.
+[2] Osman AI, Mehta N, Elgarahy AM, Hefny M, Al-Hinai A, Al-Muhtaseb AH, et al.
+Hydrogen production, storage, utilisation and environmental impacts: A review.
+Environ Chem Lett 2022;1–36.
+[3] International Energy Agency (IEA). Global hydrogen review 2024. 2024, Licence: CC BY 4.0, IEA, Paris, https://www.iea.org/reports/global-hydrogenreview-2024.
+[4] Sharma S, Ghoshal SK. Hydrogen the future transportation fuel: From
+production to applications. Renew Sustain Energy Rev 2015;43:1151–8.
+[5] Rasul M, Hazrat M, Sattar M, Jahirul M, Shearer M. The future of hydrogen:
+Challenges on production, storage and applications. Energy Convers Manage
+2022;272:116326.
+[6] Heinemann N, Alcalde J, Miocic JM, Hangx SJ, Kallmeyer J, OstertagHenning C, et al. Enabling large-scale hydrogen storage in porous media–the
+scientific challenges. Energy Environ Sci 2021;14(2):853–64.
+[7] Raza A, Arif M, Glatz G, Mahmoud M, Al Kobaisi M, Alafnan S, et al. A
+holistic overview of underground hydrogen storage: Influencing factors, current
+understanding, and outlook. Fuel 2022;330:125636.
+[8] Li J-Q, Li J-CL, Park K, Kwon J-T. Investigation on the changes of pressure and
+temperature in high pressure filling of hydrogen storage tank. Case Stud Therm
+Eng 2022;37:102143.
+26
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+[38] Schimmel HG, Kearley GJ, Nijkamp MG, Visser CT, de Jong KP, Mulder FM.
+Hydrogen adsorption in carbon nanostructures: Comparison of nanotubes,
+fibers, and coals. Chem Eur J 2003;9(19):4764–70.
+[39] Zhao Y, Zhang J, Akins DL, Lee JW. Effect of composition on dehydrogenation
+of mesoporous silica/ammonia borane nanocomposites. Ind Eng Chem Res
+2011;50(17):10024–8.
+[40] Xia Y, Mokaya R. Ordered mesoporous carbon hollow spheres nanocast
+using mesoporous silica via chemical vapor deposition. Adv Mater
+2004;16(11):886–91.
+[41] Wang H, Gao Q, Hu J. High hydrogen storage capacity of porous carbons
+prepared by using activated carbon. J Am Chem Soc 2009;131(20):7016–22.
+[42] Giasafaki D, Bourlinos A, Charalambopoulou G, Stubos A, Steriotis T. Synthesis
+and characterisation of nanoporous carbon–metal composites for hydrogen
+storage. Microporous Mesoporous Mater 2012;154:74–81.
+[43] Ariharan A, Ramesh K, Vinayagamoorthi R, Rani MS, Viswanathan B,
+Ramaprabhu S, et al. Biomass derived phosphorous containing porous carbon material for hydrogen storage and high-performance supercapacitor
+applications. J Energy Storage 2021;35:102185.
+[44] Grady C, McWhorter S, Sulic M, Sprik SJ, Thornton MJ, Brooks KP, et al.
+Design tool for estimating adsorbent hydrogen storage system characteristics
+for light-duty fuel cell vehicles. Int J Hydrog Energy 2022;47(69):29847–57.
+[45] Kedzierski K, Rytel K, Barszcz B, Majchrzycki L. Single-wall carbon nanohorn
+Langmuir–Schaefer films. Langmuir 2023;39(34):12124–31.
+[46] Gao J, Xie J, Liu X, Hu H. Preparation and evaluation of modified cyanobacteria-derived activated carbon for H 2 adsorption. RSC Adv
+2017;7(33):20412–21.
+[47] Furukawa H, Cordova KE, O’Keeffe M, Yaghi OM. The chemistry and
+applications of metal-organic frameworks. Science 2013;341(6149):1230444.
+[48] Lin R-B, Xiang S, Zhou W, Chen B. Microporous metal-organic framework
+materials for gas separation. Chem 2020;6(2):337–63.
+[49] Murray LJ, Dincă M, Long JR. Hydrogen storage in metal–organic frameworks.
+Chem Soc Rev 2009;38(5):1294–314.
+[50] Raptopoulou CP. Metal-organic frameworks: Synthetic methods and potential
+applications. Materials 2021;14(2):310.
+[51] Sutton AL, Mardel JI, Hill MR. Metal-organic frameworks (MOFs) as
+hydrogen storage materials at near-ambient temperature. Chem Eur J
+2024;30(44):e202400717.
+[52] Zeleňák V, Saldan I. Factors affecting hydrogen adsorption in metal–organic
+frameworks: A short review. Nanomaterials 2021;11(7):1638.
+[53] Jaramillo DE, Jiang HZ, Evans HA, Chakraborty R, Furukawa H,
+Brown CM, et al. Ambient-temperature hydrogen storage via vanadium
+(II)-dihydrogen complexation in a metal–organic framework. J Am Chem Soc
+2021;143(16):6248–56.
+[54] zohra Zeggai F, Ait-Touchente Z, Bachari K, Elaissari A. Investigation of metalorganic frameworks (MOFs): Synthesis, roperties, and pplications-an in-depth
+review. Chem Phys Impact 2025;100864.
+[55] Wu M-X, Yang Y-W. Applications of covalent organic frameworks (COFs):
+From gas storage and separation to drug delivery. Chin Chem Lett
+2017;28(6):1135–43.
+[56] Furukawa H, Yaghi OM. Storage of hydrogen, methane, and carbon dioxide in
+highly porous covalent organic frameworks for clean energy applications. J Am
+Chem Soc 2009;131(25):8875–83.
+[57] Samanta P, Chandra P, Ghosh SK. Hydroxy-functionalized hyper-cross-linked
+ultra-microporous organic polymers for selective CO2 capture at room
+temperature. Beilstein J Org Chem 2016;12(1):1981–6.
+[58] Mastalerz M. The next generation of shape-persistant zeolite analogues:
+Covalent organic frameworks. Angew Chem Int Ed 2008;47(3):445–7.
+[59] Djokic M, Mendoza-Cortes JL. Multi-binding sites united in covalent-organic
+frameworks (MSUCOF) for H2 storage and delivery at room temperature.
+Energy Fuels 2023;38(5):4711–20.
+[60] Yuan Y, Zhu G. Porous aromatic frameworks as a platform for multifunctional
+applications. ACS Central Sci 2019;5(3):409–18.
+[61] Mason JA, Veenstra M, Long JR. Evaluating metal–organic frameworks for
+natural gas storage. Chem Sci 2014;5(1):32–51. http://dx.doi.org/10.1039/
+C3SC52633J.
+[62] Frost H, Düren T, Snurr RQ. Effects of surface area, free volume, and heat of
+adsorption on hydrogen uptake in metal-organic frameworks. J Phys Chem B
+2006;110(19):9565–70. http://dx.doi.org/10.1021/jp060433+.
+[63] Sumida K, Rogow DL, Mason JA, McDonald TM, Bloch ED, Herm ZR, et al.
+Hydrogen storage and carbon dioxide capture in an iron-based sodalite-type
+metal–organic framework (Fe-BTT) discovered via high-throughput methods.
+Chem Rev 2012;112(2):724–81. http://dx.doi.org/10.1021/cr2003272.
+[64] Furukawa H, Cordova KE, O’Keeffe M, Yaghi OM. Ultrahigh porosity in metalorganic frameworks. Science 2013;341(6149):1230444. http://dx.doi.org/10.
+1126/science.1230444.
+[65] Farha OK, Spokoyny AM, Mulfort KL, Galli S, Hupp JT, Mirkin CA. Designing
+higher surface area metal–organic frameworks: Are triple bonds better than
+phenyls? J Am Chem Soc 2012;134(36):15016–21. http://dx.doi.org/10.1021/
+ja3055639.
+
+[66] El-Kaderi HM, Hunt JR, Mendoza-Cortés JL, Côté AP, Taylor RE, O’Keeffe M,
+et al. Covalent organic frameworks: Design, synthesis, and functions. Science
+2007;316(5822):268–72. http://dx.doi.org/10.1126/science.1139915.
+[67] Ben T, Ren H, Ma S, Cao D, Lan J, Jing X, et al. Targeted synthesis of a
+porous aromatic framework with high stability and exceptionally high surface
+area. Angew Chem Int Ed 2009;48(50):9457–60. http://dx.doi.org/10.1002/
+anie.200904637.
+[68] Li P, Xu K, Yao N, Zhai X, Tian E, Yan F, et al. Enhanced room-temperature
+hydrogen storage by CuNi nanoparticles decorated in metal-organic framework
+UiO-66(Zr). Int J Hydrog Energy 2024;56:313–22. http://dx.doi.org/10.1016/
+j.ijhydene.2023.12.178.
+[69] Lee H, Lee J-w, Kim DY, Park J, Seo Y-T, Zeng H, et al. Tuning clathrate
+hydrates for hydrogen storage. Nature 2005;434(7034):743–6.
+[70] Mao WL, Mao H-k, Goncharov AF, Struzhkin VV, Guo Q, Hu J, et al. Hydrogen
+clusters in clathrate hydrate. Science 2002;297(5590):2247–9.
+[71] Florusse LJ, Peters CJ, Schoonman J, Hester KC, Koh CA, Dec SF, et al. Stable
+low-pressure hydrogen clusters stored in a binary clathrate hydrate. Science
+2004;306(5695):469–71.
+[72] Su F, Bray CL, Tan B, Cooper AI. Rapid and reversible hydrogen storage in clathrate hydrates using emulsion-templated polymers. Adv Mater
+2008;20(14):2663–6.
+[73] Farrando-Perez J, Balderas-Xicohtencatl R, Cheng Y, Daemen L, CuadradoCollados C, Martinez-Escandell M, et al. Rapid and efficient hydrogen clathrate
+hydrate formation in confined nanospace. Nat Commun 2022;13(1):5953.
+[74] Nguyen NN, Berger R, Wagner M, Thiel J, Butt H-J, Graf R. ‘‘Liquid-like’’
+water in clathrates induced by host–guest hydrogen bonding. J Phys Chem C
+2021;125(28):15751–7.
+[75] Gupta A, Baron GV, Perreault P, Lenaerts S, Ciocarlan R-G, Cool P, et
+al. Hydrogen clathrates: Next generation hydrogen storage materials. Energy
+Storage Mater 2021;41:69–107.
+[76] Davoodabadi A, Mahmoudi A, Ghasemi H. The potential of hydrogen hydrate
+as a future hydrogen storage medium. Iscience 2021;24(1).
+[77] Bhatia SK, Myers AL. Optimum conditions for adsorptive storage. Langmuir
+2006;22(4):1688–700.
+[78] Mohan M, Sharma VK, Kumar EA, Gayathri V. Hydrogen storage in carbon
+materials—A review. Energy Storage 2019;1(2):e35.
+[79] Duong DD. Adsorption analysis: Equilibria and kinetics. 1998, (No Title).
+[80] Fierro V, Zhao W, Izquierdo M, Aylon E, Celzard A. Adsorption and compression
+contributions to hydrogen storage in activated anthracites. Int J Hydrog Energy
+2010;35(17):9038–45.
+[81] Nguyen-Thuy T, Le-Hoang P, Vu NH, Le TN-M, Doan TLH, Kuo J-L, et al.
+Hydrogen adsorption mechanism of MOF-74 metal–organic frameworks: An
+insight from first principles calculations. RSC Adv 2020;10(72):43940–9.
+[82] Getman RB, Bae Y-S, Wilmer CE, Snurr RQ. Review and analysis of molecular
+simulations of methane, hydrogen, and acetylene storage in metal–organic
+frameworks. Chem Rev 2012;112(2):703–23.
+[83] Huang N, Wang P, Jiang D. Covalent organic frameworks: A materials platform
+for structural and functional designs. Nat Rev Mater 2016;1(10):1–19.
+[84] Klontzas E, Mavrandonakis A, Tylianakis E, Froudakis GE. Improving hydrogen
+storage capacity of MOF by functionalization of the organic linker with lithium
+atoms. Nano Lett 2008;8(6):1572–6.
+[85] Suri M, Dornfeld M, Ganz E. Calculation of hydrogen storage capacity of
+metal-organic and covalent-organic frameworks by spillover. J Chem Phys
+2009;131(17).
+[86] Suh MP, Park HJ, Prasad TK, Lim D-W. Hydrogen storage in metal–organic
+frameworks. Chem Rev 2012;112(2):782–835.
+[87] Zhang X, Lin R-B, Wang J, Wang B, Liang B, Yildirim T, et al. Optimization
+of the pore structures of MOFs for record high hydrogen volumetric working
+capacity. Adv Mater 2020;32(17):e1907995. http://dx.doi.org/10.1002/adma.
+201907995.
+[88] Ahmed A, Seth S, Purewal J, Wong-Foy AG, Veenstra M, Matzger AJ, et al.
+Exceptional hydrogen storage achieved by screening nearly half a million metalorganic frameworks. Nat Commun 2019;10(1):1568. http://dx.doi.org/10.1038/
+s41467-019-09365-w.
+[89] Staffell I, Scamman D, Abad AV, Balcombe P, Dodds PE, Ekins P, et al. The
+role of hydrogen and fuel cells in the global energy system. Energy Environ Sci
+2019;12(2):463–91.
+[90] Schmidt O, Gambhir A, Staffell I, Hawkes A, Nelson J, Few S. Future cost and
+performance of water electrolysis: An expert elicitation study. Int J Hydrog
+Energy 2017;42(52):30470–92.
+[91] Li Q, Lu Y, Luo Q, Yang X, Yang Y, Tan J, et al. Thermodynamics and kinetics
+of hydriding and dehydriding reactions in Mg-based hydrogen storage materials.
+J Magnes Alloy 2021;9(6):1922–41.
+[92] Rather S-u, Zacharia R, Hwang SW, Kim AR, Nahm KS, et al. Surface adsorption
+and micropore filling of the hydrogen in activated MWCNTs. Int J Hydrog
+Energy 2008;33(22):6710–8.
+[93] Sakintuna B, Lamari-Darkrim F, Hirscher M. Metal hydride materials for solid
+hydrogen storage: A review. Int J Hydrog Energy 2007;32(9):1121–40.
+27
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+[94] Apostolou D. Refuelling scenarios of a light urban fuel cell vehicle with
+metal hydride hydrogen storage. Comparison with compressed hydrogen storage
+counterpart. Int J Hydrog Energy 2021;46(79):39509–22. http://dx.doi.org/10.
+1016/j.ijhydene.2021.09.157.
+[95] Johnson SR, Anderson PA, Edwards PP, Gameson I, Prendergast JW, AlMamouri M, et al. Chemical activation of MgH2 ; a new route to superior
+hydrogen storage materials. Chem Commun 2005;(22):2823. http://dx.doi.org/
+10.1039/b503085d.
+[96] Bogdanović B, Schwickardi M. Ti-doped alkali metal aluminium hydrides
+as potential novel reversible hydrogen storage materials. J Alloys Compd
+1997;253–254:1–9. http://dx.doi.org/10.1016/s0925-8388(96)03049-6.
+[97] Hanada N, Ichikawa T, Hino S, Fujii H. Remarkable improvement of hydrogen sorption kinetics in magnesium catalyzed with Nb2 O5 . ChemInform
+2006;37(42). http://dx.doi.org/10.1002/chin.200642011.
+[98] Hong H, Guo H, Cui Z, Ball A, Nie B. Structure modification of magnesium
+hydride for solid hydrogen storage. Int J Hydrog Energy 2024;78:793–804.
+http://dx.doi.org/10.1016/j.ijhydene.2024.06.327.
+[99] Paskevicius M, Sheppard DA, Buckley CE. Thermodynamic changes in
+mechanochemically synthesized magnesium hydride nanoparticles. J Am Chem
+Soc 2010;132(14):5077–83. http://dx.doi.org/10.1021/ja908398u.
+[100] De Jongh PE, Adelhelm P. Nanosizing and nanoconfinement: New strategies
+towards meeting hydrogen storage goals. ChemSusChem 2010;3(12):1332–48.
+http://dx.doi.org/10.1002/cssc.201000248.
+[101] Hou Z, Zhang X, Guo S, Liu B, Xu L, Qi Y, et al. Hydrogen storage performance
+of MXenes: Intrinsic properties and catalytic effects. Int J Hydrog Energy
+2025;101:904–45. http://dx.doi.org/10.1016/j.ijhydene.2024.12.486.
+[102] Varin R, Czujko T, Wronski Z. Particle size, grain size and 𝛾-MgH2
+effects on the desorption properties of nanocrystalline commercial magnesium hydrideprocessed by controlled mechanical milling. Nanotechnology
+2006;17(15):3856.
+[103] Aguey-Zinsou K, Ares-Fernández J. Synthesis of colloidal magnesium: A near
+room temperature store for hydrogen. Chem Mater 2007;20(2):376–8. http:
+//dx.doi.org/10.1021/cm702897f.
+[104] Li W, Li C, Ma H, Chen J. Magnesium nanowires: Enhanced kinetics for
+hydrogen absorption and desorption. J Am Chem Soc 2007;129(21):6710–1.
+http://dx.doi.org/10.1021/ja071323z.
+[105] Pang Y, Liu Y, Gao M, Ouyang L, Liu J, Wang H, et al. A mechanicalforce-driven physical vapour deposition approach to fabricating complex
+hydride nanostructures. Nat Commun 2014;5(1). http://dx.doi.org/10.1038/
+ncomms4519.
+[106] Xia G, Tan Y, Chen X, Sun D, Guo Z, Liu H, et al. Monodisperse magnesium hydride nanoparticles uniformly self-assembled on graphene. Adv Mater
+2015;27(39):5981–8. http://dx.doi.org/10.1002/adma.201502005.
+[107] Yan F, Alfonsín EM, Ngene P, De Graaf S, De Luca O, Cao H, et al. MgH2
+nanoparticles confined in reduced graphene oxide pillared with organosilica:
+A novel type of hydrogen storage material. Nanoscale 2024;16(33):15770–81.
+http://dx.doi.org/10.1039/d4nr01524j.
+[108] Callini E, Szilagyi PA, Paskevicius M, Stadie NP, Rehault J, Buckley CE,
+et al. Stabilization of volatile Ti(BH4 )3 by nano-confinement in a metal–
+organic framework. Chem Sci 2015;7(1):666–72. http://dx.doi.org/10.1039/
+c5sc03517a.
+[109] Li M, Yin W, Pan J, Zhu Y, Sun N, Zhang X, et al. Hydrogen spillover as a
+promising strategy for boosting heterogeneous catalysis and hydrogen storage.
+Chem Eng J 2023;471:144691.
+[110] Miskan SN, Abdulkadir BA, Setiabudi HD. Materials on the frontier: A review on
+groundbreaking solutions for hydrogen storage applications. Chem Phys Impact
+2025;100862. http://dx.doi.org/10.1016/j.chphi.2025.100862.
+[111] Dieterich M, Pohlmann C, Bürger I, Linder M, Röntzsch L. Long-term cycle stability of metal hydride-graphite composites. Int J Hydrog Energy
+2015;40(46):16375–82.
+[112] Ouyang L, Chen K, Jiang J, Yang X-S, Zhu M. Hydrogen storage in light-metal
+based systems: A review. J Alloys Compd 2020;829:154597.
+[113] Goc K. Hydrogen storage properties of magnesium hydride nanocomposites with
+graphite and transition metals. Shibaura Institute of Technology, Agh University
+of Science and Technology,; 2018.
+[114] Cohen R, West K, Wernick J. Degradation of LaNi5 by temperature-induced
+cycling. J Less Common Met 1980;73(2):273–9.
+[115] Zaluska A, Zaluski L, Ström-Olsen J. Structure, catalysis and atomic reactions on
+the nano-scale: A systematic approach to metal hydrides for hydrogen storage.
+Appl Phys A 2001;72:157–65.
+[116] Reilly J, Wiswall R. Formation and properties of iron titanium hydride. Inorg
+Chem 1974;13(1):218–22.
+[117] Nielsen TK, Besenbacher F, Jensen TR. Nanoconfined hydrides for energy
+storage. Nanoscale 2011;3(5):2086–98. http://dx.doi.org/10.1039/c0nr00725k.
+[118] Zlotea C, Campesi R, Cuevas F, Leroy E, Dibandjo P, Volkringer C, et
+al. Pd nanoparticles embedded into a metal-organic framework: Synthesis,
+structural characteristics, and hydrogen sorption properties. J Am Chem Soc
+2010;132(9):2991–7. http://dx.doi.org/10.1021/ja9084995.
+[119] Aguey-Zinsou K-F, Ares-Fernández JR. Hydrogen in magnesium: New perspectives toward functional stores. Energy Environ Sci 2010;3(5):526–43. http:
+//dx.doi.org/10.1039/b921645f.
+
+[120] Gross AF, Vajo JJ, Van Atta SL, Olson GL. Enhanced hydrogen storage kinetics
+of LiBH4 in nanoporous carbon scaffolds. J Phys Chem C 2008;112(14):5651–7.
+http://dx.doi.org/10.1021/jp711066t.
+[121] Vajo JJ, Skeith SL, Mertens F. Reversible storage of hydrogen in destabilized LiBH4 . J Phys Chem B 2005;109(9):3719–22. http://dx.doi.org/10.1021/
+jp040769o.
+[122] Huot J, Liang G, Boily S, Van Neste A, Schulz R. Structural study and
+hydrogen sorption kinetics of ball-milled magnesium hydride. J Alloys Compd
+1999;293–295:495–500. http://dx.doi.org/10.1016/S0925-8388(99)00474-0.
+[123] Barkhordarian G, Klassen T, Bormann R. Effect of Nb2 O5 content on hydrogen
+reaction kinetics of Mg. J Alloys Compd 2004;364(1–2):242–6. http://dx.doi.
+org/10.1016/S0925-8388(03)00530-9.
+[124] de Jongh PE, Wagemans RW, Eggenhuisen TM, Dauvillier BS, Radstake PB,
+Meeldijk JD, et al. The preparation of carbon-supported magnesium nanoparticles using melt infiltration. Chem Mater 2007;19(24):6052–7. http://dx.doi.
+org/10.1021/cm702205v.
+[125] Xiong R, Sang G, Zhang G, Yan X, Li P, Yao Y, et al. Evolution of the
+active species and catalytic mechanism of Ti doped NaAlH4 for hydrogen
+storage. Int J Hydrog Energy 2017;42(9):6088–95. http://dx.doi.org/10.1016/
+j.ijhydene.2016.12.105.
+[126] Ren Z, Zhang X, Li H-W, Huang Z, Hu J, Gao M, et al. Titanium hydride
+nanoplates enable 5 wt% of reversible hydrogen storage by sodium alanate
+below 80 °C. Research 2021;2021:9819176. http://dx.doi.org/10.34133/2021/
+9819176.
+[127] Yuan Z, Zhang D, Fan G, Chen Y, Fan Y, Liu B. N-doped carbon coated Ti3 C2
+MXene as a high-efficiency catalyst for improving hydrogen storage kinetics
+and stability of NaAlH4 . Renew Energy 2022;188:778–87. http://dx.doi.org/
+10.1016/j.renene.2022.02.068.
+[128] Verma SK, Bhatnagar A, Shaz MA, Yadav TP. Mechanistic understanding of the
+superior catalytic effect of Al65Cu20Fe15 quasicrystal on de/re-hydrogenation
+of NaAlH4. Int J Hydrog Energy 2023;48(26):9762–75.
+[129] Zhang X, Ren Z, Zhang X, Gao M, Pan H, Liu Y. Triggering highly stable
+catalytic activity of metallic titanium for hydrogen storage in NaAlH 4 by
+preparing ultrafine nanoparticles. J Mater Chem A 2019;7(9):4651–9.
+[130] Hang Z, Jiang R, Shi L, Feng Y, Dong H, Yang L, et al. Sodium alanate insitu doped with Ti2C MXene with enhanced hydrogen storage properties. Int J
+Hydrog Energy 2024;71:250–8.
+[131] Comanescu C. Paving the way to the fuel of the future—Nanostructured
+complex hydrides. Int J Mol Sci 2022;24(1):143.
+[132] Baitalow F, Baumann J, Wolf G, Jaenicke-Rößler K, Leitner G. Thermal decomposition of B–N–H compounds investigated by using combined thermoanalytical
+methods. Thermochim Acta 2002;391(1–2):159–68.
+[133] Kondrat’ev YV, Butlak A, Kazakov I, Timoshkin A. Sublimation and thermal decomposition of ammonia borane: Competitive processes controlled by pressure.
+Thermochim Acta 2015;622:64–71.
+[134] Chen Y, Lang Z, Feng K, Wang K, Li Y, Kang Z, et al. Practical H2 supply from
+ammonia borane enabled by amorphous iron domain. Nat Commun 2024;15(1).
+http://dx.doi.org/10.1038/s41467-024-53574-x.
+[135] Fichtner M, Zhao-Karger Z, Hu J, Roth A, Weidler P. The kinetic properties of
+Mg(BH4 )2 infiltrated in activated carbon. Nanotechnology 2009;20(20):204029.
+http://dx.doi.org/10.1088/0957-4484/20/20/204029.
+[136] Mao J, Guo Z, Leng H, Wu Z, Guo Y, Yu X, et al. Reversible hydrogen storage
+in destabilized LiAlH4- MgH2- LiBH4 ternary-hydride system doped with TiF3.
+J Phys Chem C 2010;114(26):11643–9.
+[137] Guan S, Liu Y, Zhang H, Shen R, Wen H, Kang N, et al. Recent advances
+and perspectives on supported catalysts for heterogeneous hydrogen production
+from ammonia borane. Adv Sci 2023;10(21). http://dx.doi.org/10.1002/advs.
+202300726.
+[138] Chin SX, Vincent J, Razak NF, Daud N, Chowdhury S, Wongchoosuk C, et
+al. Advancements and challenges in sodium borohydride hydrogen storage: A
+comprehensive review of hydrolysis, regeneration, and recycling technologies.
+J Renew Sustain Energy 2025;17(1).
+[139] Ali S, Al-Barody SM, Albarody TMB, Nasif MS, Solangi E, Al-Challabi SN.
+Progress in additive-enhanced magnesium borohydride Mg (BH4) 2 for hydrogen storage applications: A systematic review. Int J Hydrog Energy
+2024;92:1172–201.
+[140] Stephens RD, Gross AF, Van Atta SL, Vajo JJ, Pinkerton FE. The kinetic
+enhancement of hydrogen cycling in NaAlH4 by melt infusion into nanoporous
+carbon aerogel. Nanotechnology 2009;20(20):204018. http://dx.doi.org/10.
+1088/0957-4484/20/20/204018.
+[141] Teichmann D, Arlt W, Wasserscheid P, Freymann R. A future energy supply
+based on Liquid Organic Hydrogen Carriers (LOHC). Energy Environ Sci
+2011;4(8):2767. http://dx.doi.org/10.1039/c1ee01454d.
+[142] Uijthof EMT, Chavan BS, Sluijer MJ, Komath VC, Van Der Ham AGJ, Van
+Den Berg H, et al. Liquid organic hydrogen carriers: Process design and
+economic analysis for manufacturing N-ethylcarbazole. J Adv Manuf Process
+2024;6(2). http://dx.doi.org/10.1002/amp2.10173.
+[143] Eblagon KM, Rentsch D, Friedrichs O, Remhof A, Zuettel A, Ramirez-Cuesta A,
+et al. Hydrogenation of 9-ethylcarbazole as a prototype of a liquid hydrogen
+carrier. Int J Hydrog Energy 2010;35(20):11609–21. http://dx.doi.org/10.1016/
+j.ijhydene.2010.03.068.
+28
+
+International Journal of Hydrogen Energy 169 (2025) 151057
+
+A. Laalam and P. Bazazi
+[144] Peters W, Seidel A, Herzog S, Bösmann A, Schwieger W, Wasserscheid P.
+Macrokinetic effects in perhydro-n-ethylcarbazole dehydrogenation and h 2
+productivity optimization by using egg-shell catalysts. Energy Environ Sci
+2015;8(10):3013–21.
+[145] Ojelade OA, Zaman SF. Dehydrogenation and hydrogenation cycle of
+methylcyclohexane–toluene system for liquid phase hydrogen storage:
+Thermodynamic reaction equilibrium investigation. Arab J Sci Eng
+2022;47(5):6223–32.
+[146] Preuster P, Papp C, Wasserscheid P. Liquid organic hydrogen carriers (LOHCs):
+Toward a hydrogen-free hydrogen economy. Acc Chem Res 2016;50(1):74–85.
+http://dx.doi.org/10.1021/acs.accounts.6b00474.
+[147] Cabrera G, Mora M, Gil-Burgos JP, Visbal R, Machuca-Martínez F, MosqueraVargas E. Liquid organic hydrogen carrier concepts and catalysts for hydrogenation and dehydrogenation reactions. Molecules 2024;29(20):4938. http:
+//dx.doi.org/10.3390/molecules29204938.
+[148] Tang C, Fei S, Lin GD, Liu Y. Natural liquid organic hydrogen carrier with
+low dehydrogenation energy: A first principles study. Int J Hydrog Energy
+2020;45(56):32089–97. http://dx.doi.org/10.1016/j.ijhydene.2020.08.143.
+[149] Grasemann M, Laurenczy G. Formic acid as a hydrogen source – recent
+developments and future trends. Energy Environ Sci 2012;5(8):8171. http:
+//dx.doi.org/10.1039/c2ee21928j.
+[150] Czaun M, Goeppert A, Kothandaraman J, May RB, Haiges R, Prakash GKS, et
+al. Formic acid as a hydrogen storage medium: Ruthenium-catalyzed generation
+of hydrogen from formic acid in emulsions. ACS Catal 2013;4(1):311–20.
+http://dx.doi.org/10.1021/cs4007974.
+[151] Filonenko GA, Van Putten R, Schulpen EN, Hensen EJ, Pidko EA. Highly efficient reversible hydrogenation of carbon dioxide to formates using a ruthenium
+PNP-pincer catalyst. ChemCatChem 2014;6(6):1526–30.
+[152] Sordakis K, Tang C, Vogt LK, Junge H, Dyson PJ, Beller M, et al. Homogeneous
+catalysis for sustainable hydrogen storage in formic acid and alcohols. Chem
+Rev 2017;118(2):372–433. http://dx.doi.org/10.1021/acs.chemrev.7b00182.
+[153] Sang R, Stein CAM, Schareina T, Hu Y, Léval A, Massa J, et al. Development of
+a practical formate/bicarbonate energy system. Nat Commun 2024;15(1):7268.
+[154] Peng Y, Sakoleva T, Rockstroh N, Bartling S, Schoenmakers P, Lim G, et al.
+State-of-the-art light-driven hydrogen generation from formic acid and utilization in enzymatic hydrogenations. ChemSusChem 2025;18(4):e202401811.
+[155] Wang J, Guo J, Zhou Q, Zhu Y, Liu Q, Hu S, et al. Unveiling the formic
+acid dehydrogenation dynamics steered by strength-controllable internal electric
+field from barium titanate. Chem Eng J 2024;491:151703. http://dx.doi.org/10.
+1016/j.cej.2024.151703.
+[156] Yu H, Cheng Z, Wen H, Wang H, Pei Q, Guan Y, et al. Releasing 8.0 wt.% H2
+from the LiBH4- 2LiNH2 composite within 5 min under light illumination. Adv
+Sci 2025;e01140.
+[157] Mekonnin AS, Wacławiak K, Humayun M, Zhang S, Ullah H. Hydrogen storage
+technology, and its challenges: A review. Catal (2073-4344) 2025;15(3).
+[158] Shin HK, Ha SK. A review on the cost analysis of hydrogen gas storage tanks
+for fuel cell vehicles. Energies 2023;16(13):5233.
+[159] Burke A, Ogden J, Fulton L, Cerniauskas S. Hydrogen storage and transport:
+Technologies and costs. 2024.
+[160] Negro V, Noussan M, Chiaramonti D. The potential role of ammonia for hydrogen storage and transport: A critical review of challenges and opportunities.
+Energies 2023;16(17):6192.
+[161] Rivard E, Trudeau M, Zaghib K. Hydrogen storage for mobility: A review.
+Materials 2019;12(12):1973.
+[162] Xinglin Y, Xiaohui L, Jiaqi Z, Quanhui H, Junhu Z. Progress in improving hydrogen storage properties of Mg-based materials. Mater Today Adv
+2023;19:100387.
+[163] Ahluwalia RK, Hua T, Peng J. On-board and off-board performance of
+hydrogen storage options for light-duty vehicles. Int J Hydrog Energy
+2012;37(3):2891–910.
+[164] Rusman N, Dahari M. A review on the current progress of metal hydrides
+material for solid-state hydrogen storage applications. Int J Hydrog Energy
+2016;41(28):12108–26.
+[165] Andersson J, Grönkvist S. Large-scale storage of hydrogen. Int J Hydrog Energy
+2019;44(23):11901–19.
+
+[166] Schmidt O, Melchior S, Hawkes A, Staffell I. Projecting the future levelized cost
+of electricity storage technologies. Joule 2019;3(1):81–100.
+[167] Hydrogen Council. Path to hydrogen competitiveness: A cost perspective. 2020, https://hydrogencouncil.com/wp-content/uploads/2020/01/Path-toHydrogen-Competitiveness_Full-Study-1.pdf. [Accessed 09 July 2024].
+[168] Eftekhari A, Fang B. Electrochemical hydrogen storage: Opportunities for
+fuel storage, batteries, fuel cells, and supercapacitors. Int J Hydrog Energy
+2017;42(40):25143–65. http://dx.doi.org/10.1016/j.ijhydene.2017.08.103.
+[169] Yu X, Tang Z, Sun D, Ouyang L, Zhu M. Recent advances and remaining
+challenges of nanostructured materials for hydrogen storage applications. Prog
+Mater Sci 2017;88:1–48. http://dx.doi.org/10.1016/j.pmatsci.2017.03.001.
+[170] Hosseini SE, Wahid MA. Hydrogen production from renewable and sustainable
+energy resources: Promising green energy carrier for clean development. Renew
+Sustain Energy Rev 2016;57:850–66.
+[171] Hassanpouryouzband A, Joonaki E, Edlmann K, Haszeldine RS. Offshore geological storage of hydrogen: Is this our best option to achieve net-zero? ACS
+Energy Lett 2021;6(6):2181–6.
+[172] Klopčič N, Grimmer I, Winkler F, Sartory M, Trattner A. A review on metal
+hydride materials for hydrogen storage. J Energy Storage 2023;72:108456.
+[173] A World of Energy (AWOE). Life cycle analysis of hydrogen storage tanks. 2022,
+http://www.awoe.net/Hydrogen-Storage-LCA.html. [Accessed 09 July 2025].
+[174] Osman AI, Nasr M, Mohamed A, Abdelhaleem A, Ayati A, Farghali M, et al.
+Life cycle assessment of hydrogen production, storage, and utilization toward
+sustainability. Wiley Interdiscip Rev: Energy Environ 2024;13(3):e526.
+[175] International Council on Clean Transportation. Life-cycle greenhouse gas emissions of hydrogen as a marine fuel. 2023, https://theicct.org/wp-content/
+uploads/2023/03/maritime-brazil-hydrogen-costs-mar23.pdf. [Accessed 09 July
+2025].
+[176] Niermann M, Drünert S, Kaltschmitt M, Bonhoff K. Liquid organic hydrogen
+carriers (LOHCs)–techno-economic analysis of LOHCs in a defined process chain.
+Energy Environ Sci 2019;12(1):290–307.
+[177] Hydrogen Council. Life-cycle analysis of decarbonization pathways. 2021,
+https://hydrogencouncil.com/wp-content/uploads/2021/02/Hydrogen-CouncilReport_Decarbonization-Pathways_Part-1-Lifecycle-Assessment.pdf.
+[Accessed
+09 July 2025].
+[178] H2tools. Hydrogen leaks. 2024, https://h2tools.org/bestpractices/laboratorysafety/laboratory-operations/hydrogen-hazards/hydrogen-leaks. [Accessed 09
+July 2025].
+[179] USDepartment of Energy. Safe use of hydrogen. 2024, https://www.energy.gov/
+eere/fuelcells/safe-use-hydrogen. [Accessed 09 July 2025].
+[180] H2tools. Hydrogen leak detection. 2024, https://h2tools.org/hydrogen-leakdetection. [Accessed 09 July 2025].
+[181] Hydrogen Safety Panel. Safety planning for hydrogen and fuel cell projects.
+tech. rep., Pacific Northwest National Laboratory; 2022.
+[182] National Fire Protection Association. NFPA 2: Hydrogen technologies code.
+2020 ed.. National Fire Protection Association; 2020.
+[183] H2tools. Emergency response. 2024, https://h2tools.org/bestpractices/
+laboratory-safety/laboratory-operations/emergency-response.
+[Accessed
+09
+July 2025].
+[184] International Organization for Standardization. ISO 19880-1:2020 gaseous
+hydrogen-fuelling stations-part 1: General requirements. 2020, Standard No.
+19880-1.
+[185] USDepartment of Energy. Safety, codes and standards. 2024, https://www.
+energy.gov/eere/fuelcells/safety-codes-and-standards. [Accessed 09 July 2025].
+[186] International Organization for Standardization. ISO 19881:2018 gaseous
+hydrogen-land vehicle fuel containers. 2018, Standard No. 19881.
+[187] Barthélémy H, Weber M, Barbier F. Hydrogen storage: Recent improvements
+and industrial perspectives. Int J Hydrog Energy 2017;42(11):7254–62.
+[188] H2tools. Liquid hydrogen storage tank failure. 2024, https://h2tools.org/
+lessons/liquid-hydrogen-storage-tank-failure. [Accessed 09 July 2025].
+[189] San Marchi C, Somerday BP, Robinson SL. Permeability, solubility and diffusivity of hydrogen isotopes in stainless steels at high gas pressures. Int J Hydrog
+Energy 2007;32(1):100–16.
+[190] American Society of Mechanical Engineers. ASME boiler and pressure vessel
+code, Section VIII: Rules for construction of pressure vessels. American Society
+of Mechanical Engineers; 2021.
+
+29
+
+

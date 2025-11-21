@@ -1,0 +1,44 @@
+================================================================================
+REPORTE RESUMEN - MATRIZ SIMPLIFICADA ANH951
+================================================================================
+
+Fecha: 2025-11-19 22:16:53
+Total de registros: 51
+
+
+ESTRUCTURA:
+--------------------------------------------------------------------------------
+1. Referencia
+2. Año
+3. Hidruro Metalico (MH)
+4. Aplicacion
+5. Descripción del sistema
+6. Forma del Reactor
+7. Observacion
+
+
+DISTRIBUCIÓN POR APLICACIÓN:
+--------------------------------------------------------------------------------
+  Review - Estacionaria                    :  16 ( 31.4%)
+  Experimental - Estacionaria              :  12 ( 23.5%)
+  Experimental - Móvil                     :   9 ( 17.6%)
+  Review - Móvil                           :   7 ( 13.7%)
+  Review - No especificado                 :   3 (  5.9%)
+  Experimental - No especificado           :   2 (  3.9%)
+  Simulación - Estacionaria                :   1 (  2.0%)
+  Diseño - Estacionaria                    :   1 (  2.0%)
+
+
+TOP 5 HIDRUROS METÁLICOS:
+--------------------------------------------------------------------------------
+  No especificado                          :  29
+  TiFe                                     :   8
+  LaNi5                                    :   6
+  MgH2                                     :   4
+  AB5                                      :   2
+
+
+DISTRIBUCIÓN TEMPORAL:
+--------------------------------------------------------------------------------
+  Años con publicaciones: 21
+  Rango: 1925 - 2026

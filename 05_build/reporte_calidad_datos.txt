@@ -1,0 +1,79 @@
+================================================================================
+REPORTE DE CALIDAD DE DATOS - MATRIZ ANH951
+================================================================================
+
+Fecha: 2025-11-19 22:08:05
+Total de registros: 51
+
+COMPLETITUD DE CAMPOS CLAVE:
+--------------------------------------------------------------------------------
+Referencia                    :  51 /  51 (100.0%)
+Año                           :  51 /  51 (100.0%)
+Hidruro_Metalico              :  51 /  51 (100.0%)
+Capacidad_H2_kg               :   6 /  51 ( 11.8%)
+Aplicacion                    :  51 /  51 (100.0%)
+Arquitectura                  :  51 /  51 (100.0%)
+Tipo_Reactor                  :  51 /  51 (100.0%)
+Estrategia_Termica            :  51 /  51 (100.0%)
+
+
+ESTADÍSTICAS DE CAMPOS NUMÉRICOS:
+--------------------------------------------------------------------------------
+
+Capacidad_H2_kg:
+  N válidos: 6
+  Mínimo:    0.11
+  Máximo:    1000.00
+  Media:     166.97
+  Mediana:   0.49
+
+Diametro_mm:
+  N válidos: 44
+  Mínimo:    0.00
+  Máximo:    1000000.00
+  Media:     23486.04
+  Mediana:   313.95
+
+Temperatura_Max_C:
+  N válidos: 4
+  Mínimo:    250.00
+  Máximo:    580.00
+  Media:     407.50
+  Mediana:   400.00
+
+Presion_Max_bar:
+  N válidos: 6
+  Mínimo:    3.50
+  Máximo:    700.00
+  Media:     140.92
+  Mediana:   15.00
+
+Mejora_Porcentaje:
+  N válidos: 19
+  Mínimo:    7.00
+  Máximo:    750.00
+  Media:     104.79
+  Mediana:   30.76
+
+
+TOP 5 CATEGORÍAS:
+--------------------------------------------------------------------------------
+
+Hidruro_Metalico:
+                                          :  29
+  TiFe                                    :   8
+  LaNi5                                   :   6
+  MgH2                                    :   4
+  AB5                                     :   2
+
+Tipo_Reactor:
+  Placas                                  :  28
+  Cilíndrico                              :  22
+  Honeycomb                               :   1
+
+Aplicacion:
+  Review - Estacionaria                   :  19
+  Experimental - Estacionaria             :  14
+  Experimental - Móvil                    :   9
+  Review - Móvil                          :   7
+  Simulación - Estacionaria               :   1

@@ -1,0 +1,1020 @@
+Journal of Energy Storage 67 (2023) 107491
+
+Contents lists available at ScienceDirect
+
+Journal of Energy Storage
+journal homepage: www.elsevier.com/locate/est
+
+Research papers
+
+Experimental studies on novel multi tubular reactor with shell having
+integrated buffer storage
+Nandlal Gupta a, Saurabh Tiwari a, Nitin a, Rama J. Khandarkar a, Mahvash Afzal b,
+Pratibha Sharma a, *
+a
+b
+
+Department of Energy Science and Engineering, Indian Institute of Technology Bombay, Mumbai, India
+Islamic University of Science and Technology, Kashmir, J&K, India
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Metal hydride
+Hydrogen storage
+Shell and tube arrangement
+
+This study concentrates on experimental analysis of a large scale metal hydride based hydrogen storage reactor
+having 50 kg LaNi5. In order to cater the heat transfer limitations of hydrogen storage in large scale systems, the
+present design have been developed as multi tubular reactor with shell having integrated buffer storage
+configuration with 7 tubes supported by means of 4 baffles having total 50 kg LaNi5 distributed equally among
+them and water as heat transfer fluid flows across the shell for heat transfer. The experimental study was per­
+formed for studying the absorption and desorption performance of the present hydrogen reactor wherein in case
+of absorption the parameters varied were HTF flow rate at 30 ◦ C and supply pressure of hydrogen and in case of
+desorption which was carried out at atmospheric pressure, HTF flow rate and HTF temperature were varied. The
+metal hydride reactor reversibly stores 680 g of hydrogen amounting to 1.34 wt% of gravimetric capacity of
+metal hydride and equivalent energy storage of 10.4 MJ. In case of absorption, when the flow rate selected was
+20 LPM the absorption time for 90 % reaction completion was observed to be 1286 s (21.4 min) at 30 bar H2
+supply pressure. In case of desorption studies, it was observed that the varying flow rate from 15 to 25 LPM has
+negligible effect on hydrogen desorption hence 15 LPM was selected as flow rate for further desorption exper­
+iments. Further increasing HTF temperature from 60 ◦ C to 80 ◦ C improves the performance significantly.
+
+1. Introduction
+Energy is the major input for the economic development of any
+country. Due to fast depletion of fossil fuels, there is a need for an
+alternate energy source to meet the growing energy demand of the
+world. Hydrogen as an energy carrier is the way forward to satisfy this
+growing demand of energy due to its high energy density and clean
+exhaust to combustion. The major challenge for using hydrogen as an
+energy carrier is its storage. Storing hydrogen in gaseous and liquid
+phase is a cost and energy intensive process. This put forward the way of
+storing hydrogen in solid state form. Among the various known solid
+state hydrogen storage material, complex hydrides (i.e. NaBH4, LiAlH4,
+and etc.) are the class of materials which offers high gravimetric ca­
+pacity as compared to favorable metal hydrides (i.e. LaNi5, TiFe, Mg2Ni,
+and etc.). In order to use complex hydrides for large scale applications
+there are several major challenges associated in terms of its low effective
+gravimetric hydrogen storage capacity, irreversibility of hydrolysis and
+
+high regeneration costs [1]. There have been continued effort to resolve
+the challenges associated with regeneration of complex hydrides in en­
+ergy and cost-efficient manner following one step hydrogen generation,
+storage, transportation and application [2,3]. However, there will be
+frequent loading and unloading of complex hydride might be required in
+each cycle for regeneration which can be resolved using metal hydrides.
+Metal hydrides offers a potential solution to store hydrogen in solid state
+for long term with good volumetric efficiency, higher safety and mod­
+erate operating conditions as compared to compressed or liquid state
+hydrogen storage methods [4].
+The main driving force for the absorption or desorption in metal
+hydrides is the difference between the equilibrium pressure and the
+supply/outlet pressure. The dependency of equilibrium pressure on
+temperature necessitates the removal of heat during absorption as this
+process is exothermic in nature [5]. This put forward the need of effi­
+cient heat transfer management inside a metal hydride reactor. Several
+numerical and experimental studies are conducted on the design of
+
+* Corresponding author.
+E-mail address: pratibha_sharma@iitb.ac.in (P. Sharma).
+https://doi.org/10.1016/j.est.2023.107491
+Received 13 September 2022; Received in revised form 13 April 2023; Accepted 17 April 2023
+Available online 9 May 2023
+2352-152X/© 2023 Elsevier Ltd. All rights reserved.
+
+N. Gupta et al.
+
+Journal of Energy Storage 67 (2023) 107491
+
+metal hydride reactors to improve the heat transfer process inside it
+[6,7]. Among the metal hydride properties, efforts have been made to
+improve the effective thermal conductivity of metal hydride by inclusion
+of metal foams and expanded natural graphite compacts [8–11]. Besides
+thermal conductivity, several efforts have been made to increase the
+heat transfer area inside metal hydride reactor by integrating internal
+and external fins (longitudinal, transverse), by using cooling tubes
+(straight, helical, U shape etc.) embedded inside metal hydride reactor
+and by using jacket around the metal hydride reactor [12–18]. It was
+found out that the heat transfer is fast when these are incorporated in­
+side a metal hydride reactor. Another important parameter affecting the
+performance of metal hydride reactors is the heat transfer coefficient.
+The use of various heat transfer fluids (water, air, oil, etc.) and by
+increasing the velocity of heat transfer fluid (HTF) results in the incre­
+ment of heat transfer coefficient which further results in the faster heat
+transfer and finally improves the rate of the absorption and desorption
+process [19,20]. The heat transfer improvement was also observed by
+decreasing/increasing the HTF temperature during absorption/desorp­
+tion process [22].
+Among the performance parameters, the supply pressure/outlet
+pressure during absorption/desorption is also an important parameter to
+consider. The increment in supply pressure during absorption increases
+the difference between the equilibrium pressure and the supply pressure
+
+which results in faster absorption of hydrogen inside a metal hydride
+reactor [20,21]. Another way to improve the heat transfer performance
+of metal hydride reactors is by decreasing the radius of bed [23,24].
+It is seen from literature that a lot of efforts have been made to
+improve the heat transfer process inside the metal hydride reactor.
+However, the majority of these studies focus on small scale systems and
+the results of large metal hydride reactors are very less, specifically in
+terms of experimental demonstrations. In this study, this gap are
+addressed wherein a large scale metal hydride reactor having a capacity
+to hold 50 kg of metal hydride (LaNi5) is designed and fabricated for
+stationary back up power generation. This type of modular reactor with
+integrated buffer storage can further be used for different applications
+such as compact hydrogen storage, hydrogen compression, and low
+temperature thermal energy storage (water heater). In this particular
+study, the developed system can be utilized to store hydrogen produced
+from different methods such as electrolysis and deliver the energy on
+demand to the end use on integration with low temperature PEM fuel
+cell stack. Further, the effect of bed radius was primarily analyzed in
+terms of improving heat transfer from the core of the bed to the sur­
+rounding. It is important to note that to reduce the radius of bed, the
+metal hydride reactor is divided into seven smaller tubes which are
+housed in a cylindrical vessel through which the HTF is flowing i.e., a
+multi-tubular reactor having integrated buffer storage with a housing of
+
+Fig. 1. a) CAD Layout of MH based Hydrogen Storage Reactor considered for present study; b) Schematic of Shell and 7 MH Tubes Reactor configuration.
+2
+
+N. Gupta et al.
+
+Journal of Energy Storage 67 (2023) 107491
+
+HTF is proposed in this study. Further, the performance of this metal
+hydride reactor is experimentally investigated based on the absorption
+and desorption cycle at various operating conditions.
+
+CODA-Series bi-directional mass flow meter having a range of 0–12 kg/h
+and the least count of 0.0055 g/s. The hydrogen flow is controlled by a
+ball valve at the gas inlet of the reactor. The complete experimental set
+up is shown in Fig. 2.
+
+2. Experimental setup
+
+3. Experimental procedure
+
+The reactor with a shell and tube arrangement is filled with a 50 kg
+LaNi5 metal hydride powder in 7 MH tubes as optimized using numerical
+studies by Afzal et al. [25]. The MH tube arrangement is shown in Fig. 1.
+a where each tube has an inner diameter of 63.7 mm and an outer
+diameter of 73.03 mm with a length of 756 mm. The dimensions of each
+tube incorporates 20 % expansion volume for hydride. 4 longitudinal
+fins of 3 mm thickness and 750 mm height are inserted in each MH tube
+which are fixed to 5 central rings to enhance the heat transfer. Five such
+central rings with a height, the inner and outer diameters of 60 mm,
+12.7 mm, and 19 mm respectively are used to fix the fins for one MH
+tube. The outer shell with inner and outer diameters of 280 mm and 299
+mm utilizes the HTF flow arrangement where water acts as a cooling/
+heating HTF. Two end plates with 12 mm thickness are inserted to
+separate the water and gas circuits. Inlet and outlet for water flow across
+the shell having an inner and outer diameter of 42.5 mm and 59.6 mm
+respectively allow the flow of the water inside the shell area of the
+reactor. Two hemispherical covers are used to close the top and bottom
+portions of the reactor having a thickness of 12 mm. The MH tubes
+protrude the top and bottom plate by 15 mm each. The volume enclosed
+within top hemispherical cover and top end plate acts as buffer hydrogen
+storage volume. A disc filter of 0.2 μm is used to separate the gas and MH
+powder during the operation. In addition to fins, to improve the heat
+transfer coefficient, by creating turbulence in water flow and to support
+the metal hydride tubes, 4 baffle plates of 5.5 mm thickness are inserted
+as shown in Fig. 1.b.
+The distance of 135 mm between the baffle plates is maintained
+constant whereas the end baffles are away from the top and bottom
+plates by a distance of 165.3 mm. Seven K-type thermocouples are
+placed at the bottom part of the MH tubes penetrating 70 mm inside
+along the axis of the tubes with two thermocouples at PCDs of 16 mm
+and 32 mm, one at 46 mm and two at the center of the tube. The tem­
+perature measured by them is logged with the help of the Keysight 970A
+DAQ data logger. In addition to these, two more K-type thermocouples
+are placed at the water inlet and outlet of a reactor and temperature data
+was recorded using a Masibus 85XX+ datalogger.
+A multipurpose heating/cooling water storage tank of 500 l capacity
+has been used. A total number of 6 heating coils each of 1.5 kW capacity
+are fixed in the bottom-most part of the tank with a total capacity of 9
+kW and can be controlled by 3 switches to adjust the temperature of the
+stored water in the tank. This stored water is supplied to the metal
+hydride-based hydrogen storage reactor via an inlet and recirculated to
+the storage tank via the outlet of the reactor. A centrifugal pump of
+Crompton 0.5 HP capacity is used for the pumping of water from the
+tank and the water flow rate is fixed using control valves monitored by a
+rotameter. The inlet and outlet rotameters having a range of 0–40 LPM
+are fixed vertically on the wall to measure the respective flow rates of
+water. 8 K-type thermocouples with an accuracy of ±2.2 ◦ C are fixed
+horizontally on the vertical side plane surface of the water storage tank
+to measure the temperature variation across the height of the tank.
+Alternate thermocouples are penetrated inside the tank by 120 mm and
+250 mm. The temperature of the water is logged with the help of a
+Keysight DAQ 970A data logger and a computer used to record readings.
+On the other hand, the gas circuit consists of gas pipelines connected to
+the inlet of the reactor via Sievert's apparatus which simplifies the gas
+supply pipeline to the reactor separating the paths during absorption
+and desorption. An absolute Baumer pressure transducer with a range of
+0–100 bar and a standard measurement error of 0.2 % FSR is used to
+measure the pressure of hydrogen gas inside the reactor and logged with
+the help of Masibus 85XX+ data logger having an accuracy of 0.1 % of
+full scale. The flow rate of gas is measured with the help of an Alicat
+
+The 50 kg shell and tube type MH Hydrogen storage reactor con­
+sisting of 7 MH tubes was initially tested for leak by supplying argon gas
+at 60 bar using Sieverts apparatus and kept under observation for a week
+wherein the pressure data was monitored using Baumer Absolute Pres­
+sure Transducer Y931 model connected with 16 channel Masibus
+85XX+ data logger. It was observed that there was no pressure drop
+from the reactor weld joints and fittings, and was further pressure tested
+to 50 bar hydrogen as well as vacuum of 10− 3 mbar. Reactor safely held
+the pressure for a period of a week without any pressure drop. Further
+the reactor was filled with the total 50 kg LaNi5 alloy procured from
+Whole Win (Beijing) Materials Sci. & Tech. Co., Ltd. in 7 MH tubes
+wherein each tube accommodated 7.143 kg of LaNi5 alloy through a
+thermocouple port of 6.35 mm diameter and on completion of alloy
+filling in each tube, the thermocouples were inserted via filling ports in
+each bed up to a depth of 70 mm and sealed using nut ferrule end
+connection. The AB5 type intermetallic compound LaNi5 alloy was
+selected for this study as it is one of the most studied for solid state
+hydrogen storage in literature with maximum reported capacity of 1.5
+wt%, ease of activation, low pressure and ambient temperature opera­
+tion giving reversible hydrogen storage capacity of 1.28 wt% at 298 K
+for several hundreds of cycles and most importantly the desorption
+equilibrium pressure of 1.8 bar at 298 K [26–28]. The MH Reactor was
+further subjected to gradual pressure testing using argon and hydrogen
+gas from 5 bar to 50 bar in the steps of 5 bar in order to ensure that
+reactor joints are entirely leak proof.
+3.1. Activation of alloy
+The activation cycle of metal hydride bed was initiated by evacu­
+ating the MH bed to 10− 3 mbar followed by simultaneous heating and
+maintaining bed temperature at 60 ◦ C by circulating water as a heat
+transfer fluid across shell of MH reactor at flow rate of 15 LPM for
+duration of 6 h, afterwards the HTF circulation was stopped and the
+metal hydride bed was subjected to a constant 30 bar hydrogen pressure
+supply via Sieverts apparatus and allowed to cool down to room tem­
+perature (27 ◦ C) in a natural convection mode. In order to activate the
+alloy completely, three such activation cycles were performed wherein it
+was observed that the metal hydride stored 680 g of hydrogen accom­
+plishing the maximum capacity of 1.34 wt%. Further to analyze the
+sorption kinetics of the system at room temperature, two more cycles of
+absorption experiment were conducted with supply pressure of 30 bar,
+HTF flow rate at 15 LPM and HTF temperature of 30 ◦ C, wherein it was
+observed that the bed absorbs 1.34 wt% of hydrogen in the 3000 s in
+both cycles. So it was concluded that the alloy is fully activated to its
+maximum gravimetric capacity and further experimental studies were
+conducted.
+3.2. Experimental analysis
+The MH reactor was further studied for its absorption and desorption
+characteristics experimentally by varying different operating conditions
+of absorption and desorption respectively. The lists of conditions for the
+experimental studies are listed in Table 1.
+3.2.1. Absorption
+The absorption process using intermetallic compounds in solid state
+hydrogen storage is exothermic in nature owing to which it becomes
+crucial to dissipate the heat generated in MH bed for maximum
+hydrogen storage at higher absorption rate kinetics. In this study, we
+3
+
+N. Gupta et al.
+
+Journal of Energy Storage 67 (2023) 107491
+
+Fig. 2. Schematics of the experimental setup used for experimentation of a 50 kg alloy storage reactor.
+Table 1
+Experimental operating conditions for hydrogen absorption and desorption.
+Experiment
+
+Absorption
+
+Case 1
+
+Effect of heat transfer fluid (HTF) flow rate
+
+Parameters
+
+H2 pressure
+(in bar)
+
+HTF flow rate
+(in LPM/(m3/s))
+
+Bed temperature
+(in ◦ C)
+
+Level A
+Level B
+Level C
+
+30
+30
+30
+
+15/(2.5 × 10− 4)
+20/(3.33 × 10− 4)
+25/(4.17 × 10− 4)
+
+30
+30
+30
+
+Experiment
+
+Absorption
+
+Case 2
+
+Effect of H2 supply pressure
+
+Parameters
+
+H2 pressure
+(in bar)
+
+HTF flow rate
+(in LPM/[m3/s])
+
+Bed temperature
+(in ◦ C)
+
+Level A
+Level B
+Level C
+
+20
+25
+30
+
+20/(3.33 × 10− 4)
+20/(3.33 × 10− 4)
+20/(3.33 × 10− 4)
+
+30
+30
+30
+
+Experiment
+
+Desorption
+
+Case 1
+
+Effect of heat transfer fluid (HTF) flow rate
+
+Parameters
+
+Outlet pressure
+(in bar)
+
+HTF flow rate
+(in LPM/[m3/s])
+
+Bed temperature
+(in ◦ C)
+
+Level A
+Level B
+Level C
+
+1
+1
+1
+
+15/(2.5 × 10− 4)
+20/(3.33 × 10− 4)
+25/(4.17 × 10− 4)
+
+60
+60
+60
+
+Experiment
+
+Desorption
+
+Case 2:
+
+Effect of initial bed temperature
+
+Parameters
+
+Outlet pressure
+(in bar)
+
+HTF flow rate
+(in LPM/[m3/s])
+
+Bed temperature
+(in ◦ C)
+
+Level A
+Level B
+Level C
+
+1
+1
+1
+
+15/(2.5 × 10− 4)
+15/(2.5 × 10− 4)
+15/(2.5 × 10− 4)
+
+60
+70
+80
+
+4
+
+N. Gupta et al.
+
+Journal of Energy Storage 67 (2023) 107491
+
+utilized 4 longitudinal copper fins of 3 mm thickness fixed on 5 central
+rings. Also, 4 baffles inside the shell were used to provide support to the
+MH tubes, these also acts as fin and increases heat transfer coefficient by
+means of turbulence and water at 30 ◦ C as heat transfer fluid in shell
+portion of MH reactor to enhance the heat transfer from the MH bed. The
+experiments are performed by using normal tap water to analyze the real
+time scenario of reactor deployment for any application. In the first
+phase of the absorption experiment, the effect of water flow rate on the
+rate of hydrogen absorption was studied by varying it from 15 LPM to 25
+LPM in the steps of 5 LPM at 30 bar and HTF temperature at 30 ◦ C. In the
+second phase of the absorption experiment, we studied the effect of
+hydrogen supply pressure from 20 bar to 30 bar in steps of 5 bar on
+hydrogen absorption in MH bed at optimum HTF flow rate of 20 LPM
+and temperature 30 ◦ C.
+
+(
+)
+Peq
+ΔS ΔH
+−
+= exp
+R
+RT
+pref
+
+where, Pref = 1 atm, Entropy of formation, ΔS = 108 J/mol-K, Enthalpy
+of formation, ΔH = 30,800 J/mol, R is the Universal gas constant =
+8.314 J/mol-K.
+4. Results and discussion
+4.1. Effect of heat transfer fluid (HTF) flow rate on H2 absorption
+The influence of HTF (water) flow rate on the rate of hydrogen ab­
+sorption in MH bed was investigated by varying the flow rate from 15
+LPM to 25 LPM in the steps of 5 LPM at hydrogen supply pressure of 30
+bar and HTF temperature maintained at 30 ◦ C flowing through the inlet
+of the reactor shell. The inclusion of baffles within the shell creates a
+turbulence in fluid flow which increases the local heat transfer coeffi­
+cient leading to enhanced heat transfer. The average heat transfer co­
+efficients for different flow rates were measured using the Kern's
+Method. The heat transfer coefficients obtained are 495.97 W/m2-K,
+580.96 W/m2-K, 656.89 W/m2-K for HTF flow rate 15 LPM, 20 LPM and
+25 LPM respectively. Fig. 3 shows the evolution of reaction kinetics and
+behavior of average bed temperature corresponding to different flow
+rates of HTF. It was observed that for HTF flow rate of 15 LPM the MH
+bed absorbs a maximum of 680.07 g of hydrogen which corresponds to
+1.34 wt% in 2856 s, 90 % of the reaction fraction completed in 1451 s
+and maximum bed temperature rises to 77.02 ◦ C in 849 s. Further, when
+HTF flow rate was increased to 20 LPM the heat transfer coefficient at
+the outer surface of MH tube increases resulting in the increment of
+absorption rate, wherein 90 % of the reaction fraction inside metal hy­
+dride reactor is completed in 1286 s which is 12.8 % improvement
+compared to 15 LPM, and MH bed achieves maximum capacity of
+680.07 g hydrogen in 2675 s and maximum bed temperature rises to
+78.64 ◦ C in 925 s. In order to see the effect of HTF further, when the flow
+rate of HTF was increased to 25 LPM, the 90 % reaction fraction
+completed in 1154 s which is an improvement of 11.3 % and 25.7 %
+compared to 20 LPM and 15 LPM respectively. The bed achieves
+maximum capacity of 680.07 g of hydrogen in 2281 s with peak average
+bed temperature of 7 MH tubes rises to 80.77 ◦ C in 762 s which can be
+related to faster absorption rate. In terms of analyzing the effect of heat
+transfer coefficients, it was observed that increasing the heat transfer
+coefficient beyond 600 W/m2-K has no significant effect on enhancing
+heat transfer rate from the core of MH bed. Hence, if we compare the
+performance corresponding to different flow rates there was not much
+significant improvement in absorption rate as we increased flow rate
+from 20 to 25 LPM compared to 15 LPM as heat transfer coefficient was
+above 600 W/m2-K and hence flow rate of 20 LPM was selected for
+further experiments.
+The absorption is an exothermic process wherein MH bed releases
+heat while absorbing hydrogen which is supposed to be dissipated in
+order to increase the rate of reaction. In the present case, the water as
+heat transfer fluid is utilized in shell due to its high specific heat capacity
+and easy availability, to improve heat dissipation rate thereby
+improving the reaction rate. Fig. 4.a depicts the temperature difference
+of water between shell inlet and outlet for different HTF flow rate for a
+time period of 3600 s which is also an indication of the rate of heat
+removal from MH bed and simultaneously the absorption rate. It was
+observed that for 15 LPM the ΔTwater rises to 5 ◦ C whereas it was re­
+ported to be 3.6 ◦ C and 3.5 ◦ C for 20 and 25 LPM respectively. This
+behavior is because of the longer contact time of HTF with the metal
+hydride reactor at low flow rate.
+Fig. 5 shows the energy analysis for absorption process with different
+HTF flow rate for a period of 3600 s. It was observed that in order to
+store 680 g of hydrogen in 50 kg LaNi5, the total heat released during
+reaction was 10.39 MJ. In terms of heat recovery from MH bed by
+
+3.2.2. Desorption
+The hydrogen desorption from MH bed is an endothermic process
+wherein energy equivalent or greater than the enthalpy of reaction is
+supplied to the MH bed to release hydrogen for the end use application.
+In the present study, the desorption was performed at atmospheric
+pressure. Further, in terms of parametric analysis, initially the effect of
+HTF flow rate varying from 15 LPM to 25 LPM was examined main­
+taining the bed temperature at 60 ◦ C by circulating the HTF from hot
+water bath and the effect of HTF temperature or bed temperature on
+desorption rate was studied by varying the temperature from 60 ◦ C to
+80 ◦ C in the steps of 10 ◦ C at 15 LPM.
+3.2.3. Energy analysis
+In the present experimental study, the energy analysis was per­
+formed in order to analyze the energy transfer between MH and HTF for
+absorption and desorption processes [29].
+In case of absorption which is an exothermic process, the energy is
+released by bed and water as a heat transfer fluid is utilized to remove
+the heat from MH bed for completion of reaction.
+The energy released by MH bed during absorption was computed
+using the below equation [29]:
+Qreleased,MH = mH2 × ΔHMH
+
+(1)
+
+where, mH2 is the amount of hydrogen stored and ΔHMH is the reaction
+enthalpy which was taken as 30,800 J/mol [30].
+The energy recovered or removed by HTF was calculated using the
+below equation:
+)
+(
+QHTF = ṁHTF × Cp,HTF × THTF,e − THTF,i × Δt
+(2)
+where, ṁHTF is the mass flow rate of HTF, THTF,e denotes the exit tem­
+perature of HTF, THTF,i denotes the inlet temperature of HTF and Δt is the
+time interval in seconds. In case of absorption, the heat will be recovered
+by HTF whereas during desorption the heat will be supplied by HTF to
+metal hydride bed.
+The HTF (water) inlet and outlet temperature was measured using KType thermocouples at both inlet and outlet.
+In case of desorption which is an endothermic process, the MH bed
+requires energy to release hydrogen which is supplied by the means of
+HTF at higher temperature in the range 60 ◦ C to 80 ◦ C.
+The energy required by MH bed during desorption was computed
+using the below equation:
+Qrequired,MH = mH2 × ΔHMH
+
+(4)
+
+(3)
+
+where, mH2 is the amount of hydrogen stored and ΔHMH is the reaction
+enthalpy which was considered to be 30,800 J/mol [9].
+van't Hoff equation: The equilibrium pressure of metal hydride bed
+during absorption and desorption with respect to change in metal hy­
+dride bed temperature at an instant can be computed using the following
+van't Hoff equation [25]
+5
+
+N. Gupta et al.
+
+Journal of Energy Storage 67 (2023) 107491
+
+Fig. 3. Effect of HTF flow rate on hydrogen absorption reaction kinetics and average MH bed temperature.
+
+Fig. 4. a. Effect of HTF Flow rate and b. supply pressure on temperature difference between inlet and outlet of HTF during absorption.
+
+varying HTF flow rate, the process was able to remove 6.34 MJ of energy
+at 15 LPM, 7 MJ at 20 LPM and 7.2 MJ of energy at flow rate of 25 LPM.
+The heat recovery by HTF was 61 %, 67.37 % and 69.3 % at a flow rate of
+15 LPM, 20 LPM and 25 LPM respectively. The higher energy recovery at
+higher flow rate is due to higher fluid mass available at any given instant
+for carrying the released heat. The energy difference between the energy
+released by MH bed and energy recovered by HTF can be accounted as
+an energy stored within the thermal mass of the reactor by means of
+conduction which is fabricated using SS316L and also heat transfer to
+the surrounding air by means of convection. The energy analysis also
+helps us in selection of HTF flow rate for further sets of experiments
+which was considered to be 20 LPM in case of absorption as stated in
+above graphs since the difference between total energy removed by HTF
+while increasing flow rate from 20 LPM to 25 LPM is 2 %.
+
+absorption, the next parameter considered for performance analysis of
+the reactor was hydrogen supply pressure to MH bed. In this study, the
+H2 supply pressure was increased from 20 bar to 30 bar in the steps of 5
+bar keeping constant HTF flow rate of 20 LPM and HTF temperature at
+30 ◦ C. The hydrogen absorption in MH bed is a function of the difference
+between supply pressure and equilibrium pressure of alloy. However, as
+the reaction proceeds further due to the exothermic nature of reaction
+the bed temperature increases and hence the equilibrium pressure also
+increases which is a function of MH bed temperature as evident from the
+van't Hoff equation (Eq. (4)). Initially during the absorption process the
+difference in supply pressure and equilibrium pressure dominates and
+further with increase in equilibrium pressure due to increment in bed
+temperature the reaction rate reduces wherein the impact of heat
+transfer comes into effect. At 20 bar, the 90 % reaction fraction was
+achieved in 1741 s, and a maximum of 680.07 g of hydrogen was
+absorbed in 3024 s with peak average bed temperature rise of 66.3 ◦ C at
+1206 s. In the case of 25 bar, the 90 % reaction fraction completion time
+reduces to 1459 s and it took 2999 s to achieve maximum hydrogen
+
+4.2. Effect of supply pressure of H2 absorption in MH bed
+After analyzing the influence of HTF flow rate on hydrogen
+6
+
+N. Gupta et al.
+
+Journal of Energy Storage 67 (2023) 107491
+
+Fig. 5. Energy analysis of the system for absorption process with varying flow rate.
+
+storage capacity of 680.07 g with peak average bed temperature rise to
+75.2 ◦ C at 1002 s. Further increment of supply pressure to 30 bar, it was
+observed that the rate of reaction was faster wherein it took only 1286 s
+for completion of 90 % reaction fraction, and 2674 s for achieving
+maximum storage capacity with peak average bed temperature rise of
+78.64 ◦ C at 930 s as shown in Fig. 6.a. Fig. 6.b shows the variation of
+equilibrium pressure of MH bed with respect to the variation in MH bed
+temperature computed using van't Hoff equation. It was observed that
+initially (t = 0) the pressure difference between supply pressure and
+equilibrium pressure are 17.84 bar, 22.84 bar and 27.84 bar at a
+hydrogen supply pressure of 20 bar, 25 bar and 30 bar respectively. This
+larger pressure difference initially acts as a major driving force for the
+reaction and as the reaction is exothermic, the bed temperature in­
+creases rapidly resulting in the increase of equilibrium pressure. Thus
+driving force for the reaction tends to reduce until the HTF flowing
+across the shell at 30 ◦ C starts extracting heat from MH bed which lowers
+the bed temperature (reduces equilibrium pressure) and hence results in
+enhancing the absorption kinetics. Fig. 4.b shows the temperature
+
+difference between reactor's inlet and outlet of HTF which also indicates
+the rate of heat transfer from MH bed. It can be seen that when water
+with constant flow rate of 20 LPM was circulated across the shell of
+reactor, the ΔTwater variation for 20 bar is lesser as compared to 25 bar
+and 30 bar due to slower hydrogen sorption rate leading to prolonged
+time for complete absorption with water having sufficient residence
+time to cater the heat removal with lesser peak bed temperature. The
+peak ΔTwater variation was observed to be 2.9 ◦ C, 3.5 ◦ C and 3.7 ◦ C for
+20 bar, 25 bar and 30 bar respectively.
+In terms of comparison of the effect on reaction kinetics of three
+different supply pressure chosen for this study, it was found that for
+complete hydrogen sorption incremental increase in supply pressure
+from 25 bar to 30 bar leads to an improvement of 12.15 % and from 20
+bar to 30 bar, the reaction is faster by 13.15 %. In terms of 90 % reaction
+fraction completion, the reaction rate improved by 35.4 % and 13.45 %
+when supply pressure increased to 30 bar from 20 bar and 25 bar
+respectively. So as the improvement is more than 10 % and reaction rate
+is faster with 90 % reaction getting completed in 1286 s while
+
+Fig. 6. a. Effect of Supply Pressure on hydrogen absorption reaction kinetics and average MH bed temperature; b. Equilibrium pressure v/s time plot for different
+hydrogen supply pressure.
+7
+
+N. Gupta et al.
+
+Journal of Energy Storage 67 (2023) 107491
+
+incrementing the supply pressure from 25 to 30 bar, 30 bar was
+considered as a base case for further absorption experiments.
+Fig. 7 shows the energy analysis for the absorption process per­
+formed at different supply pressures of 20 bar, 25 bar and 30 bar at a
+constant flow rate of 20 LPM for a duration of 3600 s. In this case, it was
+observed that the total energy released by MH was 10.39 MJ in order to
+store 680 g of hydrogen. The increase in supply pressure increases the
+driving force for hydrogen absorption which in turn results in faster
+reaction rate and simultaneously faster heat generation from bed. This
+can also be correlated with the energy removed by HTF flowing through
+the shell at constant flow rate of 20 LPM wherein 7 MJ of heat was
+removed from the MH bed at supply pressure of 30 bar compared to
+6.03 MJ and 6.78 MJ at a supply pressure of 20 bar and 25 bar
+respectively. Again, the difference between energy released and energy
+recovered can be attributed to the energy stored in the thermal mass of
+the system and energy lost by means of convection to surrounding air.
+
+b shows the variation in the temperature difference of the heat transfer
+fluid between inlet and outlet of reactor shell, wherein it was observed
+that for 15 LPM the ΔTwater is higher compared to the other flow rate of
+20 LPM and 25 LPM due to the fact that the contact time or residence
+time between MH tubes and HTF resulting in greater temperature drop
+for a considered instant as compared to higher flow rates. In our study,
+the peak ΔTwater value was observed to be 1.9 ◦ C, 1.6 ◦ C and 1.2 ◦ C at 15
+LPM, 20 LPM and 25 LPM respectively. The heat transfer coefficient
+measured for desorption study using the Kern's method are 568.42 W/
+m2-K, 648.23 W/m2-K, and 736.94 W/m2-K for HTF flow rate of 15 LPM,
+20 LPM and 25 LPM respectively. It can be observed that increasing heat
+transfer coefficient above 600 W/m2-K has no significant effect on
+hydrogen desorption from the MH bed which have also been analyzed
+and reported by K. Jiao et al. [31] and S. Tiwari et al. [32]. It can be
+concluded from the results that the HTF flow rate has very least influ­
+ence on hydrogen desorption rate calculated and was observed to be less
+than 1 % and therefore a flow rate of 15 LPM was considered for further
+desorption studies.
+The energy analysis for the desorption process performed at 1 bar
+outlet pressure, constant HTF temperature of 60 ◦ C and different HTF
+flow rates of 15, 20 and 25 LPM is shown in Fig. 9. It can be seen that the
+rate of energy required by MH bed is same at any instant of time even
+after varying flow rates. The total energy required by the MH bed to
+desorb stored hydrogen is 10.4 MJ. It was observed that in case of
+desorption the total energy supplied by lower flow rate of 15 LPM was
+maximum which was 10.89 MJ wherein it was 10.65 MJ for 20 LPM and
+9.9 MJ for 25 LPM. The higher energy supply at lower flow rates with
+constant temperature of HTF is due to the larger residence time
+accompanied between fluid particles and MH Tubes along with higher
+temperature difference as observed in Fig. 8.b. Further, the most
+important outcome from this energy analysis observed was that the
+energy required by MH bed was higher than the energy supplied by HTF
+at 60 ◦ C, so the difference between the required and supplied energy
+during desorption process due to faster rate of desorption is compen­
+sated by MH bed itself by extracting the sensible energy stored within
+MH by lowering its temperature. Further continuous heat transfer from
+HTF fluid to the MH bed meets the energy requirement for completion of
+
+4.3. Effect of HTF flow rate on H2 desorption from MH bed
+The hydrogen desorption from MH bed is an endothermic process
+which requires energy to release hydrogen and the second criterion for
+the process is pressure difference between desorption equilibrium
+pressure of alloy bed at a particular temperature and the outlet pressure
+or surrounding pressure. In our case, the energy required for desorption
+was supplied by means of hot water as heat transfer fluid circulated
+using 0.5 HP water pump from water bath. Initially the impact of heat
+transfer fluid flow rate was analyzed on the rate of hydrogen desorption
+by varying water flow rate from 15 LPM to 25 LPM at temperature of
+60 ◦ C across the shell portion of the reactor and the hydrogen was
+desorbed at atmospheric pressure of 1 bar. It was observed that 90 % of
+the desorption reaction gets completed in 6171 s, 6165 s and 6133 s for
+HTF flow rate of 15 LPM, 20 LPM and 25 LPM respectively which is
+evident from Fig. 8.a. The average bed temperature drops maximum to
+51.75 ◦ C at 347 s for 15 LPM, 51.13 ◦ C at 255 s for 20 LPM and 51.59 ◦ C
+at 216 s for 25 LPM, so overall a maximum temperature drops of 9.5 ◦ C
+was observed in the initial phase of desorption within duration of 400 s
+where desorption rate was rapid due to larger pressure difference. Fig. 8.
+
+Fig. 7. Energy Analysis for absorption process performed with different supply pressure.
+8
+
+N. Gupta et al.
+
+Journal of Energy Storage 67 (2023) 107491
+
+Fig. 8. a. Effect of HTF flow rate on hydrogen desorption reaction kinetics; b. Temperature difference curve of water inlet and outlet for desorption with different
+flow rate of HTF.
+
+Fig. 9. Energy analysis for the desorption process performed at different HTF flow rates.
+
+the desorption process by maintaining bed temperature.
+
+drop of MH bed during desorption, it was observed that for HTF at 60 ◦ C
+the maximum temperature drop was 51.75 ◦ C at 347 s, similarly for HTF
+at 70 ◦ C it was observed to be 59.49 ◦ C at 227 s and for HTF at 80 ◦ C the
+temperature drop was significant compared to other cases above re­
+ported to 67.76 ◦ C at 209 s which is almost a 13 ◦ C drop signifying the
+higher rate of desorption at this particular temperature. In terms of HTF
+temperature difference between water inlet and outlet of reactor signi­
+fying the rate of heat supply to MH bed for desorption of hydrogen as per
+Fig. 10.b, it was observed that peak temperature drop was 1.9 ◦ C, 2.4 ◦ C
+and 2.9 ◦ C for HTF at 60 ◦ C, 70 ◦ C and 80 ◦ C respectively. Fig. 11 shows
+the effect of HTF temperature on the desorption equilibrium pressure.
+The equilibrium pressure for LaNi5 calculated using van't Hoff equation
+are 6.59 bar, 9.06 bar and 12.30 bar at initial MH bed temperature of
+60 ◦ C, 70 ◦ C and 80 ◦ C respectively. Due to the larger pressure difference
+initially, the rate of desorption used to be faster. The reaction being
+endothermic in nature, there is higher energy requirement initially
+which MH bed utilizes from its own stored energy apart from the energy
+
+4.4. Effect of HTF temperature on hydrogen desorption from MH bed
+After analyzing the effect of HTF flow rate, the effect of HTF tem­
+perature on MH bed temperature was analyzed by varying the HTF
+temperature from 60 ◦ C to 80 ◦ C keeping the constant flow rate of 15
+LPM and desorbing hydrogen to atmospheric pressure. The desorption is
+dependent on the pressure difference between equilibrium pressure at a
+particular MH bed temperature and outlet pressure. The increment of
+HTF temperature raises the bed temperature which in turn raises the
+equilibrium pressure of alloy and thereby the desorption rate kinetics.
+Fig. 10.a indicates the effect of HTF temperature on hydrogen desorp­
+tion rate for duration of 7200 s, it was observed that for desorbing 90 %
+of the hydrogen from MH bed it took 6172 s when fluid was circulated at
+60 ◦ C whereas it takes 4654 s and 3616 s only for HTF circulated at
+temperature of 70 ◦ C and 80 ◦ C respectively. In terms of the temperature
+9
+
+N. Gupta et al.
+
+Journal of Energy Storage 67 (2023) 107491
+
+Fig. 10. a. Effect of HTF temperature on hydrogen desorption reaction kinetics; b. Temperature difference curve of water inlet and outlet for desorption with
+different temperature of HTF.
+
+Fig. 12. Energy Analysis for desorption process performed with varying tem­
+perature of HTF.
+
+Fig. 11. Equilibrium pressure v/s time plot for desorption studies at different
+HTF temperature.
+
+complete desorption at 60 ◦ C compared to desorption at other HTF
+temperatures. The results also depict that increasing HTF temperature
+reduces the energy gap significantly and enhances the desorption rate to
+a greater extent. This is due to the fact that increasing the temperature of
+HTF yields higher temperature difference leading to higher energy
+supply at any given instant for desorption at a constant flow rate. In
+terms of energy supply by different temperatures of HTF, we compared
+the energy supplied by HTF at 1800th second, and the values obtained
+were 2.9 MJ, 4.93 MJ and 5.72 MJ for 60 ◦ C, 70 ◦ C and 80 ◦ C
+respectively.
+
+supplied by HTF which can be correlated with the drop in the MH bed
+temperature. Further, circulation of HTF at constant temperature leads
+to sufficient energy supply for complete desorption. In terms of overall
+analysis of the effect of temperature it was found that increasing the HTF
+temperature from 60 ◦ C to 80 ◦ C results in 41.4 % reduction in the
+desorption time, whereas for increment from 70 ◦ C to 80 ◦ C the
+desorption time reduces by 22.3 % resulting in higher rate of hydrogen
+desorption from MH bed.
+Fig. 12 shows the energy analysis computed for the desorption pro­
+cess performed at atmospheric pressure with a constant HTF flow rate of
+15 LPM and at different HTF temperatures of 60 ◦ C, 70 ◦ C and 80 ◦ C. In
+the desorption process, increasing the MH bed temperature increases the
+desorption equilibrium pressure which in turn increases the driving
+force for hydrogen desorption resulting in higher rate of hydrogen
+desorption accompanied by higher instantaneous energy requirement.
+In the present study, it was observed that for a period of 7200 s, the
+energy supplied by HTF at 60 ◦ C was 9.87 MJ, at 70 ◦ C it was 13.89 MJ
+and at 80 ◦ C it was 13.95 MJ, whereas the net energy requirement for
+complete hydrogen desorption is 10.39 MJ. It was clearly evident that
+the desorption is slower for HTF at 60 ◦ C and their exist difference be­
+tween energy required by MH bed and energy supplied by HTF for entire
+experimental duration due to which it takes more than 7200 s by MH for
+
+5. Conclusion
+In the present study, the experimental studies on the performance
+analysis of the novel metal hydride-based hydrogen storage reactor with
+7 MH tube and shell type configuration was analyzed by varying various
+operating parameters for both absorption and desorption processes. The
+following conclusions are drawn from this study:
+● In case of absorption, the effect of HTF flow rate was studied by
+varying it from 15 LPM to 25 LPM. Increasing HTF flowrate increases
+average heat transfer coefficient which improves heat dissipation
+from MH bed leading to faster absorption kinetics. It was observed
+10
+
+N. Gupta et al.
+
+Journal of Energy Storage 67 (2023) 107491
+
+that for completion of 90 % absorption reaction, the absorption time
+reduces from 1451 s for 15 LPM to 1286 s for 20 LPM and 1154 s for
+25 LPM.
+● The LaNi5 bed stores a maximum of 680 g of hydrogen which is
+equivalent to 1.34 wt% of gravimetric capacity.
+● In terms of energy analysis for absorption with varying flow rate, it
+was observed that increasing HTF flowrate increases the rate of ab­
+sorption as at any given instant higher fluid mass with higher heat
+transfer coefficient is available to recover the heat released from MH
+bed. The heat recovery by HTF was 61 %, 67.37 % and 69.3 % of total
+energy released at a flow rate of 15 LPM, 20 LPM and 25 LPM
+respectively.
+● The incorporation of baffles yields higher local and average heat
+transfer coefficient within shell for a particular HTF flowrate which
+in turn improves the overall system performance.
+● Increasing the supply pressure increases the driving force leading to
+faster hydrogen absorption in MH bed. The effect of supply pressure
+on absorption was analyzed by varying the hydrogen supply pressure
+from 20 bar to 30 bar in steps of 5 bar wherein it was observed that
+for achieving maximum hydrogen storage capacity of 1.34 wt% it
+took 3024 s, 2999 s, and 2674 s for supply pressure of 20 bar, 25 bar
+and 30 bar respectively.
+● The desorption studies were conducted by varying HTF flow rate
+from 15 LPM to 25 LPM keeping bed temperature constant at 60 ◦ C.
+It was found that the flow rate of HTF has very least significant effect
+on hydrogen desorption from MH bed which was less than 1 % with
+constant MH bed temperature drop of 9.5 ◦ C.
+● Similar to absorption case, it was found that in desorption that
+increasing heat transfer coefficient beyond 600 W/m2-K does not
+have significant effect on rate of hydrogen desorbed. The heat
+transfer coefficient measured for desorption study are 568.42 W/m2K, 648.23 W/m2-K, and 736.94 W/m2-K for HTF flow rate of 15 LPM,
+20 LPM and 25 LPM respectively.
+● The increment in heat transfer fluid temperature had a very promi­
+nent effect on hydrogen desorption rate. It was observed that 90 % of
+the hydrogen desorbs only in 3616 s when HTF temperature was kept
+80 ◦ C compared to 4654 s and 6172 s for HTF temperature of 70 ◦ C
+and 60 ◦ C respectively.
+
+References
+[1] U.B. Demirci, O. Akdim, P. Miele, Ten-year efforts and a no-go recommendation for
+sodium borohydride for on-board automotive hydrogen storage, Int. J. Hydrog.
+Energy 34 (6) (2009) 2638–2645, https://doi.org/10.1016/j.
+ijhydene.2009.01.038.
+[2] L. Ouyang, W. Chen, J. Liu, M. Felderhoff, H. Wang, M. Zhu, Adv. Energy Mater. 7
+(2017), 1700299, https://doi.org/10.1002/aenm.201700299.
+[3] Y. Zhu, L. Ouyang, H. Zhong, J. Liu, H. Wang, H. Shao, Z. Huang, M. Zhu, Angew.
+Chem. Int. Ed. 59 (2020) 8623.
+[4] S. Mellouli, F. Askri, H. Dhaou, A. Jemni, S. Ben Nasrallah, A novel design of a heat
+exchanger for a metal-hydrogen reactor, Int. J. Hydrog. Energy 32 (15) (Oct. 2007)
+3501–3507, https://doi.org/10.1016/j.ijhydene.2007.02.039.
+[5] M.R. Gopal, S.S. Murthy, Studies on heat and mass transfer in metal hydride beds,
+Int. J. Hydrog. Energy 20 (11) (Nov. 1995) 911–917, https://doi.org/10.1016/
+0360-3199(95)00026-A.
+[6] M. Afzal, R. Mane, P. Sharma, Heat transfer techniques in metal hydride hydrogen
+storage: a review, Int. J. Hydrog. Energy 42 (52) (Dec. 2017) 30661–30682,
+https://doi.org/10.1016/j.ijhydene.2017.10.166.
+[7] K. Aldas, M.D. Mat, Y. Kaplan, A three-dimensional mathematical model for
+absorption in a metal hydride bed, Int. J. Hydrog. Energy 27 (10) (Oct. 2002)
+1049–1056, https://doi.org/10.1016/S0360-3199(02)00010-1.
+[8] A. Rodriguezsanchez, Expanded graphite as heat transfer matrix in metal hydride
+beds, Int. J. Hydrog. Energy 28 (5) (May 2003) 515–527, https://doi.org/10.1016/
+S0360-3199(02)00057-5.
+[9] F. Laurencelle, J. Goyette, Simulation of heat transfer in a metal hydride reactor
+with aluminium foam, Int. J. Hydrog. Energy 32 (14) (Sep. 2007) 2957–2964,
+https://doi.org/10.1016/j.ijhydene.2006.12.007.
+[10] Z. Guo, H.J. Sung, Technical note conjugate heat and mass transfer in metal
+hydride beds in the hydriding process, Int. J. Heat Mass Transf. 42 (2) (Jan. 1999)
+379–382, https://doi.org/10.1016/S0017-9310(98)00145-8.
+[11] K.J. Kim, B. Montoya, A. Razani, K.-H. Lee, Metal hydride compacts of improved
+thermal conductivity, Int. J. Hydrog. Energy 26 (6) (Jun. 2001) 609–613, https://
+doi.org/10.1016/S0360-3199(00)00115-4.
+[12] S.L. Garrison, et al., Optimization of internal heat exchangers for hydrogen storage
+tanks utilizing metal hydrides, Int. J. Hydrog. Energy 37 (3) (Feb. 2012)
+2850–2861, https://doi.org/10.1016/j.ijhydene.2011.07.044.
+[13] F. Askri, M. Bensalah, A. Jemni, S. Bennasrallah, Optimization of hydrogen storage
+in metal-hydride tanks, Int. J. Hydrog. Energy 34 (2) (Jan. 2009) 897–905, https://
+doi.org/10.1016/j.ijhydene.2008.11.021.
+[14] B.D. MacDonald, A.M. Rowe, Impacts of external heat transfer enhancements on
+metal hydride storage tanks, Int. J. Hydrog. Energy 31 (12) (Sep. 2006)
+1721–1731, https://doi.org/10.1016/j.ijhydene.2006.01.007.
+[15] P. Muthukumar, A. Singhal, G.K. Bansal, Thermal modeling and performance
+analysis of industrial-scale metal hydride based hydrogen storage container, Int. J.
+Hydrog. Energy 37 (19) (Oct. 2012) 14351–14364, https://doi.org/10.1016/j.
+ijhydene.2012.07.010.
+[16] C.A. Krokos, D. Nikolic, E.S. Kikkinides, M.C. Georgiadis, A.K. Stubos, Modeling
+and optimization of multi-tubular metal hydride beds for efficient hydrogen
+storage, Int. J. Hydrog. Energy 34 (22) (Nov. 2009) 9128–9140, https://doi.org/
+10.1016/j.ijhydene.2009.09.021.
+[17] M. Visaria, I. Mudawar, T. Pourpoint, S. Kumar, Study of heat transfer and kinetics
+parameters influencing the design of heat exchangers for hydrogen storage in highpressure metal hydrides, Int. J. Heat Mass Transf. 53 (9) (Apr. 2010) 2229–2239,
+https://doi.org/10.1016/j.ijheatmasstransfer.2009.12.010.
+[18] S. Tiwari, P. Sharma, Optimization based methodology to design metal hydride
+reactor for thermal storage application, J. Energy Storage 41 (Sep. 2021), 102845,
+https://doi.org/10.1016/j.est.2021.102845.
+[19] M. Afzal, N. Gupta, A. Mallik, K.S. Vishnulal, P. Sharma, Experimental analysis of a
+metal hydride hydrogen storage system with hexagonal honeycomb-based heat
+transfer enhancements-part B, Int. J. Hydrog. Energy 46 (24) (Apr. 2021)
+13131–13141, https://doi.org/10.1016/j.ijhydene.2020.11.275.
+[20] M. Afzal, P. Sharma, Design and computational analysis of a metal hydride
+hydrogen storage system with hexagonal honeycomb based heat transfer
+enhancements-part A, Int. J. Hydrog. Energy 46 (24) (Apr. 2021) 13116–13130,
+https://doi.org/10.1016/j.ijhydene.2021.01.135.
+[21] A. Jemni, S.B. Nasrallah, Study of two-dimensional heat and mass transfer during
+absorption in a metal-hydrogen reactor, Int. J. Hydrog. Energy 20 (1) (Jan. 1995)
+43–52, https://doi.org/10.1016/0360-3199(93)E0007-8.
+[22] P. Muthukumar, M. Prakash Maiya, S.S. Murthy, Experiments on a metal hydridebased hydrogen storage device, Int. J. Hydrog. Energy 30 (15) (Dec. 2005)
+1569–1581, https://doi.org/10.1016/j.ijhydene.2004.12.007.
+[23] M. Afzal, P. Sharma, Design of a large-scale metal hydride based hydrogen storage
+reactor: simulation and heat transfer optimization, Int. J. Hydrog. Energy 43 (29)
+(Jul. 2018) 13356–13372, https://doi.org/10.1016/j.ijhydene.2018.05.084.
+[24] M.V. Lototskyy, et al., Metal hydride hydrogen storage and supply systems for
+electric forklift with low-temperature proton exchange membrane fuel cell power
+module, Int. J. Hydrog. Energy 41 (31) (Aug. 2016) 13831–13842, https://doi.org/
+10.1016/j.ijhydene.2016.01.148.
+[25] M. Afzal, N. Sharma, N. Gupta, P. Sharma, Transient simulation studies on a metal
+hydride based hydrogen storage reactor with longitudinal fins, J. Energy Storage
+51 (November 2021) (2022) 104426, https://doi.org/10.1016/j.est.2022.104426.
+[26] M. Bououdina, D. Grant, G. Walker, Review on hydrogen absorbing materials structure, microstructure, and thermodynamic properties, Int. J. Hydrog. Energy
+31 (2) (2006) 177–182, https://doi.org/10.1016/j.ijhydene.2005.04.049.
+
+CRediT authorship contribution statement
+Nandlal Gupta: Experimental Investigation, Fabrication, Formal
+Analysis, Writing – original draft.
+Saurabh Tiwari: Experimental Investigation, Formal Analysis,
+Writing - original draft.
+Nitin: Fabrication of experimental setup.
+Rama J Khandarkar: Experimental Investigation.
+Mahvash Afzal: Conceptualization, Numerical analysis.
+Pratibha Sharma: Resources, Supervision, Writing – original draft,
+Writing- reviewing and editing.
+Declaration of competing interest
+The authors declare that they have no conflict of interest.
+Data availability
+No data was used for the research described in the article.
+Acknowledgement
+The authors are thankful to the Ministry of Human Resource
+Development, Government of India, for providing financial support for
+carrying out the work, under IMPRINT scheme with Sanction letter No.:
+F.No.3-18/2015-TS.-I (Vol. III) and Proposal No.: 5815.
+11
+
+N. Gupta et al.
+
+Journal of Energy Storage 67 (2023) 107491
+
+[27] S.K. Pandey, A. Srivastava, O.N. Srivastava, Improvement in hydrogen storage
+capacity in LaNi5 through substitution of Ni by Fe, Int. J. Hydrog. Energy 32 (13)
+(2007) 2461–2465, https://doi.org/10.1016/j.ijhydene.2006.12.003.
+[28] G. Sandrock, Hydride storage, in: Handbook of Fuel Cells, 2010, https://doi.org/
+10.1002/9780470974001.f302009.
+[29] S. Tiwari, P. Sharma, Numerical and theoretical evaluation of coupled metalhydride-based thermal storage system with embedded helical tubes, Energy Fuel
+36 (2) (Jan. 2022) 1140–1150, https://doi.org/10.1021/acs.energyfuels.1c03455.
+[30] S. Chandra, P. Sharma, P. Muthukumar, S.S.V. Tatiparti, Modeling and numerical
+simulation of a 5 kg LaNi5-based hydrogen storage reactor with internal conical
+
+fins, Int. J. Hydrog. Energy 45 (15) (2020) 8794–8809, https://doi.org/10.1016/j.
+ijhydene.2020.01.115.
+[31] K. Jiao, X. Li, Y. Yin, Y. Zhou, S. Yu, Q. Du, Effects of various operating conditions
+on the hydrogen absorption processes in a metal hydride tank, Appl. Energy 94
+(2012) 257–269, https://doi.org/10.1016/j.apenergy.2012.01.033.
+[32] S. Tiwari, P. Sharma, Parametric and sensitivity analysis of metal hydride hydrogen
+storage systems for development of novel design charts, in: Energy Storage, 2022 4
+(5), 2022, p. e343, https://doi.org/10.1002/est2.34.
+
+12
+
+

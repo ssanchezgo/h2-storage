@@ -1,0 +1,786 @@
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 4 ( 2 0 1 9 ) 1 4 5 9 6 e1 4 6 0 4
+
+Available online at www.sciencedirect.com
+
+ScienceDirect
+journal homepage: www.elsevier.com/locate/he
+
+Construction and operation of hydrogen energy
+utilization system for a zero emission building
+Naruki Endo a,*, Eisuke Shimoda b, Kiyotaka Goshome a,
+Toshihiro Yamane b, Tsuyoshi Nozu b, Tetsuhiko Maeda a
+a
+
+Renewable Energy Research Center, National Institute of Advanced Industrial Science and Technology (AIST), 2-2-9
+Machiikedai, Koriyama 963-0298, Japan
+b
+Institute of Technology, Shimizu Corporation, 3-4-17, Etchujima, Koto-ku, Tokyo 135-8530, Japan
+
+article info
+
+abstract
+
+Article history:
+
+A bench-scale stationary hydrogen energy utilization system with renewable energy (RE)
+
+Received 26 November 2018
+
+that realizes a zero emission building (ZEB) is presented. To facilitate compactness, safety,
+
+Received in revised form
+
+and mild operation conditions, a polymer electrolyte membrane (PEM) electrolyzer for
+
+9 April 2019
+
+hydrogen production (5 Nm3/h), PEM fuel cells (FC) for hydrogen use (3.5 kW), and metal
+
+Accepted 10 April 2019
+
+hydride (MH) tanks for hydrogen storage (80 Nm3) are incorporated. Each hydrogen appa-
+
+Available online 10 May 2019
+
+ratus and Li-ion batteries (20 kW/20 kWh) are installed in a 12-ft. container and 20-kW
+photovoltaic panels provide power. A building energy management system (BEMS)
+
+Keywords:
+
+controlled these system components in an integrated manner. The PEM Ely and FC have
+
+Hydrogen energy utilization system
+
+fast start-up and high efficiency under partial load operations, indicating suitability for
+
+Zero emission building
+
+daily start-stop operations. An AB-type TiFe-based alloy (520 kg) is used as the MH (not an
+
+Electrolyzer
+
+AB5-type rare earth alloy that has been commonly used in bench-scale hydrogen store)
+
+Fuel cells
+
+because, in addition to being low-cost, it is non-hazardous material under Japanese reg-
+
+Metal hydride
+
+ulations. The results of a 24-h operation experiment verify ZEB attainment. PEM FC and
+TiFe-based tanks thermal integration results indicate that hydrogen use operation is
+achievable without external heat sources.
+© 2019 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+Introduction
+Greenhouse gas emissions from carbon dioxide (CO2),
+methane (CH4), and other substances are largely a result of
+fossil fuel use, and contribute greatly to global warming and
+climate change. In Japan, almost 40% of the total emitted CO2
+is due to energy consumption within buildings, which greatly
+exceeds the contributions from mobility sources (~16%) [1]. In
+December 2017, the Japanese government released a “Basic
+Hydrogen Strategy” [2], which provides a roadmap for the
+
+realization of a hydrogen-based society (this roadmap was
+revised March 12, 2019 [3]). Included in the roadmap are zeroemission buildings (ZEBs), which have an effective annual
+energy consumption of zero through energy conservation and
+renewable energy (RE) power generation [4]. Accordingly,
+reducing CO2 emissions from buildings is an absolute
+necessity.
+In many cases, stationary hydrogen energy utilization
+systems with RE such as photovoltaic (PV) panels and wind
+turbines consist of an electrolyzer (Ely) for hydrogen
+
+* Corresponding author.
+E-mail address: naruki.endo@aist.go.jp (N. Endo).
+https://doi.org/10.1016/j.ijhydene.2019.04.107
+0360-3199/© 2019 Hydrogen Energy Publications LLC. Published by Elsevier Ltd. All rights reserved.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 4 ( 2 0 1 9 ) 1 4 5 9 6 e1 4 6 0 4
+
+production, as well as hydrogen storage tanks and fuel cells
+(FC) for hydrogen use [5e11]. Batteries for short-term energy
+storage are often included in the stationary system [12]. To
+achieve the ZEB, we have developed a bench-scale hydrogen
+energy system with RE [13]; simulation results for the system
+design and its operations are detailed in our other work [14]. In
+that system, 20-kW PV panels are used for RE power generation because they can be easily installed near or on buildings.
+Our hydrogen system consists of Ely (5 Nm3/h), metal hydride
+(MH) tanks (80 Nm3), FC (3.5 kW), and batteries (20 kW/
+20 kWh). This bench-scale system was aimed to achieve a ZEB
+for a small low-rise building (total floor area ~1000 m2; demand: ~5 kW) [14].
+To use hydrogen in urban environments (i.e., strict regulation areas), our stationary system prioritizes compactness,
+safety, and mild operation conditions (e.g. < 1 MPa and 70  C).
+We thus selected MH tanks that can store hydrogen compactly
+and operate near ambient conditions [15e18]. The MH in the
+tanks is not classified as a hazardous material under the Fire
+Service Act of Japan. We suggest that MH hydrogen storage
+(MHHS) is the least regulated storage method and thus suitable for use in urban areas. The maximum hydrogen pressure
+is controlled such that it is less than 1 MPa (Gauge), to adhere
+to the High Pressure Gas Safety Regulation of Japan [19].
+AB5-type rare-earth alloys (e.g., LaNi5 and Mm(NiCoAl)5)
+are the most typical hydrogen storage alloys and have been
+used as bench-scale MHHS for stationary systems
+[5e11,20e22], because they possess easy activation, small
+hysteresis, and rapid kinetics. However, AB5 alloys include
+expensive rare-earth metals and become pulverized after a
+few ab/desorption cycles [23]. The pulverized alloy grains are
+very small (~1 mm) and active, and are classified as hazardous
+materials in Japan. Therefore, MHHS units using the hazardous material must be placed at a safe distance (several meters)
+from the building, meaning that the required space is often
+too large for use in urban building areas [24].
+We focused on the AB-type TiFe-based alloy [25] because of
+the low cost of the materials and abundance of resources.
+Moreover, many of the AB-type alloys have high pulverization
+resistance and thus are not classified as hazardous materials.
+The disadvantages of the alloys include large hysteresis, second plateau, and difficult activation treatments [22,23,25,26].
+However, we investigated the activation processes of a benchscale MH tank filled with the TiFe-based alloy near ambient
+conditions [27], and succeeded in developing the alloy with a
+small second plateau and easy activation. One of the unique
+features of our hydrogen energy utilization system is that the
+alloy grains (total: 520 kg) were placed in each tank (TiFebased tank).
+The second feature of our system is thermal integration
+between the FC and TiFe-based tanks. Owing to the endothermic hydrogen desorption of the alloy, it is necessary to
+heat the alloy bed for continuous hydrogen release. As the FC
+simultaneously generates power and heat, desorption of the
+TiFe-based tanks can be operated by using the FC heat output.
+Many thermal integrations of FC and MH tanks have been
+studied, and the MH tanks were commonly filled with AB5
+alloys (AB5 tanks) [28e33]. However, few studies have investigated integrating FC and TiFe-based tanks. In particular, no
+studies to our knowledge have examined bench-scale
+
+14597
+
+integrated systems, of which our integrated system would be
+the largest scale (3.5 kW and 520 kg).
+The third feature of our hydrogen system is that it can be
+operated automatically by a building energy management
+system (BEMS) that was developed by Shimizu Co. called
+“Smart BEMS” [34]. Smart BEMS plans energy management
+based on weather and demand forecasts and minimizes grid
+power consumption (⇔ the CO2 emissions). Based on the
+excess PV power and the power demand of the building, the
+hydrogen apparatuses and charge-discharge of the batteries
+can be controlled by the Smart BEMS.
+In this paper, a bench-scale hydrogen energy utilization
+system was constructed to realize a ZEB. Our system was
+aimed to be employed in a small-rise building to experimentally realize a ZEB. We describe the specifications of each
+system component and detail the technical aspects that save
+cost/space in the system design. Subsequently, we present
+experimental results from 24-h operation in fine weather
+conditions. Details on the thermal integration of the FC and
+TiFe-based tanks are also presented. We believe our results
+will help enable practical applications of the stationary
+hydrogen system.
+
+Hydrogen energy utilization system for a ZEB
+System appearance and specifications
+Fig. 1 shows a photograph of the system. Each system
+component was installed in a 12-ft. container to facilitate easy
+relocation into any building areas. On the roofs are 3.75-kW PV
+panels (Panasonic, HIT™) to provide power to the auxiliaries.
+The auxiliaries' power is 3.3 kW and 0.5 kW under hydrogen
+production (Ely þ MH) and utilization (MH þ FC) operations,
+respectively. To suppress temperature increases inside the
+container, ventilating fans are placed in each container; to
+conserve power, air conditioners are not employed. All
+hydrogen pipelines consist of 3/8 or 1/2-inch stainless steel
+tubes. To release hydrogen safely outside in an emergency
+
+Fig. 1 e Photograph of the hydrogen energy utilization
+system for a ZEB. In front of the battery container 20-kW
+PV panels are located (not shown).
+
+14598
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 4 ( 2 0 1 9 ) 1 4 5 9 6 e1 4 6 0 4
+
+situation, bent pipe lines are also placed on each container's
+roof, except for the battery container.
+Table 1 summarizes the system component specifications.
+In front of the battery container 20-kW PV panels (Panasonic,
+HIT™) are placed. For short-term power storage/supply and
+emergency start-up power supply, Li-ion rechargeable batteries (CAPTEX, BS-0100_11P8S_12S) containing high power and
+voltage are employed. Each hydrogen apparatus is described
+in detail in the ensuing sections.
+
+efficiency includes the auxiliaries’ power, such as the water
+circulation pump, radiator, ventilating fan, and the
+compressor. Around 80% or more is obtainable over 150 A and
+the conversion efficiency has a maximum value of 87% at 250
+A. These results show that hydrogen production with high
+efficiency could happen with fluctuating PV power except at
+low current values (<100 A). The efficiency decreased about
+10% after a decrease of 30  C.
+
+Hydrogen use－Fuel cells
+Hydrogen production-electrolyzer
+For the system to be employed in urban areas, compactness
+is a high priority. Hydrogen is produced by excess PV power,
+so the apparatus must be suitable for daily start/stop (DSS)
+and partial load (PL) operations. Thus, we selected a
+compact polymer electrolyte membrane (PEM) Ely (Hitachi
+Zosen, HYDROSPRING™) and pure water, instead of an
+alkaline Ely that occupies a larger space and has a
+poisonous solution. The PEM Ely is capable of hydrogen
+production of 5 Nm3/h with DC power of 26 kW. Maximum
+hydrogen supply pressure to the TiFe-based tanks is
+0.97 MPaG to conform with the Japan High Pressure Gas
+Safety Act [19].
+Fig. 2 shows a photograph of the PEM Ely installed in the
+container. The cell stacks consist of 26 electrochemical cells.
+Other specifications include a radiator (Mitsubishi Electric,
+EWF-50FTA) used for the cell stacks cooling to save space and
+cost, and no cooling tower, allowing for easy relocation. Two
+dehumidifiers (Japan Pionics, JHP-10E-S) are used for dehumidification of hydrogen from the PEM Ely. The dew point of
+the hydrogen supplied to the TiFe-based tanks is less than
+50  C. To reduce hydrogen emissions outside the container, a
+gas tank stores hydrogen at a high dew point (see H2 tank in
+Fig. 2), using the under-regeneration operation of a dehumidifier. The air valve compressor is the same as that used in
+the TiFe-based tanks, to save space and cost. Further, in this
+system, electrolysis waste heat is used for heat storage and
+heating the MH tanks.
+Fig. 3 shows the start-up of the PEM Ely. The run-up operation begins about 2 min after the start, followed by rated
+operation (5 Nm3/h) approximately 5 min after the start. The
+Ely has a fast start-up, which indicates that it is suitable for
+the DSS operation. Furthermore, the fast start-up is not
+dependent on the cell stacks’ temperature.
+The hydrogen conversion efficiency of the PEM Ely at the
+cell stacks' temperature of 65e70  C is presented in Fig. 4. The
+
+Compactness is also a high priority for the hydrogen use
+apparatus. This apparatus is operated in accordance with
+building demand, meaning it must be suitable for DSS and
+PL operations. For this purpose, we selected a water-cooled
+PEM FC (Toshiba, H2Rex™).
+Fig. 5 shows a photograph of the PEM FC installed in the
+container. The radiators (Toshiba Carrier, VP-304SNX) are
+used to cool the cell stacks, which makes it possible to build a
+small water-cooled close loop. The integration lines between
+the PEM FC and TiFe-based tanks are shown in Fig. 6. The heat
+exchange between the PEM FC and heat transfer liquid (60%
+brine) is conducted at the plate heat exchanger (ALFA LAVAL,
+AN14-20H), which is indicated in Fig. 6(a); subsequently, the
+heat is supplied to the TiFe-based tanks. The integration
+operation is fully described in Section Thermal integration of
+PEM FC－Metal hydride tanks.
+Fig. 7 shows the start-up of the PEM FC. The run-up operation (1.25 kW) starts approximately 7 min after startup, and
+the rated-operation (3.5 kW) approximately 10 min after
+startup. This result demonstrates that the PEM FC has a fast
+start-up and the operation is not dependent on the cell stacks’
+temperature. As seen in Fig. 7, the power responsiveness from
+the lowest/maximum to maximum/lowest output occurs in
+tens of seconds. The electrical efficiency at each power output
+is 55%, calculated based on a lower heating value (LHV). These
+results show that the PEM FC is suitable for the DSS and PL
+operations.
+
+Hydrogen storage－Metal hydride tanks
+As with the Ely and FC, compactness is a high priority for the
+hydrogen storage apparatus. To comply with Japanese regulations, no use of hazardous material and high pressure gas
+(>1 MPaG) are allowed. Therefore, we selected the MHHS,
+which has advantages such as mild operation conditions,
+reliability, low power consumption, and ultra-high purity.
+
+Table 1 e Specifications of each system component.
+Functions
+
+System component
+
+Specifications
+
+H2 Production
+H2 Storage
+
+PEM electrolyzer
+TiFeebased alloy (No rare earth metals)
+
+H2 Use
+
+PEM Fuel cell (Pure H2 type)
+
+Power storage
+
+Li ion Battery
+
+RE power
+
+Amorphous Si þ Single crystal Si
+
+26 kW ⇔ 5 Nm3/h (500A)
+H2 amount: 80 Nm3 for 2 units
+Absorption: 5 Nm3/h (20 C)
+Desorption: 3 Nm3/h (60 C)
+Power output : 3.5 kW
+Electrical efficiency(LHV) : 55 %
+Capacity :10 kWh  2
+Power output: 10 kW  2
+10 kW  2, 0.25 kW  15 (Containers roofs)
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 4 ( 2 0 1 9 ) 1 4 5 9 6 e1 4 6 0 4
+
+14599
+
+Fig. 2 e Photograph of the hydrogen production apparatus (PEM Ely) installed in a 12 ft container. The left photo shows the
+cell stacks (DC power of 26 kW [500 A] ⇔ 5 Nm3/h). The radiator and the dehumidifiers are pictured at right, while the
+hydrogen gas tank (H2 tank) shown in the middle have a capacity of 330 L.
+
+Fig. 3 e Graph of current and hydrogen flow rate at start-up
+of the PEM Ely.
+
+Fig. 5 e Photograph of the hydrogen use apparatus (PEM
+FC) installed in a 12 ft container. The FC has a maximum
+power output of 3.5 kW (⇔ 2.1 Nm3/h), hydrogen supply
+pressure of <50 kPa, and FC outlet water temperature of
+60  C. Two radiators and heat exchangers are placed as
+pictured.
+
+Fig. 4 e Hydrogen conversion efficiency of the PEM Ely at
+the cell stacks' temperature of 65e70  C. Each efficiency is
+calculated based on a higher heating value (HHV).
+Each MH tank is filled with the TiFe-based alloy TiFeMn
+(Japan Metals & Chemicals), with a few Mn substituting for
+
+another transition metal that was prepared using a highfrequency melting furnace under an Ar atmosphere. The ascast alloy was equilibrated through annealing for 24 h at
+1100  C. The developed alloy (~5 g) is able to absorb hydrogen
+immediately after vacuuming for 1 h at 70  C. Its maximum
+hydrogen storage capacity, as described by the hydrogen to
+metal atom ratio (H/M), is 0.9. The effective hydrogen storage
+amount is 1.4 wt% (0.1  H/M  0.83) under absorption at 30  C
+and desorption at 45  C, which is larger than that of AB5-type
+alloys (~1 wt%) [35]. The ignition properties of the alloy grains
+were evaluated after several ab/desorption cycles using a
+
+14600
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 4 ( 2 0 1 9 ) 1 4 5 9 6 e1 4 6 0 4
+
+Fig. 6 e Schematic of the thermal integration lines between the PEM FC and TiFe-based tanks. Each MH tank (1 and 2) is filled
+with TiFe-based alloy of 65 and 260 kg, respectively. The heat transfer liquid is 60% brine (9.0 L/min). Radiators are
+employed to cool the PEM FC and the MH tanks. The heat exchangers in (a) and (b) are the same model. Note that both MH
+and FC containers are the same size.
+
+The TiFe-based tanks installed in the container are shown
+in Fig. 8. Two types of MH tanks are used and the hydrogen
+storage capacity of each is 40 Nm3. MH tank 1 is one unit with
+four canisters to enable high hydrogen flow rate operation.
+MH tank 2 is used for low flow rate operations and was
+developed to save cost and space. Both MH tanks were water
+heated/cooled and had a cylindrical shape. The activation
+processes were carried out at less than 70  C and 0.97 MPaG;
+the details have been reported in Endo et al. [27]. The radiators
+for cooling the alloy beds were the same as those used in the
+PEM FC (see Fig. 6).
+Fig. 7 e Graph of the start-up and power output
+responsiveness of the PEM FC.
+
+Fig. 8 e Photograph of the hydrogen storage apparatus (MH
+tanks) installed in a 12 ft container. There are two types of
+tanks (1 and 2). Tank 1 is filled with 65 kg of the TiFe-based
+alloy using four canisters, while Tank 2 is filled with 260 kg
+in one canister. The total hydrogen storage capacity is
+80 Nm3.
+small gas flame ignition test [36], and the alloy grains were not
+ignited. For this reason, the alloy was not classified as a hazardous material under the Fire Service Act of Japan.
+
+Fig. 9 e PCI properties of the TiFe-based alloy contained in
+each tank at 20, 30, and 60  C. Filled square (-) and open
+circle (B) symbols correspond to absorption and
+desorption, respectively. The effective hydrogen storage
+amount of 40 Nm3 for one unit (260 kg) is shown by the
+double arrow. The FC supply pressure is indicated by an
+arrow on the right-hand vertical axis.
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 4 ( 2 0 1 9 ) 1 4 5 9 6 e1 4 6 0 4
+
+Fig. 9 shows pressure-composition isotherm (PCI) properties of the TiFe-based alloy used to fill the tanks. As mentioned
+above, many TiFe-based alloys have large hysteresis and a
+second plateau, which are generally disadvantages
+[22,23,25,26]. Although the hysteresis remained, the second
+plateau was smaller than a binary alloy [25] (see Fig. 9). The
+hydrogen supply pressure from the Ely to the TiFe-based tanks
+is 0.97 MPa. Meanwhile, the hydrogen pressure of the FC
+operation has to be less than 50 kPaG (minimum pressure of
+15 kPaG); as such, the hydrogen supply pressure from the
+TiFe-based tanks to the FC was lowered by the pressure
+reducer. Therefore, we only had to set the hydrogen pressure
+of the TiFe-based tanks below 0.97 MPaG and over 15 kPaG
+under the hydrogen production (Ely þ MH) and utilization
+(MH þ FC) operations, respectively. Overall, the hysteresis and
+second plateau of the developed alloy are not major disadvantages; in reality, the TiFe-based tanks were able to be
+operated similarly to the AB5 tanks. This is a very important
+point for MHHS using the TiFe-based tanks.
+
+Results and discussion
+24-h operation in fine weather conditions
+A 24-h operation was carried out automatically by the Smart
+BEMS [34]. Each system component was controlled by the
+Smart BEMS to maximally reduce grid power consumption.
+Based on a weather forecast from the previous day, the Smart
+BEMS planned the operation schedule for every 30 min up to
+48 h ahead, then modified the operation schedule based on
+updated weather forecasts at 7:00, 12:00, and 19:00 on the
+operating day. The Smart BEMS was able to maintain realtime control within several seconds; that is, the Smart BEMS
+specified when the batteries charged and discharged for
+supply-demand balance based on PV power and building demand. The details of the control logics have been reported in
+our other work [14].
+Fig. 10 shows the energy flow of the hydrogen system with
+PV. The direct-use PV power has the highest priority. In
+
+14601
+
+addition, when excess PV power is generated, the batteries
+operate for short-term/small quantity energy storage. Finally,
+power-to-hydrogen was selected for long-term/large quantity
+energy storage. The FC power supply was designed for longterm operations under night or cloudy/rain conditions. In
+this experiment, we consider the power consumption of the
+control room and the auxiliaries’ power as building demand
+(~5 kW), which is close to that of our target low-rise building.
+Fig. 11 shows the 24-h operation results under fine weather
+conditions. The left vertical axis indicates the power supply
+(upper) and the demand/energy storage (lower). The gray line
+shows the energy storage rate (hydrogen þ battery) on the
+right vertical axis. Although the operation was controlled
+every 30 min, the time variations are shown every 1 h because
+there was almost no difference in the results between the two
+time intervals. The building demand (blue) was supplied by
+the FC power (dark blue) from 0:00 to 7:00. Because the demand was smaller than the PV power output, excess PV power
+(green) was generated after 8:00 and the batteries charged the
+excess PV power at 8:00 (orange). Subsequently, hydrogen
+production (light blue) occurred from 9:00 to 16:00, during
+which period the charge-discharge operations of the Li-ion
+batteries were due to the real-time control. The energy storage rate (gray line) depended mainly on the hydrogen storage
+amount because the difference between the charge and
+discharge of the batteries was small. On account of little grid
+power (red), the planned operation was successfully carried
+out; that is, ZEB was achieved.
+The overall system efficiency p was calculated using the
+following equation:
+p¼
+
+Demand þ DEðþÞ
+ 100
+PV power  DEðÞ
+
+(1)
+
+where PV power is the total PV power output [126.9 (kWh/
+24 h)], Demand is the total building demand [79.4 (kWh/24 h)],
+and DE is the energy storage difference [kWh/24 h]. In this
+experiment, DE was 5.5 kWh; as a result, p ¼ 59.9, i.e., 60%
+was obtainable, which agreed with our simulation results [14].
+p does not include building heat usage; this result indicates
+that the heat usage is important for further high efficiency,
+
+Fig. 10 e Schematic of the energy flow of the hydrogen energy utilization system with PV.
+
+14602
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 4 ( 2 0 1 9 ) 1 4 5 9 6 e1 4 6 0 4
+
+Fig. 11 e Power supply and demand/energy storage under 24 h operation with fine weather condition. The gray line is the
+energy storage rate (hydrogen þ battery).
+
+and the hydrogen energy utilization system is suitable for
+buildings with high heat demand (e.g. hotels and hospitals).
+Although only the 24-h operation during fine day is shown
+here, we confirmed that operations in other weather conditions produced similarly successful results [37].
+
+Thermal integration of PEM FC－Metal hydride tanks
+The thermal integration between the PEM FC and TiFe-based
+tanks was demonstrated. Integrated systems have been reported [28e33], with many using AB5-type alloys and others
+using AB2-type alloys [33,38e40]. However, few studies have
+used TiFe-based tanks. To the best of our knowledge, our
+integration scale is the largest with 3.5 kW power and a 520 kg
+alloy.
+MH Tank 1 was used in this experiment (see Figs. 6 and 8);
+the results are shown in Fig. 12. The initial temperature,
+pressure, and hydrogen storage of the tanks were 30  C,
+0.15 MPa, and 20 Nm3 (H/M ¼ 0.5), respectively. Here, the
+temperature of the tanks refers to that of the alloy bed. The FC
+power output and hydrogen flow rate were 3.5 kW and
+
+2.1 Nm3/h, respectively. The FC outlet water temperature
+increased up to 60  C in 20 min after the power output started,
+and then held steady at 60  C. The heat exchange between FC
+and the heat transfer liquid was carried out at the heat
+exchanger indicated in Fig. 6(a), after which the heat was
+supplied to the alloy tanks. The heat supply temperature to
+the tanks was constant at approximately 42  C when the FC
+outlet water temperature was 60  C. The flow rate of the heat
+transfer liquid was 9.0 L/min.
+As shown in Fig. 12, the temperature of the tanks increased
+at 20 min after the FC power output, and pressure increased
+accordingly. The temperature increased to 42  C after 3 h of
+operation, and temperature and pressure subsequently
+decreased gradually. Although the hydrogen flow rate
+(2.1 Nm3/h) and heat supply temperature (42  C) were constant during the operation, the tank temperature decreased.
+This is because the thermal conductivity of the alloy bed
+decreased with decreasing hydrogen storage amount; the
+alloy grains contracted as the alloy desorbed hydrogen, and
+the void fraction of the alloy bed increased [27,41]. For this
+reason, the thermal conductivity decreased and the heat exchange between the alloy bed and the heat transfer liquid also
+decreased. Despite the decreasing temperature and pressure
+of the TiFe-based tanks, full desorption was carried out using
+the FC heat output (pink line in Fig. 12).
+The heat exchange, q, between the heat transfer liquid and
+the FC circulation water was calculated using the following
+equation:
+q ¼ Cp,r,DT,v
+
+Fig. 12 e Results for thermal integration operation of the
+PEM FC-TiFe-based tanks.
+
+(2)
+
+where Cp is the specific heat of the heat transfer liquid at
+constant pressure [3.85 kJ/(kg$K)], r is density (1.02 kg/m3), DT
+is the temperature difference between the inlet and outlet
+heat transfer liquid of the heat exchanger, and v is the flow
+rate of the circulation brine (9.0 L/min). q was almost constant
+at 2.4 kW during the FC power output of 3.5 kW, and the heat
+recovery efficiency was 40% (LHV). The endothermic reaction
+heat of the TiFe-based alloy was 0.91 kW, estimated from the
+van't Hoff plot in Fig. 9. The FC heat output was more than
+twice the reaction heat. Each FC heat output at power outputs
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 4 ( 2 0 1 9 ) 1 4 5 9 6 e1 4 6 0 4
+
+of 1.25e3.5 kW was sufficiently higher than each reaction
+heat. Accordingly, this result indicates that a hydrogen use
+operation (MH þ FC) can be carried out without external heat
+sources.
+
+Conclusions
+We constructed a bench-scale hydrogen energy utilization
+system with RE for a ZEB, with the aim of employing it in a
+small low-rise building. Because of practical considerations in
+urban areas, the priorities of our hydrogen system were
+compactness, safety, and mild operation conditions. Consequently, PEM Ely and FC, MH tanks, and Li-ion batteries were
+selected. Each system component was installed in a 12 ft
+container that could be moved easily into any building area,
+and was controlled automatically by the BEMS. Both PEM Ely
+and FC exhibited fast start-up and high efficiency under partial load operations. We selected a TiFe-based alloy for MH
+hydrogen storage because of metal cost and Japanese regulations. The tanks (TiFe-based tanks) were filled with 520 kg of
+alloy grains. A 24-h operation on a fine day was carried out by
+the BEMS, and results showed that there was nearly zero grid
+power consumption, i.e. ZEB was realized. The thermal integration of PEM FC and TiFe-based tanks showed that full
+desorption could be completed through partial use of FC heat
+output. Our results are relevant to the practical application of
+stationary hydrogen energy systems in urban building areas.
+
+Acknowledgements
+The authors would like to thank Dr. S. Niki, Dr. H. Furutani,
+and Dr. S. Numata for fruitful comments, and Mr. M. Oomori,
+Mr. H. Kikuchi, and Ms. A. Kawasumi for technical support.
+This work was carried out under the Shimizu-AIST Zero
+Emissions Hydrogen Town Cooperative Research.
+
+Abbreviations
+CO2
+carbon dioxide
+methane
+CH4
+ZEB
+zero energy buildings
+RE
+renewable energy
+PV
+photovoltaic
+Ely
+electrolyzer
+FC
+fuel cell
+MH
+metal hydride
+MHHS metal hydride hydrogen storage
+MPaG
+MPa (Gauge)
+TiFe-based tank tank filled the TiFe-based alloy
+AB5 tank tank filled the AB5-type alloy
+BEMS
+building energy management system
+DSS
+daily start stop
+PL
+partial load
+PEM
+polymer electrolyte membrane
+HHV
+higher heating value
+LHV
+lower heating value
+
+H/M
+PCI
+
+14603
+
+hydrogen to metal atom ratio
+pressure-composition-isotherm
+
+references
+
+[1] Architectural Institute of Japan. AIJ action plan toward a low
+carbon society in the year 2050. March 2015. https://www.aij.
+or.jp/scripts/request/document/20150413.pdf. [Accessed 5
+April 2019].
+[2] Government of Japan. Basic hydrogen Strategy. December 26,
+2017. https://www.meti.go.jp/english/press/2017/pdf/1226_
+003b.pdf. [Accessed 5 April 2019].
+[3] Agency for Natural Resources and Energy. Formulation of a
+new strategic roadmap for hydrogen and fuel cells. March 12,
+2019. https://www.meti.go.jp/english/press/2019/0312_002.
+html. [Accessed 5 April 2019].
+[4] US Department of Energy. A common definition for zero
+energy buildings. September 2015. https://www.energy.gov/
+sites/prod/files/2015/09/f26/A%20Common%20Definition%
+20for%20Zero%20Energy%20Buildings.pdf. [Accessed 5 April
+2019].
+[5] Klebanoff LE, editor. Hydrogen storage technology: materials
+and applications. CRC Press, Taylor and Francis Group; 2012.
+[6] Vanhanen JP, Lund PD, Tolonen JS. Electrolyser-metal
+hydride-fuel cell system for seasonal energy storage. Int J
+Hydrogen Energy 1998;23:267e71.
+[7] Ipsakis D, Voutetakis S, Seferlis P, Stergiopoulos F,
+Elmasides C. Power management strategies for a stand-alone
+power system using renewable energy sources and hydrogen
+storage. Int J Hydrogen Energy 2009;34:7081e95.
+[8] Cetin E, Yilanci A, Oner Y, Colak M, Kasikci I, Ozturk HK.
+Electrical analysis of a hybrid photovoltaic-hydrogen/fuel
+cell energy system in Denizli, Turkey. Energy Build
+2009;41:975e81.
+[9] Gray EM, Webb CJ, Andrews J, Shabani B, Tsai PJ, Chan SL.
+Hydrogen storage for off-grid power supply. Int J Hydrogen
+Energy 2011;36:654e63.
+[10] Alnaser NW. Building integrated renewable energy to
+achieve zero emission in Bahrain. Energy Build
+2015;93:32e9.
+[11] Parra D, Gillott M, Walker GS. Design, testing and evaluation
+of a community hydrogen storage system for end user
+applications. Int J Hydrogen Energy 2016;41:5215e29.
+[12] Bossi C, Del Corno A, Scagliotti M, Valli C. Characterisation of
+a 3 kW PEFC power system coupled with a metal hydride H2
+storage. J Power Sources 2007;171:122e9.
+[13a] Maeda T, Endo N, Goshome K, Shimoda E, Yamane T,
+Nozu T. Development of hydrogen energy utilization
+system for building Ⅰ System overview. In: Proceedings of
+HESS; 2017. p. 143e4.
+[13b] Shimoda E, Yamane T, Nozu T, Endo N, Goshome K, Maeda
+T. Development of hydrogen energy utilization system for
+building II Characteristics of each apparatus. In:
+Proceedings of HESS; 2017. p. 55e8.
+[14] Endo N, Shimoda E, Goshome K, Yamane T, Nozu T, Maeda T.
+Simulation of design and operation of hydrogen energy
+utilization for a zero emission building. Int J Hydrogen
+Energy 2019;44:7118e24.
+[15] Tange M, Maeda T, Nakano A, Ito H, Kawakami Y, Masuda M,
+Takahashi T. Experimental study of hydrogen storage with
+reaction heat recovery using metal hydride in a totalized
+hydrogen energy utilization system. Int J Hydrogen Energy
+2011;36:11767e76.
+[16] Tarasov BP. Metal-hydride accumulators and generators of
+hydrogen for feeding fuel cells. Int J Hydrogen Energy
+2011;36:1196e9.
+
+14604
+
+i n t e r n a t i o n a l j o u r n a l o f h y d r o g e n e n e r g y 4 4 ( 2 0 1 9 ) 1 4 5 9 6 e1 4 6 0 4
+
+[17] Maeda T, Nakano A, Ito H, et al. The development of the
+totalized hydrogen energy utilization system for commercial
+buildings. J Int Council Elec Eng 2011;1:194e9.
+[18] Bhogilla SS, Ito H, Kato A, Nakano A. Research and
+development of a laboratory scale totalized hydrogen energy
+utilization system. Int J Hydrogen Energy 2016;41:1224e36.
+[19] Nakano A, Ito H, Bhogilla SS, Motyka T, Corgnale C,
+Greenway S, Hauback BC. Research and development for a
+metal hydride tank with double coil type heat exchanger
+below 1.0 MPa (G) operation. Int J Hydrogen Energy
+2015;40:2663e72.
+[20] Kubo K, Kawaharazaki Y, Itoh H. Development of large MH
+tank system for renewable energy storage. Int J Hydrogen
+Energy 2017;42:22475e9.
+[21] von Colbe JB, Arres JR, Barale J, Baricco M, Buckley C,
+Capurso G, Gallandat N, et al. Application of hydrides in
+hydrogen storage and compression: achievements, outlook
+and perspectives. Int J Hydrogen Energy 2019;44:7780e8.
+[22] Schlapbach L, editor. Hydrogen in intermetallic compounds
+I: electronic, thermodynamic, and crystallographic
+properties, preparation. Springer Series, Topics in Applied
+Physics, vol. 63. Berlin, Heidelberg: Springer; 1998.
+[23] Rusman NAA, Dahari M. A review on the current progress of
+metal hydrides material for solid-state hydrogen storage
+application. Int J Hydrogen Energy 2016;41:12108e26.
+[24] Endo N, Maeda T. Hydrogen energy systems for high rate
+introduction of renewable energy. J Fuel Cell Tech
+2015;15:19e24 [in Japanese].
+[25] Reilly JJ, Wiswall Jr RH. Formation and properties of iron
+titanium hydride. Inorg Chem 1974;13:218e22.
+[26] Lototskyy MV, Yartys V, Pollet BG, Bowman Jr RC. Metal
+hydride hydrogen compessors: a review. Int J Hydrogen
+Energy 2014;39:5818e51.
+[27] Endo N, Suzuki S, Goshome K, Maeda T. Operation of a
+bench-scale TiFe-based alloy tank under mild conditions for
+low-cost stationary hydrogen storage. Int J Hydrogen Energy
+2017;42:5246e51.
+[28] Wilson PR, Bowman Jr RC, Mora JL, Reiter JW. Operation of a
+PEM fuel cell with LaNi4. 8Sn0. 2 hydride beds. J Alloy Comp
+2007;446:676e80.
+[29] Jiang Z, Dougal RA, Liu S, Gadre SA, Ebner AD, Ritter JA.
+Simulation of a thermally coupled metal-hydride hydrogen
+storage and fuel cell system. J Power Sources
+2005;142:92e102.
+[30] Førde T, Eriksen J, Pettersen AG, Vie PJ, Ulleberg Ø. Thermal
+integration of a metal hydride storage unit and a PEM fuel
+cell stack. Int J Hydrogen Energy 2009;34:6730e9.
+
+[31] Rizzi P, Pinatel E, Luetto C, Florian P, Graizzaro A, Gagliano S,
+Baricco M. Integration of a PEM fuel cell with a metal hydride
+tank for stationary applications. J Alloy Comp
+2015;645:S338e42.
+[32] Hsiao DR, Huang BW, Shih NC. Development and dynamic
+characteristics of hybrid fuel cell-powered mini-train
+system. Int J Hydrogen Energy 2012;37:1058e66.
+[33] Lototskyy MV, Tolj I, Pickering L, Sita C, Barbir F, Yartys V.
+The use of metal hydrides in fuel cell applications. Prog Nat
+Sci: Materials Int 2017;27:3e20.
+[34] Shimoda E, Numata S, Baba J, Nitta T, Masada E. Operation
+planning and load prediction for microgrid using thermal
+demand estimation. In: Power and energy society general
+meeting, 2012. IEEE; 2012.
+[35] Geun-Hong K, Jai-Young L. The changes of hydrogenation
+properties induced by thermal cyclings in MmNi4. 5Al0. 5
+and MmNi4. 15Fe0. 85. J Less Common Met
+1987;132:123e32.
+[36] a. The Fire Service Act: Category combustible solids Ⅱ;
+https://www.scas.co.jp/en/services/materialscience/hazardprotection/hazardous-sample-amount.html [Accessed 4 May
+2019]. b. Kosone T, Endo N, Suzuki S, Kawasumi A,
+Kumakawa M, Maeda T. Risk assessment of the ignition
+property for metal hydride TiFe0.8Mn0.2-xVx. In: Proceedings
+of international conference on electrical engineering (ICEE).
+Hong Kong: ICEE15A-354-FP; 2015. p. 1e4. July 5e9, 2015.
+[37] Endo N, Shimoda E, Goshome K, Yamane T, Nozu T, Maeda T.
+Operation of hydrogen energy system with metal hydride
+hydrogen storage. (In preparation for submission to Int J
+Hydrogen Energy)2019.
+[38] Song C, Klebanoff LE, Johnson TA, Chao BS, Socha AF,
+Oros JM, Radley CJ, Wingert S, Breit JS. Using metal hydride
+H2 storage in mobile fuel cell equipment: design and
+predicted performance of a metal hydride fuel cell mobile
+light. Int J Hydrogen Energy 2014;39:14896e911.
+[39] Lototskyy MV, Davids MW, Tolj I, Klochko YV, Sekhar BS,
+Chidziva S, Smith F, Swanepoel D, Pollet BG. Metal hydride
+systems for hydrogen storage and supply for stationary and
+automotive low temperature PEM fuel cell power modules.
+Int J Hydrogen Energy 2015;40:11491e7.
+[40] Lototskyy M, Tolj I, Davids MW, Bujlo P, Smith F, Pollet BG.
+“Distributed hybrid” MHeCGH2 system for hydrogen storage
+and its supply to LT PEMFC power modules. J Alloy Comp
+2015;645:S329e33.
+[41] Matsushita M, Monde M, Mitsutake Y. A study of state
+change in metal hydride packed-bed caused by particle
+breakup. Transactions of the JSME B 2012;78:1810e21.
+
+
