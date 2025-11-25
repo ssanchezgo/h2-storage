@@ -46,7 +46,7 @@ Este estudio aborda el escalamiento de sistemas de almacenamiento de hidrógeno 
 ### 4.1 Hidruro Metálico
 
 
-- **Tipo de hidruro:** Variable según aplicación (no especificado en resumen)
+- **Tipo de hidruro:** Variable según aplicación 
 
 - **Cantidad de hidruro:** 1000 kg H2 capacidad total del sistema
 
